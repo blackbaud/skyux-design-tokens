@@ -1,0 +1,26 @@
+{
+    "name": "@blackbaud/skyux-design-tokens",
+    "version": "1.0.0",
+    "description": "Design tokens for SKY UX",
+    "homepage": "https://github.com/blackbaud/skyux-design-tokens",
+    "license": "MIT",
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "build": "node src/build-styles.js"
+    },
+    "devDependencies": {
+      "js-yaml": "3.8.4",
+      "path": "0.12.7",
+      "fs-extra": "3.0.1"
+    },
+    "repository":{
+      "type": "git",
+      "url": "https://github.com/blackbaud/skyux-design-tokens"
+    },
+    "engines":{
+      "node": ">= 4.2.1",
+      "npm": ">= 3"
+    }
+}

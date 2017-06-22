@@ -1,0 +1,64 @@
+# Choices
+
+color:
+  white: &color-white "#ffffff"
+  black: &color-black "#000000"
+  gray:
+    "01": &color-gray-01 "#fbfbfb"
+    "05": &color-gray-05 "#eeeeef"
+    "10": &color-gray-10 "#e2e3e4"
+    "20": &color-gray-20 "#cdcfd2"
+    "70": &color-gray-70 "#6f737a"
+    "80": &color-gray-80 "#4d525a"
+    "90": &color-gray-90 "#393d44"
+    "100": &color-gray-100 "#282b31"
+  blue:
+    "10": &color-blue-10 "#c1e8fb"
+    "30": &color-blue-30 "#81d4f7"
+    "50": &color-blue-50 "#00b4f1"
+    "70": &color-blue-70 "#007ca6"
+  green:
+    "30": &color-green-30 "#b7da9b"
+    "50": &color-green-50 "#71bf43"
+  yellow:
+    "30": &color-yellow-30 "#ffd597"
+    "50": &color-yellow-50 "#fbb034"
+  red:
+    "30": &color-red-30 "#f7a08f"
+    "50": &color-red-50 "#ef4044"
+    "70": &color-red-60 "#d93a3d"
+  purple:
+    "10": &color-purple-10 "#f1eef6"
+    "50": &color-purple-50 "#936daf"
+  teal:
+    "50": &color-teal-50 "#00b795"
+    "70": &color-teal-70 "#00866d"
+
+# Decisions
+
+text-color:
+  default: *color-gray-100
+  deemphasized: *color-gray-70
+  on-dark: *color-white
+  action-primary: *color-blue-70
+
+background-color:
+  neutral-light: *color-gray-05
+  primary-dark: *color-blue-70
+  selected: *color-purple-10
+  disabled: *color-gray-20
+  info: *color-blue-30
+  success: *color-green-30
+  warning: *color-yellow-30
+  danger: *color-red-30
+  danger-dark: *color-red-60
+
+highlight-color:
+  info: *color-blue-50
+  success: *color-green-50
+  warning: *color-yellow-50
+  danger: *color-red-50
+
+border-color:
+  neutral-light: *color-gray-10
+  neutral-medium: *color-gray-20
