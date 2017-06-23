@@ -8,6 +8,9 @@ git:
 before_install:
 
   - npm set progress=false
+  - chmod +x ./scripts/travis-script.sh
+  - chmod +x ./scripts/travis-after-failure.sh
+  - chmod +x ./scripts/travis-after-success.sh
 
 script: ./scripts/travis-script.sh
 
