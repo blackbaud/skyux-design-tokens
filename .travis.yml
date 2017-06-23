@@ -8,11 +8,16 @@ git:
 before_install:
 
   - npm set progress=false
+  - chmod +x ./scripts/travis-script.sh
+  - chmod +x ./scripts/travis-after-failure.sh
+  - chmod +x ./scripts/travis-after-success.sh
 
 script: ./scripts/travis-script.sh
 
 after_success:
   - ./scripts/travis-after-success.sh
+  - node ./scripts/prepare-package
+  - cd dist
   - bash <(curl -s https://blackbaud.github.io/skux-travis/after-success.sh)
 
 after_failure:
@@ -21,6 +26,7 @@ after_failure:
 branches:
   only:
     - master
+    - /^[0-9]+\.[0-9]+\.[0-9]+.*/
 
 cache:
   directories:
