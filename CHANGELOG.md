@@ -1,3 +1,7 @@
+# 0.0.3 (2017-06-24)
+
+  - Fixed typo for release.
+
 # 0.0.2 (2017-06-23)
 
   - Fixed syntax error for package preparation.
