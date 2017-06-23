@@ -21,7 +21,6 @@ var jsonTokens
 var prefix = '$sky';
 
 var scssResult = '';
-
 parseSassObject(jsonTokens, prefix);
 
 fs.outputFileSync(path.resolve(__dirname, '../dist/scss/variables.scss'), scssResult);
