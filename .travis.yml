@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+ - "6.10.3"
+
+git:
+  depth: 10
+
+before_install:
+
+  - npm set progress=false
+
+script: ./scripts/travis-script.sh
+
+after_success:
+  - ./scripts/travis-after-success.sh
+  - bash <(curl -s https://blackbaud.github.io/skux-travis/after-success.sh)
+
+after_failure:
+  - ./scripts/travis-after-failure.sh
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
