@@ -18,7 +18,7 @@ after_success:
   - ./scripts/travis-after-success.sh
   - node ./scripts/prepare-package
   - cd dist
-  - bash <(curl -s https://blackbaud.github.io/skux-travis/after-success.sh)
+  - bash <(curl -s https://blackbaud.github.io/skyux-travis/after-success.sh)
 
 after_failure:
   - ./scripts/travis-after-failure.sh
