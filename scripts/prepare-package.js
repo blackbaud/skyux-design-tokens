@@ -11,7 +11,7 @@ var distPath = path.join(rootPath, 'dist');
 function makePackageFileForDist() {
   var packageJson = fs.readJSONSync(path.join(rootPath, 'package.json'));
 
-  fs.writeJSONSync(path.join(distPath, 'package.json'), packageJson);
+  fs.writeJSONSync(path.join(distPath, 'package.json'), packageJson, { spaces: 2 });
 }
 
 function copyFilesToDist() {
