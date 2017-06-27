@@ -1,12 +1,9 @@
 {
     "name": "@blackbaud/skyux-design-tokens",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Design tokens for SKY UX",
     "homepage": "https://github.com/blackbaud/skyux-design-tokens",
     "license": "MIT",
-    "files": [
-      "dist"
-    ],
     "scripts": {
       "clean": "rimraf -- dist",
       "build": "node src/build-styles.js"

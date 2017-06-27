@@ -1,3 +1,7 @@
+# 0.0.4 (2017-06-27)
+
+  - Tweaked package.json.
+
 # 0.0.3 (2017-06-24)
 
   - Fixed typo for release.
