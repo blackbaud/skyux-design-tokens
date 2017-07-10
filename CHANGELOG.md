@@ -1,3 +1,7 @@
+# 0.0.5 (2017-07-10)
+
+  - Changed color-gray-70 from #6f737a to #686c73.
+
 # 0.0.4 (2017-06-27)
 
   - Tweaked package.json.
