@@ -25,6 +25,10 @@ parseSassObject(jsonTokens, prefix);
 
 fs.outputFileSync(path.resolve(__dirname, '../dist/scss/variables.scss'), scssResult);
 fs.copySync(
+  path.resolve(__dirname, 'scss/mixins.scss'),
+  path.resolve(__dirname, '../dist/scss/mixins.scss')
+);
+fs.copySync(
   path.resolve(__dirname, 'design-tokens.yaml'),
   path.resolve(__dirname, '../dist/yaml/design-tokens.yaml')
 );

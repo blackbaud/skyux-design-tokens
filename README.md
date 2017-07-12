@@ -5,6 +5,7 @@ This repository contains design tokens for building styles for SKY UX. The token
 ```
 |-- scss
 |    |-- variables.scss (A sass variable file containing the design tokens)
+|    |-- mixins.scss (A file containing convenience mixins)
 |-- yaml
 |    |-- design-tokens.yaml (The original yaml file containing the SKY UX design tokens)
 |-- json
