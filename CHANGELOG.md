@@ -1,3 +1,7 @@
+# 0.0.7 (2017-07-17)
+
+  - Changed row border color to $sky-border-color-neutral-medium.
+
 # 0.0.6 (2017-07-12)
 
   - Added the sky-border convenience mixin.
