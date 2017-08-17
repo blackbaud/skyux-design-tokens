@@ -41,6 +41,7 @@ text-color:
   deemphasized: *color-gray-70
   on-dark: *color-white
   action-primary: *color-blue-70
+  icon-borderless: *color-gray-20
 
 background-color:
   neutral-light: *color-gray-05
@@ -48,6 +49,7 @@ background-color:
   selected: *color-purple-10
   disabled: *color-gray-20
   info: *color-blue-30
+  info-light: *color-blue-10
   success: *color-green-30
   warning: *color-yellow-30
   danger: *color-red-30
