@@ -1,3 +1,7 @@
+# 0.0.8 (2017-08-17)
+
+  - Created styles for `icon-borderless` and `info-light`.
+
 # 0.0.7 (2017-07-17)
 
   - Changed row border color to $sky-border-color-neutral-medium.
