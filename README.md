@@ -1,5 +1,7 @@
 # skyux-design-tokens
 
+[![npm](https://img.shields.io/npm/v/@blackbaud/skyux-design-tokens.svg)](https://www.npmjs.com/package/@blackbaud/skyux-design-tokens)
+
 This repository contains design tokens for building styles for SKY UX. The tokens are stored in 'src/design-tokens.yml' When this package is released, it will contain the following files:
 
 ```
