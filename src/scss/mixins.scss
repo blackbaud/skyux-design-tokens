@@ -1,21 +1,31 @@
 @import "variables";
 
 @mixin sky-border($type, $sides...) {
-    @if(length($sides) == 0) {
-        $sides: "bottom";
+  @if(length($sides) == 0) {
+    $sides: "bottom";
+  }
+
+  @each $side in $sides {
+    @if($type == "light") {
+      border-#{$side}: 1px solid $sky-border-color-neutral-light;
     }
 
-    @each $side in $sides {
-      @if($type == "light") {
-          border-#{$side}: 1px solid $sky-border-color-neutral-light;
-      }
-
-      @if($type == "dark") {
-          border-#{$side}: 1px solid $sky-border-color-neutral-medium;
-      }
-
-      @if($type == "row") {
-          border-#{$side}: 1px dotted $sky-border-color-neutral-medium;
-      }
+    @if($type == "dark") {
+      border-#{$side}: 1px solid $sky-border-color-neutral-medium;
     }
+
+    @if($type == "row") {
+      border-#{$side}: 1px dotted $sky-border-color-neutral-medium;
+    }
+  }
+}
+
+@mixin sky-shadow (
+  $h-shadow: 0px,
+  $v-shadow: 0px,
+  $blur: 5px,
+  $spread-radius: 0,
+  $color: rgba(0, 0, 0, 0.3)
+) {
+  box-shadow: $h-shadow $v-shadow $blur $spread-radius $color;
 }
