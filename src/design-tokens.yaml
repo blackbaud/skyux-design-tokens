@@ -1,3 +1,4 @@
+# ----- Color -----
 # Choices
 
 color:
@@ -64,3 +65,41 @@ highlight-color:
 border-color:
   neutral-light: *color-gray-10
   neutral-medium: *color-gray-20
+
+# ----- Space -----
+# Choices
+
+space:
+	default: &space-default "10px"
+	xxs: &space-xxs "3px"
+	xs: &space-xs "5px"
+	sm: &space-sm "8px"
+	md: &space-md "10px"
+	lg: &space-lg "15px"
+	xl: &space-xl "20px"
+	
+# Decisions
+
+space-inset:
+	default: *space-default *space-default *space-default *space-default
+	compact: *space-sm *space-sm *space-sm *space-sm
+	small-container: *space-md *space-md *space-md *space-md
+	large-container: *space-lg *space-lg *space-lg *space-lg
+	
+space-inset-squish:
+	default: *space-xs *space-md *space-xs *space-md
+	sm: *space-xxs *space-sm *space-xxs *space-sm
+	md: *space-xs *space-md *space-xs *space-md
+	lg: *space-sm *space-lg *space-sm *space-lg
+	
+space-inline:
+	default: *space-default
+	tight: *space-xxs
+	related: *space-md
+	section: *space-xl
+
+space-stacked:
+	default: *space-default
+	tight: *space-xxs
+	unrelated: *space-md
+	section: *space-xl
