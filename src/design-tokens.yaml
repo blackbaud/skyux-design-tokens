@@ -96,7 +96,6 @@ space-inline:
 	default: *space-default
 	tight: *space-xxs
 	related: *space-md
-	section: *space-xl
 
 space-stacked:
 	default: *space-default
