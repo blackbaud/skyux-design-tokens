@@ -89,7 +89,7 @@ space-inset:
 space-inset-squish:
 	default: *space-xs *space-md *space-xs *space-md
 	compact: *space-xxs *space-sm *space-xxs *space-sm
-	md: *space-xs *space-md *space-xs *space-md
+	button: *space-xs *space-md *space-xs *space-md
 	header: *space-sm *space-lg *space-sm *space-lg
 	
 space-inline:
