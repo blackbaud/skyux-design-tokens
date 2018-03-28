@@ -36,12 +36,12 @@ color:
 
 size:
   pixels:
-    "3": &size-pixels-3 "3px"
-    "7": &size-pixels-7 "7px"
-    "10": &size-pixels-10 "10px"
-    "15": &size-pixels-15 "15px"
-    "20": &size-pixels-20 "20px"
-
+    "768": &size-pixels-768 "768px"
+    "767": &size-pixels-767 "767px"
+    "991": &size-pixels-991 "991px"
+    "992": &size-pixels-992 "992px"
+    "1199": &size-pixels-1199 "1199px"
+    "1200": &size-pixels-1200 "1200px"
 
 
 # Decisions
@@ -75,22 +75,10 @@ border-color:
   neutral-light: *color-gray-10
   neutral-medium: *color-gray-20
 
-padding: *size-pixels-10
-padding-3_4: *size-pixels-7
-padding-plus-half: *size-pixels-15
-padding-double: *size-pixels-20
-
-margin: *size-pixels-10
-margin-3_4: *size-pixels-7
-margin-plus-half: *size-pixels-15
-margin-double: *size-pixels-20
-
-border-radius: *size-pixels-3
-
 screen:
-  sm-min: 768px
-  md-min: 992px
-  lg-min: 1200px
-  xs-max: 767px
-  sm-max: 991px
-  md-max: 1199px
+  sm-min: *size-pixels-768
+  md-min: *size-pixels-992
+  lg-min: *size-pixels-1200
+  xs-max: *size-pixels-767
+  sm-max: *size-pixels-991
+  md-max: *size-pixels-1199
