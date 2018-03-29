@@ -80,24 +80,22 @@ space:
 	
 # Decisions
 
-space-inset:
+space-padding:
 	default: *space-default *space-default *space-default *space-default
 	compact: *space-sm *space-sm *space-sm *space-sm
-	small-container: *space-md *space-md *space-md *space-md
-	large-container: *space-lg *space-lg *space-lg *space-lg
-	
-space-inset-squish:
-	default: *space-xs *space-md *space-xs *space-md
-	compact: *space-xxs *space-sm *space-xxs *space-sm
+	container-small: *space-md *space-md *space-md *space-md
+	container-large: *space-lg *space-lg *space-lg *space-lg
 	button: *space-xs *space-md *space-xs *space-md
 	header: *space-sm *space-lg *space-sm *space-lg
+	squish-default: *space-xs *space-md *space-xs *space-md
+	squish-compact: *space-xxs *space-sm *space-xxs *space-sm
 	
-space-inline:
+space-margin-inline:
 	default: *space-default
 	tight: *space-xxs
 	related: *space-md
 
-space-stacked:
+space-margin-stacked:
 	default: *space-default
 	tight: *space-xxs
 	unrelated: *space-md
