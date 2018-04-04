@@ -35,13 +35,17 @@ color:
     "70": &color-teal-70 "#00866d"
 
 size:
-  pixels:
-    "768": &size-pixels-768 "768px"
-    "767": &size-pixels-767 "767px"
-    "991": &size-pixels-991 "991px"
-    "992": &size-pixels-992 "992px"
-    "1199": &size-pixels-1199 "1199px"
-    "1200": &size-pixels-1200 "1200px"
+  screen:
+    xs:
+      "max": &size-screen-xs-max "767px"
+    sm:
+      "min": &size-screen-sm-min "768px"
+      "max": &size-screen-sm-max "991px"
+    md:
+      "min": &size-screen-md-min "992px"
+      "max": &size-screen-md-max "1199px"
+    lg:
+      "min": &size-screen-lg-min "1200px"
 
 
 # Decisions
@@ -76,9 +80,9 @@ border-color:
   neutral-medium: *color-gray-20
 
 screen:
-  sm-min: *size-pixels-768
-  md-min: *size-pixels-992
-  lg-min: *size-pixels-1200
-  xs-max: *size-pixels-767
-  sm-max: *size-pixels-991
-  md-max: *size-pixels-1199
+  xs-max: *size-screen-xs-max
+  sm-min: *size-screen-sm-min
+  sm-max: *size-screen-sm-max
+  md-min: *size-screen-md-min
+  md-max: *size-screen-md-max
+  lg-min: *size-screen-lg-min
