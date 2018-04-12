@@ -85,18 +85,15 @@ space-padding:
 	compact: *space-sm *space-sm *space-sm *space-sm
 	container-small: *space-md *space-md *space-md *space-md
 	container-large: *space-lg *space-lg *space-lg *space-lg
-	button: *space-xs *space-md *space-xs *space-md
-	header: *space-sm *space-lg *space-sm *space-lg
 	squish-default: *space-xs *space-md *space-xs *space-md
 	squish-compact: *space-xxs *space-sm *space-xxs *space-sm
+	squish-loose: *space-sm *space-lg *space-sm *space-lg
 	
 space-margin-inline:
 	default: *space-default
-	tight: *space-xxs
-	related: *space-md
+	compact: *space-xxs
 
 space-margin-stacked:
 	default: *space-default
-	tight: *space-xxs
-	unrelated: *space-md
+	compact: *space-xxs
 	section: *space-xl
