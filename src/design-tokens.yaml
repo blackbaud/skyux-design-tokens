@@ -1,4 +1,3 @@
-# ----- Color -----
 # Choices
 
 color:
@@ -35,6 +34,28 @@ color:
     "50": &color-teal-50 "#00b795"
     "70": &color-teal-70 "#00866d"
 
+size:
+  screen:
+    xs:
+      "max": &size-screen-xs-max "767px"
+    sm:
+      "min": &size-screen-sm-min "768px"
+      "max": &size-screen-sm-max "991px"
+    md:
+      "min": &size-screen-md-min "992px"
+      "max": &size-screen-md-max "1199px"
+    lg:
+      "min": &size-screen-lg-min "1200px"
+
+space:
+	default: &space-default "10px"
+	xxs: &space-xxs "3px"
+	xs: &space-xs "5px"
+	sm: &space-sm "8px"
+	md: &space-md "10px"
+	lg: &space-lg "15px"
+	xl: &space-xl "20px"
+
 # Decisions
 
 text-color:
@@ -66,19 +87,13 @@ border-color:
   neutral-light: *color-gray-10
   neutral-medium: *color-gray-20
 
-# ----- Space -----
-# Choices
-
-space:
-	default: &space-default "10px"
-	xxs: &space-xxs "3px"
-	xs: &space-xs "5px"
-	sm: &space-sm "8px"
-	md: &space-md "10px"
-	lg: &space-lg "15px"
-	xl: &space-xl "20px"
-	
-# Decisions
+screen:
+  xs-max: *size-screen-xs-max
+  sm-min: *size-screen-sm-min
+  sm-max: *size-screen-sm-max
+  md-min: *size-screen-md-min
+  md-max: *size-screen-md-max
+  lg-min: *size-screen-lg-min
 
 space-padding:
 	default: *space-default *space-default *space-default *space-default
