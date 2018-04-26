@@ -96,19 +96,18 @@ screen:
   lg-min: *size-screen-lg-min
 
 space-padding:
-	default: *space-default *space-default *space-default *space-default
-	compact: *space-sm *space-sm *space-sm *space-sm
-	container-small: *space-md *space-md *space-md *space-md
-	container-large: *space-lg *space-lg *space-lg *space-lg
+	even-default: *space-md *space-md *space-md *space-md
+	even-small: *space-sm *space-sm *space-sm *space-sm
+	even-large: *space-lg *space-lg *space-lg *space-lg
 	squish-default: *space-xs *space-md *space-xs *space-md
-	squish-compact: *space-xxs *space-sm *space-xxs *space-sm
-	squish-loose: *space-sm *space-lg *space-sm *space-lg
+	squish-small: *space-xxs *space-sm *space-xxs *space-sm
+	squish-large: *space-sm *space-lg *space-sm *space-lg
 	
 space-margin-inline:
-	default: *space-default
+	default: *space-md
 	compact: *space-xxs
 
 space-margin-stacked:
-	default: *space-default
+	default: *space-md
 	compact: *space-xxs
-	section: *space-xl
+	separate: *space-xl
