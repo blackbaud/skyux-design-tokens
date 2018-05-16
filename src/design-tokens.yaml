@@ -109,5 +109,5 @@ margin-inline:
 
 margin-stacked:
 	default: *space-md
-	compact: *space-xxs
+	compact: *space-xs
 	separate: *space-xl
