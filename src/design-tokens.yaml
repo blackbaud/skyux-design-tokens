@@ -95,7 +95,7 @@ screen:
   md-max: *size-screen-md-max
   lg-min: *size-screen-lg-min
 
-space-padding:
+padding:
 	even-default: *space-md *space-md *space-md *space-md
 	even-small: *space-sm *space-sm *space-sm *space-sm
 	even-large: *space-lg *space-lg *space-lg *space-lg
@@ -103,11 +103,11 @@ space-padding:
 	squish-small: *space-xxs *space-sm *space-xxs *space-sm
 	squish-large: *space-sm *space-lg *space-sm *space-lg
 	
-space-margin-inline:
+margin-inline:
 	default: *space-md
 	compact: *space-xxs
 
-space-margin-stacked:
+margin-stacked:
 	default: *space-md
 	compact: *space-xxs
 	separate: *space-xl
