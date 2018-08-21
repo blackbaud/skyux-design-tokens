@@ -2,26 +2,46 @@ var yamlParse = require('js-yaml');
 var path = require('path');
 var fs = require('fs-extra');
 
+function buildProperty(name, value) {
+  scssResult += `${name}: ${value} !default;\n`;
+}
+
 function parseSassObject(sassObject, prefix) {
   for (var key in sassObject) {
     if (sassObject.hasOwnProperty(key)) {
-      var nestedName = prefix + '-' + key;
-      if (sassObject[key] !== null && typeof sassObject[key] === 'object') {
-        parseSassObject(sassObject[key], nestedName);
+
+      const nestedName = prefix + '-' + key;
+
+      if (sassObject[key] !== null) {
+        if (Array.isArray(sassObject[key])) {
+          buildProperty(nestedName, sassObject[key].join(' '))
+        } else if (typeof sassObject[key] === 'object') {
+          parseSassObject(sassObject[key], nestedName);
+        } else {
+          buildProperty(nestedName, sassObject[key]);
+        }
       } else {
-        scssResult += nestedName + ': ' + sassObject[key] + ' !default;\n';
+        buildProperty(nestedName, sassObject[key])
       }
     }
   }
 }
 
-var jsonTokens
-  = yamlParse.safeLoad(fs.readFileSync(path.resolve(__dirname, 'design-tokens.yaml'), 'utf8'));
+const prefix = '$sky';
+const yamlTokens = fs.readFileSync(path.resolve(__dirname, 'design-tokens.yaml'), 'utf8');
 
-var prefix = '$sky';
+if (yamlTokens.indexOf('\t') > -1) {
+  throw new Error(
+`Looks like your YAML file is using the "tab" key for spaces.
+This causes problems with the parsing library we use.  Please use spaces.
+`);
+}
 
-var scssResult = '';
+const jsonTokens = yamlParse.safeLoad(yamlTokens);
+let scssResult = '';
+
 parseSassObject(jsonTokens, prefix);
+console.log('Successfully built.');
 
 fs.outputFileSync(path.resolve(__dirname, '../dist/scss/variables.scss'), scssResult);
 fs.copySync(

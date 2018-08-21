@@ -47,6 +47,14 @@ size:
     lg:
       "min": &size-screen-lg-min "1200px"
 
+space:
+  default: &space-default "10px"
+  xxs: &space-xxs "3px"
+  xs: &space-xs "5px"
+  sm: &space-sm "8px"
+  md: &space-md "10px"
+  lg: &space-lg "15px"
+  xl: &space-xl "20px"
 
 # Decisions
 
@@ -86,3 +94,46 @@ screen:
   md-min: *size-screen-md-min
   md-max: *size-screen-md-max
   lg-min: *size-screen-lg-min
+
+padding:
+  even:
+    default:
+      - *space-md
+      - *space-md
+      - *space-md
+      - *space-md
+    small:
+      - *space-sm
+      - *space-sm
+      - *space-sm
+      - *space-sm
+    large:
+      - *space-lg
+      - *space-lg
+      - *space-lg
+      - *space-lg
+  squish:
+    default:
+      - *space-xs
+      - *space-md
+      - *space-xs
+      - *space-md
+    small:
+      - *space-xxs
+      - *space-sm
+      - *space-xxs
+      - *space-sm
+    large:
+      - *space-sm
+      - *space-lg
+      - *space-sm
+      - *space-lg
+
+margin:
+  inline:
+    default: *space-md
+    compact: *space-xxs
+  stacked:
+    default: *space-md
+    compact: *space-xs
+    separate: *space-xl
