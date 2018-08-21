@@ -1,3 +1,7 @@
+# 0.0.9 (2017-08-21)
+
+- Added values for viewport breakpoints and spacing. [#17](https://github.com/blackbaud/skyux-design-tokens/pull/17) [#19](https://github.com/blackbaud/skyux-design-tokens/pull/19)
+
 # 0.0.8 (2017-08-17)
 
   - Created styles for `icon-borderless` and `info-light`.
