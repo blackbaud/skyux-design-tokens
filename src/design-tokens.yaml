@@ -132,7 +132,7 @@ padding:
 margin:
   inline:
     default: *space-md
-    compact: *space-xxs
+    compact: *space-xs
   stacked:
     default: *space-md
     compact: *space-xs
