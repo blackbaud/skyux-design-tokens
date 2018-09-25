@@ -1,4 +1,8 @@
-# 0.0.9 (2017-08-21)
+# 0.0.10 (2018-09-25)
+
+- Reduced pixel value for "compact" margin size. [#21](https://github.com/blackbaud/skyux-design-tokens/pull/21)
+
+# 0.0.9 (2018-08-21)
 
 - Added values for viewport breakpoints and spacing. [#17](https://github.com/blackbaud/skyux-design-tokens/pull/17) [#19](https://github.com/blackbaud/skyux-design-tokens/pull/19)
 
