@@ -1,3 +1,7 @@
+# 3.0.0 (2018-09-25)
+
+- Initial major release.
+
 # 0.0.10 (2018-09-25)
 
 - Reduced pixel value for "compact" margin size. [#21](https://github.com/blackbaud/skyux-design-tokens/pull/21)
