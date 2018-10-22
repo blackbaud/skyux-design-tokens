@@ -1,12 +1,9 @@
 language: node_js
-node_js:
- - "6.10.3"
 
 git:
   depth: 10
 
 before_install:
-
   - npm set progress=false
   - chmod +x ./scripts/travis-script.sh
   - chmod +x ./scripts/travis-after-failure.sh
