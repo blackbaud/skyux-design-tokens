@@ -1,3 +1,7 @@
+# 0.0.11 (2019-01-04)
+
+- Updated primary text and anchor colors to pass a11y color contrast rule. [#24](https://github.com/blackbaud/skyux-design-tokens/pull/24)
+
 # 0.0.10 (2018-09-25)
 
 - Reduced pixel value for "compact" margin size. [#21](https://github.com/blackbaud/skyux-design-tokens/pull/21)
