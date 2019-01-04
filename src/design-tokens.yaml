@@ -11,12 +11,14 @@ color:
     "70": &color-gray-70 "#686c73"
     "80": &color-gray-80 "#4d525a"
     "90": &color-gray-90 "#393d44"
-    "100": &color-gray-100 "#212327"
+    "100": &color-gray-100 "#282b31"
+    "105": &color-gray-105 "#212327"
   blue:
     "10": &color-blue-10 "#c1e8fb"
     "30": &color-blue-30 "#81d4f7"
     "50": &color-blue-50 "#00b4f1"
-    "70": &color-blue-70 "#0974a1"
+    "70": &color-blue-70 "#007ca6"
+    "75": &color-blue-75 "#0974a1"
   green:
     "30": &color-green-30 "#b7da9b"
     "50": &color-green-50 "#71bf43"
