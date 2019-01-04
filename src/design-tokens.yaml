@@ -61,15 +61,15 @@ space:
 # Decisions
 
 text-color:
-  default: *color-gray-100
+  default: *color-gray-105
   deemphasized: *color-gray-70
   on-dark: *color-white
-  action-primary: *color-blue-70
+  action-primary: *color-blue-75
   icon-borderless: *color-gray-20
 
 background-color:
   neutral-light: *color-gray-05
-  primary-dark: *color-blue-70
+  primary-dark: *color-blue-75
   selected: *color-purple-10
   disabled: *color-gray-20
   info: *color-blue-30
