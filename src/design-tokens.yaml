@@ -78,6 +78,7 @@ background-color:
   warning: *color-yellow-30
   danger: *color-red-30
   danger-dark: *color-red-60
+  page-default: *color-white
 
 highlight-color:
   info: *color-blue-50
