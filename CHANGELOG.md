@@ -1,3 +1,7 @@
+# 0.0.12 (2019-05-20)
+
+- Added value for default body background color. [#25](https://github.com/blackbaud/skyux-design-tokens/pull/25)
+
 # 0.0.11 (2019-01-04)
 
 - Updated primary text and anchor colors to pass a11y color contrast rule. [#24](https://github.com/blackbaud/skyux-design-tokens/pull/24)
