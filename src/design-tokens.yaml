@@ -15,7 +15,9 @@ color:
     "105": &color-gray-105 "#212327"
   blue:
     "10": &color-blue-10 "#c1e8fb"
+    "15": &color-blue-15 "#bfecfb"
     "30": &color-blue-30 "#81d4f7"
+    "45": &color-blue-45 "#40c7f4"
     "50": &color-blue-50 "#00b4f1"
     "70": &color-blue-70 "#007ca6"
     "75": &color-blue-75 "#0974a1"
@@ -24,15 +26,21 @@ color:
     "50": &color-green-50 "#71bf43"
   yellow:
     "30": &color-yellow-30 "#ffd597"
+    "35": &color-yellow-35 "#fdd799"
     "50": &color-yellow-50 "#fbb034"
+  orange:
+    "50": &color-orange-50 "#fdd799"
   red:
     "30": &color-red-30 "#f7a08f"
+    "35": &color-red-35 "#ffa0a3"
     "50": &color-red-50 "#ef4044"
     "70": &color-red-60 "#d93a3d"
   purple:
     "10": &color-purple-10 "#f1eef6"
+    "30": &color-purple-30 "#c0add4"
     "50": &color-purple-50 "#936daf"
   teal:
+    "30": &color-teal-30 "#24dcc9"
     "50": &color-teal-50 "#00b795"
     "70": &color-teal-70 "#00866d"
 
@@ -79,7 +87,16 @@ background-color:
   danger: *color-red-30
   danger-dark: *color-red-60
   page-default: *color-white
-
+  
+container-color:
+  light-blue: *color-blue-15
+  teal: *color-teal-30
+  purple: *color-purple-30
+  orange: *color-orange-50
+  blue: *color-blue-45
+  yellow: *color-yellow-35
+  red: *color-red-35
+  
 highlight-color:
   info: *color-blue-50
   success: *color-green-50
