@@ -29,7 +29,7 @@ color:
     "35": &color-yellow-35 "#fdd799"
     "50": &color-yellow-50 "#fbb034"
   orange:
-    "50": &color-orange-50 "#fdd799"
+    "50": &color-orange-50 "#f9ba90"
   red:
     "30": &color-red-30 "#f7a08f"
     "35": &color-red-35 "#ffa0a3"
@@ -37,7 +37,7 @@ color:
     "70": &color-red-60 "#d93a3d"
   purple:
     "10": &color-purple-10 "#f1eef6"
-    "30": &color-purple-30 "#c0add4"
+    "30": &color-purple-30 "#c9b6d7"
     "50": &color-purple-50 "#936daf"
   teal:
     "30": &color-teal-30 "#24dcc9"
