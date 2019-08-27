@@ -15,32 +15,37 @@ color:
     "105": &color-gray-105 "#212327"
   blue:
     "10": &color-blue-10 "#c1e8fb"
-    "15": &color-blue-15 "#bfecfb"
     "30": &color-blue-30 "#81d4f7"
-    "45": &color-blue-45 "#40c7f4"
     "50": &color-blue-50 "#00b4f1"
     "70": &color-blue-70 "#007ca6"
     "75": &color-blue-75 "#0974a1"
+  blackbaud-sky-blue:
+    "20": &color-blackbaud-sky-blue-20 "#bfecfb"
+    "40": &color-blackbaud-sky-blue-40 "#40c7f4"
   green:
     "30": &color-green-30 "#b7da9b"
     "50": &color-green-50 "#71bf43"
+  blackbaud-green:
+    "30": &color-blackbaud-green-30 "#80dbca"
   yellow:
     "30": &color-yellow-30 "#ffd597"
-    "35": &color-yellow-35 "#fdd799"
     "50": &color-yellow-50 "#fbb034"
-  orange:
-    "50": &color-orange-50 "#f9ba90"
+  blackbaud-yellow:
+    "30": &color-blackbaud-yellow-30 "#fdd799"
+  blackbaud-orange:
+    "30": &color-blackbaud-orange-30 "#f9ba90"
   red:
     "30": &color-red-30 "#f7a08f"
-    "35": &color-red-35 "#ffa0a3"
     "50": &color-red-50 "#ef4044"
     "70": &color-red-60 "#d93a3d"
+  blackbaud-red:
+    "30": &color-blackbaud-red-30 "#f7a0a1"
   purple:
     "10": &color-purple-10 "#f1eef6"
-    "30": &color-purple-30 "#c9b6d7"
     "50": &color-purple-50 "#936daf"
+  blackbaud-purple:
+    "30": &color-blackbaud-purple "#c9b6d7"
   teal:
-    "30": &color-teal-30 "#24dcc9"
     "50": &color-teal-50 "#00b795"
     "70": &color-teal-70 "#00866d"
 
@@ -88,14 +93,14 @@ background-color:
   danger-dark: *color-red-60
   page-default: *color-white
   
-container-color:
-  light-blue: *color-blue-15
-  teal: *color-teal-30
-  purple: *color-purple-30
-  orange: *color-orange-50
-  blue: *color-blue-45
-  yellow: *color-yellow-35
-  red: *color-red-35
+category-color:
+  light-blue: *color-blackbaud-sky-blue-20
+  teal: *color-blackbaud-green-30
+  purple: *color-blackbaud-purple
+  orange: *color-blackbaud-orange-30
+  blue: *color-blackbaud-sky-blue-40
+  yellow: *color-blackbaud-yellow-30
+  red: *color-blackbaud-red-30
   
 highlight-color:
   info: *color-blue-50
