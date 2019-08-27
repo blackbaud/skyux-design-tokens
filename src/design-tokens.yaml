@@ -19,35 +19,36 @@ color:
     "50": &color-blue-50 "#00b4f1"
     "70": &color-blue-70 "#007ca6"
     "75": &color-blue-75 "#0974a1"
-  blackbaud-sky-blue:
-    "20": &color-blackbaud-sky-blue-20 "#bfecfb"
-    "40": &color-blackbaud-sky-blue-40 "#40c7f4"
   green:
     "30": &color-green-30 "#b7da9b"
     "50": &color-green-50 "#71bf43"
-  blackbaud-green:
-    "30": &color-blackbaud-green-30 "#80dbca"
   yellow:
     "30": &color-yellow-30 "#ffd597"
     "50": &color-yellow-50 "#fbb034"
-  blackbaud-yellow:
-    "30": &color-blackbaud-yellow-30 "#fdd799"
-  blackbaud-orange:
-    "30": &color-blackbaud-orange-30 "#f9ba90"
   red:
     "30": &color-red-30 "#f7a08f"
     "50": &color-red-50 "#ef4044"
     "70": &color-red-60 "#d93a3d"
-  blackbaud-red:
-    "30": &color-blackbaud-red-30 "#f7a0a1"
   purple:
     "10": &color-purple-10 "#f1eef6"
     "50": &color-purple-50 "#936daf"
-  blackbaud-purple:
-    "30": &color-blackbaud-purple "#c9b6d7"
   teal:
     "50": &color-teal-50 "#00b795"
     "70": &color-teal-70 "#00866d"
+  blackbaud:
+    sky-blue:
+      "20": &color-blackbaud-sky-blue-20 "#bfecfb"
+      "40": &color-blackbaud-sky-blue-40 "#40c7f4"
+    green:
+      "30": &color-blackbaud-green-30 "#80dbca"
+    yellow:
+      "30": &color-blackbaud-yellow-30 "#fdd799"
+    orange:
+      "30": &color-blackbaud-orange-30 "#f9ba90"
+    red:
+      "30": &color-blackbaud-red-30 "#f7a0a1"
+    purple:
+      "30": &color-blackbaud-purple "#c9b6d7"
 
 size:
   screen:
