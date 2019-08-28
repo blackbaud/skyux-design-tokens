@@ -21,7 +21,7 @@ color:
     "75": &color-blue-75 "#0974a1" 
   green:
     "30": &color-green-30 "#b7da9b"
-    "50": &color-green-50 "#71bf43"
+    "50": &color-green-50 "#72bf44"
   yellow:
     "30": &color-yellow-30 "#ffd597"
     "50": &color-yellow-50 "#fbb034"
