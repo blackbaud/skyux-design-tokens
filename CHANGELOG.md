@@ -1,3 +1,7 @@
+# 0.0.13 (2019-10-07)
+
+- Added color values to represent various categories. [#26](https://github.com/blackbaud/skyux-design-tokens/pull/26)
+
 # 0.0.12 (2019-05-20)
 
 - Added value for default body background color. [#25](https://github.com/blackbaud/skyux-design-tokens/pull/25)
