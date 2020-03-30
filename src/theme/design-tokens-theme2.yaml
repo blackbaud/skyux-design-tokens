@@ -1,0 +1,180 @@
+# Choices
+
+color:
+  gray:
+    "005": &color-gray-005 "#fcfcfc"
+    "07": &color-gray-07 "#ededee"
+    "15": &color-gray-15 "#d2d2d2"
+  blue:
+    "74": &color-blue-74 "#1870B8"
+  
+space:
+  xs: &space-xs "5px"
+  sm: &space-sm "10px"
+  md: &space-md "15px"
+  lg: &space-lg "20px"
+  xl: &space-xl "30px"
+  xxl: &space-xxl "60px"
+
+text:
+  size:
+    "100": &text-size-100 "12px"
+    "125": &text-size-125 "13px"
+    "150": &text-size-150 "14px"
+    "200": &text-size-200 "16px"
+    "250": &text-size-250 "18px"
+    "300": &text-size-300 "20px"
+    "400": &text-size-400 "24px"
+    "500": &text-size-500 "28px"
+    "600": &text-size-600 "32px"
+    "800": &text-size-800 "48px"
+  weight:
+    "300": &text-weight-300 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-light.woff"
+    "400": &text-weight-400 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans.woff"
+    "600": &text-weight-600 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-semi-bold.woff"
+    "700": &text-weight-700 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
+  style:
+    italic: &text-italic "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
+
+shadow:
+  border: &shadow-border "1px solid #d2d2d2"
+  color: &shadow-color "rgba(0, 0, 0, 0.3)"
+  size:
+    "1": &shadow-size-1 "0px 1px 3px 0px"
+    "3": &shadow-size-3 "0px 1px 8px 0px"
+    "4": &shadow-size-4 "0px 1px 12px 0px"
+    "8": &shadow-size-8 "0px 2px 15px 2px"
+    "16": &shadow-size-16 "0px 3px 25px 2px"
+    "24": &shadow-size-24 "0px 7px 27px 3px"
+
+# Decisions
+
+text-color:
+  action-primary: *color-blue-74
+
+background-color:
+  neutral-light: *color-gray-005
+  primary-dark: *color-blue-74
+  disabled: *color-gray-15
+  page-default: *color-gray-005
+
+border-color:
+  neutral-light: *color-gray-07
+  neutral-medium: *color-gray-15
+
+padding:
+  even:
+    sm:
+      - *space-sm
+      - *space-sm
+      - *space-sm
+      - *space-sm
+    md:
+      - *space-md
+      - *space-md
+      - *space-md
+      - *space-md
+    lg:
+      - *space-lg
+      - *space-lg
+      - *space-lg
+      - *space-lg
+    xl:
+      - *space-xl
+      - *space-xl
+      - *space-xl
+      - *space-xl
+
+margin:
+  inline:
+    sm: *space-xs
+    md: *space-sm
+    lg: *space-xl
+    xl: *space-xxl
+  stacked:
+    sm: *space-xs
+    md: *space-md
+    lg: *space-lg
+    xl: *space-xl
+    xxl: *space-xxl
+
+font:
+  body:
+    default:
+      size: *text-size-200
+      weight: *text-weight-400
+    sm:
+      size: *text-size-125
+      weight: *text-weight-400
+    lg:
+      size: *text-size-250
+      weight: *text-weight-300
+  display:
+    "1":
+      size: *text-size-800
+      weight: *text-weight-400
+    "2":
+      size: *text-size-500
+      weight: *text-weight-400
+    "3":
+      size: *text-size-300
+      weight: *text-weight-300
+  heading:
+    "1":
+      size: *text-size-600
+      weight: *text-weight-300
+    "2":
+      size: *text-size-400
+      weight: *text-weight-400
+    "3":
+      size: *text-size-300
+      weight: *text-weight-300
+    "4":
+      size: *text-size-200
+      weight: *text-weight-400
+      color: *color-gray-70
+      transform: "uppercase"
+    "5":
+      size: *text-size-150
+      weight: *text-weight-400
+      color: *color-gray-70
+      transform: "uppercase"
+  paragraph:
+    line-height: "1.5"
+  emphasized:
+    weight: *text-weight-700
+  deemphasized:
+    color: *color-gray-70
+    style: *text-italic
+  field:
+    label:
+      size: *text-size-200
+      weight: *text-weight-400
+      color: *color-gray-70
+  
+  box:
+    sub-card:
+      border: *shadow-border
+    alert:
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-1
+    card:
+      border: *shadow-border
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-1
+    scroll-box:
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-3
+    popover:
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-4
+    flyout:
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-8
+    modal:
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-16
+    toast:
+      shadow-color: *shadow-color
+      shadow-size: *shadow-size-24
+  
