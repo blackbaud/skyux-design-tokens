@@ -128,7 +128,7 @@ font:
       weight: *text-weight-400
     "3":
       size: *text-size-300
-      weight: *text-weight-300
+      weight: *text-weight-400
     "4":
       size: *text-size-200
       weight: *text-weight-400
