@@ -144,6 +144,7 @@ font:
   emphasized:
     weight: *text-weight-700
   deemphasized:
+    size: &text-size-150
     color: *color-gray-70
     style: *text-italic
   field:
