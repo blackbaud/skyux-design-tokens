@@ -87,12 +87,12 @@ padding:
 
 margin:
   inline:
-    sm: *space-xs
-    md: *space-sm
-    lg: *space-xl
-    xl: *space-xxl
+    xs: *space-xs
+    sm: *space-sm
+    xl: *space-xl
+    xxl: *space-xxl
   stacked:
-    sm: *space-xs
+    xs: *space-xs
     md: *space-md
     lg: *space-lg
     xl: *space-xl
