@@ -34,7 +34,9 @@ text:
     "600": &text-weight-600 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-semi-bold.woff"
     "700": &text-weight-700 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
   style:
+    emphasized: *text-weight-700
     italic: &text-italic "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
+    uppercase: &text-uppercase "uppercase"
 
 shadow:
   border: &shadow-border "1px solid #d2d2d2"
@@ -136,16 +138,14 @@ font:
       size: *text-size-200
       weight: *text-weight-400
       color: *color-gray-70
-      transform: "uppercase"
+      transform: *text-uppercase
     "5":
       size: *text-size-150
       weight: *text-weight-400
       color: *color-gray-70
-      transform: "uppercase"
+      transform: *text-uppercase
   paragraph:
     line-height: "1.5"
-  emphasized:
-    weight: *text-weight-700
   deemphasized:
     size: &text-size-150
     color: *color-gray-70
