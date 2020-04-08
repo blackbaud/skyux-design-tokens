@@ -1,3 +1,7 @@
+# 0.0.14 (2020-04-08)
+
+- Added "modern" theme. [#32](https://github.com/blackbaud/skyux-design-tokens/pull/32)
+
 # 0.0.13 (2019-10-07)
 
 - Added color values to represent various categories. [#26](https://github.com/blackbaud/skyux-design-tokens/pull/26)
