@@ -5,9 +5,10 @@ color:
     "005": &color-gray-005 "#fcfcfc"
     "07": &color-gray-07 "#ededee"
     "15": &color-gray-15 "#d2d2d2"
+    "70": &color-gray-70 "#686c73"
   blue:
     "74": &color-blue-74 "#1870B8"
-  
+
 space:
   xs: &space-xs "5px"
   sm: &space-sm "10px"
@@ -147,7 +148,7 @@ font:
   paragraph:
     line-height: "1.5"
   deemphasized:
-    size: &text-size-150
+    size: *text-size-150
     color: *color-gray-70
     style: *text-italic
   field:
@@ -155,7 +156,7 @@ font:
       size: *text-size-200
       weight: *text-weight-400
       color: *color-gray-70
-  
+
   box:
     sub-card:
       border: *shadow-border
@@ -181,4 +182,3 @@ font:
     toast:
       shadow-color: *shadow-color
       shadow-size: *shadow-size-24
-  
