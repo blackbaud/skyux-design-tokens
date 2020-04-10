@@ -1,3 +1,7 @@
+# 0.0.15 (2020-04-10)
+
+- Adjusted modern theme tokens. [#35](https://github.com/blackbaud/skyux-design-tokens/pull/35)
+
 # 0.0.14 (2020-04-08)
 
 - Added "modern" theme. [#32](https://github.com/blackbaud/skyux-design-tokens/pull/32)
