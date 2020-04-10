@@ -30,13 +30,22 @@ text:
     "600": &text-size-600 "32px"
     "800": &text-size-800 "48px"
   weight:
-    "300": &text-weight-300 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-light.woff"
-    "400": &text-weight-400 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans.woff"
-    "600": &text-weight-600 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-semi-bold.woff"
-    "700": &text-weight-700 "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
+    light: 
+      file: &text-weight-light-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-light.woff"
+      value: &text-weight-light-value "300"
+    regular: 
+      file: &text-weight-regular-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans.woff"
+      value: &text-weight-regular-value "400"
+    semibold: 
+      file: &text-weight-semibold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-semi-bold.woff"
+      value: &text-weight-semibold-value "600"
+    bold: 
+      file: &text-weight-bold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
+      value: &text-weight-bold-value "700"
   style:
-    emphasized: *text-weight-700
-    italic: &text-italic "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
+    italic: 
+      file: &text-italic-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
+      value: &text-italic-value "italic"
     uppercase: &text-uppercase "uppercase"
 
 shadow:
@@ -87,6 +96,17 @@ padding:
       - *space-xl
       - *space-xl
       - *space-xl
+  v:
+    md:
+      - *space-md
+      - "0"
+      - *space-md
+      - "0"
+    lg:
+      - *space-lg
+      - "0"
+      - *space-lg
+      - "0"
 
 margin:
   inline:
@@ -105,44 +125,44 @@ font:
   body:
     default:
       size: *text-size-200
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     sm:
       size: *text-size-125
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     lg:
       size: *text-size-250
-      weight: *text-weight-300
+      weight: *text-weight-light-value
   display:
     "1":
       size: *text-size-800
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     "2":
       size: *text-size-500
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     "3":
       size: *text-size-300
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     "4":
       size: *text-size-200
-      weight: *text-weight-700
+      weight: *text-weight-bold-value
   heading:
     "1":
       size: *text-size-600
-      weight: *text-weight-300
+      weight: *text-weight-light-value
     "2":
       size: *text-size-400
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     "3":
       size: *text-size-300
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
     "4":
       size: *text-size-200
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
       color: *color-gray-70
       transform: *text-uppercase
     "5":
       size: *text-size-150
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
       color: *color-gray-70
       transform: *text-uppercase
   paragraph:
@@ -150,35 +170,37 @@ font:
   deemphasized:
     size: *text-size-150
     color: *color-gray-70
-    style: *text-italic
+    style: *text-italic-value
+  emphasized:
+    weight: *text-weight-bold-value
   field:
     label:
       size: *text-size-200
-      weight: *text-weight-400
+      weight: *text-weight-regular-value
       color: *color-gray-70
 
-  box:
-    sub-card:
-      border: *shadow-border
-    alert:
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-1
-    card:
-      border: *shadow-border
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-1
-    scroll-box:
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-3
-    popover:
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-4
-    flyout:
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-8
-    modal:
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-16
-    toast:
-      shadow-color: *shadow-color
-      shadow-size: *shadow-size-24
+elevation:
+  0-bordered:
+    border: *shadow-border
+  "1":
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-1
+  1-bordered:
+    border: *shadow-border
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-1
+  "3":
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-3
+  "4":
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-4
+  "8":
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-8
+  "16":
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-16
+  "24":
+    shadow-color: *shadow-color
+    shadow-size: *shadow-size-24
