@@ -72,6 +72,37 @@ space:
   lg: &space-lg "15px"
   xl: &space-xl "20px"
 
+text:
+  size:
+    "100": &text-size-100 "12px"
+    "125": &text-size-125 "13px"
+    "150": &text-size-150 "14px"
+    "200": &text-size-200 "16px"
+    "250": &text-size-250 "18px"
+    "300": &text-size-300 "20px"
+    "400": &text-size-400 "24px"
+    "500": &text-size-500 "28px"
+    "600": &text-size-600 "32px"
+    "800": &text-size-800 "48px"
+  weight:
+    light: 
+      file: &text-weight-light-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-light.woff"
+      value: &text-weight-light-value "300"
+    regular: 
+      file: &text-weight-regular-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans.woff"
+      value: &text-weight-regular-value "400"
+    semibold: 
+      file: &text-weight-semibold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-semi-bold.woff"
+      value: &text-weight-semibold-value "600"
+    bold: 
+      file: &text-weight-bold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
+      value: &text-weight-bold-value "700"
+  style:
+    italic: 
+      file: &text-italic-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
+      value: &text-italic-value "italic"
+    uppercase: &text-uppercase "uppercase"
+
 # Decisions
 
 text-color:
