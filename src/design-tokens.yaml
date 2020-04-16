@@ -85,6 +85,9 @@ text:
     "600": &text-size-600 "32px"
     "800": &text-size-800 "48px"
   weight:
+    thin:
+      file: &text-weight-thin-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-thin.woff"
+      value: &text-weight-thin-value "100"
     light: 
       file: &text-weight-light-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-light.woff"
       value: &text-weight-light-value "300"
@@ -97,6 +100,13 @@ text:
     bold: 
       file: &text-weight-bold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
       value: &text-weight-bold-value "700"
+    condensed:
+      light:
+        file: &text-weight-condensed-light-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-condensed-light.woff"
+        value: &text-weight-condensed-light-value "300"
+      semibold:
+        file: &text-weight-condensed-semibold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-condensed-semi-bold.woff"
+        value: &text-weight-condensed-semibold-value "600"
   style:
     italic: 
       file: &text-italic-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
