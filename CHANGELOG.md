@@ -1,3 +1,7 @@
+# 0.0.16 (2020-04-16)
+
+- Moved text tokens to the default theme. [#37](https://github.com/blackbaud/skyux-design-tokens/pull/37)
+
 # 0.0.15 (2020-04-10)
 
 - Adjusted modern theme tokens. [#35](https://github.com/blackbaud/skyux-design-tokens/pull/35)
