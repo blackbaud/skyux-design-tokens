@@ -30,16 +30,16 @@ text:
     "600": &text-size-600 "32px"
     "800": &text-size-800 "48px"
   weight:
-    light: 
+    light:
       value: &text-weight-light-value "300"
-    regular: 
+    regular:
       value: &text-weight-regular-value "400"
-    semibold: 
+    semibold:
       value: &text-weight-semibold-value "600"
-    bold: 
+    bold:
       value: &text-weight-bold-value "700"
   style:
-    italic: 
+    italic:
       value: &text-italic-value "italic"
     uppercase: &text-uppercase "uppercase"
 
@@ -53,6 +53,10 @@ shadow:
     "8": &shadow-size-8 "0px 2px 15px 2px"
     "16": &shadow-size-16 "0px 3px 25px 2px"
     "24": &shadow-size-24 "0px 7px 27px 3px"
+
+border:
+  radius:
+    md: &border-radius-md "6px"
 
 # Decisions
 
@@ -211,3 +215,7 @@ elevation:
   "24":
     shadow-color: *shadow-color
     shadow-size: *shadow-size-24
+
+box:
+  border-radius:
+    default: *border-radius-md
