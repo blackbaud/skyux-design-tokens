@@ -205,4 +205,5 @@ elevation:
     shadow-size: *shadow-size-24
 
 box:
-  border-radius: *border-radius-md
+  border-radius:
+    default: *border-radius-md
