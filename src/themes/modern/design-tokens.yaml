@@ -106,6 +106,17 @@ padding:
       - "0"
       - *space-lg
       - "0"
+  h:
+    sm:
+      - "0"
+      - *space-sm
+      - "0"
+      - *space-sm
+    xl:
+      - "0"
+      - *space-xl
+      - "0"
+      - *space-xl
 
 margin:
   inline:
@@ -168,6 +179,7 @@ font:
     line-height: "1.5"
   deemphasized:
     size: *text-size-150
+    weight: *text-weight-regular-value
     color: *color-gray-70
     style: *text-italic-value
   emphasized:
