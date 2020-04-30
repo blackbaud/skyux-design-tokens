@@ -1,3 +1,8 @@
+# 0.0.17 (2020-04-30)
+
+- Added horizontal padding tokens and de-emphasized text weight to the modern theme. [#39](https://github.com/blackbaud/skyux-design-tokens/pull/39)
+- Added a border radius token for the SKY UX box element to the modern theme. [#40](https://github.com/blackbaud/skyux-design-tokens/pull/40)
+
 # 0.0.16 (2020-04-16)
 
 - Moved text tokens to the default theme. [#37](https://github.com/blackbaud/skyux-design-tokens/pull/37)
