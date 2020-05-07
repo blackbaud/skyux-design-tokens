@@ -65,6 +65,7 @@ text-color:
 
 background-color:
   neutral-light: *color-gray-005
+  neutral-medium: *color-gray-07
   primary-dark: *color-blue-74
   disabled: *color-gray-15
   page-default: *color-gray-005
