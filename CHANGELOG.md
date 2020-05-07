@@ -1,3 +1,7 @@
+# 0.0.18 (2020-0507)
+
+- Added a medium gray background color to the modern theme. [#42](https://github.com/blackbaud/skyux-design-tokens/pull/42)
+
 # 0.0.17 (2020-04-30)
 
 - Added horizontal padding tokens and de-emphasized text weight to the modern theme. [#39](https://github.com/blackbaud/skyux-design-tokens/pull/39)
