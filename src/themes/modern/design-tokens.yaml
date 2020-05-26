@@ -226,13 +226,14 @@ box:
 
 # Decisions (dark mode)
 
-mode-dark:
-  background-color:
-    page-default: *color-gray-95
+mode:
+  dark:
+    background-color:
+      page-default: *color-gray-95
 
-  font:
-    body:
-      default:
-        color: *color-gray-003
-      deemphasized:
-        color: *color-gray-30
+    font:
+      body:
+        default:
+          color: *color-gray-003
+        deemphasized:
+          color: *color-gray-30
