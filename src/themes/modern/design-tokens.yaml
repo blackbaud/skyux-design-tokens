@@ -2,10 +2,13 @@
 
 color:
   gray:
+    "003": &color-gray-003 "#fbfcfe"
     "005": &color-gray-005 "#fcfcfc"
     "07": &color-gray-07 "#ededee"
     "15": &color-gray-15 "#d2d2d2"
+    "30": &color-gray-30 "#c0c2c5"
     "70": &color-gray-70 "#686c73"
+    "95": &color-gray-95 "#121212"
   blue:
     "74": &color-blue-74 "#1870B8"
 
@@ -220,3 +223,16 @@ elevation:
 box:
   border-radius:
     default: *border-radius-md
+
+# Decisions (dark mode)
+
+mode-dark:
+  background-color:
+    page-default: *color-gray-95
+
+  font:
+    body:
+      default:
+        color: *color-gray-003
+      deemphasized:
+        color: *color-gray-30
