@@ -1,4 +1,8 @@
-# 0.0.18 (2020-0507)
+# 0.0.19 (2020-05-27)
+
+- Added colors for dark mode. [#44](https://github.com/blackbaud/skyux-design-tokens/pull/44)
+
+# 0.0.18 (2020-05-07)
 
 - Added a medium gray background color to the modern theme. [#42](https://github.com/blackbaud/skyux-design-tokens/pull/42)
 
