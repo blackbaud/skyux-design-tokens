@@ -8,7 +8,7 @@ color:
     "15": &color-gray-15 "#d2d2d2"
     "30": &color-gray-30 "#c0c2c5"
     "70": &color-gray-70 "#686c73"
-    "95": &color-gray-95 "#121212"
+    "115": &color-gray-115 "#121212"
   blue:
     "74": &color-blue-74 "#1870B8"
 
@@ -229,11 +229,11 @@ box:
 mode:
   dark:
     background-color:
-      page-default: *color-gray-95
+      page-default: *color-gray-115
 
     font:
       body:
         default:
           color: *color-gray-003
-        deemphasized:
-          color: *color-gray-30
+      deemphasized:
+        color: *color-gray-30
