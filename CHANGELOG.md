@@ -1,3 +1,7 @@
+# 0.0.20 (2020-06-03)
+
+- Added button padding tokens to the modern theme. [#45](https://github.com/blackbaud/skyux-design-tokens/pull/45)
+
 # 0.0.19 (2020-05-27)
 
 - Added colors for dark mode. [#44](https://github.com/blackbaud/skyux-design-tokens/pull/44)

@@ -121,6 +121,14 @@ padding:
       - *space-xl
       - "0"
       - *space-xl
+  button:
+    standard:
+      - "8px"
+      - "20px"
+    icon:
+      - "8px"
+      - "14px"
+
 
 margin:
   inline:
