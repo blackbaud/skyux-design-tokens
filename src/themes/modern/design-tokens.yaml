@@ -116,6 +116,11 @@ padding:
       - *space-sm
       - "0"
       - *space-sm
+    md:
+      - "0"
+      - *space-md
+      - "0"
+      - *space-md
     xl:
       - "0"
       - *space-xl
@@ -196,7 +201,7 @@ font:
     style: *text-italic-value
   emphasized:
     weight: *text-weight-bold-value
-  field:
+  data:
     label:
       size: *text-size-200
       weight: *text-weight-regular-value
