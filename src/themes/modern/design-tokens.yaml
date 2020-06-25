@@ -139,6 +139,7 @@ margin:
   inline:
     xs: *space-xs
     sm: *space-sm
+    lg: *space-lg
     xl: *space-xl
     xxl: *space-xxl
   stacked:
