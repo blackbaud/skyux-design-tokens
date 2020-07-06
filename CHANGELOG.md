@@ -1,3 +1,9 @@
+# 0.0.21 (2020-07-06)
+
+- Renamed the modern theme `field-` tokens to `data-`. [#46](https://github.com/blackbaud/skyux-design-tokens/pull/46)
+- Added medium horizontal padding tokens to the modern theme. [#46](https://github.com/blackbaud/skyux-design-tokens/pull/46)
+- Added a large inline margin token to the modern theme. [#47](https://github.com/blackbaud/skyux-design-tokens/pull/47)
+
 # 0.0.20 (2020-06-03)
 
 - Added button padding tokens to the modern theme. [#45](https://github.com/blackbaud/skyux-design-tokens/pull/45)
