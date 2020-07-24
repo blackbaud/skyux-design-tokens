@@ -250,9 +250,12 @@ mode:
       page-default: *color-gray-115
       primary-dark: *color-blue-60
       elevation:
-        a: *color-gray-110
-        b: *color-gray-103
-        c: *color-gray-102
+        "1": *color-gray-110
+        "3": *color-gray-103
+        "4": *color-gray-102
+        "8": *color-gray-103
+        "16": *color-gray-103
+        "24": *color-gray-102
 
     border-color:
       neutral-medium: *color-gray-70
