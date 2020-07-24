@@ -270,3 +270,4 @@ mode:
     elevation:
       0-bordered:
         border: *color-gray-70
+        
