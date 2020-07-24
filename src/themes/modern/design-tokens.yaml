@@ -248,10 +248,17 @@ mode:
   dark:
     background-color:
       page-default: *color-gray-115
+      primary-dark: *color-blue-60
       elevation:
         a: *color-gray-110
         b: *color-gray-103
         c: *color-gray-102
+
+    border-color:
+      neutral-medium: *color-gray-70
+
+    text-color:
+      action-primary: *color-blue-60
 
     font:
       body:
