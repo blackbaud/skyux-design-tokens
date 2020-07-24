@@ -266,3 +266,7 @@ mode:
           color: *color-gray-003
       deemphasized:
         color: *color-gray-30
+
+    elevation:
+      0-bordered:
+        border: *color-gray-70
