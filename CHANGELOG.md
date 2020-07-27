@@ -1,3 +1,7 @@
+# 0.0.22 (2020-07-27)
+
+- Added dark mode colors to the modern theme. [#51](https://github.com/blackbaud/skyux-design-tokens/pull/51)
+
 # 0.0.21 (2020-07-06)
 
 - Renamed the modern theme `field-` tokens to `data-`. [#46](https://github.com/blackbaud/skyux-design-tokens/pull/46)
