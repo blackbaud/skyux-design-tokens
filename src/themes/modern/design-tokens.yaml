@@ -8,8 +8,12 @@ color:
     "15": &color-gray-15 "#d2d2d2"
     "30": &color-gray-30 "#c0c2c5"
     "70": &color-gray-70 "#686c73"
+    "102": &color-gray-102 "#27292c"
+    "103": &color-gray-103 "#232427"
+    "110": &color-gray-110 "#1c1d1f"
     "115": &color-gray-115 "#121212"
   blue:
+    "60": &color-blue-60 "#009cd1"
     "74": &color-blue-74 "#1870B8"
 
 space:
@@ -244,6 +248,20 @@ mode:
   dark:
     background-color:
       page-default: *color-gray-115
+      primary-dark: *color-blue-60
+      elevation:
+        "1": *color-gray-110
+        "3": *color-gray-103
+        "4": *color-gray-102
+        "8": *color-gray-103
+        "16": *color-gray-103
+        "24": *color-gray-102
+
+    border-color:
+      neutral-medium: *color-gray-70
+
+    text-color:
+      action-primary: *color-blue-60
 
     font:
       body:
@@ -251,3 +269,8 @@ mode:
           color: *color-gray-003
       deemphasized:
         color: *color-gray-30
+
+    elevation:
+      0-bordered:
+        border: *color-gray-70
+        
