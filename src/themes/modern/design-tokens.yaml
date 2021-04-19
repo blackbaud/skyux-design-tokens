@@ -80,6 +80,7 @@ background-color:
 border-color:
   neutral-light: *color-gray-07
   neutral-medium: *color-gray-15
+  primary-dark: *color-blue-74
 
 padding:
   even:
@@ -143,11 +144,13 @@ margin:
   inline:
     xs: *space-xs
     sm: *space-sm
+    md: *space-md
     lg: *space-lg
     xl: *space-xl
     xxl: *space-xxl
   stacked:
     xs: *space-xs
+    sm: *space-sm
     md: *space-md
     lg: *space-lg
     xl: *space-xl
