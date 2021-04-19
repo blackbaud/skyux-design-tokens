@@ -1,3 +1,7 @@
+# 0.0.23 (2021-04-19)
+
+- Added spacing classes and primary action border color to the modern theme. [#54](https://github.com/blackbaud/skyux-design-tokens/pull/54)
+
 # 0.0.22 (2020-07-27)
 
 - Added dark mode colors to the modern theme. [#51](https://github.com/blackbaud/skyux-design-tokens/pull/51)
