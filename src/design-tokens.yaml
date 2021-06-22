@@ -18,7 +18,7 @@ color:
     "30": &color-blue-30 "#81d4f7"
     "50": &color-blue-50 "#00b4f1"
     "70": &color-blue-70 "#007ca6"
-    "75": &color-blue-75 "#0974a1" 
+    "75": &color-blue-75 "#0974a1"
   green:
     "30": &color-green-30 "#b7da9b"
     "50": &color-green-50 "#72bf44"
@@ -86,30 +86,30 @@ text:
     "800": &text-size-800 "48px"
   weight:
     thin:
-      file: &text-weight-thin-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-thin.woff"
+      file: &text-weight-thin-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Thin.woff"
       value: &text-weight-thin-value "100"
-    light: 
-      file: &text-weight-light-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-light.woff"
+    light:
+      file: &text-weight-light-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Light.woff"
       value: &text-weight-light-value "300"
-    regular: 
-      file: &text-weight-regular-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans.woff"
+    regular:
+      file: &text-weight-regular-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff"
       value: &text-weight-regular-value "400"
-    semibold: 
-      file: &text-weight-semibold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-semi-bold.woff"
+    semibold:
+      file: &text-weight-semibold-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Semibold.woff"
       value: &text-weight-semibold-value "600"
-    bold: 
-      file: &text-weight-bold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-bold.woff"
+    bold:
+      file: &text-weight-bold-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Bold.woff"
       value: &text-weight-bold-value "700"
     condensed:
       light:
-        file: &text-weight-condensed-light-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-condensed-light.woff"
+        file: &text-weight-condensed-light-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-CondLight.woff"
         value: &text-weight-condensed-light-value "300"
       semibold:
-        file: &text-weight-condensed-semibold-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-condensed-semi-bold.woff"
+        file: &text-weight-condensed-semibold-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-CondSemibold.woff"
         value: &text-weight-condensed-semibold-value "600"
   style:
-    italic: 
-      file: &text-italic-file "https://sky.blackbaudcdn.net/skyux-fonts/1.0.1/blackbaud-sans-italic.woff"
+    italic:
+      file: &text-italic-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff"
       value: &text-italic-value "italic"
     uppercase: &text-uppercase "uppercase"
 
@@ -134,7 +134,7 @@ background-color:
   danger: *color-red-30
   danger-dark: *color-red-60
   page-default: *color-white
-  
+
 category-color:
   light-blue: *color-blackbaud-sky-blue-20
   teal: *color-blackbaud-green-30
@@ -143,7 +143,7 @@ category-color:
   blue: *color-blackbaud-sky-blue-40
   yellow: *color-blackbaud-yellow-30
   red: *color-blackbaud-red-30
-  
+
 highlight-color:
   info: *color-blue-50
   success: *color-green-50
