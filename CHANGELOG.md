@@ -1,3 +1,7 @@
+# 0.0.24 (2021-06-23)
+
+- Updated font URLs to point to the renamed BLKB Sans font. [#56](https://github.com/blackbaud/skyux-design-tokens/pull/56)
+
 # 0.0.23 (2021-04-19)
 
 - Added spacing classes and primary action border color to the modern theme. [#54](https://github.com/blackbaud/skyux-design-tokens/pull/54)
