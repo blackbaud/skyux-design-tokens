@@ -11,6 +11,7 @@
   "devDependencies": {
     "fs-extra": "7.0.0",
     "js-yaml": "3.13.1",
+    "prettier": "2.6.2",
     "rimraf": "2.6.2"
   },
   "repository": {

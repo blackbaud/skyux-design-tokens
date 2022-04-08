@@ -2,68 +2,68 @@
 
 color:
   gray:
-    "003": &color-gray-003 "#fbfcfe"
-    "005": &color-gray-005 "#fcfcfc"
-    "07": &color-gray-07 "#ededee"
-    "15": &color-gray-15 "#d2d2d2"
-    "30": &color-gray-30 "#c0c2c5"
-    "70": &color-gray-70 "#686c73"
-    "102": &color-gray-102 "#27292c"
-    "103": &color-gray-103 "#232427"
-    "110": &color-gray-110 "#1c1d1f"
-    "115": &color-gray-115 "#121212"
+    '003': &color-gray-003 '#fbfcfe'
+    '005': &color-gray-005 '#fcfcfc'
+    '07': &color-gray-07 '#ededee'
+    '15': &color-gray-15 '#d2d2d2'
+    '30': &color-gray-30 '#c0c2c5'
+    '70': &color-gray-70 '#686c73'
+    '102': &color-gray-102 '#27292c'
+    '103': &color-gray-103 '#232427'
+    '110': &color-gray-110 '#1c1d1f'
+    '115': &color-gray-115 '#121212'
   blue:
-    "60": &color-blue-60 "#009cd1"
-    "74": &color-blue-74 "#1870B8"
+    '60': &color-blue-60 '#009cd1'
+    '74': &color-blue-74 '#1870B8'
 
 space:
-  xs: &space-xs "5px"
-  sm: &space-sm "10px"
-  md: &space-md "15px"
-  lg: &space-lg "20px"
-  xl: &space-xl "30px"
-  xxl: &space-xxl "60px"
+  xs: &space-xs '5px'
+  sm: &space-sm '10px'
+  md: &space-md '15px'
+  lg: &space-lg '20px'
+  xl: &space-xl '30px'
+  xxl: &space-xxl '60px'
 
 text:
   size:
-    "100": &text-size-100 "12px"
-    "125": &text-size-125 "13px"
-    "150": &text-size-150 "14px"
-    "200": &text-size-200 "16px"
-    "250": &text-size-250 "18px"
-    "300": &text-size-300 "20px"
-    "400": &text-size-400 "24px"
-    "500": &text-size-500 "28px"
-    "600": &text-size-600 "32px"
-    "800": &text-size-800 "48px"
+    '100': &text-size-100 '12px'
+    '125': &text-size-125 '13px'
+    '150': &text-size-150 '14px'
+    '200': &text-size-200 '16px'
+    '250': &text-size-250 '18px'
+    '300': &text-size-300 '20px'
+    '400': &text-size-400 '24px'
+    '500': &text-size-500 '28px'
+    '600': &text-size-600 '32px'
+    '800': &text-size-800 '48px'
   weight:
     light:
-      value: &text-weight-light-value "300"
+      value: &text-weight-light-value '300'
     regular:
-      value: &text-weight-regular-value "400"
+      value: &text-weight-regular-value '400'
     semibold:
-      value: &text-weight-semibold-value "600"
+      value: &text-weight-semibold-value '600'
     bold:
-      value: &text-weight-bold-value "700"
+      value: &text-weight-bold-value '700'
   style:
     italic:
-      value: &text-italic-value "italic"
-    uppercase: &text-uppercase "uppercase"
+      value: &text-italic-value 'italic'
+    uppercase: &text-uppercase 'uppercase'
 
 shadow:
-  border: &shadow-border "1px solid #d2d2d2"
-  color: &shadow-color "rgba(0, 0, 0, 0.3)"
+  border: &shadow-border '1px solid #d2d2d2'
+  color: &shadow-color 'rgba(0, 0, 0, 0.3)'
   size:
-    "1": &shadow-size-1 "0px 1px 3px 0px"
-    "3": &shadow-size-3 "0px 1px 8px 0px"
-    "4": &shadow-size-4 "0px 1px 12px 0px"
-    "8": &shadow-size-8 "0px 2px 15px 2px"
-    "16": &shadow-size-16 "0px 3px 25px 2px"
-    "24": &shadow-size-24 "0px 7px 27px 3px"
+    '1': &shadow-size-1 '0px 1px 3px 0px'
+    '3': &shadow-size-3 '0px 1px 8px 0px'
+    '4': &shadow-size-4 '0px 1px 12px 0px'
+    '8': &shadow-size-8 '0px 2px 15px 2px'
+    '16': &shadow-size-16 '0px 3px 25px 2px'
+    '24': &shadow-size-24 '0px 7px 27px 3px'
 
 border:
   radius:
-    md: &border-radius-md "6px"
+    md: &border-radius-md '6px'
 
 # Decisions
 
@@ -107,38 +107,37 @@ padding:
   v:
     md:
       - *space-md
-      - "0"
+      - '0'
       - *space-md
-      - "0"
+      - '0'
     lg:
       - *space-lg
-      - "0"
+      - '0'
       - *space-lg
-      - "0"
+      - '0'
   h:
     sm:
-      - "0"
+      - '0'
       - *space-sm
-      - "0"
+      - '0'
       - *space-sm
     md:
-      - "0"
+      - '0'
       - *space-md
-      - "0"
+      - '0'
       - *space-md
     xl:
-      - "0"
+      - '0'
       - *space-xl
-      - "0"
+      - '0'
       - *space-xl
   button:
     standard:
-      - "8px"
-      - "20px"
+      - '8px'
+      - '20px'
     icon:
-      - "8px"
-      - "14px"
-
+      - '8px'
+      - '14px'
 
 margin:
   inline:
@@ -168,40 +167,40 @@ font:
       size: *text-size-250
       weight: *text-weight-light-value
   display:
-    "1":
+    '1':
       size: *text-size-800
       weight: *text-weight-regular-value
-    "2":
+    '2':
       size: *text-size-500
       weight: *text-weight-regular-value
-    "3":
+    '3':
       size: *text-size-300
       weight: *text-weight-regular-value
-    "4":
+    '4':
       size: *text-size-200
       weight: *text-weight-bold-value
   heading:
-    "1":
+    '1':
       size: *text-size-600
       weight: *text-weight-light-value
-    "2":
+    '2':
       size: *text-size-400
       weight: *text-weight-regular-value
-    "3":
+    '3':
       size: *text-size-300
       weight: *text-weight-regular-value
-    "4":
+    '4':
       size: *text-size-200
       weight: *text-weight-regular-value
       color: *color-gray-70
       transform: *text-uppercase
-    "5":
+    '5':
       size: *text-size-150
       weight: *text-weight-regular-value
       color: *color-gray-70
       transform: *text-uppercase
   paragraph:
-    line-height: "1.5"
+    line-height: '1.5'
   deemphasized:
     size: *text-size-150
     weight: *text-weight-regular-value
@@ -218,26 +217,26 @@ font:
 elevation:
   0-bordered:
     border: *shadow-border
-  "1":
+  '1':
     shadow-color: *shadow-color
     shadow-size: *shadow-size-1
   1-bordered:
     border: *shadow-border
     shadow-color: *shadow-color
     shadow-size: *shadow-size-1
-  "3":
+  '3':
     shadow-color: *shadow-color
     shadow-size: *shadow-size-3
-  "4":
+  '4':
     shadow-color: *shadow-color
     shadow-size: *shadow-size-4
-  "8":
+  '8':
     shadow-color: *shadow-color
     shadow-size: *shadow-size-8
-  "16":
+  '16':
     shadow-color: *shadow-color
     shadow-size: *shadow-size-16
-  "24":
+  '24':
     shadow-color: *shadow-color
     shadow-size: *shadow-size-24
 
@@ -253,12 +252,12 @@ mode:
       page-default: *color-gray-115
       primary-dark: *color-blue-60
       elevation:
-        "1": *color-gray-110
-        "3": *color-gray-103
-        "4": *color-gray-102
-        "8": *color-gray-103
-        "16": *color-gray-103
-        "24": *color-gray-102
+        '1': *color-gray-110
+        '3': *color-gray-103
+        '4': *color-gray-102
+        '8': *color-gray-103
+        '16': *color-gray-103
+        '24': *color-gray-102
 
     border-color:
       neutral-medium: *color-gray-70
@@ -276,4 +275,3 @@ mode:
     elevation:
       0-bordered:
         border: *color-gray-70
-        

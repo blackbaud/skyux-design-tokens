@@ -1,117 +1,117 @@
 # Choices
 
 color:
-  white: &color-white "#ffffff"
-  black: &color-black "#000000"
+  white: &color-white '#ffffff'
+  black: &color-black '#000000'
   gray:
-    "01": &color-gray-01 "#fbfbfb"
-    "05": &color-gray-05 "#eeeeef"
-    "10": &color-gray-10 "#e2e3e4"
-    "20": &color-gray-20 "#cdcfd2"
-    "70": &color-gray-70 "#686c73"
-    "80": &color-gray-80 "#4d525a"
-    "90": &color-gray-90 "#393d44"
-    "100": &color-gray-100 "#282b31"
-    "105": &color-gray-105 "#212327"
+    '01': &color-gray-01 '#fbfbfb'
+    '05': &color-gray-05 '#eeeeef'
+    '10': &color-gray-10 '#e2e3e4'
+    '20': &color-gray-20 '#cdcfd2'
+    '70': &color-gray-70 '#686c73'
+    '80': &color-gray-80 '#4d525a'
+    '90': &color-gray-90 '#393d44'
+    '100': &color-gray-100 '#282b31'
+    '105': &color-gray-105 '#212327'
   blue:
-    "10": &color-blue-10 "#c1e8fb"
-    "30": &color-blue-30 "#81d4f7"
-    "50": &color-blue-50 "#00b4f1"
-    "70": &color-blue-70 "#007ca6"
-    "75": &color-blue-75 "#0974a1"
+    '10': &color-blue-10 '#c1e8fb'
+    '30': &color-blue-30 '#81d4f7'
+    '50': &color-blue-50 '#00b4f1'
+    '70': &color-blue-70 '#007ca6'
+    '75': &color-blue-75 '#0974a1'
   green:
-    "30": &color-green-30 "#b7da9b"
-    "50": &color-green-50 "#72bf44"
+    '30': &color-green-30 '#b7da9b'
+    '50': &color-green-50 '#72bf44'
   yellow:
-    "30": &color-yellow-30 "#ffd597"
-    "50": &color-yellow-50 "#fbb034"
+    '30': &color-yellow-30 '#ffd597'
+    '50': &color-yellow-50 '#fbb034'
   red:
-    "30": &color-red-30 "#f7a08f"
-    "50": &color-red-50 "#ef4044"
-    "70": &color-red-60 "#d93a3d"
+    '30': &color-red-30 '#f7a08f'
+    '50': &color-red-50 '#ef4044'
+    '70': &color-red-60 '#d93a3d'
   purple:
-    "10": &color-purple-10 "#f1eef6"
-    "50": &color-purple-50 "#936daf"
+    '10': &color-purple-10 '#f1eef6'
+    '50': &color-purple-50 '#936daf'
   teal:
-    "50": &color-teal-50 "#00b795"
-    "70": &color-teal-70 "#00866d"
+    '50': &color-teal-50 '#00b795'
+    '70': &color-teal-70 '#00866d'
   blackbaud:
     sky-blue:
-        "20": &color-blackbaud-sky-blue-20 "#bfecfb"
-        "40": &color-blackbaud-sky-blue-40 "#40c7f4"
+      '20': &color-blackbaud-sky-blue-20 '#bfecfb'
+      '40': &color-blackbaud-sky-blue-40 '#40c7f4'
     green:
-        "30": &color-blackbaud-green-30 "#80dbca"
+      '30': &color-blackbaud-green-30 '#80dbca'
     yellow:
-        "30": &color-blackbaud-yellow-30 "#fdd799"
+      '30': &color-blackbaud-yellow-30 '#fdd799'
     orange:
-        "30": &color-blackbaud-orange-30 "#f9ba90"
+      '30': &color-blackbaud-orange-30 '#f9ba90'
     red:
-        "30": &color-blackbaud-red-30 "#f7a0a1"
+      '30': &color-blackbaud-red-30 '#f7a0a1'
     purple:
-        "30": &color-blackbaud-purple-30 "#c9b6d7"
+      '30': &color-blackbaud-purple-30 '#c9b6d7'
 
 size:
   screen:
     xs:
-      "max": &size-screen-xs-max "767px"
+      'max': &size-screen-xs-max '767px'
     sm:
-      "min": &size-screen-sm-min "768px"
-      "max": &size-screen-sm-max "991px"
+      'min': &size-screen-sm-min '768px'
+      'max': &size-screen-sm-max '991px'
     md:
-      "min": &size-screen-md-min "992px"
-      "max": &size-screen-md-max "1199px"
+      'min': &size-screen-md-min '992px'
+      'max': &size-screen-md-max '1199px'
     lg:
-      "min": &size-screen-lg-min "1200px"
+      'min': &size-screen-lg-min '1200px'
 
 space:
-  default: &space-default "10px"
-  xxs: &space-xxs "3px"
-  xs: &space-xs "5px"
-  sm: &space-sm "8px"
-  md: &space-md "10px"
-  lg: &space-lg "15px"
-  xl: &space-xl "20px"
+  default: &space-default '10px'
+  xxs: &space-xxs '3px'
+  xs: &space-xs '5px'
+  sm: &space-sm '8px'
+  md: &space-md '10px'
+  lg: &space-lg '15px'
+  xl: &space-xl '20px'
 
 text:
   size:
-    "100": &text-size-100 "12px"
-    "125": &text-size-125 "13px"
-    "150": &text-size-150 "14px"
-    "200": &text-size-200 "16px"
-    "250": &text-size-250 "18px"
-    "300": &text-size-300 "20px"
-    "400": &text-size-400 "24px"
-    "500": &text-size-500 "28px"
-    "600": &text-size-600 "32px"
-    "800": &text-size-800 "48px"
+    '100': &text-size-100 '12px'
+    '125': &text-size-125 '13px'
+    '150': &text-size-150 '14px'
+    '200': &text-size-200 '16px'
+    '250': &text-size-250 '18px'
+    '300': &text-size-300 '20px'
+    '400': &text-size-400 '24px'
+    '500': &text-size-500 '28px'
+    '600': &text-size-600 '32px'
+    '800': &text-size-800 '48px'
   weight:
     thin:
-      file: &text-weight-thin-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Thin.woff"
-      value: &text-weight-thin-value "100"
+      file: &text-weight-thin-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Thin.woff'
+      value: &text-weight-thin-value '100'
     light:
-      file: &text-weight-light-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Light.woff"
-      value: &text-weight-light-value "300"
+      file: &text-weight-light-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Light.woff'
+      value: &text-weight-light-value '300'
     regular:
-      file: &text-weight-regular-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff"
-      value: &text-weight-regular-value "400"
+      file: &text-weight-regular-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff'
+      value: &text-weight-regular-value '400'
     semibold:
-      file: &text-weight-semibold-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Semibold.woff"
-      value: &text-weight-semibold-value "600"
+      file: &text-weight-semibold-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Semibold.woff'
+      value: &text-weight-semibold-value '600'
     bold:
-      file: &text-weight-bold-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Bold.woff"
-      value: &text-weight-bold-value "700"
+      file: &text-weight-bold-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Bold.woff'
+      value: &text-weight-bold-value '700'
     condensed:
       light:
-        file: &text-weight-condensed-light-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-CondLight.woff"
-        value: &text-weight-condensed-light-value "300"
+        file: &text-weight-condensed-light-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-CondLight.woff'
+        value: &text-weight-condensed-light-value '300'
       semibold:
-        file: &text-weight-condensed-semibold-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-CondSemibold.woff"
-        value: &text-weight-condensed-semibold-value "600"
+        file: &text-weight-condensed-semibold-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-CondSemibold.woff'
+        value: &text-weight-condensed-semibold-value '600'
   style:
     italic:
-      file: &text-italic-file "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff"
-      value: &text-italic-value "italic"
-    uppercase: &text-uppercase "uppercase"
+      file: &text-italic-file 'https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff'
+      value: &text-italic-value 'italic'
+    uppercase: &text-uppercase 'uppercase'
 
 # Decisions
 

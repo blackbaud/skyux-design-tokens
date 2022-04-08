@@ -18,19 +18,18 @@ function parseSassObject(sassObject, prefix) {
 
   for (var key in sassObject) {
     if (sassObject.hasOwnProperty(key)) {
-
       const nestedName = prefix + '-' + key;
 
       if (sassObject[key] !== null) {
         if (Array.isArray(sassObject[key])) {
-          scssResult += buildProperty(nestedName, sassObject[key].join(' '))
+          scssResult += buildProperty(nestedName, sassObject[key].join(' '));
         } else if (typeof sassObject[key] === 'object') {
           scssResult += parseSassObject(sassObject[key], nestedName);
         } else {
           scssResult += buildProperty(nestedName, sassObject[key]);
         }
       } else {
-        scssResult += buildProperty(nestedName, sassObject[key])
+        scssResult += buildProperty(nestedName, sassObject[key]);
       }
     }
   }
@@ -43,9 +42,10 @@ function generateOutputFiles(prefix, yamlPath, yamlOutputPath, jsonOutputPath) {
 
   if (yamlTokens.indexOf('\t') > -1) {
     throw new Error(
-  `Looks like your YAML file is using the "tab" key for spaces.
+      `Looks like your YAML file is using the "tab" key for spaces.
   This causes problems with the parsing library we use.  Please use spaces.
-  `);
+  `
+    );
   }
 
   const jsonTokens = yamlParse.safeLoad(yamlTokens);

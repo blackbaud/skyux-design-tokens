@@ -1,9 +1,9 @@
 {
-    "preset": "airbnb",
-    "disallowDanglingUnderscores": null,
-    "disallowTrailingWhitespace": null,
-    "disallowQuotedKeysInObjects": null,
-    "requireLineFeedAtFileEnd": null,
-    "requireTrailingComma": null,
-    "requirePaddingNewLinesBeforeLineComments": null
+  "preset": "airbnb",
+  "disallowDanglingUnderscores": null,
+  "disallowTrailingWhitespace": null,
+  "disallowQuotedKeysInObjects": null,
+  "requireLineFeedAtFileEnd": null,
+  "requireTrailingComma": null,
+  "requirePaddingNewLinesBeforeLineComments": null
 }
