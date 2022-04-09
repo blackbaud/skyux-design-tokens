@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as *;
 
 @mixin sky-border($type, $sides...) {
     @if(length($sides) == 0) {
