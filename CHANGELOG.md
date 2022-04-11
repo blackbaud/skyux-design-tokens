@@ -1,3 +1,7 @@
+# 0.0.25 (2022-04-11)
+
+- Updated the SCSS mixins to implement `@use` modules. #60
+
 # 0.0.24 (2021-06-23)
 
 - Updated font URLs to point to the renamed BLKB Sans font. [#56](https://github.com/blackbaud/skyux-design-tokens/pull/56)

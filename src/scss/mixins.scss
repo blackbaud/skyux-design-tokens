@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as vars;
 
 @mixin sky-border($type, $sides...) {
     @if(length($sides) == 0) {
@@ -7,15 +7,15 @@
 
     @each $side in $sides {
       @if($type == "light") {
-          border-#{$side}: 1px solid $sky-border-color-neutral-light;
+          border-#{$side}: 1px solid vars.$sky-border-color-neutral-light;
       }
 
       @if($type == "dark") {
-          border-#{$side}: 1px solid $sky-border-color-neutral-medium;
+          border-#{$side}: 1px solid vars.$sky-border-color-neutral-medium;
       }
 
       @if($type == "row") {
-          border-#{$side}: 1px dotted $sky-border-color-neutral-medium;
+          border-#{$side}: 1px dotted vars.$sky-border-color-neutral-medium;
       }
     }
 }
