@@ -135,7 +135,6 @@ background-color:
   danger: *color-red-30
   danger-dark: *color-red-60
   page-default: *color-white
-  light-blue: *color-blue-05
 
 category-color:
   light-blue: *color-blackbaud-sky-blue-20
