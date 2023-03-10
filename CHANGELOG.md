@@ -1,3 +1,7 @@
+# 0.0.26 (2023-03-10)
+
+- Added new blue-05 color. [#61](https://github.com/blackbaud/skyux-design-tokens/pull/61)
+
 # 0.0.25 (2022-04-11)
 
 - Updated the SCSS mixins to implement `@use` modules. #60
