@@ -14,6 +14,7 @@ color:
     "100": &color-gray-100 "#282b31"
     "105": &color-gray-105 "#212327"
   blue:
+    "05": &color-blue-05 "#ebfbff"
     "10": &color-blue-10 "#c1e8fb"
     "30": &color-blue-30 "#81d4f7"
     "50": &color-blue-50 "#00b4f1"
@@ -134,6 +135,7 @@ background-color:
   danger: *color-red-30
   danger-dark: *color-red-60
   page-default: *color-white
+  light-blue: *color-blue-05
 
 category-color:
   light-blue: *color-blackbaud-sky-blue-20
