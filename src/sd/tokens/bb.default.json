@@ -1,0 +1,22 @@
+{
+  "color": {
+    "white": { "value": "#ffffff" },
+    "black": { "value": "#000000" },
+    "gray": {
+      "01": { "value": "#fbfbfb" },
+      "05": { "value": "#eeeeef" },
+      "10": { "value": "#e2e3e4" },
+      "20": { "value": "#cdcfd2" },
+      "70": { "value": "#686c73" },
+      "80": { "value": "#4d525a" },
+      "90": { "value": "#393d44" },
+      "100": { "value": "#fbfcfe" },
+      "105": { "value": "#282b31" }
+    },
+    "blue": {
+      "60": { "value": "#009cd1" },
+      "74": { "value": "#1870B8" }
+    }
+  }
+}
+
