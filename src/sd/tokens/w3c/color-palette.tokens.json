@@ -1,40 +1,40 @@
 {
-  "colors": {
+  "color": {
     "$type": "color",
-    "color-gray-003": {
+    "gray-003": {
       "$value": "#fbfcfe"
     },
-    "color-gray-005": {
+    "gray-005": {
       "$value": "#fcfcfc"
     },
-    "color-gray-07": {
+    "gray-07": {
       "$value": "#ededee"
     },
-    "color-gray-15": {
+    "gray-15": {
       "$value": "#d2d2d2"
     },
-    "color-gray-30": {
+    "gray-30": {
       "$value": "#c0c2c5"
     },
-    "color-gray-70": {
+    "gray-70": {
       "$value": "#686c73"
     },
-    "color-gray-102": {
+    "gray-102": {
       "$value": "#27292c"
     },
-    "color-gray-103": {
+    "gray-103": {
       "$value": "#232427"
     },
-    "color-gray-110": {
+    "gray-110": {
       "$value": "#1c1d1f"
     },
-    "color-gray-115": {
+    "gray-115": {
       "$value": "#121212"
     },
-    "color-blue-60": {
+    "blue-60": {
       "$value": "#009cd1"
     },
-    "color-blue-74": {
+    "blue-74": {
       "$value": "#1870B8"
     }
   }
