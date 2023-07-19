@@ -1,12 +1,12 @@
 {
-  "color": {
-    "$type": "color",
     "text-color": {
+      "$type": "color",
       "action-primary": {
         "$value": "{color.blue-74}"
       }
     },
     "background-color": {
+      "$type": "color",
       "neutral-light": {
         "$value": "{color.gray-005}"
       },
@@ -24,6 +24,7 @@
       }
     },
     "border-color": {
+      "$type": "color",
       "neutral-light": {
         "$value": "{color.gray-07}"
       },
@@ -35,4 +36,4 @@
       }
     }
   }
-}
+

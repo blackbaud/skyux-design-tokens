@@ -1,0 +1,33 @@
+{
+  "text": {
+    "$type": "dimension",
+    "size": {
+      "100": { "$value": "12px" },
+      "125": { "$value": "13px" },
+      "150": { "$value": "14px" },
+      "200": { "$value": "16px" },
+      "250": { "$value": "18px" },
+      "300": { "$value": "20px" },
+      "400": { "$value": "24px" },
+      "500": { "$value": "28px" },
+      "600": { "$value": "32px" },
+      "800": { "$value": "48px" }
+    },
+    "weight": {
+      "light": { "$value": "300" },
+      "regular": { "$value": "400" },
+      "semibold": { "$value": "600" },
+      "bold": { "$value": "700" }
+    },
+    "style": {
+      "italic": { "$value": "italic" },
+      "uppercase": { "$value": "uppercase" }
+    }
+  },
+  "font": {
+    "primary": {
+      "$type": "fontFamily",
+      "$value": ["BLKB Sans", "Helvetica Neue", "Arial", "sans-serif" ]
+    }
+  }
+}
