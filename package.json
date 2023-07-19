@@ -7,13 +7,15 @@
   "scripts": {
     "clean": "rimraf -- dist",
     "build": "node src/build-styles.js",
-    "buildsd": "node src/build-sd.js"
+    "buildsd": "node src/build-sd.js",
+    "buildsdu": "node src/build-sdu.js"
   },
   "devDependencies": {
     "fs-extra": "7.0.0",
     "js-yaml": "3.13.1",
     "rimraf": "2.6.2",
-    "style-dictionary": "^3.8.0"
+    "style-dictionary": "^3.8.0",
+    "style-dictionary-utils": "^1.5.0"
   },
   "repository": {
     "type": "git",
