@@ -1,0 +1,11 @@
+{
+  "transition": {
+    "$type": "duration",
+      "time": {
+        "short": { "$value":  "150ms" },
+        "medium": { "$value":  "250ms" }
+      }
+  }
+}
+
+

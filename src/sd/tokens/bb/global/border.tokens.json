@@ -1,0 +1,10 @@
+{
+  "border": {
+    "$type": "dimension",
+      "radius": {
+        "md": { "$value":  "6px" }
+      }
+  }
+}
+
+

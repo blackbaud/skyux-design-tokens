@@ -1,0 +1,74 @@
+{
+  "color": {
+    "$type": "color",
+    "blue-05": {
+      "$value": "#ebfbff"
+    },
+    "blue-10": {
+      "$value": "#1870B8"
+    },
+    "blue-30": {
+      "$value": "#009cd1"
+    },
+    "blue-60": {
+      "$value": "#009cd1"
+    },
+    "blue-74": {
+      "$value": "#1870B8"
+    },
+    "gray-003": {
+      "$value": "#fbfcfe"
+    },
+    "gray-005": {
+      "$value": "#fcfcfc"
+    },
+    "gray-07": {
+      "$value": "#ededee"
+    },
+    "gray-15": {
+      "$value": "#d2d2d2"
+    },
+    "gray-20": {
+      "$value": "#cdcfd2"
+    },
+    "gray-30": {
+      "$value": "#c0c2c5"
+    },
+    "gray-70": {
+      "$value": "#686c73"
+    },
+    "gray-102": {
+      "$value": "#27292c"
+    },
+    "gray-103": {
+      "$value": "#232427"
+    },
+    "gray-105": {
+      "$value": "#212327"
+    },
+    "gray-110": {
+      "$value": "#1c1d1f"
+    },
+    "gray-115": {
+      "$value": "#121212"
+    },
+    "green-30": {
+      "$value": "#b7da9b"
+    },
+    "purple-10": {
+      "$value": "#f1eef6"
+    },
+    "red-30": {
+      "$value": "#f7a08f"
+    },
+    "red-70": {
+      "$value": "#d93a3d"
+    },
+    "yellow-30": {
+      "$value": "#ffd597"
+    },
+    "white": {
+      "$value": "#ffffff"
+    }
+  }
+}

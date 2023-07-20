@@ -1,13 +1,4 @@
 {
-  "space": {
-    "$type": "dimension",
-      "xs": { "$value":  "5px" },
-      "sm": { "$value":  "10px" },
-      "md": { "$value":  "15px" },
-      "lg": { "$value":  "20px" },
-      "xl": { "$value":  "30px" },
-      "xxl": { "$value":  "60px" }
-  },
   "margin": {
     "inline": {
       "xs": {
@@ -42,7 +33,20 @@
           "sky.class": "sky-margin-inline-xxl"
         } }
     }
+  },
+  "padding": {
+    "button": {
+      "standard": {
+        "$value": "8px 20px"
+      },
+      "icon": {
+        "$value": "8px 14px"
+      }
+    },
+    "even": {
+      "sm": {
+        "$value": "{space.sm} {space.sm} {space.sm} {space.sm}"
+      }
+    }
   }
 }
-
-

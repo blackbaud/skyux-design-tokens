@@ -1,0 +1,27 @@
+{
+  "font": {
+    "deemphasized": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.gray-30}"
+      }
+    }
+  },
+  "text": {
+    "color": {
+      "$type": "color",
+      "action-primary": {
+        "$value": "{color.blue-60}"
+      },
+      "default": {
+        "$value": "{color.gray-003}"
+      },
+      "deemphasized": {
+        "$value": "{color.gray-30}"
+      },
+      "on-dark": {
+        "$value": "{color.white}"
+      }
+    }
+  }
+}

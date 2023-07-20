@@ -1,0 +1,45 @@
+{
+    "text-color": {
+      "$type": "color",
+      "action-primary": {
+        "$value": "{color.blue-60}"
+      }
+    },
+    "background-color": {
+      "$type": "color",
+      "danger": {
+        "$value": "{color.red-30}"
+      },
+      "disabled": {
+        "$value": "{color.gray-07}"
+      },
+      "info": {
+        "$value": "{color.blue-30}"
+      },
+      "input-selected": {
+        "$value": "{color.blue-05}"
+      },
+      "neutral-light": {
+        "$value": "{color.gray-005}"
+      },
+      "primary-dark": {
+        "$value": "{color.blue-60}"
+      },
+      "page-default": {
+        "$value": "{color.gray-115}"
+      },
+      "success": {
+        "$value": "{color.green-30}"
+      },
+      "warning": {
+        "$value": "{color.yellow-30}"
+      }
+    },
+    "border-color": {
+      "$type": "color",
+      "neutral-medium": {
+        "$value": "{color.gray-70}"
+      }
+    }
+  }
+

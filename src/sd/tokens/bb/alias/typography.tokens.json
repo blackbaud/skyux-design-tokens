@@ -1,0 +1,87 @@
+{
+  "font": {
+    "heading-1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.600}",
+        "fontWeight": "{text.weight.light}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-heading-1",
+        "sky.class.depreciated": "sky-page-heading"
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "default": {
+        "$value": {
+          "fontFamily": "{font.primary}",
+          "fontSize": "{text.size.200}",
+          "fontWeight": "{text.weight.regular}",
+          "lineHeight": 1.5
+        },
+        "$extensions": {
+          "sky.class": "sky-font-body-default"
+        }
+      },
+      "sm": {
+        "$value": {
+          "fontFamily": "{font.primary}",
+          "fontSize": "{text.size.125}",
+          "fontWeight": "{text.weight.regular}",
+          "lineHeight": 1.5
+        },
+        "$extensions": {
+          "sky.class": "sky-font-body-small"
+        }
+      },
+      "lg": {
+        "$value": {
+          "fontFamily": "{font.primary}",
+          "fontSize": "{text.size.250}",
+          "fontWeight": "{text.weight.regular}",
+          "lineHeight": 1.5
+        },
+        "$extensions": {
+          "sky.class": "sky-font-body-large"
+        }
+      }
+    },
+    "deemphasized": {
+      "color": {
+        "$type": "color",
+        "$value": "{color.gray-70}"
+      },
+      "style": {
+        "$value": "{text.style.italic}"
+      }
+    },
+    "emphasized": {
+      "weight": {
+        "$value": "{text.weight.bold}"
+      }
+    }
+  },
+  "text": {
+    "$type": "color",
+    "color": {
+      "action-primary": {
+        "$value": "{color.blue-74}"
+      },
+      "default": {
+        "$value": "{color.gray-105}"
+      },
+      "deemphasized": {
+        "$value": "{color.gray-70}"
+      },
+      "icon-borderless": {
+        "$value": "{color.gray-20}"
+      },
+      "on-dark": {
+        "$value": "{color.white}"
+      }
+    }
+  }
+}

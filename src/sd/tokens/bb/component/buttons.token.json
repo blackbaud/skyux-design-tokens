@@ -1,0 +1,17 @@
+{
+  "btn": {
+    "border": { "$value": "0px"},
+    "border-radius": { "$value": "{border.radius.md}" },
+    "font-size": { "$value": "{text.size.200}" },
+    "transition": { "$value": "{transition.time.short}" }
+  },
+  "btn-default": {
+    "background-color": { "$value": "{color.white}" },
+    "border-color": { "$value": "{border-color.neutral-medium}" },
+    "color": { "$value": "{text.color.default}" },
+    "padding": { "$value": "{padding.button.standard}" },
+    "hover": {
+      "border-color": { "$value": "{border-color.primary-dark}" }
+    }
+  }
+}

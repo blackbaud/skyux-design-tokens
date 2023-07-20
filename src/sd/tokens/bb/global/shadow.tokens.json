@@ -1,0 +1,61 @@
+{
+  "shadow": {
+    "$type": "shadow",
+    "size": {
+      "1": {
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "3px",
+          "spread": "0px"
+        }
+      },
+      "3": {
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "8px",
+          "spread": "0px"
+        }
+      },
+      "4": {
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "12px",
+          "spread": "0px"
+        }
+      },
+      "8": {
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "3px",
+          "blur": "15px",
+          "spread": "0px"
+        }
+      },
+      "16": {
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "3px",
+          "blur": "25px",
+          "spread": "2px"
+        }
+      },
+      "24": {
+        "$value": {
+          "color": "rgba(0, 0, 0, 0.3)",
+          "offsetX": "0px",
+          "offsetY": "7px",
+          "blur": "27px",
+          "spread": "3px"
+        }
+      }
+    }
+  }
+}
