@@ -30,7 +30,7 @@ StyleDictionary.extend({
         destination: "_custom_properties.css",
         format: "css/variables",
         options: {
-          outputReferences: false
+          outputReferences: true,
         }
       }]
     },
@@ -69,7 +69,7 @@ StyleDictionary.extend({
         destination: "_custom_properties_dark.css",
         format: "css/variables",
         options: {
-          outputReferences: true,
+          outputReferences: false,
           selector: ":root .sky-theme-mode-dark"
         }
       }]

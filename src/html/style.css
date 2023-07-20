@@ -20,10 +20,14 @@ body #mode {
   border-width: var(--btn-border-width);
   border-radius: var(--btn-border-radius);
   font-size: var(--btn-font-size);
-  padding: var(--btn-default-padding);
+  padding: var(--padding-button-standard);
 }
 .sky-btn-default {
   background-color: var(--btn-default-background-color);
   border-color: var(--btn-default-border-color);
   color: var(--btn-default-color);
+}
+.sky-btn-primary {
+  background-color: var(--background-color-primary-dark);
+  color: var(--btn-primary-color);
 }
