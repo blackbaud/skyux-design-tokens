@@ -24,7 +24,29 @@ StyleDictionary.extend({
   ],
   platforms: {
     css: {
-      transformGroup: "css",
+      // transformGroup: "css",
+      transforms: [
+        'attribute/cti',
+        'name/cti/kebab',
+        'time/seconds',
+        'content/icon',
+        'size/rem',
+        'color/css',
+        'color/rgbAlpha',
+        'color/hexAlpha',
+        'color/hex',
+        'color/rgba',
+        'color/rgbaFloat',
+        'shadow/css',
+        'font/css',
+        'fontFamily/css',
+        'fontWeight/number',
+        'gradient/css',
+        'cubicBezier/css',
+        'dimension/pixelToRem',
+        'dimension/remToPixel',
+        'dimension/pixelUnitless'
+      ],
       buildPath: "build-w3c/styles/",
       files: [{
         destination: "_custom_properties.css",
@@ -62,7 +84,29 @@ StyleDictionary.extend({
   ],
   platforms: {
     css: {
-      transformGroup: "css",
+      // transformGroup: 'css',
+      transforms: [
+        'attribute/cti',
+        'name/cti/kebab',
+        'time/seconds',
+        'content/icon',
+        'size/rem',
+        'color/css',
+        'color/rgbAlpha',
+        'color/hexAlpha',
+        'color/hex',
+        'color/rgba',
+        'color/rgbaFloat',
+        'shadow/css',
+        'font/css',
+        'fontFamily/css',
+        'fontWeight/number',
+        'gradient/css',
+        'cubicBezier/css',
+        'dimension/pixelToRem',
+        'dimension/remToPixel',
+        'dimension/pixelUnitless'
+      ],
       buildPath: "build-w3c/styles/",
       files: [{
         filter: "isSource",
@@ -90,7 +134,29 @@ StyleDictionary.extend({
   ],
   platforms: {
     css: {
-      transformGroup: "css",
+      // transformGroup: 'css',
+      transforms: [
+        'attribute/cti',
+        'name/cti/kebab',
+        'time/seconds',
+        'content/icon',
+        'size/rem',
+        'color/css',
+        'color/rgbAlpha',
+        'color/hexAlpha',
+        'color/hex',
+        'color/rgba',
+        'color/rgbaFloat',
+        'shadow/css',
+        'font/css',
+        'fontFamily/css',
+        'fontWeight/number',
+        'gradient/css',
+        'cubicBezier/css',
+        'dimension/pixelToRem',
+        'dimension/remToPixel',
+        'dimension/pixelUnitless'
+      ],
       buildPath: "build-w3c/styles/",
       files: [{
         filter: "isSource",

@@ -14,8 +14,8 @@
       }
     },
     "body": {
-      "$type": "typography",
       "default": {
+        "$type": "typography",
         "$value": {
           "fontFamily": "{font.primary}",
           "fontSize": "{text.size.200}",
@@ -27,6 +27,7 @@
         }
       },
       "sm": {
+        "$type": "typography",
         "$value": {
           "fontFamily": "{font.primary}",
           "fontSize": "{text.size.125}",
@@ -38,6 +39,7 @@
         }
       },
       "lg": {
+        "$type": "typography",
         "$value": {
           "fontFamily": "{font.primary}",
           "fontSize": "{text.size.250}",
@@ -51,7 +53,6 @@
     },
     "deemphasized": {
       "color": {
-        "$type": "color",
         "$value": "{color.gray-70}"
       },
       "style": {

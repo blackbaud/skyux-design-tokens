@@ -2,7 +2,6 @@
   "font": {
     "deemphasized": {
       "color": {
-        "$type": "color",
         "$value": "{color.gray-30}"
       }
     }
