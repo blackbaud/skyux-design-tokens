@@ -1,10 +1,4 @@
 {
-    "text-color": {
-      "$type": "color",
-      "action-primary": {
-        "$value": "{color.blue-60}"
-      }
-    },
     "background-color": {
       "$type": "color",
       "danger": {

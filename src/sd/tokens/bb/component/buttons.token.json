@@ -1,6 +1,6 @@
 {
   "btn": {
-    "border": { "$value": "0px"},
+    "border-width": { "$value": "0px"},
     "border-radius": { "$value": "{border.radius.md}" },
     "font-size": { "$value": "{text.size.200}" },
     "transition": { "$value": "{transition.time.short}" }

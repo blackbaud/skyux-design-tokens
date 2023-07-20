@@ -1,0 +1,29 @@
+@import url(../../build-w3c/styles/_custom_properties.css);
+@import url(../../build-w3c/styles/_custom_properties_dark.css);
+@import url(../../build-w3c/styles/_custom_properties_compact.css);
+
+fieldset {
+  margin: 8px;
+}
+body {
+  background-color: var(--background-color-page-default);
+  color: var(--text-color-default);
+  margin: 0;
+  padding: 16px;
+  height: 100%;
+}
+body #mode {
+  background-color: var(--background-color-page-default);
+  color: var(--text-color-default);
+}
+.sky-btn {
+  border-width: var(--btn-border-width);
+  border-radius: var(--btn-border-radius);
+  font-size: var(--btn-font-size);
+  padding: var(--btn-default-padding);
+}
+.sky-btn-default {
+  background-color: var(--btn-default-background-color);
+  border-color: var(--btn-default-border-color);
+  color: var(--btn-default-color);
+}

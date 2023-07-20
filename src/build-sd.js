@@ -36,7 +36,7 @@ StyleDictionary.extend({
       transformGroup: "css",
       buildPath: "build/styles/",
       files: [{
-        destination: "_custom_properties.scss",
+        destination: "_custom_properties.css",
         format: "css-sky-theme",
         options: {
           outputReferences: true,
@@ -89,7 +89,7 @@ StyleDictionary.extend({
       transformGroup: "css",
       buildPath: "build/styles/theme/modern/",
       files: [{
-        destination: "_custom_properties.scss",
+        destination: "_custom_properties.css",
         format: "css-sky-theme",
         options: {
           outputReferences: true,

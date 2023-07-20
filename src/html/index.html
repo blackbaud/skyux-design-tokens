@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Blackbaud design tokens</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body id="body" class="sky-theme-brand-bb sky-theme-mode-light">
+  <h1>SKY UX Blackbaud brands and modes</h1>
+  <fieldset id="brands">
+    <legend>Brands</legend>
+    <label><input type="radio" name="brand" checked="checked" value="bb">Blackbaud</input></label>
+    <label><input type="radio" name="brand" value="bb-default">Blackbaud default</input></label>
+    <label><input type="radio" name="brand" value="bb-jg">JustGiving</input></label>
+  </fieldset>
+  <fieldset id="color-modes">
+    <legend>Color modes</legend>
+    <label><input type="radio" name="color-mode" checked="checked" value="light">Light (Default)</input></label>
+    <label><input type="radio" name="color-mode" value="dark">Dark</input></label>
+  </fieldset>
+  <fieldset id="density-modes">
+    <legend>Density modes</legend>
+    <label><input type="radio" name="density-mode" checked="checked"  value="regular">Regular</input></label>
+    <label><input type="radio" name="density-mode" value="compact">Compact</input></label>
+  </fieldset>
+  <fieldset id="typography-modes">
+    <legend>Typography-modes</legend>
+    <label><input type="radio"name="type-mode" checked="checked"  value="productive">Productive</input></label>
+    <label><input type="radio"name="type-mode" value="expressive">Expressive</input></label>
+  </fieldset>
+  <fieldset id="viewport">
+    <legend>Viewport-modes</legend>
+    <label><input type="radio"name="viewport-mode" checked="checked"  value="desktop">Desktop</input></label>
+    <label><input type="radio"name="viewport-mode" value="mobile">Mobile</input></label>
+  </fieldset>
+
+  <p>
+  <button class="sky-btn sky-btn-default">Button</button>
+  </p>
+</body>
+<script>
+  // const brands = document.querySelectorAll('#brands input');
+  // brands.forEach( (i) => {
+  //   i.addEventListener('change', () => {
+  //     switch (i.value) {
+  //       case "bb":
+  //       document.querySelector('body').setAttribute('class', 'sky-theme-brand-bb');
+  //       break;
+  //       case "bb-default":
+  //       document.querySelector('body').setAttribute('class', 'sky-theme-brand-bb-default');
+  //       break;
+  //       case "bb-jg":
+  //       document.querySelector('body').setAttribute('class', 'sky-theme-brand-justgiving');
+  //       break;
+  //     }
+
+  //   });
+  // });
+
+  const modes = document.querySelectorAll('fieldset input');
+  modes.forEach( (i) => {
+    i.addEventListener('change', () => {
+      switch (i.value) {
+        case "bb":
+          if (document.getElementById('body').classList.contains('sky-theme-brand-bb-default') > 0) {
+              document.getElementById('body').classList.replace('sky-theme-brand-bb-default', 'sky-theme-brand-bb');
+              break;
+          } else if (document.getElementById('body').classList.contains('sky-theme-brand-bb-jg') > 0) {
+              document.getElementById('body').classList.replace('sky-theme-brand-bb-jg', 'sky-theme-brand-bb');
+              break;
+          }
+          document.getElementById('body').classList.add('sky-theme-brand-bb');
+          break;
+        case "bb-default":
+          if (document.getElementById('body').classList.contains('sky-theme-brand-bb') > 0) {
+              document.getElementById('body').classList.replace('sky-theme-brand-bb', 'sky-theme-brand-bb-default');
+              break;
+          } else if (document.getElementById('body').classList.contains('sky-theme-brand-bb-jg') > 0) {
+              document.getElementById('body').classList.replace('sky-theme-brand-bb-jg', 'sky-theme-brand-bb-default');
+              break;
+          }
+          document.getElementById('body').classList.add('sky-theme-brand-bb-default');
+          break;
+        case "light":
+          if (document.getElementById('body').classList.contains('sky-theme-mode-dark') > 0) {
+              document.getElementById('body').classList.replace('sky-theme-mode-dark', 'sky-theme-mode-light');
+              break;
+          }
+          document.getElementById('body').classList.add('sky-theme-mode-light');
+          break;
+        case "dark":
+          if (document.getElementById('body').classList.contains('sky-theme-mode-light') > 0) {
+              document.getElementById('body').classList.replace('sky-theme-mode-light', 'sky-theme-mode-dark');
+              break;
+          }
+          document.getElementById('body').classList.add('sky-theme-mode-dark');
+          break;
+        case "regular":
+          if (document.getElementById('body').classList.contains('sky-theme-mode-compact') > 0) {
+                document.getElementById('body').classList.replace('sky-theme-mode-compact', 'sky-theme-mode-regular');
+                break;
+              }
+          document.getElementById('body').classList.add('sky-theme-mode-regular');
+          break;
+        case "compact":
+          if (document.getElementById('body').classList.contains('sky-theme-mode-regular') > 0) {
+                document.getElementById('body').classList.replace('sky-theme-mode-regular', 'sky-theme-mode-compact');
+                break;
+              }
+          document.getElementById('body').classList.add('sky-theme-mode-compact');
+          break;
+
+      }
+
+    });
+  });
+</script>
+</html>

@@ -1,0 +1,9 @@
+{
+  "padding": {
+    "button": {
+      "standard": {
+        "$value": "6px 20px"
+      }
+    }
+  }
+}
