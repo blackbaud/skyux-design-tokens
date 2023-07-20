@@ -35,16 +35,26 @@ StyleDictionary.extend({
       }]
     },
     figma: {
-      buildPath: "build-w3c/styles/",
+      buildPath: "build-w3c/figma/",
       files: [{
         destination: "figma.json",
         format: "json/nested",
         options: {
           filter: function(token) {
-            return token.type === "color";
+            return token.group == "background-color";
           },
         }
       }]
+    },
+    rn: {
+      transformGroup: "react-native",
+      buildPath: "build-w3c/rn/",
+      files: [
+        {
+          destination: "variables.js",
+          format: "javascript/es6"
+        }
+      ]
     }
   }
 }).buildAllPlatforms();
