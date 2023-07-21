@@ -1,20 +1,6 @@
 const StyleDictionary = require('style-dictionary-utils');
-const { formattedVariables } = StyleDictionary.formatHelpers;
 
 const modes = [`light`,`dark`,`compact`];
-
-// StyleDictionary.registerFormat({
-//   name: 'figmaW3c',
-//   formatter: function({ dictionary, options }) {
-//     return formattedVariables({
-//       dictionary,
-//       outputReferences: options.outputReferences,
-//       formatting: {
-//         suffix: 'end'
-//       }
-//     });
-//   }
-// });
 
 StyleDictionary.extend({
   source: [
@@ -61,12 +47,7 @@ StyleDictionary.extend({
       buildPath: "build-w3c/figma/",
       files: [{
         destination: "figma.json",
-        format: "json/nested",
-        options: {
-          filter: function(token) {
-            return token.group == "background-color";
-          },
-        }
+        format: "json/nested"
       }]
     },
     rn: {
