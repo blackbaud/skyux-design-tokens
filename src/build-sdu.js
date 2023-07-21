@@ -48,6 +48,7 @@ StyleDictionary.extend({
         'dimension/pixelUnitless'
       ],
       buildPath: "build-w3c/styles/",
+      prefix: 'sky',
       files: [{
         destination: "_custom_properties.css",
         format: "css/variables",
@@ -118,6 +119,7 @@ StyleDictionary.extend({
         'dimension/pixelUnitless'
       ],
       buildPath: "build-w3c/styles/",
+      prefix: 'sky',
       files: [{
         filter: "isSource",
         destination: "_custom_properties_dark.css",
@@ -168,6 +170,7 @@ StyleDictionary.extend({
         'dimension/pixelUnitless'
       ],
       buildPath: "build-w3c/styles/",
+      prefix: 'sky',
       files: [{
         filter: "isSource",
         destination: "_custom_properties_compact.css",
