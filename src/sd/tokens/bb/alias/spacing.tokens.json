@@ -32,6 +32,39 @@
         "$extensions": {
           "sky.class": "sky-margin-inline-xxl"
         } }
+    },
+    "stacked": {
+      "xs": {
+        "$value": "{space.xs}",
+        "$extensions": {
+          "sky.class": "sky-margin-stacked-xs"
+        }
+      },
+      "sm": {
+        "$value": "{space.sm}",
+        "$extensions": {
+          "sky.class": "sky-margin-stacked-sm"
+        } },
+      "md": {
+        "$value": "{space.md}",
+        "$extensions": {
+          "sky.class": "sky-margin-stacked-md"
+        } },
+      "lg": {
+        "$value": "{space.lg}",
+        "$extensions": {
+          "sky.class": "sky-margin-stacked-lg"
+        } },
+      "xl": {
+        "$value": "{space.xl}",
+        "$extensions": {
+          "sky.class": "sky-margin-stacked-xl"
+        } },
+      "xxl": {
+        "$value": "{space.xxl}",
+        "$extensions": {
+          "sky.class": "sky-margin-stacked-xxl"
+        } }
     }
   },
   "padding": {
@@ -46,6 +79,34 @@
     "even": {
       "sm": {
         "$value": "{space.sm} {space.sm} {space.sm} {space.sm}"
+      },
+      "md": {
+        "$value": "{space.md} {space.md} {space.md} {space.md}"
+      },
+      "lg": {
+        "$value": "{space.lg} {space.lg} {space.lg} {space.lg}"
+      },
+      "xl": {
+        "$value": "{space.xl} {space.xl} {space.xl} {space.xl}"
+      }
+    },
+    "h": {
+      "sm": {
+        "$value": "0 {space.sm} 0 {space.sm}"
+      },
+      "md": {
+        "$value": "0 {space.md} 0 {space.md}"
+      },
+      "xl": {
+        "$value": "0 {space.xl} 0 {space.xl}"
+      }
+    },
+    "v": {
+      "md": {
+        "$value": "{space.md} 0 {space.md} 0"
+      },
+      "lg": {
+        "$value": "{space.lg} 0 {space.lg} 0"
       }
     }
   }

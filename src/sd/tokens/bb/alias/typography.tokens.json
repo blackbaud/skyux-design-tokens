@@ -13,6 +13,104 @@
         "sky.class.depreciated": "sky-page-heading"
       }
     },
+    "heading-2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.400}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-heading-2",
+        "sky.class.depreciated": "sky-section-heading"
+      }
+    },
+    "heading-3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.300}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-heading-3",
+        "sky.class.depreciated": "sky-subsection-heading"
+      }
+    },
+    "heading-4": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.200}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-heading-4"
+      }
+    },
+    "heading-5": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.150}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-heading-5"
+      }
+    },
+    "display-1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.800}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-display-1"
+      }
+    },
+    "display-2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.500}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-display-2"
+      }
+    },
+    "display-3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.300}",
+        "fontWeight": "{text.weight.regular}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-display-3"
+      }
+    },
+    "display-4": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.primary}",
+        "fontSize": "{text.size.200}",
+        "fontWeight": "{text.weight.bold}",
+        "lineHeight": 1.2
+      },
+      "$extensions": {
+        "sky.class": "sky-font-display-4"
+      }
+    },
     "body": {
       "default": {
         "$type": "typography",
@@ -63,6 +161,21 @@
       "weight": {
         "$value": "{text.weight.bold}"
       }
+    },
+    "data": {
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.primary}",
+          "fontSize": "{text.size.200}",
+          "fontWeight": "{text.weight.regular}",
+          "lineHeight": 1.2
+        },
+        "$extensions": {
+          "sky.class": "sky-font-body-large"
+        }
+      }
+
     }
   },
   "text": {

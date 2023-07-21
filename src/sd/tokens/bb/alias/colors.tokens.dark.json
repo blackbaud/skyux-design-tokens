@@ -2,37 +2,64 @@
     "background-color": {
       "$type": "color",
       "danger": {
-        "$value": "{color.red-30}"
+        "$value": "#f7a08f"
       },
       "disabled": {
-        "$value": "{color.gray-07}"
+        "$value": "#191e23"
+      },
+      "elevation-0": {
+        "$value": "#ef4044"
+      },
+      "elevation-1": {
+        "$value": "#1e2229"
+      },
+      "elevation-3": {
+        "$value": "#242b2e"
+      },
+      "elevation-4": {
+        "$value": "#292d34"
+      },
+      "elevation-8": {
+        "$value": "#2f3339"
+      },
+      "elevation-16": {
+        "$value": "#1e2229"
+      },
+      "elevation-24": {
+        "$value": "#27292c"
       },
       "info": {
-        "$value": "{color.blue-30}"
+        "$value": "#86b3f3"
       },
       "input-selected": {
-        "$value": "{color.blue-05}"
+        "$value": "123e4c"
       },
       "neutral-light": {
-        "$value": "{color.gray-005}"
+        "$value": "#161a1f"
       },
       "primary-dark": {
-        "$value": "{color.blue-60}"
+        "$value": "#00cfff"
       },
       "page-default": {
-        "$value": "{color.gray-115}"
+        "$value": "#161a1f"
       },
       "success": {
-        "$value": "{color.green-30}"
+        "$value": "#b7da9b"
       },
       "warning": {
-        "$value": "{color.yellow-30}"
+        "$value": "#ffd597"
       }
     },
     "border-color": {
       "$type": "color",
       "neutral-medium": {
-        "$value": "{color.gray-70}"
+        "$value": "#919498"
+      }
+    },
+    "highlight-color": {
+      "$type": "color",
+      "info": {
+        "$value": "#5091ed"
       }
     }
   }

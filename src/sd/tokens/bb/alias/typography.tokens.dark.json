@@ -2,7 +2,7 @@
   "font": {
     "deemphasized": {
       "color": {
-        "$value": "{color.gray-30}"
+        "$value": "#a8aaae"
       }
     }
   },
@@ -10,16 +10,16 @@
     "color": {
       "$type": "color",
       "action-primary": {
-        "$value": "{color.blue-60}"
+        "$value": "#00cfff"
       },
       "default": {
-        "$value": "{color.gray-003}"
+        "$value": "#fcfcfc"
       },
       "deemphasized": {
-        "$value": "{color.gray-30}"
+        "$value": "#a8aaae"
       },
       "on-dark": {
-        "$value": "{color.white}"
+        "$value": "#161a1f"
       }
     }
   }

@@ -9,6 +9,9 @@
           "offsetY": "1px",
           "blur": "3px",
           "spread": "0px"
+        },
+        "$extensions": {
+          "sky.class": "sky-elevation-1"
         }
       },
       "3": {
@@ -18,6 +21,9 @@
           "offsetY": "1px",
           "blur": "8px",
           "spread": "0px"
+        },
+        "$extensions": {
+          "sky.class": "sky-elevation-3"
         }
       },
       "4": {
@@ -27,6 +33,9 @@
           "offsetY": "1px",
           "blur": "12px",
           "spread": "0px"
+        },
+        "$extensions": {
+          "sky.class": "sky-elevation-4"
         }
       },
       "8": {
@@ -45,6 +54,9 @@
           "offsetY": "3px",
           "blur": "25px",
           "spread": "2px"
+        },
+        "$extensions": {
+          "sky.class": "sky-elevation-16"
         }
       },
       "24": {
@@ -54,6 +66,9 @@
           "offsetY": "7px",
           "blur": "27px",
           "spread": "3px"
+        },
+        "$extensions": {
+          "sky.class": "sky-elevation-24"
         }
       }
     }

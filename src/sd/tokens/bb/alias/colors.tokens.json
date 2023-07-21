@@ -10,6 +10,27 @@
       "disabled": {
         "$value": "{color.gray-07}"
       },
+      "elevation-0": {
+        "$value": "{color.white}"
+      },
+      "elevation-1": {
+        "$value": "{color.white}"
+      },
+      "elevation-3": {
+        "$value": "{color.white}"
+      },
+      "elevation-4": {
+        "$value": "{color.white}"
+      },
+      "elevation-8": {
+        "$value": "{color.white}"
+      },
+      "elevation-16": {
+        "$value": "{color.white}"
+      },
+      "elevation-24": {
+        "$value": "{color.white}"
+      },
       "info": {
         "$value": "{color.blue-30}"
       },
@@ -51,6 +72,45 @@
       },
       "primary-dark": {
         "$value": "{color.blue-74}"
+      }
+    },
+    "category-color": {
+      "$type": "color",
+      "blue": {
+        "$value": "{color.blackbaud-sky-blue-40}"
+      },
+      "light-blue": {
+        "$value": "{color.blackbaud-sky-blue-20}"
+      },
+      "orange": {
+        "$value": "{color.blackbaud-orange-30}"
+      },
+      "purple": {
+        "$value": "{color.blackbaud-purple-30}"
+      },
+      "red": {
+        "$value": "{color.blackbaud-red-30}"
+      },
+      "teal": {
+        "$value": "{color.blackbaud-green-30}"
+      },
+      "yellow": {
+        "$value": "{color.blackbaud-yellow-30}"
+      }
+    },
+    "highlight-color": {
+      "$type": "color",
+      "danger": {
+        "$value": "{color.red-50}"
+      },
+      "info": {
+        "$value": "{color.blue-50}"
+      },
+      "success": {
+        "$value": "{color.green-50}"
+      },
+      "warning": {
+        "$value": "{color.yellow-50}"
       }
     }
   }

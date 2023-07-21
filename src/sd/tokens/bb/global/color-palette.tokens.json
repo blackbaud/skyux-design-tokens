@@ -1,6 +1,30 @@
 {
   "color": {
     "$type": "color",
+    "black": {
+      "$value": "#000000"
+    },
+    "blackbaud-sky-blue-20": {
+      "$value": "#bfecfb"
+    },
+    "blackbaud-sky-blue-40": {
+      "$value": "#40c7f4"
+    },
+    "blackbaud-green-30": {
+      "$value": "#80dbca"
+    },
+    "blackbaud-orange-30": {
+      "$value": "#f9ba90"
+    },
+    "blackbaud-purple-30": {
+      "$value": "#c9b6d7"
+    },
+    "blackbaud-red-30": {
+      "$value": "#f7a0a1"
+    },
+    "blackbaud-yellow-30": {
+      "$value": "#fdd799"
+    },
     "blue-05": {
       "$value": "#ebfbff"
     },
@@ -9,6 +33,9 @@
     },
     "blue-30": {
       "$value": "#009cd1"
+    },
+    "blue-50": {
+      "$value": "#00b4f1"
     },
     "blue-60": {
       "$value": "#009cd1"
@@ -55,17 +82,26 @@
     "green-30": {
       "$value": "#b7da9b"
     },
+    "green-50": {
+      "$value": "#72bf44"
+    },
     "purple-10": {
       "$value": "#f1eef6"
     },
     "red-30": {
       "$value": "#f7a08f"
     },
+    "red-50": {
+      "$value": "#ef4044"
+    },
     "red-70": {
       "$value": "#d93a3d"
     },
     "yellow-30": {
       "$value": "#ffd597"
+    },
+    "yellow-50": {
+      "$value": "#fbb034"
     },
     "white": {
       "$value": "#ffffff"
