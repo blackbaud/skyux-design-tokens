@@ -6,28 +6,28 @@ fieldset {
   margin: 8px;
 }
 body {
-  background-color: var(--background-color-page-default);
-  color: var(--text-color-default);
+  background-color: var(--sky-background-color-page-default);
+  color: var(--sky-text-color-default);
   margin: 0;
   padding: 16px;
   height: 100%;
 }
 body #mode {
-  background-color: var(--background-color-page-default);
-  color: var(--text-color-default);
+  background-color: var(--sky-background-color-page-default);
+  color: var(--sky-text-color-default);
 }
 .sky-btn {
-  border-width: var(--btn-border-width);
-  border-radius: var(--btn-border-radius);
-  font-size: var(--btn-font-size);
-  padding: var(--padding-button-standard);
+  border-width: var(--sky-btn-border-width);
+  border-radius: var(--sky-btn-border-radius);
+  font-size: var(--sky-btn-font-size);
+  padding: var(--sky-padding-button-standard);
 }
 .sky-btn-default {
-  background-color: var(--btn-default-background-color);
-  border-color: var(--btn-default-border-color);
-  color: var(--btn-default-color);
+  background-color: var(--sky-btn-default-background-color);
+  border-color: var(--sky-btn-default-border-color);
+  color: var(--sky-btn-default-color);
 }
 .sky-btn-primary {
-  background-color: var(--background-color-primary-dark);
-  color: var(--btn-primary-color);
+  background-color: var(--sky-background-color-primary-dark);
+  color: var(--sky-btn-primary-color);
 }
