@@ -7,6 +7,7 @@ color:
     "07": &color-gray-07 "#ededee"
     "15": &color-gray-15 "#d2d2d2"
     "30": &color-gray-30 "#c0c2c5"
+    "50": &color-gray-50 "#8c929c"
     "70": &color-gray-70 "#686c73"
     "102": &color-gray-102 "#27292c"
     "103": &color-gray-103 "#232427"
@@ -80,6 +81,7 @@ background-color:
 border-color:
   neutral-light: *color-gray-07
   neutral-medium: *color-gray-15
+  neutral-medium-dark: *color-gray-50
   primary-dark: *color-blue-74
 
 padding:

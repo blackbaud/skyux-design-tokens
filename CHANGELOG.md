@@ -1,3 +1,7 @@
+# 0.0.28 (2023-10-11)
+
+- Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
+
 # 0.0.27 (2023-06-22)
 
 - Updated `sky-theme-modern-background-color-disabled`. [#63](https://github.com/blackbaud/skyux-design-tokens/pull/63)
