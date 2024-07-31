@@ -1,21 +1,20 @@
-import path from 'path';
-import { homedir } from 'os';
-import { readFileSync } from 'fs';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 
-function getCertPath(fileName) {
-  return path.join(homedir(), `.skyux/certs/${fileName}`);
-}
+export default ({ mode }) => {
+  const viteEnv = loadEnv(mode, process.cwd());
 
-export default defineConfig({
-  preview: {
-    open: true,
-  },
-  server: {
-    https: {
-      cert: readFileSync(getCertPath('skyux-server.crt')),
-      key: readFileSync(getCertPath('skyux-server.key')),
+  return defineConfig({
+    preview: {
+      open: true,
     },
-    open: true,
-  },
-});
+    server: {
+      https: viteEnv.VITE_DEV_CERT
+        ? {
+            cert: viteEnv.VITE_DEV_CERT,
+            key: viteEnv.VITE_DEV_KEY,
+          }
+        : undefined,
+      open: true,
+    },
+  });
+};
