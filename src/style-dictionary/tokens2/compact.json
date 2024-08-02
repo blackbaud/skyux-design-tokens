@@ -1,0 +1,46 @@
+{
+  "margin": {
+    "stacked": {
+      "xs": {
+        "value": "{xxs}",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "{xs}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{sm}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{md}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{lg}",
+        "type": "spacing"
+      }
+    }
+  },
+  "padding": {
+    "even": {
+      "sm": {
+        "value": "{xs} {xs} {xs} {xs}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{sm} {sm} {sm} {sm}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{md} {md} {md} {md}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{lg} {lg} {lg} {lg}",
+        "type": "spacing"
+      }
+    }
+  }
+}

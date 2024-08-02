@@ -1,0 +1,35 @@
+{
+  "alert": {
+    "color": {
+      "$value": "{text-color.default}"
+    },
+    "background-color": {
+      "info": {
+        "$value": "{background-color.info-light}"
+      },
+      "success": {
+        "$value": "{background-color.success}"
+      },
+      "warning": {
+        "$value": "{background-color.warning}"
+      },
+      "danger": {
+        "$value": "{background-color.danger}"
+      }
+    },
+    "border-color": {
+      "info": {
+        "$value": "{highlight-color.info}"
+      },
+      "success": {
+        "$value": "{highlight-color.success}"
+      },
+      "warning": {
+        "$value": "{highlight-color.warning}"
+      },
+      "danger": {
+        "$value": "{background-color.danger}"
+      }
+    }
+  }
+}

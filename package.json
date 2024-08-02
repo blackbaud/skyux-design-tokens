@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf -- dist",
-    "build": "node src/build-styles.js"
+    "build": "npm run build:style-dictionary && node src/build-styles.js",
+    "build:style-dictionary": "node src/style-dictionary/build-dictionary2.mjs"
   },
   "devDependencies": {
     "fs-extra": "7.0.0",
@@ -20,5 +21,10 @@
   "engines": {
     "node": ">= 4.2.1",
     "npm": ">= 3"
+  },
+  "dependencies": {
+    "glob": "11.0.0",
+    "style-dictionary": "4.0.1",
+    "@tokens-studio/sd-transforms": "1.2.1"
   }
 }

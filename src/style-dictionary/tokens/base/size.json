@@ -1,0 +1,32 @@
+{
+  "size": {
+    "screen": {
+      "xs": {
+        "max": {
+          "$value": "767px"
+        }
+      },
+      "sm": {
+        "min": {
+          "$value": "768px"
+        },
+        "max": {
+          "$value": "991px"
+        }
+      },
+      "md": {
+        "min": {
+          "$value": "992px"
+        },
+        "max": {
+          "$value": "1199px"
+        }
+      },
+      "lg": {
+        "min": {
+          "$value": "1200px"
+        }
+      }
+    }
+  }
+}

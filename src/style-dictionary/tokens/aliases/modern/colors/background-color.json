@@ -1,0 +1,41 @@
+{
+  "background-color": {
+    "$type": "color",
+    "neutral-light": {
+      "$value": "{color.gray.005}"
+    },
+    "neutral-medium": {
+      "$value": "{color.gray.07}"
+    },
+    "primary-dark": {
+      "$value": "{color.blue.74}"
+    },
+    "disabled": {
+      "$value": "{color.gray.15}"
+    },
+    "page-default": {
+      "$value": "{color.gray.005}"
+    },
+    "selected": {
+      "$value": "{color.purple.10}"
+    },
+    "info": {
+      "$value": "{color.blue.30}"
+    },
+    "info-light": {
+      "$value": "{color.blue.10}"
+    },
+    "success": {
+      "$value": "{color.green.30}"
+    },
+    "warning": {
+      "$value": "{color.yellow.30}"
+    },
+    "danger": {
+      "$value": "{color.red.30}"
+    },
+    "danger-dark": {
+      "$value": "{color.red.70}"
+    }
+  }
+}

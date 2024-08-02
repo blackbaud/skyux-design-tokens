@@ -1,0 +1,23 @@
+{
+  "background-color": {
+    "$type": "color",
+    "info": {
+      "$value": "purple"
+    },
+    "info-light": {
+      "$value": "orange"
+    },
+    "success": {
+      "$value": "yellow"
+    },
+    "warning": {
+      "$value": "{color.green.50}"
+    },
+    "danger": {
+      "$value": "teal"
+    },
+    "danger-dark": {
+      "$value": "lavender"
+    }
+  }
+}

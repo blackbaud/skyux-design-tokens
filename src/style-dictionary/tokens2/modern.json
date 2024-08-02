@@ -1,0 +1,218 @@
+{
+  "background": {
+    "neutral-light": {
+      "value": "{gray.005}",
+      "type": "color"
+    },
+    "neutral-medium": {
+      "value": "{gray.07}",
+      "type": "color"
+    },
+    "primary-dark": {
+      "value": "{blue.74}",
+      "type": "color"
+    },
+    "disabled": {
+      "value": "{gray.15}",
+      "type": "color"
+    },
+    "page-default": {
+      "value": "{gray.005}",
+      "type": "color"
+    },
+    "selected": {
+      "value": "{purple.10}",
+      "type": "color"
+    },
+    "info": {
+      "value": "{blue.30}",
+      "type": "color"
+    },
+    "info-light": {
+      "value": "{blue.10}",
+      "type": "color"
+    },
+    "success": {
+      "value": "{green.30}",
+      "type": "color"
+    },
+    "warning": {
+      "value": "{yellow.30}",
+      "type": "color"
+    },
+    "danger": {
+      "value": "{red.30}",
+      "type": "color"
+    },
+    "danger-dark": {
+      "value": "{red.70}",
+      "type": "color"
+    }
+  },
+  "border": {
+    "neutral-light": {
+      "value": "{gray.07}",
+      "type": "color"
+    },
+    "neutral-medium": {
+      "value": "{gray.15}",
+      "type": "color"
+    },
+    "primary-dark": {
+      "value": "{blue.74}",
+      "type": "color"
+    }
+  },
+  "category": {
+    "light-blue": {
+      "value": "{blackbaud.sky-blue.20}",
+      "type": "color"
+    },
+    "teal": {
+      "value": "{blackbaud.green.30}",
+      "type": "color"
+    },
+    "purple": {
+      "value": "{blackbaud.purple.30}",
+      "type": "color"
+    },
+    "orange": {
+      "value": "{blackbaud.orange.30}",
+      "type": "color"
+    },
+    "blue": {
+      "value": "{blackbaud.sky-blue.40}",
+      "type": "color"
+    },
+    "yellow": {
+      "value": "{blackbaud.yellow.30}",
+      "type": "color"
+    },
+    "red": {
+      "value": "{blackbaud.red.30}",
+      "type": "color"
+    }
+  },
+  "highlight": {
+    "info": {
+      "value": "{blue.50}",
+      "type": "color"
+    },
+    "success": {
+      "value": "{green.50}",
+      "type": "color"
+    },
+    "warning": {
+      "value": "{yellow.50}",
+      "type": "color"
+    },
+    "danger": {
+      "value": "{red.50}",
+      "type": "color"
+    }
+  },
+  "text": {
+    "default": {
+      "value": "{gray.105}",
+      "type": "color"
+    },
+    "deemphasized": {
+      "value": "{gray.70}",
+      "type": "color"
+    },
+    "on-dark": {
+      "value": "{white}",
+      "type": "color"
+    },
+    "action-primary": {
+      "value": "{blue.74}",
+      "type": "color"
+    },
+    "icon-borderless": {
+      "value": "{gray.20}",
+      "type": "color"
+    }
+  },
+  "padding": {
+    "even": {
+      "sm": {
+        "value": "{sm} {sm} {sm} {sm}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{md} {md} {md} {md}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{lg} {lg} {lg} {lg}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{xl} {xl} {xl} {xl}",
+        "type": "spacing"
+      }
+    }
+  },
+  "margin": {
+    "inline": {
+      "xs": {
+        "value": "{xs}",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "{sm}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{md}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{lg}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{xl}",
+        "type": "spacing"
+      },
+      "xxl": {
+        "value": "{xxl}",
+        "type": "spacing"
+      }
+    },
+    "stacked": {
+      "xs": {
+        "value": "{xs}",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "{sm}",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "{md}",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "{lg}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{xl}",
+        "type": "spacing"
+      },
+      "xxl": {
+        "value": "{xxl}",
+        "type": "spacing"
+      }
+    }
+  },
+  "semantic": {
+    "test": {
+      "color1": {
+        "value": "{test.color1}",
+        "type": "color"
+      }
+    }
+  }
+}

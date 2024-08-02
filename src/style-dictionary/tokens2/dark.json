@@ -1,0 +1,14 @@
+{
+  "background": {
+    "page-default": {
+      "value": "{gray.105}",
+      "type": "color"
+    }
+  },
+  "text": {
+    "default": {
+      "value": "{white}",
+      "type": "color"
+    }
+  }
+}
