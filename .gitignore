@@ -55,9 +55,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+.env.local
 
 .DS_STORE
 
 dist/
-

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/tokens.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/dev/main.ts"></script>
+    <script type="module">
+      const launchParam = import.meta.env.VITE_LAUNCH_QSPARAM;
+
+      let launchUrl = import.meta.env.VITE_LAUNCH_URL;
+
+      if (!launchUrl.endsWith('/')) {
+        launchUrl += '/';
+      }
+
+      const localUrl = new URL(import.meta.url);
+
+      let configEncoded = btoa(
+        JSON.stringify({
+          localUrl: localUrl.origin,
+          scripts: [
+            {
+              name: '@vite/client',
+              scriptType: 'module',
+            },
+            {
+              name: 'src/dev/main.ts',
+              scriptType: 'module',
+            },
+          ],
+          stylesheets: [
+            {
+              name: 'src/dev/tokens.css',
+            },
+          ],
+        }),
+      );
+
+      location.replace(
+        `${launchUrl}?${launchParam}=${encodeURIComponent(configEncoded)}`,
+      );
+    </script>
+  </body>
+</html>
