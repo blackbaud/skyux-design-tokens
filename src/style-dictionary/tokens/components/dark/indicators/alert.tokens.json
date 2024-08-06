@@ -1,0 +1,10 @@
+{
+  "alert": {
+    "background": {
+      "success": {
+        "value": "{purple.10}",
+        "type": "color"
+      }
+    }
+  }
+}

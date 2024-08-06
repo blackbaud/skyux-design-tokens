@@ -1,9 +1,0 @@
-{
-  "alert": {
-    "background-color": {
-      "success": {
-        "$value": "{color.purple.10}"
-      }
-    }
-  }
-}

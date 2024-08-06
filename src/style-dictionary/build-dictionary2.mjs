@@ -6,90 +6,64 @@ import { tokenSets } from './token-sets.mjs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 
 register(StyleDictionary);
+const sd = new StyleDictionary();
 
 StyleDictionary.registerTransform({
   name: 'name/kebab-with-type',
   type: 'name',
   transitive: true,
   transform: function(token, config) {
-    console.log(token);
     const attributes = Object.values(token.attributes).join('-');
-    return `${config.prefix}-${token.type}-${attributes}`;
+    return `${config.prefix}-${token.$extensions?.['studio.tokens'].originalType || token.type}-${attributes}`;
   }
 });
 
-const sd = new StyleDictionary({
-  source: ['src/style-dictionary/tokens2/**/*.json'],
-  preprocessors: ['tokens-studio'],
-  expand: {
-    typesMap: expandTypesMap,
-  },
-  platforms: {
-    css: {
-      transformGroup: 'tokens-studio',
-      options: {
-        outputReferences: true,
-        showFileHeader: false
-      },
-      prefix: 'sky',
-      transforms: ['name/kebab-with-type'],
-      buildPath: 'build/css/',
-      files: [
-        {
-          destination: 'variables.css',
-          format: 'css/variables',
-        },
-      ],
-    },
-  },
-});
-
 await sd.buildAllPlatforms();
-// await createStyleDictionaries();
+await createStyleDictionaries();
 
 // await createCompositeComponentFiles();
 
-// function getStyleDictionaryConfig(tokenSet) {
-//   const componentTokensPath = `src/style-dictionary/tokens/aliases/${tokenSet.path}/components/**/*.json`;
-//   const componentFiles = sync(componentTokensPath)
-//     .map((filePath) => filePath.replace(`src/style-dictionary/tokens/aliases/${tokenSet.path}/`, '').replace('.json', ''));
+function getStyleDictionaryConfig(tokenSet) {
+  const componentTokensPath = `src/style-dictionary/tokens/components/${tokenSet.name}/**/*.json`;
+  const componentFiles = sync(componentTokensPath)
+    .map((filePath) => filePath.replace(`src/style-dictionary/tokens/components/${tokenSet.name}/`, '').replace('.json', ''));
 
 
-//   return {
-//     source: [`src/style-dictionary/tokens/base/**/*.json`, `src/style-dictionary/tokens/aliases/${tokenSet.path}/**/*.json`],
-//     platforms: {
-//       web: {
-//         transformGroup: 'css',
-//         options: {
-//           outputReferences: true,
-//           showFileHeader: false,
-//           selector: tokenSet.selector,
-//         },
-//         prefix: 'sky',
-//         buildPath: `dist/style-dictionary/${tokenSet.name}/`,
-//         files: [
-//           {
-//             destination: 'base.css',
-//             format: 'css/variables',
-//             filter: (token) => filterByFilePath(token, 'base'),
-//           },
-//           {
-//             destination: `${tokenSet.name}.css`,
-//             format: 'css/variables',
-//             filter: (token) => filterByFilePath(token, tokenSet.path, `${tokenSet.path}/components/`),
-//           },
-//           ...componentFiles.map((filePath) => {
-//             return {
-//               destination: `${filePath}.css`,
-//               format: 'css/variables',
-//               filter: (token) => filterByFilePath(token, `${tokenSet.path}/${filePath}`)
-//             };
-//           })
-//         ],
-//       }
-//     }
-//   };
-// }
+  return {
+    source: [`src/style-dictionary/tokens/base.json`, `src/style-dictionary/tokens/${tokenSet.name}.json`],
+    preprocessors: ['tokens-studio'],
+    expand: {
+      typesMap: expandTypesMap,
+    },
+    platforms: {
+      css: {
+        transformGroup: 'tokens-studio',
+        transforms: ['name/kebab-with-type'],
+        options: {
+          outputReferences: true,
+          showFileHeader: false,
+          selector: tokenSet.selector,
+        },
+        prefix: 'sky',
+        buildPath: `dist/style-dictionary/`,
+        files: [
+          {
+            destination: `${tokenSet.name}.css`,
+            format: 'css/variables',
+            filter: (token) => filterByFilePath(token, tokenSet.name, `components/`),
+          },
+          ...componentFiles.map((filePath) => {
+            return {
+              destination: `${filePath}.css`,
+              format: 'css/variables',
+              filter: (token) => filterByFilePath(token, `${filePath}/${tokenSet.path}`)
+            };
+          })
+        ],
+      }
+    }
+  };
+}
 
 async function createStyleDictionaries() {
   await Promise.all(tokenSets.map(async function (tokenSet) {

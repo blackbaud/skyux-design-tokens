@@ -1,0 +1,26 @@
+{
+  "alert": {
+    "color": {
+      "value": "{text.default}",
+      "type": "color"
+    },
+    "background": {
+      "info": {
+        "value": "{background.info-light}",
+        "type": "color"
+      },
+      "success": {
+        "value": "{background.success}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{background.warning}",
+        "type": "color"
+      },
+      "danger": {
+        "value": "{background.danger}",
+        "type": "color"
+      }
+    }
+  }
+}
