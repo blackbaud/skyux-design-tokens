@@ -1,9 +1,11 @@
 {
   "alert": {
-    "background": {
-      "success": {
-        "value": "{purple.10}",
-        "type": "color"
+    "color": {
+      "background": {
+        "success": {
+          "value": "{color.purple.10}",
+          "type": "color"
+        }
       }
     }
   }

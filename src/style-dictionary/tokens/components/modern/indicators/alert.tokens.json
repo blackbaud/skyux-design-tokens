@@ -1,25 +1,27 @@
 {
   "alert": {
     "color": {
-      "value": "{text.default}",
-      "type": "color"
-    },
-    "background": {
-      "info": {
-        "value": "{background.info-light}",
+      "text": {
+        "value": "{color.text.default}",
         "type": "color"
       },
-      "success": {
-        "value": "{background.success}",
-        "type": "color"
-      },
-      "warning": {
-        "value": "{background.warning}",
-        "type": "color"
-      },
-      "danger": {
-        "value": "{background.danger}",
-        "type": "color"
+      "background": {
+        "info": {
+          "value": "{color.background.info-light}",
+          "type": "color"
+        },
+        "success": {
+          "value": "{color.background.success}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.background.warning}",
+          "type": "color"
+        },
+        "danger": {
+          "value": "{color.background.danger}",
+          "type": "color"
+        }
       }
     }
   }

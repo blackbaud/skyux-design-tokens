@@ -1,16 +1,60 @@
 import { sync } from 'glob';
 import StyleDictionary from 'style-dictionary';
 import { expandTypesMap, register } from '@tokens-studio/sd-transforms';
-import { tokenSets } from './token-sets.mjs';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { tokenSets } from '../src/style-dictionary/token-sets.mjs';
 
-register(StyleDictionary);
-const sd = new StyleDictionary({}, { verbosity: 'verbose' });
+export function buildStyleDictionaryPlugin() {
+  return {
+    name: 'transform-style-dictionary',
+    async generateBundle() {
+      const allThemes = tokenSets.map((set) => set.name);
+      register(StyleDictionary);
+      const sd = new StyleDictionary();
 
-// await sd.buildAllPlatforms();
-await createStyleDictionaries();
+      let allFiles = [];
+      const compositeStyleFiles = {};
 
-await createCompositeComponentFiles();
+      await Promise.all(
+        tokenSets.map(async function (tokenSet) {
+          const themeDictionary = await sd.extend(
+            getStyleDictionaryConfig(tokenSet),
+          );
+          const files = await themeDictionary.formatPlatform('css');
+          allFiles = allFiles.concat(files);
+        }),
+      );
+
+      for (let file of allFiles) {
+        this.emitFile({
+          type: 'asset',
+          fileName: file.destination.replace('dist/', ''),
+          source: file.output,
+        });
+
+        if (file.destination.includes('components/')) {
+          let fileName = file.destination;
+          for (let themeName of allThemes) {
+            fileName = fileName.replace(themeName, 'composite');
+          }
+
+          let fileContents = compositeStyleFiles[fileName] || '';
+          fileContents = fileContents.concat(file.output);
+
+          compositeStyleFiles[fileName] = fileContents;
+        }
+      }
+
+      for (let fileName of Object.keys(compositeStyleFiles)) {
+        const fileContents = compositeStyleFiles[fileName];
+        this.emitFile({
+          type: 'asset',
+          fileName: fileName.replace('dist/', ''),
+          source: fileContents,
+        });
+      }
+    },
+  };
+}
 
 function getStyleDictionaryConfig(tokenSet) {
   const componentTokensPath = `src/style-dictionary/tokens/components/${tokenSet.name}/**/*.json`;
@@ -34,6 +78,7 @@ function getStyleDictionaryConfig(tokenSet) {
       css: {
         transformGroup: 'tokens-studio',
         transforms: ['name/kebab'],
+        prefix: 'sky',
         options: {
           outputReferences: true,
           showFileHeader: false,
@@ -59,53 +104,6 @@ function getStyleDictionaryConfig(tokenSet) {
       },
     },
   };
-}
-
-async function createStyleDictionaries() {
-  await Promise.all(
-    tokenSets.map(async function (tokenSet) {
-      const themeDictionary = await sd.extend(
-        getStyleDictionaryConfig(tokenSet),
-      );
-      // await themeDictionary.buildAllPlatforms();
-      const files = await themeDictionary.formatPlatform('css');
-      console.log(platform);
-
-      for (let file of files) {
-      }
-    }),
-  );
-}
-
-async function createCompositeComponentFiles() {
-  // modern theme will definitely have tokens for every component, so this gets an exhaustive list of components
-  const modernTokensPath = `dist/style-dictionary/components/modern/**/*.css`;
-  const componentFiles = sync(modernTokensPath).map((filePath) =>
-    filePath.replace(`dist/style-dictionary/components/modern/`, ''),
-  );
-
-  componentFiles.forEach(async (filePath) => {
-    let fileContents = '';
-    await Promise.all(
-      tokenSets.map(async (tokenSet) => {
-        const themeFilePath = `dist/style-dictionary/components/${tokenSet.name}/${filePath}`;
-        await readFile(themeFilePath)
-          .then((data) => {
-            fileContents += data.toString();
-            fileContents += '\n';
-          })
-          .catch(() => {});
-      }),
-    );
-
-    const destination = `dist/style-dictionary/components/composite/${filePath}`;
-    const pathParts = destination.split('/');
-    pathParts.pop();
-    const directory = pathParts.join('/');
-
-    await mkdir(directory, { recursive: true });
-    await writeFile(destination, fileContents);
-  });
 }
 
 function filterByFilePath(token, filePath, notFilePath) {

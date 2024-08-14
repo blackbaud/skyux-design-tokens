@@ -1,14 +1,16 @@
 {
-  "background": {
-    "page-default": {
-      "value": "{gray.105}",
-      "type": "color"
-    }
-  },
-  "text": {
-    "default": {
-      "value": "{white}",
-      "type": "color"
+  "color": {
+    "background": {
+      "page-default": {
+        "value": "{color.gray.105}",
+        "type": "color"
+      }
+    },
+    "text": {
+      "default": {
+        "value": "{color.white}",
+        "type": "color"
+      }
     }
   }
 }

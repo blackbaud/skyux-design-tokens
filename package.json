@@ -7,10 +7,8 @@
   "type": "module",
   "scripts": {
     "clean": "rimraf -- dist",
-    "build2": "npm run build:style-dictionary && node src/build-styles.js",
-    "build:style-dictionary": "node src/style-dictionary/build-dictionary2.mjs",
     "dev": "vite",
-    "build": "node src/build-styles.cjs",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-body.sky-theme-token-dev {
-  --sky-background-color-neutral-light: blue;
+body.sky-theme-default {
+  --sky-background-color-neutral-light: red;
   --sky-text-color-default: #000;
 }

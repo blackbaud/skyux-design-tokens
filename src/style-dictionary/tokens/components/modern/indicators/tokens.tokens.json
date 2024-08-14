@@ -1,34 +1,45 @@
 {
   "token": {
     "color": {
-      "$value": "{text-color.default}"
-    },
-    "background-color": {
-      "info": {
-        "$value": "{background-color.info-light}"
+      "text": {
+        "value": "{color.text.default}",
+        "type": "color"
       },
-      "success": {
-        "$value": "{background-color.success}"
+      "background": {
+        "info": {
+          "value": "{color.background.info-light}",
+          "type": "color"
+        },
+        "success": {
+          "value": "{color.background.success}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.background.warning}",
+          "type": "color"
+        },
+        "danger": {
+          "value": "{color.background.danger}",
+          "type": "color"
+        }
       },
-      "warning": {
-        "$value": "{background-color.warning}"
-      },
-      "danger": {
-        "$value": "{background-color.danger}"
-      }
-    },
-    "border-color": {
-      "info": {
-        "$value": "{highlight-color.info}"
-      },
-      "success": {
-        "$value": "{highlight-color.success}"
-      },
-      "warning": {
-        "$value": "{highlight-color.warning}"
-      },
-      "danger": {
-        "$value": "{background-color.danger}"
+      "border": {
+        "info": {
+          "value": "{color.highlight.info}",
+          "type": "color"
+        },
+        "success": {
+          "value": "{color.highlight.success}",
+          "type": "color"
+        },
+        "warning": {
+          "value": "{color.highlight.warning}",
+          "type": "color"
+        },
+        "danger": {
+          "value": "{color.highlight.danger}",
+          "type": "color"
+        }
       }
     }
   }
