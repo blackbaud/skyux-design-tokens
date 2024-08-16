@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cc7d0028dc0f4fe927d8674194ac00d46976e67a",
+    "name": "Blackbaud",
+    "$figmaStyleReferences": {
+      "text.heading.1": "S:2d6ebee9954fbe3fcebe427f7c11ffdd1f8e72fe,"
+    },
+    "selectedTokenSets": {
+      "Core": "enabled",
+      "Blackbaud base": "source",
+      "Brand/Blackbaud": "enabled"
+    },
+    "group": "Brand",
+    "$figmaCollectionId": "VariableCollectionId:2009:37",
+    "$figmaModeId": "2009:0",
+    "$figmaVariableReferences": {
+      "color.text.default": "5e3536291f0d5a97b3a341e3dfe9aed676892840",
+      "color.text.deemphasized": "d4a3a7db5f90dbb0a95d454bb511fa2ecd6d819d",
+      "color.text.action": "6b9cd1ed964236d6e79307e29d31ca48246bde67",
+      "color.text.danger": "616e6a8b4ea5cd98710fcc5f2444847c0f47907d",
+      "color.background.page": "a2eacc744394c0f999003c7a9d0c6994a1fcd24b",
+      "color.background.action": "d432ba4cff6a03b8556aa6b1febf1273abca6216",
+      "color.background.disabled": "b7a661e335f479fee2d38cabcc71384600fc1fa1",
+      "color.background.danger": "cc712c037d44e01b1fb1a924ac1efad1a28b8f76",
+      "color.status-highlight.danger": "d7e2b987d25583524318c887710d4f9c4bbdb0c4",
+      "color.status-highlight.info": "9cdaf3019afd9a69bbc7a56d4b2ce3df497c3782",
+      "color.status-highlight.success": "29619e99d3d0810c7cd504cdbec83ac7509a3113",
+      "color.status-highlight.warning": "9d2fe62ddfc9d527be31da1071853692d38202d9",
+      "color.status-background.danger": "5ed5c61614dc8198d66cb693b533e90f763d8857",
+      "color.status-background.info": "c4bcd1f933d68b1ab462b1a1445cb0bf04a670b5",
+      "color.status-background.success": "ed0d30e90a5bf7d0c14c31902024983442cc4160",
+      "color.status-background.warning": "fd60d30b79cf8bfa40d27e7bd7b227b0a92bac55",
+      "color.border.neutral-soft": "c4eaed328f06dc9d8833a4bea4fc3bdc0769dd53",
+      "color.border.neutral-heavy": "1d8b1cf8b098672ad23e10019b09d81d18274845",
+      "color.border.action": "372a33bd1c9ae890c68907421006471dd9d95051",
+      "space.inset.l": "46c975a71ab6d5a1068044b777f15a85f2b4e0e9",
+      "space.inset.m": "abc06f664192720255bac404ee62f800b865e2de"
+    }
+  },
+  {
+    "id": "92d48c856f04cc6e3fe6fdeb3a9830d3bc73591e",
+    "name": "JustGiving",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "JustGiving base": "source",
+      "Core": "enabled",
+      "Brand/JustGiving": "enabled",
+      "Blackbaud base": "source"
+    },
+    "$figmaCollectionId": "VariableCollectionId:2009:37",
+    "$figmaModeId": "2009:1",
+    "$figmaVariableReferences": {
+      "color.background.action": "d432ba4cff6a03b8556aa6b1febf1273abca6216",
+      "space.inset.m": "abc06f664192720255bac404ee62f800b865e2de",
+      "space.inset.l": "46c975a71ab6d5a1068044b777f15a85f2b4e0e9"
+    },
+    "group": "Brand"
+  }
+]

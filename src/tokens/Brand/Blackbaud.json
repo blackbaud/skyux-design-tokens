@@ -1,0 +1,115 @@
+{
+  "color": {
+    "text": {
+      "default": {
+        "value": "{color.gray.900}",
+        "type": "color"
+      },
+      "deemphasized": {
+        "value": "{color.gray.600}",
+        "type": "color"
+      },
+      "action": {
+        "value": "{color.blue.600}",
+        "type": "color"
+      },
+      "danger": {
+        "value": "{color.red.700}",
+        "type": "color"
+      }
+    },
+    "background": {
+      "page": {
+        "value": "{color.gray.25}",
+        "type": "color"
+      },
+      "action": {
+        "value": "{color.blue.600}",
+        "type": "color"
+      },
+      "disabled": {
+        "value": "{color.gray.50}",
+        "type": "color"
+      },
+      "danger": {
+        "value": "{color.red.600}",
+        "type": "color"
+      }
+    },
+    "status-highlight": {
+      "danger": {
+        "value": "{color.red.600}",
+        "type": "color"
+      },
+      "info": {
+        "value": "{color.blue.600}",
+        "type": "color"
+      },
+      "success": {
+        "value": "{color.green.600}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{color.yellow.600}",
+        "type": "color"
+      }
+    },
+    "status-background": {
+      "danger": {
+        "value": "{color.red.300}",
+        "type": "color"
+      },
+      "info": {
+        "value": "{color.blue.300}",
+        "type": "color"
+      },
+      "success": {
+        "value": "{color.green.300}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{color.yellow.300}",
+        "type": "color"
+      }
+    },
+    "border": {
+      "neutral-soft": {
+        "value": "{color.gray.100}",
+        "type": "color"
+      },
+      "neutral-heavy": {
+        "value": "{color.gray.500}",
+        "type": "color"
+      },
+      "action": {
+        "value": "{color.blue.600}",
+        "type": "color"
+      }
+    }
+  },
+  "text": {
+    "heading": {
+      "1": {
+        "value": {
+          "fontFamily": "{bb.font.family.sans}",
+          "fontWeight": "{bb.font.weight.regular}",
+          "fontSize": "{bb.font.size.500}",
+          "lineHeight": "{bb.line-height.500}"
+        },
+        "type": "typography"
+      }
+    }
+  },
+  "space": {
+    "inset": {
+      "l": {
+        "value": "9",
+        "type": "spacing"
+      },
+      "m": {
+        "value": "{space.5}",
+        "type": "spacing"
+      }
+    }
+  }
+}

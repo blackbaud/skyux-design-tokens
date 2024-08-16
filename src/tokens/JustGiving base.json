@@ -1,0 +1,22 @@
+{
+  "jg": {
+    "interaction-blue": {
+      "ligher": {
+        "value": "#E8EFF8",
+        "type": "color"
+      },
+      "light": {
+        "value": "#76A4D8",
+        "type": "color"
+      },
+      "regular": {
+        "value": "#1D67BE",
+        "type": "color"
+      },
+      "dark": {
+        "value": "#144784",
+        "type": "color"
+      }
+    }
+  }
+}
