@@ -1,0 +1,71 @@
+[
+  {
+    "id": "cc7d0028dc0f4fe927d8674194ac00d46976e67a",
+    "name": "Blackbaud",
+    "$figmaStyleReferences": {
+      "type.heading.1": "S:ad7bf5d68079b91fd7a46e3048a6f4f591953f58,",
+      "type.heading.4": "S:2b6ab71cd962754e52b6a490d85155b538fee37a,",
+      "type.hint": "S:c5217468046760ec0d733dfb009c31bb2d7df686,"
+    },
+    "selectedTokenSets": {
+      "Core": "enabled",
+      "Blackbaud base": "source",
+      "Brand/Blackbaud": "enabled"
+    },
+    "$figmaCollectionId": "VariableCollectionId:2032:37",
+    "$figmaModeId": "2032:0",
+    "$figmaVariableReferences": {
+      "color.text.default": "282467a0044b696a49a7639eb99a04c84564961e",
+      "color.text.deemphasized": "3ac273397a2601cfbff8bb9a01d26d5d3e6d40e1",
+      "color.text.action": "f0d01efc2dd0020d8f80d95fd4a00561ec6b5006",
+      "color.text.danger": "4750047f0618ceccc6176370569b5d3d426daf38",
+      "color.background.page": "8e8892887942d3b9fccb9c0af6ff010a13099475",
+      "color.background.action": "a870aa890445bd34d1941f5e063c30e14e507efa",
+      "color.background.disabled": "2b7a19a828a06fdf3989cfb27ebd916a499998d7",
+      "color.background.danger": "34dafa6a2c09c9e6e9e1184a2fee418a053e97c7",
+      "color.status-highlight.danger": "9e05648f4a104f7b8dbd7617ca5955a3ba79e2ea",
+      "color.status-highlight.info": "4e61196e0a14f04ebe83a11ccaee00ad22e414d0",
+      "color.status-highlight.success": "c40f0290bc6bd4b2b9813823840df599740e790a",
+      "color.status-highlight.warning": "acf7f821285132c17fcca9513d489c5ba06666b4",
+      "color.status-background.danger": "ebc2bf2b63a3ab24f469b47a2ee5e45678354d76",
+      "color.status-background.info": "2a0135d27b59cceff07ffdc60a4a7552c3ff90f8",
+      "color.status-background.success": "ecae48b949a73014c7f0f5753cc7d94009a823b1",
+      "color.status-background.warning": "ffecc26a98e57051f29c5303e36be3d1ff9c1d44",
+      "color.border.neutral-soft": "89eb15187716c7a970f65f809ae1e2a06b93494f",
+      "color.border.neutral-heavy": "0928ea0d85cc6a48c032e8794db5c8a8137bcf48",
+      "color.border.action": "3cf525613985da44f11da71b5b2ed63ad355242d",
+      "space.inset.balanced.top.l": "be8fc513aebe2897f9bf780e4f4ba75a64aa17bf",
+      "space.inset.balanced.top.m": "60eef9cdfe8163def618bd3383cd9cde344e8118",
+      "space.inset.balanced.top.s": "db19871b0465ba79212cfc513bcf0b36a28212f1",
+      "space.inset.balanced.right.l": "34e45e5e8053dbbb33a7e8b745f8498966dcb03e",
+      "space.inset.balanced.right.m": "d4172ff5b8d6cfa6646114c6dec7f69d15f5bbe1",
+      "space.inset.balanced.right.s": "50a00aab4ba4653066bb59168948e946755145d7",
+      "space.inset.balanced.bottom.l": "6102aaa4b6842f23e2a9d5d5a1c06a0fbcb6c905",
+      "space.inset.balanced.bottom.m": "aab94196de2e2183c69210ea4ba5964e030911c9",
+      "space.inset.balanced.bottom.s": "a248994ed239f8e49a7ef846f704415b9358164d",
+      "space.inset.balanced.left.l": "72b8690af3af93e85abdf21d6d193315dea50b44",
+      "space.inset.balanced.left.m": "26550887075e45f00acbdc71789c488e071b9393",
+      "space.inset.balanced.left.s": "a0470816443ba4b50c7ff2afe6973529339474d2"
+    },
+    "group": "Brand"
+  },
+  {
+    "id": "92d48c856f04cc6e3fe6fdeb3a9830d3bc73591e",
+    "name": "JustGiving",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "JustGiving base": "source",
+      "Core": "enabled",
+      "Brand/JustGiving": "enabled",
+      "Blackbaud base": "source"
+    },
+    "$figmaCollectionId": "VariableCollectionId:2032:37",
+    "$figmaModeId": "2038:1",
+    "$figmaVariableReferences": {
+      "color.background.action": "a870aa890445bd34d1941f5e063c30e14e507efa",
+      "space.inset.m": "60eef9cdfe8163def618bd3383cd9cde344e8118",
+      "space.inset.l": "be8fc513aebe2897f9bf780e4f4ba75a64aa17bf"
+    },
+    "group": "Brand"
+  }
+]
