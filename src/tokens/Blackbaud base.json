@@ -83,12 +83,52 @@
           "type": "fontWeights"
         }
       },
+      "weight-style": {
+        "regular": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "italic": {
+          "value": "Italic",
+          "type": "fontWeights"
+        },
+        "semibold": {
+          "value": "Semibold",
+          "type": "fontWeights"
+        },
+        "light": {
+          "value": "Light",
+          "type": "fontWeights"
+        },
+        "light-italic": {
+          "value": "Light Italic",
+          "type": "fontWeights"
+        },
+        "semibold-italic": {
+          "value": "Semibold Italic",
+          "type": "fontWeights"
+        }
+      },
       "src": {
         "sans": {
           "regular": {
             "value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff) format(\"woff\")",
             "type": "asset"
+          },
+          "italic": {
+            "value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff) format(\"woff\")",
+            "type": "asset"
           }
+        }
+      },
+      "style": {
+        "normal": {
+          "value": "normal",
+          "type": "other"
+        },
+        "italic": {
+          "value": "italic",
+          "type": "other"
         }
       }
     },
@@ -124,6 +164,40 @@
       "800": {
         "value": "3rem",
         "type": "lineHeights"
+      }
+    },
+    "border": {
+      "radius": {
+        "s": {
+          "value": ".25rem",
+          "type": "borderRadius"
+        },
+        "m": {
+          "value": ".5rem",
+          "type": "borderRadius"
+        },
+        "full": {
+          "value": "999rem",
+          "type": "borderRadius"
+        },
+        "circle": {
+          "value": "50%",
+          "type": "borderRadius"
+        }
+      },
+      "width": {
+        "0": {
+          "value": "0px",
+          "type": "borderWidth"
+        },
+        "1": {
+          "value": "1px",
+          "type": "borderWidth"
+        },
+        "2": {
+          "value": "2px",
+          "type": "borderWidth"
+        }
       }
     }
   },
@@ -175,18 +249,6 @@
     "11": {
       "value": "64px",
       "type": "spacing"
-    }
-  },
-  "border": {
-    "radius": {
-      "s": {
-        "value": "4px",
-        "type": "borderRadius"
-      },
-      "m": {
-        "value": "6px",
-        "type": "borderRadius"
-      }
     }
   },
   "color": {
@@ -618,15 +680,6 @@
         ],
         "type": "boxShadow"
       }
-    }
-  },
-  "font-face": {
-    "regular": {
-      "value": {
-        "fontFamilies": "{bb.font.name}",
-        "asset": "{bb.font.src.sans.regular}"
-      },
-      "type": "composition"
     }
   }
 }
