@@ -1,0 +1,10 @@
+{
+  "color": {
+    "background": {
+      "action": {
+        "value": "{bb.color.blue.800}",
+        "type": "color"
+      }
+    }
+  }
+}

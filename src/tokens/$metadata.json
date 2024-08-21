@@ -1,15 +1,11 @@
 {
   "tokenSetOrder": [
-    "Blackbaud base",
-    "JustGiving base",
-    "reference",
-    "Core",
-    "Brand/Blackbaud",
-    "Brand/JustGiving",
-    "Density/Compact",
-    "Density/Productive",
-    "Density/Spacious",
-    "Color scheme/Light",
-    "Color scheme/Dark"
+    "base-blackbaud",
+    "base-justgiving",
+    "core",
+    "brand/justgiving",
+    "density/compact",
+    "density/spacious",
+    "color-scheme/dark"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "color": {
+    "background": {
+      "action": {
+        "value": "{jg.color.brand.purple}",
+        "type": "color"
+      }
+    },
+    "text": {
+      "default": {
+        "value": "{jg.color.neutrals.white}",
+        "type": "color"
+      }
+    }
+  }
+}

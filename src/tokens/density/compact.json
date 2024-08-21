@@ -1,0 +1,48 @@
+{
+  "space": {
+    "inset": {
+      "balanced": {
+        "top": {
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          },
+          "m": {
+            "value": "{bb.space.3}",
+            "type": "spacing"
+          }
+        },
+        "right": {
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          },
+          "m": {
+            "value": "{bb.space.5}",
+            "type": "spacing"
+          }
+        },
+        "bottom": {
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          },
+          "m": {
+            "value": "{bb.space.3}",
+            "type": "spacing"
+          }
+        },
+        "left": {
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          },
+          "m": {
+            "value": "{bb.space.5}",
+            "type": "spacing"
+          }
+        }
+      }
+    }
+  }
+}
