@@ -16,14 +16,13 @@
     },
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "core": "enabled",
-      "brand/bb-light": "enabled",
-      "brand/bb-dark": "disabled",
-      "brand/jg-light": "disabled",
-      "density/bb-productive": "disabled",
-      "density/bb-compact": "disabled",
-      "density/bb-spacious": "disabled",
-      "density/jg-base": "disabled"
+      "color/bb-light": "enabled",
+      "color/bb-dark": "disabled",
+      "color/jg-light": "disabled",
+      "layout/bb-productive": "disabled",
+      "layout/bb-compact": "disabled",
+      "layout/bb-spacious": "disabled",
+      "layout/jg-base": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1808",
     "$figmaModeId": "2084:53",
@@ -53,7 +52,7 @@
       "color.text.inverse": "39535277a811584be55c06c32ed7888de1b292ff",
       "color.background.container": "0d7860169522ab2fb276c68d0971a0d1f51f3c37"
     },
-    "group": "Brand"
+    "group": "Color"
   },
   {
     "id": "3f952a394d12fc8681302cb8030470ec0bda9ce7",
@@ -61,10 +60,13 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "brand/bb-light": "enabled",
-      "brand/bb-dark": "enabled",
-      "core": "enabled",
-      "density/jg-base": "disabled"
+      "color/bb-light": "enabled",
+      "color/bb-dark": "enabled",
+      "color/jg-light": "disabled",
+      "layout/bb-productive": "disabled",
+      "layout/bb-compact": "disabled",
+      "layout/bb-spacious": "disabled",
+      "layout/jg-base": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1808",
     "$figmaModeId": "2084:54",
@@ -94,7 +96,7 @@
       "border.radius.m": "dbc9032e33edff4caa62529046679ca40317ebf1",
       "color.text.inverse": "39535277a811584be55c06c32ed7888de1b292ff"
     },
-    "group": "Brand"
+    "group": "Color"
   },
   {
     "id": "92d48c856f04cc6e3fe6fdeb3a9830d3bc73591e",
@@ -117,10 +119,14 @@
     },
     "selectedTokenSets": {
       "base-justgiving": "source",
-      "core": "enabled",
       "base-blackbaud": "source",
-      "brand/bb-light": "enabled",
-      "brand/jg-light": "enabled"
+      "color/bb-light": "enabled",
+      "color/bb-dark": "disabled",
+      "color/jg-light": "enabled",
+      "layout/bb-productive": "disabled",
+      "layout/bb-compact": "disabled",
+      "layout/bb-spacious": "disabled",
+      "layout/jg-base": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1808",
     "$figmaModeId": "2084:55",
@@ -150,7 +156,7 @@
       "color.text.inverse": "39535277a811584be55c06c32ed7888de1b292ff",
       "color.background.container": "0d7860169522ab2fb276c68d0971a0d1f51f3c37"
     },
-    "group": "Brand"
+    "group": "Color"
   },
   {
     "id": "3251cdc9b20dadf17c8adc85627f247d9864e0b6",
@@ -158,8 +164,13 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "core": "enabled",
-      "density/bb-productive": "enabled"
+      "color/bb-light": "disabled",
+      "color/bb-dark": "disabled",
+      "color/jg-light": "disabled",
+      "layout/bb-productive": "enabled",
+      "layout/bb-compact": "disabled",
+      "layout/bb-spacious": "disabled",
+      "layout/jg-base": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1903",
     "$figmaModeId": "2084:60",
@@ -235,7 +246,7 @@
       "size.illustration.l": "3e44d7df16301345c8ae58626e8a9be9198652da",
       "size.illustration.xl": "d3076c774ac41d26a226ef70958674c2109bb448"
     },
-    "group": "Density"
+    "group": "Layout"
   },
   {
     "id": "7334263842cb26c525c17bfbd9af31d4fffe1a25",
@@ -243,9 +254,13 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "core": "enabled",
-      "density/bb-productive": "enabled",
-      "density/bb-compact": "enabled"
+      "color/bb-light": "disabled",
+      "color/bb-dark": "disabled",
+      "color/jg-light": "disabled",
+      "layout/bb-productive": "enabled",
+      "layout/bb-compact": "enabled",
+      "layout/bb-spacious": "disabled",
+      "layout/jg-base": "disabled"
     },
     "$figmaVariableReferences": {
       "space.inset.balanced.m": "cc6af7a9be2cff6f4440d1aa03a1aa7f19e79441",
@@ -321,7 +336,7 @@
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1903",
     "$figmaModeId": "2084:61",
-    "group": "Density"
+    "group": "Layout"
   },
   {
     "id": "d4a49b97603670578fa08c84a5e42ac4e24f088b",
@@ -344,9 +359,13 @@
     },
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "core": "enabled",
-      "density/bb-productive": "enabled",
-      "density/bb-spacious": "enabled"
+      "color/bb-light": "disabled",
+      "color/bb-dark": "disabled",
+      "color/jg-light": "disabled",
+      "layout/bb-productive": "enabled",
+      "layout/bb-compact": "disabled",
+      "layout/bb-spacious": "enabled",
+      "layout/jg-base": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1903",
     "$figmaModeId": "2084:62",
@@ -422,7 +441,7 @@
       "size.illustration.l": "3e44d7df16301345c8ae58626e8a9be9198652da",
       "size.illustration.xl": "d3076c774ac41d26a226ef70958674c2109bb448"
     },
-    "group": "Density"
+    "group": "Layout"
   },
   {
     "id": "21e333f25f2e9acce69722b102ec324153a6761e",
@@ -446,8 +465,13 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "base-justgiving": "source",
-      "density/bb-productive": "enabled",
-      "density/jg-base": "enabled"
+      "color/bb-light": "disabled",
+      "color/bb-dark": "disabled",
+      "color/jg-light": "disabled",
+      "layout/bb-productive": "enabled",
+      "layout/bb-compact": "disabled",
+      "layout/bb-spacious": "disabled",
+      "layout/jg-base": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2084:1903",
     "$figmaModeId": "2084:63",
@@ -523,6 +547,6 @@
       "size.illustration.l": "3e44d7df16301345c8ae58626e8a9be9198652da",
       "size.illustration.xl": "d3076c774ac41d26a226ef70958674c2109bb448"
     },
-    "group": "Density"
+    "group": "Layout"
   }
 ]

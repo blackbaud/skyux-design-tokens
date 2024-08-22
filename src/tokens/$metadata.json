@@ -2,13 +2,12 @@
   "tokenSetOrder": [
     "base-blackbaud",
     "base-justgiving",
-    "core",
-    "brand/bb-light",
-    "brand/jg-light",
-    "brand/bb-dark",
-    "density/bb-productive",
-    "density/bb-compact",
-    "density/bb-spacious",
-    "density/jg-base"
+    "color/bb-light",
+    "color/bb-dark",
+    "color/jg-light",
+    "layout/bb-productive",
+    "layout/bb-compact",
+    "layout/bb-spacious",
+    "layout/jg-base"
   ]
 }
