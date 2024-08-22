@@ -1,0 +1,23 @@
+{
+  "type": {
+    "body": {
+      "m": {
+        "value": {
+          "fontFamily": "{jg.font.family.sans}",
+          "fontSize": "{jg.font.size.300}"
+        },
+        "type": "typography"
+      }
+    },
+    "heading": {
+      "2": {
+        "value": {
+          "fontFamily": "{jg.font.family.sans}",
+          "fontWeight": "Regular",
+          "fontSize": "{jg.font.size.1000}"
+        },
+        "type": "typography"
+      }
+    }
+  }
+}

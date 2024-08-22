@@ -178,11 +178,11 @@
     },
     "border": {
       "radius": {
-        "s": {
+        "025": {
           "value": ".25rem",
           "type": "borderRadius"
         },
-        "m": {
+        "050": {
           "value": ".5rem",
           "type": "borderRadius"
         },

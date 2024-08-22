@@ -3,9 +3,12 @@
     "base-blackbaud",
     "base-justgiving",
     "core",
-    "brand/justgiving",
-    "density/compact",
-    "density/spacious",
-    "color-scheme/dark"
+    "brand/bb-light",
+    "brand/jg-light",
+    "brand/bb-dark",
+    "density/bb-productive",
+    "density/bb-compact",
+    "density/bb-spacious",
+    "density/jg-base"
   ]
 }

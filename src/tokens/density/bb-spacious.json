@@ -3,42 +3,42 @@
     "inset": {
       "balanced": {
         "top": {
-          "xl": {
-            "value": "{bb.space.7}",
+          "m": {
+            "value": "{bb.space.6}",
             "type": "spacing"
           },
-          "m": {
-            "value": "{bb.space.3}",
+          "xl": {
+            "value": "{bb.space.9}",
             "type": "spacing"
           }
         },
         "right": {
-          "xl": {
-            "value": "{bb.space.7}",
+          "m": {
+            "value": "{bb.space.6}",
             "type": "spacing"
           },
-          "m": {
-            "value": "{bb.space.5}",
+          "xl": {
+            "value": "{bb.space.9}",
             "type": "spacing"
           }
         },
         "bottom": {
-          "xl": {
-            "value": "{bb.space.7}",
+          "m": {
+            "value": "{bb.space.6}",
             "type": "spacing"
           },
-          "m": {
-            "value": "{bb.space.3}",
+          "xl": {
+            "value": "{bb.space.9}",
             "type": "spacing"
           }
         },
         "left": {
-          "xl": {
-            "value": "{bb.space.7}",
+          "m": {
+            "value": "{bb.space.6}",
             "type": "spacing"
           },
-          "m": {
-            "value": "{bb.space.5}",
+          "xl": {
+            "value": "{bb.space.9}",
             "type": "spacing"
           }
         }

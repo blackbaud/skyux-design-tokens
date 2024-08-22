@@ -1,0 +1,66 @@
+{
+  "space": {
+    "inset": {
+      "balanced": {
+        "m": {
+          "value": "{bb.space.3}",
+          "type": "spacing"
+        },
+        "xl": {
+          "value": "{bb.space.7}",
+          "type": "spacing"
+        },
+        "top": {
+          "m": {
+            "value": "{bb.space.3}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          }
+        },
+        "right": {
+          "m": {
+            "value": "{bb.space.5}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          }
+        },
+        "bottom": {
+          "m": {
+            "value": "{bb.space.3}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          }
+        },
+        "left": {
+          "m": {
+            "value": "{bb.space.5}",
+            "type": "spacing"
+          },
+          "xl": {
+            "value": "{bb.space.7}",
+            "type": "spacing"
+          }
+        }
+      }
+    }
+  },
+  "type": {
+    "body": {
+      "m": {
+        "value": {
+          "fontSize": "{bb.font.size.100}"
+        },
+        "type": "typography"
+      }
+    }
+  }
+}
