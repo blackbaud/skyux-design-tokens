@@ -8,6 +8,10 @@
     },
     "text": {
       "default": {
+        "value": "#333333",
+        "type": "color"
+      },
+      "inverse": {
         "value": "{jg.color.neutrals.white}",
         "type": "color"
       }

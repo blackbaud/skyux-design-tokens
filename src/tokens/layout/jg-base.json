@@ -19,5 +19,13 @@
         "type": "typography"
       }
     }
+  },
+  "text": {
+    "font": {
+      "family": {
+        "value": "{jg.font.name}",
+        "type": "fontFamilies"
+      }
+    }
   }
 }

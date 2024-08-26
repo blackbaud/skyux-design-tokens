@@ -337,18 +337,18 @@
     "heading": {
       "1": {
         "value": {
-          "fontFamily": "{bb.font.family.sans}",
-          "fontWeight": "{bb.font.weight.regular}",
-          "fontSize": "{bb.font.size.500}",
-          "lineHeight": "{bb.line-height.500}"
+          "lineHeight": "{bb.line-height.500}",
+          "fontFamily": "{text.font_family}",
+          "fontWeight": "{font.heading.style.1}",
+          "fontSize": "{font.heading.size.1}"
         },
         "type": "typography"
       },
       "2": {
         "value": {
-          "fontFamily": "{bb.font.family.sans}",
-          "fontWeight": "{bb.font.style.normal}",
-          "fontSize": "{bb.font.size.400}",
+          "fontFamily": "{text.font_family}",
+          "fontWeight": "{font.heading.style.2}",
+          "fontSize": "{font.heading.size.2}",
           "lineHeight": "{bb.line-height.400}"
         },
         "type": "typography"
@@ -393,10 +393,10 @@
     "body": {
       "m": {
         "value": {
-          "fontFamily": "{bb.font.family.sans}",
-          "fontWeight": "{bb.font.style.regular}",
-          "fontSize": "{bb.font.size.200}",
-          "lineHeight": "{bb.line-height.200}"
+          "fontWeight": "{font.body.style.m}",
+          "fontSize": "{font.body.size.m}",
+          "lineHeight": "{bb.line-height.200}",
+          "fontFamily": "{text.font_family}"
         },
         "type": "typography"
       }
@@ -469,6 +469,50 @@
         "lineHeight": "{bb.line-height.100}"
       },
       "type": "typography"
+    }
+  },
+  "text": {
+    "font_family": {
+      "value": "{bb.font.name}",
+      "type": "fontFamilies"
+    }
+  },
+  "font": {
+    "heading": {
+      "size": {
+        "1": {
+          "value": "{bb.font.size.500}",
+          "type": "fontSizes"
+        },
+        "2": {
+          "value": "{bb.font.size.400}",
+          "type": "fontSizes"
+        }
+      },
+      "style": {
+        "1": {
+          "value": "{bb.font.style.regular}",
+          "type": "fontWeights"
+        },
+        "2": {
+          "value": "{bb.font.style.regular}",
+          "type": "fontWeights"
+        }
+      }
+    },
+    "body": {
+      "size": {
+        "m": {
+          "value": "{bb.font.size.200}",
+          "type": "fontSizes"
+        }
+      },
+      "style": {
+        "m": {
+          "value": "{bb.font.style.regular}",
+          "type": "fontWeights"
+        }
+      }
     }
   }
 }

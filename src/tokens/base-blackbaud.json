@@ -756,44 +756,6 @@
           "type": "boxShadow"
         }
       }
-    },
-    "size": {
-      "100": {
-        "value": ".75rem",
-        "type": "sizing"
-      },
-      "200": {
-        "value": "1rem",
-        "type": "sizing"
-      },
-      "300": {
-        "value": "1.5rem",
-        "type": "sizing"
-      },
-      "400": {
-        "value": "2rem",
-        "type": "sizing"
-      },
-      "500": {
-        "value": "2.5rem",
-        "type": "sizing"
-      },
-      "600": {
-        "value": "3rem",
-        "type": "sizing"
-      },
-      "700": {
-        "value": "3.5rem",
-        "type": "sizing"
-      },
-      "800": {
-        "value": "4.5rem",
-        "type": "sizing"
-      },
-      "900": {
-        "value": "5.5rem",
-        "type": "sizing"
-      }
     }
   }
 }
