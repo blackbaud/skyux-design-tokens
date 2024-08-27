@@ -756,6 +756,102 @@
           "type": "boxShadow"
         }
       }
+    },
+    "size": {
+      "100": {
+        "value": "1px",
+        "type": "sizing"
+      },
+      "200": {
+        "value": "2px",
+        "type": "sizing"
+      },
+      "300": {
+        "value": "3px",
+        "type": "sizing"
+      },
+      "400": {
+        "value": "4px",
+        "type": "sizing"
+      },
+      "500": {
+        "value": "6px",
+        "type": "sizing"
+      },
+      "600": {
+        "value": "8px",
+        "type": "sizing"
+      },
+      "700": {
+        "value": "12px",
+        "type": "sizing"
+      },
+      "800": {
+        "value": "16px",
+        "type": "sizing"
+      },
+      "900": {
+        "value": "24px",
+        "type": "sizing"
+      },
+      "1000": {
+        "value": "36px",
+        "type": "sizing"
+      },
+      "fluid": {
+        "12": {
+          "value": ".125rem",
+          "type": "sizing"
+        },
+        "25": {
+          "value": ".25rem",
+          "type": "sizing"
+        },
+        "50": {
+          "value": ".5rem",
+          "type": "sizing"
+        },
+        "75": {
+          "value": ".75rem",
+          "type": "sizing"
+        },
+        "100": {
+          "value": "1rem",
+          "type": "sizing"
+        },
+        "125": {
+          "value": "1.25rem",
+          "type": "sizing"
+        },
+        "150": {
+          "value": "1.5rem",
+          "type": "sizing"
+        },
+        "200": {
+          "value": "2rem",
+          "type": "sizing"
+        },
+        "250": {
+          "value": "2.5rem",
+          "type": "sizing"
+        },
+        "300": {
+          "value": "3rem",
+          "type": "sizing"
+        },
+        "400": {
+          "value": "4rem",
+          "type": "sizing"
+        },
+        "500": {
+          "value": "5rem",
+          "type": "sizing"
+        },
+        "600": {
+          "value": "6rem",
+          "type": "sizing"
+        }
+      }
     }
   }
 }

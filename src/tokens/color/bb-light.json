@@ -96,6 +96,10 @@
           "value": "{bb.color.gray.50}",
           "type": "color"
         }
+      },
+      "transparent": {
+        "value": "transparent",
+        "type": "color"
       }
     },
     "icon": {
