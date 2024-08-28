@@ -1,73 +1,5 @@
 {
   "space": {
-    "inline": {
-      "xxxs": {
-        "value": "{bb.space.1}",
-        "type": "spacing"
-      },
-      "xxs": {
-        "value": "{bb.space.2}",
-        "type": "spacing"
-      },
-      "xs": {
-        "value": "{bb.space.3}",
-        "type": "spacing"
-      },
-      "s": {
-        "value": "{bb.space.4}",
-        "type": "spacing"
-      },
-      "m": {
-        "value": "{bb.space.5}",
-        "type": "spacing"
-      },
-      "l": {
-        "value": "{bb.space.6}",
-        "type": "spacing"
-      },
-      "xl": {
-        "value": "{bb.space.7}",
-        "type": "spacing"
-      },
-      "xxl": {
-        "value": "{bb.space.8}",
-        "type": "spacing"
-      }
-    },
-    "stack": {
-      "xxxs": {
-        "value": "{bb.space.1}",
-        "type": "spacing"
-      },
-      "xxs": {
-        "value": "{bb.space.2}",
-        "type": "spacing"
-      },
-      "xs": {
-        "value": "{bb.space.3}",
-        "type": "spacing"
-      },
-      "s": {
-        "value": "{bb.space.4}",
-        "type": "spacing"
-      },
-      "m": {
-        "value": "{bb.space.5}",
-        "type": "spacing"
-      },
-      "l": {
-        "value": "{bb.space.6}",
-        "type": "spacing"
-      },
-      "xl": {
-        "value": "{bb.space.7}",
-        "type": "spacing"
-      },
-      "xxl": {
-        "value": "{bb.space.8}",
-        "type": "spacing"
-      }
-    },
     "inset": {
       "balanced": {
         "s": {
@@ -90,57 +22,58 @@
       "pillarbox": {
         "top": {
           "s": {
-            "value": "{bb.space.3}",
+            "value": "{bb.size.fluid.25}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.5}",
+            "value": "{bb.size.fluid.50}",
             "type": "spacing"
           },
           "l": {
-            "value": "{bb.space.7}",
-            "type": "spacing"
+            "value": "{bb.size.fluid.100}",
+            "type": "spacing",
+            "description": "\n"
           }
         },
         "right": {
           "s": {
-            "value": "{bb.space.5}",
+            "value": "{bb.size.fluid.50}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "l": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         },
         "bottom": {
           "s": {
-            "value": "{bb.space.3}",
+            "value": "{bb.size.fluid.25}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.5}",
+            "value": "{bb.size.fluid.50}",
             "type": "spacing"
           },
           "l": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           }
         },
         "left": {
           "s": {
-            "value": "{bb.space.5}",
+            "value": "{bb.size.fluid.50}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "l": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         }
@@ -148,21 +81,21 @@
       "bottomless": {
         "top": {
           "l": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "xl": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         },
         "right": {
           "l": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "xl": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         },
@@ -178,11 +111,11 @@
         },
         "left": {
           "l": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "xl": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         }
@@ -190,41 +123,41 @@
       "floated": {
         "top": {
           "s": {
-            "value": "{bb.space.3}",
+            "value": "{bb.size.fluid.25}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.5}",
+            "value": "{bb.size.fluid.50}",
             "type": "spacing"
           }
         },
         "right": {
           "s": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         },
         "bottom": {
           "s": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         },
         "left": {
           "s": {
-            "value": "{bb.space.7}",
+            "value": "{bb.size.fluid.100}",
             "type": "spacing"
           },
           "m": {
-            "value": "{bb.space.8}",
+            "value": "{bb.size.fluid.150}",
             "type": "spacing"
           }
         }
@@ -258,7 +191,51 @@
         "type": "spacing"
       }
     },
-    "close_button_gap": {
+    "text_action_gap": {
+      "0": {
+        "value": "0",
+        "type": "spacing"
+      },
+      "s": {
+        "value": "{bb.size.fluid.25}",
+        "type": "spacing"
+      },
+      "m": {
+        "value": "{bb.size.fluid.50}",
+        "type": "spacing"
+      },
+      "l": {
+        "value": "{bb.size.fluid.75}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{bb.size.fluid.100}",
+        "type": "spacing"
+      }
+    },
+    "action_group_gap": {
+      "0": {
+        "value": "0",
+        "type": "spacing"
+      },
+      "s": {
+        "value": "{bb.size.fluid.25}",
+        "type": "spacing"
+      },
+      "m": {
+        "value": "{bb.size.fluid.50}",
+        "type": "spacing"
+      },
+      "l": {
+        "value": "{bb.size.fluid.75}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{bb.size.fluid.100}",
+        "type": "spacing"
+      }
+    },
+    "form_gap": {
       "0": {
         "value": "0",
         "type": "spacing"
@@ -507,10 +484,42 @@
     "radius": {
       "s": {
         "value": "{bb.size.fluid.25}",
-        "type": "borderWidth"
+        "type": "borderRadius"
       },
       "m": {
         "value": "{bb.size.fluid.50}",
+        "type": "borderRadius"
+      }
+    },
+    "width": {
+      "accent": {
+        "value": "{bb.size.500}",
+        "type": "borderWidth"
+      },
+      "interactive": {
+        "base": {
+          "value": "{bb.size.100}",
+          "type": "borderWidth"
+        },
+        "hover": {
+          "value": "{bb.size.100}",
+          "type": "borderWidth"
+        },
+        "active": {
+          "value": "{bb.size.200}",
+          "type": "borderWidth"
+        },
+        "focus": {
+          "value": "{bb.size.200}",
+          "type": "borderWidth"
+        },
+        "selected": {
+          "value": "{bb.size.100}",
+          "type": "borderWidth"
+        }
+      },
+      "divider": {
+        "value": "{bb.size.100}",
         "type": "borderWidth"
       }
     }

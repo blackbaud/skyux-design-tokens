@@ -7,11 +7,11 @@
           "type": "spacing"
         },
         "m": {
-          "value": "{bb.size.fluid.100}",
+          "value": "{bb.size.fluid.75}",
           "type": "spacing"
         },
         "l": {
-          "value": "{bb.size.fluid.150}",
+          "value": "{bb.size.fluid.125}",
           "type": "spacing"
         },
         "xl": {
@@ -31,6 +31,14 @@
           "lineHeight": "{bb.line-height.100}"
         },
         "type": "typography"
+      }
+    }
+  },
+  "size": {
+    "icon": {
+      "xl": {
+        "value": "{bb.size.fluid.200}",
+        "type": "sizing"
       }
     }
   }

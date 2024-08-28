@@ -30,5 +30,13 @@
         "type": "typography"
       }
     }
+  },
+  "size": {
+    "icon": {
+      "xl": {
+        "value": "{bb.size.fluid.125}",
+        "type": "sizing"
+      }
+    }
   }
 }
