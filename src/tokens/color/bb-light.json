@@ -20,6 +20,10 @@
       "inverse": {
         "value": "{bb.color.white}",
         "type": "color"
+      },
+      "heading": {
+        "value": "{bb.color.blue.800}",
+        "type": "color"
       }
     },
     "background": {
