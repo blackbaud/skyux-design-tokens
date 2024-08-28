@@ -256,6 +256,28 @@
         "value": "{bb.size.fluid.100}",
         "type": "spacing"
       }
+    },
+    "label_gap": {
+      "0": {
+        "value": "0",
+        "type": "spacing"
+      },
+      "s": {
+        "value": "{bb.size.fluid.25}",
+        "type": "spacing"
+      },
+      "m": {
+        "value": "{bb.size.fluid.50}",
+        "type": "spacing"
+      },
+      "l": {
+        "value": "{bb.size.fluid.75}",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "{bb.size.fluid.100}",
+        "type": "spacing"
+      }
     }
   },
   "size": {
