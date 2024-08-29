@@ -51,10 +51,6 @@
         "$type": "color",
         "$value": "{bb.color.gray.600}"
       },
-      "action": {
-        "$type": "color",
-        "$value": "{bb.color.brand.sky-blue}"
-      },
       "input": {
         "base": {
           "$type": "color",
