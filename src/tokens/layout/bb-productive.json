@@ -122,6 +122,10 @@
       },
       "floated": {
         "top": {
+          "0": {
+            "value": "0",
+            "type": "spacing"
+          },
           "s": {
             "value": "{bb.size.fluid.25}",
             "type": "spacing"
@@ -166,6 +170,14 @@
     "stacked_supplemental": {
       "0": {
         "value": "0",
+        "type": "spacing"
+      },
+      "s": {
+        "value": "{bb.size.fluid.25}",
+        "type": "spacing"
+      },
+      "m": {
+        "value": "{bb.size.fluid.50}",
         "type": "spacing"
       }
     },
@@ -260,6 +272,10 @@
     "label_gap": {
       "0": {
         "value": "0",
+        "type": "spacing"
+      },
+      "xs": {
+        "value": "{bb.size.fluid.12}",
         "type": "spacing"
       },
       "s": {
