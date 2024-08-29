@@ -1,0 +1,45 @@
+{
+  "space": {
+    "inset": {
+      "balanced": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.50}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.75}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.125}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.200}"
+        }
+      }
+    }
+  },
+  "type": {
+    "body": {
+      "m": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{bb.font.size.100}",
+          "fontFamily": "{bb.font.family.sans}",
+          "fontWeight": "{bb.font.style.regular}",
+          "lineHeight": "{bb.line-height.100}"
+        }
+      }
+    }
+  },
+  "size": {
+    "icon": {
+      "xl": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.200}"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "space": {
+    "inset": {
+      "balanced": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.12}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.25}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.50}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.100}"
+        }
+      }
+    }
+  },
+  "type": {
+    "body": {
+      "m": {
+        "$type": "typography",
+        "$value": {
+          "fontSize": "{bb.font.size.100}"
+        }
+      }
+    }
+  },
+  "size": {
+    "icon": {
+      "xl": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.125}"
+      }
+    }
+  }
+}
