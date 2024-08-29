@@ -30,6 +30,10 @@
       "inverse": {
         "$type": "color",
         "$value": "{bb.color.black}"
+      },
+      "heading": {
+        "$type": "color",
+        "$value": "{bb.color.brand.impact-green}"
       }
     },
     "icon": {
@@ -50,6 +54,32 @@
       "action": {
         "$type": "color",
         "$value": "{bb.color.brand.sky-blue}"
+      },
+      "input": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.gray.600}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.brand.sky-blue}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.brand.sky-blue}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.brand.sky-blue}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.600}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{bb.color.red.600}"
+        }
       }
     }
   }

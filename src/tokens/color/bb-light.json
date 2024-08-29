@@ -271,6 +271,10 @@
         "error": {
           "$type": "color",
           "$value": "{bb.color.red.600}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.100}"
         }
       }
     }
