@@ -144,6 +144,10 @@
       "inverse": {
         "$type": "color",
         "$value": "{color.text.inverse}"
+      },
+      "action": {
+        "$type": "color",
+        "$value": "{bb.color.blue.600}"
       }
     },
     "border": {
