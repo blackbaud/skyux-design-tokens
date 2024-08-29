@@ -1,4 +1,12 @@
 {
+  "background": {
+    "color": {
+      "neutral-light": {
+        "value": "purple",
+        "type": "color"
+      }
+    }
+  },
   "color": {
     "background": {
       "neutral-light": {
@@ -208,6 +216,50 @@
           "value": "{space.xxl}",
           "type": "spacing"
         }
+      }
+    }
+  },
+  "heading": {
+    "1": {
+      "value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.500}",
+        "lineHeight": "{line-height.500}"
+      },
+      "type": "typography"
+    },
+    "2": {
+      "value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "{font.size.400}",
+        "lineHeight": "{line-height.400}"
+      },
+      "type": "typography"
+    }
+  },
+  "text": {
+    "body": {
+      "m": {
+        "value": {
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.200}",
+          "lineHeight": "{line-height.200}"
+        },
+        "type": "typography"
+      }
+    },
+    "code": {
+      "m": {
+        "value": {
+          "fontFamily": "{font.family.monospaced}",
+          "fontWeight": "{font.weight.regular}",
+          "fontSize": "{font.size.200}",
+          "lineHeight": "{line-height.200}"
+        },
+        "type": "typography"
       }
     }
   }

@@ -1,7 +1,7 @@
 export const tokenSets = [
   {
     name: 'base',
-    selector: ':root',
+    selector: '.sky-theme-modern',
   },
   {
     name: 'modern',

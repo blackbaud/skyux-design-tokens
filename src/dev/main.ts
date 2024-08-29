@@ -1,1 +1,1 @@
-document.body.classList.add('sky-theme-token-dev');
+document.body.classList.add('local-dev-tokens');

@@ -22,4 +22,3 @@ jobs:
       - name: Run build
         run: |
           npm run build
-          node ./scripts/prepare-package
