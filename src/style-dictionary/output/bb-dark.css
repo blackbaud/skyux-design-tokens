@@ -1,0 +1,13 @@
+.sky-theme-modern.sky-theme-mode-dark {
+  --sky-color-border-action: var(--sky-bb-color-brand-sky-blue);
+  --sky-color-border-neutral-soft: var(--sky-bb-color-gray-600);
+  --sky-color-icon-inverse: var(--sky-bb-color-black);
+  --sky-color-icon-action: var(--sky-bb-color-brand-sky-blue);
+  --sky-color-text-inverse: var(--sky-bb-color-black);
+  --sky-color-text-danger: var(--sky-bb-color-red-600);
+  --sky-color-text-deemphasized: var(--sky-bb-color-gray-200);
+  --sky-color-text-action: var(--sky-bb-color-brand-sky-blue);
+  --sky-color-text-default: var(--sky-bb-color-gray-25);
+  --sky-color-background-container: var(--sky-bb-color-gray-900);
+  --sky-color-background-action: var(--sky-bb-color-blue-800);
+}

@@ -16,7 +16,7 @@ export function buildStyleDictionaryPlugin() {
       if (id.includes('src/dev/tokens.css')) {
         let localTokens = '';
         register(StyleDictionary);
-        const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
+        const sd = new StyleDictionary();
 
         const allFiles = await generateDictionaryFiles(tokenSets, sd);
 
@@ -30,7 +30,7 @@ export function buildStyleDictionaryPlugin() {
     async generateBundle() {
       const allThemes = tokenSets.map((set) => set.name);
       register(StyleDictionary);
-      const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
+      const sd = new StyleDictionary();
 
       const compositeStyleFiles = {};
 
@@ -51,7 +51,7 @@ export function buildStyleDictionaryPlugin() {
           this.emitFile({
             type: 'asset',
             fileName: file.destination.replace('dist/', ''),
-            source: file.output,
+            source: file.output || '',
           });
         }
       }
@@ -91,8 +91,8 @@ function getDictionaryConfig(tokenSet) {
 
   return {
     source: [
-      `src/style-dictionary/tokens/base.json`,
-      `src/style-dictionary/tokens/${tokenSet.name}.json`,
+      `src/style-dictionary/tokens/base-blackbaud.json`,
+      `src/style-dictionary/tokens/${tokenSet.path}`,
       componentTokensPath,
     ],
     preprocessors: ['tokens-studio'],
@@ -115,7 +115,7 @@ function getDictionaryConfig(tokenSet) {
             destination: `${tokenSet.name}.css`,
             format: 'css/variables',
             filter: (token) =>
-              filterByFilePath(token, tokenSet.name, `components/`),
+              filterByFilePath(token, tokenSet.path, `components/`),
           },
           ...componentFiles.map((filePath) => {
             return {

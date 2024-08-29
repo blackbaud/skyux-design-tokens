@@ -1,0 +1,20 @@
+.sky-theme-modern.sky-theme-mode-compact {
+  --sky-size-icon-xl: var(--sky-bb-size-fluid-125);
+  --sky-type-body-m-font-size: var(--sky-bb-font-size-100);
+  --sky-space-inset-letterbox-left-l: var(--sky-bb-size-fluid-75);
+  --sky-space-inset-letterbox-left-m: var(--sky-bb-size-fluid-25);
+  --sky-space-inset-letterbox-left-s: var(--sky-bb-size-fluid-12);
+  --sky-space-inset-letterbox-bottom-l: var(--sky-bb-size-fluid-125);
+  --sky-space-inset-letterbox-bottom-m: var(--sky-bb-size-fluid-75);
+  --sky-space-inset-letterbox-bottom-s: var(--sky-bb-size-fluid-25);
+  --sky-space-inset-letterbox-right-l: var(--sky-bb-size-fluid-75);
+  --sky-space-inset-letterbox-right-m: var(--sky-bb-size-fluid-25);
+  --sky-space-inset-letterbox-right-s: var(--sky-bb-size-fluid-12);
+  --sky-space-inset-letterbox-top-l: var(--sky-bb-size-fluid-125);
+  --sky-space-inset-letterbox-top-m: var(--sky-bb-size-fluid-75);
+  --sky-space-inset-letterbox-top-s: var(--sky-bb-size-fluid-25);
+  --sky-space-inset-balanced-xl: var(--sky-bb-size-fluid-100);
+  --sky-space-inset-balanced-l: var(--sky-bb-size-fluid-50);
+  --sky-space-inset-balanced-m: var(--sky-bb-size-fluid-25);
+  --sky-space-inset-balanced-s: var(--sky-bb-size-fluid-12);
+}
