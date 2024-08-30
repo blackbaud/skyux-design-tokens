@@ -17,9 +17,7 @@
     "js-yaml": "3.13.1",
     "prettier": "3.3.3",
     "rimraf": "2.6.2",
-    "typescript": "5.2.2",
-    "vite": "5.3.4",
-    "vitest": "1.5.0"
+    "typescript": "5.2.2"
   },
   "repository": {
     "type": "git",
@@ -32,6 +30,8 @@
   "dependencies": {
     "glob": "11.0.0",
     "style-dictionary": "4.0.1",
-    "@tokens-studio/sd-transforms": "1.2.1"
+    "@tokens-studio/sd-transforms": "1.2.1",
+    "vite": "5.3.4",
+    "vitest": "1.5.0"
   }
 }
