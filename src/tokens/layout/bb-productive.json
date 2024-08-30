@@ -401,7 +401,7 @@
       "1": {
         "$type": "typography",
         "$value": {
-          "lineHeight": "{bb.line-height.500}",
+          "lineHeight": "{font.line_height.heading.1}",
           "fontFamily": "{font.family.sans}",
           "fontWeight": "{font.style.heading.1}",
           "fontSize": "{font.size.heading.1}"
@@ -413,34 +413,34 @@
           "fontFamily": "{font.family.sans}",
           "fontWeight": "{font.style.heading.2}",
           "fontSize": "{font.size.heading.2}",
-          "lineHeight": "{bb.line-height.400}"
+          "lineHeight": "{font.line_height.heading.2}"
         }
       },
       "3": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.family.sans}",
-          "fontWeight": "{bb.font.style.normal}",
-          "fontSize": "{bb.font.size.300}",
-          "lineHeight": "{bb.line-height.300}"
+          "fontFamily": "{font.family.sans}",
+          "lineHeight": "{font.line_height.heading.3}",
+          "fontWeight": "{bb.font.style.regular}",
+          "fontSize": "{font.size.heading.3}"
         }
       },
       "4": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.family.sans}",
+          "fontFamily": "{font.family.sans}",
           "fontWeight": "{bb.font.style.semibold}",
-          "fontSize": "{bb.font.size.200}",
-          "lineHeight": "{bb.line-height.200}"
+          "fontSize": "{font.size.heading.4}",
+          "lineHeight": "{font.line_height.heading.4}"
         }
       },
       "5": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.family.sans}",
+          "fontFamily": "{font.family.sans}",
           "fontWeight": "{bb.font.style.semibold}",
-          "fontSize": "{bb.font.size.200}",
-          "lineHeight": "{bb.line-height.200}"
+          "fontSize": "{font.size.heading.5}",
+          "lineHeight": "{font.line_height.heading.5}"
         }
       }
     },
@@ -527,10 +527,10 @@
     "data-label": {
       "$type": "typography",
       "$value": {
-        "fontFamily": "{bb.font.family.sans}",
-        "fontWeight": "{bb.font.style.regular}",
-        "fontSize": "{bb.font.size.100}",
-        "lineHeight": "{bb.line-height.100}"
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{bb.font.style.italic}",
+        "fontSize": "{font.size.data_label}",
+        "lineHeight": "{font.line_height.data_label}"
       }
     }
   },
@@ -550,6 +550,18 @@
         "2": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.400}"
+        },
+        "3": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.300}"
+        },
+        "4": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.200}"
+        },
+        "5": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.200}"
         }
       },
       "body": {
@@ -557,6 +569,26 @@
           "$type": "fontSizes",
           "$value": "{bb.font.size.200}"
         }
+      },
+      "code": {
+        "m": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.200}"
+        }
+      },
+      "input": {
+        "text": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.200}"
+        },
+        "label": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.100}"
+        }
+      },
+      "data_label": {
+        "$type": "fontSizes",
+        "$value": "{bb.font.size.100}"
       }
     },
     "style": {
@@ -583,6 +615,38 @@
           "$type": "lineHeights",
           "$value": "{bb.line-height.200}"
         }
+      },
+      "heading": {
+        "1": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.500}"
+        },
+        "2": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.400}"
+        },
+        "3": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.300}"
+        },
+        "4": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.200}"
+        },
+        "5": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.200}"
+        }
+      },
+      "code": {
+        "m": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.200}"
+        }
+      },
+      "data_label": {
+        "$type": "lineHeights",
+        "$value": "{bb.line-height.100}"
       }
     }
   },
