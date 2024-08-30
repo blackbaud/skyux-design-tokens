@@ -2,6 +2,10 @@
   "space": {
     "inset": {
       "balanced": {
+        "none": {
+          "$type": "spacing",
+          "$value": "0"
+        },
         "s": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.25}"
@@ -398,16 +402,16 @@
         "$type": "typography",
         "$value": {
           "lineHeight": "{bb.line-height.500}",
-          "fontFamily": "{text.font_family}",
-          "fontWeight": "{font.heading.style.1}",
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.style.heading.1}",
           "fontSize": "{font.size.heading.1}"
         }
       },
       "2": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{text.font_family}",
-          "fontWeight": "{font.heading.style.2}",
+          "fontFamily": "{font.family.sans}",
+          "fontWeight": "{font.style.heading.2}",
           "fontSize": "{font.size.heading.2}",
           "lineHeight": "{bb.line-height.400}"
         }
@@ -453,10 +457,10 @@
       "m": {
         "$type": "typography",
         "$value": {
-          "fontWeight": "{font.body.style.m}",
+          "fontWeight": "{font.style.body.m}",
           "fontSize": "{font.size.body.m}",
-          "lineHeight": "{bb.line-height.200}",
-          "fontFamily": "{text.font_family}"
+          "lineHeight": "{font.line_height.body.m}",
+          "fontFamily": "{font.family.sans}"
         }
       }
     },
@@ -530,13 +534,13 @@
       }
     }
   },
-  "text": {
-    "font_family": {
-      "$type": "fontFamilies",
-      "$value": "{bb.font.name}"
-    }
-  },
   "font": {
+    "family": {
+      "sans": {
+        "$type": "fontFamilies",
+        "$value": "{bb.font.family.sans}"
+      }
+    },
     "size": {
       "heading": {
         "1": {
@@ -555,8 +559,8 @@
         }
       }
     },
-    "heading": {
-      "style": {
+    "style": {
+      "heading": {
         "1": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
@@ -565,13 +569,19 @@
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
-      }
-    },
-    "body": {
-      "style": {
+      },
+      "body": {
         "m": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
+        }
+      }
+    },
+    "line_height": {
+      "body": {
+        "m": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.200}"
         }
       }
     }

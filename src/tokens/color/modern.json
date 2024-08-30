@@ -1,0 +1,58 @@
+{
+  "color": {
+    "background": {
+      "container": {
+        "danger": {
+          "$type": "color",
+          "$value": "{sky.color.red.30}"
+        }
+      },
+      "action": {
+        "tertiary": {
+          "base": {
+            "$type": "color",
+            "$value": "{sky.color.transparent}"
+          }
+        }
+      }
+    },
+    "border": {
+      "danger": {
+        "$type": "color",
+        "$value": "{sky.color.red.50}"
+      },
+      "action": {
+        "tertiary": {
+          "base": {
+            "$type": "color",
+            "$value": "{sky.color.transparent}"
+          }
+        }
+      },
+      "neutral-soft": {
+        "$type": "color",
+        "$value": "{sky.color.gray.07}"
+      }
+    },
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{sky.color.gray.105}"
+      }
+    },
+    "icon": {
+      "default": {
+        "$type": "color",
+        "$value": "{sky.color.gray.105}"
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{sky.color.red.50}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{sky.color.white}"
+      }
+    }
+  }
+}

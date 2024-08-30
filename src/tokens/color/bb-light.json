@@ -119,7 +119,7 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{color.text.default}"
+        "$value": "{bb.color.gray.900}"
       },
       "deemphasized": {
         "$type": "color",

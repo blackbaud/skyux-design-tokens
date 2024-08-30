@@ -4,11 +4,11 @@
       "size": {
         "100": {
           "$type": "fontSizes",
-          "$value": ".75rem"
+          "$value": "0.75rem"
         },
         "200": {
           "$type": "fontSizes",
-          "$value": ".875rem"
+          "$value": "0.875rem"
         },
         "300": {
           "$type": "fontSizes",
@@ -736,6 +736,10 @@
       }
     },
     "size": {
+      "0": {
+        "$type": "sizing",
+        "$value": "0"
+      },
       "100": {
         "$type": "sizing",
         "$value": "1"
