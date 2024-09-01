@@ -506,8 +506,6 @@
       "type.input.label": "S:22714da2ceeb8a188278ef88d5b924d1dc348f02,",
       "type.input.text": "S:c5dc6b311a4806bafc0ec3dcdba3f1a6852720b0,",
       "type.metric.s": "S:7493d1925f1fe86019bce383c54cddba89c6bf0e,",
-      "type.metric.m": "S:6b4756eb4d473cdec1be5eb6195dc7b256dba29c,",
-      "type.metric.l": "S:7911819dc410f6d5197b247ecf4b9b6a647905af,",
       "type.data-label": "S:35c47b5646304b961a9b1a14db563715402a9f9f,"
     },
     "selectedTokenSets": {
@@ -634,8 +632,6 @@
       "type.input.label": "S:ce9608db7957f739a2bdf38eaebd5a296146d21e,",
       "type.input.text": "S:fc7c747ffddea2adc364c4b2977f3370814866b7,",
       "type.metric.s": "S:fcc6aff6ebcb784f334565e80e4849c4717b36da,",
-      "type.metric.m": "S:297f8eb65a7f876e41b21164a7b791ecaae71de4,",
-      "type.metric.l": "S:684a39a79e09ed165c796db45639d39976e843b9,",
       "type.data-label": "S:b7eb8dde12b40f925d951a271083b558258a9580,",
       "type.heading.2": "S:bd21d2f051d8ea36117d426d6efa6f1085a28cbf,"
     },
