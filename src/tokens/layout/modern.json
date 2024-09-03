@@ -18,18 +18,56 @@
         "m": {
           "$type": "fontSizes",
           "$value": "{sky.text.size.200}"
+        },
+        "heading": {
+          "1": {
+            "$type": "fontSizes",
+            "$value": "{sky.text.size.600}"
+          },
+          "2": {
+            "$type": "fontSizes",
+            "$value": "{sky.text.size.400}"
+          },
+          "3": {
+            "$type": "fontSizes",
+            "$value": "{sky.text.size.300}"
+          },
+          "4": {
+            "$type": "fontSizes",
+            "$value": "{sky.text.size.200}"
+          },
+          "5": {
+            "$type": "fontSizes",
+            "$value": "{sky.text.size.100}"
+          }
         }
       },
       "data_label": {
         "$type": "fontSizes",
         "$value": "{sky.text.size.200}"
+      },
+      "display": {
+        "3": {
+          "$type": "fontSizes",
+          "$value": "{sky.text.size.300}"
+        }
       }
     },
     "line_height": {
       "body": {
         "m": {
           "$type": "lineHeights",
-          "$value": "{sky.text.line-height.200}"
+          "$value": "{sky.text.line-height.115}"
+        }
+      },
+      "heading": {
+        "$type": "lineHeights",
+        "$value": "{sky.text.line-height.110}"
+      },
+      "display": {
+        "3": {
+          "$type": "lineHeights",
+          "$value": "110%"
         }
       }
     },
@@ -43,6 +81,34 @@
       "data_label": {
         "$type": "fontWeights",
         "$value": "{sky.style.regular}"
+      },
+      "heading": {
+        "1": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.light}"
+        },
+        "2": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.light}"
+        },
+        "3": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.regular}"
+        },
+        "4": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.semibold}"
+        },
+        "5": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.semibold}"
+        }
+      },
+      "display": {
+        "3": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.regular}"
+        }
       }
     },
     "family": {
@@ -74,24 +140,40 @@
       },
       "bottomless": {
         "top": {
+          "lg": {
+            "$type": "spacing",
+            "$value": "{sky.space.lg}"
+          },
           "xl": {
             "$type": "spacing",
             "$value": "{sky.space.xl}"
           }
         },
         "right": {
+          "lg": {
+            "$type": "spacing",
+            "$value": "{sky.space.lg}"
+          },
           "xl": {
             "$type": "spacing",
             "$value": "{sky.space.xl}"
           }
         },
         "left": {
+          "lg": {
+            "$type": "spacing",
+            "$value": "{sky.space.lg}"
+          },
           "xl": {
             "$type": "spacing",
             "$value": "{sky.space.xl}"
           }
         },
         "bottom": {
+          "lg": {
+            "$type": "spacing",
+            "$value": "{sky.space.none}"
+          },
           "xl": {
             "$type": "spacing",
             "$value": "{sky.space.none}"
@@ -112,8 +194,8 @@
       }
     }
   },
-  "icon": {
-    "size": {
+  "size": {
+    "icon": {
       "xl": {
         "$type": "sizing",
         "$value": "{sky.size.32}"

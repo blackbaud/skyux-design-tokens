@@ -238,7 +238,11 @@
         }
       },
       "line-height": {
-        "200": {
+        "110": {
+          "$type": "lineHeights",
+          "$value": "110%"
+        },
+        "115": {
           "$type": "lineHeights",
           "$value": "115%"
         }
@@ -248,6 +252,18 @@
       "regular": {
         "$type": "fontWeights",
         "$value": "Regular"
+      },
+      "light": {
+        "$type": "fontWeights",
+        "$value": "Light"
+      },
+      "semibold": {
+        "$type": "fontWeights",
+        "$value": "Semibold"
+      },
+      "italic": {
+        "$type": "fontWeights",
+        "$value": "Italic"
       }
     },
     "font": {

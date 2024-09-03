@@ -58,17 +58,17 @@
           "$type": "color",
           "$value": "{bb.color.red.300}"
         },
-        "info": {
+        "warning": {
           "$type": "color",
-          "$value": "{bb.color.blue.300}"
+          "$value": "{bb.color.yellow.300}"
         },
         "success": {
           "$type": "color",
           "$value": "{bb.color.green.300}"
         },
-        "warning": {
+        "info": {
           "$type": "color",
-          "$value": "{bb.color.yellow.300}"
+          "$value": "{bb.color.blue.100}"
         }
       },
       "action": {
@@ -129,21 +129,21 @@
         "$type": "color",
         "$value": "{bb.color.red.600}"
       },
-      "info": {
+      "warning": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.yellow.600}"
       },
       "success": {
         "$type": "color",
         "$value": "{bb.color.green.600}"
       },
-      "warning": {
+      "info": {
         "$type": "color",
-        "$value": "{bb.color.yellow.600}"
+        "$value": "{bb.color.blue.600}"
       },
       "inverse": {
         "$type": "color",
-        "$value": "{color.text.inverse}"
+        "$value": "{bb.color.white}"
       },
       "action": {
         "$type": "color",
@@ -167,17 +167,17 @@
         "$type": "color",
         "$value": "{bb.color.red.600}"
       },
-      "info": {
+      "warning": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.yellow.600}"
       },
       "success": {
         "$type": "color",
         "$value": "{bb.color.green.600}"
       },
-      "warning": {
+      "info": {
         "$type": "color",
-        "$value": "{bb.color.yellow.600}"
+        "$value": "{bb.color.blue.600}"
       },
       "action": {
         "primary": {

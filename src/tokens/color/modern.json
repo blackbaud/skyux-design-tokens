@@ -5,6 +5,18 @@
         "danger": {
           "$type": "color",
           "$value": "{sky.color.red.30}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{sky.color.yellow.30}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{sky.color.green.30}"
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{sky.color.blue.10}"
         }
       },
       "action": {
@@ -20,6 +32,14 @@
       "danger": {
         "$type": "color",
         "$value": "{sky.color.red.50}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{sky.color.yellow.50}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{sky.color.green.50}"
       },
       "info": {
         "$type": "color",
@@ -52,6 +72,18 @@
       "danger": {
         "$type": "color",
         "$value": "{sky.color.red.50}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{sky.color.yellow.50}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{sky.color.green.50}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{sky.color.blue.50}"
       },
       "inverse": {
         "$type": "color",
