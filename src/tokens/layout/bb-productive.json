@@ -592,7 +592,7 @@
       },
       "data_label": {
         "$type": "fontSizes",
-        "$value": "{bb.font.size.100}"
+        "$value": "{bb.font.size.200}"
       },
       "hint": {
         "$type": "fontSizes",

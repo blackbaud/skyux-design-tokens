@@ -96,9 +96,17 @@
           "$type": "color",
           "$value": "#40c7f4"
         }
+      },
+      "shadow_color": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.3)"
       }
     },
     "space": {
+      "none": {
+        "$type": "spacing",
+        "$value": "0"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "5"
@@ -145,6 +153,10 @@
         "$type": "sizing",
         "$value": "6"
       },
+      "7": {
+        "$type": "sizing",
+        "$value": "7"
+      },
       "8": {
         "$type": "sizing",
         "$value": "8"
@@ -168,6 +180,14 @@
       "16": {
         "$type": "sizing",
         "$value": "16"
+      },
+      "20": {
+        "$type": "sizing",
+        "$value": "20"
+      },
+      "30": {
+        "$type": "sizing",
+        "$value": "30"
       },
       "32": {
         "$type": "sizing",
@@ -239,6 +259,76 @@
         "sans": {
           "$type": "fontFamilies",
           "$value": "{sky.font.name}, Helvetica Neue, Arial, sans-serif"
+        }
+      }
+    },
+    "shadow": {
+      "size": {
+        "1": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "1px",
+            "blur": "3px",
+            "spread": "0",
+            "color": "{sky.color.shadow_color}",
+            "type": "dropShadow"
+          }
+        },
+        "3": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "1px",
+            "blur": "8px",
+            "spread": "0",
+            "color": "{sky.color.shadow_color}",
+            "type": "dropShadow"
+          }
+        },
+        "4": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "1px",
+            "blur": "12px",
+            "spread": "0",
+            "color": "{sky.color.shadow_color}",
+            "type": "dropShadow"
+          }
+        },
+        "8": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "2px",
+            "blur": "15px",
+            "spread": "2px",
+            "color": "{sky.color.shadow_color}",
+            "type": "dropShadow"
+          }
+        },
+        "16": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "3px",
+            "blur": "25px",
+            "spread": "2px",
+            "color": "{sky.color.shadow_color}",
+            "type": "dropShadow"
+          }
+        },
+        "24": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "7px",
+            "blur": "27px",
+            "spread": "3px",
+            "color": "{sky.color.shadow_color}",
+            "type": "dropShadow"
+          }
         }
       }
     }

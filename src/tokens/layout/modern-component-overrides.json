@@ -1,0 +1,34 @@
+{
+  "sky": {
+    "alert": {
+      "space": {
+        "inset": {
+          "balanced": {
+            "m": {
+              "$type": "spacing",
+              "$value": "0 {sky.size.10}"
+            },
+            "none": {
+              "$type": "spacing",
+              "$value": "{sky.size.15}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "space": {
+    "inset": {
+      "balanced": {
+        "m": {
+          "$type": "spacing",
+          "$value": "{sky.alert.space.inset.balanced.m}"
+        },
+        "none": {
+          "$type": "spacing",
+          "$value": "{sky.alert.space.inset.balanced.none}"
+        }
+      }
+    }
+  }
+}

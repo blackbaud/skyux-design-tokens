@@ -8,9 +8,7 @@
     "color/modern",
     "layout/bb-productive",
     "layout/bb-compact",
-    "layout/bb-spacious",
     "layout/modern",
-    "modern-overrides/none",
-    "modern-overrides/componenets"
+    "layout/modern-component-overrides"
   ]
 }

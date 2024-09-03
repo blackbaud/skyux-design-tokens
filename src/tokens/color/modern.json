@@ -21,6 +21,10 @@
         "$type": "color",
         "$value": "{sky.color.red.50}"
       },
+      "info": {
+        "$type": "color",
+        "$value": "{sky.color.blue.50}"
+      },
       "action": {
         "tertiary": {
           "base": {
@@ -53,6 +57,12 @@
         "$type": "color",
         "$value": "{sky.color.white}"
       }
+    }
+  },
+  "elevation": {
+    "raised": {
+      "$type": "boxShadow",
+      "$value": "{sky.shadow.size.1}"
     }
   }
 }

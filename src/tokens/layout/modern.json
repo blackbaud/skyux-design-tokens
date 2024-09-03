@@ -19,6 +19,10 @@
           "$type": "fontSizes",
           "$value": "{sky.text.size.200}"
         }
+      },
+      "data_label": {
+        "$type": "fontSizes",
+        "$value": "{sky.text.size.200}"
       }
     },
     "line_height": {
@@ -35,6 +39,10 @@
           "$type": "fontWeights",
           "$value": "{sky.style.regular}"
         }
+      },
+      "data_label": {
+        "$type": "fontWeights",
+        "$value": "{sky.style.regular}"
       }
     },
     "family": {
@@ -47,13 +55,47 @@
   "space": {
     "inset": {
       "balanced": {
-        "m": {
-          "$type": "spacing",
-          "$value": "{sky.size.9}"
-        },
         "s": {
           "$type": "spacing",
           "$value": "{sky.size.8}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{sky.size.10}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{sky.size.20}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{sky.size.30}"
+        }
+      },
+      "bottomless": {
+        "top": {
+          "xl": {
+            "$type": "spacing",
+            "$value": "{sky.space.xl}"
+          }
+        },
+        "right": {
+          "xl": {
+            "$type": "spacing",
+            "$value": "{sky.space.xl}"
+          }
+        },
+        "left": {
+          "xl": {
+            "$type": "spacing",
+            "$value": "{sky.space.xl}"
+          }
+        },
+        "bottom": {
+          "xl": {
+            "$type": "spacing",
+            "$value": "{sky.space.none}"
+          }
         }
       }
     },
@@ -86,6 +128,34 @@
     "font_family": {
       "$type": "text",
       "$value": "{sky.font.name}"
+    }
+  },
+  "sky": {
+    "border": {
+      "width": {
+        "accent": {
+          "$type": "borderWidth",
+          "$value": "{sky.size.7}"
+        }
+      }
+    }
+  },
+  "border": {
+    "radius": {
+      "s": {
+        "$type": "borderRadius",
+        "$value": "{sky.size.6}"
+      },
+      "m": {
+        "$type": "borderRadius",
+        "$value": "{sky.size.6}"
+      }
+    }
+  },
+  "elevation": {
+    "raised": {
+      "$type": "boxShadow",
+      "$value": "{sky.shadow.size.1}"
     }
   }
 }

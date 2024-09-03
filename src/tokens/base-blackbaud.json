@@ -813,6 +813,10 @@
           "$type": "sizing",
           "$value": "2rem"
         },
+        "225": {
+          "$type": "sizing",
+          "$value": "2.25rem"
+        },
         "250": {
           "$type": "sizing",
           "$value": "2.5rem"
