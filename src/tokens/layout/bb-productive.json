@@ -589,6 +589,10 @@
         }
       },
       "body": {
+        "s": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.100}"
+        },
         "m": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.200}"
@@ -660,6 +664,10 @@
         "m": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
+        },
+        "s": {
+          "$type": "fontWeights",
+          "$value": "{bb.font.style.regular}"
         }
       },
       "code": {
@@ -703,6 +711,10 @@
     },
     "line_height": {
       "body": {
+        "s": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.100}"
+        },
         "m": {
           "$type": "lineHeights",
           "$value": "{bb.line-height.200}"

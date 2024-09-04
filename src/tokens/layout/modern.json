@@ -15,6 +15,10 @@
   "font": {
     "size": {
       "body": {
+        "s": {
+          "$type": "fontSizes",
+          "$value": "{sky.text.size.125}"
+        },
         "m": {
           "$type": "fontSizes",
           "$value": "{sky.text.size.200}"
@@ -55,6 +59,10 @@
     },
     "line_height": {
       "body": {
+        "s": {
+          "$type": "lineHeights",
+          "$value": "{sky.text.line-height.115}"
+        },
         "m": {
           "$type": "lineHeights",
           "$value": "{sky.text.line-height.115}"
@@ -73,6 +81,10 @@
     },
     "style": {
       "body": {
+        "s": {
+          "$type": "fontWeights",
+          "$value": "{sky.style.regular}"
+        },
         "m": {
           "$type": "fontWeights",
           "$value": "{sky.style.regular}"
