@@ -31,16 +31,6 @@
         "$type": "color",
         "$value": "{bb.color.gray.25}"
       },
-      "field": {
-        "base": {
-          "$type": "color",
-          "$value": "{bb.color.white}"
-        },
-        "disabled": {
-          "$type": "color",
-          "$value": "{bb.color.gray.50}"
-        }
-      },
       "container": {
         "base": {
           "$type": "color",

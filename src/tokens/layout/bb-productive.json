@@ -394,6 +394,10 @@
         "$type": "sizing",
         "$value": "{bb.size.fluid.600}"
       }
+    },
+    "switch": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.125}"
     }
   },
   "type": {

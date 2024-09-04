@@ -204,6 +204,10 @@
         "$type": "sizing",
         "$value": "{sky.size.16}"
       }
+    },
+    "switch": {
+      "$type": "sizing",
+      "$value": "{sky.size.26}"
     }
   },
   "text": {
