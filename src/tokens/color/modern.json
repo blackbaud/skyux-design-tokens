@@ -50,6 +50,18 @@
           "base": {
             "$type": "color",
             "$value": "{sky.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{sky.color.blue.74}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{sky.color.blue.74}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{sky.color.blue.74}"
           }
         }
       },

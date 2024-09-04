@@ -77,13 +77,13 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "{bb.color.transparent}"
           }
         },
         "tertiary": {
           "base": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "{bb.color.transparent}"
           }
         },
         "disabled": {
@@ -94,7 +94,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "transparent"
+          "$value": "{bb.color.transparent}"
         },
         "disabled": {
           "$type": "color",
@@ -195,7 +195,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "{bb.color.transparent}"
           },
           "hover": {
             "$type": "color",
@@ -217,7 +217,7 @@
         "tertiary": {
           "base": {
             "$type": "color",
-            "$value": "transparent"
+            "$value": "{bb.color.transparent}"
           },
           "hover": {
             "$type": "color",

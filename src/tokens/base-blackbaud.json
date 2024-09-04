@@ -542,6 +542,10 @@
           "$type": "color",
           "$value": "#C898FA"
         }
+      },
+      "transparent": {
+        "$type": "color",
+        "$value": "transparent"
       }
     },
     "shadow": {
