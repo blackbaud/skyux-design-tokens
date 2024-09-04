@@ -781,6 +781,10 @@
         "$value": "36"
       },
       "fluid": {
+        "6": {
+          "$type": "sizing",
+          "$value": "0.0625rem"
+        },
         "12": {
           "$type": "sizing",
           "$value": "0.125rem"

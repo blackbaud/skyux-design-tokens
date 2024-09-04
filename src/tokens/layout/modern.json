@@ -179,6 +179,14 @@
             "$value": "{sky.space.none}"
           }
         }
+      },
+      "pillarbox": {
+        "top": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{bb.space.3}"
+          }
+        }
       }
     },
     "icon_gap": {

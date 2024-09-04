@@ -29,6 +29,10 @@
             "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
+          "xs": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.6}"
+          },
           "m": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
@@ -40,6 +44,10 @@
           }
         },
         "right": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
@@ -54,6 +62,10 @@
           }
         },
         "bottom": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.6}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
@@ -68,6 +80,10 @@
           }
         },
         "left": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
@@ -763,6 +779,10 @@
       "m": {
         "$type": "borderRadius",
         "$value": "{bb.size.fluid.50}"
+      },
+      "pill": {
+        "$type": "borderRadius",
+        "$value": "{bb.border.radius.pill}"
       }
     },
     "width": {
