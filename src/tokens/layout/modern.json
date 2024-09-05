@@ -212,6 +212,16 @@
         "$type": "spacing",
         "$value": "{sky.size.15}"
       }
+    },
+    "label_gap": {
+      "0": {
+        "$type": "spacing",
+        "$value": "0"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{sky.space.xs}"
+      }
     }
   },
   "size": {
