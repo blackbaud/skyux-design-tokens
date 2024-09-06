@@ -6,7 +6,7 @@
           "balanced": {
             "m": {
               "$type": "spacing",
-              "$value": "0 {sky.size.10}"
+              "$value": "0 {sky.space.s}"
             },
             "none": {
               "$type": "spacing",

@@ -661,11 +661,11 @@
         }
       },
       "body": {
-        "m": {
+        "s": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         },
-        "s": {
+        "m": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
