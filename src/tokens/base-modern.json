@@ -280,6 +280,12 @@
           "$type": "fontFamilies",
           "$value": "{sky.font.name}, Helvetica Neue, Arial, sans-serif"
         }
+      },
+      "letter_spacing": {
+        "normal": {
+          "$type": "letterSpacing",
+          "$value": "normal"
+        }
       }
     },
     "shadow": {

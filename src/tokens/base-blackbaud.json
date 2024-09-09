@@ -124,6 +124,16 @@
             "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff) format(\"woff\")"
           }
         }
+      },
+      "letter_spacing": {
+        "wider": {
+          "$type": "letterSpacing",
+          "$value": "0.32px"
+        },
+        "normal": {
+          "$type": "letterSpacing",
+          "$value": "normal"
+        }
       }
     },
     "line-height": {
