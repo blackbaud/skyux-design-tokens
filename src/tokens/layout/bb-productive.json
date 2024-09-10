@@ -510,14 +510,14 @@
           "letterSpacing": "{font.letter_spacing.input.label}"
         }
       },
-      "text": {
+      "value": {
         "$type": "typography",
         "$value": {
-          "fontWeight": "{font.style.input.text}",
+          "fontWeight": "{font.style.input.value}",
           "fontFamily": "{font.family.sans}",
-          "fontSize": "{font.size.input.text}",
-          "lineHeight": "{font.line_height.input.text}",
-          "letterSpacing": "{font.letter_spacing.input.text}"
+          "fontSize": "{font.size.input.value}",
+          "lineHeight": "{font.line_height.input.value}",
+          "letterSpacing": "{font.letter_spacing.input.value}"
         }
       }
     },
@@ -637,13 +637,13 @@
         }
       },
       "input": {
-        "text": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
-        },
         "label": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.100}"
+        },
+        "value": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.200}"
         }
       },
       "data_label": {
@@ -715,11 +715,11 @@
         }
       },
       "input": {
-        "text": {
+        "label": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         },
-        "label": {
+        "value": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
@@ -797,13 +797,13 @@
         "$value": "{bb.line-height.100}"
       },
       "input": {
-        "text": {
-          "$type": "lineHeights",
-          "$value": "{bb.line-height.200}"
-        },
         "label": {
           "$type": "lineHeights",
           "$value": "{bb.line-height.100}"
+        },
+        "value": {
+          "$type": "lineHeights",
+          "$value": "{bb.line-height.200}"
         }
       },
       "hint": {
@@ -833,13 +833,13 @@
     },
     "letter_spacing": {
       "input": {
+        "value": {
+          "$type": "letterSpacing",
+          "$value": "{bb.font.letter_spacing.normal}"
+        },
         "label": {
           "$type": "letterSpacing",
           "$value": "{bb.font.letter_spacing.wider}"
-        },
-        "text": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
         }
       },
       "heading": {
