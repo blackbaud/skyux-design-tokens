@@ -6,11 +6,11 @@
           "balanced": {
             "m": {
               "$type": "spacing",
-              "$value": "0 {sky.space.s}"
+              "$value": "0 {modern.space.s}"
             },
             "none": {
               "$type": "spacing",
-              "$value": "{sky.size.15}"
+              "$value": "{modern.size.15}"
             }
           }
         }

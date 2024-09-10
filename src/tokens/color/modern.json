@@ -4,26 +4,26 @@
       "container": {
         "danger": {
           "$type": "color",
-          "$value": "{sky.color.red.30}"
+          "$value": "{modern.color.red.30}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{sky.color.yellow.30}"
+          "$value": "{modern.color.yellow.30}"
         },
         "success": {
           "$type": "color",
-          "$value": "{sky.color.green.30}"
+          "$value": "{modern.color.green.30}"
         },
         "info": {
           "$type": "color",
-          "$value": "{sky.color.blue.10}"
+          "$value": "{modern.color.blue.10}"
         }
       },
       "action": {
         "tertiary": {
           "base": {
             "$type": "color",
-            "$value": "{sky.color.transparent}"
+            "$value": "{modern.color.transparent}"
           }
         }
       }
@@ -31,82 +31,82 @@
     "border": {
       "danger": {
         "$type": "color",
-        "$value": "{sky.color.red.50}"
+        "$value": "{modern.color.red.50}"
       },
       "warning": {
         "$type": "color",
-        "$value": "{sky.color.yellow.50}"
+        "$value": "{modern.color.yellow.50}"
       },
       "success": {
         "$type": "color",
-        "$value": "{sky.color.green.50}"
+        "$value": "{modern.color.green.50}"
       },
       "info": {
         "$type": "color",
-        "$value": "{sky.color.blue.50}"
+        "$value": "{modern.color.blue.50}"
       },
       "action": {
         "tertiary": {
           "base": {
             "$type": "color",
-            "$value": "{sky.color.transparent}"
+            "$value": "{modern.color.transparent}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{sky.color.blue.74}"
+            "$value": "{modern.color.blue.74}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{sky.color.blue.74}"
+            "$value": "{modern.color.blue.74}"
           },
           "active": {
             "$type": "color",
-            "$value": "{sky.color.blue.74}"
+            "$value": "{modern.color.blue.74}"
           }
         }
       },
       "neutral-soft": {
         "$type": "color",
-        "$value": "{sky.color.gray.07}"
+        "$value": "{modern.color.gray.07}"
       }
     },
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{sky.color.gray.105}"
+        "$value": "{modern.color.gray.105}"
       }
     },
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{sky.color.gray.105}"
+        "$value": "{modern.color.gray.105}"
       },
       "danger": {
         "$type": "color",
-        "$value": "{sky.color.red.50}"
+        "$value": "{modern.color.red.50}"
       },
       "warning": {
         "$type": "color",
-        "$value": "{sky.color.yellow.50}"
+        "$value": "{modern.color.yellow.50}"
       },
       "success": {
         "$type": "color",
-        "$value": "{sky.color.green.50}"
+        "$value": "{modern.color.green.50}"
       },
       "info": {
         "$type": "color",
-        "$value": "{sky.color.blue.50}"
+        "$value": "{modern.color.blue.50}"
       },
       "inverse": {
         "$type": "color",
-        "$value": "{sky.color.white}"
+        "$value": "{modern.color.white}"
       }
     }
   },
   "elevation": {
     "raised": {
       "$type": "boxShadow",
-      "$value": "{sky.shadow.size.1}"
+      "$value": "{modern.shadow.size.1}"
     }
   }
 }
