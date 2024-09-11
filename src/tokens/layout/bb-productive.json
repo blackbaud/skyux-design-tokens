@@ -243,6 +243,32 @@
             "$value": "{bb.size.fluid.150}"
           }
         }
+      },
+      "input": {
+        "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        },
+        "right": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          }
+        },
+        "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          }
+        },
+        "left": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          }
+        }
       }
     },
     "stacked_supplemental": {
