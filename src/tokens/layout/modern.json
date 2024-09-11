@@ -258,6 +258,20 @@
         "$type": "spacing",
         "$value": "{modern.space.xs}"
       }
+    },
+    "form_gap": {
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.s}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.xl}"
+      }
     }
   },
   "size": {
