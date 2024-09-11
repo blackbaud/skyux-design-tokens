@@ -248,6 +248,16 @@
         "$type": "spacing",
         "$value": "{modern.space.xs}"
       }
+    },
+    "stacked_supplemental": {
+      "0": {
+        "$type": "spacing",
+        "$value": "0"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
+      }
     }
   },
   "size": {
