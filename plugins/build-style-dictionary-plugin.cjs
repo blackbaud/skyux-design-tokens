@@ -14,11 +14,11 @@ export function buildStyleDictionaryPlugin() {
       }
 
       if (id.includes('src/dev/tokens.css')) {
-        let localTokens = '';
         register(StyleDictionary);
-        const sd = new StyleDictionary();
 
+        const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
         const allFiles = await generateDictionaryFiles(tokenSets, sd);
+        let localTokens = '';
 
         for (let file of allFiles) {
           localTokens = localTokens.concat(`.local-dev-tokens${file.output}`);
@@ -28,36 +28,37 @@ export function buildStyleDictionaryPlugin() {
       }
     },
     async generateBundle() {
-      const allThemes = tokenSets.map((set) => set.name);
       register(StyleDictionary);
-      const sd = new StyleDictionary();
+      StyleDictionary.registerTransform({
+        name: 'name/prefixed-kebab',
+        type: 'name',
+        transform: (token) => {
+          return `${token.isSource ? '' : 'sky-'}${token.path.join('-')}`;
+        },
+      });
 
-      const compositeStyleFiles = {};
-
+      const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
+      const allSetNames = tokenSets.map((set) => set.name);
+      const setsRegex = new RegExp(`(${allSetNames.join('|')})+\/`);
       const allFiles = await generateDictionaryFiles(tokenSets, sd);
+      const compositeFiles = {};
 
       for (let file of allFiles) {
-        if (file.destination.includes('components/')) {
-          let fileName = file.destination;
-          for (let themeName of allThemes) {
-            fileName = fileName.replace(`${themeName}/`, '');
-          }
+        const fileParts = file.destination.split('/');
+        const tokenSetType = fileParts[2];
+        const fileName =
+          tokenSetType === 'components'
+            ? file.destination.replace(setsRegex, '')
+            : `style-dictionary/${tokenSetType}.css`;
 
-          let fileContents = compositeStyleFiles[fileName] || '';
-          fileContents = fileContents.concat(file.output);
+        let fileContents = compositeFiles[fileName] || '';
+        fileContents = fileContents.concat(file.output || '');
 
-          compositeStyleFiles[fileName] = fileContents;
-        } else {
-          this.emitFile({
-            type: 'asset',
-            fileName: file.destination.replace('dist/', ''),
-            source: file.output || '',
-          });
-        }
+        compositeFiles[fileName] = fileContents;
       }
 
-      for (let fileName of Object.keys(compositeStyleFiles)) {
-        const fileContents = compositeStyleFiles[fileName];
+      for (let fileName of Object.keys(compositeFiles)) {
+        const fileContents = compositeFiles[fileName];
         this.emitFile({
           type: 'asset',
           fileName: fileName.replace('dist/', ''),
@@ -89,12 +90,14 @@ function getDictionaryConfig(tokenSet) {
       .replace('.json', ''),
   );
 
+  const referenceTokensPaths = tokenSet.referenceTokens.map(
+    (referenceTokensSet) =>
+      `src/style-dictionary/tokens/${referenceTokensSet.path}`,
+  );
+
   return {
-    source: [
-      `src/style-dictionary/tokens/base-blackbaud.json`,
-      `src/style-dictionary/tokens/${tokenSet.path}`,
-      componentTokensPath,
-    ],
+    source: [`src/style-dictionary/tokens/${tokenSet.path}`],
+    include: [...referenceTokensPaths, componentTokensPath],
     preprocessors: ['tokens-studio'],
     expand: {
       typesMap: expandTypesMap,
@@ -102,8 +105,7 @@ function getDictionaryConfig(tokenSet) {
     platforms: {
       css: {
         transformGroup: 'tokens-studio',
-        transforms: ['name/kebab'],
-        prefix: 'sky',
+        transforms: ['name/prefixed-kebab'],
         options: {
           outputReferences: true,
           showFileHeader: false,
@@ -112,11 +114,22 @@ function getDictionaryConfig(tokenSet) {
         buildPath: `dist/style-dictionary/`,
         files: [
           {
-            destination: `${tokenSet.name}.css`,
+            destination: `${tokenSet.name}/${tokenSet.name}.css`,
             format: 'css/variables',
             filter: (token) =>
               filterByFilePath(token, tokenSet.path, `components/`),
           },
+          ...tokenSet.referenceTokens.map((referenceTokenSet) => {
+            return {
+              destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
+              format: 'css/variables',
+              options: {
+                selector: `${tokenSet.selector}${referenceTokenSet.selector || ''}`,
+              },
+              filter: (token) =>
+                filterByFilePath(token, referenceTokenSet.path, `components/`),
+            };
+          }),
           ...componentFiles.map((filePath) => {
             return {
               destination: `components/${tokenSet.name}/${filePath}.css`,

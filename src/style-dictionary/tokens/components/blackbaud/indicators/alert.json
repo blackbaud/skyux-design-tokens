@@ -1,0 +1,12 @@
+{
+  "color": {
+    "background": {
+      "container": {
+        "base": {
+          "$type": "color",
+          "$value": "lavender"
+        }
+      }
+    }
+  }
+}

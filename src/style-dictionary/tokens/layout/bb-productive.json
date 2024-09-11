@@ -31,8 +31,7 @@
           },
           "l": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.100}",
-            "$description": "\n"
+            "$value": "{bb.size.fluid.100}"
           }
         },
         "right": {

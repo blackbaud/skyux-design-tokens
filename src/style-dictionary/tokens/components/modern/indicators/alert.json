@@ -1,0 +1,12 @@
+{
+  "color": {
+    "background": {
+      "container": {
+        "danger": {
+          "$type": "color",
+          "$value": "pink"
+        }
+      }
+    }
+  }
+}

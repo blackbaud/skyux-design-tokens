@@ -1,32 +1,49 @@
 export const tokenSets = [
   {
-    name: 'base-blackbaud',
+    name: 'modern',
+    path: 'base-modern.json',
     selector: '.sky-theme-modern',
+    outputPath: 'modern.css',
+    referenceTokens: [
+      {
+        name: 'modern-colors',
+        path: 'color/modern.json',
+      },
+      {
+        name: 'modern-layout',
+        path: 'layout/modern.json',
+      },
+    ],
+  },
+  {
+    name: 'blackbaud',
     path: 'base-blackbaud.json',
-  },
-  {
-    name: 'bb-dark',
-    selector: '.sky-theme-modern.sky-theme-mode-dark',
-    path: 'color/bb-dark.json',
-  },
-  {
-    name: 'bb-light',
-    selector: '.sky-theme-modern',
-    path: 'color/bb-light.json',
-  },
-  {
-    name: 'bb-compact',
-    selector: '.sky-theme-modern.sky-theme-mode-compact',
-    path: 'layout/bb-compact.json',
-  },
-  {
-    name: 'bb-productive',
-    selector: '.sky-theme-modern',
-    path: 'layout/bb-productive.json',
-  },
-  {
-    name: 'bb-spacious',
-    selector: '.sky-theme-modern.sky-theme-mode-spacious',
-    path: 'layout/bb-spacious.json',
+    selector: '.sky-theme-modern.sky-theme-brand-blackbaud',
+    outputPath: 'blackbaud.css',
+    referenceTokens: [
+      {
+        name: 'bb-light',
+        path: 'color/bb-light.json',
+      },
+      {
+        name: 'bb-dark',
+        selector: '.sky-theme-mode-dark',
+        path: 'color/bb-dark.json',
+      },
+      {
+        name: 'bb-productive',
+        path: 'layout/bb-productive.json',
+      },
+      {
+        name: 'bb-compact',
+        selector: '.sky-theme-mode-compact',
+        path: 'layout/bb-compact.json',
+      },
+      {
+        name: 'bb-spacious',
+        selector: '.sky-theme-mode-spacious',
+        path: 'layout/bb-spacious.json',
+      },
+    ],
   },
 ];
