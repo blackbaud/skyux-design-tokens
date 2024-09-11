@@ -199,6 +199,32 @@
             "$value": "{bb.space.3}"
           }
         }
+      },
+      "input": {
+        "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.26}"
+          }
+        },
+        "right": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          }
+        },
+        "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.9}"
+          }
+        },
+        "left": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          }
+        }
       }
     },
     "icon_gap": {
