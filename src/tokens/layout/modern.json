@@ -306,6 +306,36 @@
         "accent": {
           "$type": "borderWidth",
           "$value": "{modern.size.7}"
+        },
+        "interactive": {
+          "base": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
+          },
+          "hover": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
+          },
+          "active": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
+          },
+          "focus": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.2}"
+          },
+          "error": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.2}"
+          }
+        },
+        "divider": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
+        },
+        "container": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
         }
       }
     }

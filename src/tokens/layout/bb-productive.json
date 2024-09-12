@@ -980,6 +980,10 @@
         "selected": {
           "$type": "borderWidth",
           "$value": "{bb.size.100}"
+        },
+        "error": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.200}"
         }
       },
       "divider": {
