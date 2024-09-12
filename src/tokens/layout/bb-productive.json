@@ -540,14 +540,14 @@
           "letterSpacing": "{font.letter_spacing.input.label}"
         }
       },
-      "value": {
+      "val": {
         "$type": "typography",
         "$value": {
-          "fontWeight": "{font.style.input.value}",
+          "fontWeight": "{font.style.input.val}",
           "fontFamily": "{font.family.sans}",
-          "fontSize": "{font.size.input.value}",
-          "lineHeight": "{font.line_height.input.value}",
-          "letterSpacing": "{font.letter_spacing.input.value}"
+          "fontSize": "{font.size.input.val}",
+          "lineHeight": "{font.line_height.input.val}",
+          "letterSpacing": "{font.letter_spacing.input.val}"
         }
       }
     },
@@ -671,7 +671,7 @@
           "$type": "fontSizes",
           "$value": "{bb.font.size.100}"
         },
-        "value": {
+        "val": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.200}"
         }
@@ -749,7 +749,7 @@
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         },
-        "value": {
+        "val": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
@@ -831,7 +831,7 @@
           "$type": "lineHeights",
           "$value": "{bb.line-height.100}"
         },
-        "value": {
+        "val": {
           "$type": "lineHeights",
           "$value": "{bb.line-height.200}"
         }
@@ -863,13 +863,13 @@
     },
     "letter_spacing": {
       "input": {
-        "value": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
         "label": {
           "$type": "letterSpacing",
           "$value": "{bb.font.letter_spacing.wider}"
+        },
+        "val": {
+          "$type": "letterSpacing",
+          "$value": "{bb.font.letter_spacing.normal}"
         }
       },
       "heading": {
