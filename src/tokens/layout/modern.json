@@ -318,7 +318,7 @@
           },
           "active": {
             "$type": "borderWidth",
-            "$value": "{modern.size.1}"
+            "$value": "{modern.size.2}"
           },
           "focus": {
             "$type": "borderWidth",
@@ -327,6 +327,10 @@
           "error": {
             "$type": "borderWidth",
             "$value": "{modern.size.2}"
+          },
+          "disabled": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
           }
         },
         "divider": {

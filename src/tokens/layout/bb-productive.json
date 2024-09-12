@@ -984,6 +984,10 @@
         "error": {
           "$type": "borderWidth",
           "$value": "{bb.size.200}"
+        },
+        "disabled": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.100}"
         }
       },
       "divider": {
