@@ -233,10 +233,14 @@
         "$value": "{modern.size.15}"
       }
     },
-    "text_action": {
-      "gap": {
+    "text_action_gap": {
+      "m": {
         "$type": "spacing",
         "$value": "{modern.size.15}"
+      },
+      "xs": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
       }
     },
     "label_gap": {

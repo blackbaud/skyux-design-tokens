@@ -323,6 +323,10 @@
       "l": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.100}"
+      },
+      "xs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.25}"
       }
     },
     "action_group_gap": {
