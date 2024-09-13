@@ -135,11 +135,11 @@
       "balanced": {
         "s": {
           "$type": "spacing",
-          "$value": "{modern.size.8}"
+          "$value": "{modern.size.10}"
         },
         "m": {
           "$type": "spacing",
-          "$value": "{modern.size.10}"
+          "$value": "{modern.size.15}"
         },
         "l": {
           "$type": "spacing",
