@@ -248,7 +248,11 @@
       },
       "m": {
         "$type": "spacing",
-        "$value": "{modern.size.15}"
+        "$value": "{modern.space.md}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
       }
     },
     "label_gap": {
