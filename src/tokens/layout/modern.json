@@ -304,51 +304,47 @@
       "$value": "{modern.font.name}"
     }
   },
-  "sky": {
-    "border": {
-      "width": {
-        "accent": {
-          "$type": "borderWidth",
-          "$value": "{modern.size.7}"
-        },
-        "interactive": {
-          "base": {
-            "$type": "borderWidth",
-            "$value": "{modern.size.1}"
-          },
-          "hover": {
-            "$type": "borderWidth",
-            "$value": "{modern.size.1}"
-          },
-          "active": {
-            "$type": "borderWidth",
-            "$value": "{modern.size.2}"
-          },
-          "focus": {
-            "$type": "borderWidth",
-            "$value": "{modern.size.2}"
-          },
-          "error": {
-            "$type": "borderWidth",
-            "$value": "{modern.size.2}"
-          },
-          "disabled": {
-            "$type": "borderWidth",
-            "$value": "{modern.size.1}"
-          }
-        },
-        "divider": {
+  "border": {
+    "width": {
+      "accent": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.7}"
+      },
+      "interactive": {
+        "base": {
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
         },
-        "container": {
+        "hover": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
+        },
+        "active": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.2}"
+        },
+        "focus": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.2}"
+        },
+        "error": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.2}"
+        },
+        "disabled": {
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
         }
+      },
+      "divider": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.1}"
+      },
+      "container": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.1}"
       }
-    }
-  },
-  "border": {
+    },
     "radius": {
       "s": {
         "$type": "borderRadius",
