@@ -259,6 +259,10 @@
       "s": {
         "$type": "spacing",
         "$value": "{modern.space.xs}"
+      },
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{modern.size.2}"
       }
     },
     "stacked_supplemental": {

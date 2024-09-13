@@ -397,6 +397,10 @@
       "xl": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.100}"
+      },
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.6}"
       }
     },
     "switch_inset": {
