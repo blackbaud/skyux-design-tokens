@@ -4,7 +4,7 @@
       "space": {
         "inset": {
           "balanced": {
-            "m": {
+            "s": {
               "$type": "spacing",
               "$value": "0 {modern.space.s}"
             },
@@ -20,9 +20,9 @@
   "space": {
     "inset": {
       "balanced": {
-        "m": {
+        "s": {
           "$type": "spacing",
-          "$value": "{sky.alert.space.inset.balanced.m}"
+          "$value": "{sky.alert.space.inset.balanced.s}"
         },
         "none": {
           "$type": "spacing",
