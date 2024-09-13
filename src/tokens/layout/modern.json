@@ -196,7 +196,7 @@
         "top": {
           "xs": {
             "$type": "spacing",
-            "$value": "{bb.size.4}"
+            "$value": "{modern.size.1}"
           }
         }
       },
