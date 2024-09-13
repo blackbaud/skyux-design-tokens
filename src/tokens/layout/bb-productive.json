@@ -184,11 +184,11 @@
         "bottom": {
           "l": {
             "$type": "spacing",
-            "$value": "{bb.space.0}"
+            "$value": "{bb.size.fluid.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.space.0}"
+            "$value": "{bb.size.fluid.0}"
           }
         },
         "left": {
