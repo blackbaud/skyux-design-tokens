@@ -39,11 +39,6 @@ export const tokenSets = [
         selector: '.sky-theme-mode-compact',
         path: 'layout/bb-compact.json',
       },
-      {
-        name: 'bb-spacious',
-        selector: '.sky-theme-mode-spacious',
-        path: 'layout/bb-spacious.json',
-      },
     ],
   },
 ];

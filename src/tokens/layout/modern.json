@@ -191,18 +191,60 @@
             "$value": "{modern.space.none}"
           }
         }
+      },
+      "pillarbox": {
+        "top": {
+          "xs": {
+            "$type": "spacing",
+            "$value": "{modern.size.1}"
+          }
+        }
+      },
+      "input": {
+        "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.26}"
+          }
+        },
+        "right": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          }
+        },
+        "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.9}"
+          }
+        },
+        "left": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          }
+        }
       }
     },
     "icon_gap": {
       "m": {
         "$type": "spacing",
+        "$value": "{modern.size.10}"
+      },
+      "l": {
+        "$type": "spacing",
         "$value": "{modern.size.15}"
       }
     },
-    "text_action": {
-      "gap": {
+    "text_action_gap": {
+      "m": {
         "$type": "spacing",
         "$value": "{modern.size.15}"
+      },
+      "xs": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
       }
     },
     "label_gap": {
@@ -213,6 +255,30 @@
       "s": {
         "$type": "spacing",
         "$value": "{modern.space.xs}"
+      }
+    },
+    "stacked_supplemental": {
+      "0": {
+        "$type": "spacing",
+        "$value": "0"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
+      }
+    },
+    "form_gap": {
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.s}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.xl}"
       }
     }
   },
@@ -238,12 +304,46 @@
       "$value": "{modern.font.name}"
     }
   },
-  "modern": {
+  "sky": {
     "border": {
       "width": {
         "accent": {
           "$type": "borderWidth",
           "$value": "{modern.size.7}"
+        },
+        "interactive": {
+          "base": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
+          },
+          "hover": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
+          },
+          "active": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.2}"
+          },
+          "focus": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.2}"
+          },
+          "error": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.2}"
+          },
+          "disabled": {
+            "$type": "borderWidth",
+            "$value": "{modern.size.1}"
+          }
+        },
+        "divider": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
+        },
+        "container": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
         }
       }
     }

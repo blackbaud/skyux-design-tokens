@@ -2,20 +2,28 @@ import { sync } from 'glob';
 import path from 'path';
 import StyleDictionary from 'style-dictionary';
 import { expandTypesMap, register } from '@tokens-studio/sd-transforms';
-import { tokenSets } from '../src/style-dictionary/token-sets.mjs';
+import { tokenSets } from '../src/tokens/token-sets.mjs';
 
 export function buildStyleDictionaryPlugin() {
+  register(StyleDictionary);
+  StyleDictionary.registerTransform({
+    name: 'name/prefixed-kebab',
+    transitive: true,
+    type: 'name',
+    transform: (token) => {
+      return `${token.isSource ? '' : 'sky-'}${token.path.join('-')}`;
+    },
+  });
+
   return {
     name: 'transform-style-dictionary',
     async transform(code, id) {
-      const files = sync('src/style-dictionary/tokens/**/*.json');
+      const files = sync('src/tokens/**/*.json');
       for (let file of files) {
         this.addWatchFile(path.join(process.cwd(), file));
       }
 
       if (id.includes('src/dev/tokens.css')) {
-        register(StyleDictionary);
-
         const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
         const allFiles = await generateDictionaryFiles(tokenSets, sd);
         let localTokens = '';
@@ -28,28 +36,13 @@ export function buildStyleDictionaryPlugin() {
       }
     },
     async generateBundle() {
-      register(StyleDictionary);
-      StyleDictionary.registerTransform({
-        name: 'name/prefixed-kebab',
-        type: 'name',
-        transform: (token) => {
-          return `${token.isSource ? '' : 'sky-'}${token.path.join('-')}`;
-        },
-      });
-
-      const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
-      const allSetNames = tokenSets.map((set) => set.name);
-      const setsRegex = new RegExp(`(${allSetNames.join('|')})+\/`);
-      const allFiles = await generateDictionaryFiles(tokenSets, sd);
+      const allFiles = await generateDictionaryFiles(tokenSets);
       const compositeFiles = {};
 
       for (let file of allFiles) {
         const fileParts = file.destination.split('/');
-        const tokenSetType = fileParts[2];
-        const fileName =
-          tokenSetType === 'components'
-            ? file.destination.replace(setsRegex, '')
-            : `style-dictionary/${tokenSetType}.css`;
+        const tokenSetType = fileParts[1];
+        const fileName = `scss/${tokenSetType}.css`;
 
         let fileContents = compositeFiles[fileName] || '';
         fileContents = fileContents.concat(file.output || '');
@@ -69,86 +62,86 @@ export function buildStyleDictionaryPlugin() {
   };
 }
 
-async function generateDictionaryFiles(tokenSets, sd) {
+async function generateDictionaryFiles(tokenSets) {
+  const sd = new StyleDictionary(undefined, {
+    verbosity: 'verbose',
+  });
   let allFiles = [];
+
   await Promise.all(
-    tokenSets.map(async function (tokenSet) {
-      const themeDictionary = await sd.extend(getDictionaryConfig(tokenSet));
-      const files = await themeDictionary.formatPlatform('css');
+    tokenSets.map(async (tokenSet) => {
+      const tokenDictionary = await sd.extend(
+        getBaseDictionaryConfig(tokenSet),
+      );
+      const files = await tokenDictionary.formatPlatform('css');
       allFiles = allFiles.concat(files);
+
+      await Promise.all(
+        tokenSet.referenceTokens.map(async (referenceTokenSet) => {
+          const referenceTokenDictionary = await sd.extend(
+            getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
+          );
+          const files = await referenceTokenDictionary.formatPlatform('css');
+          allFiles = allFiles.concat(files);
+        }),
+      );
     }),
   );
 
   return allFiles;
 }
 
-function getDictionaryConfig(tokenSet) {
-  const componentTokensPath = `src/style-dictionary/tokens/components/${tokenSet.name}/**/*.json`;
-  const componentFiles = sync(componentTokensPath).map((filePath) =>
-    filePath
-      .replace(`src/style-dictionary/tokens/components/${tokenSet.name}/`, '')
-      .replace('.json', ''),
-  );
-
-  const referenceTokensPaths = tokenSet.referenceTokens.map(
-    (referenceTokensSet) =>
-      `src/style-dictionary/tokens/${referenceTokensSet.path}`,
-  );
-
-  return {
-    source: [`src/style-dictionary/tokens/${tokenSet.path}`],
-    include: [...referenceTokensPaths, componentTokensPath],
-    preprocessors: ['tokens-studio'],
-    expand: {
-      typesMap: expandTypesMap,
-    },
-    platforms: {
-      css: {
-        transformGroup: 'tokens-studio',
-        transforms: ['name/prefixed-kebab'],
-        options: {
-          outputReferences: true,
-          showFileHeader: false,
-          selector: tokenSet.selector,
-        },
-        buildPath: `dist/style-dictionary/`,
-        files: [
-          {
-            destination: `${tokenSet.name}/${tokenSet.name}.css`,
-            format: 'css/variables',
-            filter: (token) =>
-              filterByFilePath(token, tokenSet.path, `components/`),
-          },
-          ...tokenSet.referenceTokens.map((referenceTokenSet) => {
-            return {
-              destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
-              format: 'css/variables',
-              options: {
-                selector: `${tokenSet.selector}${referenceTokenSet.selector || ''}`,
-              },
-              filter: (token) =>
-                filterByFilePath(token, referenceTokenSet.path, `components/`),
-            };
-          }),
-          ...componentFiles.map((filePath) => {
-            return {
-              destination: `components/${tokenSet.name}/${filePath}.css`,
-              format: 'css/variables',
-              filter: (token) =>
-                filterByFilePath(token, `${tokenSet.name}/${filePath}`),
-            };
-          }),
-        ],
+const DEFAULT_SD_CONFIG = {
+  preprocessors: ['tokens-studio'],
+  expand: {
+    typesMap: expandTypesMap,
+  },
+  platforms: {
+    css: {
+      transformGroup: 'tokens-studio',
+      transforms: ['name/prefixed-kebab'],
+      options: {
+        outputReferences: true,
+        showFileHeader: false,
       },
+      buildPath: `dist/`,
     },
+  },
+};
+
+function getBaseDictionaryConfig(tokenSet) {
+  const config = {
+    ...DEFAULT_SD_CONFIG,
   };
+
+  config.source = [`src/tokens/${tokenSet.path}`];
+  config.platforms.css.options.selector = tokenSet.selector;
+  config.platforms.css.files = [
+    {
+      destination: `${tokenSet.name}/${tokenSet.name}.css`,
+      format: 'css/variables',
+      filter: (token) => token.filePath.includes(tokenSet.path),
+    },
+  ];
+
+  return config;
 }
 
-function filterByFilePath(token, filePath, notFilePath) {
-  if (notFilePath) {
-    return (
-      token.filePath.includes(filePath) && !token.filePath.includes(notFilePath)
-    );
-  }
-  return token.filePath.includes(filePath);
+function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
+  const config = {
+    ...DEFAULT_SD_CONFIG,
+  };
+
+  config.source = [`src/tokens/${tokenSet.path}`];
+  config.include = [`src/tokens/${referenceTokenSet.path}`];
+  config.platforms.css.options.selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
+  config.platforms.css.files = [
+    {
+      destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
+      format: 'css/variables',
+      filter: (token) => token.filePath.includes(referenceTokenSet.path),
+    },
+  ];
+
+  return config;
 }

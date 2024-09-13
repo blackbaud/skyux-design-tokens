@@ -68,12 +68,42 @@
       "neutral-soft": {
         "$type": "color",
         "$value": "{modern.color.gray.07}"
+      },
+      "input": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.gray.15}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        }
       }
     },
     "text": {
       "default": {
         "$type": "color",
         "$value": "{modern.color.gray.105}"
+      },
+      "deemphasized": {
+        "$type": "color",
+        "$value": "{modern.color.gray.70}"
+      },
+      "action": {
+        "$type": "color",
+        "$value": "{modern.color.blue.74}"
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{modern.color.red.70}"
       }
     },
     "icon": {
