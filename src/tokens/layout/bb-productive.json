@@ -6,13 +6,17 @@
           "$type": "spacing",
           "$value": "0"
         },
-        "s": {
+        "xs": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.25}"
         },
-        "m": {
+        "s": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.50}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.75}"
         },
         "l": {
           "$type": "spacing",
