@@ -156,7 +156,7 @@
       },
       "bottomless": {
         "top": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
           },
@@ -166,7 +166,7 @@
           }
         },
         "right": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
           },
@@ -176,7 +176,7 @@
           }
         },
         "left": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
           },
@@ -186,7 +186,7 @@
           }
         },
         "bottom": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.none}"
           },
@@ -242,13 +242,13 @@
       }
     },
     "text_action_gap": {
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.size.15}"
-      },
       "xs": {
         "$type": "spacing",
         "$value": "{modern.space.xs}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.size.15}"
       }
     },
     "label_gap": {
@@ -256,13 +256,13 @@
         "$type": "spacing",
         "$value": "0"
       },
-      "s": {
-        "$type": "spacing",
-        "$value": "{modern.space.xs}"
-      },
       "xxs": {
         "$type": "spacing",
         "$value": "{modern.size.2}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
       }
     },
     "stacked_supplemental": {
