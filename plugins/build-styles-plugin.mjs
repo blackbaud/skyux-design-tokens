@@ -2,6 +2,63 @@ import fs from 'fs-extra';
 import path from 'node:path';
 import yamlParse from 'js-yaml';
 
+function generateOutputFiles(prefix, yamlPath) {
+  const yamlTokens = fs.readFileSync(path.resolve(__dirname, yamlPath), 'utf8');
+
+  if (yamlTokens.indexOf('\t') > -1) {
+    throw new Error(
+      `Looks like your YAML file is using the "tab" key for spaces.
+  This causes problems with the parsing library we use.  Please use spaces.
+  `,
+    );
+  }
+
+  const jsonOutput = yamlParse.safeLoad(yamlTokens);
+
+  const scssOutput = parseSassObject(jsonOutput, prefix);
+
+  return { jsonOutput, scssOutput };
+}
+
+function readFileContent(filePath) {
+  return fs.readFileSync(path.resolve(__dirname, filePath), 'utf8');
+}
+
+function buildProperty(name, value) {
+  let quotedValue;
+
+  // Put URLs or other values that contain colons in quotes.
+  if (value.indexOf(':') >= 0) {
+    quotedValue = `"${value.replace(/\"/g, '\\"')}"`;
+  }
+
+  return `${name}: ${quotedValue || value} !default;\n`;
+}
+
+function parseSassObject(sassObject, prefix) {
+  let scssResult = '';
+
+  for (var key in sassObject) {
+    if (sassObject.hasOwnProperty(key)) {
+      const nestedName = prefix + '-' + key;
+
+      if (sassObject[key] !== null) {
+        if (Array.isArray(sassObject[key])) {
+          scssResult += buildProperty(nestedName, sassObject[key].join(' '));
+        } else if (typeof sassObject[key] === 'object') {
+          scssResult += parseSassObject(sassObject[key], nestedName);
+        } else {
+          scssResult += buildProperty(nestedName, sassObject[key]);
+        }
+      } else {
+        scssResult += buildProperty(nestedName, sassObject[key]);
+      }
+    }
+  }
+
+  return scssResult;
+}
+
 export function buildStylesPlugin() {
   return {
     name: 'transform-styles',
@@ -68,61 +125,4 @@ export function buildStylesPlugin() {
       });
     },
   };
-}
-
-function generateOutputFiles(prefix, yamlPath) {
-  const yamlTokens = fs.readFileSync(path.resolve(__dirname, yamlPath), 'utf8');
-
-  if (yamlTokens.indexOf('\t') > -1) {
-    throw new Error(
-      `Looks like your YAML file is using the "tab" key for spaces.
-  This causes problems with the parsing library we use.  Please use spaces.
-  `,
-    );
-  }
-
-  const jsonOutput = yamlParse.safeLoad(yamlTokens);
-
-  const scssOutput = parseSassObject(jsonOutput, prefix);
-
-  return { jsonOutput, scssOutput };
-}
-
-function readFileContent(filePath) {
-  return fs.readFileSync(path.resolve(__dirname, filePath), 'utf8');
-}
-
-function buildProperty(name, value) {
-  let quotedValue;
-
-  // Put URLs or other values that contain colons in quotes.
-  if (value.indexOf(':') >= 0) {
-    quotedValue = `"${value.replace(/\"/g, '\\"')}"`;
-  }
-
-  return `${name}: ${quotedValue || value} !default;\n`;
-}
-
-function parseSassObject(sassObject, prefix) {
-  let scssResult = '';
-
-  for (var key in sassObject) {
-    if (sassObject.hasOwnProperty(key)) {
-      const nestedName = prefix + '-' + key;
-
-      if (sassObject[key] !== null) {
-        if (Array.isArray(sassObject[key])) {
-          scssResult += buildProperty(nestedName, sassObject[key].join(' '));
-        } else if (typeof sassObject[key] === 'object') {
-          scssResult += parseSassObject(sassObject[key], nestedName);
-        } else {
-          scssResult += buildProperty(nestedName, sassObject[key]);
-        }
-      } else {
-        scssResult += buildProperty(nestedName, sassObject[key]);
-      }
-    }
-  }
-
-  return scssResult;
 }

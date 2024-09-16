@@ -4,6 +4,87 @@ import StyleDictionary from 'style-dictionary';
 import { expandTypesMap, register } from '@tokens-studio/sd-transforms';
 import { tokenSets } from '../src/tokens/token-sets.mjs';
 
+async function generateDictionaryFiles(tokenSets) {
+  const sd = new StyleDictionary(undefined, {
+    verbosity: 'verbose',
+  });
+  let allFiles = [];
+
+  await Promise.all(
+    tokenSets.map(async (tokenSet) => {
+      const tokenDictionary = await sd.extend(
+        getBaseDictionaryConfig(tokenSet),
+      );
+      const files = await tokenDictionary.formatPlatform('css');
+      allFiles = allFiles.concat(files);
+
+      await Promise.all(
+        tokenSet.referenceTokens.map(async (referenceTokenSet) => {
+          const referenceTokenDictionary = await sd.extend(
+            getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
+          );
+          const files = await referenceTokenDictionary.formatPlatform('css');
+          allFiles = allFiles.concat(files);
+        }),
+      );
+    }),
+  );
+
+  return allFiles;
+}
+
+const DEFAULT_SD_CONFIG = {
+  preprocessors: ['tokens-studio'],
+  platforms: {
+    css: {
+      transformGroup: 'tokens-studio',
+      transforms: ['name/prefixed-kebab'],
+      options: {
+        outputReferences: true,
+        showFileHeader: false,
+      },
+      buildPath: `dist/`,
+    },
+  },
+};
+
+function getBaseDictionaryConfig(tokenSet) {
+  const config = {
+    ...DEFAULT_SD_CONFIG,
+  };
+
+  config.source = [`src/tokens/${tokenSet.path}`];
+  config.platforms.css.options.selector = tokenSet.selector;
+  config.platforms.css.files = [
+    {
+      destination: `${tokenSet.name}/${tokenSet.name}.css`,
+      format: 'css/variables',
+      filter: (token) => token.filePath.includes(tokenSet.path),
+    },
+  ];
+
+  return config;
+}
+
+function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
+  const config = {
+    ...DEFAULT_SD_CONFIG,
+  };
+
+  config.source = [`src/tokens/${tokenSet.path}`];
+  config.include = [`src/tokens/${referenceTokenSet.path}`];
+  config.platforms.css.options.selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
+  config.platforms.css.files = [
+    {
+      destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
+      format: 'css/variables',
+      filter: (token) => token.filePath.includes(referenceTokenSet.path),
+    },
+  ];
+
+  return config;
+}
+
 export function buildStyleDictionaryPlugin() {
   register(StyleDictionary);
   StyleDictionary.registerTransform({
@@ -60,88 +141,4 @@ export function buildStyleDictionaryPlugin() {
       }
     },
   };
-}
-
-async function generateDictionaryFiles(tokenSets) {
-  const sd = new StyleDictionary(undefined, {
-    verbosity: 'verbose',
-  });
-  let allFiles = [];
-
-  await Promise.all(
-    tokenSets.map(async (tokenSet) => {
-      const tokenDictionary = await sd.extend(
-        getBaseDictionaryConfig(tokenSet),
-      );
-      const files = await tokenDictionary.formatPlatform('css');
-      allFiles = allFiles.concat(files);
-
-      await Promise.all(
-        tokenSet.referenceTokens.map(async (referenceTokenSet) => {
-          const referenceTokenDictionary = await sd.extend(
-            getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
-          );
-          const files = await referenceTokenDictionary.formatPlatform('css');
-          allFiles = allFiles.concat(files);
-        }),
-      );
-    }),
-  );
-
-  return allFiles;
-}
-
-const DEFAULT_SD_CONFIG = {
-  preprocessors: ['tokens-studio'],
-  expand: {
-    typesMap: expandTypesMap,
-  },
-  platforms: {
-    css: {
-      transformGroup: 'tokens-studio',
-      transforms: ['name/prefixed-kebab'],
-      options: {
-        outputReferences: true,
-        showFileHeader: false,
-      },
-      buildPath: `dist/`,
-    },
-  },
-};
-
-function getBaseDictionaryConfig(tokenSet) {
-  const config = {
-    ...DEFAULT_SD_CONFIG,
-  };
-
-  config.source = [`src/tokens/${tokenSet.path}`];
-  config.platforms.css.options.selector = tokenSet.selector;
-  config.platforms.css.files = [
-    {
-      destination: `${tokenSet.name}/${tokenSet.name}.css`,
-      format: 'css/variables',
-      filter: (token) => token.filePath.includes(tokenSet.path),
-    },
-  ];
-
-  return config;
-}
-
-function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
-  const config = {
-    ...DEFAULT_SD_CONFIG,
-  };
-
-  config.source = [`src/tokens/${tokenSet.path}`];
-  config.include = [`src/tokens/${referenceTokenSet.path}`];
-  config.platforms.css.options.selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
-  config.platforms.css.files = [
-    {
-      destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
-      format: 'css/variables',
-      filter: (token) => token.filePath.includes(referenceTokenSet.path),
-    },
-  ];
-
-  return config;
 }
