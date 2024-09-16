@@ -117,11 +117,11 @@
         "sans": {
           "regular": {
             "$type": "asset",
-            "$value": "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff) format(\"woff\""
+            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff) format(\"woff\")"
           },
           "italic": {
             "$type": "asset",
-            "$value": "https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff) format(\"woff\""
+            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff) format(\"woff\")"
           }
         }
       },
@@ -207,6 +207,16 @@
         "circle": {
           "$type": "borderRadius",
           "$value": "50%"
+        }
+      },
+      "style": {
+        "solid": {
+          "$type": "other",
+          "$value": "solid"
+        },
+        "dotted": {
+          "$type": "other",
+          "$value": "dotted"
         }
       }
     },
@@ -795,6 +805,10 @@
         "$value": "36"
       },
       "fluid": {
+        "0": {
+          "$type": "sizing",
+          "$value": "0"
+        },
         "6": {
           "$type": "sizing",
           "$value": "0.0625rem"

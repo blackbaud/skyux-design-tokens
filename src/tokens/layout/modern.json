@@ -156,7 +156,7 @@
       },
       "bottomless": {
         "top": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
           },
@@ -166,7 +166,7 @@
           }
         },
         "right": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
           },
@@ -176,7 +176,7 @@
           }
         },
         "left": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
           },
@@ -186,7 +186,7 @@
           }
         },
         "bottom": {
-          "lg": {
+          "l": {
             "$type": "spacing",
             "$value": "{modern.space.none}"
           },
@@ -242,19 +242,27 @@
       }
     },
     "text_action_gap": {
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.size.15}"
-      },
       "xs": {
         "$type": "spacing",
         "$value": "{modern.space.xs}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.md}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
       }
     },
     "label_gap": {
       "0": {
         "$type": "spacing",
         "$value": "0"
+      },
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{modern.size.2}"
       },
       "s": {
         "$type": "spacing",
@@ -357,6 +365,12 @@
       "m": {
         "$type": "borderRadius",
         "$value": "{modern.size.6}"
+      }
+    },
+    "style": {
+      "accent": {
+        "$type": "other",
+        "$value": "{modern.border.style.solid}"
       }
     }
   },

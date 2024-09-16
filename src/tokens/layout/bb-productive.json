@@ -184,11 +184,11 @@
         "bottom": {
           "l": {
             "$type": "spacing",
-            "$value": "{bb.space.0}"
+            "$value": "{bb.size.fluid.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.space.0}"
+            "$value": "{bb.size.fluid.0}"
           }
         },
         "left": {
@@ -316,6 +316,10 @@
         "$type": "spacing",
         "$value": "0"
       },
+      "xs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.25}"
+      },
       "s": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.50}"
@@ -327,10 +331,6 @@
       "l": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.100}"
-      },
-      "xs": {
-        "$type": "spacing",
-        "$value": "{bb.size.fluid.25}"
       }
     },
     "action_group_gap": {
@@ -397,6 +397,10 @@
       "xl": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.100}"
+      },
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.6}"
       }
     },
     "switch_inset": {
@@ -1001,6 +1005,12 @@
       "container": {
         "$type": "borderWidth",
         "$value": "{bb.size.100}"
+      }
+    },
+    "style": {
+      "accent": {
+        "$type": "other",
+        "$value": "{bb.border.style.solid}"
       }
     }
   }
