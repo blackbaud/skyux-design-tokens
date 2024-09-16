@@ -116,12 +116,12 @@
       "src": {
         "sans": {
           "regular": {
-            "$type": "asset",
-            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff) format(\"woff\")"
+            "$type": "other",
+            "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff\") format(\"woff\")"
           },
           "italic": {
-            "$type": "asset",
-            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff) format(\"woff\")"
+            "$type": "other",
+            "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff\") format(\"woff\")"
           }
         }
       },
