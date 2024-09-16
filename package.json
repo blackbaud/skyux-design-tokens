@@ -4,14 +4,25 @@
   "description": "Design tokens for SKY UX",
   "homepage": "https://github.com/blackbaud/skyux-design-tokens",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "clean": "rimraf -- dist",
-    "build": "node src/build-styles.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
+    "@tokens-studio/sd-transforms": "1.2.1",
+    "@vitest/coverage-v8": "1.5.0",
     "fs-extra": "7.0.0",
+    "glob": "11.0.0",
     "js-yaml": "3.13.1",
-    "rimraf": "2.6.2"
+    "prettier": "3.3.3",
+    "rimraf": "2.6.2",
+    "style-dictionary": "4.0.1",
+    "typescript": "5.2.2",
+    "vite": "5.3.4",
+    "vitest": "1.5.0"
   },
   "repository": {
     "type": "git",
