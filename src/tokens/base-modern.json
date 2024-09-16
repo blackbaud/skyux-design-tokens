@@ -368,6 +368,16 @@
           "$type": "borderRadius",
           "$value": "6"
         }
+      },
+      "style": {
+        "solid": {
+          "$type": "other",
+          "$value": "solid"
+        },
+        "dotted": {
+          "$type": "other",
+          "$value": "dotted"
+        }
       }
     }
   }

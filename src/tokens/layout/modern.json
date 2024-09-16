@@ -366,6 +366,12 @@
         "$type": "borderRadius",
         "$value": "{modern.size.6}"
       }
+    },
+    "style": {
+      "accent": {
+        "$type": "other",
+        "$value": "{modern.border.style.solid}"
+      }
     }
   },
   "elevation": {
