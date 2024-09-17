@@ -52,8 +52,6 @@
       "color.icon.inverse": "991fa15904657802bb09ef4d743d04a8789620f8",
       "color.icon.action": "60139838c8be5b4d4878d3218a24612879479646",
       "color.border.selected": "7bab70aea0f6617b2c48eedda9724cb3a31a9f35",
-      "color.border.neutral-soft": "c4e6a74db6ef166b7e73c7006821d6735c0da52e",
-      "color.border.neutral-heavy": "95d40999cd150f44758bb016d5707a3e8f2a5eb5",
       "color.border.danger": "9bf4c42ad207fad80d25aa78fc36f0fdd7f42d46",
       "color.border.warning": "0385f6178df04cda3e0ea5b0e142f4e9d7f0df21",
       "color.border.success": "cf2c755005d5aa169b7823b04a68b21321c9c376",
@@ -79,7 +77,8 @@
       "color.border.input.active": "32640730b5a7d8b511efd17cfe9d950cbb1f5e82",
       "color.border.input.focus": "7ff354c5b7291b078e130a56363478760ef87f42",
       "color.border.input.error": "03cef6b4b489732c06547c3a0a47fa7697d719d9",
-      "color.border.input.disabled": "367e71565d67f6fcee8dfa9094f60ea816517cee"
+      "color.border.input.disabled": "367e71565d67f6fcee8dfa9094f60ea816517cee",
+      "color.border.container.base": "c4e6a74db6ef166b7e73c7006821d6735c0da52e"
     },
     "group": "Color"
   },
@@ -135,8 +134,6 @@
       "color.icon.success": "fc36da9812cb03a7bfa124c95496aa003a790db3",
       "color.icon.info": "dc2b337786d395f7bb339b2ffd8c2b063f6c323d",
       "color.border.selected": "7bab70aea0f6617b2c48eedda9724cb3a31a9f35",
-      "color.border.neutral-soft": "c4e6a74db6ef166b7e73c7006821d6735c0da52e",
-      "color.border.neutral-heavy": "95d40999cd150f44758bb016d5707a3e8f2a5eb5",
       "color.border.danger": "9bf4c42ad207fad80d25aa78fc36f0fdd7f42d46",
       "color.border.warning": "0385f6178df04cda3e0ea5b0e142f4e9d7f0df21",
       "color.border.success": "cf2c755005d5aa169b7823b04a68b21321c9c376",
@@ -156,7 +153,8 @@
       "color.border.action.tertiary.active": "03cc6ba048e8b02a28bf3e8c62c2efe37b6e63fd",
       "color.border.action.tertiary.focus": "75a86806ab14f6b64ae3bcf38a08114dad5f7e1e",
       "color.border.action.tertiary.disabled": "755612582bae2fb5550e46e47c958ba9300e7050",
-      "color.border.action.disabled": "ebf2972e259e1b32b530220a94baf9498794f5a2"
+      "color.border.action.disabled": "ebf2972e259e1b32b530220a94baf9498794f5a2",
+      "color.border.container.base": "c4e6a74db6ef166b7e73c7006821d6735c0da52e"
     },
     "group": "Color"
   },
@@ -213,7 +211,6 @@
       "color.border.action.tertiary.base": "43707edc404216cf1f74be3446644ac6fe996e01",
       "color.background.action.tertiary.base": "c148ae92b4a8fb6b273a4af394ca93614b996f00",
       "color.icon.inverse": "991fa15904657802bb09ef4d743d04a8789620f8",
-      "color.border.neutral-soft": "c4e6a74db6ef166b7e73c7006821d6735c0da52e",
       "color.text.deemphasized": "ef56abfe4ee57e18a821a5ad5efcb8e58287eada",
       "color.text.action": "50dc41a5ec69b3e3f869fcba55ff1d4f11272176",
       "color.text.danger": "2a751fbe41921052b70bf45e529d78ef2a37ec11",
@@ -233,7 +230,6 @@
       "color.icon.deemphasized": "81eff49b19d7cd6406abeafb4c8ab1a6b4458701",
       "color.icon.action": "60139838c8be5b4d4878d3218a24612879479646",
       "color.border.selected": "7bab70aea0f6617b2c48eedda9724cb3a31a9f35",
-      "color.border.neutral-heavy": "95d40999cd150f44758bb016d5707a3e8f2a5eb5",
       "color.border.action.primary.base": "9c2e135e6a2adfc21540e8a7af65f6f2c3d59aef",
       "color.border.action.primary.hover": "1ed99be2dc9e45ba1c8e93be98ba4180effb8e99",
       "color.border.action.primary.active": "0557848a80200f0bfa656795bc77e00506216ada",
@@ -254,7 +250,8 @@
       "color.border.input.active": "32640730b5a7d8b511efd17cfe9d950cbb1f5e82",
       "color.border.input.focus": "7ff354c5b7291b078e130a56363478760ef87f42",
       "color.border.input.error": "03cef6b4b489732c06547c3a0a47fa7697d719d9",
-      "color.border.input.disabled": "367e71565d67f6fcee8dfa9094f60ea816517cee"
+      "color.border.input.disabled": "367e71565d67f6fcee8dfa9094f60ea816517cee",
+      "color.border.container.base": "c4e6a74db6ef166b7e73c7006821d6735c0da52e"
     },
     "group": "Color"
   },

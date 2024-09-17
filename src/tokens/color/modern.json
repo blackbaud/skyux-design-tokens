@@ -69,10 +69,6 @@
           }
         }
       },
-      "neutral-soft": {
-        "$type": "color",
-        "$value": "{modern.color.gray.07}"
-      },
       "input": {
         "base": {
           "$type": "color",
@@ -89,6 +85,12 @@
         "focus": {
           "$type": "color",
           "$value": "{modern.color.blue.74}"
+        }
+      },
+      "container": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.gray.15}"
         }
       }
     },

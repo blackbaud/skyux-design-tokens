@@ -145,13 +145,11 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
-      "neutral-soft": {
-        "$type": "color",
-        "$value": "{bb.color.gray.100}"
-      },
-      "neutral-heavy": {
-        "$type": "color",
-        "$value": "{bb.color.gray.500}"
+      "container": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.gray.100}"
+        }
       },
       "danger": {
         "$type": "color",
