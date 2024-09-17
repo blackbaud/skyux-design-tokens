@@ -143,6 +143,12 @@
     "raised": {
       "$type": "boxShadow",
       "$value": "{modern.shadow.size.1}"
+    },
+    "overlay": {
+      "400": {
+        "$type": "boxShadow",
+        "$value": "{modern.shadow.size.24}"
+      }
     }
   }
 }

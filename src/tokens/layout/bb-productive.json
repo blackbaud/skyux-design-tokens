@@ -29,13 +29,13 @@
       },
       "pillarbox": {
         "top": {
-          "s": {
-            "$type": "spacing",
-            "$value": "{bb.size.fluid.25}"
-          },
           "xs": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.6}"
+          },
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
           },
           "m": {
             "$type": "spacing",
