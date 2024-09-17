@@ -296,13 +296,21 @@
   },
   "size": {
     "icon": {
-      "xl": {
+      "s": {
         "$type": "sizing",
-        "$value": "{modern.size.32}"
+        "$value": "{modern.size.16}"
       },
       "m": {
         "$type": "sizing",
-        "$value": "{modern.size.16}"
+        "$value": "{modern.size.20}"
+      },
+      "l": {
+        "$type": "sizing",
+        "$value": "{modern.size.24}"
+      },
+      "xl": {
+        "$type": "sizing",
+        "$value": "{modern.size.32}"
       }
     },
     "switch": {

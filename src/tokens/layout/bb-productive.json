@@ -412,19 +412,19 @@
     "icon": {
       "s": {
         "$type": "sizing",
-        "$value": "{bb.size.fluid.75}"
+        "$value": "{bb.size.fluid.100}"
       },
       "m": {
         "$type": "sizing",
-        "$value": "{bb.size.fluid.100}"
+        "$value": "{bb.size.fluid.125}"
       },
       "l": {
         "$type": "sizing",
-        "$value": "{bb.size.fluid.125}"
+        "$value": "{bb.size.fluid.150}"
       },
       "xl": {
         "$type": "sizing",
-        "$value": "{bb.size.fluid.150}"
+        "$value": "{bb.size.fluid.200}"
       }
     },
     "illustration": {
