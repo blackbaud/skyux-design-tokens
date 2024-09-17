@@ -135,23 +135,23 @@
       "balanced": {
         "xs": {
           "$type": "spacing",
-          "$value": "{modern.size.5}"
+          "$value": "{modern.space.xs}"
         },
         "s": {
           "$type": "spacing",
-          "$value": "{modern.size.10}"
+          "$value": "{modern.space.s}"
         },
         "m": {
           "$type": "spacing",
-          "$value": "{modern.size.15}"
+          "$value": "{modern.space.md}"
         },
         "l": {
           "$type": "spacing",
-          "$value": "{modern.size.20}"
+          "$value": "{modern.space.lg}"
         },
         "xl": {
           "$type": "spacing",
-          "$value": "{modern.size.30}"
+          "$value": "{modern.space.xl}"
         }
       },
       "bottomless": {
@@ -234,11 +234,11 @@
     "icon_gap": {
       "m": {
         "$type": "spacing",
-        "$value": "{modern.size.10}"
+        "$value": "{modern.space.s}"
       },
       "l": {
         "$type": "spacing",
-        "$value": "{modern.size.15}"
+        "$value": "{modern.space.md}"
       }
     },
     "text_action_gap": {
