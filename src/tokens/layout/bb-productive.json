@@ -378,6 +378,10 @@
         "$type": "spacing",
         "$value": "0"
       },
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.6}"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.12}"
@@ -397,10 +401,6 @@
       "xl": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.100}"
-      },
-      "xxs": {
-        "$type": "spacing",
-        "$value": "{bb.size.fluid.6}"
       }
     },
     "switch_inset": {
@@ -1003,8 +1003,10 @@
         "$value": "{bb.size.100}"
       },
       "container": {
-        "$type": "borderWidth",
-        "$value": "{bb.size.100}"
+        "base": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.100}"
+        }
       }
     },
     "style": {

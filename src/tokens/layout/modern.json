@@ -361,8 +361,10 @@
         "$value": "{modern.size.1}"
       },
       "container": {
-        "$type": "borderWidth",
-        "$value": "{modern.size.1}"
+        "base": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
+        }
       }
     },
     "radius": {
