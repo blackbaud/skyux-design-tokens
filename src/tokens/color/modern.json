@@ -2,6 +2,10 @@
   "color": {
     "background": {
       "container": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.white}"
+        },
         "danger": {
           "$type": "color",
           "$value": "{modern.color.red.30}"
