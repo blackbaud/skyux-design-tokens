@@ -281,8 +281,10 @@
       "$value": "{bb.shadow.gray.2}"
     },
     "raised": {
-      "$type": "boxShadow",
-      "$value": "{bb.shadow.gray.1}"
+      "100": {
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.gray.1}"
+      }
     },
     "overlay": {
       "100": {
