@@ -1077,41 +1077,41 @@
     "width": {
       "accent": {
         "$type": "borderWidth",
-        "$value": "{bb.size.500}"
+        "$value": "{bb.size.fixed.37}"
       },
       "interactive": {
         "base": {
           "$type": "borderWidth",
-          "$value": "{bb.size.100}"
+          "$value": "{bb.size.fixed.6}"
         },
         "hover": {
           "$type": "borderWidth",
-          "$value": "{bb.size.100}"
+          "$value": "{bb.size.fixed.6}"
         },
         "active": {
           "$type": "borderWidth",
-          "$value": "{bb.size.200}"
+          "$value": "{bb.size.fixed.12}"
         },
         "focus": {
           "$type": "borderWidth",
-          "$value": "{bb.size.200}"
+          "$value": "{bb.size.fixed.12}"
         },
         "selected": {
           "$type": "borderWidth",
-          "$value": "{bb.size.100}"
+          "$value": "{bb.size.fixed.6}"
         },
         "error": {
           "$type": "borderWidth",
-          "$value": "{bb.size.200}"
+          "$value": "{bb.size.fixed.12}"
         },
         "disabled": {
           "$type": "borderWidth",
-          "$value": "{bb.size.100}"
+          "$value": "{bb.size.fixed.6}"
         }
       },
       "divider": {
         "$type": "borderWidth",
-        "$value": "{bb.size.100}"
+        "$value": "{bb.size.fixed.6}"
       },
       "container": {
         "base": {
