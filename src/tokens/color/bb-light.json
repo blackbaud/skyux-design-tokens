@@ -141,6 +141,22 @@
       }
     },
     "border": {
+      "danger": {
+        "$type": "color",
+        "$value": "{bb.color.red.600}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{bb.color.blue.600}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{bb.color.green.600}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{bb.color.yellow.600}"
+      },
       "selected": {
         "$type": "color",
         "$value": "{bb.color.blue.600}"
@@ -150,22 +166,6 @@
           "$type": "color",
           "$value": "{bb.color.gray.100}"
         }
-      },
-      "danger": {
-        "$type": "color",
-        "$value": "{bb.color.red.600}"
-      },
-      "warning": {
-        "$type": "color",
-        "$value": "{bb.color.yellow.600}"
-      },
-      "success": {
-        "$type": "color",
-        "$value": "{bb.color.green.600}"
-      },
-      "info": {
-        "$type": "color",
-        "$value": "{bb.color.blue.600}"
       },
       "action": {
         "primary": {
