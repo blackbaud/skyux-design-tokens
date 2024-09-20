@@ -777,6 +777,10 @@
           "$type": "sizing",
           "$value": "0.25rem"
         },
+        "37": {
+          "$type": "sizing",
+          "$value": "0.375rem"
+        },
         "50": {
           "$type": "sizing",
           "$value": "0.5rem"
