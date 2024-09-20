@@ -568,7 +568,7 @@
           "fontFamily": "{font.family.sans}",
           "fontWeight": "{font.style.heading.1}",
           "fontSize": "{font.size.heading.1}",
-          "letterSpacing": "{font.letter_spacing.heading.1}"
+          "letterSpacing": "{font.letter_spacing.heading}"
         }
       },
       "2": {
@@ -620,7 +620,7 @@
           "fontSize": "{font.size.body.s}",
           "lineHeight": "{font.line_height.body.s}",
           "fontFamily": "{font.family.sans}",
-          "letterSpacing": "{font.letter_spacing.body.s}"
+          "letterSpacing": "{font.letter_spacing.body}"
         }
       },
       "m": {
@@ -630,7 +630,7 @@
           "fontSize": "{font.size.body.m}",
           "lineHeight": "{font.line_height.body.m}",
           "fontFamily": "{font.family.sans}",
-          "letterSpacing": "{font.letter_spacing.body.m}"
+          "letterSpacing": "{font.letter_spacing.body}"
         }
       }
     },
@@ -696,7 +696,7 @@
           "lineHeight": "{font.line_height.metric.l}",
           "fontWeight": "{font.style.metric.l}",
           "fontSize": "{font.size.metric.l}",
-          "letterSpacing": "{font.letter_spacing.metric.l}"
+          "letterSpacing": "{font.letter_spacing.metric}"
         }
       }
     },
@@ -979,80 +979,40 @@
       }
     },
     "letter_spacing": {
-      "input": {
-        "label": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.wider}"
-        },
-        "val": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        }
-      },
       "heading": {
-        "1": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "2": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "3": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "4": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "5": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        }
+        "$type": "letterSpacing",
+        "$value": "{bb.letter_spacing.normal}"
       },
       "body": {
-        "s": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "m": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        }
-      },
-      "code": {
-        "m": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        }
+        "$type": "letterSpacing",
+        "$value": "{bb.letter_spacing.normal}"
       },
       "data_label": {
         "$type": "letterSpacing",
-        "$value": "{bb.font.letter_spacing.normal}"
+        "$value": "{bb.letter_spacing.normal}"
+      },
+      "metric": {
+        "$type": "letterSpacing",
+        "$value": "{bb.letter_spacing.normal}"
+      },
+      "input": {
+        "label": {
+          "$type": "letterSpacing",
+          "$value": "{bb.letter_spacing.wider}"
+        },
+        "val": {
+          "$type": "letterSpacing",
+          "$value": "{bb.letter_spacing.normal}"
+        }
       },
       "hint": {
         "s": {
           "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
+          "$value": "{bb.letter_spacing.normal}"
         },
         "m": {
           "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "m": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
-        },
-        "l": {
-          "$type": "letterSpacing",
-          "$value": "{bb.font.letter_spacing.normal}"
+          "$value": "{bb.letter_spacing.normal}"
         }
       }
     }

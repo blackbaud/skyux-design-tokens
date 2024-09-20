@@ -214,7 +214,7 @@
         "$value": "296"
       }
     },
-    "text": {
+    "font": {
       "size": {
         "100": {
           "$type": "fontSizes",
@@ -257,36 +257,24 @@
           "$value": "48px"
         }
       },
-      "line-height": {
-        "110": {
-          "$type": "lineHeights",
-          "$value": "110%"
+      "style": {
+        "regular": {
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
-        "115": {
-          "$type": "lineHeights",
-          "$value": "115%"
+        "light": {
+          "$type": "fontWeights",
+          "$value": "Light"
+        },
+        "semibold": {
+          "$type": "fontWeights",
+          "$value": "Semibold"
+        },
+        "italic": {
+          "$type": "fontWeights",
+          "$value": "Italic"
         }
-      }
-    },
-    "style": {
-      "regular": {
-        "$type": "fontWeights",
-        "$value": "Regular"
       },
-      "light": {
-        "$type": "fontWeights",
-        "$value": "Light"
-      },
-      "semibold": {
-        "$type": "fontWeights",
-        "$value": "Semibold"
-      },
-      "italic": {
-        "$type": "fontWeights",
-        "$value": "Italic"
-      }
-    },
-    "font": {
       "name": {
         "$type": "fontFamilies",
         "$value": "BLKB Sans"
@@ -296,12 +284,22 @@
           "$type": "fontFamilies",
           "$value": "{modern.font.name}, Helvetica Neue, Arial, sans-serif"
         }
+      }
+    },
+    "line-height": {
+      "110": {
+        "$type": "lineHeights",
+        "$value": "110%"
       },
-      "letter_spacing": {
-        "normal": {
-          "$type": "letterSpacing",
-          "$value": "normal"
-        }
+      "115": {
+        "$type": "lineHeights",
+        "$value": "115%"
+      }
+    },
+    "letter_spacing": {
+      "normal": {
+        "$type": "letterSpacing",
+        "$value": "normal"
       }
     },
     "shadow": {
