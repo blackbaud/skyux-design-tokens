@@ -231,10 +231,6 @@
             },
             "s": {
               "$type": "spacing",
-              "$value": "{modern.size.2}"
-            },
-            "m": {
-              "$type": "spacing",
               "$value": "{modern.size.4}"
             }
           },
@@ -244,10 +240,6 @@
               "$value": "{modern.size.5}"
             },
             "s": {
-              "$type": "spacing",
-              "$value": "{modern.size.10}"
-            },
-            "m": {
               "$type": "spacing",
               "$value": "{modern.size.15}"
             }
@@ -259,10 +251,6 @@
             },
             "s": {
               "$type": "spacing",
-              "$value": "{modern.size.2}"
-            },
-            "m": {
-              "$type": "spacing",
               "$value": "{modern.size.4}"
             }
           },
@@ -272,10 +260,6 @@
               "$value": "{modern.size.5}"
             },
             "s": {
-              "$type": "spacing",
-              "$value": "{modern.size.10}"
-            },
-            "m": {
               "$type": "spacing",
               "$value": "{modern.size.15}"
             }
