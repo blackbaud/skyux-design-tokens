@@ -293,10 +293,6 @@
             "s": {
               "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
-            },
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.25}"
             }
           },
           "right": {
@@ -307,10 +303,6 @@
             "s": {
               "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
-            },
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.100}"
             }
           },
           "bottom": {
@@ -321,10 +313,6 @@
             "s": {
               "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
-            },
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.25}"
             }
           },
           "left": {
@@ -335,10 +323,6 @@
             "s": {
               "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
-            },
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.100}"
             }
           }
         },
