@@ -204,6 +204,14 @@
       "32": {
         "$type": "sizing",
         "$value": "32"
+      },
+      "276": {
+        "$type": "sizing",
+        "$value": "276"
+      },
+      "296": {
+        "$type": "sizing",
+        "$value": "296"
       }
     },
     "text": {
@@ -371,6 +379,10 @@
         "md": {
           "$type": "borderRadius",
           "$value": "6"
+        },
+        "pill": {
+          "$type": "borderRadius",
+          "$value": "10rem"
         }
       },
       "style": {

@@ -879,6 +879,12 @@
           "$type": "sizing",
           "$value": "960"
         }
+      },
+      "reading_container": {
+        "max_width": {
+          "$type": "sizing",
+          "$value": "65ch, 33vw"
+        }
       }
     }
   }

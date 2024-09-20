@@ -559,6 +559,20 @@
     "switch": {
       "$type": "sizing",
       "$value": "{bb.size.fluid.125}"
+    },
+    "width": {
+      "viewport": {
+        "smallest": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.2000}"
+        }
+      }
+    },
+    "max_width": {
+      "overlay_message": {
+        "$type": "sizing",
+        "$value": "{bb.size.reading_container.max_width}"
+      }
     }
   },
   "type": {
@@ -1116,7 +1130,7 @@
       "container": {
         "base": {
           "$type": "borderWidth",
-          "$value": "{bb.size.100}"
+          "$value": "{bb.size.fixed.6}"
         }
       }
     },

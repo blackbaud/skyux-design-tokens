@@ -410,6 +410,10 @@
       }
     },
     "icon_gap": {
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
+      },
       "m": {
         "$type": "spacing",
         "$value": "{modern.space.s}"
@@ -458,13 +462,13 @@
       }
     },
     "form_gap": {
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.space.lg}"
-      },
       "s": {
         "$type": "spacing",
         "$value": "{modern.space.s}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
       },
       "l": {
         "$type": "spacing",
@@ -494,6 +498,20 @@
     "switch": {
       "$type": "sizing",
       "$value": "{modern.size.26}"
+    },
+    "width": {
+      "viewport": {
+        "smallest": {
+          "$type": "sizing",
+          "$value": "{modern.size.296}"
+        }
+      }
+    },
+    "max_width": {
+      "overlay_message": {
+        "$type": "sizing",
+        "$value": "{modern.size.276}"
+      }
     }
   },
   "text": {
@@ -553,6 +571,10 @@
       "m": {
         "$type": "borderRadius",
         "$value": "{modern.size.6}"
+      },
+      "pill": {
+        "$type": "borderRadius",
+        "$value": "{modern.border.radius.pill}"
       }
     },
     "style": {
