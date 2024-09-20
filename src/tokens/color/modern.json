@@ -140,6 +140,18 @@
     }
   },
   "elevation": {
+    "none": {
+      "$type": "boxShadow",
+      "$value": "{modern.shadow.size.0}"
+    },
+    "focus": {
+      "$type": "boxShadow",
+      "$value": "{modern.shadow.size.3}"
+    },
+    "overflow": {
+      "$type": "boxShadow",
+      "$value": "{modern.shadow.size.3}"
+    },
     "raised": {
       "100": {
         "$type": "boxShadow",
@@ -147,6 +159,18 @@
       }
     },
     "overlay": {
+      "100": {
+        "$type": "boxShadow",
+        "$value": "{modern.shadow.size.4}"
+      },
+      "200": {
+        "$type": "boxShadow",
+        "$value": "{modern.shadow.size.8}"
+      },
+      "300": {
+        "$type": "boxShadow",
+        "$value": "{modern.shadow.size.16}"
+      },
       "400": {
         "$type": "boxShadow",
         "$value": "{modern.shadow.size.24}"

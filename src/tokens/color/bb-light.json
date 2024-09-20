@@ -272,11 +272,11 @@
       "$type": "boxShadow",
       "$value": "{bb.shadow.gray.0}"
     },
-    "overflow": {
+    "focus": {
       "$type": "boxShadow",
       "$value": "{bb.shadow.gray.2}"
     },
-    "focus": {
+    "overflow": {
       "$type": "boxShadow",
       "$value": "{bb.shadow.gray.2}"
     },

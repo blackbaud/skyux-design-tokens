@@ -567,11 +567,5 @@
         "$value": "{modern.border.style.solid}"
       }
     }
-  },
-  "elevation": {
-    "raised": {
-      "$type": "boxShadow",
-      "$value": "{modern.shadow.size.1}"
-    }
   }
 }
