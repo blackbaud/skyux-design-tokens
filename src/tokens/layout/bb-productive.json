@@ -368,6 +368,14 @@
             }
           }
         }
+      },
+      "input_label": {
+        "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.37}"
+          }
+        }
       }
     },
     "stacked_supplemental": {
