@@ -300,12 +300,12 @@
       "name": {
         "$type": "fontFamilies",
         "$value": "BLKB Sans"
-      }
-    },
-    "family": {
-      "sans": {
-        "$type": "fontFamilies",
-        "$value": "{modern.font.name}, Helvetica Neue, Arial, sans-serif"
+      },
+      "family": {
+        "sans": {
+          "$type": "fontFamilies",
+          "$value": "{modern.font.name}, Helvetica Neue, Arial, sans-serif"
+        }
       }
     },
     "line-height": {
