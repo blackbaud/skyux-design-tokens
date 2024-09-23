@@ -1,7 +1,7 @@
 # 0.0.29 (2023-10-11)
 
 - Added token generation using style dictionary. [#65](https://github.com/blackbaud/skyux-design-tokens/pull/65)
-- Added additional tokens [#66](https://github.com/blackbaud/skyux-design-tokens/pull/66)
+- Added additional tokens [#67](https://github.com/blackbaud/skyux-design-tokens/pull/67)
 
 # 0.0.28 (2023-10-11)
 
