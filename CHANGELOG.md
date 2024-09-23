@@ -1,13 +1,3 @@
-# Changelog
-
-## [0.0.29](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.28...0.0.29) (2024-09-23)
-
-
-### Features
-
-* added additional tokens ([c7561e8](https://github.com/blackbaud/skyux-design-tokens/commit/c7561e8f0d28d75b9f345a3e56d9ec8dcc469c6a))
-* added token generation using style dictionary ([cd6c248](https://github.com/blackbaud/skyux-design-tokens/commit/cd6c24829dfd0a3b0afcc5c9cf066e29f171402f))
-
 ## 0.0.28 (2023-10-11)
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
