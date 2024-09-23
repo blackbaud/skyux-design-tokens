@@ -296,11 +296,11 @@
           "$type": "fontWeights",
           "$value": "Bold"
         }
+      },
+      "name": {
+        "$type": "fontFamilies",
+        "$value": "BLKB Sans"
       }
-    },
-    "name": {
-      "$type": "fontFamilies",
-      "$value": "BLKB Sans"
     },
     "family": {
       "sans": {
