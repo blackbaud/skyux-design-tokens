@@ -38,4 +38,5 @@ jobs:
           bump-patch-for-minor-pre-major: true
           # Temporary for the first release so that old non-conventional commits do not enter CHANGELOG
           last-release-sha: '184dbbd7ba5e38b9489ef6a18e55188d97e1b5f1'
+          release-as: '0.0.29'
           token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
