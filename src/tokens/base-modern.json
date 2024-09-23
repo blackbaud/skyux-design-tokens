@@ -189,6 +189,10 @@
         "$type": "sizing",
         "$value": "20"
       },
+      "24": {
+        "$type": "sizing",
+        "$value": "24"
+      },
       "26": {
         "$type": "sizing",
         "$value": "26"
@@ -200,9 +204,17 @@
       "32": {
         "$type": "sizing",
         "$value": "32"
+      },
+      "276": {
+        "$type": "sizing",
+        "$value": "276"
+      },
+      "296": {
+        "$type": "sizing",
+        "$value": "296"
       }
     },
-    "text": {
+    "font": {
       "size": {
         "100": {
           "$type": "fontSizes",
@@ -245,36 +257,46 @@
           "$value": "48px"
         }
       },
-      "line-height": {
-        "110": {
-          "$type": "lineHeights",
-          "$value": "110%"
+      "weight": {
+        "light": {
+          "$type": "fontWeights",
+          "$value": "300"
         },
-        "115": {
-          "$type": "lineHeights",
-          "$value": "115%"
+        "regular": {
+          "$type": "fontWeights",
+          "$value": "400"
+        },
+        "semibold": {
+          "$type": "fontWeights",
+          "$value": "600"
+        },
+        "bold": {
+          "$type": "fontWeights",
+          "$value": "700"
         }
-      }
-    },
-    "style": {
-      "regular": {
-        "$type": "fontWeights",
-        "$value": "Regular"
       },
-      "light": {
-        "$type": "fontWeights",
-        "$value": "Light"
+      "style": {
+        "light": {
+          "$type": "fontWeights",
+          "$value": "Light"
+        },
+        "regular": {
+          "$type": "fontWeights",
+          "$value": "Regular"
+        },
+        "italic": {
+          "$type": "fontWeights",
+          "$value": "Italic"
+        },
+        "semibold": {
+          "$type": "fontWeights",
+          "$value": "Semibold"
+        },
+        "bold": {
+          "$type": "fontWeights",
+          "$value": "Bold"
+        }
       },
-      "semibold": {
-        "$type": "fontWeights",
-        "$value": "Semibold"
-      },
-      "italic": {
-        "$type": "fontWeights",
-        "$value": "Italic"
-      }
-    },
-    "font": {
       "name": {
         "$type": "fontFamilies",
         "$value": "BLKB Sans"
@@ -284,16 +306,45 @@
           "$type": "fontFamilies",
           "$value": "{modern.font.name}, Helvetica Neue, Arial, sans-serif"
         }
+      }
+    },
+    "line-height": {
+      "20": {
+        "$type": "lineHeights",
+        "$value": "20px"
       },
-      "letter_spacing": {
-        "normal": {
-          "$type": "letterSpacing",
-          "$value": "normal"
-        }
+      "110": {
+        "$type": "lineHeights",
+        "$value": "110%"
+      },
+      "115": {
+        "$type": "lineHeights",
+        "$value": "115%"
+      },
+      "normal": {
+        "$type": "lineHeights",
+        "$value": "normal"
+      }
+    },
+    "letter_spacing": {
+      "normal": {
+        "$type": "letterSpacing",
+        "$value": "normal"
       }
     },
     "shadow": {
       "size": {
+        "0": {
+          "$type": "boxShadow",
+          "$value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "0",
+            "color": "#000000",
+            "type": "dropShadow"
+          }
+        },
         "1": {
           "$type": "boxShadow",
           "$value": {
@@ -367,6 +418,10 @@
         "md": {
           "$type": "borderRadius",
           "$value": "6"
+        },
+        "pill": {
+          "$type": "borderRadius",
+          "$value": "10rem"
         }
       },
       "style": {
