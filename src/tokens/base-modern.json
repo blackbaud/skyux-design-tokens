@@ -300,6 +300,10 @@
           "$type": "fontWeights",
           "$value": "regular"
         },
+        "normal": {
+          "$type": "fontWeights",
+          "$value": "normal"
+        },
         "italic": {
           "$type": "fontWeights",
           "$value": "italic"

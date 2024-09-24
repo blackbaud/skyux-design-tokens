@@ -84,9 +84,21 @@
         }
       },
       "style": {
+        "light": {
+          "$type": "fontWeights",
+          "$value": "light"
+        },
+        "light-italic": {
+          "$type": "fontWeights",
+          "$value": "light italic"
+        },
         "regular": {
           "$type": "fontWeights",
           "$value": "regular"
+        },
+        "normal": {
+          "$type": "fontWeights",
+          "$value": "normal"
         },
         "italic": {
           "$type": "fontWeights",
@@ -96,21 +108,9 @@
           "$type": "fontWeights",
           "$value": "semibold"
         },
-        "light": {
-          "$type": "fontWeights",
-          "$value": "light"
-        },
-        "light-italic": {
-          "$type": "fontWeights",
-          "$value": "light italic"
-        },
         "semibold-italic": {
           "$type": "fontWeights",
           "$value": "semibold italic"
-        },
-        "normal": {
-          "$type": "fontWeights",
-          "$value": "normal"
         }
       },
       "src": {
