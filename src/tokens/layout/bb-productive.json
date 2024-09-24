@@ -469,9 +469,13 @@
       },
       "m": {
         "$type": "spacing",
-        "$value": "{bb.size.fluid.100}"
+        "$value": "{bb.size.fluid.75}"
       },
       "l": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.100}"
+      },
+      "xl": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.150}"
       }

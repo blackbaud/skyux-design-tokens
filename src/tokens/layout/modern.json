@@ -707,6 +707,10 @@
       },
       "xxs": {
         "$type": "spacing",
+        "$value": "{modern.size.1}"
+      },
+      "xs": {
+        "$type": "spacing",
         "$value": "{modern.size.2}"
       },
       "s": {
@@ -731,9 +735,13 @@
       },
       "m": {
         "$type": "spacing",
-        "$value": "{modern.space.lg}"
+        "$value": "{modern.space.md}"
       },
       "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
+      },
+      "xl": {
         "$type": "spacing",
         "$value": "{modern.space.xl}"
       }
