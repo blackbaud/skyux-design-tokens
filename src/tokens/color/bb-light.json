@@ -74,10 +74,6 @@
           "$type": "color",
           "$value": "{bb.color.white}"
         },
-        "promo": {
-          "$type": "color",
-          "$value": "{bb.color.brand.sky-tint}"
-        },
         "danger": {
           "$type": "color",
           "$value": "{bb.color.red.300}"
@@ -96,11 +92,9 @@
         }
       },
       "action": {
-        "danger": {
-          "base": {
-            "$type": "color",
-            "$value": "{bb.color.red.600}"
-          }
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
         },
         "primary": {
           "base": {
@@ -120,9 +114,11 @@
             "$value": "{bb.color.transparent}"
           }
         },
-        "disabled": {
-          "$type": "color",
-          "$value": "{bb.color.gray.50}"
+        "danger": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.red.600}"
+          }
         }
       },
       "input": {
@@ -141,23 +137,23 @@
       }
     },
     "border": {
-      "danger": {
-        "$type": "color",
-        "$value": "{bb.color.red.600}"
-      },
-      "info": {
+      "selected": {
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
-      "success": {
+      "danger": {
         "$type": "color",
-        "$value": "{bb.color.green.600}"
+        "$value": "{bb.color.red.600}"
       },
       "warning": {
         "$type": "color",
         "$value": "{bb.color.yellow.600}"
       },
-      "selected": {
+      "success": {
+        "$type": "color",
+        "$value": "{bb.color.green.600}"
+      },
+      "info": {
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
@@ -168,6 +164,10 @@
         }
       },
       "action": {
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.100}"
+        },
         "primary": {
           "base": {
             "$type": "color",
@@ -184,10 +184,6 @@
           "focus": {
             "$type": "color",
             "$value": "{bb.color.blue.600}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.100}"
           }
         },
         "secondary": {
@@ -206,10 +202,6 @@
           "focus": {
             "$type": "color",
             "$value": "{bb.color.blue.600}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.100}"
           }
         },
         "tertiary": {
@@ -228,15 +220,7 @@
           "focus": {
             "$type": "color",
             "$value": "{bb.color.blue.600}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.100}"
           }
-        },
-        "disabled": {
-          "$type": "color",
-          "$value": "{bb.color.gray.100}"
         }
       },
       "input": {
@@ -256,13 +240,13 @@
           "$type": "color",
           "$value": "{bb.color.blue.600}"
         },
-        "error": {
-          "$type": "color",
-          "$value": "{bb.color.red.600}"
-        },
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.100}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{bb.color.red.600}"
         }
       }
     }

@@ -205,6 +205,22 @@
         "$type": "sizing",
         "$value": "32"
       },
+      "48": {
+        "$type": "sizing",
+        "$value": "48"
+      },
+      "64": {
+        "$type": "sizing",
+        "$value": "64"
+      },
+      "80": {
+        "$type": "sizing",
+        "$value": "80"
+      },
+      "96": {
+        "$type": "sizing",
+        "$value": "96"
+      },
       "276": {
         "$type": "sizing",
         "$value": "276"
