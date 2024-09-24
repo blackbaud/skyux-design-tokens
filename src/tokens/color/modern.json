@@ -42,6 +42,14 @@
       "inverse": {
         "$type": "color",
         "$value": "{modern.color.white}"
+      },
+      "deemphasized": {
+        "$type": "color",
+        "$value": "{modern.color.gray.70}"
+      },
+      "action": {
+        "$type": "color",
+        "$value": "{modern.color.blue.74}"
       }
     },
     "background": {
