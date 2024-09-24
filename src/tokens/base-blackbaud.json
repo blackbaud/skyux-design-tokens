@@ -86,31 +86,31 @@
       "style": {
         "regular": {
           "$type": "fontWeights",
-          "$value": "Regular"
+          "$value": "regular"
         },
         "italic": {
           "$type": "fontWeights",
-          "$value": "Italic"
+          "$value": "italic"
         },
         "semibold": {
           "$type": "fontWeights",
-          "$value": "Semibold"
+          "$value": "semibold"
         },
         "light": {
           "$type": "fontWeights",
-          "$value": "Light"
+          "$value": "light"
         },
         "light-italic": {
           "$type": "fontWeights",
-          "$value": "Light Italic"
+          "$value": "light italic"
         },
         "semibold-italic": {
           "$type": "fontWeights",
-          "$value": "Semibold Italic"
+          "$value": "semibold italic"
         },
         "normal": {
           "$type": "fontWeights",
-          "$value": "Normal"
+          "$value": "normal"
         }
       },
       "src": {

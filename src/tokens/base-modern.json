@@ -294,23 +294,23 @@
       "style": {
         "light": {
           "$type": "fontWeights",
-          "$value": "Light"
+          "$value": "light"
         },
         "regular": {
           "$type": "fontWeights",
-          "$value": "Regular"
+          "$value": "regular"
         },
         "italic": {
           "$type": "fontWeights",
-          "$value": "Italic"
+          "$value": "italic"
         },
         "semibold": {
           "$type": "fontWeights",
-          "$value": "Semibold"
+          "$value": "semibold"
         },
         "bold": {
           "$type": "fontWeights",
-          "$value": "Bold"
+          "$value": "bold"
         }
       },
       "name": {
