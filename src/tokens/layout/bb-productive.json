@@ -208,6 +208,74 @@
         }
       },
       "pillarbox": {
+        "1_4": {
+          "top": {
+            "xs": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.6}"
+            },
+            "s": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.12}"
+            }
+          },
+          "right": {
+            "xs": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "s": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          },
+          "bottom": {
+            "xs": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.6}"
+            },
+            "s": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.12}"
+            }
+          },
+          "left": {
+            "xs": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "s": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          }
+        },
+        "1_3": {
+          "top": {
+            "m": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          },
+          "right": {
+            "m": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.150}"
+            }
+          },
+          "bottom": {
+            "m": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          },
+          "left": {
+            "m": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.150}"
+            }
+          }
+        },
         "1_2": {
           "top": {
             "s": {
@@ -263,74 +331,6 @@
             "l": {
               "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
-            }
-          }
-        },
-        "1_3": {
-          "top": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
-            }
-          },
-          "right": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.150}"
-            }
-          },
-          "bottom": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
-            }
-          },
-          "left": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.150}"
-            }
-          }
-        },
-        "1_4": {
-          "top": {
-            "xs": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.6}"
-            },
-            "s": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.12}"
-            }
-          },
-          "right": {
-            "xs": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.25}"
-            },
-            "s": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
-            }
-          },
-          "bottom": {
-            "xs": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.6}"
-            },
-            "s": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.12}"
-            }
-          },
-          "left": {
-            "xs": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.25}"
-            },
-            "s": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
             }
           }
         },
