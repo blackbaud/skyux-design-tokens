@@ -289,11 +289,11 @@
     "family": {
       "primary": {
         "$type": "fontFamilies",
-        "$value": "{bb.font.blkbsans.family}"
+        "$value": "{modern.font.blkbsans.family}"
       },
       "monospaced": {
         "$type": "fontFamilies",
-        "$value": "{bb.font.monospaced.family}"
+        "$value": "{modern.font.monospaced.family}"
       }
     },
     "letter_spacing": {
@@ -805,12 +805,6 @@
         "$type": "sizing",
         "$value": "{modern.size.276}"
       }
-    }
-  },
-  "text": {
-    "font_family": {
-      "$type": "text",
-      "$value": "{modern.font.name}"
     }
   },
   "border": {
