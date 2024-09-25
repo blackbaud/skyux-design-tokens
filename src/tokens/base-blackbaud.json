@@ -105,102 +105,18 @@
           "$value": "semibold italic"
         }
       },
-      "blkbsans": {
+      "blkb_sans": {
         "name": {
-          "$type": "other",
+          "$type": "fontFamilies",
           "$value": "BLKB Sans"
         },
         "fallback": {
-          "$type": "other",
+          "$type": "fontFamilies",
           "$value": "Helvetica Neue, Arial, sans-serif"
         },
         "family": {
-          "$type": "other",
-          "$value": "{bb.font.blkbsans.name}, {bb.font.blkbsans.fallback}"
-        },
-        "regular": {
-          "style": {
-            "$type": "other",
-            "$value": "normal"
-          },
-          "weight": {
-            "$type": "other",
-            "$value": "400"
-          },
-          "src": {
-            "$type": "other",
-            "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff\") format(\"woff\")"
-          }
-        },
-        "italic": {
-          "style": {
-            "$type": "other",
-            "$value": "italic"
-          },
-          "weight": {
-            "$type": "other",
-            "$value": "400"
-          },
-          "src": {
-            "$type": "other",
-            "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff\") format(\"woff\")"
-          }
-        },
-        "thin": {
-          "style": {
-            "$type": "other",
-            "$value": "normal"
-          },
-          "weight": {
-            "$type": "other",
-            "$value": "100"
-          },
-          "src": {
-            "$type": "other",
-            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Thin.woff) format(\"woff\")"
-          }
-        },
-        "light": {
-          "style": {
-            "$type": "other",
-            "$value": "normal"
-          },
-          "weight": {
-            "$type": "other",
-            "$value": "300"
-          },
-          "src": {
-            "$type": "other",
-            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Light.woff) format(\"woff\")"
-          }
-        },
-        "semibold": {
-          "style": {
-            "$type": "other",
-            "$value": "normal"
-          },
-          "weight": {
-            "$type": "other",
-            "$value": "600"
-          },
-          "src": {
-            "$type": "other",
-            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Semibold.woff) format(\"woff\")"
-          }
-        },
-        "bold": {
-          "style": {
-            "$type": "other",
-            "$value": "normal"
-          },
-          "weight": {
-            "$type": "other",
-            "$value": "700"
-          },
-          "src": {
-            "$type": "other",
-            "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Bold.woff) format(\"woff\")"
-          }
+          "$type": "fontFamilies",
+          "$value": "{bb.font.blkb_sans.name}, {bb.font.blkb_sans.fallback}"
         }
       }
     },
