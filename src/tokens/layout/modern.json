@@ -287,9 +287,13 @@
       }
     },
     "family": {
-      "sans": {
+      "primary": {
         "$type": "fontFamilies",
-        "$value": "{modern.font.family.sans}"
+        "$value": "{bb.font.blkbsans.family}"
+      },
+      "monospaced": {
+        "$type": "fontFamilies",
+        "$value": "{bb.font.monospaced.family}"
       }
     },
     "letter_spacing": {

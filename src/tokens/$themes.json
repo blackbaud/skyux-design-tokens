@@ -333,7 +333,6 @@
       "size.illustration.m": "f8d2fba46308207768213b0fb72e1709234de3d2",
       "size.illustration.l": "457ebedf9e1fb9bd0c3e851dc3b4287e515ab9c7",
       "size.illustration.xl": "0e7151f599ec57b1f3987bb3057d77af7b79bd55",
-      "font.family.sans": "874afe7af47916e50c71922b692e6597ef3b9ba9",
       "font.size.heading.1": "070dddf0cb355bb086fa3d2b7c7f7c3c7ef68b6e",
       "font.size.heading.2": "1828086da36b38f0d72e36ea43131c2d38089c1f",
       "font.size.heading.3": "f51544be494aa210472e9db2e281c030c36bd638",
@@ -380,7 +379,8 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "font.family.primary": "874afe7af47916e50c71922b692e6597ef3b9ba9"
     },
     "group": "Layout"
   },
@@ -474,7 +474,6 @@
       "size.illustration.m": "f8d2fba46308207768213b0fb72e1709234de3d2",
       "size.illustration.l": "457ebedf9e1fb9bd0c3e851dc3b4287e515ab9c7",
       "size.illustration.xl": "0e7151f599ec57b1f3987bb3057d77af7b79bd55",
-      "font.family.sans": "874afe7af47916e50c71922b692e6597ef3b9ba9",
       "font.size.heading.1": "070dddf0cb355bb086fa3d2b7c7f7c3c7ef68b6e",
       "font.size.heading.2": "1828086da36b38f0d72e36ea43131c2d38089c1f",
       "font.size.heading.3": "f51544be494aa210472e9db2e281c030c36bd638",
@@ -521,7 +520,8 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "font.family.primary": "874afe7af47916e50c71922b692e6597ef3b9ba9"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2142:2",
@@ -561,7 +561,6 @@
       "space.inset.balanced.xl": "3453889c8090d7bed31a8dc42eea469520c03ec5",
       "size.icon.m": "d38fe1dbe02d11c78fa5abfe0fb4f7ac82523e3e",
       "text.font_family": "745076bfeff31b64bad06c3123ca8c8b220ae2db",
-      "font.family.sans": "874afe7af47916e50c71922b692e6597ef3b9ba9",
       "border.radius.s": "0d428f46ffd5535b399bd3f915fe386fad078ca1",
       "border.radius.m": "c7d74f9be228681a6f6b469977987b3a5b8749c9",
       "font.style.data_label": "97440c6826c119c30d42c1eac33a8ab695af4419",
@@ -680,7 +679,8 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "font.family.primary": "874afe7af47916e50c71922b692e6597ef3b9ba9"
     },
     "group": "Layout"
   },
@@ -722,7 +722,6 @@
       "space.inset.balanced.xl": "3453889c8090d7bed31a8dc42eea469520c03ec5",
       "size.icon.m": "d38fe1dbe02d11c78fa5abfe0fb4f7ac82523e3e",
       "text.font_family": "745076bfeff31b64bad06c3123ca8c8b220ae2db",
-      "font.family.sans": "874afe7af47916e50c71922b692e6597ef3b9ba9",
       "border.radius.s": "0d428f46ffd5535b399bd3f915fe386fad078ca1",
       "border.radius.m": "c7d74f9be228681a6f6b469977987b3a5b8749c9",
       "font.style.data_label": "97440c6826c119c30d42c1eac33a8ab695af4419",
@@ -840,7 +839,8 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "font.family.primary": "874afe7af47916e50c71922b692e6597ef3b9ba9"
     }
   }
 ]
