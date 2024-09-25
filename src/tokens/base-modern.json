@@ -351,6 +351,10 @@
         "$type": "lineHeights",
         "$value": "115%"
       },
+      "150": {
+        "$type": "lineHeights",
+        "$value": "150%"
+      },
       "normal": {
         "$type": "lineHeights",
         "$value": "normal"

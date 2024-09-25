@@ -106,7 +106,7 @@
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line-height.150}"
         },
         "l": {
           "$type": "lineHeights",
