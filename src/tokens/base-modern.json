@@ -205,6 +205,22 @@
         "$type": "sizing",
         "$value": "32"
       },
+      "48": {
+        "$type": "sizing",
+        "$value": "48"
+      },
+      "64": {
+        "$type": "sizing",
+        "$value": "64"
+      },
+      "80": {
+        "$type": "sizing",
+        "$value": "80"
+      },
+      "96": {
+        "$type": "sizing",
+        "$value": "96"
+      },
       "276": {
         "$type": "sizing",
         "$value": "276"
@@ -278,23 +294,27 @@
       "style": {
         "light": {
           "$type": "fontWeights",
-          "$value": "Light"
+          "$value": "light"
         },
         "regular": {
           "$type": "fontWeights",
-          "$value": "Regular"
+          "$value": "regular"
+        },
+        "normal": {
+          "$type": "fontWeights",
+          "$value": "normal"
         },
         "italic": {
           "$type": "fontWeights",
-          "$value": "Italic"
+          "$value": "italic"
         },
         "semibold": {
           "$type": "fontWeights",
-          "$value": "Semibold"
+          "$value": "semibold"
         },
         "bold": {
           "$type": "fontWeights",
-          "$value": "Bold"
+          "$value": "bold"
         }
       },
       "name": {

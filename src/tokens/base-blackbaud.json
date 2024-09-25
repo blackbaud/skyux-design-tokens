@@ -84,33 +84,33 @@
         }
       },
       "style": {
-        "regular": {
-          "$type": "fontWeights",
-          "$value": "Regular"
-        },
-        "italic": {
-          "$type": "fontWeights",
-          "$value": "Italic"
-        },
-        "semibold": {
-          "$type": "fontWeights",
-          "$value": "Semibold"
-        },
         "light": {
           "$type": "fontWeights",
-          "$value": "Light"
+          "$value": "light"
         },
         "light-italic": {
           "$type": "fontWeights",
-          "$value": "Light Italic"
+          "$value": "light italic"
         },
-        "semibold-italic": {
+        "regular": {
           "$type": "fontWeights",
-          "$value": "Semibold Italic"
+          "$value": "regular"
         },
         "normal": {
           "$type": "fontWeights",
-          "$value": "Normal"
+          "$value": "normal"
+        },
+        "italic": {
+          "$type": "fontWeights",
+          "$value": "italic"
+        },
+        "semibold": {
+          "$type": "fontWeights",
+          "$value": "semibold"
+        },
+        "semibold-italic": {
+          "$type": "fontWeights",
+          "$value": "semibold italic"
         }
       },
       "src": {
@@ -136,7 +136,7 @@
         "$value": "normal"
       }
     },
-    "line-height": {
+    "line_height": {
       "100": {
         "$type": "lineHeights",
         "$value": "1rem"
@@ -271,6 +271,18 @@
       }
     },
     "color": {
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "transparent": {
+        "$type": "color",
+        "$value": "transparent"
+      },
       "gray": {
         "25": {
           "$type": "color",
@@ -328,14 +340,6 @@
           "$type": "color",
           "$value": "#0F1114"
         }
-      },
-      "white": {
-        "$type": "color",
-        "$value": "#FFFFFF"
-      },
-      "black": {
-        "$type": "color",
-        "$value": "#000000"
       },
       "blue": {
         "100": {
@@ -504,68 +508,6 @@
           "$type": "color",
           "$value": "#32230A"
         }
-      },
-      "brand": {
-        "sky-blue": {
-          "$type": "color",
-          "$value": "#00CCFF"
-        },
-        "impact-green": {
-          "$type": "color",
-          "$value": "#0CD973"
-        },
-        "trusted-blue": {
-          "$type": "color",
-          "$value": "#004054"
-        },
-        "classic-blue": {
-          "$type": "color",
-          "$value": "#006880"
-        },
-        "sky-tint": {
-          "$type": "color",
-          "$value": "#EBFBFF"
-        },
-        "violet": {
-          "$type": "color",
-          "$value": "#B061F2"
-        },
-        "flint": {
-          "$type": "color",
-          "$value": "#51555C"
-        },
-        "charcoal": {
-          "$type": "color",
-          "$value": "#252B33"
-        },
-        "charcoal-tint": {
-          "$type": "color",
-          "$value": "#EEEEEF"
-        },
-        "impact-green-tint": {
-          "$type": "color",
-          "$value": "#ECFCF4"
-        },
-        "violet-tint": {
-          "$type": "color",
-          "$value": "#F9F2FE"
-        },
-        "dark-green": {
-          "$type": "color",
-          "$value": "#04805B"
-        },
-        "jurple": {
-          "$type": "color",
-          "$value": "#7A04DD"
-        },
-        "soft-purple": {
-          "$type": "color",
-          "$value": "#C898FA"
-        }
-      },
-      "transparent": {
-        "$type": "color",
-        "$value": "transparent"
       }
     },
     "shadow": {

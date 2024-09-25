@@ -493,6 +493,14 @@
           }
         }
       },
+      "input_label": {
+        "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.6}"
+          }
+        }
+      },
       "pillarbox": {
         "1_4": {
           "top": {
@@ -662,14 +670,24 @@
             }
           }
         }
+      }
+    },
+    "form_gap": {
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.s}"
       },
-      "input_label": {
-        "top": {
-          "m": {
-            "$type": "spacing",
-            "$value": "{modern.size.6}"
-          }
-        }
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.md}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{modern.space.xl}"
       }
     },
     "icon_gap": {
@@ -684,20 +702,6 @@
       "l": {
         "$type": "spacing",
         "$value": "{modern.space.md}"
-      }
-    },
-    "text_action_gap": {
-      "xs": {
-        "$type": "spacing",
-        "$value": "{modern.space.xs}"
-      },
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.space.md}"
-      },
-      "l": {
-        "$type": "spacing",
-        "$value": "{modern.space.lg}"
       }
     },
     "label_gap": {
@@ -728,10 +732,10 @@
         "$value": "{modern.space.xs}"
       }
     },
-    "form_gap": {
-      "s": {
+    "text_action_gap": {
+      "xs": {
         "$type": "spacing",
-        "$value": "{modern.space.s}"
+        "$value": "{modern.space.xs}"
       },
       "m": {
         "$type": "spacing",
@@ -740,10 +744,6 @@
       "l": {
         "$type": "spacing",
         "$value": "{modern.space.lg}"
-      },
-      "xl": {
-        "$type": "spacing",
-        "$value": "{modern.space.xl}"
       }
     }
   },
@@ -764,6 +764,24 @@
       "xl": {
         "$type": "sizing",
         "$value": "{modern.size.32}"
+      }
+    },
+    "illustration": {
+      "s": {
+        "$type": "sizing",
+        "$value": "{modern.size.48}"
+      },
+      "m": {
+        "$type": "sizing",
+        "$value": "{modern.size.64}"
+      },
+      "l": {
+        "$type": "sizing",
+        "$value": "{modern.size.80}"
+      },
+      "xl": {
+        "$type": "sizing",
+        "$value": "{modern.size.96}"
       }
     },
     "switch": {

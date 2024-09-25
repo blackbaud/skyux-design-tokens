@@ -21,7 +21,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.brand.sky-blue}"
+        "$value": "{bb.color.blue.300}"
       },
       "deemphasized": {
         "$type": "color",
@@ -37,13 +37,13 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.brand.impact-green}"
+        "$value": "{bb.color.green.600}"
       }
     },
     "icon": {
       "action": {
         "$type": "color",
-        "$value": "{bb.color.brand.sky-blue}"
+        "$value": "{bb.color.blue.300}"
       },
       "inverse": {
         "$type": "color",
@@ -62,15 +62,15 @@
         },
         "hover": {
           "$type": "color",
-          "$value": "{bb.color.brand.sky-blue}"
+          "$value": "{bb.color.blue.300}"
         },
         "active": {
           "$type": "color",
-          "$value": "{bb.color.brand.sky-blue}"
+          "$value": "{bb.color.blue.300}"
         },
         "focus": {
           "$type": "color",
-          "$value": "{bb.color.brand.sky-blue}"
+          "$value": "{bb.color.blue.300}"
         },
         "disabled": {
           "$type": "color",
