@@ -360,11 +360,6 @@
       "border.radius.s": "0d428f46ffd5535b399bd3f915fe386fad078ca1",
       "border.radius.m": "c7d74f9be228681a6f6b469977987b3a5b8749c9",
       "border.width.accent": "ce2a2bda457e1d325e1ad46114c3b7fdbc97529e",
-      "border.width.interactive.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
-      "border.width.interactive.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
-      "border.width.interactive.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
-      "border.width.interactive.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
-      "border.width.interactive.selected": "0a0278650e64ac62260b91a8afbccc6196f995e3",
       "border.width.divider": "83db6f8ca6883711f0516b0f08e4816d1b43f56d",
       "font.family.monospaced": "63395ec4ca843de76f6bae5786e80fecac46ae08",
       "font.style.metric.s": "68467d233584cccc09299d04be3c0e00194fd68a",
@@ -380,7 +375,12 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "border.width.action.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
+      "border.width.action.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
+      "border.width.action.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
+      "border.width.action.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
+      "border.width.action.selected.s": "0a0278650e64ac62260b91a8afbccc6196f995e3"
     },
     "group": "Layout"
   },
@@ -501,11 +501,6 @@
       "border.radius.s": "0d428f46ffd5535b399bd3f915fe386fad078ca1",
       "border.radius.m": "c7d74f9be228681a6f6b469977987b3a5b8749c9",
       "border.width.accent": "ce2a2bda457e1d325e1ad46114c3b7fdbc97529e",
-      "border.width.interactive.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
-      "border.width.interactive.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
-      "border.width.interactive.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
-      "border.width.interactive.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
-      "border.width.interactive.selected": "0a0278650e64ac62260b91a8afbccc6196f995e3",
       "border.width.divider": "83db6f8ca6883711f0516b0f08e4816d1b43f56d",
       "font.family.monospaced": "63395ec4ca843de76f6bae5786e80fecac46ae08",
       "font.style.metric.s": "68467d233584cccc09299d04be3c0e00194fd68a",
@@ -521,7 +516,12 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "border.width.action.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
+      "border.width.action.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
+      "border.width.action.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
+      "border.width.action.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
+      "border.width.action.selected.s": "0a0278650e64ac62260b91a8afbccc6196f995e3"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2142:2",
@@ -660,11 +660,6 @@
       "font.line_height.data_label": "e5e1a2b2984538ca6084d225ebceabf345df154f",
       "font.line_height.input.label": "4eb4ba8c0a42f3d7c419c0aa24e011c8d5c76f18",
       "border.width.accent": "45b757533e8b376282cb989ff687f3cc64d1df4a",
-      "border.width.interactive.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
-      "border.width.interactive.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
-      "border.width.interactive.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
-      "border.width.interactive.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
-      "border.width.interactive.selected": "0a0278650e64ac62260b91a8afbccc6196f995e3",
       "border.width.divider": "83db6f8ca6883711f0516b0f08e4816d1b43f56d",
       "font.family.monospaced": "63395ec4ca843de76f6bae5786e80fecac46ae08",
       "font.style.metric.s": "68467d233584cccc09299d04be3c0e00194fd68a",
@@ -680,7 +675,12 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "border.width.action.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
+      "border.width.action.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
+      "border.width.action.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
+      "border.width.action.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
+      "border.width.action.selected.s": "0a0278650e64ac62260b91a8afbccc6196f995e3"
     },
     "group": "Layout"
   },
@@ -820,11 +820,6 @@
       "font.line_height.data_label": "e5e1a2b2984538ca6084d225ebceabf345df154f",
       "font.line_height.input.label": "4eb4ba8c0a42f3d7c419c0aa24e011c8d5c76f18",
       "border.width.accent": "45b757533e8b376282cb989ff687f3cc64d1df4a",
-      "border.width.interactive.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
-      "border.width.interactive.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
-      "border.width.interactive.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
-      "border.width.interactive.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
-      "border.width.interactive.selected": "0a0278650e64ac62260b91a8afbccc6196f995e3",
       "border.width.divider": "83db6f8ca6883711f0516b0f08e4816d1b43f56d",
       "font.family.monospaced": "63395ec4ca843de76f6bae5786e80fecac46ae08",
       "font.style.metric.s": "68467d233584cccc09299d04be3c0e00194fd68a",
@@ -840,7 +835,12 @@
       "font.line_height.hint.s": "9b3f7cc0c79b70753731ea0c3c3ba7bb73f9b8e5",
       "font.style.hint.s": "aa8d5d873c96ed568b88b4575e78c02d3508b258",
       "font.line_height.input.val": "1826d73d0a6de167d923cf88147982e6e829393d",
-      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b"
+      "font.size.input.val": "62799806e7f94d42f9c7d1aff8d319c0dc4bfa0b",
+      "border.width.action.base": "dc3ffe78a83a5b55c464fa624fb1c7ecaeba3497",
+      "border.width.action.hover": "118140e5585da688e9cc9b8024252db33618c0b0",
+      "border.width.action.active": "cdd33f6934ab61b43ab6a325ea80760ecb3d2844",
+      "border.width.action.focus": "4b2dae44eeb9bdc3243e4b06cdd5eba6ebead644",
+      "border.width.action.selected.s": "0a0278650e64ac62260b91a8afbccc6196f995e3"
     }
   }
 ]
