@@ -145,6 +145,10 @@
         "$type": "sizing",
         "$value": "2"
       },
+      "3": {
+        "$type": "sizing",
+        "$value": "3px"
+      },
       "4": {
         "$type": "sizing",
         "$value": "4"
@@ -273,26 +277,6 @@
           "$value": "48px"
         }
       },
-      "monospaced": {
-        "family": {
-          "$type": "fontFamilies",
-          "$value": "Menlo, Monaco, Consolas, Courier New, monospace"
-        }
-      },
-      "blkb_sans": {
-        "name": {
-          "$type": "fontFamilies",
-          "$value": "BLKB Sans"
-        },
-        "fallback": {
-          "$type": "fontFamilies",
-          "$value": "Helvetica Neue, Arial, sans-serif"
-        },
-        "family": {
-          "$type": "fontFamilies",
-          "$value": "{modern.font.blkb_sans.name}, {modern.font.blkb_sans.fallback}"
-        }
-      },
       "weight": {
         "light": {
           "$type": "fontWeights",
@@ -336,6 +320,16 @@
           "$type": "fontWeights",
           "$value": "bold"
         }
+      },
+      "name": {
+        "$type": "fontFamilies",
+        "$value": "BLKB Sans"
+      },
+      "family": {
+        "sans": {
+          "$type": "fontFamilies",
+          "$value": "{modern.font.name}, Helvetica Neue, Arial, sans-serif"
+        }
       }
     },
     "line-height": {
@@ -350,10 +344,6 @@
       "115": {
         "$type": "lineHeights",
         "$value": "115%"
-      },
-      "150": {
-        "$type": "lineHeights",
-        "$value": "150%"
       },
       "normal": {
         "$type": "lineHeights",
