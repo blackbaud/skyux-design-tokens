@@ -294,10 +294,42 @@
           "base": {
             "$type": "color",
             "$value": "{modern.color.blue.74}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.blue.10}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.blue.10}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.blue.10}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.15}"
           }
         },
         "secondary": {
           "base": {
+            "$type": "color",
+            "$value": "{modern.color.gray.15}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "disabled": {
             "$type": "color",
             "$value": "{modern.color.gray.15}"
           }
@@ -318,6 +350,32 @@
           "active": {
             "$type": "color",
             "$value": "{modern.color.blue.74}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.15}"
+          }
+        },
+        "danger": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.red.70}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.red.30}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.red.30}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.red.30}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.15}"
           }
         }
       },
