@@ -204,6 +204,50 @@
           "$type": "color",
           "$value": "{bb.color.blue.100}"
         }
+      },
+      "nav": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        }
+      },
+      "list": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        }
       }
     },
     "border": {
