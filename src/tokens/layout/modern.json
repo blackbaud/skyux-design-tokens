@@ -688,80 +688,144 @@
           "$type": "spacing",
           "$value": "{modern.space.xl}"
         }
+      },
+      "switch": {
+        "$type": "spacing",
+        "$value": "calc({size.switch}+{space.gap.label.s})"
       }
     },
-    "form_gap": {
-      "s": {
-        "$type": "spacing",
-        "$value": "{modern.space.s}"
+    "gap": {
+      "action_group": {
+        "0": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.size.10}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.size.15}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.size.20}"
+        }
       },
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.space.md}"
+      "form": {
+        "0": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.space.md}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.space.lg}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.space.xl}"
+        }
       },
-      "l": {
-        "$type": "spacing",
-        "$value": "{modern.space.lg}"
+      "icon": {
+        "0": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.size.10}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.size.15}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.size.20}"
+        }
       },
-      "xl": {
-        "$type": "spacing",
-        "$value": "{modern.space.xl}"
-      }
-    },
-    "icon_gap": {
-      "s": {
-        "$type": "spacing",
-        "$value": "{modern.space.xs}"
+      "label": {
+        "0": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "xxs": {
+          "$type": "spacing",
+          "$value": "{modern.size.1}"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modern.size.2}"
+        },
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.size.10}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.size.15}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.size.20}"
+        }
       },
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.space.s}"
+      "stacked_supplemental": {
+        "0": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.size.10}"
+        }
       },
-      "l": {
-        "$type": "spacing",
-        "$value": "{modern.space.md}"
-      }
-    },
-    "label_gap": {
-      "0": {
-        "$type": "spacing",
-        "$value": "0"
-      },
-      "xxs": {
-        "$type": "spacing",
-        "$value": "{modern.size.1}"
-      },
-      "xs": {
-        "$type": "spacing",
-        "$value": "{modern.size.2}"
-      },
-      "s": {
-        "$type": "spacing",
-        "$value": "{modern.space.xs}"
-      }
-    },
-    "stacked_supplemental": {
-      "0": {
-        "$type": "spacing",
-        "$value": "0"
-      },
-      "s": {
-        "$type": "spacing",
-        "$value": "{modern.space.xs}"
-      }
-    },
-    "text_action_gap": {
-      "xs": {
-        "$type": "spacing",
-        "$value": "{modern.space.xs}"
-      },
-      "m": {
-        "$type": "spacing",
-        "$value": "{modern.space.md}"
-      },
-      "l": {
-        "$type": "spacing",
-        "$value": "{modern.space.lg}"
+      "text_action": {
+        "0": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modern.space.xs}"
+        },
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.space.md}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.space.lg}"
+        }
       }
     },
     "inline": {
