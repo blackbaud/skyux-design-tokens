@@ -2,6 +2,19 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.33](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.32...0.0.33) (2024-09-27)
+
+
+### Features
+
+* add background colors ([#85](https://github.com/blackbaud/skyux-design-tokens/issues/85)) ([0113a8b](https://github.com/blackbaud/skyux-design-tokens/commit/0113a8b332e1f63814d0bde1a49426a9939c7c2b))
+* border colors ([#87](https://github.com/blackbaud/skyux-design-tokens/issues/87)) ([277f903](https://github.com/blackbaud/skyux-design-tokens/commit/277f903189e05de85f26f81669dee393c8bdca1b))
+
+
+### Bug Fixes
+
+* gap naming schema in space tokens ([#88](https://github.com/blackbaud/skyux-design-tokens/issues/88)) ([fb1deff](https://github.com/blackbaud/skyux-design-tokens/commit/fb1deffe094fbe93d9ba057bd34b98428940c940))
+
 ## [0.0.32](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.31...0.0.32) (2024-09-27)
 
 
