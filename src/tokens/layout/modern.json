@@ -670,6 +670,24 @@
             }
           }
         }
+      },
+      "tabs": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.space.md}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.space.lg}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.space.xl}"
+        }
       }
     },
     "form_gap": {

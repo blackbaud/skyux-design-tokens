@@ -376,6 +376,24 @@
             }
           }
         }
+      },
+      "tabs": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.50}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.75}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.100}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.150}"
+        }
       }
     },
     "action_group_gap": {
