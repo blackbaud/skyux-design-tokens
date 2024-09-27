@@ -833,7 +833,7 @@
       "reading_container": {
         "max_width": {
           "$type": "sizing",
-          "$value": "65ch, 33vw"
+          "$value": "50ch, 40vw"
         }
       }
     }

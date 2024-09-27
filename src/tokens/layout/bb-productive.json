@@ -513,6 +513,58 @@
     "switch_inset": {
       "$type": "spacing",
       "$value": "calc({size.switch}+{space.label_gap.s})"
+    },
+    "inline": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.25}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.50}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.75}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.100}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.150}"
+      },
+      "xxl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.300}"
+      }
+    },
+    "stacked": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.25}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.50}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.75}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.100}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.150}"
+      },
+      "xxl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.300}"
+      }
     }
   },
   "size": {
@@ -1189,13 +1241,17 @@
       }
     },
     "width": {
+      "accent": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.37}"
+      },
       "divider": {
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
       },
-      "accent": {
+      "elevation": {
         "$type": "borderWidth",
-        "$value": "{bb.size.fixed.37}"
+        "$value": "{bb.size.fixed.6}"
       },
       "action": {
         "base": {
@@ -1288,6 +1344,20 @@
       "accent": {
         "$type": "other",
         "$value": "{bb.border.style.solid}"
+      },
+      "elevation": {
+        "$type": "other",
+        "$value": "{bb.border.style.solid}"
+      },
+      "separator": {
+        "dark": {
+          "$type": "other",
+          "$value": "{bb.border.style.solid}"
+        },
+        "row": {
+          "$type": "other",
+          "$value": "{bb.border.style.dotted}"
+        }
       }
     }
   }
