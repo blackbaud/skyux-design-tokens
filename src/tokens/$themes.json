@@ -65,7 +65,6 @@
       "color.border.action.tertiary.hover": "9b446a41ce7696e5aaa82162dfdfef5fcae0c47c",
       "color.border.action.tertiary.active": "03cc6ba048e8b02a28bf3e8c62c2efe37b6e63fd",
       "color.border.action.tertiary.focus": "75a86806ab14f6b64ae3bcf38a08114dad5f7e1e",
-      "color.border.action.disabled": "ebf2972e259e1b32b530220a94baf9498794f5a2",
       "color.border.input.base": "55c117a88b1e2585b6a77d1561b3db4b0f87fab8",
       "color.border.input.hover": "15cf3c07349637216356dc801cd216a1deec7b64",
       "color.border.input.active": "32640730b5a7d8b511efd17cfe9d950cbb1f5e82",
@@ -141,7 +140,6 @@
       "color.border.action.tertiary.hover": "9b446a41ce7696e5aaa82162dfdfef5fcae0c47c",
       "color.border.action.tertiary.active": "03cc6ba048e8b02a28bf3e8c62c2efe37b6e63fd",
       "color.border.action.tertiary.focus": "75a86806ab14f6b64ae3bcf38a08114dad5f7e1e",
-      "color.border.action.disabled": "ebf2972e259e1b32b530220a94baf9498794f5a2",
       "color.border.container.base": "c4e6a74db6ef166b7e73c7006821d6735c0da52e"
     },
     "group": "Color"
@@ -225,7 +223,6 @@
       "color.border.action.tertiary.hover": "9b446a41ce7696e5aaa82162dfdfef5fcae0c47c",
       "color.border.action.tertiary.active": "03cc6ba048e8b02a28bf3e8c62c2efe37b6e63fd",
       "color.border.action.tertiary.focus": "75a86806ab14f6b64ae3bcf38a08114dad5f7e1e",
-      "color.border.action.disabled": "ebf2972e259e1b32b530220a94baf9498794f5a2",
       "color.border.input.base": "55c117a88b1e2585b6a77d1561b3db4b0f87fab8",
       "color.border.input.hover": "15cf3c07349637216356dc801cd216a1deec7b64",
       "color.border.input.active": "32640730b5a7d8b511efd17cfe9d950cbb1f5e82",
