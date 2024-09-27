@@ -37,9 +37,25 @@
           "$value": "#d93a3d"
         }
       },
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000"
+      },
       "transparent": {
         "$type": "color",
         "$value": "transparent"
+      },
+      "shadow_color": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.3)"
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "rgba(0,0,0,.5)"
       },
       "blue": {
         "10": {
@@ -62,10 +78,6 @@
           "$type": "color",
           "$value": "#ebfbff"
         }
-      },
-      "white": {
-        "$type": "color",
-        "$value": "#FFFFFF"
       },
       "green": {
         "30": {
@@ -96,10 +108,6 @@
           "$type": "color",
           "$value": "#40c7f4"
         }
-      },
-      "shadow_color": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.3)"
       }
     },
     "space": {
