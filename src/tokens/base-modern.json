@@ -351,11 +351,11 @@
       },
       "110": {
         "$type": "lineHeights",
-        "$value": "110%"
+        "$value": "1.1"
       },
       "115": {
         "$type": "lineHeights",
-        "$value": "115%"
+        "$value": "1.15"
       },
       "normal": {
         "$type": "lineHeights",

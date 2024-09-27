@@ -870,19 +870,19 @@
       "display": {
         "1": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.1100}"
+          "$value": "{bb.font.size.900}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.1000}"
+          "$value": "{bb.font.size.600}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.900}"
+          "$value": "{bb.font.size.400}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.800}"
+          "$value": "{bb.font.size.300}"
         }
       },
       "heading": {
@@ -1062,19 +1062,19 @@
       "display": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.1100}"
+          "$value": "{bb.line_height.900}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.1000}"
+          "$value": "{bb.line_height.600}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.900}"
+          "$value": "{bb.line_height.400}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.800}"
+          "$value": "{bb.line_height.300}"
         }
       },
       "heading": {
