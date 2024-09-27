@@ -376,6 +376,24 @@
             }
           }
         }
+      },
+      "tabs": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.50}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.75}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.100}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.150}"
+        }
       }
     },
     "action_group_gap": {
@@ -513,6 +531,58 @@
     "switch_inset": {
       "$type": "spacing",
       "$value": "calc({size.switch}+{space.label_gap.s})"
+    },
+    "inline": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.25}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.50}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.75}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.100}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.150}"
+      },
+      "xxl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.300}"
+      }
+    },
+    "stacked": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.25}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.50}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.75}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.100}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.150}"
+      },
+      "xxl": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.300}"
+      }
     }
   },
   "size": {
@@ -800,19 +870,19 @@
       "display": {
         "1": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.1100}"
+          "$value": "{bb.font.size.800}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.1000}"
+          "$value": "{bb.font.size.500}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.900}"
+          "$value": "{bb.font.size.300}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.800}"
+          "$value": "{bb.font.size.200}"
         }
       },
       "heading": {
@@ -992,19 +1062,19 @@
       "display": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.1100}"
+          "$value": "{bb.line_height.800}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.1000}"
+          "$value": "{bb.line_height.500}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.900}"
+          "$value": "{bb.line_height.300}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.800}"
+          "$value": "{bb.line_height.200}"
         }
       },
       "heading": {
@@ -1189,13 +1259,17 @@
       }
     },
     "width": {
+      "accent": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.37}"
+      },
       "divider": {
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
       },
-      "accent": {
+      "elevation": {
         "$type": "borderWidth",
-        "$value": "{bb.size.fixed.37}"
+        "$value": "{bb.size.fixed.6}"
       },
       "action": {
         "base": {
@@ -1288,6 +1362,20 @@
       "accent": {
         "$type": "other",
         "$value": "{bb.border.style.solid}"
+      },
+      "elevation": {
+        "$type": "other",
+        "$value": "{bb.border.style.solid}"
+      },
+      "separator": {
+        "dark": {
+          "$type": "other",
+          "$value": "{bb.border.style.solid}"
+        },
+        "row": {
+          "$type": "other",
+          "$value": "{bb.border.style.dotted}"
+        }
       }
     }
   }

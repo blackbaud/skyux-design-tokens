@@ -40,15 +40,7 @@
         },
         "1000": {
           "$type": "fontSizes",
-          "$value": "3rem"
-        },
-        "1100": {
-          "$type": "fontSizes",
-          "$value": "3.375rem"
-        },
-        "1200": {
-          "$type": "fontSizes",
-          "$value": "3.75rem"
+          "$value": "3.25rem"
         }
       },
       "name": {
@@ -139,51 +131,43 @@
     "line_height": {
       "100": {
         "$type": "lineHeights",
-        "$value": "1rem"
+        "$value": "calc(16/12)"
       },
       "200": {
         "$type": "lineHeights",
-        "$value": "1.25rem"
+        "$value": "calc(20/14)"
       },
       "300": {
         "$type": "lineHeights",
-        "$value": "1.5rem"
+        "$value": "calc(24/16)"
       },
       "400": {
         "$type": "lineHeights",
-        "$value": "1.75rem"
+        "$value": "calc(28/20)"
       },
       "500": {
         "$type": "lineHeights",
-        "$value": "2rem"
+        "$value": "calc(32/24)"
       },
       "600": {
         "$type": "lineHeights",
-        "$value": "2.25rem"
+        "$value": "calc(36/28)"
       },
       "700": {
         "$type": "lineHeights",
-        "$value": "2.625rem"
+        "$value": "calc(40/32)"
       },
       "800": {
         "$type": "lineHeights",
-        "$value": "3rem"
+        "$value": "calc(40/36)"
       },
       "900": {
         "$type": "lineHeights",
-        "$value": "3rem"
+        "$value": "calc(48/42)"
       },
       "1000": {
         "$type": "lineHeights",
-        "$value": "3.375rem"
-      },
-      "1100": {
-        "$type": "lineHeights",
-        "$value": "4.25rem"
-      },
-      "1200": {
-        "$type": "lineHeights",
-        "$value": "4.75rem"
+        "$value": "calc(64/52)"
       }
     },
     "border": {
@@ -837,7 +821,7 @@
       "reading_container": {
         "max_width": {
           "$type": "sizing",
-          "$value": "65ch, 33vw"
+          "$value": "50ch, 40vw"
         }
       }
     }

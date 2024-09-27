@@ -271,11 +271,13 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
-      "container": {
-        "base": {
-          "$type": "color",
-          "$value": "{bb.color.gray.100}"
-        }
+      "divider": {
+        "$type": "color",
+        "$value": "{bb.color.gray.100}"
+      },
+      "elevation": {
+        "$type": "color",
+        "$value": "{bb.color.gray.100}"
       },
       "action": {
         "disabled": {
@@ -337,6 +339,12 @@
           }
         }
       },
+      "container": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.gray.100}"
+        }
+      },
       "input": {
         "base": {
           "$type": "color",
@@ -361,6 +369,16 @@
         "error": {
           "$type": "color",
           "$value": "{bb.color.red.600}"
+        }
+      },
+      "separator": {
+        "dark": {
+          "$type": "color",
+          "$value": "{bb.color.gray.100}"
+        },
+        "row": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
         }
       }
     }

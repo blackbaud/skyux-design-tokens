@@ -6,6 +6,10 @@
           "$type": "color",
           "$value": "#d2d2d2"
         },
+        "20": {
+          "$type": "color",
+          "$value": "#cdcfd2"
+        },
         "70": {
           "$type": "color",
           "$value": "#686c73"
@@ -233,6 +237,10 @@
         "$type": "sizing",
         "$value": "96"
       },
+      "236": {
+        "$type": "sizing",
+        "$value": "236"
+      },
       "276": {
         "$type": "sizing",
         "$value": "276"
@@ -240,6 +248,10 @@
       "296": {
         "$type": "sizing",
         "$value": "296"
+      },
+      "320": {
+        "$type": "sizing",
+        "$value": "320"
       }
     },
     "font": {
@@ -347,11 +359,11 @@
       },
       "110": {
         "$type": "lineHeights",
-        "$value": "110%"
+        "$value": "1.1"
       },
       "115": {
         "$type": "lineHeights",
-        "$value": "115%"
+        "$value": "1.15"
       },
       "normal": {
         "$type": "lineHeights",

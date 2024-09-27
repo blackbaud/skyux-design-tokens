@@ -271,6 +271,14 @@
         "$type": "color",
         "$value": "{modern.color.blue.50}"
       },
+      "divider": {
+        "$type": "color",
+        "$value": "{modern.color.gray.15}"
+      },
+      "elevation": {
+        "$type": "color",
+        "$value": "{modern.color.gray.15}"
+      },
       "container": {
         "base": {
           "$type": "color",
@@ -337,6 +345,16 @@
         "error": {
           "$type": "color",
           "$value": "{modern.color.red.50}"
+        }
+      },
+      "separator": {
+        "dark": {
+          "$type": "color",
+          "$value": "{modern.color.gray.20}"
+        },
+        "row": {
+          "$type": "color",
+          "$value": "{modern.color.gray.20}"
         }
       }
     }
