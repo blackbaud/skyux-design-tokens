@@ -670,6 +670,24 @@
             }
           }
         }
+      },
+      "tabs": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.space.md}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.space.lg}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.space.xl}"
+        }
       }
     },
     "form_gap": {
@@ -745,6 +763,58 @@
         "$type": "spacing",
         "$value": "{modern.space.lg}"
       }
+    },
+    "inline": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.s}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.md}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{modern.space.xl}"
+      },
+      "xxl": {
+        "$type": "spacing",
+        "$value": "{modern.space.xxl}"
+      }
+    },
+    "stacked": {
+      "xs": {
+        "$type": "spacing",
+        "$value": "{modern.space.xs}"
+      },
+      "s": {
+        "$type": "spacing",
+        "$value": "{modern.space.s}"
+      },
+      "m": {
+        "$type": "spacing",
+        "$value": "{modern.space.md}"
+      },
+      "l": {
+        "$type": "spacing",
+        "$value": "{modern.space.lg}"
+      },
+      "xl": {
+        "$type": "spacing",
+        "$value": "{modern.space.xl}"
+      },
+      "xxl": {
+        "$type": "spacing",
+        "$value": "{modern.space.xxl}"
+      }
     }
   },
   "size": {
@@ -799,7 +869,7 @@
     "max_width": {
       "overlay_message": {
         "$type": "sizing",
-        "$value": "{modern.size.276}"
+        "$value": "{modern.size.236}"
       }
     }
   },
@@ -811,13 +881,17 @@
   },
   "border": {
     "width": {
+      "accent": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.7}"
+      },
       "divider": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },
-      "accent": {
+      "elevation": {
         "$type": "borderWidth",
-        "$value": "{modern.size.7}"
+        "$value": "{modern.size.1}"
       },
       "action": {
         "base": {
@@ -924,6 +998,20 @@
       "accent": {
         "$type": "other",
         "$value": "{modern.border.style.solid}"
+      },
+      "elevation": {
+        "$type": "other",
+        "$value": "{modern.border.style.solid}"
+      },
+      "separator": {
+        "dark": {
+          "$type": "other",
+          "$value": "{modern.border.style.solid}"
+        },
+        "row": {
+          "$type": "other",
+          "$value": "{modern.border.style.dotted}"
+        }
       }
     }
   }
