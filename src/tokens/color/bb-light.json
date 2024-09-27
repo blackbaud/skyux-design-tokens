@@ -65,6 +65,10 @@
         "$type": "color",
         "$value": "{bb.color.gray.25}"
       },
+      "scrim": {
+        "$type": "color",
+        "$value": "{bb.color.scrim}"
+      },
       "container": {
         "base": {
           "$type": "color",
@@ -92,32 +96,92 @@
         }
       },
       "action": {
-        "disabled": {
-          "$type": "color",
-          "$value": "{bb.color.gray.50}"
-        },
         "primary": {
           "base": {
             "$type": "color",
             "$value": "{bb.color.blue.600}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
           }
         },
         "secondary": {
           "base": {
             "$type": "color",
             "$value": "{bb.color.white}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
           }
         },
         "tertiary": {
           "base": {
             "$type": "color",
             "$value": "{bb.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
           }
         },
         "danger": {
           "base": {
             "$type": "color",
             "$value": "{bb.color.red.600}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.red.600}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.red.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.red.600}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
           }
         }
       },
@@ -129,10 +193,60 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.50}"
-        },
-        "selected": {
+        }
+      },
+      "selected": {
+        "heavy": {
           "$type": "color",
           "$value": "{bb.color.blue.600}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.blue.100}"
+        }
+      },
+      "nav": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        }
+      },
+      "list": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
         }
       }
     },
