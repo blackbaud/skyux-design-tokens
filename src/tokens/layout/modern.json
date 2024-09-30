@@ -882,6 +882,10 @@
     }
   },
   "size": {
+    "switch": {
+      "$type": "sizing",
+      "$value": "{modern.size.26}"
+    },
     "icon": {
       "s": {
         "$type": "sizing",
@@ -917,10 +921,6 @@
         "$type": "sizing",
         "$value": "{modern.size.96}"
       }
-    },
-    "switch": {
-      "$type": "sizing",
-      "$value": "{modern.size.26}"
     },
     "width": {
       "viewport": {
@@ -1060,6 +1060,10 @@
     },
     "style": {
       "accent": {
+        "$type": "other",
+        "$value": "{modern.border.style.solid}"
+      },
+      "divider": {
         "$type": "other",
         "$value": "{modern.border.style.solid}"
       },
