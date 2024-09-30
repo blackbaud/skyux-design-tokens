@@ -1365,6 +1365,10 @@
         "$type": "other",
         "$value": "{bb.border.style.solid}"
       },
+      "divider": {
+        "$type": "other",
+        "$value": "{bb.border.style.solid}"
+      },
       "elevation": {
         "$type": "other",
         "$value": "{bb.border.style.solid}"

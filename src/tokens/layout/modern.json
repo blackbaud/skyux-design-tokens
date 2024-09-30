@@ -1063,6 +1063,10 @@
         "$type": "other",
         "$value": "{modern.border.style.solid}"
       },
+      "divider": {
+        "$type": "other",
+        "$value": "{modern.border.style.solid}"
+      },
       "elevation": {
         "$type": "other",
         "$value": "{modern.border.style.solid}"
