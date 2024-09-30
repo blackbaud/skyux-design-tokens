@@ -588,6 +588,10 @@
     }
   },
   "size": {
+    "switch": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.125}"
+    },
     "icon": {
       "s": {
         "$type": "sizing",
@@ -623,10 +627,6 @@
         "$type": "sizing",
         "$value": "{bb.size.fluid.600}"
       }
-    },
-    "switch": {
-      "$type": "sizing",
-      "$value": "{bb.size.fluid.125}"
     },
     "width": {
       "viewport": {
