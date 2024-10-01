@@ -189,6 +189,10 @@
         "$type": "sizing",
         "$value": "10"
       },
+      "12": {
+        "$type": "sizing",
+        "$value": "12"
+      },
       "13": {
         "$type": "sizing",
         "$value": "13"
@@ -220,6 +224,10 @@
       "32": {
         "$type": "sizing",
         "$value": "32"
+      },
+      "44": {
+        "$type": "sizing",
+        "$value": "44"
       },
       "48": {
         "$type": "sizing",

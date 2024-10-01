@@ -588,6 +588,10 @@
     }
   },
   "size": {
+    "switch": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.125}"
+    },
     "icon": {
       "s": {
         "$type": "sizing",
@@ -623,10 +627,6 @@
         "$type": "sizing",
         "$value": "{bb.size.fluid.600}"
       }
-    },
-    "switch": {
-      "$type": "sizing",
-      "$value": "{bb.size.fluid.125}"
     },
     "width": {
       "viewport": {
@@ -1362,6 +1362,10 @@
     },
     "style": {
       "accent": {
+        "$type": "other",
+        "$value": "{bb.border.style.solid}"
+      },
+      "divider": {
         "$type": "other",
         "$value": "{bb.border.style.solid}"
       },
