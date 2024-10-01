@@ -811,19 +811,19 @@
         "bottom": {
           "s": {
             "$type": "spacing",
-            "$value": "{modern.space.none}"
+            "$value": "{modern.size.0}"
           },
           "m": {
             "$type": "spacing",
-            "$value": "{modern.space.none}"
+            "$value": "{modern.size.0}"
           },
           "l": {
             "$type": "spacing",
-            "$value": "{modern.space.none}"
+            "$value": "{modern.size.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{modern.space.none}"
+            "$value": "{modern.size.0}"
           }
         },
         "left": {
