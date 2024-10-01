@@ -795,7 +795,7 @@
     "data_label": {
       "$type": "typography",
       "$value": {
-        "fontFamily": "{font.family.sans}",
+        "fontFamily": "{font.family.primary}",
         "fontWeight": "{font.style.data_label}",
         "fontSize": "{font.size.data_label}",
         "lineHeight": "{font.line_height.data_label}"
@@ -806,7 +806,7 @@
         "$type": "typography",
         "$value": {
           "lineHeight": "{font.line_height.heading.1}",
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.heading.1}",
           "fontSize": "{font.size.heading.1}"
         }
@@ -814,7 +814,7 @@
       "2": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.heading.2}",
           "fontSize": "{font.size.heading.2}",
           "lineHeight": "{font.line_height.heading.2}"
@@ -823,7 +823,7 @@
       "3": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "lineHeight": "{font.line_height.heading.3}",
           "fontSize": "{font.size.heading.3}",
           "fontWeight": "{font.style.heading.3}"
@@ -832,7 +832,7 @@
       "4": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontSize": "{font.size.heading.4}",
           "lineHeight": "{font.line_height.heading.4}",
           "fontWeight": "{font.style.heading.4}"
@@ -841,7 +841,7 @@
       "5": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.heading.5}",
           "fontSize": "{font.size.heading.5}",
           "lineHeight": "{font.line_height.heading.5}"
@@ -855,7 +855,7 @@
           "fontWeight": "{font.style.body.s}",
           "fontSize": "{font.size.body.s}",
           "lineHeight": "{font.line_height.body.s}",
-          "fontFamily": "{font.family.sans}"
+          "fontFamily": "{font.family.primary}"
         }
       },
       "m": {
@@ -864,7 +864,7 @@
           "fontWeight": "{font.style.body.m}",
           "fontSize": "{font.size.body.m}",
           "lineHeight": "{font.line_height.body.m}",
-          "fontFamily": "{font.family.sans}"
+          "fontFamily": "{font.family.primary}"
         }
       },
       "l": {
@@ -873,7 +873,7 @@
           "fontWeight": "{font.style.body.l}",
           "fontSize": "{font.size.body.l}",
           "lineHeight": "{font.line_height.body.l}",
-          "fontFamily": "{font.family.sans}"
+          "fontFamily": "{font.family.primary}"
         }
       }
     },
@@ -881,7 +881,7 @@
       "1": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.1}",
           "fontSize": "{font.size.display.1}",
           "lineHeight": "{font.line_height.display.1}"
@@ -890,7 +890,7 @@
       "2": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.2}",
           "fontSize": "{font.size.display.2}",
           "lineHeight": "{font.line_height.display.2}"
@@ -899,7 +899,7 @@
       "3": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.3}",
           "fontSize": "{font.size.display.3}",
           "lineHeight": "{font.line_height.display.3}"
@@ -908,7 +908,7 @@
       "4": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.4}",
           "fontSize": "{font.size.display.4}",
           "lineHeight": "{font.line_height.display.4}"
@@ -919,7 +919,7 @@
       "s": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.hint.s}",
           "fontSize": "{font.size.hint.s}",
           "lineHeight": "{font.line_height.hint.s}",
@@ -929,7 +929,7 @@
       "m": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.hint.m}",
           "fontSize": "{font.size.hint.m}",
           "lineHeight": "{font.line_height.hint.m}"
@@ -940,7 +940,7 @@
       "label": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.input.label}",
           "fontSize": "{font.size.input.label}",
           "lineHeight": "{font.line_height.input.label}",
@@ -951,7 +951,7 @@
         "$type": "typography",
         "$value": {
           "fontWeight": "{font.style.body.s}",
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "fontSize": "{font.size.input.val}",
           "lineHeight": "{font.line_height.input.val}"
         }
@@ -961,7 +961,7 @@
       "s": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "lineHeight": "{font.line_height.metric.s}",
           "fontWeight": "{font.style.metric.s}",
           "fontSize": "{font.size.metric.s}"
@@ -970,7 +970,7 @@
       "m": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "lineHeight": "{font.line_height.metric.m}",
           "fontWeight": "{font.style.metric.m}",
           "fontSize": "{font.size.metric.m}"
@@ -979,7 +979,7 @@
       "l": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{font.family.sans}",
+          "fontFamily": "{font.family.primary}",
           "lineHeight": "{font.line_height.metric.l}",
           "fontWeight": "{font.style.metric.l}",
           "fontSize": "{font.size.metric.l}"
@@ -989,13 +989,13 @@
   },
   "font": {
     "family": {
-      "sans": {
+      "primary": {
         "$type": "fontFamilies",
-        "$value": "{bb.font.family.sans}"
+        "$value": "{bb.font.blkb_sans.family}"
       },
       "monospaced": {
         "$type": "fontFamilies",
-        "$value": "{bb.font.family.monospaced}"
+        "$value": "{bb.font.monospaced.family}"
       }
     },
     "size": {
@@ -1529,6 +1529,98 @@
         "row": {
           "$type": "other",
           "$value": "{bb.border.style.dotted}"
+        }
+      }
+    }
+  },
+  "font_face": {
+    "blkb_sans": {
+      "name": {
+        "$type": "other",
+        "$value": "{bb.font.blkb_sans.name}"
+      },
+      "regular": {
+        "style": {
+          "$type": "other",
+          "$value": "normal"
+        },
+        "weight": {
+          "$type": "other",
+          "$value": "400"
+        },
+        "src": {
+          "$type": "other",
+          "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff\") format(\"woff\")"
+        }
+      },
+      "italic": {
+        "style": {
+          "$type": "other",
+          "$value": "italic"
+        },
+        "weight": {
+          "$type": "other",
+          "$value": "400"
+        },
+        "src": {
+          "$type": "other",
+          "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff) format(\"woff\")"
+        }
+      },
+      "thin": {
+        "style": {
+          "$type": "other",
+          "$value": "normal"
+        },
+        "weight": {
+          "$type": "other",
+          "$value": "100"
+        },
+        "src": {
+          "$type": "other",
+          "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Thin.woff) format(\"woff\")"
+        }
+      },
+      "light": {
+        "style": {
+          "$type": "other",
+          "$value": "normal"
+        },
+        "weight": {
+          "$type": "other",
+          "$value": "300"
+        },
+        "src": {
+          "$type": "other",
+          "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Light.woff) format(\"woff\")"
+        }
+      },
+      "semibold": {
+        "style": {
+          "$type": "other",
+          "$value": "normal"
+        },
+        "weight": {
+          "$type": "other",
+          "$value": "600"
+        },
+        "src": {
+          "$type": "other",
+          "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Semibold.woff) format(\"woff\")"
+        }
+      },
+      "bold": {
+        "style": {
+          "$type": "other",
+          "$value": "normal"
+        },
+        "weight": {
+          "$type": "other",
+          "$value": "700"
+        },
+        "src": {
+          "$type": "other",
+          "$value": "url(https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Bold.woff) format(\"woff\")"
         }
       }
     }
