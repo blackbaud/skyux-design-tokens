@@ -43,20 +43,6 @@
           "$value": "3.25rem"
         }
       },
-      "name": {
-        "$type": "fontFamilies",
-        "$value": "BLKB Sans"
-      },
-      "family": {
-        "monospaced": {
-          "$type": "fontFamilies",
-          "$value": "Menlo, Monaco, Consolas, Courier New, monospace"
-        },
-        "sans": {
-          "$type": "fontFamilies",
-          "$value": "{bb.font.name}, Helvetica Neue, Arial, sans-serif"
-        }
-      },
       "weight": {
         "light": {
           "$type": "fontWeights",
@@ -105,16 +91,24 @@
           "$value": "semibold italic"
         }
       },
-      "src": {
-        "sans": {
-          "regular": {
-            "$type": "other",
-            "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff\") format(\"woff\")"
-          },
-          "italic": {
-            "$type": "other",
-            "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff\") format(\"woff\")"
-          }
+      "blkb_sans": {
+        "name": {
+          "$type": "other",
+          "$value": "BLKB Sans"
+        },
+        "fallback": {
+          "$type": "other",
+          "$value": "Helvetica Neue, Arial, sans-serif"
+        },
+        "family": {
+          "$type": "other",
+          "$value": "{bb.font.blkb_sans.name}, {bb.font.blkb_sans.fallback}"
+        }
+      },
+      "monospaced": {
+        "family": {
+          "$type": "other",
+          "$value": "Menlo, Monaco, Consolas, Courier New, monospace"
         }
       }
     },
