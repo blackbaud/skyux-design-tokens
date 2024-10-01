@@ -398,6 +398,154 @@
       "switch": {
         "$type": "spacing",
         "$value": "calc({size.switch}+{space.gap.label.s})"
+      },
+      "vertical": {
+        "top": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        },
+        "right": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          }
+        },
+        "bottom": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        },
+        "left": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          }
+        }
+      },
+      "horizontal": {
+        "top": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          }
+        },
+        "right": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        },
+        "bottom": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          }
+        },
+        "left": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        }
       }
     },
     "gap": {
