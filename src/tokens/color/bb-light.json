@@ -287,15 +287,15 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{bb.color.blue.200}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{bb.color.blue.200}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{bb.color.blue.200}"
           },
           "disabled": {
             "$type": "color",
@@ -353,15 +353,15 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red.200}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red.200}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.red.200}"
           },
           "disabled": {
             "$type": "color",

@@ -286,10 +286,6 @@
         }
       },
       "action": {
-        "disabled": {
-          "$type": "color",
-          "$value": "{modern.color.gray.15}"
-        },
         "primary": {
           "base": {
             "$type": "color",
