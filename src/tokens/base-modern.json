@@ -353,14 +353,24 @@
           "$value": "bold"
         }
       },
-      "name": {
-        "$type": "fontFamilies",
-        "$value": "BLKB Sans"
+      "monospaced": {
+        "family": {
+          "$type": "other",
+          "$value": "Menlo, Monaco, Consolas, Courier New, monospace"
+        }
       },
-      "family": {
-        "sans": {
-          "$type": "fontFamilies",
-          "$value": "{modern.font.name}, Helvetica Neue, Arial, sans-serif"
+      "blkb_sans": {
+        "name": {
+          "$type": "other",
+          "$value": "BLKB Sans"
+        },
+        "fallback": {
+          "$type": "other",
+          "$value": "Helvetica Neue, Arial, sans-serif"
+        },
+        "family": {
+          "$type": "other",
+          "$value": "{modern.font.blkb_sans.name}, {modern.font.blkb_sans.fallback}"
         }
       }
     },
@@ -376,6 +386,10 @@
       "115": {
         "$type": "lineHeights",
         "$value": "1.15"
+      },
+      "150": {
+        "$type": "lineHeights",
+        "$value": "1.5"
       },
       "normal": {
         "$type": "lineHeights",
