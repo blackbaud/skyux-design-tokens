@@ -1085,7 +1085,7 @@
     "blkb_sans": {
       "name": {
         "$type": "other",
-        "$value": "{bb.font.blkb_sans.name}"
+        "$value": "{modern.font.blkb_sans.name}"
       },
       "regular": {
         "style": {

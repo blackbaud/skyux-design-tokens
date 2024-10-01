@@ -92,14 +92,6 @@
         }
       },
       "blkb_sans": {
-        "regular": {
-          "$type": "other",
-          "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Regular.woff\") format(\"woff\")"
-        },
-        "italic": {
-          "$type": "other",
-          "$value": "url(\"https://sky.blackbaudcdn.net/static/skyux-fonts/2.0.0/assets/BLKBSans-Italic.woff\") format(\"woff\")"
-        },
         "name": {
           "$type": "other",
           "$value": "BLKB Sans"
