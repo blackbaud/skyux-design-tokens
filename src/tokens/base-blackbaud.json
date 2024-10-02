@@ -166,7 +166,7 @@
     },
     "border": {
       "radius": {
-        "none": {
+        "0": {
           "$type": "borderRadius",
           "$value": "0"
         },

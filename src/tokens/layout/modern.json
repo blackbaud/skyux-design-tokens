@@ -1219,6 +1219,10 @@
       }
     },
     "radius": {
+      "0": {
+        "$type": "borderRadius",
+        "$value": "{modern.size.0}"
+      },
       "s": {
         "$type": "borderRadius",
         "$value": "{modern.size.6}"
