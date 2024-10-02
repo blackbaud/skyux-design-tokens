@@ -374,7 +374,7 @@
         }
       }
     },
-    "line-height": {
+    "line_height": {
       "20": {
         "$type": "lineHeights",
         "$value": "20px"
@@ -485,6 +485,10 @@
     },
     "border": {
       "radius": {
+        "0": {
+          "$type": "borderRadius",
+          "$value": "0"
+        },
         "md": {
           "$type": "borderRadius",
           "$value": "6"
