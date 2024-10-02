@@ -2,6 +2,16 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.34](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.33...0.0.34) (2024-10-02)
+
+
+### Features
+
+* color fixes ([#90](https://github.com/blackbaud/skyux-design-tokens/issues/90)) ([baba566](https://github.com/blackbaud/skyux-design-tokens/commit/baba566a829fdcf589a0033aed3515bd9c78690f))
+* divider token, modern one-off sizes, icon color fix ([#89](https://github.com/blackbaud/skyux-design-tokens/issues/89)) ([0ef1e1c](https://github.com/blackbaud/skyux-design-tokens/commit/0ef1e1ca5ee234d6e42727efd973e6ab866c4634))
+* new font_face tokens and type tokens ([#92](https://github.com/blackbaud/skyux-design-tokens/issues/92)) ([389c12f](https://github.com/blackbaud/skyux-design-tokens/commit/389c12f6e963ee0a4302eea185c0426c94069a64))
+* new inset padding ([#93](https://github.com/blackbaud/skyux-design-tokens/issues/93)) ([f7705fb](https://github.com/blackbaud/skyux-design-tokens/commit/f7705fb515a280a70551af7fd9465f945ce0b26a))
+
 ## [0.0.33](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.32...0.0.33) (2024-09-27)
 
 
