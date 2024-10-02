@@ -485,6 +485,10 @@
     },
     "border": {
       "radius": {
+        "0": {
+          "$type": "borderRadius",
+          "$value": "0"
+        },
         "md": {
           "$type": "borderRadius",
           "$value": "6"

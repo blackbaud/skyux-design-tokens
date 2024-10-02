@@ -1221,15 +1221,15 @@
     "radius": {
       "0": {
         "$type": "borderRadius",
-        "$value": "{modern.size.0}"
+        "$value": "{modern.border.radius.0}"
       },
       "s": {
         "$type": "borderRadius",
-        "$value": "{modern.size.6}"
+        "$value": "{modern.border.radius.md}"
       },
       "m": {
         "$type": "borderRadius",
-        "$value": "{modern.size.6}"
+        "$value": "{modern.border.radius.md}"
       },
       "pill": {
         "$type": "borderRadius",
