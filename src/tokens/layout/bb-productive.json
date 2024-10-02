@@ -1391,6 +1391,34 @@
           "$value": "{bb.font.weight.light}"
         }
       }
+    },
+    "text_decoration": {
+      "visible_link": {
+        "$type": "textDecoration",
+        "$value": "underline"
+      },
+      "inline_link": {
+        "base": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "hover": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "active": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        },
+        "focus": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "disabled": {
+          "$type": "textDecoration",
+          "$value": "none"
+        }
+      }
     }
   },
   "border": {
