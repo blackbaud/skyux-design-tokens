@@ -374,7 +374,7 @@
         }
       }
     },
-    "line-height": {
+    "line_height": {
       "20": {
         "$type": "lineHeights",
         "$value": "20px"
