@@ -1423,13 +1423,17 @@
   },
   "border": {
     "radius": {
+      "0": {
+        "$type": "borderRadius",
+        "$value": "{bb.border.radius.0}"
+      },
       "s": {
         "$type": "borderRadius",
-        "$value": "{bb.size.fluid.25}"
+        "$value": "{bb.border.radius.025}"
       },
       "m": {
         "$type": "borderRadius",
-        "$value": "{bb.size.fluid.50}"
+        "$value": "{bb.border.radius.050}"
       },
       "pill": {
         "$type": "borderRadius",

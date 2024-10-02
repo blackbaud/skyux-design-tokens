@@ -97,94 +97,94 @@
     "line_height": {
       "data_label": {
         "$type": "lineHeights",
-        "$value": "{modern.line-height.normal}"
+        "$value": "{modern.line_height.normal}"
       },
       "body": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.150}"
+          "$value": "{modern.line_height.150}"
         },
         "l": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         }
       },
       "display": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         }
       },
       "heading": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         },
         "5": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.110}"
+          "$value": "{modern.line_height.110}"
         }
       },
       "hint": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         }
       },
       "input": {
         "label": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         },
         "val": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.20}"
+          "$value": "{modern.line_height.20}"
         }
       },
       "metric": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         },
         "l": {
           "$type": "lineHeights",
-          "$value": "{modern.line-height.normal}"
+          "$value": "{modern.line_height.normal}"
         }
       }
     },
@@ -1219,13 +1219,17 @@
       }
     },
     "radius": {
+      "0": {
+        "$type": "borderRadius",
+        "$value": "{modern.border.radius.0}"
+      },
       "s": {
         "$type": "borderRadius",
-        "$value": "{modern.size.6}"
+        "$value": "{modern.border.radius.md}"
       },
       "m": {
         "$type": "borderRadius",
-        "$value": "{modern.size.6}"
+        "$value": "{modern.border.radius.md}"
       },
       "pill": {
         "$type": "borderRadius",
