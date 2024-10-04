@@ -2,6 +2,15 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.36](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.35...0.0.36) (2024-10-04)
+
+
+### Bug Fixes
+
+* line heights and border radii ([#98](https://github.com/blackbaud/skyux-design-tokens/issues/98)) ([842e517](https://github.com/blackbaud/skyux-design-tokens/commit/842e517242f697312cc407a525c73dd4ff259f5c))
+* remove tokens used for font-face at-rules ([#97](https://github.com/blackbaud/skyux-design-tokens/issues/97)) ([1a92a4a](https://github.com/blackbaud/skyux-design-tokens/commit/1a92a4adeddf14f3828ce2581d87b1ac0b1ef5e9))
+* update heading 2 to regular weight ([#100](https://github.com/blackbaud/skyux-design-tokens/issues/100)) ([52af2b3](https://github.com/blackbaud/skyux-design-tokens/commit/52af2b36fa62c62370b3d2eecf3c033b1a31e885))
+
 ## [0.0.35](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.34...0.0.35) (2024-10-02)
 
 
