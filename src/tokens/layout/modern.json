@@ -240,7 +240,7 @@
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.light}"
+          "$value": "{modern.font.style.regular}"
         },
         "3": {
           "$type": "fontWeights",
@@ -358,7 +358,7 @@
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.light}"
+          "$value": "{modern.font.weight.regular}"
         },
         "3": {
           "$type": "fontWeights",
