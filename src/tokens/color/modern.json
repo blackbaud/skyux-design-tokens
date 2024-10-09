@@ -205,6 +205,16 @@
           "$value": "{modern.color.gray.07}"
         }
       },
+      "thumb": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.white}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{modern.color.gray.07}"
+        }
+      },
       "nav": {
         "base": {
           "$type": "color",
