@@ -213,6 +213,18 @@
         "soft": {
           "$type": "color",
           "$value": "{bb.color.blue.100}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{bb.color.red.300}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{bb.color.yellow.300}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{bb.color.green.300}"
         }
       },
       "nav": {

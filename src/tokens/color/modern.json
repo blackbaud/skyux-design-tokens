@@ -193,6 +193,18 @@
         "soft": {
           "$type": "color",
           "$value": "{modern.color.blue.05}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{modern.color.red.30}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{modern.color.yellow.30}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{modern.color.green.30}"
         }
       },
       "input": {
