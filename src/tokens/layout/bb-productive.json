@@ -147,6 +147,12 @@
             "$type": "spacing",
             "$value": "{bb.size.fluid.37}"
           }
+        },
+        "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.12}"
+          }
         }
       },
       "letterbox": {

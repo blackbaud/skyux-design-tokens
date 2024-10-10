@@ -531,6 +531,12 @@
             "$type": "spacing",
             "$value": "{modern.size.6}"
           }
+        },
+        "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.2}"
+          }
         }
       },
       "pillarbox": {
