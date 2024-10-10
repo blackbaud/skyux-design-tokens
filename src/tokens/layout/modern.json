@@ -1211,6 +1211,10 @@
         "disabled": {
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
+        },
+        "selected": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
         }
       },
       "separator": {
