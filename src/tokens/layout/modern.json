@@ -731,6 +731,10 @@
         "$type": "spacing",
         "$value": "calc({size.switch}+{space.gap.label.s})"
       },
+      "thumb": {
+        "$type": "spacing",
+        "$value": "{modern.size.1}"
+      },
       "vertical": {
         "top": {
           "s": {
@@ -1244,6 +1248,10 @@
       "pill": {
         "$type": "borderRadius",
         "$value": "{modern.border.radius.pill}"
+      },
+      "thumb": {
+        "$type": "borderRadius",
+        "$value": "{modern.border.radius.round}"
       }
     },
     "style": {

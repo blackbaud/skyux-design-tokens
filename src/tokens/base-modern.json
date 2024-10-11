@@ -507,6 +507,10 @@
         "pill": {
           "$type": "borderRadius",
           "$value": "10rem"
+        },
+        "round": {
+          "$type": "borderRadius",
+          "$value": "50%"
         }
       },
       "style": {
