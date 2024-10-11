@@ -394,7 +394,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{bb.color.gray.400}"
         },
         "error": {
           "$type": "color",
