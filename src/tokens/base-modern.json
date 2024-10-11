@@ -10,6 +10,10 @@
           "$type": "color",
           "$value": "#cdcfd2"
         },
+        "50": {
+          "$type": "color",
+          "$value": "#8c929c"
+        },
         "70": {
           "$type": "color",
           "$value": "#686c73"
