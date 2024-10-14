@@ -2,6 +2,19 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.37](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.36...0.0.37) (2024-10-14)
+
+
+### Features
+
+* add input label inset ([#102](https://github.com/blackbaud/skyux-design-tokens/issues/102)) ([ed495c8](https://github.com/blackbaud/skyux-design-tokens/commit/ed495c834bbe5f746513bcd4ccadb3d14500e0c3))
+* update input border color ([#104](https://github.com/blackbaud/skyux-design-tokens/issues/104)) ([cb574de](https://github.com/blackbaud/skyux-design-tokens/commit/cb574dec825dbb1b84f06fc258a0b0ac87bf7415))
+
+
+### Bug Fixes
+
+* update disabled input border color ([#106](https://github.com/blackbaud/skyux-design-tokens/issues/106)) ([8f570bc](https://github.com/blackbaud/skyux-design-tokens/commit/8f570bcb3422d16623cc5f09d7d06bb5bf971bcf))
+
 ## [0.0.36](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.35...0.0.36) (2024-10-04)
 
 
