@@ -503,7 +503,7 @@
         "top": {
           "m": {
             "$type": "spacing",
-            "$value": "{modern.size.26}"
+            "$value": "{modern.size.10}"
           }
         },
         "right": {
@@ -729,7 +729,7 @@
       },
       "switch": {
         "$type": "spacing",
-        "$value": "calc({size.switch}+{space.gap.label.s})"
+        "$value": "calc({size.switch} + {space.gap.label.s})"
       },
       "vertical": {
         "top": {
