@@ -119,7 +119,7 @@
         "top": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.150}"
+            "$value": "{bb.size.fluid.50}"
           }
         },
         "right": {
@@ -403,7 +403,7 @@
       },
       "switch": {
         "$type": "spacing",
-        "$value": "calc({size.switch}+{space.gap.label.s})"
+        "$value": "calc({size.switch} + {space.gap.label.s})"
       },
       "vertical": {
         "top": {
