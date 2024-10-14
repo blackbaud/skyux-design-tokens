@@ -459,6 +459,10 @@
       },
       "bottomless": {
         "top": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.s}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
@@ -469,6 +473,10 @@
           }
         },
         "right": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.s}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
@@ -479,6 +487,10 @@
           }
         },
         "left": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.s}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
@@ -489,6 +501,10 @@
           }
         },
         "bottom": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.none}"
