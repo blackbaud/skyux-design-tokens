@@ -400,7 +400,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{modern.color.gray.15}"
+          "$value": "{modern.color.gray.50}"
         },
         "hover": {
           "$type": "color",
@@ -416,7 +416,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{modern.color.gray.15}"
+          "$value": "{modern.color.gray.50}"
         },
         "error": {
           "$type": "color",
