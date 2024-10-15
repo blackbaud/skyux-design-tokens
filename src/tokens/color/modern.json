@@ -201,12 +201,34 @@
         "soft": {
           "$type": "color",
           "$value": "{modern.color.blue.05}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{modern.color.red.30}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{modern.color.yellow.30}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{modern.color.green.30}"
         }
       },
       "input": {
         "base": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{modern.color.gray.07}"
+        }
+      },
+      "thumb": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.white}"
         },
         "disabled": {
           "$type": "color",

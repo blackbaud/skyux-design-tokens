@@ -182,7 +182,7 @@
           "$type": "borderRadius",
           "$value": "999rem"
         },
-        "circle": {
+        "round": {
           "$type": "borderRadius",
           "$value": "50%"
         }
