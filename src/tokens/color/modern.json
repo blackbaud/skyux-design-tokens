@@ -69,6 +69,10 @@
         "$type": "color",
         "$value": "{modern.color.scrim}"
       },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.yellow.40}"
+      },
       "container": {
         "base": {
           "$type": "color",
@@ -278,6 +282,10 @@
       "elevation": {
         "$type": "color",
         "$value": "{modern.color.gray.15}"
+      },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.yellow.80}"
       },
       "container": {
         "base": {

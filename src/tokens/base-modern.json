@@ -102,9 +102,17 @@
           "$type": "color",
           "$value": "#ffd597"
         },
+        "40": {
+          "$type": "color",
+          "$value": "#fcd085"
+        },
         "50": {
           "$type": "color",
           "$value": "#fbb034"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#c57c00"
         }
       },
       "sky_blue": {
