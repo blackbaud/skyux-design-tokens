@@ -24,6 +24,10 @@
       "heading": {
         "$type": "color",
         "$value": "{modern.color.gray.105}"
+      },
+      "link_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.blue.80}"
       }
     },
     "icon": {

@@ -82,6 +82,10 @@
           "$type": "color",
           "$value": "#1870B8"
         },
+        "80": {
+          "$type": "color",
+          "$value": "#0d5ead"
+        },
         "05": {
           "$type": "color",
           "$value": "#ebfbff"
