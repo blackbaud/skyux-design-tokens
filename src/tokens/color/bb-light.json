@@ -183,6 +183,28 @@
             "$type": "color",
             "$value": "{bb.color.gray.50}"
           }
+        },
+        "input": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
+          }
         }
       },
       "input": {
@@ -388,6 +410,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{bb.color.gray.100}"
+          }
+        },
+        "input": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gray.400}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.400}"
           }
         }
       },
