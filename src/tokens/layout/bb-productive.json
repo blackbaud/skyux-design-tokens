@@ -750,6 +750,10 @@
       "$type": "sizing",
       "$value": "{bb.size.fluid.125}"
     },
+    "picker_btn": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.200}"
+    },
     "icon": {
       "s": {
         "$type": "sizing",
