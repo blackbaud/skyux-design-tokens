@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.39](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.38...0.0.39) (2024-10-18)
+
+
+### Features
+
+* adding floated tokens for modern ([#112](https://github.com/blackbaud/skyux-design-tokens/issues/112)) ([19daf57](https://github.com/blackbaud/skyux-design-tokens/commit/19daf57a9cb3054db33df47a8e505961b6adcedc))
+* switch additions - border width selected token and thumb tokens ([#101](https://github.com/blackbaud/skyux-design-tokens/issues/101)) ([51ffc59](https://github.com/blackbaud/skyux-design-tokens/commit/51ffc5951a78b610176a1d6704af26b299ccfc2a))
+
 ## [0.0.38](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.37...0.0.38) (2024-10-14)
 
 
