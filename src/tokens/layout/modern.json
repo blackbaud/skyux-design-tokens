@@ -1122,6 +1122,10 @@
       "$type": "sizing",
       "$value": "{modern.size.26}"
     },
+    "picker_btn": {
+      "$type": "sizing",
+      "$value": "{modern.size.30}"
+    },
     "icon": {
       "s": {
         "$type": "sizing",
