@@ -1272,6 +1272,10 @@
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
         },
+        "light": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
+        },
         "row": {
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
@@ -1315,6 +1319,10 @@
       },
       "separator": {
         "dark": {
+          "$type": "other",
+          "$value": "{modern.border.style.solid}"
+        },
+        "light": {
           "$type": "other",
           "$value": "{modern.border.style.solid}"
         },
