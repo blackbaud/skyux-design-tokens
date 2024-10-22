@@ -693,6 +693,10 @@
       }
     },
     "inline": {
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.12}"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.25}"
@@ -754,6 +758,10 @@
       "s": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.100}"
+      },
+      "xs": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.12}"
       },
       "m": {
         "$type": "sizing",

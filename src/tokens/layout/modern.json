@@ -499,6 +499,52 @@
           }
         }
       },
+      "floated": {
+        "top": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.xs}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.s}"
+          }
+        },
+        "right": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.lg}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.xl}"
+          }
+        },
+        "bottom": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.lg}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.xl}"
+          }
+        },
+        "left": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.space.lg}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.xl}"
+          }
+        }
+      },
       "input": {
         "top": {
           "m": {
@@ -536,6 +582,32 @@
           "m": {
             "$type": "spacing",
             "$value": "{modern.size.2}"
+          }
+        }
+      },
+      "letterbox": {
+        "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.lg}"
+          }
+        },
+        "right": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.s}"
+          }
+        },
+        "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.lg}"
+          }
+        },
+        "left": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.s}"
           }
         }
       },
@@ -882,52 +954,6 @@
             "$value": "{modern.space.xl}"
           }
         }
-      },
-      "floated": {
-        "top": {
-          "0": {
-            "$type": "spacing",
-            "$value": "{modern.space.none}"
-          },
-          "s": {
-            "$type": "spacing",
-            "$value": "{modern.space.xs}"
-          },
-          "m": {
-            "$type": "spacing",
-            "$value": "{modern.space.s}"
-          }
-        },
-        "right": {
-          "s": {
-            "$type": "spacing",
-            "$value": "{modern.space.lg}"
-          },
-          "m": {
-            "$type": "spacing",
-            "$value": "{modern.space.xl}"
-          }
-        },
-        "bottom": {
-          "s": {
-            "$type": "spacing",
-            "$value": "{modern.space.lg}"
-          },
-          "m": {
-            "$type": "spacing",
-            "$value": "{modern.space.xl}"
-          }
-        },
-        "left": {
-          "s": {
-            "$type": "spacing",
-            "$value": "{modern.space.lg}"
-          },
-          "m": {
-            "$type": "spacing",
-            "$value": "{modern.space.xl}"
-          }
-        }
       }
     },
     "gap": {
@@ -1065,6 +1091,10 @@
       }
     },
     "inline": {
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{modern.size.2}"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "{modern.space.xs}"
@@ -1123,6 +1153,10 @@
       "$value": "{modern.size.26}"
     },
     "icon": {
+      "xs": {
+        "$type": "sizing",
+        "$value": "{modern.size.10}"
+      },
       "s": {
         "$type": "sizing",
         "$value": "{modern.size.16}"
