@@ -2,6 +2,10 @@
   "modern": {
     "color": {
       "gray": {
+        "10": {
+          "$type": "color",
+          "$value": "#e2e3e4"
+        },
         "15": {
           "$type": "color",
           "$value": "#d2d2d2"
