@@ -755,13 +755,13 @@
       "$value": "{bb.size.fluid.125}"
     },
     "icon": {
+      "xs": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.50}"
+      },
       "s": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.100}"
-      },
-      "xs": {
-        "$type": "sizing",
-        "$value": "{bb.size.fluid.12}"
       },
       "m": {
         "$type": "sizing",
