@@ -472,6 +472,10 @@
           "$type": "color",
           "$value": "{bb.color.gray.100}"
         },
+        "light": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        },
         "row": {
           "$type": "color",
           "$value": "{bb.color.gray.50}"

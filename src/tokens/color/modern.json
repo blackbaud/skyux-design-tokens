@@ -472,6 +472,10 @@
           "$type": "color",
           "$value": "{modern.color.gray.20}"
         },
+        "light": {
+          "$type": "color",
+          "$value": "{modern.color.gray.10}"
+        },
         "row": {
           "$type": "color",
           "$value": "{modern.color.gray.20}"

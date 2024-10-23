@@ -1556,6 +1556,10 @@
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
         },
+        "light": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.6}"
+        },
         "row": {
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
@@ -1577,6 +1581,10 @@
       },
       "separator": {
         "dark": {
+          "$type": "other",
+          "$value": "{bb.border.style.solid}"
+        },
+        "light": {
           "$type": "other",
           "$value": "{bb.border.style.solid}"
         },
