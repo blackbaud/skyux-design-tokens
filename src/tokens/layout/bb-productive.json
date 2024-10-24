@@ -29,6 +29,10 @@
       },
       "bottomless": {
         "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.100}"
@@ -39,6 +43,10 @@
           }
         },
         "right": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.100}"
@@ -49,6 +57,10 @@
           }
         },
         "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.0}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.0}"
@@ -59,6 +71,10 @@
           }
         },
         "left": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.100}"
@@ -753,6 +769,10 @@
     "switch": {
       "$type": "sizing",
       "$value": "{bb.size.fluid.125}"
+    },
+    "picker_btn": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.200}"
     },
     "icon": {
       "xs": {
@@ -1560,6 +1580,10 @@
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
         },
+        "light": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.6}"
+        },
         "row": {
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
@@ -1581,6 +1605,10 @@
       },
       "separator": {
         "dark": {
+          "$type": "other",
+          "$value": "{bb.border.style.solid}"
+        },
+        "light": {
           "$type": "other",
           "$value": "{bb.border.style.solid}"
         },

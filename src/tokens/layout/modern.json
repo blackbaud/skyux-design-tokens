@@ -459,6 +459,10 @@
       },
       "bottomless": {
         "top": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
@@ -469,6 +473,10 @@
           }
         },
         "right": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
@@ -479,6 +487,10 @@
           }
         },
         "left": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.lg}"
@@ -489,6 +501,10 @@
           }
         },
         "bottom": {
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "l": {
             "$type": "spacing",
             "$value": "{modern.space.none}"
@@ -1152,6 +1168,10 @@
       "$type": "sizing",
       "$value": "{modern.size.26}"
     },
+    "picker_btn": {
+      "$type": "sizing",
+      "$value": "{modern.size.30}"
+    },
     "icon": {
       "xs": {
         "$type": "sizing",
@@ -1306,6 +1326,10 @@
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
         },
+        "light": {
+          "$type": "borderWidth",
+          "$value": "{modern.size.1}"
+        },
         "row": {
           "$type": "borderWidth",
           "$value": "{modern.size.1}"
@@ -1349,6 +1373,10 @@
       },
       "separator": {
         "dark": {
+          "$type": "other",
+          "$value": "{modern.border.style.solid}"
+        },
+        "light": {
           "$type": "other",
           "$value": "{modern.border.style.solid}"
         },
