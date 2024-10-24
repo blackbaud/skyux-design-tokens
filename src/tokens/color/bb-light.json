@@ -15,13 +15,17 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.700}"
+        "$value": "{bb.color.red.600}"
       },
       "inverse": {
         "$type": "color",
         "$value": "{bb.color.white}"
       },
       "heading": {
+        "$type": "color",
+        "$value": "{bb.color.blue.800}"
+      },
+      "link_highlighted": {
         "$type": "color",
         "$value": "{bb.color.blue.800}"
       }
@@ -68,6 +72,10 @@
       "scrim": {
         "$type": "color",
         "$value": "{bb.color.scrim}"
+      },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{bb.color.yellow.400}"
       },
       "container": {
         "base": {
@@ -322,6 +330,10 @@
       "elevation": {
         "$type": "color",
         "$value": "{bb.color.gray.100}"
+      },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{bb.color.yellow.800}"
       },
       "action": {
         "primary": {

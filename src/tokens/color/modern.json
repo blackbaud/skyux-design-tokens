@@ -24,6 +24,10 @@
       "heading": {
         "$type": "color",
         "$value": "{modern.color.gray.105}"
+      },
+      "link_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.blue.80}"
       }
     },
     "icon": {
@@ -68,6 +72,10 @@
       "scrim": {
         "$type": "color",
         "$value": "{modern.color.scrim}"
+      },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.yellow.40}"
       },
       "container": {
         "base": {
@@ -322,6 +330,10 @@
       "elevation": {
         "$type": "color",
         "$value": "{modern.color.gray.15}"
+      },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.yellow.80}"
       },
       "container": {
         "base": {

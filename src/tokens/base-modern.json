@@ -86,6 +86,10 @@
           "$type": "color",
           "$value": "#1870B8"
         },
+        "80": {
+          "$type": "color",
+          "$value": "#0d5ead"
+        },
         "05": {
           "$type": "color",
           "$value": "#ebfbff"
@@ -106,9 +110,17 @@
           "$type": "color",
           "$value": "#ffd597"
         },
+        "40": {
+          "$type": "color",
+          "$value": "#fcd085"
+        },
         "50": {
           "$type": "color",
           "$value": "#fbb034"
+        },
+        "80": {
+          "$type": "color",
+          "$value": "#c57c00"
         }
       },
       "sky_blue": {

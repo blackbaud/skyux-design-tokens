@@ -1237,6 +1237,10 @@
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },
+      "text_highlight": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.1}"
+      },
       "elevation": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
