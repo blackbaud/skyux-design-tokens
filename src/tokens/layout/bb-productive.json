@@ -709,6 +709,10 @@
       }
     },
     "inline": {
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.12}"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.25}"
@@ -771,6 +775,10 @@
       "$value": "{bb.size.fluid.200}"
     },
     "icon": {
+      "xs": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.50}"
+      },
       "s": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.100}"
