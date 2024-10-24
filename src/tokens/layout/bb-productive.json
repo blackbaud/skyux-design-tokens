@@ -709,6 +709,10 @@
       }
     },
     "inline": {
+      "xxs": {
+        "$type": "spacing",
+        "$value": "{bb.size.fluid.12}"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "{bb.size.fluid.25}"
@@ -766,7 +770,15 @@
       "$type": "sizing",
       "$value": "{bb.size.fluid.125}"
     },
+    "picker_btn": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.200}"
+    },
     "icon": {
+      "xs": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.50}"
+      },
       "s": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.100}"
@@ -1480,6 +1492,10 @@
         "$value": "{bb.size.fixed.37}"
       },
       "divider": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.6}"
+      },
+      "text_highlight": {
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
       },

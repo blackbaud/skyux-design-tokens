@@ -24,6 +24,10 @@
       "heading": {
         "$type": "color",
         "$value": "{modern.color.gray.105}"
+      },
+      "link_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.blue.80}"
       }
     },
     "icon": {
@@ -68,6 +72,10 @@
       "scrim": {
         "$type": "color",
         "$value": "{modern.color.scrim}"
+      },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.yellow.40}"
       },
       "container": {
         "base": {
@@ -178,6 +186,28 @@
           "focus": {
             "$type": "color",
             "$value": "{modern.color.red.70}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.07}"
+          }
+        },
+        "input": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
           },
           "disabled": {
             "$type": "color",
@@ -301,6 +331,10 @@
         "$type": "color",
         "$value": "{modern.color.gray.15}"
       },
+      "text_highlight": {
+        "$type": "color",
+        "$value": "{modern.color.yellow.80}"
+      },
       "container": {
         "base": {
           "$type": "color",
@@ -394,6 +428,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{modern.color.gray.15}"
+          }
+        },
+        "input": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.gray.50}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.50}"
           }
         }
       },
