@@ -1480,6 +1480,10 @@
       "thumb": {
         "$type": "borderRadius",
         "$value": "{bb.border.radius.round}"
+      },
+      "round": {
+        "$type": "borderRadius",
+        "$value": "{bb.border.radius.round}"
       }
     },
     "width": {
