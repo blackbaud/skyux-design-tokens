@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.41](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.40...0.0.41) (2024-10-24)
+
+
+### Features
+
+* add bottomless medium inset ([#115](https://github.com/blackbaud/skyux-design-tokens/issues/115)) ([a511cbd](https://github.com/blackbaud/skyux-design-tokens/commit/a511cbd630bc4abb76b01530494bb328a31ba193))
+* new button variants ([#111](https://github.com/blackbaud/skyux-design-tokens/issues/111)) ([a69d3a2](https://github.com/blackbaud/skyux-design-tokens/commit/a69d3a24d8a52ac33bccdaa14bc2f9dac09f37dc))
+* new round tokens ([#118](https://github.com/blackbaud/skyux-design-tokens/issues/118)) ([6d9553f](https://github.com/blackbaud/skyux-design-tokens/commit/6d9553f516ba09531cb63d08f04eae924221baae))
+* new space for use in color picker, add in letterbox m modern ([#117](https://github.com/blackbaud/skyux-design-tokens/issues/117)) ([0705485](https://github.com/blackbaud/skyux-design-tokens/commit/0705485616decedecde7b5828c67484c502dcca4))
+* text_highlight tokens for colors and border width ([#109](https://github.com/blackbaud/skyux-design-tokens/issues/109)) ([015ee57](https://github.com/blackbaud/skyux-design-tokens/commit/015ee57b31fef4a07ca2a42c1e4f8ed0297bd4ad))
+
 ## [0.0.40](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.39...0.0.40) (2024-10-22)
 
 
