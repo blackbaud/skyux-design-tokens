@@ -775,6 +775,10 @@
       "$value": "{bb.size.fluid.200}"
     },
     "icon": {
+      "xxs": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.25}"
+      },
       "xs": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.50}"
