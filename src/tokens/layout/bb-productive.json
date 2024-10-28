@@ -1531,24 +1531,6 @@
         "disabled": {
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
-        },
-        "selected": {
-          "s": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.6}"
-          },
-          "m": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.12}"
-          },
-          "l": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.25}"
-          },
-          "xl": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.37}"
-          }
         }
       },
       "container": {
@@ -1581,6 +1563,24 @@
         "disabled": {
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
+        }
+      },
+      "selected": {
+        "s": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.6}"
+        },
+        "m": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.12}"
+        },
+        "l": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.25}"
+        },
+        "xl": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.37}"
         }
       },
       "separator": {
