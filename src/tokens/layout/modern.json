@@ -1000,6 +1000,10 @@
           "$type": "spacing",
           "$value": "0"
         },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modern.space.xs}"
+        },
         "s": {
           "$type": "spacing",
           "$value": "{modern.space.s}"
