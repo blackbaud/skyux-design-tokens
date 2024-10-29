@@ -2,6 +2,25 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.41](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.40...0.0.41) (2024-10-29)
+
+
+### Features
+
+* add bottomless medium inset ([#115](https://github.com/blackbaud/skyux-design-tokens/issues/115)) ([a511cbd](https://github.com/blackbaud/skyux-design-tokens/commit/a511cbd630bc4abb76b01530494bb328a31ba193))
+* add size.icon.xxs ([#119](https://github.com/blackbaud/skyux-design-tokens/issues/119)) ([d2a8be7](https://github.com/blackbaud/skyux-design-tokens/commit/d2a8be794262ce6d5884bba7c600f7efe5970681))
+* balanced.xxs and color.border.selected_soft ([#123](https://github.com/blackbaud/skyux-design-tokens/issues/123)) ([4682d81](https://github.com/blackbaud/skyux-design-tokens/commit/4682d81b178acc7e1b618c3cf4721cd6bd608fb3))
+* new button variants ([#111](https://github.com/blackbaud/skyux-design-tokens/issues/111)) ([a69d3a2](https://github.com/blackbaud/skyux-design-tokens/commit/a69d3a24d8a52ac33bccdaa14bc2f9dac09f37dc))
+* new round tokens ([#118](https://github.com/blackbaud/skyux-design-tokens/issues/118)) ([6d9553f](https://github.com/blackbaud/skyux-design-tokens/commit/6d9553f516ba09531cb63d08f04eae924221baae))
+* new size and form gap tokens for file attach ([#122](https://github.com/blackbaud/skyux-design-tokens/issues/122)) ([1c234cf](https://github.com/blackbaud/skyux-design-tokens/commit/1c234cfe7c06df0457a6b75d78d77a31c6721c6d))
+* new space for use in color picker, add in letterbox m modern ([#117](https://github.com/blackbaud/skyux-design-tokens/issues/117)) ([0705485](https://github.com/blackbaud/skyux-design-tokens/commit/0705485616decedecde7b5828c67484c502dcca4))
+* text_highlight tokens for colors and border width ([#109](https://github.com/blackbaud/skyux-design-tokens/issues/109)) ([015ee57](https://github.com/blackbaud/skyux-design-tokens/commit/015ee57b31fef4a07ca2a42c1e4f8ed0297bd4ad))
+
+
+### Bug Fixes
+
+* removed border.width.input.selected ([#120](https://github.com/blackbaud/skyux-design-tokens/issues/120)) ([46ec521](https://github.com/blackbaud/skyux-design-tokens/commit/46ec5210d8a1a9b6c3b2b7d892b61accd6a23ac4))
+
 ## [0.0.40](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.39...0.0.40) (2024-10-22)
 
 
