@@ -6,6 +6,10 @@
           "$type": "spacing",
           "$value": "0"
         },
+        "xxs": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.12}"
+        },
         "xs": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.25}"
