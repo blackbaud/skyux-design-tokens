@@ -6,10 +6,6 @@
           "$type": "spacing",
           "$value": "0"
         },
-        "xxs": {
-          "$type": "spacing",
-          "$value": "{bb.size.fluid.12}"
-        },
         "xs": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.25}"
@@ -691,6 +687,10 @@
         "m": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.50}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.100}"
         }
       },
       "text_action": {

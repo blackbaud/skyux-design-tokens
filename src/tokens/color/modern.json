@@ -307,10 +307,6 @@
         "$type": "color",
         "$value": "{modern.color.blue.74}"
       },
-      "selected_soft": {
-        "$type": "color",
-        "$value": "{modern.color.blue.30}"
-      },
       "danger": {
         "$type": "color",
         "$value": "{modern.color.red.50}"
