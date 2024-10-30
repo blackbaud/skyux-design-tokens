@@ -300,6 +300,10 @@
           "$type": "color",
           "$value": "{modern.color.gray.07}"
         }
+      },
+      "file_drop": {
+        "$type": "color",
+        "$value": "{modern.color.gray.05}"
       }
     },
     "border": {
