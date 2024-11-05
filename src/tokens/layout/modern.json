@@ -438,7 +438,7 @@
       "balanced": {
         "none": {
           "$type": "spacing",
-          "$value": "{modern.size.0}"
+          "$value": "0"
         },
         "xxs": {
           "$type": "spacing",
