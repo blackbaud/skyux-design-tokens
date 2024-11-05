@@ -839,6 +839,12 @@
         "$type": "sizing",
         "$value": "{bb.size.reading_container.max_width}"
       }
+    },
+    "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{bb.size.fixed.600}"
+      }
     }
   },
   "type": {

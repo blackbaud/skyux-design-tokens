@@ -1237,6 +1237,12 @@
         "$type": "sizing",
         "$value": "{modern.size.236}"
       }
+    },
+    "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{modern.size.100}"
+      }
     }
   },
   "border": {
