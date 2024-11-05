@@ -311,6 +311,10 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
+      "selected_soft": {
+        "$type": "color",
+        "$value": "{bb.color.blue.300}"
+      },
       "danger": {
         "$type": "color",
         "$value": "{bb.color.red.600}"
