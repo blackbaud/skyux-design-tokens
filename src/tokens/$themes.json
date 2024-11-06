@@ -694,7 +694,6 @@
     "selectedTokenSets": {
       "base-modern": "source",
       "layout/modern": "enabled",
-      "layout/modern-component-overrides": "enabled",
       "layout/bb-productive": "enabled",
       "base-blackbaud": "source"
     },
