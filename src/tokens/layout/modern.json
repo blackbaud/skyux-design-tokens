@@ -436,6 +436,14 @@
   "space": {
     "inset": {
       "balanced": {
+        "none": {
+          "$type": "spacing",
+          "$value": "0"
+        },
+        "xxs": {
+          "$type": "spacing",
+          "$value": "{modern.size.2}"
+        },
         "xs": {
           "$type": "spacing",
           "$value": "{modern.space.xs}"
@@ -999,6 +1007,10 @@
         "0": {
           "$type": "spacing",
           "$value": "0"
+        },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modern.space.xs}"
         },
         "s": {
           "$type": "spacing",

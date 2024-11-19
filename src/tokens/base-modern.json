@@ -245,6 +245,10 @@
         "$type": "sizing",
         "$value": "32"
       },
+      "40": {
+        "$type": "sizing",
+        "$value": "40"
+      },
       "44": {
         "$type": "sizing",
         "$value": "44"
