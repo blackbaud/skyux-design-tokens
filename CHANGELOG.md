@@ -2,6 +2,18 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.42](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.41...0.0.42) (2024-11-19)
+
+
+### Features
+
+* file attach tokens ([#124](https://github.com/blackbaud/skyux-design-tokens/issues/124)) ([02cfa91](https://github.com/blackbaud/skyux-design-tokens/commit/02cfa91e53cbfc059136bdf9a6c62345f1d1e41e))
+
+
+### Bug Fixes
+
+* move border.width.selected out of action ([#121](https://github.com/blackbaud/skyux-design-tokens/issues/121)) ([ff72d51](https://github.com/blackbaud/skyux-design-tokens/commit/ff72d514d91988c3f8b3c45a3326a256aa87dc15))
+
 ## [0.0.41](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.40...0.0.41) (2024-10-29)
 
 
