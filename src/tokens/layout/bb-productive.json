@@ -691,6 +691,10 @@
         "m": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.50}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.100}"
         }
       },
       "text_action": {
@@ -838,6 +842,12 @@
       "overlay_message": {
         "$type": "sizing",
         "$value": "{bb.size.reading_container.max_width}"
+      }
+    },
+    "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{bb.size.fixed.600}"
       }
     }
   },

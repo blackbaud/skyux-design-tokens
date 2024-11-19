@@ -1093,6 +1093,10 @@
         "m": {
           "$type": "spacing",
           "$value": "{modern.size.10}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.size.15}"
         }
       },
       "text_action": {
@@ -1240,6 +1244,12 @@
       "overlay_message": {
         "$type": "sizing",
         "$value": "{modern.size.236}"
+      }
+    },
+    "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{modern.size.100}"
       }
     }
   },
