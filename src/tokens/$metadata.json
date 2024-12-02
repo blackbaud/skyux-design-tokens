@@ -1,14 +1,12 @@
 {
   "tokenSetOrder": [
     "base-blackbaud",
-    "base-justgiving",
     "base-modern",
     "color/bb-light",
     "color/bb-dark",
     "color/modern",
     "layout/bb-productive",
     "layout/bb-compact",
-    "layout/modern",
-    "layout/modern-component-overrides"
+    "layout/modern"
   ]
 }
