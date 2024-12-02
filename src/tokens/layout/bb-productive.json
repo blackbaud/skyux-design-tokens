@@ -691,6 +691,10 @@
         "m": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.50}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.100}"
         }
       },
       "text_action": {
@@ -838,6 +842,12 @@
       "overlay_message": {
         "$type": "sizing",
         "$value": "{bb.size.reading_container.max_width}"
+      }
+    },
+    "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{bb.size.fixed.600}"
       }
     }
   },
@@ -1539,24 +1549,6 @@
         "disabled": {
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
-        },
-        "selected": {
-          "s": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.6}"
-          },
-          "m": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.12}"
-          },
-          "l": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.25}"
-          },
-          "xl": {
-            "$type": "borderWidth",
-            "$value": "{bb.size.fixed.37}"
-          }
         }
       },
       "container": {
@@ -1589,6 +1581,24 @@
         "disabled": {
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
+        }
+      },
+      "selected": {
+        "s": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.6}"
+        },
+        "m": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.12}"
+        },
+        "l": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.25}"
+        },
+        "xl": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.37}"
         }
       },
       "separator": {

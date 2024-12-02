@@ -799,6 +799,10 @@
           "$type": "sizing",
           "$value": "36"
         },
+        "600": {
+          "$type": "sizing",
+          "$value": "96"
+        },
         "2000": {
           "$type": "sizing",
           "$value": "320"
