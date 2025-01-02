@@ -805,6 +805,32 @@
           }
         }
       },
+      "sunk": {
+        "top": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{modern.space.xl}"
+          }
+        },
+        "right": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{modern.space.xl}"
+          }
+        },
+        "bottom": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{modern.space.lg}"
+          }
+        },
+        "left": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{modern.space.xl}"
+          }
+        }
+      },
       "tabs": {
         "s": {
           "$type": "spacing",

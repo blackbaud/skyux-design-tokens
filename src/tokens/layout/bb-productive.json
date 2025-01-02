@@ -403,6 +403,32 @@
           }
         }
       },
+      "sunk": {
+        "top": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        },
+        "right": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        },
+        "bottom": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
+          }
+        },
+        "left": {
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.150}"
+          }
+        }
+      },
       "tabs": {
         "s": {
           "$type": "spacing",
