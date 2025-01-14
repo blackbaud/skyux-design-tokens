@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.43](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.42...0.0.43) (2025-01-14)
+
+
+### Features
+
+* page tokens ([#127](https://github.com/blackbaud/skyux-design-tokens/issues/127)) ([2b34669](https://github.com/blackbaud/skyux-design-tokens/commit/2b34669645e3fae9e725c317157d376c28cf49ae))
+
 ## [0.0.42](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.41...0.0.42) (2024-11-19)
 
 
