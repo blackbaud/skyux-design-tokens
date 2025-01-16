@@ -884,6 +884,10 @@
           "$type": "sizing",
           "$value": "{bb.size.fixed.2000}"
         }
+      },
+      "resize_handle": {
+        "$type": "sizing",
+        "$value": "{bb.size.fixed.150}"
       }
     },
     "max_width": {
