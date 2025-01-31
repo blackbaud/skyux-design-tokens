@@ -1318,6 +1318,20 @@
           "$type": "sizing",
           "$value": "{modern.size.296}"
         }
+      },
+      "modal": {
+        "s": {
+          "$type": "sizing",
+          "$value": "{modern.size.320}"
+        },
+        "m": {
+          "$type": "sizing",
+          "$value": "{modern.size.640}"
+        },
+        "l": {
+          "$type": "sizing",
+          "$value": "{modern.size.960}"
+        }
       }
     },
     "max_width": {

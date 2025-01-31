@@ -884,6 +884,20 @@
           "$type": "sizing",
           "$value": "{bb.size.fixed.2000}"
         }
+      },
+      "modal": {
+        "s": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.2000}"
+        },
+        "m": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.4000}"
+        },
+        "l": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.6000}"
+        }
       }
     },
     "max_width": {
