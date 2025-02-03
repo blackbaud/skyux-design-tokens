@@ -463,6 +463,24 @@
         "xl": {
           "$type": "spacing",
           "$value": "{modern.space.xl}"
+        },
+        "fixed": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{modern.size.20}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{modern.size.30}"
+          }
         }
       },
       "bottomless": {
@@ -983,6 +1001,20 @@
             "$type": "spacing",
             "$value": "{modern.size.0}"
           }
+        },
+        "fixed": {
+          "top": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{modern.size.20}"
+            }
+          },
+          "bottom": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{modern.size.20}"
+            }
+          }
         }
       },
       "horizontal": {
@@ -1317,6 +1349,20 @@
         "smallest": {
           "$type": "sizing",
           "$value": "{modern.size.296}"
+        }
+      },
+      "modal": {
+        "s": {
+          "$type": "sizing",
+          "$value": "{modern.size.320}"
+        },
+        "m": {
+          "$type": "sizing",
+          "$value": "{modern.size.640}"
+        },
+        "l": {
+          "$type": "sizing",
+          "$value": "{modern.size.960}"
         }
       }
     },
