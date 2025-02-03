@@ -463,6 +463,24 @@
         "xl": {
           "$type": "spacing",
           "$value": "{modern.space.xl}"
+        },
+        "fixed": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{modern.size.15}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{modern.size.20}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{modern.size.30}"
+          }
         }
       },
       "bottomless": {
@@ -982,6 +1000,20 @@
           "xl": {
             "$type": "spacing",
             "$value": "{modern.size.0}"
+          }
+        },
+        "fixed": {
+          "top": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{modern.size.20}"
+            }
+          },
+          "bottom": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{modern.size.20}"
+            }
           }
         }
       },
