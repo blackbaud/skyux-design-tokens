@@ -183,7 +183,7 @@
       },
       "3": {
         "$type": "sizing",
-        "$value": "3px"
+        "$value": "3"
       },
       "4": {
         "$type": "sizing",
@@ -220,6 +220,10 @@
       "13": {
         "$type": "sizing",
         "$value": "13"
+      },
+      "14": {
+        "$type": "sizing",
+        "$value": "14"
       },
       "15": {
         "$type": "sizing",
