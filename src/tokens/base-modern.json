@@ -183,7 +183,7 @@
       },
       "3": {
         "$type": "sizing",
-        "$value": "3px"
+        "$value": "3"
       },
       "4": {
         "$type": "sizing",
@@ -264,6 +264,10 @@
       "64": {
         "$type": "sizing",
         "$value": "64"
+      },
+      "65": {
+        "$type": "sizing",
+        "$value": "65"
       },
       "80": {
         "$type": "sizing",
