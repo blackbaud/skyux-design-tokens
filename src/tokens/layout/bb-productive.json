@@ -29,6 +29,24 @@
         "xl": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.150}"
+        },
+        "fixed": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.50}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.75}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.100}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.150}"
+          }
         }
       },
       "bottomless": {
@@ -548,6 +566,20 @@
           "xl": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.0}"
+          }
+        },
+        "fixed": {
+          "top": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{bb.size.fixed.100}"
+            }
+          },
+          "bottom": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{bb.size.fixed.100}"
+            }
           }
         }
       },
