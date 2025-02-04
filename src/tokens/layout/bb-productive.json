@@ -774,6 +774,10 @@
         },
         "l": {
           "$type": "spacing",
+          "$value": "{bb.size.fluid.75}"
+        },
+        "xl": {
+          "$type": "spacing",
           "$value": "{bb.size.fluid.100}"
         }
       },

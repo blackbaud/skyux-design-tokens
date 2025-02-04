@@ -1209,6 +1209,10 @@
         "l": {
           "$type": "spacing",
           "$value": "{modern.size.15}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.size.20}"
         }
       },
       "text_action": {
