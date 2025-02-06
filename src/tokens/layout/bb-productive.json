@@ -63,15 +63,15 @@
         "bottom": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "l": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           }
         },
         "left": {
@@ -481,7 +481,7 @@
         "top": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
@@ -503,29 +503,29 @@
         "right": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "l": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           }
         },
         "bottom": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
@@ -547,23 +547,23 @@
         "left": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "l": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           }
         }
       },
@@ -571,29 +571,29 @@
         "top": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "l": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           }
         },
         "right": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
@@ -615,29 +615,29 @@
         "bottom": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "l": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "xl": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           }
         },
         "left": {
           "0": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.0}"
+            "$value": "{bb.size.0}"
           },
           "s": {
             "$type": "spacing",
@@ -803,7 +803,7 @@
     "inline": {
       "0": {
         "$type": "spacing",
-        "$value": "{bb.size.fluid.0}"
+        "$value": "{bb.size.0}"
       },
       "xxs": {
         "$type": "spacing",
@@ -837,7 +837,7 @@
     "stacked": {
       "0": {
         "$type": "spacing",
-        "$value": "{bb.size.fluid.0}"
+        "$value": "{bb.size.0}"
       },
       "xs": {
         "$type": "spacing",
