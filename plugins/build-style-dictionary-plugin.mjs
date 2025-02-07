@@ -96,10 +96,10 @@ export function buildStyleDictionaryPlugin() {
     },
   });
 
-  // Register custom tokens-studio transform group without the resolveMath transform to allow browsers to do the `calc`
+  // Register custom tokens-studio transform group without the resolveMath transform to allow browsers to do the `calc`.
+  // Include the standard css transforms and the custom name transform.
   StyleDictionary.registerTransformGroup({
     name: 'custom/tokens-studio',
-    // default value for platform is css, specifies which Tokens Studio transforms for which platform to grab
     transforms: [
       ...getTransforms({
         platform: 'css',
