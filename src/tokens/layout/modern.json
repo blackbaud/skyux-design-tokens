@@ -1451,6 +1451,10 @@
         "$type": "borderRadius",
         "$value": "{modern.border.radius.0}"
       },
+      "xs": {
+        "$type": "borderRadius",
+        "$value": "{modern.border.radius.0}"
+      },
       "s": {
         "$type": "borderRadius",
         "$value": "{modern.border.radius.md}"
