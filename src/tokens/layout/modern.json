@@ -1269,13 +1269,17 @@
       "$value": "{modern.size.30}"
     },
     "icon": {
-      "xxs": {
+      "xxxs": {
         "$type": "sizing",
         "$value": "{modern.size.5}"
       },
-      "xs": {
+      "xxs": {
         "$type": "sizing",
         "$value": "{modern.size.10}"
+      },
+      "xs": {
+        "$type": "sizing",
+        "$value": "{modern.size.12}"
       },
       "s": {
         "$type": "sizing",
@@ -1292,6 +1296,10 @@
       "xl": {
         "$type": "sizing",
         "$value": "{modern.size.32}"
+      },
+      "xxl": {
+        "$type": "sizing",
+        "$value": "{modern.size.48}"
       }
     },
     "illustration": {
