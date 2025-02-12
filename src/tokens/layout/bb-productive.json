@@ -481,6 +481,10 @@
         "l": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.25}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{bb.size.fluid.50}"
         }
       },
       "vertical": {
