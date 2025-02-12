@@ -304,6 +304,10 @@
       "file_drop": {
         "$type": "color",
         "$value": "{bb.color.gray.25}"
+      },
+      "thumbnail_matte": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
       }
     },
     "border": {

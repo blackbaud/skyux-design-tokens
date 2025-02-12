@@ -903,13 +903,19 @@
           "$value": "{modern.space.xl}"
         }
       },
-      "switch": {
-        "$type": "spacing",
-        "$value": "calc({size.switch} + {space.gap.label.s})"
-      },
-      "thumb": {
-        "$type": "spacing",
-        "$value": "{modern.size.1}"
+      "thumbnail_matte": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.size.2}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.size.3}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        }
       },
       "vertical": {
         "top": {
@@ -1058,6 +1064,14 @@
             "$value": "{modern.space.xl}"
           }
         }
+      },
+      "switch": {
+        "$type": "spacing",
+        "$value": "calc({size.switch} + {space.gap.label.s})"
+      },
+      "thumb": {
+        "$type": "spacing",
+        "$value": "{modern.size.1}"
       }
     },
     "gap": {
@@ -1331,6 +1345,20 @@
       }
     },
     "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{modern.size.100}"
+      }
+    },
+    "avatar": {
+      "s": {
+        "$type": "sizing",
+        "$value": "{modern.size.32}"
+      },
+      "m": {
+        "$type": "sizing",
+        "$value": "{modern.size.65}"
+      },
       "l": {
         "$type": "sizing",
         "$value": "{modern.size.100}"
