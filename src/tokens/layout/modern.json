@@ -1332,6 +1332,10 @@
           "$type": "sizing",
           "$value": "{modern.size.296}"
         }
+      },
+      "resize_handle": {
+        "$type": "sizing",
+        "$value": "{modern.size.14}"
       }
     },
     "max_width": {
