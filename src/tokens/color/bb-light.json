@@ -308,6 +308,10 @@
       "thumbnail_matte": {
         "$type": "color",
         "$value": "{bb.color.white}"
+      },
+      "icon_matte": {
+        "$type": "color",
+        "$value": "{bb.color.blue.100}"
       }
     },
     "border": {
