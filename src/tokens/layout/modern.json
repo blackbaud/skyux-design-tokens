@@ -78,20 +78,6 @@
           "$type": "fontSizes",
           "$value": "{modern.font.size.200}"
         }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontSizes",
-          "$value": "{font.size.display.4}"
-        },
-        "m": {
-          "$type": "fontSizes",
-          "$value": "{font.size.display.3}"
-        },
-        "l": {
-          "$type": "fontSizes",
-          "$value": "{font.size.display.1}"
-        }
       }
     },
     "line_height": {
@@ -171,20 +157,6 @@
         "val": {
           "$type": "lineHeights",
           "$value": "{modern.line_height.20}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
-        },
-        "m": {
-          "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
-        },
-        "l": {
-          "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
         }
       }
     },
@@ -269,20 +241,6 @@
         "label": {
           "$type": "fontWeights",
           "$value": "{modern.font.style.regular}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.bold}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "l": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
         }
       }
     },
@@ -385,20 +343,6 @@
       },
       "input": {
         "label": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.bold}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "l": {
           "$type": "fontWeights",
           "$value": "{modern.font.weight.regular}"
         }
