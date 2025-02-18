@@ -915,6 +915,10 @@
         "l": {
           "$type": "spacing",
           "$value": "{modern.size.5}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.size.9}"
         }
       },
       "vertical": {
