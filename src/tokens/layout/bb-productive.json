@@ -1571,6 +1571,10 @@
         "$type": "borderRadius",
         "$value": "{bb.border.radius.0}"
       },
+      "xs": {
+        "$type": "borderRadius",
+        "$value": "{bb.border.radius.012}"
+      },
       "s": {
         "$type": "borderRadius",
         "$value": "{bb.border.radius.025}"
