@@ -1,7 +1,7 @@
 import { sync } from 'glob';
 import path from 'path';
 import StyleDictionary from 'style-dictionary';
-import { expandTypesMap, register } from '@tokens-studio/sd-transforms';
+import { getTransforms, register } from '@tokens-studio/sd-transforms';
 import { tokenSets } from '../src/tokens/token-sets.mjs';
 
 async function generateDictionaryFiles(tokenSets) {
@@ -37,8 +37,7 @@ const DEFAULT_SD_CONFIG = {
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
-      transformGroup: 'tokens-studio',
-      transforms: ['name/prefixed-kebab'],
+      transformGroup: 'custom/tokens-studio',
       options: {
         outputReferences: true,
         showFileHeader: false,
@@ -87,6 +86,7 @@ function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
 
 export function buildStyleDictionaryPlugin() {
   register(StyleDictionary);
+
   StyleDictionary.registerTransform({
     name: 'name/prefixed-kebab',
     transitive: true,
@@ -94,6 +94,19 @@ export function buildStyleDictionaryPlugin() {
     transform: (token) => {
       return `${token.isSource ? '' : 'sky-'}${token.path.join('-')}`;
     },
+  });
+
+  // Register custom tokens-studio transform group without the resolveMath transform to allow browsers to do the `calc`.
+  // Include the standard css transforms and the custom name transform.
+  StyleDictionary.registerTransformGroup({
+    name: 'custom/tokens-studio',
+    transforms: [
+      ...getTransforms({
+        platform: 'css',
+      }).filter((transform) => transform !== 'ts/resolveMath'),
+      ...StyleDictionary.hooks.transformGroups['css'],
+      'name/prefixed-kebab',
+    ],
   });
 
   return {
