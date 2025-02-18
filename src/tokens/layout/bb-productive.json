@@ -849,13 +849,17 @@
       "$value": "{bb.size.fluid.200}"
     },
     "icon": {
-      "xxs": {
+      "xxxs": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.25}"
       },
-      "xs": {
+      "xxs": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.50}"
+      },
+      "xs": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.75}"
       },
       "s": {
         "$type": "sizing",
@@ -872,6 +876,10 @@
       "xl": {
         "$type": "sizing",
         "$value": "{bb.size.fluid.200}"
+      },
+      "xxl": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.300}"
       }
     },
     "illustration": {
