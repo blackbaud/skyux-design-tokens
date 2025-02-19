@@ -2,6 +2,7 @@
   "tokenSetOrder": [
     "base-blackbaud",
     "base-modern",
+    "base-jg",
     "color/bb-light",
     "color/bb-dark",
     "color/modern",
