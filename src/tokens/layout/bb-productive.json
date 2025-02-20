@@ -1140,35 +1140,6 @@
           "lineHeight": "{font.line_height.input.val}"
         }
       }
-    },
-    "metric": {
-      "s": {
-        "$type": "typography",
-        "$value": {
-          "fontFamily": "{font.family.primary}",
-          "lineHeight": "{font.line_height.metric.s}",
-          "fontWeight": "{font.style.metric.s}",
-          "fontSize": "{font.size.metric.s}"
-        }
-      },
-      "m": {
-        "$type": "typography",
-        "$value": {
-          "fontFamily": "{font.family.primary}",
-          "lineHeight": "{font.line_height.metric.m}",
-          "fontWeight": "{font.style.metric.m}",
-          "fontSize": "{font.size.metric.m}"
-        }
-      },
-      "l": {
-        "$type": "typography",
-        "$value": {
-          "fontFamily": "{font.family.primary}",
-          "lineHeight": "{font.line_height.metric.l}",
-          "fontWeight": "{font.style.metric.l}",
-          "fontSize": "{font.size.metric.l}"
-        }
-      }
     }
   },
   "font": {
@@ -1260,20 +1231,6 @@
           "$type": "fontSizes",
           "$value": "{bb.font.size.200}"
         }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
-        },
-        "m": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.400}"
-        },
-        "l": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.700}"
-        }
       }
     },
     "style": {
@@ -1358,20 +1315,6 @@
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{bb.font.style.semibold}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
-        },
-        "l": {
-          "$type": "fontWeights",
-          "$value": "{bb.font.style.light}"
-        }
       }
     },
     "line_height": {
@@ -1451,20 +1394,6 @@
         "val": {
           "$type": "lineHeights",
           "$value": "{bb.line_height.200}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
-        },
-        "m": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.400}"
-        },
-        "l": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.700}"
         }
       }
     },
@@ -1559,20 +1488,6 @@
         "label": {
           "$type": "fontWeights",
           "$value": "{bb.font.weight.regular}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{bb.font.weight.semibold}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
-        },
-        "l": {
-          "$type": "fontWeights",
-          "$value": "{bb.font.weight.light}"
         }
       }
     },
