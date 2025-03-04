@@ -1,0 +1,48 @@
+{
+  "sky": {
+    "abstract": {
+      "color": {
+        "primary_interaction": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "primary_text": {
+          "$type": "color",
+          "$value": "{bb.color.gray.900}"
+        },
+        "secondary_text": {
+          "$type": "color",
+          "$value": "{bb.color.gray.600}"
+        },
+        "heading_text": {
+          "$type": "color",
+          "$value": "{bb.color.blue.800}"
+        },
+        "dark_border": {
+          "$type": "color",
+          "$value": "{bb.color.gray.400}"
+        },
+        "light_border": {
+          "$type": "color",
+          "$value": "{bb.color.gray.100}"
+        }
+      },
+      "radius": {
+        "base": {
+          "$type": "borderRadius",
+          "$value": "{bb.border.radius.025}"
+        },
+        "calc": {
+          "small": {
+            "$type": "borderRadius",
+            "$value": "{bb.border.radius.025} /2"
+          },
+          "large": {
+            "$type": "borderRadius",
+            "$value": "{bb.border.radius.025} *2"
+          }
+        }
+      }
+    }
+  }
+}
