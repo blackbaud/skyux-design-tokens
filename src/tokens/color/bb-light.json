@@ -23,7 +23,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.blue.800}"
+        "$value": "{sky.abstract.color.heading_text}"
       },
       "link_highlighted": {
         "$type": "color",
