@@ -3,15 +3,15 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.gray.900}"
+        "$value": "{sky.abstract.color.primary_text}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.gray.600}"
+        "$value": "{sky.abstract.color.secondary_text}"
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{sky.abstract.color.primary_interaction}"
       },
       "danger": {
         "$type": "color",
@@ -33,11 +33,11 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.gray.900}"
+        "$value": "{sky.abstract.color.primary_text}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.gray.600}"
+        "$value": "{sky.abstract.color.secondary_text}"
       },
       "danger": {
         "$type": "color",
@@ -53,7 +53,7 @@
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{sky.abstract.color.primary_interaction}"
       },
       "inverse": {
         "$type": "color",
@@ -61,7 +61,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{sky.abstract.color.primary_interaction}"
       }
     },
     "background": {
@@ -107,19 +107,19 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "disabled": {
             "$type": "color",
@@ -238,7 +238,7 @@
       "selected": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{sky.abstract.color.primary_interaction}"
         },
         "soft": {
           "$type": "color",
@@ -317,7 +317,7 @@
     "border": {
       "selected": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{sky.abstract.color.primary_interaction}"
       },
       "selected_soft": {
         "$type": "color",
@@ -337,15 +337,15 @@
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{sky.abstract.color.primary_interaction}"
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.gray.100}"
+        "$value": "{sky.abstract.color.light_border}"
       },
       "elevation": {
         "$type": "color",
-        "$value": "{bb.color.gray.100}"
+        "$value": "{sky.abstract.color.light_border}"
       },
       "text_highlight": {
         "$type": "color",
@@ -355,7 +355,7 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "hover": {
             "$type": "color",
@@ -371,29 +371,29 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{sky.abstract.color.light_border}"
           }
         },
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{sky.abstract.color.light_border}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{sky.abstract.color.light_border}"
           }
         },
         "tertiary": {
@@ -403,19 +403,19 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{sky.abstract.color.light_border}"
           }
         },
         "danger": {
@@ -437,58 +437,58 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{sky.abstract.color.light_border}"
           }
         },
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.400}"
+            "$value": "{sky.abstract.color.dark_border}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{sky.abstract.color.primary_interaction}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.400}"
+            "$value": "{sky.abstract.color.dark_border}"
           }
         }
       },
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{sky.abstract.color.light_border}"
         }
       },
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.400}"
+          "$value": "{sky.abstract.color.dark_border}"
         },
         "hover": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{sky.abstract.color.primary_interaction}"
         },
         "active": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{sky.abstract.color.primary_interaction}"
         },
         "focus": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{sky.abstract.color.primary_interaction}"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.400}"
+          "$value": "{sky.abstract.color.dark_border}"
         },
         "error": {
           "$type": "color",
@@ -498,15 +498,15 @@
       "separator": {
         "dark": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{sky.abstract.color.dark_border}"
         },
         "light": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
+          "$value": "{sky.abstract.color.light_border}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
+          "$value": "{sky.abstract.color.light_border}"
         }
       }
     }
