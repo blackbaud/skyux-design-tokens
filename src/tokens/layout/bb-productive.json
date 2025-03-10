@@ -865,6 +865,10 @@
       },
       "xxl": {
         "$type": "sizing",
+        "$value": "{bb.size.fluid.250}"
+      },
+      "xxxl": {
+        "$type": "sizing",
         "$value": "{bb.size.fluid.300}"
       }
     },

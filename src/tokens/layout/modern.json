@@ -1299,6 +1299,10 @@
       },
       "xxl": {
         "$type": "sizing",
+        "$value": "{modern.size.40}"
+      },
+      "xxxl": {
+        "$type": "sizing",
         "$value": "{modern.size.48}"
       }
     },
