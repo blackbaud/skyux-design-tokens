@@ -27,7 +27,7 @@
       },
       "link_highlight": {
         "$type": "color",
-        "$value": "{modern.color.blue.80}"
+        "$value": "{jg.color.blue.600}"
       }
     },
     "icon": {
@@ -45,7 +45,7 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{jg.color.yellow.500}"
+        "$value": "{jg.color.orange.500}"
       },
       "success": {
         "$type": "color",
@@ -53,7 +53,7 @@
       },
       "info": {
         "$type": "color",
-        "$value": "{jg.color.blue.600}"
+        "$value": "{jg.color.blue.500}"
       },
       "inverse": {
         "$type": "color",
@@ -92,7 +92,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{jg.color.yellow.300}"
+          "$value": "{jg.color.orange.300}"
         },
         "success": {
           "$type": "color",
@@ -123,7 +123,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{modern.color.gray.07}"
+            "$value": "{jg.color.neutral.500}"
           }
         },
         "secondary": {
@@ -145,7 +145,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{modern.color.gray.07}"
+            "$value": "{jg.color.neutral.500}"
           }
         },
         "tertiary": {
@@ -155,11 +155,11 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.transparent}"
+            "$value": "{jg.color.blue.300}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.transparent}"
+            "$value": "{jg.color.blue.400}"
           },
           "focus": {
             "$type": "color",
@@ -167,62 +167,62 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{modern.color.gray.07}"
+            "$value": "{jg.color.neutral.500}"
           }
         },
         "danger": {
           "base": {
             "$type": "color",
-            "$value": "{modern.color.red.70}"
+            "$value": "{jg.color.red.500}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.red.70}"
+            "$value": "{jg.color.red.600}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.red.70}"
+            "$value": "{jg.color.red.700}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.red.70}"
+            "$value": "{jg.color.red.500}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{modern.color.gray.07}"
+            "$value": "{jg.color.neutral.500}"
           }
         },
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{modern.color.transparent}"
+            "$value": "{jg.color.neutral.300}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.transparent}"
+            "$value": "{jg.color.neutral.300}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.transparent}"
+            "$value": "{jg.color.neutral.300}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.transparent}"
+            "$value": "{jg.color.neutral.300}"
           },
           "disabled": {
             "$type": "color",
-            "$value": "{modern.color.gray.07}"
+            "$value": "{jg.color.neutral.500}"
           }
         }
       },
       "selected": {
         "heavy": {
           "$type": "color",
-          "$value": "{modern.color.blue.05}"
+          "$value": "{jg.color.blue.500}"
         },
         "soft": {
           "$type": "color",
-          "$value": "{modern.color.blue.05}"
+          "$value": "{jg.color.blue.300}"
         },
         "danger": {
           "$type": "color",
@@ -240,21 +240,21 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{modern.color.transparent}"
+          "$value": "{jg.color.neutral.300}"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{modern.color.gray.07}"
+          "$value": "{jg.color.neutral.500}"
         }
       },
       "thumb": {
         "base": {
           "$type": "color",
-          "$value": "{modern.color.white}"
+          "$value": "{jg.color.white}"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{modern.color.gray.07}"
+          "$value": "{jg.color.neutral.500}"
         }
       },
       "nav": {
@@ -317,7 +317,7 @@
     "border": {
       "selected": {
         "$type": "color",
-        "$value": "{modern.color.blue.74}"
+        "$value": "{jg.color.blue.500}"
       },
       "selected_soft": {
         "$type": "color",
@@ -325,19 +325,19 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{modern.color.red.50}"
+        "$value": "{jg.color.red.500}"
       },
       "warning": {
         "$type": "color",
-        "$value": "{modern.color.yellow.50}"
+        "$value": "{jg.color.orange.500}"
       },
       "success": {
         "$type": "color",
-        "$value": "{modern.color.green.50}"
+        "$value": "{jg.color.green.500}"
       },
       "info": {
         "$type": "color",
-        "$value": "{modern.color.blue.50}"
+        "$value": "{jg.color.blue.500}"
       },
       "divider": {
         "$type": "color",
@@ -354,7 +354,7 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{modern.color.gray.15}"
+          "$value": "{jg.color.neutral.600}"
         }
       },
       "action": {
@@ -383,19 +383,19 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{modern.color.gray.15}"
+            "$value": "{jg.color.gray.300}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.gray.300}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.gray.600}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.gray.600}"
           },
           "disabled": {
             "$type": "color",
@@ -409,15 +409,15 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{modern.color.transparent}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{modern.color.transparent}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.blue.500}"
           },
           "disabled": {
             "$type": "color",
@@ -427,19 +427,19 @@
         "danger": {
           "base": {
             "$type": "color",
-            "$value": "{modern.color.red.70}"
+            "$value": "{modern.color.transparent}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.red.30}"
+            "$value": "{modern.color.transparent}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.red.30}"
+            "$value": "{modern.color.transparent}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.red.30}"
+            "$value": "{jg.color.red.700}"
           },
           "disabled": {
             "$type": "color",
@@ -449,19 +449,19 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{modern.color.gray.50}"
+            "$value": "{jg.color.neutral.600}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.neutral.600}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.neutral.600}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.blue.74}"
+            "$value": "{jg.color.blue.500}"
           },
           "disabled": {
             "$type": "color",
@@ -472,19 +472,19 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{modern.color.gray.50}"
+          "$value": "{jg.color.neutral.600}"
         },
         "hover": {
           "$type": "color",
-          "$value": "{modern.color.blue.74}"
+          "$value": "{jg.color.neutral.600}"
         },
         "active": {
           "$type": "color",
-          "$value": "{modern.color.blue.74}"
+          "$value": "{jg.color.neutral.600}"
         },
         "focus": {
           "$type": "color",
-          "$value": "{modern.color.blue.74}"
+          "$value": "{jg.color.blue.500}"
         },
         "disabled": {
           "$type": "color",
@@ -492,7 +492,7 @@
         },
         "error": {
           "$type": "color",
-          "$value": "{modern.color.red.50}"
+          "$value": "{jg.color.red.500}"
         }
       },
       "separator": {
