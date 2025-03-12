@@ -269,6 +269,10 @@
         "$type": "color",
         "$value": "rgba(37,43,51,.5)"
       },
+      "blocking": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.7)"
+      },
       "gray": {
         "25": {
           "$type": "color",
@@ -837,6 +841,12 @@
           "$type": "sizing",
           "$value": "50ch, 40vw"
         }
+      }
+    },
+    "opacity": {
+      "600": {
+        "$type": "opacity",
+        "$value": ".6"
       }
     }
   }

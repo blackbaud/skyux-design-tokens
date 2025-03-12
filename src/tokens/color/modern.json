@@ -73,6 +73,10 @@
         "$type": "color",
         "$value": "{modern.color.scrim}"
       },
+      "blocking": {
+        "$type": "color",
+        "$value": "{modern.color.blocking}"
+      },
       "text_highlight": {
         "$type": "color",
         "$value": "{modern.color.yellow.40}"
@@ -547,6 +551,12 @@
         "$type": "boxShadow",
         "$value": "{modern.shadow.size.24}"
       }
+    }
+  },
+  "opacity": {
+    "wait": {
+      "$type": "opacity",
+      "$value": "{modern.opacity.600}"
     }
   }
 }
