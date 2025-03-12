@@ -17,6 +17,7 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "color/bb-light": "enabled",
+      "jg-abstract": "disabled",
       "color/jg-light": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
@@ -84,6 +85,7 @@
       "base-blackbaud": "source",
       "color/bb-light": "enabled",
       "color/bb-dark": "enabled",
+      "jg-abstract": "disabled",
       "color/jg-light": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
@@ -177,6 +179,7 @@
       "color/modern": "enabled",
       "base-blackbaud": "source",
       "color/bb-light": "enabled",
+      "jg-abstract": "disabled",
       "color/jg-light": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
@@ -243,6 +246,7 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "layout/bb-productive": "enabled",
+      "jg-abstract": "disabled",
       "color/jg-light": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
@@ -378,6 +382,7 @@
       "base-blackbaud": "source",
       "layout/bb-productive": "enabled",
       "layout/bb-compact": "enabled",
+      "jg-abstract": "disabled",
       "color/jg-light": "disabled"
     },
     "$figmaVariableReferences": {
@@ -527,6 +532,7 @@
       "layout/modern": "enabled",
       "base-blackbaud": "source",
       "layout/bb-productive": "enabled",
+      "jg-abstract": "disabled",
       "color/jg-light": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",

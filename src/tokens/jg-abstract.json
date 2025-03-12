@@ -1,0 +1,48 @@
+{
+  "jg": {
+    "ab": {
+      "color": {
+        "interaction": {
+          "base": {
+            "$type": "color",
+            "$value": "{jg.color.blue.500}"
+          },
+          "dark": {
+            "$type": "color",
+            "$value": "{jg.color.blue.600}"
+          },
+          "darker": {
+            "$type": "color",
+            "$value": "{jg.color.blue.700}"
+          }
+        },
+        "neutral": {
+          "lighter": {
+            "$type": "color",
+            "$value": "{jg.color.neutral.300}"
+          },
+          "light": {
+            "$type": "color",
+            "$value": "{jg.color.neutral.400}"
+          }
+        },
+        "text": {
+          "dark": {
+            "$type": "color",
+            "$value": "{jg.color.gray.600}"
+          }
+        },
+        "border": {
+          "high_contrast": {
+            "$type": "color",
+            "$value": "{jg.color.gray.300}"
+          },
+          "base": {
+            "$type": "color",
+            "$value": "{jg.color.neutral.600}"
+          }
+        }
+      }
+    }
+  }
+}
