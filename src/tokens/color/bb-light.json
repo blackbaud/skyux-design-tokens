@@ -73,6 +73,10 @@
         "$type": "color",
         "$value": "{bb.color.scrim}"
       },
+      "blocking": {
+        "$type": "color",
+        "$value": "{bb.color.blocking}"
+      },
       "text_highlight": {
         "$type": "color",
         "$value": "{bb.color.yellow.400}"
@@ -550,10 +554,6 @@
     }
   },
   "opacity": {
-    "loading": {
-      "$type": "opacity",
-      "$value": "{bb.opacity.700}"
-    },
     "wait": {
       "$type": "opacity",
       "$value": "{bb.opacity.600}"
