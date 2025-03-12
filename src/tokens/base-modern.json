@@ -567,6 +567,16 @@
           "$value": "dotted"
         }
       }
+    },
+    "opacity": {
+      "600": {
+        "$type": "opacity",
+        "$value": ".6"
+      },
+      "700": {
+        "$type": "opacity",
+        "$value": ".7"
+      }
     }
   }
 }

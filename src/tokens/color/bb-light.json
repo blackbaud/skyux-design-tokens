@@ -548,5 +548,15 @@
         "$value": "{bb.shadow.gray.24}"
       }
     }
+  },
+  "opacity": {
+    "loading": {
+      "$type": "opacity",
+      "$value": "{bb.opacity.700}"
+    },
+    "wait": {
+      "$type": "opacity",
+      "$value": "{bb.opacity.600}"
+    }
   }
 }
