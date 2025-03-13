@@ -67,7 +67,7 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{modern.color.gray.005}"
+        "$value": "{jg.color.white}"
       },
       "scrim": {
         "$type": "color",
@@ -226,15 +226,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{modern.color.red.30}"
+          "$value": "{jg.color.red.300}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{modern.color.yellow.30}"
+          "$value": "{jg.color.orange.300}"
         },
         "success": {
           "$type": "color",
-          "$value": "{modern.color.green.30}"
+          "$value": "{jg.color.green.300}"
         }
       },
       "input": {
