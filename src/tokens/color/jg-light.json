@@ -7,7 +7,7 @@
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{jg.color.gray.500}"
+        "$value": "{jg.color.gray.400}"
       },
       "action": {
         "$type": "color",
@@ -37,7 +37,7 @@
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{jg.color.gray.500}"
+        "$value": "{jg.color.gray.300}"
       },
       "danger": {
         "$type": "color",
@@ -321,7 +321,7 @@
       },
       "selected_soft": {
         "$type": "color",
-        "$value": "{modern.color.blue.30}"
+        "$value": "{jg.color.blue.300}"
       },
       "danger": {
         "$type": "color",
@@ -341,15 +341,15 @@
       },
       "divider": {
         "$type": "color",
-        "$value": "{modern.color.gray.15}"
+        "$value": "{jg.color.neutral.600}"
       },
       "elevation": {
         "$type": "color",
-        "$value": "{modern.color.gray.15}"
+        "$value": "{jg.color.neutral.600}"
       },
       "text_highlight": {
         "$type": "color",
-        "$value": "{modern.color.yellow.80}"
+        "$value": "{jg.color.yellow.700}"
       },
       "container": {
         "base": {
@@ -498,15 +498,15 @@
       "separator": {
         "dark": {
           "$type": "color",
-          "$value": "{modern.color.gray.20}"
+          "$value": "{jg.color.neutral.600}"
         },
         "light": {
           "$type": "color",
-          "$value": "{modern.color.gray.10}"
+          "$value": "{jg.color.neutral.400}"
         },
         "row": {
           "$type": "color",
-          "$value": "{modern.color.gray.20}"
+          "$value": "{jg.color.neutral.600}"
         }
       }
     }
