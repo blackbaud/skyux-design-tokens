@@ -176,15 +176,15 @@
       "body": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "m": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "l": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.light}"
+          "$value": "{jg.font.weight.regular}"
         }
       },
       "display": {
@@ -208,19 +208,19 @@
       "heading": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.light}"
+          "$value": "{jg.font.weight.regular}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.semibold}"
+          "$value": "{jg.font.weight.regular}"
         },
         "5": {
           "$type": "fontWeights",
@@ -247,7 +247,7 @@
     "family": {
       "primary": {
         "$type": "fontFamilies",
-        "$value": "{modern.font.blkb_sans.family}"
+        "$value": "{jg.font.roboto.family}"
       },
       "monospaced": {
         "$type": "fontFamilies",
@@ -271,24 +271,24 @@
     "weight": {
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.weight.bold}"
+        "$value": "{jg.font.weight.medium}"
       },
       "data_label": {
         "$type": "fontWeights",
-        "$value": "{modern.font.weight.regular}"
+        "$value": "{jg.font.weight.regular}"
       },
       "body": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "m": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "l": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.light}"
+          "$value": "{jg.font.weight.regular}"
         }
       },
       "display": {
@@ -312,23 +312,23 @@
       "heading": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.light}"
+          "$value": "{jg.font.weight.regular}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.semibold}"
+          "$value": "{jg.font.weight.regular}"
         },
         "5": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.semibold}"
+          "$value": "{jg.font.weight.regular}"
         }
       },
       "hint": {
