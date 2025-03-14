@@ -62,21 +62,21 @@
       "hint": {
         "s": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.200}"
+          "$value": "{jg.font.size.sm}"
         },
         "m": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.200}"
+          "$value": "{jg.font.size.base}"
         }
       },
       "input": {
         "label": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.125}"
+          "$value": "{jg.font.size.sm}"
         },
         "val": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.200}"
+          "$value": "{jg.font.size.base}"
         }
       }
     },
