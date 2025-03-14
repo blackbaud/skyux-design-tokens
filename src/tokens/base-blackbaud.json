@@ -174,6 +174,10 @@
           "$type": "borderRadius",
           "$value": ".25rem"
         },
+        "012": {
+          "$type": "borderRadius",
+          "$value": ".125rem"
+        },
         "050": {
           "$type": "borderRadius",
           "$value": ".5rem"
@@ -392,7 +396,7 @@
         },
         "700": {
           "$type": "color",
-          "$value": "#0AAE5C"
+          "$value": "#0AA959"
         },
         "800": {
           "$type": "color",
@@ -697,6 +701,10 @@
           "$type": "sizing",
           "$value": "0.125rem"
         },
+        "18": {
+          "$type": "sizing",
+          "$value": "0.1875rem"
+        },
         "25": {
           "$type": "sizing",
           "$value": "0.25rem"
@@ -745,6 +753,10 @@
           "$type": "sizing",
           "$value": "3rem"
         },
+        "350": {
+          "$type": "sizing",
+          "$value": "3.5rem"
+        },
         "400": {
           "$type": "sizing",
           "$value": "4rem"
@@ -752,6 +764,10 @@
         "500": {
           "$type": "sizing",
           "$value": "5rem"
+        },
+        "550": {
+          "$type": "sizing",
+          "$value": "5.5rem"
         },
         "600": {
           "$type": "sizing",

@@ -78,20 +78,6 @@
           "$type": "fontSizes",
           "$value": "{modern.font.size.200}"
         }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontSizes",
-          "$value": "{font.size.display.4}"
-        },
-        "m": {
-          "$type": "fontSizes",
-          "$value": "{font.size.display.3}"
-        },
-        "l": {
-          "$type": "fontSizes",
-          "$value": "{font.size.display.1}"
-        }
       }
     },
     "line_height": {
@@ -171,20 +157,6 @@
         "val": {
           "$type": "lineHeights",
           "$value": "{modern.line_height.20}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
-        },
-        "m": {
-          "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
-        },
-        "l": {
-          "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
         }
       }
     },
@@ -269,20 +241,6 @@
         "label": {
           "$type": "fontWeights",
           "$value": "{modern.font.style.regular}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.bold}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "l": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
         }
       }
     },
@@ -385,20 +343,6 @@
       },
       "input": {
         "label": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        }
-      },
-      "metric": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.bold}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "l": {
           "$type": "fontWeights",
           "$value": "{modern.font.weight.regular}"
         }
@@ -903,13 +847,23 @@
           "$value": "{modern.space.xl}"
         }
       },
-      "switch": {
-        "$type": "spacing",
-        "$value": "calc({size.switch} + {space.gap.label.s})"
-      },
-      "thumb": {
-        "$type": "spacing",
-        "$value": "{modern.size.1}"
+      "thumbnail_matte": {
+        "s": {
+          "$type": "spacing",
+          "$value": "{modern.size.2}"
+        },
+        "m": {
+          "$type": "spacing",
+          "$value": "{modern.size.3}"
+        },
+        "l": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
+        "xl": {
+          "$type": "spacing",
+          "$value": "{modern.size.9}"
+        }
       },
       "vertical": {
         "top": {
@@ -1058,6 +1012,14 @@
             "$value": "{modern.space.xl}"
           }
         }
+      },
+      "switch": {
+        "$type": "spacing",
+        "$value": "calc({size.switch} + {space.gap.label.s})"
+      },
+      "thumb": {
+        "$type": "spacing",
+        "$value": "{modern.size.1}"
       }
     },
     "gap": {
@@ -1347,6 +1309,20 @@
         "$type": "sizing",
         "$value": "{modern.size.100}"
       }
+    },
+    "avatar": {
+      "s": {
+        "$type": "sizing",
+        "$value": "{modern.size.32}"
+      },
+      "m": {
+        "$type": "sizing",
+        "$value": "{modern.size.65}"
+      },
+      "l": {
+        "$type": "sizing",
+        "$value": "{modern.size.100}"
+      }
     }
   },
   "border": {
@@ -1460,6 +1436,10 @@
     },
     "radius": {
       "0": {
+        "$type": "borderRadius",
+        "$value": "{modern.border.radius.0}"
+      },
+      "xs": {
         "$type": "borderRadius",
         "$value": "{modern.border.radius.0}"
       },

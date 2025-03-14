@@ -2,6 +2,15 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.45](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.44...0.0.45) (2025-02-18)
+
+
+### Features
+
+* don't resolve math in token generation ([#134](https://github.com/blackbaud/skyux-design-tokens/issues/134)) ([0c9a31d](https://github.com/blackbaud/skyux-design-tokens/commit/0c9a31d1ee8b49e19b252611dafb95abf5ae3ff8))
+* new tokens for avatar ([#130](https://github.com/blackbaud/skyux-design-tokens/issues/130)) ([7b82b08](https://github.com/blackbaud/skyux-design-tokens/commit/7b82b08bbe5cb0e12f328b78d2ec54afe137073d))
+* new tokens for tree view including xs border radius ([#136](https://github.com/blackbaud/skyux-design-tokens/issues/136)) ([2e186b8](https://github.com/blackbaud/skyux-design-tokens/commit/2e186b87de931d6bff418199fb673033478bd026))
+
 ## [0.0.44](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.43...0.0.44) (2025-02-03)
 
 

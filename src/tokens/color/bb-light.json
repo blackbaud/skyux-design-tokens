@@ -49,7 +49,7 @@
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.600}"
+        "$value": "{bb.color.green.700}"
       },
       "info": {
         "$type": "color",
@@ -304,6 +304,14 @@
       "file_drop": {
         "$type": "color",
         "$value": "{bb.color.gray.25}"
+      },
+      "thumbnail_matte": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
+      },
+      "icon_matte": {
+        "$type": "color",
+        "$value": "{bb.color.blue.100}"
       }
     },
     "border": {
@@ -325,7 +333,7 @@
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.600}"
+        "$value": "{bb.color.green.700}"
       },
       "info": {
         "$type": "color",
