@@ -352,45 +352,53 @@
     },
     "font": {
       "size": {
-        "10": {
+        "xs": {
           "$type": "fontSizes",
-          "$value": "6"
+          "$value": ".75rem"
         },
-        "01": {
+        "sm": {
           "$type": "fontSizes",
-          "$value": "1.4"
+          "$value": ".875rem"
         },
-        "02": {
+        "base": {
           "$type": "fontSizes",
-          "$value": "1.6"
+          "$value": "1rem"
         },
-        "03": {
+        "lg": {
           "$type": "fontSizes",
-          "$value": "1.8"
+          "$value": "1.125rem"
         },
-        "04": {
+        "xl": {
           "$type": "fontSizes",
-          "$value": "2"
+          "$value": "1.25rem"
         },
-        "05": {
+        "2xl": {
           "$type": "fontSizes",
-          "$value": "2.4"
+          "$value": "1.5rem"
         },
-        "06": {
+        "3xl": {
           "$type": "fontSizes",
-          "$value": "2.8"
+          "$value": "1.75rem"
         },
-        "07": {
+        "4xl": {
           "$type": "fontSizes",
-          "$value": "3.2"
+          "$value": "2rem"
         },
-        "08": {
+        "5xl": {
           "$type": "fontSizes",
-          "$value": "4"
+          "$value": "2.25rem"
         },
-        "09": {
+        "6xl": {
           "$type": "fontSizes",
-          "$value": "4.8"
+          "$value": "2.5rem"
+        },
+        "7xl": {
+          "$type": "fontSizes",
+          "$value": "3rem"
+        },
+        "8xl": {
+          "$type": "fontSizes",
+          "$value": "4rem"
         }
       },
       "weight": {

@@ -3,20 +3,20 @@
     "size": {
       "data_label": {
         "$type": "fontSizes",
-        "$value": "{modern.font.size.200}"
+        "$value": "{jg.font.size.base}"
       },
       "body": {
         "s": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.125}"
+          "$value": "{jg.font.size.sm}"
         },
         "m": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.200}"
+          "$value": "{jg.font.size.base}"
         },
         "l": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.250}"
+          "$value": "{jg.font.size.lg}"
         }
       },
       "display": {
