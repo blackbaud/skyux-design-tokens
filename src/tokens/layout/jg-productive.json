@@ -1425,31 +1425,31 @@
     "radius": {
       "0": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.0}"
+        "$value": "{jg.border.radius.0}"
       },
       "xs": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.0}"
+        "$value": "{jg.border.radius.012}"
       },
       "s": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.md}"
+        "$value": "{jg.border.radius.025}"
       },
       "m": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.md}"
+        "$value": "{jg.border.radius.050}"
       },
       "pill": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.pill}"
+        "$value": "{jg.border.radius.pill}"
       },
       "thumb": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.round}"
+        "$value": "{jg.border.radius.round}"
       },
       "round": {
         "$type": "borderRadius",
-        "$value": "{modern.border.radius.round}"
+        "$value": "{jg.border.radius.round}"
       }
     },
     "style": {

@@ -199,54 +199,154 @@
       }
     },
     "size": {
-      "spacing": {
-        "10": {
+      "fluid": {
+        "0": {
           "$type": "sizing",
-          "$value": "96"
+          "$value": "0"
         },
-        "11": {
+        "6": {
           "$type": "sizing",
-          "$value": "120"
+          "$value": "0.0625rem"
         },
         "12": {
           "$type": "sizing",
-          "$value": "160"
+          "$value": "0.125rem"
         },
-        "01": {
+        "18": {
+          "$type": "sizing",
+          "$value": "0.1875rem"
+        },
+        "25": {
+          "$type": "sizing",
+          "$value": "0.25rem"
+        },
+        "37": {
+          "$type": "sizing",
+          "$value": "0.375rem"
+        },
+        "50": {
+          "$type": "sizing",
+          "$value": "0.5rem"
+        },
+        "62": {
+          "$type": "sizing",
+          "$value": "0.625rem"
+        },
+        "75": {
+          "$type": "sizing",
+          "$value": "0.75rem"
+        },
+        "100": {
+          "$type": "sizing",
+          "$value": "1rem"
+        },
+        "125": {
+          "$type": "sizing",
+          "$value": "1.25rem"
+        },
+        "150": {
+          "$type": "sizing",
+          "$value": "1.5rem"
+        },
+        "200": {
+          "$type": "sizing",
+          "$value": "2rem"
+        },
+        "225": {
+          "$type": "sizing",
+          "$value": "2.25rem"
+        },
+        "250": {
+          "$type": "sizing",
+          "$value": "2.5rem"
+        },
+        "300": {
+          "$type": "sizing",
+          "$value": "3rem"
+        },
+        "350": {
+          "$type": "sizing",
+          "$value": "3.5rem"
+        },
+        "400": {
+          "$type": "sizing",
+          "$value": "4rem"
+        },
+        "500": {
+          "$type": "sizing",
+          "$value": "5rem"
+        },
+        "550": {
+          "$type": "sizing",
+          "$value": "5.5rem"
+        },
+        "600": {
+          "$type": "sizing",
+          "$value": "6rem"
+        }
+      },
+      "fixed": {
+        "6": {
+          "$type": "sizing",
+          "$value": "1"
+        },
+        "12": {
+          "$type": "sizing",
+          "$value": "2"
+        },
+        "25": {
           "$type": "sizing",
           "$value": "4"
         },
-        "02": {
+        "37": {
+          "$type": "sizing",
+          "$value": "6"
+        },
+        "50": {
           "$type": "sizing",
           "$value": "8"
         },
-        "03": {
+        "75": {
           "$type": "sizing",
           "$value": "12"
         },
-        "04": {
+        "100": {
           "$type": "sizing",
           "$value": "16"
         },
-        "05": {
+        "125": {
+          "$type": "sizing",
+          "$value": "20"
+        },
+        "150": {
           "$type": "sizing",
           "$value": "24"
         },
-        "06": {
+        "250": {
           "$type": "sizing",
-          "$value": "32"
+          "$value": "36"
         },
-        "07": {
+        "600": {
           "$type": "sizing",
-          "$value": "48"
+          "$value": "96"
         },
-        "08": {
+        "2000": {
           "$type": "sizing",
-          "$value": "64"
+          "$value": "320"
         },
-        "09": {
+        "4000": {
           "$type": "sizing",
-          "$value": "72"
+          "$value": "640"
+        },
+        "6000": {
+          "$type": "sizing",
+          "$value": "960"
+        }
+      },
+      "reading_container": {
+        "max_width": {
+          "$type": "sizing",
+          "$value": "50ch, 40vw"
         }
       }
     },
@@ -305,6 +405,38 @@
         "medium": {
           "$type": "fontWeights",
           "$value": "500"
+        }
+      }
+    },
+    "border": {
+      "radius": {
+        "0": {
+          "$type": "borderRadius",
+          "$value": "0"
+        },
+        "012": {
+          "$type": "borderRadius",
+          "$value": ".1255rem"
+        },
+        "025": {
+          "$type": "borderRadius",
+          "$value": ".25rem"
+        },
+        "050": {
+          "$type": "borderRadius",
+          "$value": ".5rem"
+        },
+        "075": {
+          "$type": "borderRadius",
+          "$value": ".75rem"
+        },
+        "pill": {
+          "$type": "borderRadius",
+          "$value": "999rem"
+        },
+        "round": {
+          "$type": "borderRadius",
+          "$value": "50%"
         }
       }
     }
