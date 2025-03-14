@@ -1346,7 +1346,7 @@
         },
         "focus": {
           "$type": "borderWidth",
-          "$value": "{modern.size.2}"
+          "$value": "{jg.size.fixed.18}"
         },
         "error": {
           "$type": "borderWidth",
