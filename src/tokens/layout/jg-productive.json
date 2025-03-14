@@ -163,15 +163,15 @@
     "style": {
       "deemphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.italic}"
+        "$value": "{jg.font.weight.regular}"
       },
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.semibold}"
+        "$value": "{jg.font.weight.medium}"
       },
       "data_label": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.regular}"
+        "$value": "{jg.font.weight.regular}"
       },
       "body": {
         "s": {

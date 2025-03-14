@@ -406,6 +406,20 @@
           "$type": "fontWeights",
           "$value": "500"
         }
+      },
+      "roboto": {
+        "name": {
+          "$type": "other",
+          "$value": "Roboto"
+        },
+        "fallback": {
+          "$type": "other",
+          "$value": "Helvetica Neue, Arial, sans-serif"
+        },
+        "family": {
+          "$type": "other",
+          "$value": "{jg.font.roboto.name}, {jg.font.roboto.fallback}"
+        }
       }
     },
     "border": {
