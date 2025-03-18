@@ -524,6 +524,28 @@
           }
         }
       }
+    },
+    "letter_spacing": {
+      "xs": {
+        "$type": "letterSpacing",
+        "$value": "-0.01em"
+      },
+      "s": {
+        "$type": "letterSpacing",
+        "$value": "-0.001em"
+      },
+      "m": {
+        "$type": "letterSpacing",
+        "$value": "0"
+      },
+      "l": {
+        "$type": "letterSpacing",
+        "$value": "0.005em"
+      },
+      "xl": {
+        "$type": "letterSpacing",
+        "$value": "0.01em"
+      }
     }
   }
 }
