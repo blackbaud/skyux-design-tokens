@@ -163,84 +163,84 @@
     "style": {
       "deemphasized": {
         "$type": "fontWeights",
-        "$value": "{jg.font.weight.regular}"
+        "$value": "{jg.font.style.regular}"
       },
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{jg.font.weight.medium}"
+        "$value": "{jg.font.style.medium}"
       },
       "data_label": {
         "$type": "fontWeights",
-        "$value": "{jg.font.weight.regular}"
+        "$value": "{jg.font.style.regular}"
       },
       "body": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.regular}"
         },
         "m": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.regular}"
         },
         "l": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.regular}"
         }
       },
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.style.regular}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.style.regular}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.style.regular}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.bold}"
+          "$value": "{jg.font.style.regular}"
         }
       },
       "heading": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "5": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.semibold}"
+          "$value": "{jg.font.style.medium}"
         }
       },
       "hint": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.italic}"
+          "$value": "{jg.font.style.regular}"
         },
         "m": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.italic}"
+          "$value": "{jg.font.style.regular}"
         }
       },
       "input": {
         "label": {
           "$type": "fontWeights",
-          "$value": "{modern.font.style.regular}"
+          "$value": "{jg.font.style.regular}"
         }
       }
     },
@@ -294,57 +294,57 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.bold}"
+          "$value": "{jg.font.weight.medium}"
         }
       },
       "heading": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "5": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         }
       },
       "hint": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         },
         "m": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         }
       },
       "input": {
         "label": {
           "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
+          "$value": "{jg.font.weight.regular}"
         }
       }
     },

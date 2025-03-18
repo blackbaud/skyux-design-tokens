@@ -432,6 +432,28 @@
           "$type": "other",
           "$value": "{jg.font.roboto.name}, {jg.font.roboto.fallback}"
         }
+      },
+      "style": {
+        "light": {
+          "$type": "fontWeights",
+          "$value": "light"
+        },
+        "regular": {
+          "$type": "fontWeights",
+          "$value": "regular"
+        },
+        "normal": {
+          "$type": "fontWeights",
+          "$value": "normal"
+        },
+        "italic": {
+          "$type": "fontWeights",
+          "$value": "italic"
+        },
+        "medium": {
+          "$type": "fontWeights",
+          "$value": "medium"
+        }
       }
     },
     "border": {
