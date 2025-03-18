@@ -1317,7 +1317,7 @@
     "width": {
       "accent": {
         "$type": "borderWidth",
-        "$value": "{jg.size.fixed.37}"
+        "$value": "{jg.size.fixed.50}"
       },
       "divider": {
         "$type": "borderWidth",
@@ -1366,7 +1366,7 @@
       "input": {
         "base": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         },
         "hover": {
           "$type": "borderWidth",
