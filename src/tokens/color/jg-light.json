@@ -45,7 +45,7 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{jg.color.orange.500}"
+        "$value": "{jg.color.yellow.500}"
       },
       "success": {
         "$type": "color",
@@ -92,7 +92,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{jg.color.orange.300}"
+          "$value": "{jg.color.yellow.300}"
         },
         "success": {
           "$type": "color",
