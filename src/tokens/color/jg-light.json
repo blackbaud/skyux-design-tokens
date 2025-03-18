@@ -307,7 +307,7 @@
       },
       "thumbnail_matte": {
         "$type": "color",
-        "$value": "{modern.color.white}"
+        "$value": "{jg.color.white}"
       },
       "icon_matte": {
         "$type": "color",
@@ -514,38 +514,38 @@
   "elevation": {
     "none": {
       "$type": "boxShadow",
-      "$value": "{modern.shadow.size.0}"
+      "$value": "{jg.shadow.size.0}"
     },
     "focus": {
       "$type": "boxShadow",
-      "$value": "{modern.shadow.size.3}"
+      "$value": "{jg.shadow.size.0}"
     },
     "overflow": {
       "$type": "boxShadow",
-      "$value": "{modern.shadow.size.3}"
+      "$value": "{jg.shadow.size.0}"
     },
     "raised": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{modern.shadow.size.1}"
+        "$value": "{jg.shadow.size.0}"
       }
     },
     "overlay": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{modern.shadow.size.4}"
+        "$value": "{jg.shadow.size.s}"
       },
       "200": {
         "$type": "boxShadow",
-        "$value": "{modern.shadow.size.8}"
+        "$value": "{jg.shadow.size.l}"
       },
       "300": {
         "$type": "boxShadow",
-        "$value": "{modern.shadow.size.16}"
+        "$value": "{jg.shadow.size.l}"
       },
       "400": {
         "$type": "boxShadow",
-        "$value": "{modern.shadow.size.24}"
+        "$value": "{jg.shadow.size.l}"
       }
     }
   }
