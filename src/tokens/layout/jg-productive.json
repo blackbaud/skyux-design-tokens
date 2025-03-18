@@ -1317,32 +1317,32 @@
     "width": {
       "accent": {
         "$type": "borderWidth",
-        "$value": "{modern.size.7}"
+        "$value": "{jg.size.fixed.37}"
       },
       "divider": {
         "$type": "borderWidth",
-        "$value": "{modern.size.1}"
+        "$value": "{jg.size.fixed.6}"
       },
       "text_highlight": {
         "$type": "borderWidth",
-        "$value": "{modern.size.1}"
+        "$value": "{jg.size.fixed.6}"
       },
       "elevation": {
         "$type": "borderWidth",
-        "$value": "{modern.size.1}"
+        "$value": "{jg.size.fixed.6}"
       },
       "action": {
         "base": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         },
         "hover": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         },
         "active": {
           "$type": "borderWidth",
-          "$value": "{modern.size.2}"
+          "$value": "{jg.size.fixed.6}"
         },
         "focus": {
           "$type": "borderWidth",
@@ -1354,13 +1354,13 @@
         },
         "disabled": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         }
       },
       "container": {
         "base": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         }
       },
       "input": {
@@ -1392,7 +1392,7 @@
       "selected": {
         "s": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         },
         "m": {
           "$type": "borderWidth",
