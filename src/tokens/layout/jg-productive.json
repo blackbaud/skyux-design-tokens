@@ -1350,7 +1350,7 @@
         },
         "error": {
           "$type": "borderWidth",
-          "$value": "{modern.size.2}"
+          "$value": "{jg.size.fixed.6}"
         },
         "disabled": {
           "$type": "borderWidth",
@@ -1382,11 +1382,11 @@
         },
         "error": {
           "$type": "borderWidth",
-          "$value": "{modern.size.2}"
+          "$value": "{jg.size.fixed.6}"
         },
         "disabled": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         }
       },
       "selected": {
@@ -1396,29 +1396,29 @@
         },
         "m": {
           "$type": "borderWidth",
-          "$value": "{modern.size.2}"
+          "$value": "{jg.size.fixed.12}"
         },
         "l": {
           "$type": "borderWidth",
-          "$value": "{modern.size.4}"
+          "$value": "{jg.size.fixed.25}"
         },
         "xl": {
           "$type": "borderWidth",
-          "$value": "{modern.size.6}"
+          "$value": "{jg.size.fixed.37}"
         }
       },
       "separator": {
         "dark": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         },
         "light": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         },
         "row": {
           "$type": "borderWidth",
-          "$value": "{modern.size.1}"
+          "$value": "{jg.size.fixed.6}"
         }
       }
     },
