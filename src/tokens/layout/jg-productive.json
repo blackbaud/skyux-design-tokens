@@ -258,13 +258,79 @@
       "input": {
         "label": {
           "$type": "letterSpacing",
-          "$value": "{modern.letter_spacing.normal}"
+          "$value": "{jg.letter_spacing.xl}"
+        },
+        "val": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.l}"
         }
       },
       "hint": {
         "s": {
           "$type": "letterSpacing",
-          "$value": "{modern.letter_spacing.normal}"
+          "$value": "{jg.letter_spacing.xl}"
+        },
+        "m": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.xl}"
+        }
+      },
+      "data_label": {
+        "$type": "letterSpacing",
+        "$value": "{jg.letter_spacing.l}"
+      },
+      "body": {
+        "s": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.l}"
+        },
+        "m": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.l}"
+        },
+        "l": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.l}"
+        }
+      },
+      "display": {
+        "1": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.xs}"
+        },
+        "2": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.xs}"
+        },
+        "3": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.xs}"
+        },
+        "4": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.m}"
+        }
+      },
+      "heading": {
+        "1": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.s}"
+        },
+        "2": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.s}"
+        },
+        "3": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.m}"
+        },
+        "4": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.m}"
+        },
+        "5": {
+          "$type": "letterSpacing",
+          "$value": "{jg.letter_spacing.m}"
         }
       }
     },
