@@ -1546,5 +1546,187 @@
         }
       }
     }
+  },
+  "type": {
+    "data_label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.primary}",
+        "fontWeight": "{jg.font.weight.regular}",
+        "fontSize": "{jg.font.size.300}",
+        "lineHeight": "{jg.line_height.300}",
+        "letterSpacing": "{jg.letter_spacing.l}"
+      }
+    },
+    "heading": {
+      "1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.1100}",
+          "lineHeight": "{jg.line_height.1100}",
+          "letterSpacing": "{jg.letter_spacing.s}"
+        }
+      },
+      "2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.800}",
+          "lineHeight": "{jg.line_height.800}",
+          "letterSpacing": "{jg.letter_spacing.s}"
+        }
+      },
+      "3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.700}",
+          "lineHeight": "{jg.line_height.700}",
+          "letterSpacing": "{jg.letter_spacing.m}"
+        }
+      },
+      "4": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.600}",
+          "lineHeight": "{jg.line_height.600}",
+          "letterSpacing": "{jg.letter_spacing.m}"
+        }
+      },
+      "5": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.500}",
+          "lineHeight": "{jg.line_height.500}",
+          "letterSpacing": "{jg.letter_spacing.m}"
+        }
+      }
+    },
+    "body": {
+      "s": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.200}",
+          "lineHeight": "{jg.line_height.200}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      },
+      "m": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.300}",
+          "lineHeight": "{jg.line_height.300}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      },
+      "l": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.400}",
+          "lineHeight": "{jg.line_height.400}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      }
+    },
+    "display": {
+      "1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.1000}",
+          "lineHeight": "{jg.line_height.1000}",
+          "letterSpacing": "{jg.letter_spacing.xs}"
+        }
+      },
+      "2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.900}",
+          "lineHeight": "{jg.line_height.900}",
+          "letterSpacing": "{jg.letter_spacing.xs}"
+        }
+      },
+      "3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.800}",
+          "lineHeight": "{jg.line_height.800}",
+          "letterSpacing": "{jg.letter_spacing.xs}"
+        }
+      },
+      "4": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.medium}",
+          "fontSize": "{jg.font.size.500}",
+          "lineHeight": "{jg.line_height.500}",
+          "letterSpacing": "{jg.letter_spacing.m}"
+        }
+      }
+    },
+    "hint": {
+      "s": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.200}",
+          "lineHeight": "{jg.line_height.200}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      },
+      "m": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.200}",
+          "lineHeight": "{jg.line_height.200}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      }
+    },
+    "input": {
+      "label": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.200}",
+          "lineHeight": "{jg.line_height.200}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      },
+      "val": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.primary}",
+          "fontWeight": "{jg.font.weight.regular}",
+          "fontSize": "{jg.font.size.300}",
+          "lineHeight": "{jg.line_height.300}",
+          "letterSpacing": "{jg.letter_spacing.l}"
+        }
+      }
+    }
   }
 }
