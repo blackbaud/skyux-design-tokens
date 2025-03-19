@@ -83,80 +83,80 @@
     "line_height": {
       "data_label": {
         "$type": "lineHeights",
-        "$value": "{modern.line_height.normal}"
+        "$value": "{jg.line_height.300}"
       },
       "body": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
+          "$value": "{jg.line_height.200}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.150}"
+          "$value": "{jg.line_height.300}"
         },
         "l": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
+          "$value": "{jg.line_height.400}"
         }
       },
       "display": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.1000}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.900}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.800}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.500}"
         }
       },
       "heading": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.1000}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.800}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.700}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.600}"
         },
         "5": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.110}"
+          "$value": "{jg.line_height.500}"
         }
       },
       "hint": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
+          "$value": "{jg.line_height.200}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
+          "$value": "{jg.line_height.200}"
         }
       },
       "input": {
         "label": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.normal}"
+          "$value": "{jg.line_height.200}"
         },
         "val": {
           "$type": "lineHeights",
-          "$value": "{modern.line_height.20}"
+          "$value": "{jg.line_height.300}"
         }
       }
     },
