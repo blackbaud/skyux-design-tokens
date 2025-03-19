@@ -3,80 +3,80 @@
     "size": {
       "data_label": {
         "$type": "fontSizes",
-        "$value": "{jg.font.size.base}"
+        "$value": "{jg.font.size.300}"
       },
       "body": {
         "s": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.sm}"
+          "$value": "{jg.font.size.200}"
         },
         "m": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.base}"
+          "$value": "{jg.font.size.300}"
         },
         "l": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.lg}"
+          "$value": "{jg.font.size.400}"
         }
       },
       "display": {
         "1": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.800}"
+          "$value": "{jg.font.size.1000}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.500}"
+          "$value": "{jg.font.size.900}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.300}"
+          "$value": "{jg.font.size.800}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.200}"
+          "$value": "{jg.font.size.500}"
         }
       },
       "heading": {
         "1": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.600}"
+          "$value": "{jg.font.size.1100}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.400}"
+          "$value": "{jg.font.size.800}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.300}"
+          "$value": "{jg.font.size.700}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.200}"
+          "$value": "{jg.font.size.600}"
         },
         "5": {
           "$type": "fontSizes",
-          "$value": "{modern.font.size.150}"
+          "$value": "{jg.font.size.500}"
         }
       },
       "hint": {
         "s": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.sm}"
+          "$value": "{jg.font.size.200}"
         },
         "m": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.base}"
+          "$value": "{jg.font.size.200}"
         }
       },
       "input": {
         "label": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.sm}"
+          "$value": "{jg.font.size.200}"
         },
         "val": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.base}"
+          "$value": "{jg.font.size.300}"
         }
       }
     },
@@ -190,19 +190,19 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{jg.font.style.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{jg.font.style.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{jg.font.style.regular}"
+          "$value": "{jg.font.style.medium}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{jg.font.style.regular}"
+          "$value": "{jg.font.style.medium}"
         }
       },
       "heading": {
@@ -294,15 +294,15 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{jg.font.weight.regular}"
+          "$value": "{jg.font.weight.medium}"
         },
         "4": {
           "$type": "fontWeights",
