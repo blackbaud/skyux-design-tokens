@@ -139,25 +139,25 @@
         "top": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
+            "$value": "{jg.size.fluid.50}"
           }
         },
         "right": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.100}"
+            "$value": "{jg.size.fluid.100}"
           }
         },
         "bottom": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
+            "$value": "{jg.size.fluid.50}"
           }
         },
         "left": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.100}"
+            "$value": "{jg.size.fluid.100}"
           }
         }
       },
@@ -165,13 +165,13 @@
         "top": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.37}"
+            "$value": "{jg.size.fluid.37}"
           }
         },
         "bottom": {
           "m": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.12}"
+            "$value": "{jg.size.fluid.12}"
           }
         }
       },
