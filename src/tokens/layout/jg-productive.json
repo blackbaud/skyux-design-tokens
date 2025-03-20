@@ -1564,8 +1564,8 @@
         "$value": {
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{jg.font.weight.medium}",
-          "fontSize": "{jg.font.size.1100}",
-          "lineHeight": "{jg.line_height.1100}",
+          "fontSize": "{jg.font.size.1300}",
+          "lineHeight": "{jg.line_height.1300}",
           "letterSpacing": "{jg.letter_spacing.s}"
         }
       },
@@ -1574,8 +1574,8 @@
         "$value": {
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{jg.font.weight.medium}",
-          "fontSize": "{jg.font.size.800}",
-          "lineHeight": "{jg.line_height.800}",
+          "fontSize": "{jg.font.size.900}",
+          "lineHeight": "{jg.line_height.900}",
           "letterSpacing": "{jg.letter_spacing.s}"
         }
       },
@@ -1648,8 +1648,8 @@
         "$value": {
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{jg.font.weight.medium}",
-          "fontSize": "{jg.font.size.1000}",
-          "lineHeight": "{jg.line_height.1000}",
+          "fontSize": "{jg.font.size.1200}",
+          "lineHeight": "{jg.line_height.1200}",
           "letterSpacing": "{jg.letter_spacing.xs}"
         }
       },
@@ -1658,8 +1658,8 @@
         "$value": {
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{jg.font.weight.medium}",
-          "fontSize": "{jg.font.size.900}",
-          "lineHeight": "{jg.line_height.900}",
+          "fontSize": "{jg.font.size.1100}",
+          "lineHeight": "{jg.line_height.1100}",
           "letterSpacing": "{jg.letter_spacing.xs}"
         }
       },
@@ -1668,8 +1668,8 @@
         "$value": {
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{jg.font.weight.medium}",
-          "fontSize": "{jg.font.size.800}",
-          "lineHeight": "{jg.line_height.800}",
+          "fontSize": "{jg.font.size.900}",
+          "lineHeight": "{jg.line_height.900}",
           "letterSpacing": "{jg.letter_spacing.xs}"
         }
       },
