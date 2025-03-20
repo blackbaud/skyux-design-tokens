@@ -22,15 +22,15 @@
       "display": {
         "1": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.1000}"
+          "$value": "{jg.font.size.1200}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.900}"
+          "$value": "{jg.font.size.1100}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.800}"
+          "$value": "{jg.font.size.900}"
         },
         "4": {
           "$type": "fontSizes",
@@ -40,11 +40,11 @@
       "heading": {
         "1": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.1100}"
+          "$value": "{jg.font.size.1300}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{jg.font.size.800}"
+          "$value": "{jg.font.size.900}"
         },
         "3": {
           "$type": "fontSizes",
@@ -102,15 +102,15 @@
       "display": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{jg.line_height.1000}"
+          "$value": "{jg.line_height.1200}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{jg.line_height.900}"
+          "$value": "{jg.line_height.1100}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{jg.line_height.800}"
+          "$value": "{jg.line_height.900}"
         },
         "4": {
           "$type": "lineHeights",
@@ -120,11 +120,11 @@
       "heading": {
         "1": {
           "$type": "lineHeights",
-          "$value": "{jg.line_height.1000}"
+          "$value": "{jg.line_height.1300}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{jg.line_height.800}"
+          "$value": "{jg.line_height.900}"
         },
         "3": {
           "$type": "lineHeights",
