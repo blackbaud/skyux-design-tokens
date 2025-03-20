@@ -1115,81 +1115,183 @@
     },
     "size": {
       "data_label": {
-        "$type": "fontSizes",
-        "$value": "{bb.font.size.200}"
-      },
-      "body": {
-        "s": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.100}"
-        },
-        "m": {
+        "desktop": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.200}"
         },
-        "l": {
+        "mobile": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
+          "$value": "{bb.font.size.200}"
+        }
+      },
+      "body": {
+        "s": {
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.100}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.100}"
+          }
+        },
+        "m": {
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          }
+        },
+        "l": {
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.300}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.300}"
+          }
         }
       },
       "display": {
         "1": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.800}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.800}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.800}"
+          }
         },
         "2": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.500}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.500}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.500}"
+          }
         },
         "3": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.300}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.300}"
+          }
         },
         "4": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          }
         }
       },
       "heading": {
         "1": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.500}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.500}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.500}"
+          }
         },
         "2": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.400}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.400}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.400}"
+          }
         },
         "3": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.300}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.300}"
+          }
         },
         "4": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          }
         },
         "5": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          }
         }
       },
       "hint": {
         "s": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.100}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.100}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.100}"
+          }
         },
         "m": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          }
         }
       },
       "input": {
         "label": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.100}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.100}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.100}"
+          }
         },
         "val": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "desktop": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          },
+          "mobile": {
+            "$type": "fontSizes",
+            "$value": "{bb.font.size.200}"
+          }
         }
       }
     },
@@ -1279,13 +1381,25 @@
     },
     "line_height": {
       "data_label": {
-        "$type": "lineHeights",
-        "$value": "{bb.line_height.200}"
+        "desktop": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.200}"
+        },
+        "mobile": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.200}"
+        }
       },
       "body": {
         "s": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.100}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{bb.line_height.100}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{bb.line_height.100}"
+          }
         },
         "m": {
           "$type": "lineHeights",
