@@ -386,17 +386,25 @@
         },
         "800": {
           "$type": "fontSizes",
-          "$value": "2.25rem"
+          "$value": "2rem"
         },
         "900": {
           "$type": "fontSizes",
-          "$value": "3rem"
+          "$value": "2.25rem"
         },
         "1000": {
           "$type": "fontSizes",
-          "$value": "3.75rem"
+          "$value": "2.5rem"
         },
         "1100": {
+          "$type": "fontSizes",
+          "$value": "3rem"
+        },
+        "1200": {
+          "$type": "fontSizes",
+          "$value": "3.75rem"
+        },
+        "1300": {
           "$type": "fontSizes",
           "$value": "4rem"
         },
@@ -622,17 +630,25 @@
       },
       "800": {
         "$type": "lineHeights",
-        "$value": "calc(48/36)"
+        "$value": "calc(40/32)"
       },
       "900": {
         "$type": "lineHeights",
-        "$value": "calc(64/48)"
+        "$value": "calc(48/36)"
       },
       "1000": {
         "$type": "lineHeights",
-        "$value": "calc(72/60)"
+        "$value": "calc(48/40)"
       },
       "1100": {
+        "$type": "lineHeights",
+        "$value": "calc(64/48)"
+      },
+      "1200": {
+        "$type": "lineHeights",
+        "$value": "calc(72/60)"
+      },
+      "1300": {
         "$type": "lineHeights",
         "$value": "calc(72/64)"
       }
