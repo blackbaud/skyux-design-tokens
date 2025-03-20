@@ -184,81 +184,183 @@
     },
     "line_height": {
       "data_label": {
-        "$type": "lineHeights",
-        "$value": "{jg.line_height.300}"
-      },
-      "body": {
-        "s": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.200}"
-        },
-        "m": {
+        "desktop": {
           "$type": "lineHeights",
           "$value": "{jg.line_height.300}"
         },
-        "l": {
+        "mobile": {
           "$type": "lineHeights",
-          "$value": "{jg.line_height.400}"
+          "$value": "{jg.line_height.300}"
+        }
+      },
+      "body": {
+        "s": {
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          }
+        },
+        "m": {
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.300}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.300}"
+          }
+        },
+        "l": {
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.400}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.400}"
+          }
         }
       },
       "display": {
         "1": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.1200}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.1200}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.1000}"
+          }
         },
         "2": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.1100}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.1100}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.800}"
+          }
         },
         "3": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.900}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.900}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.600}"
+          }
         },
         "4": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.500}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.500}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.400}"
+          }
         }
       },
       "heading": {
         "1": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.1300}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.1300}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.800}"
+          }
         },
         "2": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.900}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.900}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.600}"
+          }
         },
         "3": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.700}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.700}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.500}"
+          }
         },
         "4": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.600}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.600}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.400}"
+          }
         },
         "5": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.500}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.500}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.300}"
+          }
         }
       },
       "hint": {
         "s": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.200}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          }
         },
         "m": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.200}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          }
         }
       },
       "input": {
         "label": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.200}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.200}"
+          }
         },
         "val": {
-          "$type": "lineHeights",
-          "$value": "{jg.line_height.300}"
+          "desktop": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.300}"
+          },
+          "mobile": {
+            "$type": "lineHeights",
+            "$value": "{jg.line_height.300}"
+          }
         }
       }
     },
