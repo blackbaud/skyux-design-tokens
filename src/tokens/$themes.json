@@ -16,7 +16,8 @@
     },
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "color/bb-light": "enabled"
+      "color/bb-light": "enabled",
+      "jg-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
     "$figmaModeId": "2142:0",
@@ -82,7 +83,8 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "color/bb-light": "enabled",
-      "color/bb-dark": "enabled"
+      "color/bb-dark": "enabled",
+      "jg-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
     "$figmaModeId": "2195:0",
@@ -174,7 +176,8 @@
       "base-modern": "source",
       "color/modern": "enabled",
       "base-blackbaud": "source",
-      "color/bb-light": "enabled"
+      "color/bb-light": "enabled",
+      "jg-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
     "$figmaModeId": "2196:1",
@@ -239,7 +242,8 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "layout/bb-productive": "enabled",
+      "jg-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2142:1",
@@ -344,7 +348,6 @@
       "space.inset.letterbox.1_2.bottom.m": "f156285e540b6d2e1f18b4fa32585b42e6dd0247",
       "space.inset.letterbox.1_2.left.m": "b23303feae6f10717dba2baf31132560b429629e",
       "font.size.data_label.desktop": "510bca20b3b83b36d70078a6c21f7f1d878821b0",
-      "font.size.body.m.desktop": "96daf35311ea4c04bbf4039b5346fde03fc43efa",
       "font.size.heading.1.desktop": "070dddf0cb355bb086fa3d2b7c7f7c3c7ef68b6e",
       "font.size.heading.2.desktop": "1828086da36b38f0d72e36ea43131c2d38089c1f",
       "font.size.heading.3.desktop": "f51544be494aa210472e9db2e281c030c36bd638",
@@ -362,7 +365,8 @@
       "font.line_height.heading.2.desktop": "34d4c29212aa70064ca9bd7cfba9fc979061cf56",
       "font.line_height.heading.3.desktop": "bf08fcf0b8ca64eaa91590fcaa82c4b5c4903fb6",
       "font.line_height.heading.4.desktop": "1bf1418bd04595e73854a1e1d901ea1d511fa27d",
-      "font.line_height.heading.5.desktop": "25577ff4c4d8d259a0e087d17fb7a73e9dc2a0b6"
+      "font.line_height.heading.5.desktop": "25577ff4c4d8d259a0e087d17fb7a73e9dc2a0b6",
+      "font.size.body.m": "96daf35311ea4c04bbf4039b5346fde03fc43efa"
     },
     "group": "Layout"
   },
@@ -373,7 +377,8 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "layout/bb-productive": "enabled",
-      "layout/bb-compact": "enabled"
+      "layout/bb-compact": "enabled",
+      "jg-sm-min": "disabled"
     },
     "$figmaVariableReferences": {
       "space.inset.balanced.s": "5e5949c25019fc09e94d224593f30e3bb48a392a",
@@ -476,7 +481,6 @@
       "space.inset.letterbox.1_2.bottom.m": "f156285e540b6d2e1f18b4fa32585b42e6dd0247",
       "space.inset.letterbox.1_2.left.m": "b23303feae6f10717dba2baf31132560b429629e",
       "font.size.data_label.desktop": "510bca20b3b83b36d70078a6c21f7f1d878821b0",
-      "font.size.body.m.desktop": "96daf35311ea4c04bbf4039b5346fde03fc43efa",
       "font.size.heading.1.desktop": "070dddf0cb355bb086fa3d2b7c7f7c3c7ef68b6e",
       "font.size.heading.2.desktop": "1828086da36b38f0d72e36ea43131c2d38089c1f",
       "font.size.heading.3.desktop": "f51544be494aa210472e9db2e281c030c36bd638",
@@ -494,7 +498,8 @@
       "font.line_height.heading.2.desktop": "34d4c29212aa70064ca9bd7cfba9fc979061cf56",
       "font.line_height.heading.3.desktop": "bf08fcf0b8ca64eaa91590fcaa82c4b5c4903fb6",
       "font.line_height.heading.4.desktop": "1bf1418bd04595e73854a1e1d901ea1d511fa27d",
-      "font.line_height.heading.5.desktop": "25577ff4c4d8d259a0e087d17fb7a73e9dc2a0b6"
+      "font.line_height.heading.5.desktop": "25577ff4c4d8d259a0e087d17fb7a73e9dc2a0b6",
+      "font.size.body.m": "96daf35311ea4c04bbf4039b5346fde03fc43efa"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2142:2",
@@ -521,7 +526,8 @@
       "base-modern": "source",
       "layout/modern": "enabled",
       "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "layout/bb-productive": "enabled",
+      "jg-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2196:2",
@@ -626,7 +632,6 @@
       "space.inset.letterbox.1_2.bottom.m": "f156285e540b6d2e1f18b4fa32585b42e6dd0247",
       "space.inset.letterbox.1_2.left.m": "b23303feae6f10717dba2baf31132560b429629e",
       "font.size.data_label.desktop": "510bca20b3b83b36d70078a6c21f7f1d878821b0",
-      "font.size.body.m.desktop": "96daf35311ea4c04bbf4039b5346fde03fc43efa",
       "font.size.heading.1.desktop": "070dddf0cb355bb086fa3d2b7c7f7c3c7ef68b6e",
       "font.size.heading.2.desktop": "1828086da36b38f0d72e36ea43131c2d38089c1f",
       "font.size.heading.3.desktop": "f51544be494aa210472e9db2e281c030c36bd638",
@@ -643,8 +648,27 @@
       "font.line_height.heading.2.desktop": "34d4c29212aa70064ca9bd7cfba9fc979061cf56",
       "font.line_height.heading.3.desktop": "bf08fcf0b8ca64eaa91590fcaa82c4b5c4903fb6",
       "font.line_height.heading.4.desktop": "1bf1418bd04595e73854a1e1d901ea1d511fa27d",
-      "font.line_height.heading.5.desktop": "25577ff4c4d8d259a0e087d17fb7a73e9dc2a0b6"
+      "font.line_height.heading.5.desktop": "25577ff4c4d8d259a0e087d17fb7a73e9dc2a0b6",
+      "font.size.body.m": "96daf35311ea4c04bbf4039b5346fde03fc43efa"
     },
     "group": "Layout"
+  },
+  {
+    "id": "61735ee4dee93141c9e0d33ee1a1b7c8bb5eea3e",
+    "name": "sm",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "base-blackbaud": "enabled",
+      "base-modern": "enabled",
+      "base-jg": "enabled",
+      "color/modern": "enabled",
+      "color/jg-light": "enabled",
+      "layout/bb-productive": "enabled",
+      "layout/modern": "enabled",
+      "layout/jg-productive": "enabled",
+      "jg-sm-min": "disabled"
+    },
+    "group": "screen",
+    "$figmaVariableReferences": {}
   }
 ]

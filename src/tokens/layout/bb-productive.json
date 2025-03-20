@@ -1006,7 +1006,7 @@
         "$type": "typography",
         "$value": {
           "fontWeight": "{font.style.body.m}",
-          "fontSize": "{font.size.body.m.desktop}",
+          "fontSize": "{font.size.body.m}",
           "lineHeight": "{font.line_height.body.m.desktop}",
           "fontFamily": "{font.family.primary}"
         }

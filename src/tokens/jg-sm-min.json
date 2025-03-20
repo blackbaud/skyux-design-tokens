@@ -1,0 +1,16 @@
+{
+  "font-size-body-m": {
+    "$type": "fontSizes",
+    "$value": "{jg.font.size.300}"
+  },
+  "font": {
+    "size": {
+      "heading": {
+        "1": {
+          "$type": "fontSizes",
+          "$value": "{jg.font.size.1300}"
+        }
+      }
+    }
+  }
+}
