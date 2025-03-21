@@ -16,7 +16,8 @@
     },
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "color/bb-light": "enabled"
+      "color/bb-light": "enabled",
+      "bb-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
     "$figmaModeId": "2142:0",
@@ -82,7 +83,8 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "color/bb-light": "enabled",
-      "color/bb-dark": "enabled"
+      "color/bb-dark": "enabled",
+      "bb-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
     "$figmaModeId": "2195:0",
@@ -174,7 +176,8 @@
       "base-modern": "source",
       "color/modern": "enabled",
       "base-blackbaud": "source",
-      "color/bb-light": "enabled"
+      "color/bb-light": "enabled",
+      "bb-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:336",
     "$figmaModeId": "2196:1",
@@ -239,7 +242,8 @@
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
       "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "layout/bb-productive": "enabled",
+      "bb-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2142:1",
@@ -373,7 +377,8 @@
     "selectedTokenSets": {
       "base-blackbaud": "source",
       "layout/bb-productive": "enabled",
-      "layout/bb-compact": "enabled"
+      "layout/bb-compact": "enabled",
+      "bb-sm-min": "disabled"
     },
     "$figmaVariableReferences": {
       "space.inset.balanced.s": "5e5949c25019fc09e94d224593f30e3bb48a392a",
@@ -521,7 +526,8 @@
       "base-modern": "source",
       "layout/modern": "enabled",
       "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "layout/bb-productive": "enabled",
+      "bb-sm-min": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2196:2",
@@ -659,7 +665,8 @@
       "color/jg-light": "enabled",
       "layout/bb-productive": "enabled",
       "layout/modern": "enabled",
-      "layout/jg-productive": "enabled"
+      "layout/jg-productive": "enabled",
+      "bb-sm-min": "disabled"
     },
     "group": "screen",
     "$figmaVariableReferences": {}
