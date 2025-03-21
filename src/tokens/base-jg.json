@@ -506,6 +506,12 @@
           "$type": "fontWeights",
           "$value": "medium"
         }
+      },
+      "monospaced": {
+        "family": {
+          "$type": "other",
+          "$value": "Roboto Mono, Menlo, Monaco, Consolas, Courier New, monospace"
+        }
       }
     },
     "border": {

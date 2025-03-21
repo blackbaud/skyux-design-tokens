@@ -251,7 +251,7 @@
       },
       "monospaced": {
         "$type": "fontFamilies",
-        "$value": "{modern.font.monospaced.family}"
+        "$value": "{jg.font.monospaced.family}"
       }
     },
     "letter_spacing": {
