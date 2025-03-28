@@ -2,6 +2,29 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.48](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.47...0.0.48) (2025-03-28)
+
+
+### Features
+
+* release design tokens to SKY UX CDN ([#147](https://github.com/blackbaud/skyux-design-tokens/issues/147)) ([ef04708](https://github.com/blackbaud/skyux-design-tokens/commit/ef04708bc7f18a6cb308a0e578727f9d14307163))
+
+## [0.0.47](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.46...0.0.47) (2025-03-24)
+
+
+### Features
+
+* update version 2 selector to `sky-theme-brand-base` ([#145](https://github.com/blackbaud/skyux-design-tokens/issues/145)) ([a5203bf](https://github.com/blackbaud/skyux-design-tokens/commit/a5203bff0be963df1e92dabda256a4f62a3f689f))
+
+## [0.0.46](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.45...0.0.46) (2025-03-14)
+
+
+### Features
+
+* darkening success colors for increased contrast 3.07:1 with white ([#142](https://github.com/blackbaud/skyux-design-tokens/issues/142)) ([07dd200](https://github.com/blackbaud/skyux-design-tokens/commit/07dd2006a86a1ed609ea1dcaaf8ed72a2ebb7c6c))
+* new icons sizes for full range ([#137](https://github.com/blackbaud/skyux-design-tokens/issues/137)) ([0af15b0](https://github.com/blackbaud/skyux-design-tokens/commit/0af15b0cb735a5511f65cdd496a740ca0c6e4d9d))
+* new tokens for icon decoration ([#138](https://github.com/blackbaud/skyux-design-tokens/issues/138)) ([1b98ed1](https://github.com/blackbaud/skyux-design-tokens/commit/1b98ed1259f4114ff4e20451a86da61a975aa7aa))
+
 ## [0.0.45](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.44...0.0.45) (2025-02-18)
 
 
