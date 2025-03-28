@@ -18,7 +18,7 @@ export const tokenSets = [
   {
     name: 'blackbaud',
     path: 'base-blackbaud.json',
-    selector: '.sky-theme-modern.sky-theme-brand-blackbaud',
+    selector: '.sky-theme-modern.sky-theme-brand-base',
     outputPath: 'blackbaud.css',
     referenceTokens: [
       {
