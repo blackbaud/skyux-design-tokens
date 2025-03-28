@@ -867,6 +867,10 @@
       },
       "vertical": {
         "top": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.space.s}"
@@ -885,6 +889,10 @@
           }
         },
         "right": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.size.0}"
@@ -903,6 +911,10 @@
           }
         },
         "bottom": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.space.s}"
@@ -921,6 +933,10 @@
           }
         },
         "left": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.size.0}"
@@ -941,6 +957,10 @@
       },
       "horizontal": {
         "top": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.size.0}"
@@ -959,6 +979,10 @@
           }
         },
         "right": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.space.s}"
@@ -977,6 +1001,10 @@
           }
         },
         "bottom": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.size.0}"
@@ -995,6 +1023,10 @@
           }
         },
         "left": {
+          "0": {
+            "$type": "spacing",
+            "$value": "{modern.space.none}"
+          },
           "s": {
             "$type": "spacing",
             "$value": "{modern.space.s}"
@@ -1165,6 +1197,10 @@
       }
     },
     "inline": {
+      "0": {
+        "$type": "spacing",
+        "$value": "{modern.space.none}"
+      },
       "xxs": {
         "$type": "spacing",
         "$value": "{modern.size.2}"
@@ -1195,6 +1231,10 @@
       }
     },
     "stacked": {
+      "0": {
+        "$type": "spacing",
+        "$value": "{modern.space.none}"
+      },
       "xs": {
         "$type": "spacing",
         "$value": "{modern.space.xs}"
