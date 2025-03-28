@@ -136,7 +136,7 @@ export function buildStyleDictionaryPlugin() {
       for (let file of allFiles) {
         const fileParts = file.destination.split('/');
         const tokenSetType = fileParts[1];
-        const fileName = `scss/${tokenSetType}.css`;
+        const fileName = `assets/scss/${tokenSetType}.css`;
 
         let fileContents = compositeFiles[fileName] || '';
         fileContents = fileContents.concat(file.output || '');
