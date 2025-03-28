@@ -2,6 +2,20 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.48](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.47...0.0.48) (2025-03-28)
+
+
+### Features
+
+* release design tokens to SKY UX CDN ([#147](https://github.com/blackbaud/skyux-design-tokens/issues/147)) ([ef04708](https://github.com/blackbaud/skyux-design-tokens/commit/ef04708bc7f18a6cb308a0e578727f9d14307163))
+
+## [0.0.47](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.46...0.0.47) (2025-03-24)
+
+
+### Features
+
+* update version 2 selector to `sky-theme-brand-base` ([#145](https://github.com/blackbaud/skyux-design-tokens/issues/145)) ([a5203bf](https://github.com/blackbaud/skyux-design-tokens/commit/a5203bff0be963df1e92dabda256a4f62a3f689f))
+
 ## [0.0.46](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.45...0.0.46) (2025-03-14)
 
 
