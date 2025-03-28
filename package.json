@@ -11,6 +11,10 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "pipelineSettings": {
+    "publishToCDN": true,
+    "publishToNPM": true
+  },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "1.2.1",
     "@vitest/coverage-v8": "1.5.0",
