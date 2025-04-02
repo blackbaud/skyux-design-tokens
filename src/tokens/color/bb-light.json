@@ -81,31 +81,13 @@
         "$type": "color",
         "$value": "{bb.color.yellow.400}"
       },
-      "container": {
-        "base": {
-          "$type": "color",
-          "$value": "{bb.color.white}"
-        },
-        "menu": {
-          "$type": "color",
-          "$value": "{bb.color.white}"
-        },
-        "danger": {
-          "$type": "color",
-          "$value": "{bb.color.red.300}"
-        },
-        "warning": {
-          "$type": "color",
-          "$value": "{bb.color.yellow.300}"
-        },
-        "success": {
-          "$type": "color",
-          "$value": "{bb.color.green.300}"
-        },
-        "info": {
-          "$type": "color",
-          "$value": "{bb.color.blue.100}"
-        }
+      "file_drop": {
+        "$type": "color",
+        "$value": "{bb.color.gray.25}"
+      },
+      "thumbnail_matte": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
       },
       "action": {
         "primary": {
@@ -219,34 +201,14 @@
           }
         }
       },
-      "input": {
-        "base": {
-          "$type": "color",
-          "$value": "{bb.color.transparent}"
-        },
-        "disabled": {
-          "$type": "color",
-          "$value": "{bb.color.gray.50}"
-        }
-      },
-      "thumb": {
+      "container": {
         "base": {
           "$type": "color",
           "$value": "{bb.color.white}"
         },
-        "disabled": {
+        "menu": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
-        }
-      },
-      "selected": {
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.blue.600}"
-        },
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.blue.100}"
+          "$value": "{bb.color.white}"
         },
         "danger": {
           "$type": "color",
@@ -259,22 +221,38 @@
         "success": {
           "$type": "color",
           "$value": "{bb.color.green.300}"
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{bb.color.blue.100}"
         }
       },
-      "nav": {
+      "icon_matte": {
+        "danger": {
+          "$type": "color",
+          "$value": "{bb.color.red.600}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{bb.color.yellow.600}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{bb.color.green.700}"
+        },
+        "action": {
+          "heavy": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "soft": {
+            "$type": "color",
+            "$value": "{bb.color.blue.100}"
+          }
+        }
+      },
+      "input": {
         "base": {
-          "$type": "color",
-          "$value": "{bb.color.transparent}"
-        },
-        "hover": {
-          "$type": "color",
-          "$value": "{bb.color.transparent}"
-        },
-        "active": {
-          "$type": "color",
-          "$value": "{bb.color.transparent}"
-        },
-        "focus": {
           "$type": "color",
           "$value": "{bb.color.transparent}"
         },
@@ -305,17 +283,59 @@
           "$value": "{bb.color.gray.50}"
         }
       },
-      "file_drop": {
-        "$type": "color",
-        "$value": "{bb.color.gray.25}"
+      "nav": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        }
       },
-      "thumbnail_matte": {
-        "$type": "color",
-        "$value": "{bb.color.white}"
+      "selected": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.blue.100}"
+        },
+        "danger": {
+          "$type": "color",
+          "$value": "{bb.color.red.300}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{bb.color.yellow.300}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{bb.color.green.300}"
+        }
       },
-      "icon_matte": {
-        "$type": "color",
-        "$value": "{bb.color.blue.100}"
+      "thumb": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.white}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        }
       }
     },
     "border": {
