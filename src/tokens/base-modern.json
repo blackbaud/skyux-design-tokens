@@ -1,6 +1,30 @@
 {
   "modern": {
     "color": {
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "transparent": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "shadow_color": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.3)"
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "rgba(0,0,0,.5)"
+      },
+      "blocking": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.7)"
+      },
       "gray": {
         "10": {
           "$type": "color",
@@ -52,26 +76,6 @@
           "$type": "color",
           "$value": "#d93a3d"
         }
-      },
-      "white": {
-        "$type": "color",
-        "$value": "#FFFFFF"
-      },
-      "black": {
-        "$type": "color",
-        "$value": "#000000"
-      },
-      "transparent": {
-        "$type": "color",
-        "$value": "transparent"
-      },
-      "shadow_color": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.3)"
-      },
-      "scrim": {
-        "$type": "color",
-        "$value": "rgba(0,0,0,.5)"
       },
       "blue": {
         "10": {
@@ -183,7 +187,7 @@
       },
       "3": {
         "$type": "sizing",
-        "$value": "3px"
+        "$value": "3"
       },
       "4": {
         "$type": "sizing",
@@ -221,6 +225,10 @@
         "$type": "sizing",
         "$value": "13"
       },
+      "14": {
+        "$type": "sizing",
+        "$value": "14"
+      },
       "15": {
         "$type": "sizing",
         "$value": "15"
@@ -228,6 +236,10 @@
       "16": {
         "$type": "sizing",
         "$value": "16"
+      },
+      "19": {
+        "$type": "sizing",
+        "$value": "19"
       },
       "20": {
         "$type": "sizing",
@@ -264,6 +276,10 @@
       "64": {
         "$type": "sizing",
         "$value": "64"
+      },
+      "65": {
+        "$type": "sizing",
+        "$value": "65"
       },
       "80": {
         "$type": "sizing",
@@ -562,6 +578,12 @@
           "$type": "other",
           "$value": "dotted"
         }
+      }
+    },
+    "opacity": {
+      "600": {
+        "$type": "opacity",
+        "$value": ".6"
       }
     }
   }
