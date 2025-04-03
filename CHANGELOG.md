@@ -2,6 +2,16 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.50](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.49...0.0.50) (2025-04-03)
+
+
+### Features
+
+* add modal widths ([#131](https://github.com/blackbaud/skyux-design-tokens/issues/131)) ([c5e9c8f](https://github.com/blackbaud/skyux-design-tokens/commit/c5e9c8f8962dafad7e0f89e30fd18e0758e91959))
+* icon mattes for composite icons ([#143](https://github.com/blackbaud/skyux-design-tokens/issues/143)) ([f4ac4ed](https://github.com/blackbaud/skyux-design-tokens/commit/f4ac4edcc5b95c5de441005778cb8ca9b58ba142))
+* new tokens for tile, zeroing out spacing ([#133](https://github.com/blackbaud/skyux-design-tokens/issues/133)) ([b609cae](https://github.com/blackbaud/skyux-design-tokens/commit/b609caee8f7c46d053a43101944e7ceb43ca5581))
+* wait opacity and color ([#144](https://github.com/blackbaud/skyux-design-tokens/issues/144)) ([feeac51](https://github.com/blackbaud/skyux-design-tokens/commit/feeac517f5b2411dd27e78f95e5f25e0b627e7a9))
+
 ## [0.0.49](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.48...0.0.49) (2025-03-28)
 
 
