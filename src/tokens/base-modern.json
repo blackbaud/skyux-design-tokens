@@ -312,6 +312,14 @@
       "400": {
         "$type": "sizing",
         "$value": "400"
+      },
+      "640": {
+        "$type": "sizing",
+        "$value": "640"
+      },
+      "960": {
+        "$type": "sizing",
+        "$value": "960"
       }
     },
     "font": {

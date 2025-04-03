@@ -29,6 +29,24 @@
         "xl": {
           "$type": "spacing",
           "$value": "{bb.size.fluid.150}"
+        },
+        "fixed": {
+          "s": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.50}"
+          },
+          "m": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.75}"
+          },
+          "l": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.100}"
+          },
+          "xl": {
+            "$type": "spacing",
+            "$value": "{bb.size.fixed.150}"
+          }
         }
       },
       "bottomless": {
@@ -575,6 +593,20 @@
             "$type": "spacing",
             "$value": "{bb.size.0}"
           }
+        },
+        "fixed": {
+          "top": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{bb.size.fixed.100}"
+            }
+          },
+          "bottom": {
+            "l": {
+              "$type": "spacing",
+              "$value": "{bb.size.fixed.100}"
+            }
+          }
         }
       },
       "horizontal": {
@@ -792,6 +824,10 @@
         },
         "l": {
           "$type": "spacing",
+          "$value": "{bb.size.fluid.75}"
+        },
+        "xl": {
+          "$type": "spacing",
           "$value": "{bb.size.fluid.100}"
         }
       },
@@ -949,15 +985,29 @@
       }
     },
     "width": {
+      "resize_handle": {
+        "$type": "sizing",
+        "$value": "{bb.size.fixed.150}"
+      },
       "viewport": {
         "smallest": {
           "$type": "sizing",
           "$value": "{bb.size.fixed.2000}"
         }
       },
-      "resize_handle": {
-        "$type": "sizing",
-        "$value": "{bb.size.fixed.150}"
+      "modal": {
+        "s": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.2000}"
+        },
+        "m": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.4000}"
+        },
+        "l": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.6000}"
+        }
       }
     },
     "max_width": {
