@@ -1376,15 +1376,15 @@
       "modal": {
         "s": {
           "$type": "sizing",
-          "$value": "{modern.size.320}"
+          "$value": "{modern.size.300}"
         },
         "m": {
           "$type": "sizing",
-          "$value": "{modern.size.640}"
+          "$value": "{modern.size.600}"
         },
         "l": {
           "$type": "sizing",
-          "$value": "{modern.size.960}"
+          "$value": "{modern.size.900}"
         }
       }
     },

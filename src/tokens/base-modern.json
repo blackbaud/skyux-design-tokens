@@ -305,21 +305,21 @@
         "$type": "sizing",
         "$value": "296"
       },
-      "320": {
+      "300": {
         "$type": "sizing",
-        "$value": "320"
+        "$value": "300"
       },
       "400": {
         "$type": "sizing",
         "$value": "400"
       },
-      "640": {
+      "600": {
         "$type": "sizing",
-        "$value": "640"
+        "$value": "600"
       },
-      "960": {
+      "900": {
         "$type": "sizing",
-        "$value": "960"
+        "$value": "900"
       }
     },
     "font": {
