@@ -1,14 +1,27 @@
 import { sync } from 'glob';
 import path from 'path';
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary, { Config, PlatformConfig } from 'style-dictionary';
 import { getTransforms, register } from '@tokens-studio/sd-transforms';
-import { tokenSets } from '../src/tokens/token-sets.mjs';
+import {
+  tokenSets,
+  TokenSet,
+  ReferenceTokenSet,
+} from '../src/tokens/token-sets.mts';
+
+interface SkyStyleDictionaryConfig extends Config {
+  platforms: {
+    css: PlatformConfig;
+  };
+}
 
 async function generateDictionaryFiles(tokenSets) {
   const sd = new StyleDictionary(undefined, {
     verbosity: 'verbose',
   });
-  let allFiles = [];
+  let allFiles: {
+    output: unknown;
+    destination: string | undefined;
+  }[] = [];
 
   await Promise.all(
     tokenSets.map(async (tokenSet) => {
@@ -33,7 +46,7 @@ async function generateDictionaryFiles(tokenSets) {
   return allFiles;
 }
 
-const DEFAULT_SD_CONFIG = {
+const DEFAULT_SD_CONFIG: SkyStyleDictionaryConfig = {
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
@@ -53,6 +66,7 @@ function getBaseDictionaryConfig(tokenSet) {
   };
 
   config.source = [`src/tokens/${tokenSet.path}`];
+  config.platforms.css.options ??= {};
   config.platforms.css.options.selector = tokenSet.selector;
   config.platforms.css.files = [
     {
@@ -72,6 +86,7 @@ function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
 
   config.source = [`src/tokens/${tokenSet.path}`];
   config.include = [`src/tokens/${referenceTokenSet.path}`];
+  config.platforms.css.options ??= {};
   config.platforms.css.options.selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
   config.platforms.css.files = [
     {
@@ -119,7 +134,7 @@ export function buildStyleDictionaryPlugin() {
 
       if (id.includes('src/dev/tokens.css')) {
         const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
-        const allFiles = await generateDictionaryFiles(tokenSets, sd);
+        const allFiles = await generateDictionaryFiles(tokenSets);
         let localTokens = '';
 
         for (let file of allFiles) {
@@ -134,14 +149,16 @@ export function buildStyleDictionaryPlugin() {
       const compositeFiles = {};
 
       for (let file of allFiles) {
-        const fileParts = file.destination.split('/');
-        const tokenSetType = fileParts[1];
-        const fileName = `assets/scss/${tokenSetType}.css`;
+        if (file.destination) {
+          const fileParts = file.destination.split('/');
+          const tokenSetType = fileParts[1];
+          const fileName = `assets/scss/${tokenSetType}.css`;
 
-        let fileContents = compositeFiles[fileName] || '';
-        fileContents = fileContents.concat(file.output || '');
+          let fileContents = compositeFiles[fileName] || '';
+          fileContents = fileContents.concat(file.output || '');
 
-        compositeFiles[fileName] = fileContents;
+          compositeFiles[fileName] = fileContents;
+        }
       }
 
       for (let fileName of Object.keys(compositeFiles)) {

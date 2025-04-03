@@ -1,3 +1,17 @@
+export type ReferenceTokenSet = {
+  name: string;
+  path: string;
+  breakpoint?: 'xs' | 's' | 'm' | 'l';
+};
+
+export type TokenSet = {
+  name: string;
+  path: string;
+  selector: string;
+  outputPath: string;
+  referenceTokens: ReferenceTokenSet[];
+};
+
 export const tokenSets = [
   {
     name: 'modern',

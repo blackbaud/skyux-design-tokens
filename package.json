@@ -15,7 +15,8 @@
     "publishToNPM": true
   },
   "devDependencies": {
-    "@tokens-studio/sd-transforms": "1.2.12",
+    "@tokens-studio/sd-transforms": "1.2.1",
+    "@types/node": "^22.13.17",
     "@vitest/coverage-v8": "3.0.9",
     "fs-extra": "11.3.0",
     "glob": "11.0.1",
