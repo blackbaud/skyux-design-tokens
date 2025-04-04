@@ -1,1 +1,1 @@
-document.body.classList.add('local-dev-tokens');
+/* Leave this file empty */
