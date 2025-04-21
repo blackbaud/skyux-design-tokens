@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.52](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.51...0.0.52) (2025-04-21)
+
+
+### Bug Fixes
+
+* bring `sd-transforms` to a compatible version and bump `vitest` for vulnerabilities ([#155](https://github.com/blackbaud/skyux-design-tokens/issues/155)) ([f313fc9](https://github.com/blackbaud/skyux-design-tokens/commit/f313fc938aa020a35dc6b25ce16f21cbc3fdbee6))
+
 ## [0.0.51](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.50...0.0.51) (2025-04-04)
 
 
