@@ -327,6 +327,16 @@
           "$value": "{modern.color.gray.07}"
         }
       },
+      "switch": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{modern.color.gray.07}"
+        }
+      },
       "thumb": {
         "base": {
           "$type": "color",
@@ -517,6 +527,28 @@
         "error": {
           "$type": "color",
           "$value": "{modern.color.red.50}"
+        }
+      },
+      "switch": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.gray.50}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{modern.color.gray.50}"
         }
       },
       "separator": {

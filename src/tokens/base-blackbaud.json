@@ -332,6 +332,10 @@
         }
       },
       "blue": {
+        "25": {
+          "$type": "color",
+          "$value": "#FBFCFE"
+        },
         "100": {
           "$type": "color",
           "$value": "#E8F0FB"
