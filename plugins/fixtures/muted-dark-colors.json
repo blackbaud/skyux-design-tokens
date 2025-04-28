@@ -1,0 +1,16 @@
+{
+  "color": {
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{modern.color.red.1}"
+      }
+    },
+    "background": {
+      "danger": {
+        "$type": "color",
+        "$value": "{modern.color.black}"
+      }
+    }
+  }
+}

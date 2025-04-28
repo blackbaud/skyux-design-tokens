@@ -1,0 +1,10 @@
+{
+  "color": {
+    "background": {
+      "page": {
+        "$type": "color",
+        "$value": "{bb.color.gray.900}"
+      }
+    }
+  }
+}
