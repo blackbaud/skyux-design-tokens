@@ -1,12 +1,8 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
-import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs'; // Assuming myPlugin is your plugin
+import { describe, expect, it, vi } from 'vitest';
+import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs';
 import * as exports from '../src/tokens/token-config.mts';
 
 describe('buildStyleDictionaryPlugin', () => {
-  afterEach(() => {
-    vi.restoreAllMocks();
-  });
-
   it('should create style files for each token set provided', async () => {
     vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
       rootPath: 'plugins/fixtures/',

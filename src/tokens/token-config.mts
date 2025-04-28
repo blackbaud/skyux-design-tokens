@@ -1,24 +1,4 @@
-export type Breakpoint = 'xs' | 's' | 'm' | 'l';
-
-export type ReferenceTokenSet = {
-  breakpoint?: Breakpoint;
-  name: string;
-  path: string;
-  selector?: string;
-};
-
-export type TokenSet = {
-  name: string;
-  path: string;
-  selector: string;
-  outputPath: string;
-  referenceTokens: ReferenceTokenSet[];
-};
-
-export type TokenConfig = {
-  rootPath?: string;
-  tokenSets: TokenSet[];
-};
+import { TokenConfig } from '../types/token-config';
 
 export const tokenConfig: TokenConfig = {
   tokenSets: [

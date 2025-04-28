@@ -3,13 +3,11 @@ import { Plugin } from 'vite';
 import path from 'path';
 import StyleDictionary, { Config, PlatformConfig } from 'style-dictionary';
 import { getTransforms, register } from '@tokens-studio/sd-transforms';
-import {
-  tokenConfig,
-  TokenConfig,
-  TokenSet,
-  ReferenceTokenSet,
-  Breakpoint,
-} from '../src/tokens/token-config.mts';
+import { tokenConfig } from '../src/tokens/token-config.mts';
+import { TokenConfig } from '../src/types/token-config.ts';
+import { TokenSet } from '../src/types/token-set.ts';
+import { Breakpoint } from '../src/types/breakpoint.ts';
+import { ReferenceTokenSet } from '../src/types/reference-token-set.ts';
 
 interface SkyStyleDictionaryConfig extends Config {
   platforms: {

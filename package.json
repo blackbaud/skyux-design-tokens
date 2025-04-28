@@ -35,8 +35,5 @@
   "engines": {
     "node": ">= 4.2.1",
     "npm": ">= 3"
-  },
-  "dependencies": {
-    "memfs": "^4.17.0"
   }
 }
