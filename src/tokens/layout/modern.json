@@ -1421,15 +1421,19 @@
         "$type": "borderWidth",
         "$value": "{modern.size.7}"
       },
+      "column_resizer": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.1}"
+      },
       "divider": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },
-      "text_highlight": {
+      "elevation": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },
-      "elevation": {
+      "text_highlight": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },

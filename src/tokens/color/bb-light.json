@@ -371,6 +371,10 @@
         "$type": "color",
         "$value": "{bb.color.gray.100}"
       },
+      "column_resizer": {
+        "$type": "color",
+        "$value": "{bb.color.blue.600}"
+      },
       "text_highlight": {
         "$type": "color",
         "$value": "{bb.color.yellow.800}"
