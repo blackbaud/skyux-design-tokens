@@ -269,6 +269,10 @@
         "$type": "color",
         "$value": "rgba(37,43,51,.5)"
       },
+      "blocking": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.7)"
+      },
       "gray": {
         "25": {
           "$type": "color",
@@ -688,11 +692,11 @@
       }
     },
     "size": {
+      "0": {
+        "$type": "sizing",
+        "$value": "0"
+      },
       "fluid": {
-        "0": {
-          "$type": "sizing",
-          "$value": "0"
-        },
         "6": {
           "$type": "sizing",
           "$value": "0.0625rem"
@@ -837,6 +841,12 @@
           "$type": "sizing",
           "$value": "50ch, 40vw"
         }
+      }
+    },
+    "opacity": {
+      "600": {
+        "$type": "opacity",
+        "$value": ".6"
       }
     }
   }
