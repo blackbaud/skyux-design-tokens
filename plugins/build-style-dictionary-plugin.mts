@@ -1,12 +1,15 @@
 import { sync } from 'glob';
+import { Plugin } from 'vite';
 import path from 'path';
 import StyleDictionary, { Config, PlatformConfig } from 'style-dictionary';
 import { getTransforms, register } from '@tokens-studio/sd-transforms';
 import {
-  tokenSets,
+  tokenConfig,
+  TokenConfig,
   TokenSet,
   ReferenceTokenSet,
-} from '../src/tokens/token-sets.mts';
+  Breakpoint,
+} from '../src/tokens/token-config.mts';
 
 interface SkyStyleDictionaryConfig extends Config {
   platforms: {
@@ -14,36 +17,9 @@ interface SkyStyleDictionaryConfig extends Config {
   };
 }
 
-async function generateDictionaryFiles(tokenSets) {
-  const sd = new StyleDictionary(undefined, {
-    verbosity: 'verbose',
-  });
-  let allFiles: {
-    output: unknown;
-    destination: string | undefined;
-  }[] = [];
-
-  await Promise.all(
-    tokenSets.map(async (tokenSet) => {
-      const tokenDictionary = await sd.extend(
-        getBaseDictionaryConfig(tokenSet),
-      );
-      const files = await tokenDictionary.formatPlatform('css');
-      allFiles = allFiles.concat(files);
-
-      await Promise.all(
-        tokenSet.referenceTokens.map(async (referenceTokenSet) => {
-          const referenceTokenDictionary = await sd.extend(
-            getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
-          );
-          const files = await referenceTokenDictionary.formatPlatform('css');
-          allFiles = allFiles.concat(files);
-        }),
-      );
-    }),
-  );
-
-  return allFiles;
+interface GeneratedFile {
+  output: unknown;
+  destination: string | undefined;
 }
 
 const DEFAULT_SD_CONFIG: SkyStyleDictionaryConfig = {
@@ -60,12 +36,69 @@ const DEFAULT_SD_CONFIG: SkyStyleDictionaryConfig = {
   },
 };
 
-function getBaseDictionaryConfig(tokenSet) {
+function getMediaQueryMinWidth(breakpoint: Breakpoint): string {
+  switch (breakpoint) {
+    case 'xs':
+    default:
+      return '0px';
+    case 's':
+      return '768px';
+    case 'm':
+      return '992px';
+    case 'l':
+      return '1200px';
+  }
+}
+
+async function generateDictionaryFiles(
+  tokenConfig: TokenConfig,
+): Promise<GeneratedFile[]> {
+  const sd = new StyleDictionary(undefined, {
+    verbosity: 'verbose',
+  });
+
+  let allFiles: GeneratedFile[] = [];
+
+  await Promise.all(
+    tokenConfig.tokenSets.map(async (tokenSet) => {
+      const tokenDictionary = await sd.extend(
+        getBaseDictionaryConfig(tokenSet),
+      );
+      const files = await tokenDictionary.formatPlatform('css');
+      allFiles = allFiles.concat(files);
+
+      await Promise.all(
+        tokenSet.referenceTokens.map(async (referenceTokenSet) => {
+          const referenceTokenDictionary = await sd.extend(
+            getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
+          );
+          const files = await referenceTokenDictionary.formatPlatform('css');
+
+          files.forEach((file) => {
+            if (
+              referenceTokenSet.breakpoint &&
+              referenceTokenSet.breakpoint !== 'xs'
+            ) {
+              file.output = `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.breakpoint)}) {\n${file.output}\n}`;
+            }
+          });
+          allFiles = allFiles.concat(files);
+        }),
+      );
+    }),
+  );
+
+  return allFiles;
+}
+
+function getBaseDictionaryConfig(tokenSet: TokenSet): SkyStyleDictionaryConfig {
   const config = {
     ...DEFAULT_SD_CONFIG,
   };
 
-  config.source = [`src/tokens/${tokenSet.path}`];
+  const rootPath = tokenConfig.rootPath || 'src/tokens/';
+
+  config.source = [`${rootPath}${tokenSet.path}`];
   config.platforms.css.options ??= {};
   config.platforms.css.options.selector = tokenSet.selector;
   config.platforms.css.files = [
@@ -79,13 +112,17 @@ function getBaseDictionaryConfig(tokenSet) {
   return config;
 }
 
-function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
+function getReferenceDictionaryConfig(
+  tokenSet: TokenSet,
+  referenceTokenSet: ReferenceTokenSet,
+): SkyStyleDictionaryConfig {
   const config = {
     ...DEFAULT_SD_CONFIG,
   };
 
-  config.source = [`src/tokens/${tokenSet.path}`];
-  config.include = [`src/tokens/${referenceTokenSet.path}`];
+  const rootPath = tokenConfig.rootPath || 'src/tokens/';
+  config.source = [`${rootPath}${tokenSet.path}`];
+  config.include = [`${rootPath}${referenceTokenSet.path}`];
   config.platforms.css.options ??= {};
   config.platforms.css.options.selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
   config.platforms.css.files = [
@@ -98,8 +135,7 @@ function getReferenceDictionaryConfig(tokenSet, referenceTokenSet) {
 
   return config;
 }
-
-export function buildStyleDictionaryPlugin() {
+export function buildStyleDictionaryPlugin(): Plugin {
   register(StyleDictionary);
 
   StyleDictionary.registerTransform({
@@ -126,15 +162,16 @@ export function buildStyleDictionaryPlugin() {
 
   return {
     name: 'transform-style-dictionary',
-    async transform(code, id) {
-      const files = sync('src/tokens/**/*.json');
+    async transform(code: string, id: string) {
+      const rootPath = tokenConfig.rootPath || 'src/tokens/';
+      const files = sync(`${rootPath}**/*.json`);
       for (let file of files) {
         this.addWatchFile(path.join(process.cwd(), file));
       }
 
       if (id.includes('src/dev/tokens.css')) {
         const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
-        const allFiles = await generateDictionaryFiles(tokenSets);
+        const allFiles = await generateDictionaryFiles(tokenConfig);
         let localTokens = '';
 
         for (let file of allFiles) {
@@ -144,8 +181,8 @@ export function buildStyleDictionaryPlugin() {
         return localTokens;
       }
     },
-    async generateBundle() {
-      const allFiles = await generateDictionaryFiles(tokenSets);
+    async generateBundle(): Promise<void> {
+      const allFiles = await generateDictionaryFiles(tokenConfig);
       const compositeFiles = {};
 
       for (let file of allFiles) {
