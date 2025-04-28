@@ -502,6 +502,12 @@
           "$type": "color",
           "$value": "#32230A"
         }
+      },
+      "gradient": {
+        "blue": {
+          "$type": "color",
+          "$value": "linear-gradient( {bb.color.blue.500}, {bb.color.blue.700})"
+        }
       }
     },
     "shadow": {
