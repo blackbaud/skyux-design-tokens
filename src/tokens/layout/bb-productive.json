@@ -1630,6 +1630,10 @@
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
       },
+      "emphasized": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.12}"
+      },
       "text_highlight": {
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
