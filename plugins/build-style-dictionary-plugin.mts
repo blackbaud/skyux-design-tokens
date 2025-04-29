@@ -2,12 +2,14 @@ import { sync } from 'glob';
 import { Plugin } from 'vite';
 import path from 'path';
 import StyleDictionary, { Config, PlatformConfig } from 'style-dictionary';
+import { formattedVariables, sortByName } from 'style-dictionary/utils';
 import { getTransforms, register } from '@tokens-studio/sd-transforms';
 import { tokenConfig } from '../src/tokens/token-config.mts';
 import { TokenConfig } from '../src/types/token-config.ts';
 import { TokenSet } from '../src/types/token-set.ts';
 import { Breakpoint } from '../src/types/breakpoint.ts';
 import { ReferenceTokenSet } from '../src/types/reference-token-set.ts';
+import { TransformedToken } from 'style-dictionary/types';
 
 interface SkyStyleDictionaryConfig extends Config {
   platforms: {
@@ -102,7 +104,7 @@ function getBaseDictionaryConfig(tokenSet: TokenSet): SkyStyleDictionaryConfig {
   config.platforms.css.files = [
     {
       destination: `${tokenSet.name}/${tokenSet.name}.css`,
-      format: 'css/variables',
+      format: 'css/alphabetize-variables',
       filter: (token) => token.filePath.includes(tokenSet.path),
     },
   ];
@@ -156,6 +158,26 @@ export function buildStyleDictionaryPlugin(): Plugin {
       ...StyleDictionary.hooks.transformGroups['css'],
       'name/prefixed-kebab',
     ],
+  });
+
+  StyleDictionary.registerFormat({
+    name: 'css/alphabetize-variables',
+    format: function ({ dictionary, options }) {
+      const { outputReferences, outputReferenceFallbacks, usesDtcg } = options;
+      const alphaSort = (a: TransformedToken, b: TransformedToken) =>
+        sortByName(a, b) * -1;
+      dictionary.allTokens = dictionary.allTokens.sort(alphaSort);
+
+      const variables = formattedVariables({
+        format: 'css',
+        dictionary,
+        outputReferences,
+        outputReferenceFallbacks,
+        usesDtcg,
+      });
+
+      return `${options.selector} {\n` + variables + '\n}\n';
+    },
   });
 
   return {

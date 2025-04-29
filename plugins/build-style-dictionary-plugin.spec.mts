@@ -52,14 +52,14 @@ describe('buildStyleDictionaryPlugin', () => {
       type: 'asset',
       fileName: 'assets/scss/muted.css',
       source: `.sky-theme-muted {
+  --modern-color-black: #000000;
+  --modern-color-gray-1: #e2e3e4;
+  --modern-color-red-1: #f7a08f;
+  --modern-color-red-2: #ef4044;
+  --modern-color-white: #ffffff;
   --modern-space-lg: 20px;
   --modern-space-md: 15px;
   --modern-space-s: 10px;
-  --modern-color-black: #000000;
-  --modern-color-white: #ffffff;
-  --modern-color-red-2: #ef4044;
-  --modern-color-red-1: #f7a08f;
-  --modern-color-gray-1: #e2e3e4;
 }
 .sky-theme-muted {
   --sky-color-background-danger: var(--modern-color-red-2);
@@ -76,10 +76,10 @@ describe('buildStyleDictionaryPlugin', () => {
       type: 'asset',
       fileName: 'assets/scss/rainbow.css',
       source: `.sky-theme-rainbow {
-  --rainbow-space-s: 10px;
-  --rainbow-color-red-2: #8a2538;
-  --rainbow-color-red-1: #fc0330;
   --rainbow-color-gray-1: #e2e3e7;
+  --rainbow-color-red-1: #fc0330;
+  --rainbow-color-red-2: #8a2538;
+  --rainbow-space-s: 10px;
 }
 .sky-theme-rainbow {
   --sky-color-background-danger: var(--rainbow-color-gray-1);
@@ -127,10 +127,10 @@ describe('buildStyleDictionaryPlugin', () => {
       type: 'asset',
       fileName: 'assets/scss/responsive-rainbow.css',
       source: `.sky-theme-rainbow {
-  --rainbow-space-s: 10px;
-  --rainbow-color-red-2: #8a2538;
-  --rainbow-color-red-1: #fc0330;
   --rainbow-color-gray-1: #e2e3e7;
+  --rainbow-color-red-1: #fc0330;
+  --rainbow-color-red-2: #8a2538;
+  --rainbow-space-s: 10px;
 }
 .sky-theme-rainbow {
   --sky-color-text-default: var(--rainbow-color-red-1);
