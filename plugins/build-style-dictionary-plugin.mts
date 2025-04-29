@@ -128,7 +128,7 @@ function getReferenceDictionaryConfig(
   config.platforms.css.files = [
     {
       destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
-      format: 'css/variables',
+      format: 'css/alphabetize-variables',
       filter: (token) => token.filePath.includes(referenceTokenSet.path),
     },
   ];
