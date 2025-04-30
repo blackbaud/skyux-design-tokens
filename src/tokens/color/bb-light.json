@@ -261,16 +261,6 @@
           "$value": "{bb.color.gray.50}"
         }
       },
-      "switch": {
-        "base": {
-          "$type": "color",
-          "$value": "{bb.color.blue.25}"
-        },
-        "disabled": {
-          "$type": "color",
-          "$value": "{bb.color.gray.50}"
-        }
-      },
       "list": {
         "base": {
           "$type": "color",
