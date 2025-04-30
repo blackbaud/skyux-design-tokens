@@ -164,9 +164,7 @@ export function buildStyleDictionaryPlugin(): Plugin {
     name: 'css/alphabetize-variables',
     format: function ({ dictionary, options }) {
       const { outputReferences, outputReferenceFallbacks, usesDtcg } = options;
-      const alphaSort = (a: TransformedToken, b: TransformedToken) =>
-        sortByName(a, b) * -1;
-      dictionary.allTokens = dictionary.allTokens.sort(alphaSort);
+      dictionary.allTokens = dictionary.allTokens.sort(sortByName);
 
       const variables = formattedVariables({
         format: 'css',

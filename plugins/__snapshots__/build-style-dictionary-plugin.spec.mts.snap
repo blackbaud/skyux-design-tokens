@@ -41,7 +41,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-color-yellow-50: #fbb034;
   --modern-color-yellow-80: #c57c00;
   --modern-font-blkb_sans-fallback: Helvetica Neue, Arial, sans-serif;
-  --modern-font-blkb_sans-family: var(--modern-font-blkb_sans-name), var(--modern-font-blkb_sans-fallback);
   --modern-font-blkb_sans-name: BLKB Sans;
   --modern-font-monospaced-family: Menlo, Monaco, Consolas, Courier New, monospace;
   --modern-font-size-100: 12px;
@@ -74,12 +73,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-line_height-normal: normal;
   --modern-opacity-600: .6;
   --modern-shadow-size-0: 0 0 0 0 #000000;
-  --modern-shadow-size-1: 0 1px 3px 0 var(--modern-color-shadow_color);
-  --modern-shadow-size-16: 0 3px 25px 2px var(--modern-color-shadow_color);
-  --modern-shadow-size-24: 0 7px 27px 3px var(--modern-color-shadow_color);
-  --modern-shadow-size-3: 0 1px 8px 0 var(--modern-color-shadow_color);
-  --modern-shadow-size-4: 0 1px 12px 0 var(--modern-color-shadow_color);
-  --modern-shadow-size-8: 0 2px 15px 2px var(--modern-color-shadow_color);
   --modern-shadow-thumb: 0 1px 2px 0 rgba(0,0,0,0.5);
   --modern-size-0: 0;
   --modern-size-1: 1px;
@@ -125,6 +118,13 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-space-xl: 30px;
   --modern-space-xs: 5px;
   --modern-space-xxl: 60px;
+  --modern-font-blkb_sans-family: var(--modern-font-blkb_sans-name), var(--modern-font-blkb_sans-fallback);
+  --modern-shadow-size-1: 0 1px 3px 0 var(--modern-color-shadow_color);
+  --modern-shadow-size-16: 0 3px 25px 2px var(--modern-color-shadow_color);
+  --modern-shadow-size-24: 0 7px 27px 3px var(--modern-color-shadow_color);
+  --modern-shadow-size-3: 0 1px 8px 0 var(--modern-color-shadow_color);
+  --modern-shadow-size-4: 0 1px 12px 0 var(--modern-color-shadow_color);
+  --modern-shadow-size-8: 0 2px 15px 2px var(--modern-color-shadow_color);
 }
 .sky-theme-modern {
   --sky-color-background-action-danger-active: var(--modern-color-red-70);
@@ -247,17 +247,36 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-text-heading: var(--modern-color-gray-105);
   --sky-color-text-inverse: var(--modern-color-white);
   --sky-color-text-link_highlight: var(--modern-color-blue-80);
-  --sky-elevation-focus: var(--modern-shadow-size-3);
   --sky-elevation-none: var(--modern-shadow-size-0);
+  --sky-opacity-wait: var(--modern-opacity-600);
+  --sky-elevation-focus: var(--modern-shadow-size-3);
   --sky-elevation-overflow: var(--modern-shadow-size-3);
   --sky-elevation-overlay-100: var(--modern-shadow-size-4);
   --sky-elevation-overlay-200: var(--modern-shadow-size-8);
   --sky-elevation-overlay-300: var(--modern-shadow-size-16);
   --sky-elevation-overlay-400: var(--modern-shadow-size-24);
   --sky-elevation-raised-100: var(--modern-shadow-size-1);
-  --sky-opacity-wait: var(--modern-opacity-600);
 }
 .sky-theme-modern {
+  --sky-font-style-deemphasized-style: italic;
+  --sky-font-style-deemphasized-weight: 400;
+  --sky-font-style-hint-m-style: italic;
+  --sky-font-style-hint-m-weight: 400;
+  --sky-font-style-hint-s-style: italic;
+  --sky-font-style-hint-s-weight: 400;
+  --sky-font-text_decoration-inline_link-active: underline;
+  --sky-font-text_decoration-inline_link-base: none;
+  --sky-font-text_decoration-inline_link-disabled: none;
+  --sky-font-text_decoration-inline_link-focus: none;
+  --sky-font-text_decoration-inline_link-hover: underline;
+  --sky-font-text_decoration-visible_link: underline;
+  --sky-space-gap-action_group-0: 0;
+  --sky-space-gap-form-0: 0;
+  --sky-space-gap-icon-0: 0;
+  --sky-space-gap-label-0: 0;
+  --sky-space-gap-stacked_supplemental-0: 0;
+  --sky-space-gap-text_action-0: 0;
+  --sky-space-inset-balanced-none: 0;
   --sky-border-radius-0: var(--modern-border-radius-0);
   --sky-border-radius-m: var(--modern-border-radius-md);
   --sky-border-radius-pill: var(--modern-border-radius-pill);
@@ -296,7 +315,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-border-width-separator-row: var(--modern-size-1);
   --sky-border-width-text_highlight: var(--modern-size-1);
   --sky-font-family-monospaced: var(--modern-font-monospaced-family);
-  --sky-font-family-primary: var(--modern-font-blkb_sans-family);
   --sky-font-letter_spacing-hint-s: var(--modern-letter_spacing-normal);
   --sky-font-letter_spacing-input-label: var(--modern-letter_spacing-normal);
   --sky-font-line_height-body-l: var(--modern-line_height-normal);
@@ -337,8 +355,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-body-m: var(--modern-font-style-regular);
   --sky-font-style-body-s: var(--modern-font-style-regular);
   --sky-font-style-data_label: var(--modern-font-style-regular);
-  --sky-font-style-deemphasized-style: italic;
-  --sky-font-style-deemphasized-weight: 400;
   --sky-font-style-display-1: var(--modern-font-style-regular);
   --sky-font-style-display-2: var(--modern-font-style-regular);
   --sky-font-style-display-3: var(--modern-font-style-regular);
@@ -349,17 +365,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-heading-3: var(--modern-font-style-regular);
   --sky-font-style-heading-4: var(--modern-font-style-semibold);
   --sky-font-style-heading-5: var(--modern-font-style-semibold);
-  --sky-font-style-hint-m-style: italic;
-  --sky-font-style-hint-m-weight: 400;
-  --sky-font-style-hint-s-style: italic;
-  --sky-font-style-hint-s-weight: 400;
   --sky-font-style-input-label: var(--modern-font-style-regular);
-  --sky-font-text_decoration-inline_link-active: underline;
-  --sky-font-text_decoration-inline_link-base: none;
-  --sky-font-text_decoration-inline_link-disabled: none;
-  --sky-font-text_decoration-inline_link-focus: none;
-  --sky-font-text_decoration-inline_link-hover: underline;
-  --sky-font-text_decoration-visible_link: underline;
   --sky-font-weight-body-l: var(--modern-font-weight-light);
   --sky-font-weight-body-m: var(--modern-font-weight-regular);
   --sky-font-weight-body-s: var(--modern-font-weight-regular);
@@ -402,35 +408,29 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-size-width-modal-s: var(--modern-size-300);
   --sky-size-width-resize_handle: var(--modern-size-14);
   --sky-size-width-viewport-smallest: var(--modern-size-296);
-  --sky-space-gap-action_group-0: 0;
   --sky-space-gap-action_group-l: var(--modern-size-15);
   --sky-space-gap-action_group-m: var(--modern-size-10);
   --sky-space-gap-action_group-s: var(--modern-size-5);
   --sky-space-gap-action_group-xl: var(--modern-size-20);
-  --sky-space-gap-form-0: 0;
   --sky-space-gap-form-l: var(--modern-space-lg);
   --sky-space-gap-form-m: var(--modern-space-md);
   --sky-space-gap-form-s: var(--modern-space-s);
   --sky-space-gap-form-xl: var(--modern-space-xl);
   --sky-space-gap-form-xs: var(--modern-space-xs);
-  --sky-space-gap-icon-0: 0;
   --sky-space-gap-icon-l: var(--modern-size-15);
   --sky-space-gap-icon-m: var(--modern-size-10);
   --sky-space-gap-icon-s: var(--modern-size-5);
   --sky-space-gap-icon-xl: var(--modern-size-20);
-  --sky-space-gap-label-0: 0;
   --sky-space-gap-label-l: var(--modern-size-15);
   --sky-space-gap-label-m: var(--modern-size-10);
   --sky-space-gap-label-s: var(--modern-size-5);
   --sky-space-gap-label-xl: var(--modern-size-20);
   --sky-space-gap-label-xs: var(--modern-size-2);
   --sky-space-gap-label-xxs: var(--modern-size-1);
-  --sky-space-gap-stacked_supplemental-0: 0;
   --sky-space-gap-stacked_supplemental-l: var(--modern-size-15);
   --sky-space-gap-stacked_supplemental-m: var(--modern-size-10);
   --sky-space-gap-stacked_supplemental-s: var(--modern-size-5);
   --sky-space-gap-stacked_supplemental-xl: var(--modern-size-20);
-  --sky-space-gap-text_action-0: 0;
   --sky-space-gap-text_action-l: var(--modern-space-lg);
   --sky-space-gap-text_action-m: var(--modern-space-md);
   --sky-space-gap-text_action-s: var(--modern-space-s);
@@ -449,7 +449,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-balanced-fixed-xl: var(--modern-size-30);
   --sky-space-inset-balanced-l: var(--modern-space-lg);
   --sky-space-inset-balanced-m: var(--modern-space-md);
-  --sky-space-inset-balanced-none: 0;
   --sky-space-inset-balanced-s: var(--modern-space-s);
   --sky-space-inset-balanced-xl: var(--modern-space-xl);
   --sky-space-inset-balanced-xs: var(--modern-space-xs);
@@ -549,7 +548,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-sunk-left-l: var(--modern-space-xl);
   --sky-space-inset-sunk-right-l: var(--modern-space-xl);
   --sky-space-inset-sunk-top-l: var(--modern-space-xl);
-  --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
   --sky-space-inset-tabs-l: var(--modern-space-lg);
   --sky-space-inset-tabs-m: var(--modern-space-md);
   --sky-space-inset-tabs-s: var(--modern-space-s);
@@ -588,6 +586,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-stacked-xl: var(--modern-space-xl);
   --sky-space-stacked-xs: var(--modern-space-xs);
   --sky-space-stacked-xxl: var(--modern-space-xxl);
+  --sky-font-family-primary: var(--modern-font-blkb_sans-family);
+  --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
 }
 "
 `;
@@ -662,7 +662,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-yellow-800: #976a1f;
   --bb-color-yellow-900: #644615;
   --bb-font-blkb_sans-fallback: Helvetica Neue, Arial, sans-serif;
-  --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
   --bb-font-blkb_sans-name: BLKB Sans;
   --bb-font-monospaced-family: Menlo, Monaco, Consolas, Courier New, monospace;
   --bb-font-size-100: 0.75rem;
@@ -758,6 +757,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-space-7: 16px;
   --bb-space-8: 24px;
   --bb-space-9: 36px;
+  --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
 }
 @media (min-width: 992px) {
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
@@ -936,6 +936,26 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-opacity-wait: var(--bb-opacity-600);
 }
 .sky-theme-modern.sky-theme-brand-base {
+  --sky-font-style-deemphasized-style: italic;
+  --sky-font-style-deemphasized-weight: 400;
+  --sky-font-style-hint-m-style: italic;
+  --sky-font-style-hint-m-weight: 400;
+  --sky-font-style-hint-s-style: italic;
+  --sky-font-style-hint-s-weight: 400;
+  --sky-font-text_decoration-inline_link-active: underline;
+  --sky-font-text_decoration-inline_link-base: none;
+  --sky-font-text_decoration-inline_link-disabled: none;
+  --sky-font-text_decoration-inline_link-focus: none;
+  --sky-font-text_decoration-inline_link-hover: underline;
+  --sky-font-text_decoration-visible_link: underline;
+  --sky-space-gap-action_group-0: 0;
+  --sky-space-gap-form-0: 0;
+  --sky-space-gap-icon-0: 0;
+  --sky-space-gap-label-0: 0;
+  --sky-space-gap-stacked_supplemental-0: 0;
+  --sky-space-gap-text_action-0: 0;
+  --sky-space-inset-balanced-none: 0;
+  --sky-space-inset-floated-top-0: 0;
   --sky-border-radius-0: var(--bb-border-radius-0);
   --sky-border-radius-m: var(--bb-border-radius-050);
   --sky-border-radius-pill: var(--bb-border-radius-pill);
@@ -974,7 +994,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-border-width-separator-row: var(--bb-size-fixed-6);
   --sky-border-width-text_highlight: var(--bb-size-fixed-6);
   --sky-font-family-monospaced: var(--bb-font-monospaced-family);
-  --sky-font-family-primary: var(--bb-font-blkb_sans-family);
   --sky-font-letter_spacing-hint-s: var(--bb-letter_spacing-normal);
   --sky-font-letter_spacing-input-label: var(--bb-letter_spacing-wider);
   --sky-font-line_height-body-l: var(--bb-line_height-300);
@@ -1015,8 +1034,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-body-m: var(--bb-font-style-regular);
   --sky-font-style-body-s: var(--bb-font-style-regular);
   --sky-font-style-data_label: var(--bb-font-style-regular);
-  --sky-font-style-deemphasized-style: italic;
-  --sky-font-style-deemphasized-weight: 400;
   --sky-font-style-display-1: var(--bb-font-style-light);
   --sky-font-style-display-2: var(--bb-font-style-light);
   --sky-font-style-display-3: var(--bb-font-style-light);
@@ -1027,17 +1044,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-heading-3: var(--bb-font-style-regular);
   --sky-font-style-heading-4: var(--bb-font-style-semibold);
   --sky-font-style-heading-5: var(--bb-font-style-semibold);
-  --sky-font-style-hint-m-style: italic;
-  --sky-font-style-hint-m-weight: 400;
-  --sky-font-style-hint-s-style: italic;
-  --sky-font-style-hint-s-weight: 400;
   --sky-font-style-input-label: var(--bb-font-style-regular);
-  --sky-font-text_decoration-inline_link-active: underline;
-  --sky-font-text_decoration-inline_link-base: none;
-  --sky-font-text_decoration-inline_link-disabled: none;
-  --sky-font-text_decoration-inline_link-focus: none;
-  --sky-font-text_decoration-inline_link-hover: underline;
-  --sky-font-text_decoration-visible_link: underline;
   --sky-font-weight-body-l: var(--bb-font-weight-regular);
   --sky-font-weight-body-m: var(--bb-font-weight-regular);
   --sky-font-weight-body-s: var(--bb-font-weight-regular);
@@ -1080,35 +1087,29 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-size-width-modal-s: var(--bb-size-fixed-2000);
   --sky-size-width-resize_handle: var(--bb-size-fixed-150);
   --sky-size-width-viewport-smallest: var(--bb-size-fixed-2000);
-  --sky-space-gap-action_group-0: 0;
   --sky-space-gap-action_group-l: var(--bb-size-fluid-75);
   --sky-space-gap-action_group-m: var(--bb-size-fluid-50);
   --sky-space-gap-action_group-s: var(--bb-size-fluid-25);
   --sky-space-gap-action_group-xl: var(--bb-size-fluid-100);
-  --sky-space-gap-form-0: 0;
   --sky-space-gap-form-l: var(--bb-size-fluid-100);
   --sky-space-gap-form-m: var(--bb-size-fluid-75);
   --sky-space-gap-form-s: var(--bb-size-fluid-50);
   --sky-space-gap-form-xl: var(--bb-size-fluid-150);
   --sky-space-gap-form-xs: var(--bb-size-fluid-25);
-  --sky-space-gap-icon-0: 0;
   --sky-space-gap-icon-l: var(--bb-size-fluid-75);
   --sky-space-gap-icon-m: var(--bb-size-fluid-50);
   --sky-space-gap-icon-s: var(--bb-size-fluid-25);
   --sky-space-gap-icon-xl: var(--bb-size-fluid-100);
-  --sky-space-gap-label-0: 0;
   --sky-space-gap-label-l: var(--bb-size-fluid-75);
   --sky-space-gap-label-m: var(--bb-size-fluid-50);
   --sky-space-gap-label-s: var(--bb-size-fluid-25);
   --sky-space-gap-label-xl: var(--bb-size-fluid-100);
   --sky-space-gap-label-xs: var(--bb-size-fluid-12);
   --sky-space-gap-label-xxs: var(--bb-size-fluid-6);
-  --sky-space-gap-stacked_supplemental-0: 0;
   --sky-space-gap-stacked_supplemental-l: var(--bb-size-fluid-75);
   --sky-space-gap-stacked_supplemental-m: var(--bb-size-fluid-50);
   --sky-space-gap-stacked_supplemental-s: var(--bb-size-fluid-25);
   --sky-space-gap-stacked_supplemental-xl: var(--bb-size-fluid-100);
-  --sky-space-gap-text_action-0: 0;
   --sky-space-gap-text_action-l: var(--bb-size-fluid-100);
   --sky-space-gap-text_action-m: var(--bb-size-fluid-75);
   --sky-space-gap-text_action-s: var(--bb-size-fluid-50);
@@ -1127,7 +1128,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-balanced-fixed-xl: var(--bb-size-fixed-150);
   --sky-space-inset-balanced-l: var(--bb-size-fluid-100);
   --sky-space-inset-balanced-m: var(--bb-size-fluid-75);
-  --sky-space-inset-balanced-none: 0;
   --sky-space-inset-balanced-s: var(--bb-size-fluid-50);
   --sky-space-inset-balanced-xl: var(--bb-size-fluid-150);
   --sky-space-inset-balanced-xs: var(--bb-size-fluid-25);
@@ -1150,7 +1150,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-floated-left-s: var(--bb-size-fluid-100);
   --sky-space-inset-floated-right-m: var(--bb-size-fluid-150);
   --sky-space-inset-floated-right-s: var(--bb-size-fluid-100);
-  --sky-space-inset-floated-top-0: 0;
   --sky-space-inset-floated-top-m: var(--bb-size-fluid-50);
   --sky-space-inset-floated-top-s: var(--bb-size-fluid-25);
   --sky-space-inset-horizontal-bottom-0: var(--bb-size-0);
@@ -1227,7 +1226,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-sunk-left-l: var(--bb-size-fluid-150);
   --sky-space-inset-sunk-right-l: var(--bb-size-fluid-150);
   --sky-space-inset-sunk-top-l: var(--bb-size-fluid-150);
-  --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
   --sky-space-inset-tabs-l: var(--bb-size-fluid-100);
   --sky-space-inset-tabs-m: var(--bb-size-fluid-75);
   --sky-space-inset-tabs-s: var(--bb-size-fluid-50);
@@ -1266,15 +1264,18 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-stacked-xl: var(--bb-size-fluid-150);
   --sky-space-stacked-xs: var(--bb-size-fluid-25);
   --sky-space-stacked-xxl: var(--bb-size-fluid-300);
+  --sky-font-family-primary: var(--bb-font-blkb_sans-family);
+  --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
   --sky-type-body-l: var(--sky-font-style-body-l) var(--sky-font-size-body-l)/var(--sky-font-line_height-body-l) var(--sky-font-family-primary);
   --sky-type-body-m: var(--sky-font-style-body-m) var(--sky-font-size-body-m)/var(--sky-font-line_height-body-m) var(--sky-font-family-primary);
   --sky-type-body-s: var(--sky-font-style-body-s) var(--sky-font-size-body-s)/var(--sky-font-line_height-body-s) var(--sky-font-family-primary);
+  --sky-type-heading-1: var(--sky-font-style-heading-1) var(--sky-font-size-heading-1)/var(--sky-font-line_height-heading-1) var(--sky-font-family-primary);
+  --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/var(--sky-font-line_height-input-val) var(--sky-font-family-primary);
   --sky-type-data_label: var(--sky-font-style-data_label) var(--sky-font-size-data_label)/var(--sky-font-line_height-data_label) var(--sky-font-family-primary);
   --sky-type-display-1: var(--sky-font-style-display-1) var(--sky-font-size-display-1)/var(--sky-font-line_height-display-1) var(--sky-font-family-primary);
   --sky-type-display-2: var(--sky-font-style-display-2) var(--sky-font-size-display-2)/var(--sky-font-line_height-display-2) var(--sky-font-family-primary);
   --sky-type-display-3: var(--sky-font-style-display-3) var(--sky-font-size-display-3)/var(--sky-font-line_height-display-3) var(--sky-font-family-primary);
   --sky-type-display-4: var(--sky-font-style-display-4) var(--sky-font-size-display-4)/var(--sky-font-line_height-display-4) var(--sky-font-family-primary);
-  --sky-type-heading-1: var(--sky-font-style-heading-1) var(--sky-font-size-heading-1)/var(--sky-font-line_height-heading-1) var(--sky-font-family-primary);
   --sky-type-heading-2: var(--sky-font-style-heading-2) var(--sky-font-size-heading-2)/var(--sky-font-line_height-heading-2) var(--sky-font-family-primary);
   --sky-type-heading-3: var(--sky-font-style-heading-3) var(--sky-font-size-heading-3)/var(--sky-font-line_height-heading-3) var(--sky-font-family-primary);
   --sky-type-heading-4: var(--sky-font-style-heading-4) var(--sky-font-size-heading-4)/var(--sky-font-line_height-heading-4) var(--sky-font-family-primary);
@@ -1282,7 +1283,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-type-hint-m: italic 400 var(--sky-font-size-hint-m)/var(--sky-font-line_height-hint-m) var(--sky-font-family-primary);
   --sky-type-hint-s: italic 400 var(--sky-font-size-hint-s)/var(--sky-font-line_height-hint-s) var(--sky-font-family-primary);
   --sky-type-input-label: var(--sky-font-style-input-label) var(--sky-font-size-input-label)/var(--sky-font-line_height-input-label) var(--sky-font-family-primary);
-  --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/var(--sky-font-line_height-input-val) var(--sky-font-family-primary);
 }
 "
 `;
