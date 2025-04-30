@@ -327,16 +327,6 @@
           "$value": "{modern.color.gray.07}"
         }
       },
-      "switch": {
-        "base": {
-          "$type": "color",
-          "$value": "{modern.color.transparent}"
-        },
-        "disabled": {
-          "$type": "color",
-          "$value": "{modern.color.gray.07}"
-        }
-      },
       "thumb": {
         "base": {
           "$type": "color",
