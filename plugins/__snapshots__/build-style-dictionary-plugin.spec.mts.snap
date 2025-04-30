@@ -2,7 +2,7 @@
 
 exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and modern styles 1`] = `
 ".sky-theme-modern {
-  --modern-border-radius-0: 0rem;
+  --modern-border-radius-0: 0;
   --modern-border-radius-md: 6px;
   --modern-border-radius-pill: 10rem;
   --modern-border-radius-round: 50%;
@@ -81,7 +81,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-shadow-size-4: 0 1px 12px 0 var(--modern-color-shadow_color);
   --modern-shadow-size-8: 0 2px 15px 2px var(--modern-color-shadow_color);
   --modern-shadow-thumb: 0 1px 2px 0 rgba(0,0,0,0.5);
-  --modern-size-0: 0rem;
+  --modern-size-0: 0;
   --modern-size-1: 1px;
   --modern-size-10: 10px;
   --modern-size-100: 100px;
@@ -120,7 +120,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-size-96: 96px;
   --modern-space-lg: 20px;
   --modern-space-md: 15px;
-  --modern-space-none: 0rem;
+  --modern-space-none: 0;
   --modern-space-s: 10px;
   --modern-space-xl: 30px;
   --modern-space-xs: 5px;
@@ -402,35 +402,35 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-size-width-modal-s: var(--modern-size-300);
   --sky-size-width-resize_handle: var(--modern-size-14);
   --sky-size-width-viewport-smallest: var(--modern-size-296);
-  --sky-space-gap-action_group-0: 0rem;
+  --sky-space-gap-action_group-0: 0;
   --sky-space-gap-action_group-l: var(--modern-size-15);
   --sky-space-gap-action_group-m: var(--modern-size-10);
   --sky-space-gap-action_group-s: var(--modern-size-5);
   --sky-space-gap-action_group-xl: var(--modern-size-20);
-  --sky-space-gap-form-0: 0rem;
+  --sky-space-gap-form-0: 0;
   --sky-space-gap-form-l: var(--modern-space-lg);
   --sky-space-gap-form-m: var(--modern-space-md);
   --sky-space-gap-form-s: var(--modern-space-s);
   --sky-space-gap-form-xl: var(--modern-space-xl);
   --sky-space-gap-form-xs: var(--modern-space-xs);
-  --sky-space-gap-icon-0: 0rem;
+  --sky-space-gap-icon-0: 0;
   --sky-space-gap-icon-l: var(--modern-size-15);
   --sky-space-gap-icon-m: var(--modern-size-10);
   --sky-space-gap-icon-s: var(--modern-size-5);
   --sky-space-gap-icon-xl: var(--modern-size-20);
-  --sky-space-gap-label-0: 0rem;
+  --sky-space-gap-label-0: 0;
   --sky-space-gap-label-l: var(--modern-size-15);
   --sky-space-gap-label-m: var(--modern-size-10);
   --sky-space-gap-label-s: var(--modern-size-5);
   --sky-space-gap-label-xl: var(--modern-size-20);
   --sky-space-gap-label-xs: var(--modern-size-2);
   --sky-space-gap-label-xxs: var(--modern-size-1);
-  --sky-space-gap-stacked_supplemental-0: 0rem;
+  --sky-space-gap-stacked_supplemental-0: 0;
   --sky-space-gap-stacked_supplemental-l: var(--modern-size-15);
   --sky-space-gap-stacked_supplemental-m: var(--modern-size-10);
   --sky-space-gap-stacked_supplemental-s: var(--modern-size-5);
   --sky-space-gap-stacked_supplemental-xl: var(--modern-size-20);
-  --sky-space-gap-text_action-0: 0rem;
+  --sky-space-gap-text_action-0: 0;
   --sky-space-gap-text_action-l: var(--modern-space-lg);
   --sky-space-gap-text_action-m: var(--modern-space-md);
   --sky-space-gap-text_action-s: var(--modern-space-s);
@@ -449,7 +449,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-balanced-fixed-xl: var(--modern-size-30);
   --sky-space-inset-balanced-l: var(--modern-space-lg);
   --sky-space-inset-balanced-m: var(--modern-space-md);
-  --sky-space-inset-balanced-none: 0rem;
+  --sky-space-inset-balanced-none: 0;
   --sky-space-inset-balanced-s: var(--modern-space-s);
   --sky-space-inset-balanced-xl: var(--modern-space-xl);
   --sky-space-inset-balanced-xs: var(--modern-space-xs);
@@ -594,7 +594,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
 
 exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and modern styles 2`] = `
 ".sky-theme-modern.sky-theme-brand-base {
-  --bb-border-radius-0: 0rem;
+  --bb-border-radius-0: 0;
   --bb-border-radius-012: .125rem;
   --bb-border-radius-025: .25rem;
   --bb-border-radius-050: .5rem;
@@ -710,7 +710,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-shadow-gray-24: 0 11px 15px -7px rgba(0,0,0,0.2), 0 9px 46px 8px rgba(0,0,0,0.12), 0 24px 38px 3px rgba(0,0,0,0.14);
   --bb-shadow-gray-4: 0 2px 4px -1px rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.14);
   --bb-shadow-gray-8: 0 5px 5px -3px rgba(0,0,0,0.2), 0 3px 14px 2px rgba(0,0,0,0.12), 0 8px 10px 1px rgba(0,0,0,0.14);
-  --bb-size-0: 0rem;
+  --bb-size-0: 0;
   --bb-size-fixed-100: 16px;
   --bb-size-fixed-12: 2px;
   --bb-size-fixed-125: 20px;
@@ -746,7 +746,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-size-fluid-62: 0.625rem;
   --bb-size-fluid-75: 0.75rem;
   --bb-size-reading_container-max_width: 50ch, 40vw;
-  --bb-space-0: 0rem;
+  --bb-space-0: 0;
   --bb-space-1: 1px;
   --bb-space-10: 48px;
   --bb-space-11: 64px;
@@ -1080,35 +1080,35 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-size-width-modal-s: var(--bb-size-fixed-2000);
   --sky-size-width-resize_handle: var(--bb-size-fixed-150);
   --sky-size-width-viewport-smallest: var(--bb-size-fixed-2000);
-  --sky-space-gap-action_group-0: 0rem;
+  --sky-space-gap-action_group-0: 0;
   --sky-space-gap-action_group-l: var(--bb-size-fluid-75);
   --sky-space-gap-action_group-m: var(--bb-size-fluid-50);
   --sky-space-gap-action_group-s: var(--bb-size-fluid-25);
   --sky-space-gap-action_group-xl: var(--bb-size-fluid-100);
-  --sky-space-gap-form-0: 0rem;
+  --sky-space-gap-form-0: 0;
   --sky-space-gap-form-l: var(--bb-size-fluid-100);
   --sky-space-gap-form-m: var(--bb-size-fluid-75);
   --sky-space-gap-form-s: var(--bb-size-fluid-50);
   --sky-space-gap-form-xl: var(--bb-size-fluid-150);
   --sky-space-gap-form-xs: var(--bb-size-fluid-25);
-  --sky-space-gap-icon-0: 0rem;
+  --sky-space-gap-icon-0: 0;
   --sky-space-gap-icon-l: var(--bb-size-fluid-75);
   --sky-space-gap-icon-m: var(--bb-size-fluid-50);
   --sky-space-gap-icon-s: var(--bb-size-fluid-25);
   --sky-space-gap-icon-xl: var(--bb-size-fluid-100);
-  --sky-space-gap-label-0: 0rem;
+  --sky-space-gap-label-0: 0;
   --sky-space-gap-label-l: var(--bb-size-fluid-75);
   --sky-space-gap-label-m: var(--bb-size-fluid-50);
   --sky-space-gap-label-s: var(--bb-size-fluid-25);
   --sky-space-gap-label-xl: var(--bb-size-fluid-100);
   --sky-space-gap-label-xs: var(--bb-size-fluid-12);
   --sky-space-gap-label-xxs: var(--bb-size-fluid-6);
-  --sky-space-gap-stacked_supplemental-0: 0rem;
+  --sky-space-gap-stacked_supplemental-0: 0;
   --sky-space-gap-stacked_supplemental-l: var(--bb-size-fluid-75);
   --sky-space-gap-stacked_supplemental-m: var(--bb-size-fluid-50);
   --sky-space-gap-stacked_supplemental-s: var(--bb-size-fluid-25);
   --sky-space-gap-stacked_supplemental-xl: var(--bb-size-fluid-100);
-  --sky-space-gap-text_action-0: 0rem;
+  --sky-space-gap-text_action-0: 0;
   --sky-space-gap-text_action-l: var(--bb-size-fluid-100);
   --sky-space-gap-text_action-m: var(--bb-size-fluid-75);
   --sky-space-gap-text_action-s: var(--bb-size-fluid-50);
@@ -1127,7 +1127,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-balanced-fixed-xl: var(--bb-size-fixed-150);
   --sky-space-inset-balanced-l: var(--bb-size-fluid-100);
   --sky-space-inset-balanced-m: var(--bb-size-fluid-75);
-  --sky-space-inset-balanced-none: 0rem;
+  --sky-space-inset-balanced-none: 0;
   --sky-space-inset-balanced-s: var(--bb-size-fluid-50);
   --sky-space-inset-balanced-xl: var(--bb-size-fluid-150);
   --sky-space-inset-balanced-xs: var(--bb-size-fluid-25);
@@ -1150,7 +1150,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-floated-left-s: var(--bb-size-fluid-100);
   --sky-space-inset-floated-right-m: var(--bb-size-fluid-150);
   --sky-space-inset-floated-right-s: var(--bb-size-fluid-100);
-  --sky-space-inset-floated-top-0: 0rem;
+  --sky-space-inset-floated-top-0: 0;
   --sky-space-inset-floated-top-m: var(--bb-size-fluid-50);
   --sky-space-inset-floated-top-s: var(--bb-size-fluid-25);
   --sky-space-inset-horizontal-bottom-0: var(--bb-size-0);

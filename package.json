@@ -23,7 +23,7 @@
     "glob": "11.0.1",
     "js-yaml": "3.13.1",
     "prettier": "3.5.3",
-    "style-dictionary": "4.0.1",
+    "style-dictionary": "4.1.0",
     "typescript": "5.8.2",
     "vite": "5.3.4",
     "vitest": "3.1.1"
