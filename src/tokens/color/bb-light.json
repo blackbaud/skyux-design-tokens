@@ -548,6 +548,10 @@
           "$type": "color",
           "$value": "{bb.color.gray.400}"
         },
+        "error": {
+          "$type": "color",
+          "$value": "{bb.color.red.600}"
+        },
         "selected": {
           "base": {
             "$type": "color",
@@ -564,6 +568,10 @@
           "focus": {
             "$type": "color",
             "$value": "{bb.color.blue.1000}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.400}"
           }
         }
       },
