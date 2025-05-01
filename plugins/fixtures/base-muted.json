@@ -1,0 +1,44 @@
+{
+  "modern": {
+    "color": {
+      "gray": {
+        "1": {
+          "$type": "color",
+          "$value": "#e2e3e4"
+        }
+      },
+      "red": {
+        "1": {
+          "$type": "color",
+          "$value": "#f7a08f"
+        },
+        "2": {
+          "$type": "color",
+          "$value": "#ef4044"
+        }
+      },
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000"
+      }
+    },
+    "space": {
+      "s": {
+        "$type": "spacing",
+        "$value": "10"
+      },
+      "md": {
+        "$type": "spacing",
+        "$value": "15"
+      },
+      "lg": {
+        "$type": "spacing",
+        "$value": "20"
+      }
+    }
+  }
+}

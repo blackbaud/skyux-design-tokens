@@ -1,0 +1,10 @@
+{
+  "color": {
+    "text": {
+      "default": {
+        "$type": "color",
+        "$value": "{rainbow.color.red.1}"
+      }
+    }
+  }
+}
