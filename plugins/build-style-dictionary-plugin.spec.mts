@@ -144,6 +144,45 @@ describe('buildStyleDictionaryPlugin', () => {
     });
   });
 
+  it('should add units to unitless zero values', async () => {
+    vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
+      rootPath: 'plugins/fixtures/',
+      tokenSets: [
+        {
+          name: 'zeroes',
+          selector: '.sky-theme-zero',
+          outputPath: 'zeroes.css',
+          path: 'zeroes.json',
+          referenceTokens: [],
+        },
+      ],
+    });
+
+    const plugin = buildStyleDictionaryPlugin();
+    const emitFileSpy = vi.fn();
+    if (plugin.generateBundle) {
+      await plugin.generateBundle.call({
+        emitFile: emitFileSpy,
+      });
+    }
+
+    expect(emitFileSpy).toHaveBeenCalledOnce();
+    expect(emitFileSpy).toHaveBeenCalledWith({
+      type: 'asset',
+      fileName: 'assets/scss/zeroes.css',
+      source: `.sky-theme-zero {
+  --zeroTest-space-1: 0rem;
+  --zeroTest-space-2: 0rem;
+  --zeroTest-space-3: 0rem;
+  --zeroTest-space-4: 0rem;
+  --zeroTest-space-5: 0px;
+  --zeroTest-space-6: 0;
+  --zeroTest-space-7: #000000;
+}
+`,
+    });
+  });
+
   it('should generate the correct blackbaud and modern styles', async () => {
     const plugin = buildStyleDictionaryPlugin();
     const emitFileSpy = vi.fn();

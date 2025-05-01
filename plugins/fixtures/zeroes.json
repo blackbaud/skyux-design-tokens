@@ -1,0 +1,34 @@
+{
+  "zeroTest": {
+    "space": {
+      "1": {
+        "$type": "spacing",
+        "$value": "0"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "0.0"
+      },
+      "3": {
+        "$type": "fontSize",
+        "$value": 0
+      },
+      "4": {
+        "$type": "sizing",
+        "$value": 0.0
+      },
+      "5": {
+        "$type": "spacing",
+        "$value": "0px"
+      },
+      "6": {
+        "$type": "opacity",
+        "$value": 0
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#000000"
+      }
+    }
+  }
+}
