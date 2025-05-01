@@ -9,7 +9,6 @@ import { TokenConfig } from '../src/types/token-config.ts';
 import { TokenSet } from '../src/types/token-set.ts';
 import { Breakpoint } from '../src/types/breakpoint.ts';
 import { ReferenceTokenSet } from '../src/types/reference-token-set.ts';
-import { TransformedToken } from 'style-dictionary/types';
 
 interface SkyStyleDictionaryConfig extends Config {
   platforms: {
@@ -147,6 +146,17 @@ export function buildStyleDictionaryPlugin(): Plugin {
     },
   });
 
+  StyleDictionary.registerTransform({
+    name: 'size/zero-rem',
+    type: 'value',
+    filter: (token) =>
+      (token.$type === 'dimension' || token.$type === 'fontSize') &&
+      token.$value === '0',
+    transform: function () {
+      return '0rem';
+    },
+  });
+
   // Register custom tokens-studio transform group without the resolveMath transform to allow browsers to do the `calc`.
   // Include the standard css transforms and the custom name transform.
   StyleDictionary.registerTransformGroup({
@@ -157,13 +167,14 @@ export function buildStyleDictionaryPlugin(): Plugin {
       }).filter((transform) => transform !== 'ts/resolveMath'),
       ...StyleDictionary.hooks.transformGroups['css'],
       'name/prefixed-kebab',
+      'size/zero-rem',
     ],
   });
 
   StyleDictionary.registerFormat({
     name: 'css/alphabetize-variables',
     format: function ({ dictionary, options }) {
-      const { outputReferences, outputReferenceFallbacks, usesDtcg } = options;
+      const { outputReferences, outputReferenceFallbacks } = options;
       dictionary.allTokens = dictionary.allTokens.sort(sortByName);
 
       const variables = formattedVariables({
@@ -171,7 +182,7 @@ export function buildStyleDictionaryPlugin(): Plugin {
         dictionary,
         outputReferences,
         outputReferenceFallbacks,
-        usesDtcg,
+        usesDtcg: true,
       });
 
       return `${options.selector} {\n` + variables + '\n}\n';
