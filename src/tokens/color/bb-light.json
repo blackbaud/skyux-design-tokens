@@ -21,6 +21,10 @@
         "$type": "color",
         "$value": "{bb.color.white}"
       },
+      "selected": {
+        "$type": "color",
+        "$value": "{bb.color.blue.600}"
+      },
       "heading": {
         "$type": "color",
         "$value": "{bb.color.blue.800}"
@@ -38,6 +42,10 @@
       "deemphasized": {
         "$type": "color",
         "$value": "{bb.color.gray.600}"
+      },
+      "action": {
+        "$type": "color",
+        "$value": "{bb.color.blue.600}"
       },
       "danger": {
         "$type": "color",
@@ -59,7 +67,7 @@
         "$type": "color",
         "$value": "{bb.color.white}"
       },
-      "action": {
+      "selected": {
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       }
