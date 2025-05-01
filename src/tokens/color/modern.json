@@ -547,6 +547,24 @@
         "disabled": {
           "$type": "color",
           "$value": "{modern.color.gray.50}"
+        },
+        "selected": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.gray.50}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          }
         }
       },
       "separator": {
