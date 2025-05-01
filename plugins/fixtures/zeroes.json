@@ -20,6 +20,14 @@
       "5": {
         "$type": "spacing",
         "$value": "0px"
+      },
+      "6": {
+        "$type": "opacity",
+        "$value": 0
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#000000"
       }
     }
   }

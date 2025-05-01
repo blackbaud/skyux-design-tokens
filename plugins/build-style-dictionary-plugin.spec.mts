@@ -176,6 +176,8 @@ describe('buildStyleDictionaryPlugin', () => {
   --zeroTest-space-3: 0rem;
   --zeroTest-space-4: 0rem;
   --zeroTest-space-5: 0px;
+  --zeroTest-space-6: 0;
+  --zeroTest-space-7: #000000;
 }
 `,
     });
