@@ -375,6 +375,10 @@
         "$type": "color",
         "$value": "{modern.color.yellow.80}"
       },
+      "progress_step": {
+        "$type": "color",
+        "$value": "{modern.color.gray.50}"
+      },
       "container": {
         "base": {
           "$type": "color",
