@@ -475,7 +475,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.400}"
+            "$value": "{bb.color.blue.200}"
           },
           "hover": {
             "$type": "color",
