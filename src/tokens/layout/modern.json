@@ -167,7 +167,7 @@
       },
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.semibold}"
+        "$value": "{modern.font.style.bold}"
       },
       "data_label": {
         "$type": "fontWeights",
@@ -265,86 +265,6 @@
         "s": {
           "$type": "letterSpacing",
           "$value": "{modern.letter_spacing.normal}"
-        }
-      }
-    },
-    "weight": {
-      "emphasized": {
-        "$type": "fontWeights",
-        "$value": "{modern.font.weight.bold}"
-      },
-      "data_label": {
-        "$type": "fontWeights",
-        "$value": "{modern.font.weight.regular}"
-      },
-      "body": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "l": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.light}"
-        }
-      },
-      "display": {
-        "1": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "2": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "3": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "4": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.bold}"
-        }
-      },
-      "heading": {
-        "1": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.light}"
-        },
-        "2": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "3": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "4": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.semibold}"
-        },
-        "5": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.semibold}"
-        }
-      },
-      "hint": {
-        "s": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        },
-        "m": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
-        }
-      },
-      "input": {
-        "label": {
-          "$type": "fontWeights",
-          "$value": "{modern.font.weight.regular}"
         }
       }
     },
