@@ -1079,7 +1079,7 @@
         "$type": "typography",
         "$value": {
           "fontFamily": "{font.family.primary}",
-          "fontSize": "{font.size.heading.4}",
+          "fontSize": "{font.size.heading.4",
           "lineHeight": "{font.line_height.heading.4}",
           "fontWeight": "{font.style.heading.4}"
         }
