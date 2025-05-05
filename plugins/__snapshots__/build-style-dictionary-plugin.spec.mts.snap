@@ -774,9 +774,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-gradient-blue: linear-gradient( var(--bb-color-blue-500), var(--bb-color-blue-700));
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
 }
-@media (min-width: 992px) {
-undefined
-}.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
   --sky-color-background-action: var(--bb-color-blue-800);
   --sky-color-background-container: var(--bb-color-gray-900);
   --sky-color-background-page: var(--bb-color-gray-1100);
