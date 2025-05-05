@@ -224,6 +224,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-input-error: var(--modern-color-red-50);
   --sky-color-border-input-focus: var(--modern-color-blue-74);
   --sky-color-border-input-hover: var(--modern-color-blue-74);
+  --sky-color-border-progress_step: var(--modern-color-gray-50);
   --sky-color-border-selected: var(--modern-color-blue-74);
   --sky-color-border-selected_soft: var(--modern-color-blue-30);
   --sky-color-border-separator-dark: var(--modern-color-gray-20);
@@ -306,6 +307,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-border-width-input-error: var(--modern-size-2);
   --sky-border-width-input-focus: var(--modern-size-2);
   --sky-border-width-input-hover: var(--modern-size-1);
+  --sky-border-width-progress_connector: var(--modern-size-1);
+  --sky-border-width-progress_step: var(--modern-size-2);
   --sky-border-width-selected-l: var(--modern-size-4);
   --sky-border-width-selected-m: var(--modern-size-2);
   --sky-border-width-selected-s: var(--modern-size-1);
@@ -401,6 +404,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-size-illustration-xl: var(--modern-size-96);
   --sky-size-max_width-overlay_message: var(--modern-size-236);
   --sky-size-picker_btn: var(--modern-size-30);
+  --sky-size-progress_step: var(--modern-size-13);
   --sky-size-switch: var(--modern-size-26);
   --sky-size-thumbnail-l: var(--modern-size-100);
   --sky-size-width-modal-l: var(--modern-size-900);
@@ -902,6 +906,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-input-error: var(--bb-color-red-600);
   --sky-color-border-input-focus: var(--bb-color-blue-600);
   --sky-color-border-input-hover: var(--bb-color-blue-600);
+  --sky-color-border-progress_step: var(--bb-color-gray-400);
   --sky-color-border-selected: var(--bb-color-blue-600);
   --sky-color-border-selected_soft: var(--bb-color-blue-300);
   --sky-color-border-separator-dark: var(--bb-color-gray-100);
@@ -985,6 +990,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-border-width-input-error: var(--bb-size-fixed-12);
   --sky-border-width-input-focus: var(--bb-size-fixed-12);
   --sky-border-width-input-hover: var(--bb-size-fixed-6);
+  --sky-border-width-progress_connector: var(--bb-size-fixed-6);
+  --sky-border-width-progress_step: var(--bb-size-fixed-12);
   --sky-border-width-selected-l: var(--bb-size-fixed-25);
   --sky-border-width-selected-m: var(--bb-size-fixed-12);
   --sky-border-width-selected-s: var(--bb-size-fixed-6);
@@ -1080,6 +1087,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-size-illustration-xl: var(--bb-size-fluid-600);
   --sky-size-max_width-overlay_message: var(--bb-size-reading_container-max_width);
   --sky-size-picker_btn: var(--bb-size-fluid-200);
+  --sky-size-progress_step: var(--bb-size-fluid-75);
   --sky-size-switch: var(--bb-size-fluid-125);
   --sky-size-thumbnail-l: var(--bb-size-fixed-600);
   --sky-size-width-modal-l: var(--bb-size-fixed-6000);
