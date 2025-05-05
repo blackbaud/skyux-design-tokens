@@ -230,6 +230,17 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-separator-light: var(--modern-color-gray-10);
   --sky-color-border-separator-row: var(--modern-color-gray-20);
   --sky-color-border-success: var(--modern-color-green-50);
+  --sky-color-border-switch-active: var(--modern-color-blue-74);
+  --sky-color-border-switch-base: var(--modern-color-gray-50);
+  --sky-color-border-switch-disabled: var(--modern-color-gray-50);
+  --sky-color-border-switch-error: var(--modern-color-red-50);
+  --sky-color-border-switch-focus: var(--modern-color-blue-74);
+  --sky-color-border-switch-hover: var(--modern-color-blue-74);
+  --sky-color-border-switch-selected-active: var(--modern-color-blue-74);
+  --sky-color-border-switch-selected-base: var(--modern-color-gray-50);
+  --sky-color-border-switch-selected-disabled: var(--modern-color-gray-50);
+  --sky-color-border-switch-selected-focus: var(--modern-color-blue-74);
+  --sky-color-border-switch-selected-hover: var(--modern-color-blue-74);
   --sky-color-border-text_highlight: var(--modern-color-yellow-80);
   --sky-color-border-warning: var(--modern-color-yellow-50);
   --sky-color-icon-action: var(--modern-color-blue-74);
@@ -238,6 +249,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-default: var(--modern-color-gray-105);
   --sky-color-icon-info: var(--modern-color-blue-50);
   --sky-color-icon-inverse: var(--modern-color-white);
+  --sky-color-icon-selected: var(--modern-color-blue-74);
   --sky-color-icon-success: var(--modern-color-green-50);
   --sky-color-icon-warning: var(--modern-color-yellow-50);
   --sky-color-text-action: var(--modern-color-blue-74);
@@ -247,6 +259,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-text-heading: var(--modern-color-gray-105);
   --sky-color-text-inverse: var(--modern-color-white);
   --sky-color-text-link_highlight: var(--modern-color-blue-80);
+  --sky-color-text-selected: var(--modern-color-blue-74);
   --sky-elevation-none: var(--modern-shadow-size-0);
   --sky-opacity-wait: var(--modern-opacity-600);
   --sky-elevation-focus: var(--modern-shadow-size-3);
@@ -607,6 +620,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-blue-100: #e8f0fb;
   --bb-color-blue-1000: #04152b;
   --bb-color-blue-200: #d0e1f7;
+  --bb-color-blue-25: #fbfcfe;
   --bb-color-blue-300: #a2c2f0;
   --bb-color-blue-400: #73a4e8;
   --bb-color-blue-500: #4585e1;
@@ -757,13 +771,11 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-space-7: 16px;
   --bb-space-8: 24px;
   --bb-space-9: 36px;
+  --bb-color-gradient-blue: linear-gradient( var(--bb-color-blue-500), var(--bb-color-blue-700));
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
 }
 @media (min-width: 992px) {
-.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
-  --sky-color-background-page: var(--bb-color-gray-900);
-}
-
+undefined
 }.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
   --sky-color-background-action: var(--bb-color-blue-800);
   --sky-color-background-container: var(--bb-color-gray-900);
@@ -843,7 +855,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-icon_matte-danger: var(--bb-color-red-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-700);
   --sky-color-background-icon_matte-warning: var(--bb-color-yellow-600);
-  --sky-color-background-input-base: var(--bb-color-transparent);
+  --sky-color-background-input-base: var(--bb-color-blue-25);
   --sky-color-background-input-disabled: var(--bb-color-gray-50);
   --sky-color-background-list-active: var(--bb-color-transparent);
   --sky-color-background-list-base: var(--bb-color-transparent);
@@ -858,7 +870,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-page: var(--bb-color-gray-25);
   --sky-color-background-scrim: var(--bb-color-scrim);
   --sky-color-background-selected-danger: var(--bb-color-red-300);
-  --sky-color-background-selected-heavy: var(--bb-color-blue-600);
   --sky-color-background-selected-soft: var(--bb-color-blue-100);
   --sky-color-background-selected-success: var(--bb-color-green-300);
   --sky-color-background-selected-warning: var(--bb-color-yellow-300);
@@ -872,7 +883,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-action-danger-focus: var(--bb-color-red-200);
   --sky-color-border-action-danger-hover: var(--bb-color-red-200);
   --sky-color-border-action-input-active: var(--bb-color-blue-600);
-  --sky-color-border-action-input-base: var(--bb-color-gray-400);
+  --sky-color-border-action-input-base: var(--bb-color-blue-200);
   --sky-color-border-action-input-disabled: var(--bb-color-gray-400);
   --sky-color-border-action-input-focus: var(--bb-color-blue-600);
   --sky-color-border-action-input-hover: var(--bb-color-blue-600);
@@ -897,7 +908,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-elevation: var(--bb-color-gray-100);
   --sky-color-border-info: var(--bb-color-blue-600);
   --sky-color-border-input-active: var(--bb-color-blue-600);
-  --sky-color-border-input-base: var(--bb-color-gray-400);
+  --sky-color-border-input-base: var(--bb-color-blue-200);
   --sky-color-border-input-disabled: var(--bb-color-gray-400);
   --sky-color-border-input-error: var(--bb-color-red-600);
   --sky-color-border-input-focus: var(--bb-color-blue-600);
@@ -908,6 +919,17 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-separator-light: var(--bb-color-gray-50);
   --sky-color-border-separator-row: var(--bb-color-gray-50);
   --sky-color-border-success: var(--bb-color-green-700);
+  --sky-color-border-switch-active: var(--bb-color-blue-600);
+  --sky-color-border-switch-base: var(--bb-color-blue-500);
+  --sky-color-border-switch-disabled: var(--bb-color-gray-400);
+  --sky-color-border-switch-error: var(--bb-color-red-600);
+  --sky-color-border-switch-focus: var(--bb-color-blue-600);
+  --sky-color-border-switch-hover: var(--bb-color-blue-600);
+  --sky-color-border-switch-selected-active: var(--bb-color-blue-1000);
+  --sky-color-border-switch-selected-base: var(--bb-color-transparent);
+  --sky-color-border-switch-selected-disabled: var(--bb-color-gray-400);
+  --sky-color-border-switch-selected-focus: var(--bb-color-blue-1000);
+  --sky-color-border-switch-selected-hover: var(--bb-color-blue-1000);
   --sky-color-border-text_highlight: var(--bb-color-yellow-800);
   --sky-color-border-warning: var(--bb-color-yellow-600);
   --sky-color-icon-action: var(--bb-color-blue-600);
@@ -916,6 +938,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-default: var(--bb-color-gray-900);
   --sky-color-icon-info: var(--bb-color-blue-600);
   --sky-color-icon-inverse: var(--bb-color-white);
+  --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
   --sky-color-text-action: var(--bb-color-blue-600);
@@ -925,6 +948,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-text-heading: var(--bb-color-blue-800);
   --sky-color-text-inverse: var(--bb-color-white);
   --sky-color-text-link_highlighted: var(--bb-color-blue-800);
+  --sky-color-text-selected: var(--bb-color-blue-600);
   --sky-elevation-focus: var(--bb-shadow-gray-2);
   --sky-elevation-none: var(--bb-shadow-gray-0);
   --sky-elevation-overflow: var(--bb-shadow-gray-2);
@@ -934,6 +958,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-elevation-overlay-400: var(--bb-shadow-gray-24);
   --sky-elevation-raised-100: var(--bb-shadow-gray-1);
   --sky-opacity-wait: var(--bb-opacity-600);
+  --sky-color-background-selected-heavy: var(--bb-color-gradient-blue);
 }
 .sky-theme-modern.sky-theme-brand-base {
   --sky-font-style-deemphasized-style: italic;
