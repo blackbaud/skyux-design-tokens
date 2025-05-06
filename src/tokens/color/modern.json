@@ -21,6 +21,10 @@
         "$type": "color",
         "$value": "{modern.color.white}"
       },
+      "selected": {
+        "$type": "color",
+        "$value": "{modern.color.blue.74}"
+      },
       "heading": {
         "$type": "color",
         "$value": "{modern.color.gray.105}"
@@ -38,6 +42,10 @@
       "deemphasized": {
         "$type": "color",
         "$value": "{modern.color.gray.70}"
+      },
+      "action": {
+        "$type": "color",
+        "$value": "{modern.color.blue.74}"
       },
       "danger": {
         "$type": "color",
@@ -59,7 +67,7 @@
         "$type": "color",
         "$value": "{modern.color.white}"
       },
-      "action": {
+      "selected": {
         "$type": "color",
         "$value": "{modern.color.blue.74}"
       }
@@ -521,6 +529,54 @@
         "error": {
           "$type": "color",
           "$value": "{modern.color.red.50}"
+        }
+      },
+      "switch": {
+        "base": {
+          "$type": "color",
+          "$value": "{modern.color.gray.50}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{modern.color.blue.74}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{modern.color.gray.50}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{modern.color.red.50}"
+        },
+        "selected": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.gray.50}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.50}"
+          }
         }
       },
       "separator": {
