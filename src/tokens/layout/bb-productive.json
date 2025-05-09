@@ -2058,6 +2058,76 @@
           }
         }
       }
+    },
+    "colorpicker": {
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            }
+          }
+        }
+      }
+    },
+    "datepicker": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            }
+          }
+        }
+      },
+      "calendar": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            }
+          }
+        }
+      }
     }
   }
 }
