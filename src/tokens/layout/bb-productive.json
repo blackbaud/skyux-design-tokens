@@ -2128,6 +2128,50 @@
           }
         }
       }
+    },
+    "file_drop": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          }
+        }
+      }
+    },
+    "filter_inline": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.50}"
+          }
+        }
+      }
     }
   }
 }
