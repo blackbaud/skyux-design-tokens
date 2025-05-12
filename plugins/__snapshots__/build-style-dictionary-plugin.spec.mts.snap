@@ -872,6 +872,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-page: var(--bb-color-gray-25);
   --sky-color-background-scrim: var(--bb-color-scrim);
   --sky-color-background-selected-danger: var(--bb-color-red-300);
+  --sky-color-background-selected-heavy: var(--bb-color-blue-600);
   --sky-color-background-selected-soft: var(--bb-color-blue-100);
   --sky-color-background-selected-success: var(--bb-color-green-300);
   --sky-color-background-selected-warning: var(--bb-color-yellow-300);
@@ -961,7 +962,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-elevation-overlay-400: var(--bb-shadow-gray-24);
   --sky-elevation-raised-100: var(--bb-shadow-gray-1);
   --sky-opacity-wait: var(--bb-opacity-600);
-  --sky-color-background-selected-heavy: var(--bb-color-gradient-blue);
 }
 .sky-theme-modern.sky-theme-brand-base {
   --sky-font-style-deemphasized-style: italic;
