@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.55](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.54...0.0.55) (2025-05-12)
+
+
+### Bug Fixes
+
+* revert selected heavy gradient ([#166](https://github.com/blackbaud/skyux-design-tokens/issues/166)) ([6305097](https://github.com/blackbaud/skyux-design-tokens/commit/63050972ca5cd117b97fdf868965f4ee489ad7db))
+
 ## [0.0.54](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.53...0.0.54) (2025-05-09)
 
 
