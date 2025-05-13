@@ -7,6 +7,7 @@
     "color/modern",
     "layout/bb-productive",
     "layout/bb-compact",
-    "layout/modern"
+    "layout/modern",
+    "bb-prod-sm-min"
   ]
 }
