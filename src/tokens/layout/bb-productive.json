@@ -2462,6 +2462,164 @@
               }
             }
           }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
+        }
+      },
+      "content": {
+        "blocks": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
+        },
+        "fit": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              }
+            }
+          }
+        }
+      },
+      "links": {
+        "blocks": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
+        },
+        "list": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
         }
       }
     },
