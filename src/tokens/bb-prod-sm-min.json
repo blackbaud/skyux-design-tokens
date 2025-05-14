@@ -248,7 +248,7 @@
             }
           }
         },
-        "fit": {
+        "list": {
           "space": {
             "inset": {
               "top": {
@@ -270,7 +270,7 @@
             }
           }
         },
-        "list": {
+        "tabs": {
           "space": {
             "inset": {
               "top": {
