@@ -593,6 +593,36 @@
           "$value": "{bb.color.gray.50}"
         }
       }
+    },
+    "category": {
+      "light_blue": {
+        "$type": "color",
+        "$value": "{bb.color.blue.200}"
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "{bb.color.green.200}"
+      },
+      "purple": {
+        "$type": "color",
+        "$value": "{bb.color.purple.200}"
+      },
+      "orange": {
+        "$type": "color",
+        "$value": "{bb.color.orange.200}"
+      },
+      "blue": {
+        "$type": "color",
+        "$value": "{bb.color.teal.200}"
+      },
+      "yellow": {
+        "$type": "color",
+        "$value": "{bb.color.yellow.200}"
+      },
+      "red": {
+        "$type": "color",
+        "$value": "{bb.color.red.200}"
+      }
     }
   },
   "elevation": {
