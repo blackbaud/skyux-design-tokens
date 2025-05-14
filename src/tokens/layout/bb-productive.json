@@ -2621,6 +2621,30 @@
             }
           }
         }
+      },
+      "tabset": {
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
+        }
       }
     },
     "popover": {
@@ -3029,30 +3053,6 @@
         }
       }
     },
-    "tabset": {
-      "tabs": {
-        "space": {
-          "inset": {
-            "top": {
-              "$type": "other",
-              "$value": "{bb.size.0}"
-            },
-            "right": {
-              "$type": "other",
-              "$value": "{bb.size.0}"
-            },
-            "bottom": {
-              "$type": "other",
-              "$value": "{bb.size.0}"
-            },
-            "left": {
-              "$type": "other",
-              "$value": "{bb.size.fluid.50}"
-            }
-          }
-        }
-      }
-    },
     "timepicker": {
       "space": {
         "inset": {
@@ -3137,6 +3137,76 @@
           "left": {
             "$type": "other",
             "$value": "{bb.size.fluid.75}"
+          }
+        }
+      }
+    },
+    "tabset": {
+      "tabs": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.0}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            }
+          }
+        }
+      }
+    },
+    "wizard": {
+      "tabset": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.150}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.150}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.150}"
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              }
+            }
           }
         }
       }
