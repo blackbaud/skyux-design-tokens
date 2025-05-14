@@ -293,6 +293,28 @@
           }
         }
       }
+    },
+    "tile": {
+      "dashboard": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.0}"
+            }
+          }
+        },
+        "column": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
