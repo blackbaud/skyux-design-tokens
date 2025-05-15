@@ -1983,7 +1983,7 @@
             },
             "bottom": {
               "$type": "other",
-              "$value": "{bb.space.0}"
+              "$value": "{bb.size.0}"
             },
             "left": {
               "$type": "other",
