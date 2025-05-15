@@ -3210,6 +3210,62 @@
           }
         }
       }
+    },
+    "token": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.6}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.25}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.6}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{bb.size.fluid.25}"
+          }
+        }
+      }
+    },
+    "tree": {
+      "node": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            }
+          }
+        }
+      },
+      "child": {
+        "space": {
+          "inset": {
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.150}"
+            }
+          }
+        }
+      }
     }
   }
 }
