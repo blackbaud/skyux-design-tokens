@@ -2077,6 +2077,116 @@
           }
         }
       }
+    },
+    "modal": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            }
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      },
+      "footer": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            }
+          }
+        }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          }
+        }
+      },
+      "fullscreen": {
+        "space": {
+          "offset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            }
+          }
+        }
+      }
     }
   }
 }

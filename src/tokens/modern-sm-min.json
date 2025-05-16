@@ -1,0 +1,48 @@
+{
+  "comp": {
+    "modal": {
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          }
+        }
+      },
+      "fullscreen": {
+        "space": {
+          "offset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
