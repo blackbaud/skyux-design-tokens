@@ -1943,6 +1943,50 @@
           }
         }
       }
+    },
+    "flyout_header": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          }
+        }
+      }
+    },
+    "help_inline": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.1}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.5}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.1}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.5}"
+          }
+        }
+      }
     }
   }
 }
