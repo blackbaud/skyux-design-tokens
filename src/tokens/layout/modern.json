@@ -1837,6 +1837,18 @@
             "top": {
               "$type": "other",
               "$value": "{modern.size.15}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
             }
           }
         }
