@@ -2569,6 +2569,28 @@
           }
         }
       }
+    },
+    "repeater_item": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          }
+        }
+      }
     }
   }
 }
