@@ -595,7 +595,7 @@
       }
     },
     "category": {
-      "light_blue": {
+      "green": {
         "$type": "color",
         "$value": "{modern.color.category.sky_blue.20}"
       },

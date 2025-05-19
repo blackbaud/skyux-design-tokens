@@ -595,21 +595,21 @@
       }
     },
     "category": {
-      "light_blue": {
+      "green": {
         "$type": "color",
-        "$value": "{bb.color.blue.200}"
+        "$value": "{bb.color.green.300}"
       },
       "teal": {
         "$type": "color",
-        "$value": "{bb.color.green.200}"
+        "$value": "{bb.color.teal.400}"
       },
       "purple": {
         "$type": "color",
-        "$value": "{bb.color.purple.200}"
+        "$value": "{bb.color.purple.300}"
       },
       "orange": {
         "$type": "color",
-        "$value": "{bb.color.orange.200}"
+        "$value": "{bb.color.orange.400}"
       },
       "blue": {
         "$type": "color",
@@ -617,11 +617,11 @@
       },
       "yellow": {
         "$type": "color",
-        "$value": "{bb.color.yellow.200}"
+        "$value": "{bb.color.yellow.300}"
       },
       "red": {
         "$type": "color",
-        "$value": "{bb.color.red.200}"
+        "$value": "{bb.color.red.300}"
       }
     }
   },
