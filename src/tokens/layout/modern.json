@@ -2501,6 +2501,74 @@
           }
         }
       }
+    },
+    "paging_button": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.4}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.4}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          }
+        }
+      }
+    },
+    "popover": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.lg}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.lg}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.lg}"
+            }
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            }
+          }
+        }
+      }
     }
   }
 }
