@@ -2209,6 +2209,98 @@
           }
         }
       }
+    },
+    "page": {
+      "header": {
+        "blocks": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "fit": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "list": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
