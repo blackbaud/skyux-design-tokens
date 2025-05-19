@@ -1084,6 +1084,24 @@
       "thumb": {
         "$type": "spacing",
         "$value": "{modern.size.1}"
+      },
+      "switch_icon": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        }
       }
     },
     "gap": {
