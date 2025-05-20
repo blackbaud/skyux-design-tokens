@@ -1306,6 +1306,10 @@
       "$type": "sizing",
       "$value": "{modern.size.30}"
     },
+    "progress_step": {
+      "$type": "sizing",
+      "$value": "{modern.size.13}"
+    },
     "icon": {
       "xxxs": {
         "$type": "sizing",
@@ -1434,6 +1438,14 @@
         "$value": "{modern.size.1}"
       },
       "text_highlight": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.1}"
+      },
+      "progress_step": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.2}"
+      },
+      "progress_connector": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },

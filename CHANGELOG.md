@@ -2,6 +2,29 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.55](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.54...0.0.55) (2025-05-12)
+
+
+### Bug Fixes
+
+* revert selected heavy gradient ([#166](https://github.com/blackbaud/skyux-design-tokens/issues/166)) ([6305097](https://github.com/blackbaud/skyux-design-tokens/commit/63050972ca5cd117b97fdf868965f4ee489ad7db))
+
+## [0.0.54](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.53...0.0.54) (2025-05-09)
+
+
+### Features
+
+* add typescript, support breakpoints, add unit testing ([#159](https://github.com/blackbaud/skyux-design-tokens/issues/159)) ([0e672f8](https://github.com/blackbaud/skyux-design-tokens/commit/0e672f85b2a491fecd919a7853344489a4876a96))
+* add units to unitless 0 values ([#164](https://github.com/blackbaud/skyux-design-tokens/issues/164)) ([701b8fd](https://github.com/blackbaud/skyux-design-tokens/commit/701b8fd0d61d162dcc2866c474f21715e870fcca))
+* progress indicator tokens ([#165](https://github.com/blackbaud/skyux-design-tokens/issues/165)) ([83cb155](https://github.com/blackbaud/skyux-design-tokens/commit/83cb1555a7aee93df02da61b63c25b27c128a3fa))
+* switch colors ([#163](https://github.com/blackbaud/skyux-design-tokens/issues/163)) ([19962c5](https://github.com/blackbaud/skyux-design-tokens/commit/19962c5351467556fdada3c104542d97e62ac5c4))
+
+
+### Bug Fixes
+
+* alphabetize reference css variables ([#162](https://github.com/blackbaud/skyux-design-tokens/issues/162)) ([016ef0d](https://github.com/blackbaud/skyux-design-tokens/commit/016ef0da29f7ad7e075b5eb334f47686e0329eb7))
+* alphabetize token output ([#161](https://github.com/blackbaud/skyux-design-tokens/issues/161)) ([c3b706c](https://github.com/blackbaud/skyux-design-tokens/commit/c3b706c3cfaf06807f306c9c2f3deacdde9bd349))
+
 ## [0.0.53](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.52...0.0.53) (2025-04-23)
 
 

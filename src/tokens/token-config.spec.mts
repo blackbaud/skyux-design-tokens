@@ -1,7 +1,8 @@
-import { tokenSets } from './token-sets.mjs';
+import { tokenConfig } from './token-config.mts';
 import { expect, test } from 'vitest';
 
 test('should have token sets in the correct format', () => {
+  const tokenSets = tokenConfig.tokenSets;
   expect(tokenSets[0].name).toEqual('modern');
   expect(tokenSets[0].selector).toEqual('.sky-theme-modern');
   expect(tokenSets[0].path).toEqual('base-modern.json');
@@ -25,7 +26,7 @@ test('should have token sets in the correct format', () => {
     path: 'color/bb-light.json',
   }).toBeOneOf(tokenSets[1].referenceTokens);
   expect({
-    name: 'bb-dark',
+    name: 'bb-dark-xs',
     selector: '.sky-theme-mode-dark',
     path: 'color/bb-dark.json',
   }).toBeOneOf(tokenSets[1].referenceTokens);

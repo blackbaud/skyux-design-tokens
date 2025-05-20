@@ -928,6 +928,10 @@
       "$type": "sizing",
       "$value": "{bb.size.fluid.200}"
     },
+    "progress_step": {
+      "$type": "sizing",
+      "$value": "{bb.size.fluid.75}"
+    },
     "icon": {
       "xxxs": {
         "$type": "sizing",
@@ -1631,6 +1635,14 @@
         "$value": "{bb.size.fixed.12}"
       },
       "text_highlight": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.6}"
+      },
+      "progress_step": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.12}"
+      },
+      "progress_connector": {
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
       },
