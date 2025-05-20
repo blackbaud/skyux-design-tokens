@@ -379,6 +379,10 @@
         "$type": "color",
         "$value": "{modern.color.gray.15}"
       },
+      "column_divider": {
+        "$type": "color",
+        "$value": "{modern.color.gray.70}"
+      },
       "text_highlight": {
         "$type": "color",
         "$value": "{modern.color.yellow.80}"
