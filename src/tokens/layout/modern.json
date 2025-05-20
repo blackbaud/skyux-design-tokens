@@ -3109,6 +3109,52 @@
           }
         }
       }
+    },
+    "wizard": {
+      "tabset": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
