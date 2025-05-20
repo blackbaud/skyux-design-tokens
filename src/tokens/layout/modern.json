@@ -1421,10 +1421,6 @@
         "$type": "borderWidth",
         "$value": "{modern.size.7}"
       },
-      "column_resizer": {
-        "$type": "borderWidth",
-        "$value": "{modern.size.1}"
-      },
       "divider": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"

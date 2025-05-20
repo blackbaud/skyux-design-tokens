@@ -1618,10 +1618,6 @@
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.37}"
       },
-      "column_resizer": {
-        "$type": "borderWidth",
-        "$value": "{bb.size.fixed.6}"
-      },
       "divider": {
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
