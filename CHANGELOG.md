@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.56](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.55...0.0.56) (2025-05-20)
+
+
+### Features
+
+* ag-grid new tokens ([#168](https://github.com/blackbaud/skyux-design-tokens/issues/168)) ([66a2479](https://github.com/blackbaud/skyux-design-tokens/commit/66a2479930fbc705e579e7ac4ca536b7f64d9ddf))
+
 ## [0.0.55](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.54...0.0.55) (2025-05-12)
 
 
