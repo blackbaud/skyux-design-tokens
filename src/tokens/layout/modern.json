@@ -2975,6 +2975,50 @@
           }
         }
       }
+    },
+    "toast": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          }
+        }
+      }
+    },
+    "toaster": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.0}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          }
+        }
+      }
     }
   }
 }

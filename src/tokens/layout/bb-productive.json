@@ -3154,7 +3154,7 @@
           },
           "bottom": {
             "$type": "other",
-            "$value": "{bb.size.fluid.150}"
+            "$value": "{bb.size.0}"
           },
           "left": {
             "$type": "other",
