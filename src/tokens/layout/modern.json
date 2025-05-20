@@ -2821,6 +2821,28 @@
           }
         }
       }
+    },
+    "text_editor": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          }
+        }
+      }
     }
   }
 }
