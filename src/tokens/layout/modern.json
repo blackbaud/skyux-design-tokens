@@ -3063,6 +3063,52 @@
           }
         }
       }
+    },
+    "tree": {
+      "node": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            }
+          }
+        }
+      },
+      "child": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      }
     }
   }
 }
