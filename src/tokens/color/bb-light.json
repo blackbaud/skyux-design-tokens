@@ -613,7 +613,7 @@
       },
       "blue": {
         "$type": "color",
-        "$value": "{bb.color.teal.200}"
+        "$value": "{bb.color.sky.300}"
       },
       "yellow": {
         "$type": "color",
