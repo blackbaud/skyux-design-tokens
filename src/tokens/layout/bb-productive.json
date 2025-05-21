@@ -3229,6 +3229,28 @@
             }
           }
         }
+      },
+      "button": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.25}"
+            }
+          }
+        }
       }
     },
     "wizard": {
