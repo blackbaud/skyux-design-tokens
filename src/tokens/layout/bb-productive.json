@@ -1945,6 +1945,28 @@
             }
           }
         }
+      },
+      "icon": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            }
+          }
+        }
       }
     },
     "back_to_top": {
