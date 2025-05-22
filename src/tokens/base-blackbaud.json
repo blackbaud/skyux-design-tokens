@@ -422,7 +422,7 @@
       "orange": {
         "100": {
           "$type": "color",
-          "$value": "#FEF0E6"
+          "$value": "#FEF3EB"
         },
         "200": {
           "$type": "color",
@@ -464,7 +464,7 @@
       "pink": {
         "100": {
           "$type": "color",
-          "$value": "#FEEFFD"
+          "$value": "#FEF2FD"
         },
         "200": {
           "$type": "color",
@@ -548,7 +548,7 @@
       "red": {
         "100": {
           "$type": "color",
-          "$value": "#FBEBEC"
+          "$value": "#fcefef"
         },
         "200": {
           "$type": "color",
@@ -632,7 +632,7 @@
       "teal": {
         "100": {
           "$type": "color",
-          "$value": "#E6F9F8"
+          "$value": "#ebfaf9"
         },
         "200": {
           "$type": "color",
@@ -674,7 +674,7 @@
       "yellow": {
         "100": {
           "$type": "color",
-          "$value": "#FFF7EB"
+          "$value": "#FFF9EF"
         },
         "200": {
           "$type": "color",
