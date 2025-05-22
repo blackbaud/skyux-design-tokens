@@ -3319,6 +3319,28 @@
             "$value": "{bb.size.fluid.25}"
           }
         }
+      },
+      "close": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.12}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.12}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.12}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.12}"
+            }
+          }
+        }
       }
     },
     "tree": {

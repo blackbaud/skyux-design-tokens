@@ -3084,6 +3084,28 @@
             "$value": "{modern.size.5}"
           }
         }
+      },
+      "close": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            }
+          }
+        }
       }
     },
     "toolbar": {
