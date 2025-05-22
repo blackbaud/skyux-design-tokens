@@ -338,7 +338,7 @@
         },
         "100": {
           "$type": "color",
-          "$value": "#E8F0FB"
+          "$value": "#EEF3FC"
         },
         "200": {
           "$type": "color",
@@ -346,35 +346,35 @@
         },
         "300": {
           "$type": "color",
-          "$value": "#A2C2F0"
+          "$value": "#AAC4EE"
         },
         "400": {
           "$type": "color",
-          "$value": "#73A4E8"
+          "$value": "#80A6E6"
         },
         "500": {
           "$type": "color",
-          "$value": "#4585E1"
+          "$value": "#5589DD"
         },
         "600": {
           "$type": "color",
-          "$value": "#1667D9"
+          "$value": "#2B6BD5"
         },
         "700": {
           "$type": "color",
-          "$value": "#1252AE"
+          "$value": "#2256AA"
         },
         "800": {
           "$type": "color",
-          "$value": "#0D3E82"
+          "$value": "#1A4080"
         },
         "900": {
           "$type": "color",
-          "$value": "#092957"
+          "$value": "#112B55"
         },
         "1000": {
           "$type": "color",
-          "$value": "#04152B"
+          "$value": "#09152b"
         }
       },
       "green": {
@@ -548,7 +548,7 @@
       "red": {
         "100": {
           "$type": "color",
-          "$value": "#fcefef"
+          "$value": "#FCEFEF"
         },
         "200": {
           "$type": "color",
@@ -632,7 +632,7 @@
       "teal": {
         "100": {
           "$type": "color",
-          "$value": "#ebfaf9"
+          "$value": "#EBFAF9"
         },
         "200": {
           "$type": "color",
