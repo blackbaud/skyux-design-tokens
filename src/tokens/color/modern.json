@@ -597,6 +597,36 @@
           "$value": "{modern.color.gray.20}"
         }
       }
+    },
+    "category": {
+      "green": {
+        "$type": "color",
+        "$value": "{modern.color.category.sky_blue.20}"
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "{modern.color.category.green.30}"
+      },
+      "purple": {
+        "$type": "color",
+        "$value": "{modern.color.category.purple.30}"
+      },
+      "orange": {
+        "$type": "color",
+        "$value": "{modern.color.category.orange.30}"
+      },
+      "blue": {
+        "$type": "color",
+        "$value": "{modern.color.category.sky_blue.40}"
+      },
+      "yellow": {
+        "$type": "color",
+        "$value": "{modern.color.category.yellow.30}"
+      },
+      "red": {
+        "$type": "color",
+        "$value": "{modern.color.category.red.30}"
+      }
     }
   },
   "elevation": {
