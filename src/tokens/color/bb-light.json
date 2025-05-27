@@ -316,7 +316,7 @@
       "selected": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.gradient.blue}"
+          "$value": "{bb.color.blue.600}"
         },
         "soft": {
           "$type": "color",
@@ -379,9 +379,17 @@
         "$type": "color",
         "$value": "{bb.color.gray.100}"
       },
+      "column_divider": {
+        "$type": "color",
+        "$value": "{bb.color.blue.600}"
+      },
       "text_highlight": {
         "$type": "color",
         "$value": "{bb.color.yellow.800}"
+      },
+      "progress_step": {
+        "$type": "color",
+        "$value": "{bb.color.gray.400}"
       },
       "action": {
         "primary": {
@@ -588,6 +596,36 @@
           "$type": "color",
           "$value": "{bb.color.gray.50}"
         }
+      }
+    },
+    "category": {
+      "green": {
+        "$type": "color",
+        "$value": "{bb.color.green.300}"
+      },
+      "teal": {
+        "$type": "color",
+        "$value": "{bb.color.teal.400}"
+      },
+      "purple": {
+        "$type": "color",
+        "$value": "{bb.color.purple.300}"
+      },
+      "orange": {
+        "$type": "color",
+        "$value": "{bb.color.orange.400}"
+      },
+      "blue": {
+        "$type": "color",
+        "$value": "{bb.color.sky.300}"
+      },
+      "yellow": {
+        "$type": "color",
+        "$value": "{bb.color.yellow.300}"
+      },
+      "red": {
+        "$type": "color",
+        "$value": "{bb.color.red.300}"
       }
     }
   },
