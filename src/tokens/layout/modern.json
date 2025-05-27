@@ -1429,11 +1429,15 @@
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },
-      "text_highlight": {
+      "elevation": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },
-      "elevation": {
+      "emphasized": {
+        "$type": "borderWidth",
+        "$value": "{modern.size.1}"
+      },
+      "text_highlight": {
         "$type": "borderWidth",
         "$value": "{modern.size.1}"
       },

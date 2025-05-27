@@ -218,6 +218,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-action-tertiary-disabled: var(--modern-color-gray-15);
   --sky-color-border-action-tertiary-focus: var(--modern-color-blue-74);
   --sky-color-border-action-tertiary-hover: var(--modern-color-blue-74);
+  --sky-color-border-column_divider: var(--modern-color-gray-70);
   --sky-color-border-container-base: var(--modern-color-gray-15);
   --sky-color-border-danger: var(--modern-color-red-50);
   --sky-color-border-divider: var(--modern-color-gray-15);
@@ -326,6 +327,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-border-width-container-base: var(--modern-size-1);
   --sky-border-width-divider: var(--modern-size-1);
   --sky-border-width-elevation: var(--modern-size-1);
+  --sky-border-width-emphasized: var(--modern-size-1);
   --sky-border-width-input-active: var(--modern-size-2);
   --sky-border-width-input-base: var(--modern-size-1);
   --sky-border-width-input-disabled: var(--modern-size-1);
@@ -967,6 +969,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-action-tertiary-disabled: var(--bb-color-gray-100);
   --sky-color-border-action-tertiary-focus: var(--bb-color-blue-600);
   --sky-color-border-action-tertiary-hover: var(--bb-color-blue-600);
+  --sky-color-border-column_divider: var(--bb-color-blue-600);
   --sky-color-border-container-base: var(--bb-color-gray-100);
   --sky-color-border-danger: var(--bb-color-red-600);
   --sky-color-border-divider: var(--bb-color-gray-100);
@@ -1076,6 +1079,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-border-width-container-base: var(--bb-size-fixed-6);
   --sky-border-width-divider: var(--bb-size-fixed-6);
   --sky-border-width-elevation: var(--bb-size-fixed-6);
+  --sky-border-width-emphasized: var(--bb-size-fixed-12);
   --sky-border-width-input-active: var(--bb-size-fixed-12);
   --sky-border-width-input-base: var(--bb-size-fixed-6);
   --sky-border-width-input-disabled: var(--bb-size-fixed-6);

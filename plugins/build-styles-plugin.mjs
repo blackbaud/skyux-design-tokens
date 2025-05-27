@@ -13,7 +13,7 @@ function generateOutputFiles(prefix, yamlPath) {
     );
   }
 
-  const jsonOutput = yamlParse.safeLoad(yamlTokens);
+  const jsonOutput = yamlParse.load(yamlTokens);
 
   const scssOutput = parseSassObject(jsonOutput, prefix);
 
