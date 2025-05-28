@@ -8,7 +8,7 @@
     "layout/bb-productive",
     "layout/bb-compact",
     "layout/modern",
-    "bb-prod-sm-min",
-    "modern-sm-min"
+    "layout/bb-prod-sm-min",
+    "layout/modern-sm-min"
   ]
 }
