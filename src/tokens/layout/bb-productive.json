@@ -2234,23 +2234,25 @@
       }
     },
     "file_drop": {
-      "space": {
-        "inset": {
-          "top": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.50}"
-          },
-          "right": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.50}"
-          },
-          "bottom": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.50}"
-          },
-          "left": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.50}"
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.50}"
+            }
           }
         }
       }
@@ -3162,23 +3164,25 @@
       }
     },
     "timepicker": {
-      "space": {
-        "inset": {
-          "top": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.75}"
-          },
-          "right": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.75}"
-          },
-          "bottom": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.75}"
-          },
-          "left": {
-            "$type": "other",
-            "$value": "{bb.size.fluid.75}"
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{bb.size.fluid.75}"
+            }
           }
         }
       },
