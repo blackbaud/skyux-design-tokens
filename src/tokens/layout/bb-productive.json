@@ -2594,6 +2594,28 @@
               }
             }
           }
+        },
+        "list": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            }
+          }
         }
       },
       "links": {
