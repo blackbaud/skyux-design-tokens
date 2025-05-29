@@ -1,10 +1,6 @@
 {
   "font": {
     "size": {
-      "data_label": {
-        "$type": "fontSizes",
-        "$value": "{modern.font.size.200}"
-      },
       "body": {
         "s": {
           "$type": "fontSizes",
@@ -81,10 +77,6 @@
       }
     },
     "line_height": {
-      "data_label": {
-        "$type": "lineHeights",
-        "$value": "{modern.line_height.normal}"
-      },
       "body": {
         "s": {
           "$type": "lineHeights",
@@ -168,10 +160,6 @@
       "emphasized": {
         "$type": "fontWeights",
         "$value": "{modern.font.style.semibold}"
-      },
-      "data_label": {
-        "$type": "fontWeights",
-        "$value": "{modern.font.style.regular}"
       },
       "body": {
         "s": {
@@ -272,10 +260,6 @@
       "emphasized": {
         "$type": "fontWeights",
         "$value": "{modern.font.weight.bold}"
-      },
-      "data_label": {
-        "$type": "fontWeights",
-        "$value": "{modern.font.weight.regular}"
       },
       "body": {
         "s": {
