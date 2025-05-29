@@ -1042,15 +1042,6 @@
     }
   },
   "type": {
-    "data_label": {
-      "$type": "typography",
-      "$value": {
-        "fontFamily": "{font.family.primary}",
-        "fontWeight": "{font.style.data_label}",
-        "fontSize": "{font.size.data_label}",
-        "lineHeight": "{font.line_height.data_label}"
-      }
-    },
     "heading": {
       "1": {
         "$type": "typography",
@@ -1220,10 +1211,6 @@
       }
     },
     "size": {
-      "data_label": {
-        "$type": "fontSizes",
-        "$value": "{bb.font.size.200}"
-      },
       "body": {
         "s": {
           "$type": "fontSizes",
@@ -1308,10 +1295,6 @@
         "$type": "fontWeights",
         "$value": "{bb.font.style.semibold}"
       },
-      "data_label": {
-        "$type": "fontWeights",
-        "$value": "{bb.font.style.regular}"
-      },
       "body": {
         "s": {
           "$type": "fontWeights",
@@ -1384,10 +1367,6 @@
       }
     },
     "line_height": {
-      "data_label": {
-        "$type": "lineHeights",
-        "$value": "{bb.line_height.200}"
-      },
       "body": {
         "s": {
           "$type": "lineHeights",
@@ -1481,10 +1460,6 @@
       "emphasized": {
         "$type": "fontWeights",
         "$value": "{bb.font.weight.semibold}"
-      },
-      "data_label": {
-        "$type": "fontWeights",
-        "$value": "{bb.font.weight.regular}"
       },
       "body": {
         "s": {

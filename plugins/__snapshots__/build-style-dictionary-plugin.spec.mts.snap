@@ -350,7 +350,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-line_height-body-l: var(--modern-line_height-normal);
   --sky-font-line_height-body-m: var(--modern-line_height-150);
   --sky-font-line_height-body-s: var(--modern-line_height-normal);
-  --sky-font-line_height-data_label: var(--modern-line_height-normal);
   --sky-font-line_height-display-1: var(--modern-line_height-110);
   --sky-font-line_height-display-2: var(--modern-line_height-110);
   --sky-font-line_height-display-3: var(--modern-line_height-110);
@@ -367,7 +366,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-size-body-l: var(--modern-font-size-250);
   --sky-font-size-body-m: var(--modern-font-size-200);
   --sky-font-size-body-s: var(--modern-font-size-125);
-  --sky-font-size-data_label: var(--modern-font-size-200);
   --sky-font-size-display-1: var(--modern-font-size-800);
   --sky-font-size-display-2: var(--modern-font-size-500);
   --sky-font-size-display-3: var(--modern-font-size-300);
@@ -384,7 +382,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-body-l: var(--modern-font-style-light);
   --sky-font-style-body-m: var(--modern-font-style-regular);
   --sky-font-style-body-s: var(--modern-font-style-regular);
-  --sky-font-style-data_label: var(--modern-font-style-regular);
   --sky-font-style-display-1: var(--modern-font-style-regular);
   --sky-font-style-display-2: var(--modern-font-style-regular);
   --sky-font-style-display-3: var(--modern-font-style-regular);
@@ -399,7 +396,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-weight-body-l: var(--modern-font-weight-light);
   --sky-font-weight-body-m: var(--modern-font-weight-regular);
   --sky-font-weight-body-s: var(--modern-font-weight-regular);
-  --sky-font-weight-data_label: var(--modern-font-weight-regular);
   --sky-font-weight-display-1: var(--modern-font-weight-regular);
   --sky-font-weight-display-2: var(--modern-font-weight-regular);
   --sky-font-weight-display-3: var(--modern-font-weight-regular);
@@ -1102,7 +1098,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-line_height-body-l: var(--bb-line_height-300);
   --sky-font-line_height-body-m: var(--bb-line_height-200);
   --sky-font-line_height-body-s: var(--bb-line_height-100);
-  --sky-font-line_height-data_label: var(--bb-line_height-200);
   --sky-font-line_height-display-1: var(--bb-line_height-800);
   --sky-font-line_height-display-2: var(--bb-line_height-500);
   --sky-font-line_height-display-3: var(--bb-line_height-300);
@@ -1119,7 +1114,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-size-body-l: var(--bb-font-size-300);
   --sky-font-size-body-m: var(--bb-font-size-200);
   --sky-font-size-body-s: var(--bb-font-size-100);
-  --sky-font-size-data_label: var(--bb-font-size-200);
   --sky-font-size-display-1: var(--bb-font-size-800);
   --sky-font-size-display-2: var(--bb-font-size-500);
   --sky-font-size-display-3: var(--bb-font-size-300);
@@ -1136,7 +1130,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-body-l: var(--bb-font-style-regular);
   --sky-font-style-body-m: var(--bb-font-style-regular);
   --sky-font-style-body-s: var(--bb-font-style-regular);
-  --sky-font-style-data_label: var(--bb-font-style-regular);
   --sky-font-style-display-1: var(--bb-font-style-light);
   --sky-font-style-display-2: var(--bb-font-style-light);
   --sky-font-style-display-3: var(--bb-font-style-light);
@@ -1151,7 +1144,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-weight-body-l: var(--bb-font-weight-regular);
   --sky-font-weight-body-m: var(--bb-font-weight-regular);
   --sky-font-weight-body-s: var(--bb-font-weight-regular);
-  --sky-font-weight-data_label: var(--bb-font-weight-regular);
   --sky-font-weight-display-1: var(--bb-font-weight-light);
   --sky-font-weight-display-2: var(--bb-font-weight-light);
   --sky-font-weight-display-3: var(--bb-font-weight-light);
@@ -1375,7 +1367,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-type-body-s: var(--sky-font-style-body-s) var(--sky-font-size-body-s)/var(--sky-font-line_height-body-s) var(--sky-font-family-primary);
   --sky-type-heading-1: var(--sky-font-style-heading-1) var(--sky-font-size-heading-1)/var(--sky-font-line_height-heading-1) var(--sky-font-family-primary);
   --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/var(--sky-font-line_height-input-val) var(--sky-font-family-primary);
-  --sky-type-data_label: var(--sky-font-style-data_label) var(--sky-font-size-data_label)/var(--sky-font-line_height-data_label) var(--sky-font-family-primary);
   --sky-type-display-1: var(--sky-font-style-display-1) var(--sky-font-size-display-1)/var(--sky-font-line_height-display-1) var(--sky-font-family-primary);
   --sky-type-display-2: var(--sky-font-style-display-2) var(--sky-font-size-display-2)/var(--sky-font-line_height-display-2) var(--sky-font-family-primary);
   --sky-type-display-3: var(--sky-font-style-display-3) var(--sky-font-size-display-3)/var(--sky-font-line_height-display-3) var(--sky-font-family-primary);
