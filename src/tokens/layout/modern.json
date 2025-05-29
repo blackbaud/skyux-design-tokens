@@ -1068,6 +1068,24 @@
       "thumb": {
         "$type": "spacing",
         "$value": "{modern.size.1}"
+      },
+      "switch_icon": {
+        "top": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "right": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "bottom": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        },
+        "left": {
+          "$type": "spacing",
+          "$value": "{modern.space.s}"
+        }
       }
     },
     "gap": {
@@ -1579,6 +1597,1680 @@
         "row": {
           "$type": "other",
           "$value": "{modern.border.style.dotted}"
+        }
+      }
+    }
+  },
+  "comp": {
+    "action_button": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.xl}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.xl}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.xl}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.xl}"
+          }
+        }
+      }
+    },
+    "alert": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          }
+        }
+      }
+    },
+    "button": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          }
+        }
+      },
+      "block": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            }
+          }
+        }
+      },
+      "toolbar": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            }
+          }
+        }
+      },
+      "borderless": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            }
+          }
+        }
+      },
+      "icon": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            }
+          }
+        }
+      }
+    },
+    "dropdown": {
+      "menu": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            }
+          }
+        }
+      },
+      "option": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            }
+          }
+        }
+      }
+    },
+    "back_to_top": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          }
+        }
+      }
+    },
+    "box": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      }
+    },
+    "colorpicker": {
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            }
+          }
+        }
+      }
+    },
+    "datepicker": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        }
+      },
+      "calendar": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            }
+          }
+        }
+      }
+    },
+    "file_drop": {
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            }
+          }
+        }
+      }
+    },
+    "filter_bar": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          }
+        }
+      }
+    },
+    "flyout": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            }
+          }
+        }
+      }
+    },
+    "help_inline": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.1}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.5}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.1}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.5}"
+          }
+        }
+      }
+    },
+    "inline_form": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          }
+        }
+      }
+    },
+    "input": {
+      "label": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.6}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        }
+      },
+      "value": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.9}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.9}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        }
+      }
+    },
+    "label": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.4}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.4}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          }
+        }
+      }
+    },
+    "modal": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            }
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      },
+      "footer": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            }
+          }
+        }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          }
+        }
+      },
+      "fullscreen": {
+        "space": {
+          "offset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            }
+          }
+        }
+      }
+    },
+    "navbar_item": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          }
+        }
+      }
+    },
+    "page": {
+      "header": {
+        "blocks": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "fit": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "list": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.lg}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        }
+      },
+      "content": {
+        "blocks": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "fit": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "list": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              }
+            }
+          }
+        }
+      },
+      "links": {
+        "blocks": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "list": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        }
+      },
+      "tabset": {
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.md}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "paging_button": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.4}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.4}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          }
+        }
+      }
+    },
+    "popover": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.lg}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.lg}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.lg}"
+            }
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            }
+          }
+        }
+      }
+    },
+    "repeater_item": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          }
+        }
+      }
+    },
+    "sab": {
+      "actions": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.30}"
+            }
+          }
+        }
+      },
+      "summary": {
+        "expanded": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.20}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.30}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.20}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.30}"
+              }
+            }
+          }
+        },
+        "inline": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.10}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.30}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.10}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.30}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "search": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.20}"
+          }
+        }
+      }
+    },
+    "split_view": {
+      "footer": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            }
+          }
+        }
+      }
+    },
+    "tab": {
+      "horizontal": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        }
+      },
+      "vertical": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        },
+        "group": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.space.md}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.space.md}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              }
+            }
+          },
+          "button": {
+            "space": {
+              "inset": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tabset": {
+      "tabs": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            }
+          }
+        }
+      },
+      "button": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.5}"
+            }
+          }
+        }
+      }
+    },
+    "text_editor": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.space.md}"
+          }
+        }
+      }
+    },
+    "tile": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          }
+        }
+      },
+      "dashboard": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            }
+          }
+        },
+        "column": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              }
+            }
+          }
+        }
+      },
+      "section": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            }
+          }
+        }
+      }
+    },
+    "timepicker": {
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            }
+          }
+        }
+      },
+      "footer": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.15}"
+            }
+          }
+        }
+      }
+    },
+    "toast": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.15}"
+          }
+        }
+      }
+    },
+    "toaster": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.0}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.30}"
+          }
+        }
+      }
+    },
+    "token": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.1}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.5}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.1}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.5}"
+          }
+        }
+      },
+      "close": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.2}"
+            }
+          }
+        }
+      }
+    },
+    "toolbar": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.0}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.space.s}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.0}"
+          }
+        }
+      }
+    },
+    "tree": {
+      "node": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xs}"
+            }
+          }
+        }
+      },
+      "child": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      }
+    },
+    "wizard": {
+      "tabset": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        },
+        "tabs": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.xl}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "selection_box": {
+      "expanded": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.xl}"
+            }
+          }
+        }
+      },
+      "collapsed": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.md}"
+            }
+          }
         }
       }
     }
