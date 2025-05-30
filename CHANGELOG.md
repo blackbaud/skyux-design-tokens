@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.59](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.58...0.0.59) (2025-05-30)
+
+
+### Bug Fixes
+
+* bb-productive uses correct box header namespace and correct input value left value ([#176](https://github.com/blackbaud/skyux-design-tokens/issues/176)) ([2916e6e](https://github.com/blackbaud/skyux-design-tokens/commit/2916e6e85e206347e0d5b087dde471454ccf11df))
+
 ## [0.0.58](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.57...0.0.58) (2025-05-29)
 
 
