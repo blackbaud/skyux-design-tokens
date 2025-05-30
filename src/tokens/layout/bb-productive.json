@@ -1983,7 +1983,7 @@
       }
     },
     "box": {
-      "heading": {
+      "header": {
         "space": {
           "inset": {
             "top": {
@@ -2362,7 +2362,7 @@
             },
             "left": {
               "$type": "other",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.100}"
             }
           }
         }
