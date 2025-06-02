@@ -4,8 +4,6 @@ import { buildStylesPlugin } from './plugins/build-styles-plugin.mjs';
 import { buildStyleDictionaryPlugin } from './plugins/build-style-dictionary-plugin.mjs';
 import { preparePackagePlugin } from './plugins/prepare-package-plugin.mjs';
 
-/// <reference types="vitest" />
-
 export default ({ mode }) => {
   const viteEnv = loadEnv(mode, process.cwd());
 
@@ -31,12 +29,6 @@ export default ({ mode }) => {
           }
         : undefined,
       open: true,
-    },
-    test: {
-      name: 'Design Tokens',
-      environment: 'node',
-      root: path.resolve(__dirname),
-      mockReset: true,
     },
     plugins: [
       buildStylesPlugin(),
