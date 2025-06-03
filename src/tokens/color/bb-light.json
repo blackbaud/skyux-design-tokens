@@ -584,10 +584,6 @@
         }
       },
       "separator": {
-        "dark": {
-          "$type": "color",
-          "$value": "{bb.color.gray.100}"
-        },
         "light": {
           "$type": "color",
           "$value": "{bb.color.gray.50}"

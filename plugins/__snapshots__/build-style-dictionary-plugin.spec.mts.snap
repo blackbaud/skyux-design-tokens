@@ -233,7 +233,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-progress_step: var(--modern-color-gray-50);
   --sky-color-border-selected: var(--modern-color-blue-74);
   --sky-color-border-selected_soft: var(--modern-color-blue-30);
-  --sky-color-border-separator-dark: var(--modern-color-gray-20);
   --sky-color-border-separator-light: var(--modern-color-gray-10);
   --sky-color-border-separator-row: var(--modern-color-gray-20);
   --sky-color-border-success: var(--modern-color-green-50);
@@ -1280,7 +1279,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-progress_step: var(--bb-color-gray-400);
   --sky-color-border-selected: var(--bb-color-blue-600);
   --sky-color-border-selected_soft: var(--bb-color-blue-300);
-  --sky-color-border-separator-dark: var(--bb-color-gray-100);
   --sky-color-border-separator-light: var(--bb-color-gray-50);
   --sky-color-border-separator-row: var(--bb-color-gray-50);
   --sky-color-border-success: var(--bb-color-green-700);
