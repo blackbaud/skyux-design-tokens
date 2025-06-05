@@ -3219,7 +3219,7 @@
           },
           "bottom": {
             "$type": "other",
-            "$value": "{bb.size.0}"
+            "$value": "{bb.size.fluid.150}"
           },
           "left": {
             "$type": "other",

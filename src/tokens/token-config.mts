@@ -13,8 +13,14 @@ export const tokenConfig: TokenConfig = {
           path: 'color/modern.json',
         },
         {
-          name: 'modern-layout',
+          name: 'modern-layout-xs',
           path: 'layout/modern.json',
+          breakpoint: 'xs',
+        },
+        {
+          name: 'modern-layout-sm',
+          path: 'layout/modern-sm-min.json',
+          breakpoint: 's',
         },
       ],
     },
@@ -29,13 +35,19 @@ export const tokenConfig: TokenConfig = {
           path: 'color/bb-light.json',
         },
         {
-          name: 'bb-dark-xs',
+          name: 'bb-dark',
           selector: '.sky-theme-mode-dark',
           path: 'color/bb-dark.json',
         },
         {
-          name: 'bb-productive',
+          name: 'bb-productive-xs',
           path: 'layout/bb-productive.json',
+          breakpoint: 'xs',
+        },
+        {
+          name: 'bb-productive-sm',
+          path: 'layout/bb-prod-sm-min.json',
+          breakpoint: 's',
         },
         {
           name: 'bb-compact',
