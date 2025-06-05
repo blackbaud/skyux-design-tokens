@@ -1254,11 +1254,11 @@
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
+          "$value": "{bb.font.size.400}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "$value": "{bb.font.size.300}"
         }
       },
       "heading": {
@@ -1330,33 +1330,33 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.light}"
+          "$value": "{bb.font.style.regular}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.light}"
+          "$value": "{bb.font.style.regular}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.light}"
+          "$value": "{bb.font.style.regular}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.light}"
+          "$value": "{bb.font.style.semibold}"
         }
       },
       "heading": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "4": {
           "$type": "fontWeights",
@@ -1482,7 +1482,7 @@
       "body": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
+          "$value": "{bb.font.weight.semibold}"
         },
         "m": {
           "$type": "fontWeights",
@@ -1496,19 +1496,19 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.light}"
+          "$value": "{bb.font.weight.regular}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.light}"
+          "$value": "{bb.font.weight.regular}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.light}"
+          "$value": "{bb.font.weight.regular}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.light}"
+          "$value": "{bb.font.weight.semibold}"
         }
       },
       "heading": {
@@ -1518,11 +1518,11 @@
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
+          "$value": "{bb.font.weight.semibold}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
+          "$value": "{bb.font.weight.semibold}"
         },
         "4": {
           "$type": "fontWeights",
