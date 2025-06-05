@@ -3061,7 +3061,7 @@
           },
           "bottom": {
             "$type": "other",
-            "$value": "{modern.size.0}"
+            "$value": "{modern.size.30}"
           },
           "left": {
             "$type": "other",
