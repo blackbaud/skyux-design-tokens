@@ -679,7 +679,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-toast-space-inset-left: var(--modern-size-15);
   --sky-comp-toast-space-inset-right: var(--modern-size-15);
   --sky-comp-toast-space-inset-top: var(--modern-size-15);
-  --sky-comp-toaster-space-inset-bottom: var(--modern-size-0);
+  --sky-comp-toaster-space-inset-bottom: var(--modern-size-30);
   --sky-comp-toaster-space-inset-left: var(--modern-size-30);
   --sky-comp-toaster-space-inset-right: var(--modern-size-30);
   --sky-comp-toaster-space-inset-top: var(--modern-size-30);
@@ -1798,7 +1798,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-toast-space-inset-left: var(--bb-size-fluid-75);
   --sky-comp-toast-space-inset-right: var(--bb-size-fluid-75);
   --sky-comp-toast-space-inset-top: var(--bb-size-fluid-75);
-  --sky-comp-toaster-space-inset-bottom: var(--bb-size-0);
+  --sky-comp-toaster-space-inset-bottom: var(--bb-size-fluid-150);
   --sky-comp-toaster-space-inset-left: var(--bb-size-fluid-150);
   --sky-comp-toaster-space-inset-right: var(--bb-size-fluid-150);
   --sky-comp-toaster-space-inset-top: var(--bb-size-fluid-150);
