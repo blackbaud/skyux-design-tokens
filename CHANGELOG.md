@@ -2,6 +2,19 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.60](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.59...0.0.60) (2025-06-05)
+
+
+### Features
+
+* remove border separator dark ([#178](https://github.com/blackbaud/skyux-design-tokens/issues/178)) ([f36e60c](https://github.com/blackbaud/skyux-design-tokens/commit/f36e60c5931c6e068541bfdbd92bc63060219008))
+
+
+### Bug Fixes
+
+* configure reference token set breakpoints ([#181](https://github.com/blackbaud/skyux-design-tokens/issues/181)) ([87f6df6](https://github.com/blackbaud/skyux-design-tokens/commit/87f6df667ee6ae0d2d236277e3940c3a02dcb8da))
+* toaster component token specifies a bottom value ([#180](https://github.com/blackbaud/skyux-design-tokens/issues/180)) ([06c9310](https://github.com/blackbaud/skyux-design-tokens/commit/06c9310eb5ebd5e0562c0d2951003751e75dfc25))
+
 ## [0.0.59](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.58...0.0.59) (2025-05-30)
 
 
