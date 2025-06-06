@@ -19,6 +19,7 @@ interface SkyStyleDictionaryConfig extends Config {
 interface GeneratedFile {
   output: unknown;
   destination: string | undefined;
+  breakpoint?: Breakpoint;
 }
 
 const DEFAULT_SD_CONFIG: SkyStyleDictionaryConfig = {
@@ -63,7 +64,11 @@ async function generateDictionaryFiles(
       const tokenDictionary = await sd.extend(
         getBaseDictionaryConfig(tokenSet),
       );
-      const files = await tokenDictionary.formatPlatform('css');
+      const files: {
+        output: unknown;
+        destination: string | undefined;
+        breakpoint?: Breakpoint;
+      }[] = await tokenDictionary.formatPlatform('css');
       allFiles = allFiles.concat(files);
 
       await Promise.all(
@@ -71,14 +76,20 @@ async function generateDictionaryFiles(
           const referenceTokenDictionary = await sd.extend(
             getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
           );
-          const files = await referenceTokenDictionary.formatPlatform('css');
+          const files: {
+            output: unknown;
+            destination: string | undefined;
+            breakpoint?: Breakpoint;
+          }[] = await referenceTokenDictionary.formatPlatform('css');
 
           files.forEach((file) => {
             if (
               referenceTokenSet.breakpoint &&
               referenceTokenSet.breakpoint !== 'xs'
             ) {
-              file.output = `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.breakpoint)}) {\n${file.output}\n}`;
+              // NOTE: No return character after original output as we have already added one there when we alphabetize
+              file.output = `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.breakpoint)}) {\n${file.output}}\n`;
+              file.breakpoint = referenceTokenSet.breakpoint;
             }
           });
           allFiles = allFiles.concat(files);
@@ -86,6 +97,15 @@ async function generateDictionaryFiles(
       );
     }),
   );
+
+  // We need to order the files by breakpoint so that the media queries are seen by the browser in the correct order.
+  // Media queries do not count towards css specificity, so the order in which they are defined matters.
+  const breakpointOrder = [undefined, 'xs', 's', 'm', 'l'];
+  allFiles.sort((a, b) => {
+    const aIndex = breakpointOrder.indexOf(a.breakpoint);
+    const bIndex = breakpointOrder.indexOf(b.breakpoint);
+    return aIndex - bIndex;
+  });
 
   return allFiles;
 }
@@ -221,7 +241,7 @@ export function buildStyleDictionaryPlugin(): Plugin {
           const fileName = `assets/scss/${tokenSetType}.css`;
 
           let fileContents = compositeFiles[fileName] || '';
-          fileContents = fileContents.concat(file.output || '');
+          fileContents = fileContents.concat(file.output ?? '');
 
           compositeFiles[fileName] = fileContents;
         }
