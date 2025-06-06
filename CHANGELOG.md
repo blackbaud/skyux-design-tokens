@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.62](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.61...0.0.62) (2025-06-06)
+
+
+### Features
+
+* adjust search inset spacing and add search offset tokens ([#185](https://github.com/blackbaud/skyux-design-tokens/issues/185)) ([e95b417](https://github.com/blackbaud/skyux-design-tokens/commit/e95b4176b51964de01cafb4029527fb426ff8b39))
+
 ## [0.0.61](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.60...0.0.61) (2025-06-06)
 
 
