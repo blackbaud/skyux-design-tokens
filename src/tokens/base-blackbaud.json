@@ -115,7 +115,7 @@
     "letter_spacing": {
       "wider": {
         "$type": "letterSpacing",
-        "$value": "0.32px"
+        "$value": "0.16px"
       },
       "normal": {
         "$type": "letterSpacing",

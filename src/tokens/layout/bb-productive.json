@@ -1470,7 +1470,7 @@
       "hint": {
         "s": {
           "$type": "letterSpacing",
-          "$value": "{bb.letter_spacing.normal}"
+          "$value": "{bb.letter_spacing.wider}"
         }
       }
     },
@@ -2336,7 +2336,7 @@
             },
             "bottom": {
               "$type": "other",
-              "$value": "{bb.size.fluid.12}"
+              "$value": "{bb.size.fluid.25}"
             },
             "left": {
               "$type": "other",
