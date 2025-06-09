@@ -2,6 +2,60 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.62](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.61...0.0.62) (2025-06-06)
+
+
+### Features
+
+* adjust search inset spacing and add search offset tokens ([#185](https://github.com/blackbaud/skyux-design-tokens/issues/185)) ([e95b417](https://github.com/blackbaud/skyux-design-tokens/commit/e95b4176b51964de01cafb4029527fb426ff8b39))
+
+## [0.0.61](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.60...0.0.61) (2025-06-06)
+
+
+### Features
+
+* enable adding CSS to local preview ([#182](https://github.com/blackbaud/skyux-design-tokens/issues/182)) ([d2bd141](https://github.com/blackbaud/skyux-design-tokens/commit/d2bd14166d7cfdf50da43363cfb5868c8579b065))
+
+
+### Bug Fixes
+
+* css output orders media queries based on breakpoint order ([#184](https://github.com/blackbaud/skyux-design-tokens/issues/184)) ([1d47a49](https://github.com/blackbaud/skyux-design-tokens/commit/1d47a497ec65c4129a2f290ec72c97b815da3db4))
+
+## [0.0.60](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.59...0.0.60) (2025-06-05)
+
+
+### Features
+
+* remove border separator dark ([#178](https://github.com/blackbaud/skyux-design-tokens/issues/178)) ([f36e60c](https://github.com/blackbaud/skyux-design-tokens/commit/f36e60c5931c6e068541bfdbd92bc63060219008))
+
+
+### Bug Fixes
+
+* configure reference token set breakpoints ([#181](https://github.com/blackbaud/skyux-design-tokens/issues/181)) ([87f6df6](https://github.com/blackbaud/skyux-design-tokens/commit/87f6df667ee6ae0d2d236277e3940c3a02dcb8da))
+* toaster component token specifies a bottom value ([#180](https://github.com/blackbaud/skyux-design-tokens/issues/180)) ([06c9310](https://github.com/blackbaud/skyux-design-tokens/commit/06c9310eb5ebd5e0562c0d2951003751e75dfc25))
+
+## [0.0.59](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.58...0.0.59) (2025-05-30)
+
+
+### Bug Fixes
+
+* bb-productive uses correct box header namespace and correct input value left value ([#176](https://github.com/blackbaud/skyux-design-tokens/issues/176)) ([2916e6e](https://github.com/blackbaud/skyux-design-tokens/commit/2916e6e85e206347e0d5b087dde471454ccf11df))
+
+## [0.0.58](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.57...0.0.58) (2025-05-29)
+
+
+### Features
+
+* remove data_label font styles ([#174](https://github.com/blackbaud/skyux-design-tokens/issues/174)) ([f6f2bce](https://github.com/blackbaud/skyux-design-tokens/commit/f6f2bcee59ed523d3295373a7ae7f1dd22ce6297))
+* spacing refactor ([#173](https://github.com/blackbaud/skyux-design-tokens/issues/173)) ([c7feebc](https://github.com/blackbaud/skyux-design-tokens/commit/c7feebc1b85d544c10bd3c0a78ac17d925f4ed42))
+
+## [0.0.57](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.56...0.0.57) (2025-05-27)
+
+
+### Features
+
+* categorization tokens and color palettes ([#171](https://github.com/blackbaud/skyux-design-tokens/issues/171)) ([c0cfa77](https://github.com/blackbaud/skyux-design-tokens/commit/c0cfa77b7d9a63147dccb06eecaafdf5e7c9128b))
+
 ## [0.0.56](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.55...0.0.56) (2025-05-20)
 
 

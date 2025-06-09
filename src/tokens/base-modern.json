@@ -131,14 +131,46 @@
           "$value": "#c57c00"
         }
       },
-      "sky_blue": {
-        "20": {
-          "$type": "color",
-          "$value": "#bfecfb"
+      "category": {
+        "sky_blue": {
+          "20": {
+            "$type": "color",
+            "$value": "#bfecfb"
+          },
+          "40": {
+            "$type": "color",
+            "$value": "#40c7f4"
+          }
         },
-        "40": {
-          "$type": "color",
-          "$value": "#40c7f4"
+        "purple": {
+          "30": {
+            "$type": "color",
+            "$value": "#c9b6d7"
+          }
+        },
+        "green": {
+          "30": {
+            "$type": "color",
+            "$value": "#80dbca"
+          }
+        },
+        "orange": {
+          "30": {
+            "$type": "color",
+            "$value": "#f9ba90"
+          }
+        },
+        "yellow": {
+          "30": {
+            "$type": "color",
+            "$value": "#fdd799"
+          }
+        },
+        "red": {
+          "30": {
+            "$type": "color",
+            "$value": "#f7a0a1"
+          }
         }
       }
     },
