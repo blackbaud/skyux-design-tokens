@@ -59,7 +59,7 @@
               },
               "bottom": {
                 "$type": "other",
-                "$value": "{modern.space.xl}"
+                "$value": "{modern.size.0}"
               },
               "left": {
                 "$type": "other",
