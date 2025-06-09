@@ -125,7 +125,7 @@
     "line_height": {
       "100": {
         "$type": "lineHeights",
-        "$value": "calc(16/13)"
+        "$value": "calc(18/13)"
       },
       "200": {
         "$type": "lineHeights",
@@ -133,15 +133,15 @@
       },
       "300": {
         "$type": "lineHeights",
-        "$value": "calc(24/16)"
+        "$value": "calc(24/17)"
       },
       "400": {
         "$type": "lineHeights",
-        "$value": "calc(28/20)"
+        "$value": "calc(28/19)"
       },
       "500": {
         "$type": "lineHeights",
-        "$value": "calc(32/24)"
+        "$value": "calc(36/26)"
       },
       "600": {
         "$type": "lineHeights",
