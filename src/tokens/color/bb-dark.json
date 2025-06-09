@@ -357,19 +357,19 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.600}"
+        "$value": "{bb.color.red.400}"
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.600}"
+        "$value": "{bb.color.yellow.400}"
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.700}"
+        "$value": "{bb.color.green.400}"
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.blue.400}"
       },
       "divider": {
         "$type": "color",
@@ -381,15 +381,15 @@
       },
       "column_divider": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.blue.400}"
       },
       "text_highlight": {
         "$type": "color",
-        "$value": "{bb.color.yellow.800}"
+        "$value": "{bb.color.yellow.600}"
       },
       "progress_step": {
         "$type": "color",
-        "$value": "{bb.color.gray.400}"
+        "$value": "{bb.color.gray.600}"
       },
       "action": {
         "primary": {
