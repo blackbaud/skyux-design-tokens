@@ -945,7 +945,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-page-content-tabs-space-inset-left: var(--modern-size-0);
   --sky-comp-page-content-tabs-space-inset-right: var(--modern-size-0);
   --sky-comp-page-content-tabs-space-inset-top: var(--modern-size-0);
-  --sky-comp-page-header-blocks-space-inset-bottom: var(--modern-space-xl);
+  --sky-comp-page-header-blocks-space-inset-bottom: var(--modern-size-0);
   --sky-comp-page-header-blocks-space-inset-left: var(--modern-space-xl);
   --sky-comp-page-header-blocks-space-inset-right: var(--modern-space-xl);
   --sky-comp-page-header-blocks-space-inset-top: var(--modern-space-xl);
