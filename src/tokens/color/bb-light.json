@@ -280,7 +280,7 @@
         },
         "active": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.blue.100}"
         },
         "focus": {
           "$type": "color",
@@ -302,7 +302,7 @@
         },
         "active": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.blue.100}"
         },
         "focus": {
           "$type": "color",
