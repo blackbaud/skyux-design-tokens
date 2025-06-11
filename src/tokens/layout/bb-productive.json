@@ -1232,75 +1232,75 @@
       "body": {
         "s": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.100}"
+          "$value": "{bb.font.size.300}"
         },
         "m": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "$value": "{bb.font.size.400}"
         },
         "l": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
+          "$value": "{bb.font.size.500}"
         }
       },
       "display": {
+        "1": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.700}"
+        },
+        "2": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.600}"
+        },
+        "3": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.500}"
+        },
+        "4": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.400}"
+        }
+      },
+      "heading": {
         "1": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.800}"
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.500}"
+          "$value": "{bb.font.size.600}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.400}"
-        },
-        "4": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
-        }
-      },
-      "heading": {
-        "1": {
-          "$type": "fontSizes",
           "$value": "{bb.font.size.500}"
         },
-        "2": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.400}"
-        },
-        "3": {
-          "$type": "fontSizes",
-          "$value": "{bb.font.size.300}"
-        },
         "4": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "$value": "{bb.font.size.400}"
         },
         "5": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "$value": "{bb.font.size.400}"
         }
       },
       "hint": {
         "s": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.100}"
+          "$value": "{bb.font.size.300}"
         },
         "m": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "$value": "{bb.font.size.400}"
         }
       },
       "input": {
         "label": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.100}"
+          "$value": "{bb.font.size.300}"
         },
         "val": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.200}"
+          "$value": "{bb.font.size.400}"
         }
       }
     },
@@ -1342,7 +1342,7 @@
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.semibold}"
+          "$value": "{bb.font.style.regular}"
         }
       },
       "heading": {
@@ -1388,75 +1388,75 @@
       "body": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.100}"
+          "$value": "{bb.line_height.300}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
+          "$value": "{bb.line_height.400}"
         },
         "l": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.300}"
+          "$value": "{bb.line_height.500}"
         }
       },
       "display": {
+        "1": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.700}"
+        },
+        "2": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.600}"
+        },
+        "3": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.500}"
+        },
+        "4": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.400}"
+        }
+      },
+      "heading": {
         "1": {
           "$type": "lineHeights",
           "$value": "{bb.line_height.800}"
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.500}"
+          "$value": "{bb.line_height.600}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.300}"
-        },
-        "4": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
-        }
-      },
-      "heading": {
-        "1": {
-          "$type": "lineHeights",
           "$value": "{bb.line_height.500}"
         },
-        "2": {
+        "4": {
           "$type": "lineHeights",
           "$value": "{bb.line_height.400}"
         },
-        "3": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.300}"
-        },
-        "4": {
-          "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
-        },
         "5": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
+          "$value": "{bb.line_height.400}"
         }
       },
       "hint": {
         "s": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.100}"
+          "$value": "{bb.line_height.300}"
         },
         "m": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
+          "$value": "{bb.line_height.400}"
         }
       },
       "input": {
         "label": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.100}"
+          "$value": "{bb.line_height.300}"
         },
         "val": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.200}"
+          "$value": "{bb.line_height.400}"
         }
       }
     },
@@ -1504,7 +1504,7 @@
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
+          "$value": "{bb.font.weight.semibold}"
         },
         "4": {
           "$type": "fontWeights",
@@ -2336,7 +2336,7 @@
             },
             "bottom": {
               "$type": "other",
-              "$value": "{bb.size.fluid.25}"
+              "$value": "{bb.size.fluid.12}"
             },
             "left": {
               "$type": "other",
