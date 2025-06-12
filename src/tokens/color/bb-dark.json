@@ -37,19 +37,19 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.white}"
+        "$value": "{bb.color.gray.25}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.gray.600}"
+        "$value": "{bb.color.gray.300}"
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.sky.600}"
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.600}"
+        "$value": "{bb.color.red.400}"
       },
       "warning": {
         "$type": "color",
@@ -65,7 +65,7 @@
       },
       "inverse": {
         "$type": "color",
-        "$value": "{bb.color.gray.900}"
+        "$value": "{bb.color.gray.1100}"
       },
       "selected": {
         "$type": "color",
