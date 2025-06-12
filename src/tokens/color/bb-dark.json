@@ -3,7 +3,7 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.gray.100}"
+        "$value": "{bb.color.gray.25}"
       },
       "deemphasized": {
         "$type": "color",
@@ -19,7 +19,7 @@
       },
       "inverse": {
         "$type": "color",
-        "$value": "{bb.color.gray.900}"
+        "$value": "{bb.color.gray.1100}"
       },
       "selected": {
         "$type": "color",
