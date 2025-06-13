@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.63](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.62...0.0.63) (2025-06-10)
+
+
+### Bug Fixes
+
+* modern blocks page header has no bottom padding ([#187](https://github.com/blackbaud/skyux-design-tokens/issues/187)) ([ce8961f](https://github.com/blackbaud/skyux-design-tokens/commit/ce8961f61267cc2d75306480ac5e9ef9fedeb0a1))
+
 ## [0.0.62](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.61...0.0.62) (2025-06-06)
 
 
