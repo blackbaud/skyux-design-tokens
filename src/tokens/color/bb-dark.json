@@ -117,7 +117,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.50}"
+            "$value": "{bb.color.gray.700}"
           }
         },
         "secondary": {
@@ -139,7 +139,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.900}"
+            "$value": "{bb.color.gray.700}"
           }
         },
         "tertiary": {
@@ -161,7 +161,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.50}"
+            "$value": "{bb.color.gray.700}"
           }
         },
         "danger": {
@@ -183,7 +183,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.50}"
+            "$value": "{bb.color.gray.700}"
           }
         },
         "input": {
@@ -205,14 +205,14 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.900}"
+            "$value": "{bb.color.gray.700}"
           }
         }
       },
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.900}"
+          "$value": "{bb.color.gray.1000}"
         },
         "menu": {
           "$type": "color",
@@ -262,11 +262,11 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.1000}"
+          "$value": "{bb.color.gray.900}"
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.900}"
+          "$value": "{bb.color.gray.700}"
         }
       },
       "list": {
