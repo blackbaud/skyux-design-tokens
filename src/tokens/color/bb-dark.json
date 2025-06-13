@@ -189,7 +189,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.1000}"
+            "$value": "{bb.color.blue.900}"
           },
           "hover": {
             "$type": "color",
@@ -499,14 +499,14 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.400}"
+            "$value": "{bb.color.gray.800}"
           }
         }
       },
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{bb.color.blue.900}"
         }
       },
       "input": {
