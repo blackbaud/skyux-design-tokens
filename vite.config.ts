@@ -30,6 +30,12 @@ export default ({ mode }) => {
         : undefined,
       open: true,
     },
+    test: {
+      name: 'Design Tokens',
+      environment: 'node',
+      root: path.resolve(__dirname),
+      mockReset: true,
+    },
     plugins: [
       buildStylesPlugin(),
       buildStyleDictionaryPlugin(),
