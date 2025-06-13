@@ -385,6 +385,32 @@
           }
         }
       }
+    },
+    "tab": {
+      "vertical": {
+        "content": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.75}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.75}"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
