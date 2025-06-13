@@ -2,6 +2,32 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.63](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.62...0.0.63) (2025-06-10)
+
+
+### Bug Fixes
+
+* modern blocks page header has no bottom padding ([#187](https://github.com/blackbaud/skyux-design-tokens/issues/187)) ([ce8961f](https://github.com/blackbaud/skyux-design-tokens/commit/ce8961f61267cc2d75306480ac5e9ef9fedeb0a1))
+
+## [0.0.62](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.61...0.0.62) (2025-06-06)
+
+
+### Features
+
+* adjust search inset spacing and add search offset tokens ([#185](https://github.com/blackbaud/skyux-design-tokens/issues/185)) ([e95b417](https://github.com/blackbaud/skyux-design-tokens/commit/e95b4176b51964de01cafb4029527fb426ff8b39))
+
+## [0.0.61](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.60...0.0.61) (2025-06-06)
+
+
+### Features
+
+* enable adding CSS to local preview ([#182](https://github.com/blackbaud/skyux-design-tokens/issues/182)) ([d2bd141](https://github.com/blackbaud/skyux-design-tokens/commit/d2bd14166d7cfdf50da43363cfb5868c8579b065))
+
+
+### Bug Fixes
+
+* css output orders media queries based on breakpoint order ([#184](https://github.com/blackbaud/skyux-design-tokens/issues/184)) ([1d47a49](https://github.com/blackbaud/skyux-design-tokens/commit/1d47a497ec65c4129a2f290ec72c97b815da3db4))
+
 ## [0.0.60](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.59...0.0.60) (2025-06-05)
 
 

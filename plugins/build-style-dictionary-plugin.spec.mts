@@ -77,6 +77,7 @@ describe('buildStyleDictionaryPlugin', () => {
       fileName: 'assets/scss/rainbow.css',
       source: `.sky-theme-rainbow {
   --rainbow-color-gray-1: #e2e3e7;
+  --rainbow-color-gray-2: #c0c2c5;
   --rainbow-color-red-1: #fc0330;
   --rainbow-color-red-2: #8a2538;
   --rainbow-space-s: 10px;
@@ -109,6 +110,11 @@ describe('buildStyleDictionaryPlugin', () => {
               breakpoint: 'm',
               path: 'responsive-rainbow-colors-m.json',
             },
+            {
+              name: 'rainbow-colors-sm',
+              breakpoint: 's',
+              path: 'responsive-rainbow-colors-s.json',
+            },
           ],
         },
       ],
@@ -128,6 +134,7 @@ describe('buildStyleDictionaryPlugin', () => {
       fileName: 'assets/scss/responsive-rainbow.css',
       source: `.sky-theme-rainbow {
   --rainbow-color-gray-1: #e2e3e7;
+  --rainbow-color-gray-2: #c0c2c5;
   --rainbow-color-red-1: #fc0330;
   --rainbow-color-red-2: #8a2538;
   --rainbow-space-s: 10px;
@@ -135,12 +142,17 @@ describe('buildStyleDictionaryPlugin', () => {
 .sky-theme-rainbow {
   --sky-color-text-default: var(--rainbow-color-red-1);
 }
+@media (min-width: 768px) {
+.sky-theme-rainbow {
+  --sky-color-text-default: var(--rainbow-color-gray-2);
+}
+}
 @media (min-width: 992px) {
 .sky-theme-rainbow {
   --sky-color-text-default: var(--rainbow-color-gray-1);
 }
-
-}`,
+}
+`,
     });
   });
 
