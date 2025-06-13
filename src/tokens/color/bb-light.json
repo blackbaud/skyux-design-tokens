@@ -232,7 +232,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.100}"
+          "$value": "{bb.color.blue.200}"
         }
       },
       "icon_matte": {
