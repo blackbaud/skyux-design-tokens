@@ -1,8 +1,8 @@
-import { Breakpoint } from './breakpoint';
+import { Responsive } from './responsive';
 
 export type ReferenceTokenSet = {
-  breakpoint?: Breakpoint;
   name: string;
   path: string;
+  responsive?: Responsive;
   selector?: string;
 };

@@ -50,12 +50,29 @@ function getMediaQueryMinWidth(breakpoint: Breakpoint): string {
   }
 }
 
+function getContainerBreakpointClassList(breakpoint: Breakpoint): string[] {
+  const largeClasses = ['.sky-responsive-container-lg'];
+  const mediumClasses = ['.sky-responsive-container-md', ...largeClasses];
+  const smallClasses = ['.sky-responsive-container-sm', ...mediumClasses];
+  const xsClasses = ['.sky-responsive-container-xs', ...smallClasses];
+
+  switch (breakpoint) {
+    case 'xs':
+    default:
+      return xsClasses;
+    case 's':
+      return smallClasses;
+    case 'm':
+      return mediumClasses;
+    case 'l':
+      return largeClasses;
+  }
+}
+
 async function generateDictionaryFiles(
   tokenConfig: TokenConfig,
 ): Promise<GeneratedFile[]> {
-  const sd = new StyleDictionary(undefined, {
-    verbosity: 'verbose',
-  });
+  const sd = new StyleDictionary(undefined);
 
   let allFiles: GeneratedFile[] = [];
 
@@ -81,15 +98,34 @@ async function generateDictionaryFiles(
             destination: string | undefined;
             breakpoint?: Breakpoint;
           }[] = await referenceTokenDictionary.formatPlatform('css');
+          const selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
 
           files.forEach((file) => {
-            if (
-              referenceTokenSet.breakpoint &&
-              referenceTokenSet.breakpoint !== 'xs'
-            ) {
+            if (referenceTokenSet.responsive) {
+              const orignialOutput = file.output as string;
+
               // NOTE: No return character after original output as we have already added one there when we alphabetize
-              file.output = `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.breakpoint)}) {\n${file.output}}\n`;
-              file.breakpoint = referenceTokenSet.breakpoint;
+              file.output =
+                referenceTokenSet.responsive.breakpoint === 'xs'
+                  ? orignialOutput
+                  : `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.responsive.breakpoint)}) {\n${orignialOutput}}\n`;
+              file.breakpoint = referenceTokenSet.responsive.breakpoint;
+
+              // including the container classes should be the default behavior if not explicitly set
+              if (referenceTokenSet.responsive.includesContainer !== false) {
+                const containerClasses = getContainerBreakpointClassList(
+                  referenceTokenSet.responsive.breakpoint,
+                );
+
+                const containerSelector = containerClasses
+                  .map((className) => `${selector} ${className}`)
+                  .join(', ');
+                const containerBreakpointOutput = orignialOutput.replace(
+                  selector,
+                  containerSelector,
+                );
+                file.output += `${containerBreakpointOutput}\n`;
+              }
             }
           });
           allFiles = allFiles.concat(files);
@@ -219,7 +255,7 @@ export function buildStyleDictionaryPlugin(): Plugin {
       }
 
       if (id.includes('src/dev/tokens.css')) {
-        const sd = new StyleDictionary(undefined, { verbosity: 'verbose' });
+        const sd = new StyleDictionary(undefined);
         const allFiles = await generateDictionaryFiles(tokenConfig);
         let localTokens = '';
 
