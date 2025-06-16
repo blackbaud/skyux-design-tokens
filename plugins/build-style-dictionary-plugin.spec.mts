@@ -165,7 +165,7 @@ describe('buildStyleDictionaryPlugin', () => {
     });
   });
 
-  it('should include the correct media queries for and selectors for container breakpoints', async () => {
+  it('should include the correct media queries and selectors for container breakpoints', async () => {
     vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
       rootPath: 'plugins/fixtures/',
       tokenSets: [
@@ -213,10 +213,7 @@ describe('buildStyleDictionaryPlugin', () => {
   --rainbow-color-red-2: #8a2538;
   --rainbow-space-s: 10px;
 }
-.sky-theme-rainbow {
-  --sky-color-text-default: var(--rainbow-color-red-1);
-}
-.sky-theme-rainbow .sky-responsive-container-xs, .sky-theme-rainbow .sky-responsive-container-sm, .sky-theme-rainbow .sky-responsive-container-md, .sky-theme-rainbow .sky-responsive-container-lg {
+.sky-theme-rainbow, .sky-theme-rainbow .sky-responsive-container-xs, .sky-theme-rainbow .sky-responsive-container-sm, .sky-theme-rainbow .sky-responsive-container-md, .sky-theme-rainbow .sky-responsive-container-lg {
   --sky-color-text-default: var(--rainbow-color-red-1);
 }
 

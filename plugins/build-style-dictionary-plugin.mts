@@ -116,15 +116,23 @@ async function generateDictionaryFiles(
                 const containerClasses = getContainerBreakpointClassList(
                   referenceTokenSet.responsive.breakpoint,
                 );
-
-                const containerSelector = containerClasses
+                const containerSelectors = containerClasses
                   .map((className) => `${selector} ${className}`)
                   .join(', ');
-                const containerBreakpointOutput = orignialOutput.replace(
-                  selector,
-                  containerSelector,
-                );
-                file.output += `${containerBreakpointOutput}\n`;
+
+                if (referenceTokenSet.responsive.breakpoint === 'xs') {
+                  const combinedOutput = orignialOutput.replace(
+                    selector,
+                    `${selector}, ${containerSelectors}`,
+                  );
+                  file.output = `${combinedOutput}\n`;
+                } else {
+                  const containerBreakpointOutput = orignialOutput.replace(
+                    selector,
+                    containerSelectors,
+                  );
+                  file.output += `${containerBreakpointOutput}\n`;
+                }
               }
             }
           });
