@@ -2,6 +2,15 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.64](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.63...0.0.64) (2025-06-17)
+
+
+### Features
+
+* add vertical tab content spacing ([#190](https://github.com/blackbaud/skyux-design-tokens/issues/190)) ([5a385c5](https://github.com/blackbaud/skyux-design-tokens/commit/5a385c54f7245cafa376db444a9750bb06c65dfb))
+* initial dark mode tokens ([#191](https://github.com/blackbaud/skyux-design-tokens/issues/191)) ([bc5706e](https://github.com/blackbaud/skyux-design-tokens/commit/bc5706e11e3bc49b82a02f15c38ed524451d42a3))
+* support container breakpoints ([#193](https://github.com/blackbaud/skyux-design-tokens/issues/193)) ([0daf995](https://github.com/blackbaud/skyux-design-tokens/commit/0daf995aead6b9cb7d392f2b100d774a92986e3d))
+
 ## [0.0.63](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.62...0.0.63) (2025-06-10)
 
 
