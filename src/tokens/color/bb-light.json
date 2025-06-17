@@ -31,7 +31,7 @@
       },
       "link_highlighted": {
         "$type": "color",
-        "$value": "{bb.color.blue.800}"
+        "$value": "{bb.color.blue.700}"
       }
     },
     "icon": {
@@ -232,7 +232,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.100}"
+          "$value": "{bb.color.blue.200}"
         }
       },
       "icon_matte": {
@@ -499,7 +499,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.400}"
+            "$value": "{bb.color.gray.200}"
           }
         }
       },
@@ -528,7 +528,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.400}"
+          "$value": "{bb.color.gray.200}"
         },
         "error": {
           "$type": "color",
@@ -554,7 +554,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.400}"
+          "$value": "{bb.color.gray.200}"
         },
         "error": {
           "$type": "color",
@@ -579,7 +579,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.400}"
+            "$value": "{bb.color.gray.200}"
           }
         }
       },

@@ -1754,7 +1754,7 @@
         },
         "row": {
           "$type": "other",
-          "$value": "{bb.border.style.dotted}"
+          "$value": "{bb.border.style.solid}"
         }
       }
     }
