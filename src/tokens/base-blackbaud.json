@@ -304,6 +304,10 @@
           "$type": "color",
           "$value": "#FBFCFE"
         },
+        "50": {
+          "$type": "color",
+          "$value": "#F4F8FD"
+        },
         "100": {
           "$type": "color",
           "$value": "#EEF3FC"

@@ -105,11 +105,11 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{bb.color.blue.700}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.700}"
+            "$value": "{bb.color.blue.800}"
           },
           "focus": {
             "$type": "color",
@@ -127,7 +127,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.white}"
+            "$value": "{bb.color.blue.50}"
           },
           "active": {
             "$type": "color",
@@ -149,7 +149,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.transparent}"
+            "$value": "{bb.color.blue.50}"
           },
           "active": {
             "$type": "color",
@@ -171,11 +171,11 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red.700}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.red.700}"
+            "$value": "{bb.color.red.800}"
           },
           "focus": {
             "$type": "color",
@@ -193,7 +193,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.transparent}"
+            "$value": "{bb.color.blue.50}"
           },
           "active": {
             "$type": "color",
@@ -276,7 +276,7 @@
         },
         "hover": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.blue.50}"
         },
         "active": {
           "$type": "color",
@@ -298,7 +298,7 @@
         },
         "hover": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.blue.50}"
         },
         "active": {
           "$type": "color",
