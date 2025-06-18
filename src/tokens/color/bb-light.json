@@ -373,7 +373,7 @@
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.blue.200}"
+        "$value": "{bb.color.blue.300}"
       },
       "elevation": {
         "$type": "color",
