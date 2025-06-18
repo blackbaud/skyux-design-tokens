@@ -411,7 +411,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{bb.color.gray.200}"
           }
         },
         "secondary": {
@@ -433,7 +433,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{bb.color.gray.200}"
           }
         },
         "tertiary": {
@@ -455,7 +455,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{bb.color.gray.200}"
           }
         },
         "danger": {
@@ -477,7 +477,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.100}"
+            "$value": "{bb.color.gray.200}"
           }
         },
         "input": {
