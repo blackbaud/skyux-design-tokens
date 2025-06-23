@@ -302,7 +302,7 @@
       "blue": {
         "25": {
           "$type": "color",
-          "$value": "#FBFCFE"
+          "$value": "#F1F5FA"
         },
         "50": {
           "$type": "color",
