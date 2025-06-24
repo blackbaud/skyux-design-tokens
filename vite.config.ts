@@ -4,8 +4,6 @@ import { buildStylesPlugin } from './plugins/build-styles-plugin.mjs';
 import { buildStyleDictionaryPlugin } from './plugins/build-style-dictionary-plugin.mjs';
 import { preparePackagePlugin } from './plugins/prepare-package-plugin.mjs';
 
-/// <reference types="vitest" />
-
 export default ({ mode }) => {
   const viteEnv = loadEnv(mode, process.cwd());
 
