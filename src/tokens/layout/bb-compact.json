@@ -84,7 +84,7 @@
       "m": {
         "$type": "typography",
         "$value": {
-          "fontSize": "{bb.font.size.100}"
+          "fontSize": "{bb.font.size.300}"
         }
       }
     }

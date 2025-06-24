@@ -661,6 +661,128 @@
         "$type": "boxShadow",
         "$value": "{modern.shadow.size.24}"
       }
+    },
+    "action": {
+      "primary": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.3}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        }
+      },
+      "secondary": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.3}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        }
+      },
+      "tertiary": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.3}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        }
+      },
+      "danger": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.3}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        }
+      },
+      "input": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.3}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        }
+      }
+    },
+    "input": {
+      "base": {
+        "$type": "boxShadow",
+        "$value": "{modern.shadow.size.0}"
+      },
+      "disabled": {
+        "$type": "boxShadow",
+        "$value": "{modern.shadow.size.0}"
+      }
     }
   },
   "opacity": {
