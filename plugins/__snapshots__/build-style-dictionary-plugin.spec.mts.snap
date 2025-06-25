@@ -1,7 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and modern styles 1`] = `
-".sky-theme-modern {
+"@property --modern-image-logo-primary-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url();
+}
+
+.sky-theme-modern {
   --modern-border-radius-0: 0rem;
   --modern-border-radius-md: 6px;
   --modern-border-radius-pill: 10rem;
@@ -70,6 +76,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-font-weight-light: 300;
   --modern-font-weight-regular: 400;
   --modern-font-weight-semibold: 600;
+  --modern-image-logo-primary-src: url('../images/bb-logo.png');
   --modern-letter_spacing-normal: normal;
   --modern-line_height-110: 1.1;
   --modern-line_height-115: 1.15;
@@ -296,6 +303,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-elevation-input-base: var(--modern-shadow-size-0);
   --sky-elevation-input-disabled: var(--modern-shadow-size-0);
   --sky-elevation-none: var(--modern-shadow-size-0);
+  --sky-image-logo-primary-src: var(--modern-image-logo-primary-src);
   --sky-opacity-wait: var(--modern-opacity-600);
   --sky-elevation-action-danger-focus: var(--modern-shadow-size-3);
   --sky-elevation-action-input-focus: var(--modern-shadow-size-3);
@@ -1110,7 +1118,13 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
 `;
 
 exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and modern styles 2`] = `
-".sky-theme-modern.sky-theme-brand-base {
+"@property --bb-image-logo-primary-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url();
+}
+
+.sky-theme-modern.sky-theme-brand-base {
   --bb-border-radius-0: 0rem;
   --bb-border-radius-012: .125rem;
   --bb-border-radius-025: .25rem;
@@ -1254,6 +1268,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-font-weight-light: 300;
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
+  --bb-image-logo-primary-src: url('../images/bb-logo.png');
   --bb-letter_spacing-normal: normal;
   --bb-letter_spacing-wider: 0.16px;
   --bb-line_height-300: calc(18/13);
@@ -1666,6 +1681,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-elevation-overlay-300: var(--bb-shadow-gray-1600);
   --sky-elevation-overlay-400: var(--bb-shadow-gray-2400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
+  --sky-image-logo-primary-src: var(--bb-image-logo-primary-src);
   --sky-opacity-wait: var(--bb-opacity-600);
 }
 .sky-theme-modern.sky-theme-brand-base, .sky-theme-modern.sky-theme-brand-base .sky-responsive-container-xs, .sky-theme-modern.sky-theme-brand-base .sky-responsive-container-sm, .sky-theme-modern.sky-theme-brand-base .sky-responsive-container-md, .sky-theme-modern.sky-theme-brand-base .sky-responsive-container-lg {
