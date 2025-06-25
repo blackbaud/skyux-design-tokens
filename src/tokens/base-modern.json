@@ -1,5 +1,18 @@
 {
   "modern": {
+    "image": {
+      "logo": {
+        "primary": {
+          "src": {
+            "$type": "other",
+            "$value": "~/assets/images/bb-logo.png",
+            "$extensions": {
+              "com.blackbaud.developer.sky-token-format": "url"
+            }
+          }
+        }
+      }
+    },
     "color": {
       "white": {
         "$type": "color",

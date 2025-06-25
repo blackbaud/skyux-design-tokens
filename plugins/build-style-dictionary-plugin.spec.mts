@@ -1,44 +1,23 @@
+import { EmittedFile } from 'rollup';
 import { describe, expect, it, vi } from 'vitest';
-import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs';
 import * as exports from '../src/tokens/token-config.mts';
+import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs';
+import * as assetsUtils from './shared/assets-utils.mjs';
+import { TokenSet } from '../src/types/token-set';
 
 describe('buildStyleDictionaryPlugin', () => {
-  it('should create style files for each token set provided', async () => {
+  async function validate(
+    tokenSets: TokenSet[],
+    expectedEmittedFiles: Partial<EmittedFile>[],
+    assetsCssMock = async (basePath: string) => '',
+  ): Promise<void> {
+    vi.spyOn(assetsUtils, 'generateAssetsCss').mockImplementation(
+      assetsCssMock,
+    );
     vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
       rootPath: 'plugins/fixtures/',
-      tokenSets: [
-        {
-          name: 'muted',
-          selector: '.sky-theme-muted',
-          path: 'base-muted.json',
-          outputPath: 'muted.css',
-          referenceTokens: [
-            {
-              name: 'muted-colors',
-              path: 'muted-colors.json',
-            },
-            {
-              name: 'muted-dark-colors',
-              path: 'muted-dark-colors.json',
-              selector: '.sky-theme-mode-dark',
-            },
-          ],
-        },
-        {
-          name: 'rainbow',
-          selector: '.sky-theme-rainbow',
-          path: 'base-rainbow.json',
-          outputPath: 'rainbow.css',
-          referenceTokens: [
-            {
-              name: 'rainbow-colors',
-              path: 'rainbow-colors.json',
-            },
-          ],
-        },
-      ],
+      tokenSets,
     });
-
     const plugin = buildStyleDictionaryPlugin();
     const emitFileSpy = vi.fn();
     if (plugin.generateBundle) {
@@ -47,11 +26,53 @@ describe('buildStyleDictionaryPlugin', () => {
       });
     }
 
-    expect(emitFileSpy).toHaveBeenCalledTimes(2);
-    expect(emitFileSpy).toHaveBeenCalledWith({
-      type: 'asset',
-      fileName: 'assets/scss/muted.css',
-      source: `.sky-theme-muted {
+    expect(emitFileSpy).toHaveBeenCalledTimes(expectedEmittedFiles.length);
+
+    for (const { fileName, source } of expectedEmittedFiles) {
+      expect(emitFileSpy).toHaveBeenCalledWith({
+        type: 'asset',
+        fileName,
+        source,
+      });
+    }
+  }
+  it('should create style files for each token set provided', async () => {
+    const tokenSets: TokenSet[] = [
+      {
+        name: 'muted',
+        selector: '.sky-theme-muted',
+        path: 'base-muted.json',
+        outputPath: 'muted.css',
+        referenceTokens: [
+          {
+            name: 'muted-colors',
+            path: 'muted-colors.json',
+          },
+          {
+            name: 'muted-dark-colors',
+            path: 'muted-dark-colors.json',
+            selector: '.sky-theme-mode-dark',
+          },
+        ],
+      },
+      {
+        name: 'rainbow',
+        selector: '.sky-theme-rainbow',
+        path: 'base-rainbow.json',
+        outputPath: 'rainbow.css',
+        referenceTokens: [
+          {
+            name: 'rainbow-colors',
+            path: 'rainbow-colors.json',
+          },
+        ],
+      },
+    ];
+
+    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+      {
+        fileName: 'assets/scss/muted.css',
+        source: `.sky-theme-muted {
   --modern-color-black: #000000;
   --modern-color-gray-1: #e2e3e4;
   --modern-color-red-1: #f7a08f;
@@ -70,12 +91,10 @@ describe('buildStyleDictionaryPlugin', () => {
   --sky-color-text-default: var(--modern-color-red-1);
 }
 `,
-    });
-
-    expect(emitFileSpy).toHaveBeenCalledWith({
-      type: 'asset',
-      fileName: 'assets/scss/rainbow.css',
-      source: `.sky-theme-rainbow {
+      },
+      {
+        fileName: 'assets/scss/rainbow.css',
+        source: `.sky-theme-rainbow {
   --rainbow-color-gray-1: #e2e3e7;
   --rainbow-color-gray-2: #c0c2c5;
   --rainbow-color-red-1: #fc0330;
@@ -87,61 +106,51 @@ describe('buildStyleDictionaryPlugin', () => {
   --sky-color-text-default: var(--rainbow-color-red-1);
 }
 `,
-    });
+      },
+    ];
+    await validate(tokenSets, expectedEmittedFiles);
   });
 
   it('should include the correct media queries for screen only breakpoints', async () => {
-    vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
-      rootPath: 'plugins/fixtures/',
-      tokenSets: [
-        {
-          name: 'responsive-rainbow',
-          selector: '.sky-theme-rainbow',
-          outputPath: 'responsive-rainbow.css',
-          path: 'base-rainbow.json',
-          referenceTokens: [
-            {
-              name: 'rainbow-colors-xs',
-              responsive: {
-                breakpoint: 'xs',
-                includesContainer: false,
-              },
-              path: 'responsive-rainbow-colors-xs.json',
+    const tokenSets: TokenSet[] = [
+      {
+        name: 'responsive-rainbow',
+        selector: '.sky-theme-rainbow',
+        outputPath: 'responsive-rainbow.css',
+        path: 'base-rainbow.json',
+        referenceTokens: [
+          {
+            name: 'rainbow-colors-xs',
+            responsive: {
+              breakpoint: 'xs',
+              includesContainer: false,
             },
-            {
-              name: 'rainbow-colors-md',
-              responsive: {
-                breakpoint: 'm',
-                includesContainer: false,
-              },
-              path: 'responsive-rainbow-colors-m.json',
+            path: 'responsive-rainbow-colors-xs.json',
+          },
+          {
+            name: 'rainbow-colors-md',
+            responsive: {
+              breakpoint: 'm',
+              includesContainer: false,
             },
-            {
-              name: 'rainbow-colors-sm',
-              responsive: {
-                breakpoint: 's',
-                includesContainer: false,
-              },
-              path: 'responsive-rainbow-colors-s.json',
+            path: 'responsive-rainbow-colors-m.json',
+          },
+          {
+            name: 'rainbow-colors-sm',
+            responsive: {
+              breakpoint: 's',
+              includesContainer: false,
             },
-          ],
-        },
-      ],
-    });
+            path: 'responsive-rainbow-colors-s.json',
+          },
+        ],
+      },
+    ];
 
-    const plugin = buildStyleDictionaryPlugin();
-    const emitFileSpy = vi.fn();
-    if (plugin.generateBundle) {
-      await plugin.generateBundle.call({
-        emitFile: emitFileSpy,
-      });
-    }
-
-    expect(emitFileSpy).toHaveBeenCalledOnce();
-    expect(emitFileSpy).toHaveBeenCalledWith({
-      type: 'asset',
-      fileName: 'assets/scss/responsive-rainbow.css',
-      source: `.sky-theme-rainbow {
+    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+      {
+        fileName: 'assets/scss/responsive-rainbow.css',
+        source: `.sky-theme-rainbow {
   --rainbow-color-gray-1: #e2e3e7;
   --rainbow-color-gray-2: #c0c2c5;
   --rainbow-color-red-1: #fc0330;
@@ -162,51 +171,40 @@ describe('buildStyleDictionaryPlugin', () => {
 }
 }
 `,
-    });
+      },
+    ];
+    await validate(tokenSets, expectedEmittedFiles);
   });
 
   it('should include the correct media queries and selectors for container breakpoints', async () => {
-    vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
-      rootPath: 'plugins/fixtures/',
-      tokenSets: [
-        {
-          name: 'responsive-rainbow',
-          selector: '.sky-theme-rainbow',
-          outputPath: 'responsive-rainbow.css',
-          path: 'base-rainbow.json',
-          referenceTokens: [
-            {
-              name: 'rainbow-colors-m',
-              responsive: {
-                breakpoint: 'm',
-              },
-              path: 'responsive-rainbow-colors-m.json',
+    const tokenSets: TokenSet[] = [
+      {
+        name: 'responsive-rainbow',
+        selector: '.sky-theme-rainbow',
+        outputPath: 'responsive-rainbow.css',
+        path: 'base-rainbow.json',
+        referenceTokens: [
+          {
+            name: 'rainbow-colors-m',
+            responsive: {
+              breakpoint: 'm',
             },
-            {
-              name: 'rainbow-colors-xs',
-              responsive: {
-                breakpoint: 'xs',
-              },
-              path: 'responsive-rainbow-colors-xs.json',
+            path: 'responsive-rainbow-colors-m.json',
+          },
+          {
+            name: 'rainbow-colors-xs',
+            responsive: {
+              breakpoint: 'xs',
             },
-          ],
-        },
-      ],
-    });
-
-    const plugin = buildStyleDictionaryPlugin();
-    const emitFileSpy = vi.fn();
-    if (plugin.generateBundle) {
-      await plugin.generateBundle.call({
-        emitFile: emitFileSpy,
-      });
-    }
-
-    expect(emitFileSpy).toHaveBeenCalledOnce();
-    expect(emitFileSpy).toHaveBeenCalledWith({
-      type: 'asset',
-      fileName: 'assets/scss/responsive-rainbow.css',
-      source: `.sky-theme-rainbow {
+            path: 'responsive-rainbow-colors-xs.json',
+          },
+        ],
+      },
+    ];
+    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+      {
+        fileName: 'assets/scss/responsive-rainbow.css',
+        source: `.sky-theme-rainbow {
   --rainbow-color-gray-1: #e2e3e7;
   --rainbow-color-gray-2: #c0c2c5;
   --rainbow-color-red-1: #fc0330;
@@ -227,36 +225,26 @@ describe('buildStyleDictionaryPlugin', () => {
 }
 
 `,
-    });
+      },
+    ];
+    await validate(tokenSets, expectedEmittedFiles);
   });
 
   it('should add units to unitless zero values', async () => {
-    vi.spyOn(exports, 'tokenConfig', 'get').mockReturnValue({
-      rootPath: 'plugins/fixtures/',
-      tokenSets: [
-        {
-          name: 'zeroes',
-          selector: '.sky-theme-zero',
-          outputPath: 'zeroes.css',
-          path: 'zeroes.json',
-          referenceTokens: [],
-        },
-      ],
-    });
+    const tokenSets: TokenSet[] = [
+      {
+        name: 'zeroes',
+        selector: '.sky-theme-zero',
+        outputPath: 'zeroes.css',
+        path: 'zeroes.json',
+        referenceTokens: [],
+      },
+    ];
 
-    const plugin = buildStyleDictionaryPlugin();
-    const emitFileSpy = vi.fn();
-    if (plugin.generateBundle) {
-      await plugin.generateBundle.call({
-        emitFile: emitFileSpy,
-      });
-    }
-
-    expect(emitFileSpy).toHaveBeenCalledOnce();
-    expect(emitFileSpy).toHaveBeenCalledWith({
-      type: 'asset',
-      fileName: 'assets/scss/zeroes.css',
-      source: `.sky-theme-zero {
+    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+      {
+        fileName: 'assets/scss/zeroes.css',
+        source: `.sky-theme-zero {
   --zeroTest-space-1: 0rem;
   --zeroTest-space-2: 0rem;
   --zeroTest-space-3: 0rem;
@@ -266,7 +254,50 @@ describe('buildStyleDictionaryPlugin', () => {
   --zeroTest-space-7: #000000;
 }
 `,
-    });
+      },
+    ];
+
+    await validate(tokenSets, expectedEmittedFiles);
+  });
+
+  it('should add font declarations', async () => {
+    const tokenSets: TokenSet[] = [
+      {
+        name: 'zeroes',
+        selector: '.sky-theme-zero',
+        outputPath: 'zeroes.css',
+        path: 'zeroes.json',
+        referenceTokens: [],
+      },
+    ];
+
+    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+      {
+        fileName: 'assets/scss/zeroes.css',
+        source: `@font-face {
+  font-family: Test;
+  src: url('../test.tff');
+}
+
+.sky-theme-zero {
+  --zeroTest-space-1: 0rem;
+  --zeroTest-space-2: 0rem;
+  --zeroTest-space-3: 0rem;
+  --zeroTest-space-4: 0rem;
+  --zeroTest-space-5: 0px;
+  --zeroTest-space-6: 0;
+  --zeroTest-space-7: #000000;
+}
+`,
+      },
+    ];
+
+    const assetsCssMock = async (basePath: string) => `@font-face {
+  font-family: Test;
+  src: url('${basePath}test.tff');
+}`;
+
+    await validate(tokenSets, expectedEmittedFiles, assetsCssMock);
   });
 
   it('should generate the correct blackbaud and modern styles', async () => {
