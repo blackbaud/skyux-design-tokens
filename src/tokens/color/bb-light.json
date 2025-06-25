@@ -70,6 +70,12 @@
       "selected": {
         "$type": "color",
         "$value": "{bb.color.blue.600}"
+      },
+      "input": {
+        "action": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        }
       }
     },
     "background": {

@@ -70,6 +70,12 @@
       "selected": {
         "$type": "color",
         "$value": "{modern.color.blue.74}"
+      },
+      "input": {
+        "action": {
+          "$type": "color",
+          "$value": "{modern.color.gray.70}"
+        }
       }
     },
     "background": {
