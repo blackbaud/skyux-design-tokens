@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.66](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.65...0.0.66) (2025-06-26)
+
+
+### Features
+
+* add assets logic and logo ([#197](https://github.com/blackbaud/skyux-design-tokens/issues/197)) ([290ebb6](https://github.com/blackbaud/skyux-design-tokens/commit/290ebb6a6873e7e1fd50ab5e5a65b9ac92ee1dfb))
+* remove spacing tokens ([#195](https://github.com/blackbaud/skyux-design-tokens/issues/195)) ([2be2a10](https://github.com/blackbaud/skyux-design-tokens/commit/2be2a102aae176b19fda3cec902a0677c45cbca0))
+
 ## [0.0.65](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.64...0.0.65) (2025-06-24)
 
 
