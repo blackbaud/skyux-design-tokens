@@ -302,7 +302,7 @@
       "blue": {
         "25": {
           "$type": "color",
-          "$value": "#F1F5FA"
+          "$value": "#FBFCFE"
         },
         "50": {
           "$type": "color",
@@ -689,6 +689,12 @@
         "blue": {
           "$type": "color",
           "$value": "linear-gradient( {bb.color.blue.500}, {bb.color.blue.700})"
+        }
+      },
+      "slate": {
+        "100": {
+          "$type": "color",
+          "$value": "#f1f5fa"
         }
       }
     },
