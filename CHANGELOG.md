@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.67](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.66...0.0.67) (2025-06-26)
+
+
+### Bug Fixes
+
+* make default url property value an empty string ([#200](https://github.com/blackbaud/skyux-design-tokens/issues/200)) ([4ca7d70](https://github.com/blackbaud/skyux-design-tokens/commit/4ca7d70aa4cadb3b2a35013369918f7a10441e00))
+
 ## [0.0.66](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.65...0.0.66) (2025-06-26)
 
 
