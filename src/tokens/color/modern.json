@@ -790,15 +790,5 @@
       "$type": "opacity",
       "$value": "{modern.opacity.600}"
     }
-  },
-  "image": {
-    "logo": {
-      "primary": {
-        "src": {
-          "$type": "other",
-          "$value": "{modern.image.logo.primary.src}"
-        }
-      }
-    }
   }
 }
