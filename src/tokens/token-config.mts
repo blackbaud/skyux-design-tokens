@@ -13,20 +13,8 @@ export const tokenConfig: TokenConfig = {
           path: 'color/modern.json',
         },
         {
-          name: 'modern-layout-xs',
+          name: 'modern-layout',
           path: 'layout/modern.json',
-          responsive: {
-            breakpoint: 'xs',
-            includesContainer: true,
-          },
-        },
-        {
-          name: 'modern-layout-sm',
-          path: 'layout/modern-sm-min.json',
-          responsive: {
-            breakpoint: 's',
-            includesContainer: true,
-          },
         },
       ],
     },
@@ -46,20 +34,8 @@ export const tokenConfig: TokenConfig = {
           path: 'color/bb-dark.json',
         },
         {
-          name: 'bb-productive-xs',
+          name: 'bb-productive',
           path: 'layout/bb-productive.json',
-          responsive: {
-            breakpoint: 'xs',
-            includesContainer: true,
-          },
-        },
-        {
-          name: 'bb-productive-sm',
-          path: 'layout/bb-prod-sm-min.json',
-          responsive: {
-            breakpoint: 's',
-            includesContainer: true,
-          },
         },
         {
           name: 'bb-compact',

@@ -12,20 +12,8 @@ test('should have token sets in the correct format', () => {
     path: 'color/modern.json',
   }).toBeOneOf(tokenSets[0].referenceTokens);
   expect({
-    name: 'modern-layout-xs',
+    name: 'modern-layout',
     path: 'layout/modern.json',
-    responsive: {
-      breakpoint: 'xs',
-      includesContainer: true,
-    },
-  }).toBeOneOf(tokenSets[0].referenceTokens);
-  expect({
-    name: 'modern-layout-sm',
-    path: 'layout/modern-sm-min.json',
-    responsive: {
-      breakpoint: 's',
-      includesContainer: true,
-    },
   }).toBeOneOf(tokenSets[0].referenceTokens);
   expect(tokenSets[1].name).toEqual('blackbaud');
   expect(tokenSets[1].selector).toEqual(
@@ -43,20 +31,8 @@ test('should have token sets in the correct format', () => {
     path: 'color/bb-dark.json',
   }).toBeOneOf(tokenSets[1].referenceTokens);
   expect({
-    name: 'bb-productive-xs',
+    name: 'bb-productive',
     path: 'layout/bb-productive.json',
-    responsive: {
-      breakpoint: 'xs',
-      includesContainer: true,
-    },
-  }).toBeOneOf(tokenSets[1].referenceTokens);
-  expect({
-    name: 'bb-productive-sm',
-    path: 'layout/bb-prod-sm-min.json',
-    responsive: {
-      breakpoint: 's',
-      includesContainer: true,
-    },
   }).toBeOneOf(tokenSets[1].referenceTokens);
   expect({
     name: 'bb-compact',
