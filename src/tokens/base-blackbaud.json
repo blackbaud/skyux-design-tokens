@@ -693,7 +693,7 @@
       }
     },
     "shadow": {
-      "gray": {
+      "blue": {
         "0": {
           "$type": "boxShadow",
           "$value": [
@@ -749,7 +749,7 @@
               "y": "1",
               "blur": "3",
               "spread": "0",
-              "color": "rgba(13,62,130,0.2)",
+              "color": "rgba({bb.color.blue.800},0.2)",
               "type": "dropShadow"
             },
             {
@@ -757,7 +757,7 @@
               "y": "2",
               "blur": "1",
               "spread": "-1",
-              "color": "rgba(13,62,130,0.12)",
+              "color": "rgba({bb.color.blue.800},0.12)",
               "type": "dropShadow"
             },
             {
@@ -765,7 +765,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba(13,62,130,0.14)",
+              "color": "rgba({bb.color.blue.800},0.14)",
               "type": "dropShadow"
             }
           ]
@@ -778,7 +778,7 @@
               "y": "1",
               "blur": "8",
               "spread": "0",
-              "color": "rgba(13,62,130,0.2)",
+              "color": "rgba({bb.color.blue.800},0.2)",
               "type": "dropShadow"
             },
             {
@@ -786,7 +786,7 @@
               "y": "3",
               "blur": "3",
               "spread": "-2",
-              "color": "rgba(13,62,130,0.12)",
+              "color": "rgba({bb.color.blue.800},0.12)",
               "type": "dropShadow"
             },
             {
@@ -794,7 +794,7 @@
               "y": "3",
               "blur": "4",
               "spread": "0",
-              "color": "rgba(13,62,130,0.14)",
+              "color": "rgba({bb.color.blue.800}0.14)",
               "type": "dropShadow"
             }
           ]
