@@ -790,15 +790,5 @@
       "$type": "opacity",
       "$value": "{bb.opacity.600}"
     }
-  },
-  "image": {
-    "logo": {
-      "primary": {
-        "src": {
-          "$type": "other",
-          "$value": "{bb.image.logo.primary.src}"
-        }
-      }
-    }
   }
 }
