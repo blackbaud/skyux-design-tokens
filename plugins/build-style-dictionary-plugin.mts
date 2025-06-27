@@ -70,25 +70,6 @@ function getMediaQueryMinWidth(breakpoint: Breakpoint): string {
   }
 }
 
-function getContainerBreakpointClassList(breakpoint: Breakpoint): string[] {
-  const largeClasses = ['.sky-responsive-container-lg'];
-  const mediumClasses = ['.sky-responsive-container-md', ...largeClasses];
-  const smallClasses = ['.sky-responsive-container-sm', ...mediumClasses];
-  const xsClasses = ['.sky-responsive-container-xs', ...smallClasses];
-
-  switch (breakpoint) {
-    case 'xs':
-    default:
-      return xsClasses;
-    case 's':
-      return smallClasses;
-    case 'm':
-      return mediumClasses;
-    case 'l':
-      return largeClasses;
-  }
-}
-
 async function generateDictionaryFiles(
   tokenConfig: TokenConfig,
   skyOptions: SkyTokenOptions,
@@ -138,30 +119,6 @@ async function generateDictionaryFiles(
                   ? orignialOutput
                   : `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.responsive.breakpoint)}) {\n${orignialOutput}}\n`;
               file.breakpoint = referenceTokenSet.responsive.breakpoint;
-
-              // including the container classes should be the default behavior if not explicitly set
-              if (referenceTokenSet.responsive.includesContainer !== false) {
-                const containerClasses = getContainerBreakpointClassList(
-                  referenceTokenSet.responsive.breakpoint,
-                );
-                const containerSelectors = containerClasses
-                  .map((className) => `${selector} ${className}`)
-                  .join(', ');
-
-                if (referenceTokenSet.responsive.breakpoint === 'xs') {
-                  const combinedOutput = orignialOutput.replace(
-                    selector,
-                    `${selector}, ${containerSelectors}`,
-                  );
-                  file.output = `${combinedOutput}\n`;
-                } else {
-                  const containerBreakpointOutput = orignialOutput.replace(
-                    selector,
-                    containerSelectors,
-                  );
-                  file.output += `${containerBreakpointOutput}\n`;
-                }
-              }
             }
           });
           allFiles = allFiles.concat(files);
