@@ -1753,27 +1753,7 @@
       },
       "space": {
         "offset": {
-          "top": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
-          },
-          "right": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
-          },
-          "bottom": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
-          },
-          "left": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
-          }
-        }
-      },
-      "fullscreen": {
-        "space": {
-          "offset": {
+          "xs": {
             "top": {
               "$type": "other",
               "$value": "{modern.size.10}"
@@ -1789,6 +1769,66 @@
             "left": {
               "$type": "other",
               "$value": "{modern.size.10}"
+            }
+          },
+          "sm": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.20}"
+            }
+          }
+        }
+      },
+      "fullscreen": {
+        "space": {
+          "offset": {
+            "xs": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.10}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.10}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.10}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.10}"
+              }
+            },
+            "sm": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.15}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.size.15}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.15}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.size.15}"
+              }
             }
           }
         }
@@ -1821,21 +1861,41 @@
         "blocks": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1843,21 +1903,41 @@
         "fit": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1865,21 +1945,41 @@
         "list": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1887,21 +1987,41 @@
         "tabs": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.lg}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.lg}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1911,21 +2031,41 @@
         "blocks": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1933,21 +2073,41 @@
         "fit": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1955,21 +2115,41 @@
         "list": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -1977,21 +2157,41 @@
         "tabs": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                }
               }
             }
           }
@@ -2001,21 +2201,41 @@
         "blocks": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.xl}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.xl}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -2023,21 +2243,41 @@
         "list": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.xl}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.xl}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -2045,21 +2285,41 @@
         "tabs": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.space.xl}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.s}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.space.xl}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.s}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -2069,21 +2329,41 @@
         "tabs": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.md}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.space.md}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.xl}"
+                }
               }
             }
           }
@@ -2253,21 +2533,41 @@
     "search": {
       "space": {
         "inset": {
-          "top": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
+          "xs": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.10}"
+            }
           },
-          "right": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
-          },
-          "bottom": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
-          },
-          "left": {
-            "$type": "other",
-            "$value": "{modern.size.10}"
+          "sm": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.space.s}"
+            }
           }
         },
         "offset": {
@@ -2405,21 +2705,41 @@
         "content": {
           "space": {
             "inset": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.15}"
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.15}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.15}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.15}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.size.15}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.size.15}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.15}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.size.15}"
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.10}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.15}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.10}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.size.15}"
+                }
               }
             }
           }
@@ -2518,27 +2838,7 @@
       "dashboard": {
         "space": {
           "inset": {
-            "top": {
-              "$type": "other",
-              "$value": "{modern.size.0}"
-            },
-            "right": {
-              "$type": "other",
-              "$value": "{modern.size.0}"
-            },
-            "bottom": {
-              "$type": "other",
-              "$value": "{modern.size.0}"
-            },
-            "left": {
-              "$type": "other",
-              "$value": "{modern.size.0}"
-            }
-          }
-        },
-        "column": {
-          "space": {
-            "inset": {
+            "xs": {
               "top": {
                 "$type": "other",
                 "$value": "{modern.size.0}"
@@ -2554,6 +2854,66 @@
               "left": {
                 "$type": "other",
                 "$value": "{modern.size.0}"
+              }
+            },
+            "sm": {
+              "top": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{modern.space.s}"
+              }
+            }
+          }
+        },
+        "column": {
+          "space": {
+            "inset": {
+              "xs": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                }
+              },
+              "sm": {
+                "top": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "other",
+                  "$value": "{modern.space.md}"
+                },
+                "bottom": {
+                  "$type": "other",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "other",
+                  "$value": "{modern.space.md}"
+                }
               }
             }
           }
