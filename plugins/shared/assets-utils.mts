@@ -1,6 +1,7 @@
 import { existsSync } from 'fs';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
+import packageJson from '../../package.json' with { type: 'json' };
 
 interface FontAsset {
   family: string;
@@ -17,11 +18,14 @@ export function fixAssetsUrlValue(
   basePath: string | undefined,
   value: string,
 ): string {
-  return `url('${basePath === undefined ? value : value.replace(/~\/assets\//g, basePath).replaceAll("'", "\'")}')`;
+  const effectiveBasePath = getBasePath(basePath);
+
+  return `url('${effectiveBasePath === undefined ? value : value.replace(/~\/assets\//g, effectiveBasePath).replaceAll("'", "\'")}')`;
 }
 
 export async function generateAssetsCss(basePath: string): Promise<string> {
   const assetsJsonPath = join('public', 'assets', 'assets.json');
+  const effectiveBasePath = getBasePath(basePath);
 
   try {
     // Check if assets.json exists
@@ -44,7 +48,7 @@ export async function generateAssetsCss(basePath: string): Promise<string> {
       .map((font) => {
         return `@font-face {
   font-family: '${font.family}';
-  src: ${fixAssetsUrlValue(basePath, font.src)};
+  src: ${fixAssetsUrlValue(effectiveBasePath, font.src)};
   font-weight: ${font.weight};
   font-style: ${font.style};
   font-display: swap;
@@ -57,4 +61,15 @@ export async function generateAssetsCss(basePath: string): Promise<string> {
     console.error('Error generating font CSS:', error);
     throw error;
   }
+}
+
+function getBasePath(basePath: string | undefined): string | undefined {
+  const packageVersion = process.env.PACKAGEJSON_VERSION;
+  const packageNameParts = packageJson.name.split('/');
+  const packageName = packageNameParts[packageNameParts.length - 1];
+
+  if (packageVersion) {
+    return `https://sky.blackbaudcdn.net/static/${packageName}/${packageVersion}/`;
+  }
+  return basePath;
 }

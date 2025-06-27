@@ -1,0 +1,17 @@
+{
+  "muted": {
+    "image": {
+      "logo": {
+        "primary": {
+          "src": {
+            "$type": "other",
+            "$value": "~/assets/images/logo.png",
+            "$extensions": {
+              "com.blackbaud.developer.sky-token-format": "url"
+            }
+          }
+        }
+      }
+    }
+  }
+}

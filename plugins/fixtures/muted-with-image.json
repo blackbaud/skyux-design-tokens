@@ -1,0 +1,12 @@
+{
+  "image": {
+    "logo": {
+      "primary": {
+        "src": {
+          "$type": "other",
+          "$value": "{muted.image.logo.primary.src}"
+        }
+      }
+    }
+  }
+}
