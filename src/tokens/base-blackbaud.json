@@ -1,5 +1,18 @@
 {
   "bb": {
+    "image": {
+      "logo": {
+        "primary": {
+          "src": {
+            "$type": "other",
+            "$value": "~/assets/images/bb-logo.png",
+            "$extensions": {
+              "com.blackbaud.developer.sky-token-format": "url"
+            }
+          }
+        }
+      }
+    },
     "font": {
       "size": {
         "300": {

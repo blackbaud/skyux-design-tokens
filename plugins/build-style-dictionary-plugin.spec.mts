@@ -5,6 +5,8 @@ import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs'
 import * as assetsUtils from './shared/assets-utils.mjs';
 import { TokenSet } from '../src/types/token-set';
 
+vi.stubEnv('PACKAGEJSON_VERSION', undefined);
+
 describe('buildStyleDictionaryPlugin', () => {
   async function validate(
     tokenSets: TokenSet[],
