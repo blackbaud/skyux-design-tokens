@@ -268,6 +268,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-deemphasized: var(--modern-color-gray-70);
   --sky-color-icon-default: var(--modern-color-gray-105);
   --sky-color-icon-info: var(--modern-color-blue-50);
+  --sky-color-icon-input-action: var(--modern-color-gray-70);
   --sky-color-icon-inverse: var(--modern-color-white);
   --sky-color-icon-selected: var(--modern-color-blue-74);
   --sky-color-icon-success: var(--modern-color-green-50);
@@ -1053,7 +1054,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-blue-100: #eef3fc;
   --bb-color-blue-1000: #09152b;
   --bb-color-blue-200: #d0e1f7;
-  --bb-color-blue-25: #f1f5fa;
+  --bb-color-blue-25: #fbfcfe;
   --bb-color-blue-300: #aac4ee;
   --bb-color-blue-400: #80a6e6;
   --bb-color-blue-50: #f4f8fd;
@@ -1137,6 +1138,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-sky-700: #00a6cc;
   --bb-color-sky-800: #007c99;
   --bb-color-sky-900: #005366;
+  --bb-color-slate-100: #f1f5fa;
   --bb-color-teal-100: #ebfaf9;
   --bb-color-teal-1000: #012625;
   --bb-color-teal-200: #cdf2f1;
@@ -1397,6 +1399,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-deemphasized: var(--bb-color-gray-300);
   --sky-color-icon-default: var(--bb-color-gray-25);
   --sky-color-icon-info: var(--bb-color-blue-600);
+  --sky-color-icon-input-action: var(--bb-color-sky-600);
   --sky-color-icon-inverse: var(--bb-color-gray-1100);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
@@ -1426,7 +1429,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-action-danger-focus: var(--bb-color-red-600);
   --sky-color-background-action-danger-hover: var(--bb-color-red-700);
   --sky-color-background-action-input-active: var(--bb-color-blue-100);
-  --sky-color-background-action-input-base: var(--bb-color-transparent);
+  --sky-color-background-action-input-base: var(--bb-color-white);
   --sky-color-background-action-input-disabled: var(--bb-color-gray-50);
   --sky-color-background-action-input-focus: var(--bb-color-transparent);
   --sky-color-background-action-input-hover: var(--bb-color-blue-50);
@@ -1470,7 +1473,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-nav-disabled: var(--bb-color-gray-50);
   --sky-color-background-nav-focus: var(--bb-color-transparent);
   --sky-color-background-nav-hover: var(--bb-color-blue-50);
-  --sky-color-background-page: var(--bb-color-blue-25);
+  --sky-color-background-page: var(--bb-color-slate-100);
   --sky-color-background-scrim: var(--bb-color-scrim);
   --sky-color-background-selected-danger: var(--bb-color-red-300);
   --sky-color-background-selected-heavy: var(--bb-color-blue-600);
@@ -1549,6 +1552,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-deemphasized: var(--bb-color-gray-600);
   --sky-color-icon-default: var(--bb-color-gray-900);
   --sky-color-icon-info: var(--bb-color-blue-600);
+  --sky-color-icon-input-action: var(--bb-color-blue-600);
   --sky-color-icon-inverse: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
