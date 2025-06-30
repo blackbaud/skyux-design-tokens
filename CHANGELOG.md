@@ -2,6 +2,35 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [0.0.69](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.68...0.0.69) (2025-06-30)
+
+
+### Features
+
+* use CDN URL if PACKAGEVERSION env variable is present ([#206](https://github.com/blackbaud/skyux-design-tokens/issues/206)) ([37bee0a](https://github.com/blackbaud/skyux-design-tokens/commit/37bee0a97fc7517f1d95238c371b189117c39b79))
+
+## [0.0.68](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.67...0.0.68) (2025-06-27)
+
+
+### Bug Fixes
+
+* remove image tokens ([#203](https://github.com/blackbaud/skyux-design-tokens/issues/203)) ([df3eba4](https://github.com/blackbaud/skyux-design-tokens/commit/df3eba48a97c5d028db1669f074638e558f0adb6))
+
+## [0.0.67](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.66...0.0.67) (2025-06-26)
+
+
+### Bug Fixes
+
+* make default url property value an empty string ([#200](https://github.com/blackbaud/skyux-design-tokens/issues/200)) ([4ca7d70](https://github.com/blackbaud/skyux-design-tokens/commit/4ca7d70aa4cadb3b2a35013369918f7a10441e00))
+
+## [0.0.66](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.65...0.0.66) (2025-06-26)
+
+
+### Features
+
+* add assets logic and logo ([#197](https://github.com/blackbaud/skyux-design-tokens/issues/197)) ([290ebb6](https://github.com/blackbaud/skyux-design-tokens/commit/290ebb6a6873e7e1fd50ab5e5a65b9ac92ee1dfb))
+* remove spacing tokens ([#195](https://github.com/blackbaud/skyux-design-tokens/issues/195)) ([2be2a10](https://github.com/blackbaud/skyux-design-tokens/commit/2be2a102aae176b19fda3cec902a0677c45cbca0))
+
 ## [0.0.65](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.64...0.0.65) (2025-06-24)
 
 
