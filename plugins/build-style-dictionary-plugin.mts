@@ -319,7 +319,7 @@ export function buildStyleDictionaryPlugin(): Plugin {
             (token) => `@property --${token.name} {
   syntax: '<url>';
   inherits: true;
-  initial-value: url();
+  initial-value: url('data:,');
 }`,
           )
           .join('\n\n');

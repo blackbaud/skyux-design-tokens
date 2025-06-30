@@ -4,7 +4,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
 "@property --modern-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
-  initial-value: url();
+  initial-value: url('data:,');
 }
 
 .sky-theme-modern {
@@ -1036,7 +1036,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
-  initial-value: url();
+  initial-value: url('data:,');
 }
 
 .sky-theme-modern.sky-theme-brand-base {
