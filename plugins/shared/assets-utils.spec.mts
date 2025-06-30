@@ -67,16 +67,15 @@ describe('assets-utils', () => {
     });
 
     it('should return CDN url when package environment variable set', () => {
-      process.env.PACKAGEJSON_VERSION = '0.0.1';
       const basePath = '/';
+      const envStub = vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
       const value = '~/assets/fonts/roboto-regular.ttf';
       const expected =
         "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/fonts/roboto-regular.ttf')";
       const result = fixAssetsUrlValue(basePath, value);
 
       expect(result).toBe(expected);
-
-      delete process.env.PACKAGEJSON_VERSION;
+      envStub.unstubAllEnvs();
     });
   });
 
