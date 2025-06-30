@@ -1,12 +1,4 @@
-import {
-  describe,
-  it,
-  expect,
-  beforeEach,
-  afterEach,
-  vi,
-  VitestUtils,
-} from 'vitest';
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { existsSync } from 'fs';
 import { readFile } from 'fs/promises';
 import { fixAssetsUrlValue, generateAssetsCss } from './assets-utils.mts';
@@ -35,6 +27,7 @@ const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
 describe('assets-utils', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.stubEnv('PACKAGEJSON_VERSION', undefined);
   });
 
   afterEach(() => {
@@ -74,25 +67,15 @@ describe('assets-utils', () => {
       expect(result).toBe(expected);
     });
 
-    describe('when package environment variable is set', () => {
-      let envStub: VitestUtils;
-      beforeEach(() => {
-        envStub = vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
-      });
+    it('should return CDN url when package environment variable set', () => {
+      const basePath = '/';
+      const stub = vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
+      const value = '~/assets/fonts/roboto-regular.ttf';
+      const expected =
+        "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/fonts/roboto-regular.ttf')";
+      const result = fixAssetsUrlValue(basePath, value);
 
-      afterEach(() => {
-        envStub.unstubAllEnvs();
-      });
-
-      it('should return CDN url', () => {
-        const basePath = '/';
-        const value = '~/assets/fonts/roboto-regular.ttf';
-        const expected =
-          "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/fonts/roboto-regular.ttf')";
-        const result = fixAssetsUrlValue(basePath, value);
-
-        expect(result).toBe(expected);
-      });
+      expect(result).toBe(expected);
     });
   });
 
