@@ -167,7 +167,7 @@
               },
               "right": {
                 "$type": "other",
-                "$value": "{bb.size.fluid.150}"
+                "$value": "{bb.size.0}"
               },
               "bottom": {
                 "$type": "other",
@@ -175,7 +175,7 @@
               },
               "left": {
                 "$type": "other",
-                "$value": "{bb.size.fluid.150}"
+                "$value": "{bb.size.0}"
               }
             }
           }
@@ -189,7 +189,7 @@
               },
               "right": {
                 "$type": "other",
-                "$value": "{bb.size.fluid.150}"
+                "$value": "{bb.size.0}"
               },
               "bottom": {
                 "$type": "other",
@@ -197,7 +197,7 @@
               },
               "left": {
                 "$type": "other",
-                "$value": "{bb.size.fluid.150}"
+                "$value": "{bb.size.0}"
               }
             }
           }
