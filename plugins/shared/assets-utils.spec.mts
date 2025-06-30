@@ -12,6 +12,14 @@ vi.mock('fs/promises', () => ({
   readFile: vi.fn(),
 }));
 
+// Mock the package.json import
+vi.mock('../../package.json', () => ({
+  default: {
+    name: '@blackbaud/test-package',
+    version: '0.0.1',
+  },
+}));
+
 // Mock console methods to avoid noise in test output
 const consoleWarnSpy = vi.spyOn(console, 'warn').mockImplementation(() => {});
 const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
@@ -19,6 +27,7 @@ const consoleErrorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
 describe('assets-utils', () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.stubEnv('PACKAGEJSON_VERSION', undefined);
   });
 
   afterEach(() => {
@@ -55,6 +64,17 @@ describe('assets-utils', () => {
       const value = '/some/other/path/font.ttf';
       const expected = "url('/some/other/path/font.ttf')";
       const result = fixAssetsUrlValue(basePath, value);
+      expect(result).toBe(expected);
+    });
+
+    it('should return CDN url when package environment variable set', () => {
+      const basePath = '/';
+      const stub = vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
+      const value = '~/assets/fonts/roboto-regular.ttf';
+      const expected =
+        "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/assets/fonts/roboto-regular.ttf')";
+      const result = fixAssetsUrlValue(basePath, value);
+
       expect(result).toBe(expected);
     });
   });
