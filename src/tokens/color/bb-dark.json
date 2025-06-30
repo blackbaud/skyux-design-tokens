@@ -74,7 +74,7 @@
       "input": {
         "action": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.sky.600}"
         }
       }
     },
