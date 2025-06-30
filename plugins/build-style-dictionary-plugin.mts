@@ -1,7 +1,11 @@
 import { sync } from 'glob';
 import { Plugin } from 'vite';
 import path from 'path';
-import StyleDictionary, { Config, PlatformConfig } from 'style-dictionary';
+import StyleDictionary, {
+  Config,
+  PlatformConfig,
+  Token,
+} from 'style-dictionary';
 import { formattedVariables, sortByName } from 'style-dictionary/utils';
 import { getTransforms, register } from '@tokens-studio/sd-transforms';
 import { tokenConfig } from '../src/tokens/token-config.mts';
@@ -9,6 +13,10 @@ import { TokenConfig } from '../src/types/token-config.ts';
 import { TokenSet } from '../src/types/token-set.ts';
 import { Breakpoint } from '../src/types/breakpoint.ts';
 import { ReferenceTokenSet } from '../src/types/reference-token-set.ts';
+import {
+  generateAssetsCss,
+  fixAssetsUrlValue,
+} from './shared/assets-utils.mts';
 
 interface SkyStyleDictionaryConfig extends Config {
   platforms: {
@@ -20,6 +28,12 @@ interface GeneratedFile {
   output: unknown;
   destination: string | undefined;
   breakpoint?: Breakpoint;
+}
+
+interface SkyTokenOptions {
+  assetsBasePath: string;
+  generateUrlAtProperties?: boolean;
+  selectorPrefix: string;
 }
 
 const DEFAULT_SD_CONFIG: SkyStyleDictionaryConfig = {
@@ -35,6 +49,12 @@ const DEFAULT_SD_CONFIG: SkyStyleDictionaryConfig = {
     },
   },
 };
+
+function isUrlToken(token: Token): boolean {
+  return (
+    token.$extensions?.['com.blackbaud.developer.sky-token-format'] === 'url'
+  );
+}
 
 function getMediaQueryMinWidth(breakpoint: Breakpoint): string {
   switch (breakpoint) {
@@ -71,6 +91,7 @@ function getContainerBreakpointClassList(breakpoint: Breakpoint): string[] {
 
 async function generateDictionaryFiles(
   tokenConfig: TokenConfig,
+  skyOptions: SkyTokenOptions,
 ): Promise<GeneratedFile[]> {
   const sd = new StyleDictionary(undefined);
 
@@ -79,7 +100,10 @@ async function generateDictionaryFiles(
   await Promise.all(
     tokenConfig.tokenSets.map(async (tokenSet) => {
       const tokenDictionary = await sd.extend(
-        getBaseDictionaryConfig(tokenSet),
+        getBaseDictionaryConfig(tokenSet, {
+          ...skyOptions,
+          generateUrlAtProperties: true,
+        }),
       );
       const files: {
         output: unknown;
@@ -91,7 +115,11 @@ async function generateDictionaryFiles(
       await Promise.all(
         tokenSet.referenceTokens.map(async (referenceTokenSet) => {
           const referenceTokenDictionary = await sd.extend(
-            getReferenceDictionaryConfig(tokenSet, referenceTokenSet),
+            getReferenceDictionaryConfig(
+              tokenSet,
+              referenceTokenSet,
+              skyOptions,
+            ),
           );
           const files: {
             output: unknown;
@@ -154,7 +182,10 @@ async function generateDictionaryFiles(
   return allFiles;
 }
 
-function getBaseDictionaryConfig(tokenSet: TokenSet): SkyStyleDictionaryConfig {
+function getBaseDictionaryConfig(
+  tokenSet: TokenSet,
+  skyOptions: SkyTokenOptions,
+): SkyStyleDictionaryConfig {
   const config = {
     ...DEFAULT_SD_CONFIG,
   };
@@ -162,8 +193,14 @@ function getBaseDictionaryConfig(tokenSet: TokenSet): SkyStyleDictionaryConfig {
   const rootPath = tokenConfig.rootPath || 'src/tokens/';
 
   config.source = [`${rootPath}${tokenSet.path}`];
-  config.platforms.css.options ??= {};
-  config.platforms.css.options.selector = tokenSet.selector;
+
+  const cssOptions = (config.platforms.css.options ??= {});
+
+  Object.assign(cssOptions, {
+    skyOptions,
+    selector: tokenSet.selector,
+  });
+
   config.platforms.css.files = [
     {
       destination: `${tokenSet.name}/${tokenSet.name}.css`,
@@ -178,6 +215,7 @@ function getBaseDictionaryConfig(tokenSet: TokenSet): SkyStyleDictionaryConfig {
 function getReferenceDictionaryConfig(
   tokenSet: TokenSet,
   referenceTokenSet: ReferenceTokenSet,
+  skyOptions: SkyTokenOptions,
 ): SkyStyleDictionaryConfig {
   const config = {
     ...DEFAULT_SD_CONFIG,
@@ -186,8 +224,14 @@ function getReferenceDictionaryConfig(
   const rootPath = tokenConfig.rootPath || 'src/tokens/';
   config.source = [`${rootPath}${tokenSet.path}`];
   config.include = [`${rootPath}${referenceTokenSet.path}`];
-  config.platforms.css.options ??= {};
-  config.platforms.css.options.selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
+
+  const cssOptions = (config.platforms.css.options ??= {});
+
+  Object.assign(cssOptions, {
+    skyOptions,
+    selector: `${tokenSet.selector}${referenceTokenSet.selector || ''}`,
+  });
+
   config.platforms.css.files = [
     {
       destination: `${tokenSet.name}/${referenceTokenSet.name}.css`,
@@ -198,6 +242,20 @@ function getReferenceDictionaryConfig(
 
   return config;
 }
+
+async function addAssetsCss(
+  basePath: string,
+  fileContents: string,
+): Promise<string> {
+  const assetsCss = await generateAssetsCss(basePath);
+
+  if (assetsCss) {
+    fileContents = `${assetsCss}\n\n${fileContents}`;
+  }
+
+  return fileContents;
+}
+
 export function buildStyleDictionaryPlugin(): Plugin {
   register(StyleDictionary);
 
@@ -216,9 +274,18 @@ export function buildStyleDictionaryPlugin(): Plugin {
     filter: (token) =>
       (token.$type === 'dimension' || token.$type === 'fontSize') &&
       token.$value === '0',
-    transform: function () {
-      return '0rem';
-    },
+    transform: () => '0rem',
+  });
+
+  StyleDictionary.registerTransform({
+    name: 'assets-path',
+    type: 'value',
+    filter: isUrlToken,
+    transform: (token, _, options) =>
+      fixAssetsUrlValue(
+        options.platforms?.css?.options?.skyOptions?.assetsBasePath,
+        token.$value,
+      ),
   });
 
   // Register custom tokens-studio transform group without the resolveMath transform to allow browsers to do the `calc`.
@@ -232,13 +299,32 @@ export function buildStyleDictionaryPlugin(): Plugin {
       ...StyleDictionary.hooks.transformGroups['css'],
       'name/prefixed-kebab',
       'size/zero-rem',
+      'assets-path',
     ],
   });
 
   StyleDictionary.registerFormat({
     name: 'css/alphabetize-variables',
     format: function ({ dictionary, options }) {
-      const { outputReferences, outputReferenceFallbacks } = options;
+      const { outputReferences, outputReferenceFallbacks, skyOptions } =
+        options;
+
+      let properties = '';
+
+      if (skyOptions.generateUrlAtProperties) {
+        properties = dictionary.allTokens
+          .filter(isUrlToken)
+          .sort(sortByName)
+          .map(
+            (token) => `@property --${token.name} {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('');
+}`,
+          )
+          .join('\n\n');
+      }
+
       dictionary.allTokens = dictionary.allTokens.sort(sortByName);
 
       const variables = formattedVariables({
@@ -249,7 +335,10 @@ export function buildStyleDictionaryPlugin(): Plugin {
         usesDtcg: true,
       });
 
-      return `${options.selector} {\n` + variables + '\n}\n';
+      return `${properties ? properties + '\n\n' : ''}${skyOptions?.selectorPrefix ?? ''}${options.selector} {
+${variables}
+}
+`;
     },
   });
 
@@ -263,19 +352,29 @@ export function buildStyleDictionaryPlugin(): Plugin {
       }
 
       if (id.includes('src/dev/tokens.css')) {
+        const assetsBasePath = '/assets/';
         const sd = new StyleDictionary(undefined);
-        const allFiles = await generateDictionaryFiles(tokenConfig);
-        let localTokens = '';
 
-        for (let file of allFiles) {
-          localTokens = localTokens.concat(`.local-dev-tokens${file.output}`);
-        }
+        const allFiles = await generateDictionaryFiles(tokenConfig, {
+          assetsBasePath,
+          selectorPrefix: '.local-dev-tokens',
+        });
+
+        let localTokens = allFiles.reduce((acc, file) => acc + file.output, '');
+
+        localTokens = await addAssetsCss(assetsBasePath, localTokens);
 
         return localTokens;
       }
     },
     async generateBundle(): Promise<void> {
-      const allFiles = await generateDictionaryFiles(tokenConfig);
+      const assetsBasePath = '../';
+
+      const allFiles = await generateDictionaryFiles(tokenConfig, {
+        assetsBasePath,
+        selectorPrefix: '',
+      });
+
       const compositeFiles = {};
 
       for (let file of allFiles) {
@@ -292,7 +391,11 @@ export function buildStyleDictionaryPlugin(): Plugin {
       }
 
       for (let fileName of Object.keys(compositeFiles)) {
-        const fileContents = compositeFiles[fileName];
+        const fileContents = await addAssetsCss(
+          assetsBasePath,
+          compositeFiles[fileName],
+        );
+
         this.emitFile({
           type: 'asset',
           fileName: fileName.replace('dist/', ''),
