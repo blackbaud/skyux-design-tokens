@@ -72,7 +72,7 @@ describe('assets-utils', () => {
       const stub = vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
       const value = '~/assets/fonts/roboto-regular.ttf';
       const expected =
-        "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/fonts/roboto-regular.ttf')";
+        "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/assets/fonts/roboto-regular.ttf')";
       const result = fixAssetsUrlValue(basePath, value);
 
       expect(result).toBe(expected);

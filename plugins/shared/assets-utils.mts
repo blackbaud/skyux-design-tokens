@@ -20,7 +20,19 @@ export function fixAssetsUrlValue(
 ): string {
   const effectiveBasePath = getBasePath(basePath);
 
-  return `url('${effectiveBasePath === undefined ? value : value.replace(/~\/assets\//g, effectiveBasePath).replaceAll("'", "\'")}')`;
+  if (effectiveBasePath !== undefined) {
+    if (effectiveBasePath === basePath) {
+      // Local path - replace ~/assets/ with the base path
+      value = value
+        .replace(/~\/assets\//g, effectiveBasePath)
+        .replaceAll("'", "\'");
+    } else {
+      // CDN path - replace ~/ with the CDN base path
+      value = value.replace(/~\//g, effectiveBasePath).replaceAll("'", "\'");
+    }
+  }
+
+  return `url('${value}')`;
 }
 
 export async function generateAssetsCss(basePath: string): Promise<string> {
