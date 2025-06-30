@@ -70,12 +70,18 @@
       "selected": {
         "$type": "color",
         "$value": "{bb.color.blue.600}"
+      },
+      "input": {
+        "action": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        }
       }
     },
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.blue.25}"
+        "$value": "{bb.color.slate.100}"
       },
       "scrim": {
         "$type": "color",
@@ -189,7 +195,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.transparent}"
+            "$value": "{bb.color.white}"
           },
           "hover": {
             "$type": "color",
