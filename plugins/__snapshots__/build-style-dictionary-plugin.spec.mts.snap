@@ -801,6 +801,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-gap-stacked_supplemental-m: var(--modern-size-10);
   --sky-space-gap-stacked_supplemental-s: var(--modern-size-5);
   --sky-space-gap-stacked_supplemental-xl: var(--modern-size-20);
+  --sky-space-gap-stacked_supplemental-xs: var(--modern-size-5);
   --sky-space-gap-text_action-l: var(--modern-space-lg);
   --sky-space-gap-text_action-m: var(--modern-space-md);
   --sky-space-gap-text_action-s: var(--modern-space-s);
@@ -2085,6 +2086,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-gap-stacked_supplemental-m: var(--bb-size-fluid-50);
   --sky-space-gap-stacked_supplemental-s: var(--bb-size-fluid-25);
   --sky-space-gap-stacked_supplemental-xl: var(--bb-size-fluid-100);
+  --sky-space-gap-stacked_supplemental-xs: var(--bb-size-fluid-12);
   --sky-space-gap-text_action-l: var(--bb-size-fluid-100);
   --sky-space-gap-text_action-m: var(--bb-size-fluid-75);
   --sky-space-gap-text_action-s: var(--bb-size-fluid-50);
