@@ -559,6 +559,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-popover-header-space-inset-left: var(--modern-space-lg);
   --sky-comp-popover-header-space-inset-right: var(--modern-space-lg);
   --sky-comp-popover-header-space-inset-top: var(--modern-space-lg);
+  --sky-comp-repeater_item-checkbox-space-offset-bottom: var(--modern-size-0);
+  --sky-comp-repeater_item-checkbox-space-offset-left: var(--modern-size-0);
+  --sky-comp-repeater_item-checkbox-space-offset-right: var(--modern-size-0);
+  --sky-comp-repeater_item-checkbox-space-offset-top: var(--modern-size-0);
   --sky-comp-repeater_item-space-inset-bottom: var(--modern-space-md);
   --sky-comp-repeater_item-space-inset-left: var(--modern-space-s);
   --sky-comp-repeater_item-space-inset-right: var(--modern-space-s);
@@ -1843,6 +1847,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-popover-header-space-inset-left: var(--bb-size-fluid-100);
   --sky-comp-popover-header-space-inset-right: var(--bb-size-fluid-100);
   --sky-comp-popover-header-space-inset-top: var(--bb-size-fluid-100);
+  --sky-comp-repeater_item-checkbox-space-offset-bottom: var(--bb-size-fluid-25);
+  --sky-comp-repeater_item-checkbox-space-offset-left: var(--bb-size-0);
+  --sky-comp-repeater_item-checkbox-space-offset-right: var(--bb-size-0);
+  --sky-comp-repeater_item-checkbox-space-offset-top: var(--bb-size-fluid-25);
   --sky-comp-repeater_item-space-inset-bottom: var(--bb-size-fluid-75);
   --sky-comp-repeater_item-space-inset-left: var(--bb-size-fluid-50);
   --sky-comp-repeater_item-space-inset-right: var(--bb-size-fluid-50);
