@@ -1558,12 +1558,12 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
   --sky-color-text-action: var(--bb-color-blue-600);
+  --sky-color-text-action_contrast: var(--bb-color-blue-700);
   --sky-color-text-danger: var(--bb-color-red-600);
   --sky-color-text-deemphasized: var(--bb-color-gray-600);
   --sky-color-text-default: var(--bb-color-gray-900);
   --sky-color-text-heading: var(--bb-color-blue-900);
   --sky-color-text-inverse: var(--bb-color-white);
-  --sky-color-text-link_highlighted: var(--bb-color-blue-700);
   --sky-color-text-selected: var(--bb-color-blue-600);
   --sky-elevation-action-danger-active: var(--bb-shadow-blue-0);
   --sky-elevation-action-danger-disabled: var(--bb-shadow-blue-0);
