@@ -3059,6 +3059,144 @@
           }
         }
       }
+    },
+    "card": {
+      "large": {
+        "header": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              }
+            }
+          }
+        },
+        "content": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              }
+            }
+          }
+        },
+        "actions": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.150}"
+              }
+            }
+          }
+        }
+      },
+      "small": {
+        "header": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              }
+            }
+          }
+        },
+        "content": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              }
+            }
+          }
+        },
+        "actions": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.100}"
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
