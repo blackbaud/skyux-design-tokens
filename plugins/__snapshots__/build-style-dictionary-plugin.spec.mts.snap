@@ -274,12 +274,12 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-success: var(--modern-color-green-50);
   --sky-color-icon-warning: var(--modern-color-yellow-50);
   --sky-color-text-action: var(--modern-color-blue-74);
+  --sky-color-text-action_contrast: var(--modern-color-blue-80);
   --sky-color-text-danger: var(--modern-color-red-70);
   --sky-color-text-deemphasized: var(--modern-color-gray-70);
   --sky-color-text-default: var(--modern-color-gray-105);
   --sky-color-text-heading: var(--modern-color-gray-105);
   --sky-color-text-inverse: var(--modern-color-white);
-  --sky-color-text-link_highlight: var(--modern-color-blue-80);
   --sky-color-text-selected: var(--modern-color-blue-74);
   --sky-elevation-action-danger-active: var(--modern-shadow-size-0);
   --sky-elevation-action-danger-base: var(--modern-shadow-size-0);
@@ -873,6 +873,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-gap-stacked_supplemental-m: var(--modern-size-10);
   --sky-space-gap-stacked_supplemental-s: var(--modern-size-5);
   --sky-space-gap-stacked_supplemental-xl: var(--modern-size-20);
+  --sky-space-gap-stacked_supplemental-xs: var(--modern-size-5);
   --sky-space-gap-text_action-l: var(--modern-space-lg);
   --sky-space-gap-text_action-m: var(--modern-space-md);
   --sky-space-gap-text_action-s: var(--modern-space-s);
@@ -1325,12 +1326,12 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
   --sky-color-text-action: var(--bb-color-sky-600);
+  --sky-color-text-action_contrast: var(--bb-color-blue-300);
   --sky-color-text-danger: var(--bb-color-red-400);
   --sky-color-text-deemphasized: var(--bb-color-gray-300);
   --sky-color-text-default: var(--bb-color-gray-25);
   --sky-color-text-heading: var(--bb-color-gray-50);
   --sky-color-text-inverse: var(--bb-color-gray-1100);
-  --sky-color-text-link_highlighted: var(--bb-color-blue-300);
   --sky-color-text-selected: var(--bb-color-blue-400);
   --sky-elevation-none: var(--bb-shadow-blue-0);
   --sky-opacity-wait: var(--bb-opacity-600);
@@ -1478,12 +1479,12 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
   --sky-color-text-action: var(--bb-color-blue-600);
+  --sky-color-text-action_contrast: var(--bb-color-blue-700);
   --sky-color-text-danger: var(--bb-color-red-600);
   --sky-color-text-deemphasized: var(--bb-color-gray-600);
   --sky-color-text-default: var(--bb-color-gray-900);
   --sky-color-text-heading: var(--bb-color-blue-900);
   --sky-color-text-inverse: var(--bb-color-white);
-  --sky-color-text-link_highlighted: var(--bb-color-blue-700);
   --sky-color-text-selected: var(--bb-color-blue-600);
   --sky-elevation-action-danger-active: var(--bb-shadow-blue-0);
   --sky-elevation-action-danger-disabled: var(--bb-shadow-blue-0);
@@ -2077,6 +2078,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-gap-stacked_supplemental-m: var(--bb-size-fluid-50);
   --sky-space-gap-stacked_supplemental-s: var(--bb-size-fluid-25);
   --sky-space-gap-stacked_supplemental-xl: var(--bb-size-fluid-100);
+  --sky-space-gap-stacked_supplemental-xs: var(--bb-size-fluid-12);
   --sky-space-gap-text_action-l: var(--bb-size-fluid-100);
   --sky-space-gap-text_action-m: var(--bb-size-fluid-75);
   --sky-space-gap-text_action-s: var(--bb-size-fluid-50);

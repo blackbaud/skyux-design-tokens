@@ -734,6 +734,10 @@
           "$type": "spacing",
           "$value": "0"
         },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
         "s": {
           "$type": "spacing",
           "$value": "{modern.size.5}"
