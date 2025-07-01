@@ -217,19 +217,19 @@
         "toolbar": {
           "base": {
             "$type": "color",
-            "$value": "{modern.color.white}"
+            "$value": "{modern.color.transparent}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{modern.color.white}"
+            "$value": "{modern.color.transparent}"
           },
           "active": {
             "$type": "color",
-            "$value": "{modern.color.white}"
+            "$value": "{modern.color.transparent}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{modern.color.white}"
+            "$value": "{modern.color.transparent}"
           },
           "disabled": {
             "$type": "color",
