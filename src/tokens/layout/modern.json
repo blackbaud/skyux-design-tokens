@@ -734,6 +734,10 @@
           "$type": "spacing",
           "$value": "0"
         },
+        "xs": {
+          "$type": "spacing",
+          "$value": "{modern.size.5}"
+        },
         "s": {
           "$type": "spacing",
           "$value": "{modern.size.5}"
@@ -2176,6 +2180,28 @@
           "left": {
             "$type": "other",
             "$value": "{modern.space.s}"
+          }
+        }
+      },
+      "checkbox": {
+        "space": {
+          "offset": {
+            "top": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "right": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "bottom": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            },
+            "left": {
+              "$type": "other",
+              "$value": "{modern.size.0}"
+            }
           }
         }
       }
