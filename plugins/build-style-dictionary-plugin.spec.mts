@@ -113,7 +113,7 @@ describe('buildStyleDictionaryPlugin', () => {
     await validate(tokenSets, expectedEmittedFiles);
   });
 
-  it('should include the correct media queries for screen only breakpoints', async () => {
+  it('should include the correct media queries for breakpoints', async () => {
     const tokenSets: TokenSet[] = [
       {
         name: 'responsive-rainbow',
@@ -125,7 +125,6 @@ describe('buildStyleDictionaryPlugin', () => {
             name: 'rainbow-colors-xs',
             responsive: {
               breakpoint: 'xs',
-              includesContainer: false,
             },
             path: 'responsive-rainbow-colors-xs.json',
           },
@@ -133,7 +132,6 @@ describe('buildStyleDictionaryPlugin', () => {
             name: 'rainbow-colors-md',
             responsive: {
               breakpoint: 'm',
-              includesContainer: false,
             },
             path: 'responsive-rainbow-colors-m.json',
           },
@@ -141,7 +139,6 @@ describe('buildStyleDictionaryPlugin', () => {
             name: 'rainbow-colors-sm',
             responsive: {
               breakpoint: 's',
-              includesContainer: false,
             },
             path: 'responsive-rainbow-colors-s.json',
           },
@@ -172,60 +169,6 @@ describe('buildStyleDictionaryPlugin', () => {
   --sky-color-text-default: var(--rainbow-color-gray-1);
 }
 }
-`,
-      },
-    ];
-    await validate(tokenSets, expectedEmittedFiles);
-  });
-
-  it('should include the correct media queries and selectors for container breakpoints', async () => {
-    const tokenSets: TokenSet[] = [
-      {
-        name: 'responsive-rainbow',
-        selector: '.sky-theme-rainbow',
-        outputPath: 'responsive-rainbow.css',
-        path: 'base-rainbow.json',
-        referenceTokens: [
-          {
-            name: 'rainbow-colors-m',
-            responsive: {
-              breakpoint: 'm',
-            },
-            path: 'responsive-rainbow-colors-m.json',
-          },
-          {
-            name: 'rainbow-colors-xs',
-            responsive: {
-              breakpoint: 'xs',
-            },
-            path: 'responsive-rainbow-colors-xs.json',
-          },
-        ],
-      },
-    ];
-    const expectedEmittedFiles: Partial<EmittedFile>[] = [
-      {
-        fileName: 'assets/scss/responsive-rainbow.css',
-        source: `.sky-theme-rainbow {
-  --rainbow-color-gray-1: #e2e3e7;
-  --rainbow-color-gray-2: #c0c2c5;
-  --rainbow-color-red-1: #fc0330;
-  --rainbow-color-red-2: #8a2538;
-  --rainbow-space-s: 10px;
-}
-.sky-theme-rainbow, .sky-theme-rainbow .sky-responsive-container-xs, .sky-theme-rainbow .sky-responsive-container-sm, .sky-theme-rainbow .sky-responsive-container-md, .sky-theme-rainbow .sky-responsive-container-lg {
-  --sky-color-text-default: var(--rainbow-color-red-1);
-}
-
-@media (min-width: 992px) {
-.sky-theme-rainbow {
-  --sky-color-text-default: var(--rainbow-color-gray-1);
-}
-}
-.sky-theme-rainbow .sky-responsive-container-md, .sky-theme-rainbow .sky-responsive-container-lg {
-  --sky-color-text-default: var(--rainbow-color-gray-1);
-}
-
 `,
       },
     ];
