@@ -213,6 +213,28 @@
             "$type": "color",
             "$value": "{modern.color.gray.07}"
           }
+        },
+        "toolbar": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.07}"
+          }
         }
       },
       "container": {
@@ -513,6 +535,28 @@
             "$type": "color",
             "$value": "{modern.color.gray.50}"
           }
+        },
+        "toolbar": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{modern.color.blue.74}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.15}"
+          }
         }
       },
       "input": {
@@ -758,6 +802,28 @@
         }
       },
       "input": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.3}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{modern.shadow.size.0}"
+        }
+      },
+      "toolbar": {
         "base": {
           "$type": "boxShadow",
           "$value": "{modern.shadow.size.0}"
