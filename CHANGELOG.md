@@ -2,6 +2,30 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [1.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.69...1.0.0) (2025-07-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove responsive container breakpoints ([#202](https://github.com/blackbaud/skyux-design-tokens/issues/202))
+* add card component tokens ([#199](https://github.com/blackbaud/skyux-design-tokens/issues/199))
+* update link highlight token name ([#214](https://github.com/blackbaud/skyux-design-tokens/issues/214))
+* add new xs value for space.gap.stacked_supplemental ([#209](https://github.com/blackbaud/skyux-design-tokens/issues/209))
+* increase paging button space tokens ([#208](https://github.com/blackbaud/skyux-design-tokens/issues/208))
+* input action icon color and new slate color for page background ([#207](https://github.com/blackbaud/skyux-design-tokens/issues/207))
+
+### Features
+
+* add action toolbar tokens ([#216](https://github.com/blackbaud/skyux-design-tokens/issues/216)) ([246e16b](https://github.com/blackbaud/skyux-design-tokens/commit/246e16b1c868cdcb3af2e405a29e438e786a61fe))
+* add card component tokens ([#199](https://github.com/blackbaud/skyux-design-tokens/issues/199)) ([46ba63d](https://github.com/blackbaud/skyux-design-tokens/commit/46ba63d0fba797374b1f0079a93010dcace74ac7))
+* add margin to repeater row checkboxes ([#212](https://github.com/blackbaud/skyux-design-tokens/issues/212)) ([f0e5444](https://github.com/blackbaud/skyux-design-tokens/commit/f0e5444b66d134cd500174159b4e57b81e1a769d))
+* add new xs value for space.gap.stacked_supplemental ([#209](https://github.com/blackbaud/skyux-design-tokens/issues/209)) ([de55ade](https://github.com/blackbaud/skyux-design-tokens/commit/de55ade1ff2ca5ce3b26e7ad0900292b6f9295e2))
+* increase paging button space tokens ([#208](https://github.com/blackbaud/skyux-design-tokens/issues/208)) ([c4adf88](https://github.com/blackbaud/skyux-design-tokens/commit/c4adf888611d59306fb836c4bfc564d8304c690c))
+* input action icon color and new slate color for page background ([#207](https://github.com/blackbaud/skyux-design-tokens/issues/207)) ([642ba99](https://github.com/blackbaud/skyux-design-tokens/commit/642ba99438f09256a9ee9ebc6c3242eabd504ec5))
+* remove responsive container breakpoints ([#202](https://github.com/blackbaud/skyux-design-tokens/issues/202)) ([88fa8f4](https://github.com/blackbaud/skyux-design-tokens/commit/88fa8f44e128747f60bba8c99d0fd500689fa1f5))
+* update link highlight token name ([#214](https://github.com/blackbaud/skyux-design-tokens/issues/214)) ([89a8f15](https://github.com/blackbaud/skyux-design-tokens/commit/89a8f15aca9901ee6a888a23cbd18806fcf3caaf))
+* update shadow colors to blue ([#205](https://github.com/blackbaud/skyux-design-tokens/issues/205)) ([1baff53](https://github.com/blackbaud/skyux-design-tokens/commit/1baff537cffd7ad4896efc42eaa53db68eea4f7c))
+
 ## [0.0.69](https://github.com/blackbaud/skyux-design-tokens/compare/0.0.68...0.0.69) (2025-06-30)
 
 
