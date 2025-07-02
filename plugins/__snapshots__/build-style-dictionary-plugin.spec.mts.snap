@@ -674,14 +674,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-sab-summary-inline-space-inset-left: var(--modern-size-30);
   --sky-comp-sab-summary-inline-space-inset-right: var(--modern-size-30);
   --sky-comp-sab-summary-inline-space-inset-top: var(--modern-size-10);
-  --sky-comp-search-space-inset-sm-bottom: var(--modern-space-s);
-  --sky-comp-search-space-inset-sm-left: var(--modern-space-s);
-  --sky-comp-search-space-inset-sm-right: var(--modern-space-s);
-  --sky-comp-search-space-inset-sm-top: var(--modern-space-s);
-  --sky-comp-search-space-inset-xs-bottom: var(--modern-size-10);
-  --sky-comp-search-space-inset-xs-left: var(--modern-size-10);
-  --sky-comp-search-space-inset-xs-right: var(--modern-size-10);
-  --sky-comp-search-space-inset-xs-top: var(--modern-size-10);
+  --sky-comp-search-space-inset-bottom: var(--modern-size-10);
+  --sky-comp-search-space-inset-left: var(--modern-size-10);
+  --sky-comp-search-space-inset-right: var(--modern-size-10);
+  --sky-comp-search-space-inset-top: var(--modern-size-10);
   --sky-comp-search-space-offset-bottom: var(--modern-size-5);
   --sky-comp-search-space-offset-left: var(--modern-size-5);
   --sky-comp-search-space-offset-right: var(--modern-size-5);

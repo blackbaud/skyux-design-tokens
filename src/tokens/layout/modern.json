@@ -2559,41 +2559,21 @@
     "search": {
       "space": {
         "inset": {
-          "xs": {
-            "top": {
-              "$type": "other",
-              "$value": "{modern.size.10}"
-            },
-            "right": {
-              "$type": "other",
-              "$value": "{modern.size.10}"
-            },
-            "bottom": {
-              "$type": "other",
-              "$value": "{modern.size.10}"
-            },
-            "left": {
-              "$type": "other",
-              "$value": "{modern.size.10}"
-            }
+          "top": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
           },
-          "sm": {
-            "top": {
-              "$type": "other",
-              "$value": "{modern.space.s}"
-            },
-            "right": {
-              "$type": "other",
-              "$value": "{modern.space.s}"
-            },
-            "bottom": {
-              "$type": "other",
-              "$value": "{modern.space.s}"
-            },
-            "left": {
-              "$type": "other",
-              "$value": "{modern.space.s}"
-            }
+          "right": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "other",
+            "$value": "{modern.size.10}"
           }
         },
         "offset": {
