@@ -213,6 +213,28 @@
             "$type": "color",
             "$value": "{bb.color.gray.50}"
           }
+        },
+        "toolbar": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue.50}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue.100}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
+          }
         }
       },
       "container": {
@@ -507,6 +529,28 @@
             "$type": "color",
             "$value": "{bb.color.gray.200}"
           }
+        },
+        "toolbar": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.blue.300}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.200}"
+          }
         }
       },
       "container": {
@@ -773,6 +817,28 @@
         "focus": {
           "$type": "boxShadow",
           "$value": "{bb.shadow.blue.25}"
+        },
+        "disabled": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
+        }
+      },
+      "toolbar": {
+        "base": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
+        },
+        "hover": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
+        },
+        "active": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
+        },
+        "focus": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
           "$type": "boxShadow",
