@@ -32,8 +32,4 @@ jobs:
           prerelease: ${{ env.PRERELEASE == 'true' }}
           draft-pull-request: true
           include-v-in-tag: false
-          # BREAKING CHANGE only bumps semver minor if version < 1.0.0
-          bump-minor-pre-major: true
-          # feat commits bump semver patch instead of minor if version < 1.0.0
-          bump-patch-for-minor-pre-major: true
           token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
