@@ -2,6 +2,18 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.0](https://github.com/blackbaud/skyux-design-tokens/compare/1.0.1...2.0.0-alpha.0) (2025-07-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* use transparent color for 0 shadow tokens ([#224](https://github.com/blackbaud/skyux-design-tokens/issues/224))
+
+### Bug Fixes
+
+* change type of component spacing tokens ([#220](https://github.com/blackbaud/skyux-design-tokens/issues/220)) ([2dca9a9](https://github.com/blackbaud/skyux-design-tokens/commit/2dca9a924d0d31376411729b01f8f5c0e641feea))
+* use transparent color for 0 shadow tokens ([#224](https://github.com/blackbaud/skyux-design-tokens/issues/224)) ([b0a10f4](https://github.com/blackbaud/skyux-design-tokens/commit/b0a10f41cbb40bac996454905607bf10ab7cf672))
+
 ## [1.0.1](https://github.com/blackbaud/skyux-design-tokens/compare/1.0.0...1.0.1) (2025-07-02)
 
 
