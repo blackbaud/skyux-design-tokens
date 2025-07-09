@@ -9,7 +9,8 @@ on:
       - master
 
 env:
-  PRERELEASE: 'false'
+  PRERELEASE: 'beta'
+  MAJOR_VERSION: 2
 
 permissions:
   contents: write
@@ -19,6 +20,41 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Next release
+        if: ${{ env.PRERELEASE != 'false' }}
+        id: next-release
+        run: |
+          # Log commands and exit on error.
+          set -exo pipefail
+
+          if [[ "${PRERELEASE}" != "alpha" && "${PRERELEASE}" != "beta" && "${PRERELEASE}" != "rc" ]]; then
+            echo "Invalid PRERELEASE value. Must be 'alpha', 'beta', or 'rc'."
+            exit 1
+          fi
+
+          # Get the current prerelease version.
+          ACC="Accept: application/vnd.github+json"
+          VER="X-GitHub-Api-Version: 2022-11-28"
+          JSON='map(.tag_name) | [.[] | select(startswith("${{ env.MAJOR_VERSION }}.")) ] | .[0] // empty'
+          CURRENT_RELEASE=$(gh api -H "${ACC}" -H "${VER}" /repos/${{ github.repository }}/releases | jq -r "${JSON}")
+
+          # Bump the prerelease version.
+          if [[ -z "$CURRENT_RELEASE" || "$CURRENT_RELEASE" != "${{ env.MAJOR_VERSION }}.0.0-${{ env.PRERELEASE }}."* ]]; then
+            NEXT_VERSION="${{ env.MAJOR_VERSION }}.0.0-${{ env.PRERELEASE }}.0"
+          else
+            NEXT_VERSION=$(npx --yes semver -i prerelease $CURRENT_RELEASE)
+          fi
+
+          # If version is empty, exit.
+          if [ -z "$NEXT_VERSION" ]; then
+            echo "Not able to determine prerelease version."
+            exit 1
+          fi
+
+          echo "Next release version: $NEXT_VERSION"
+          echo "next-release=$NEXT_VERSION" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
@@ -29,7 +65,8 @@ jobs:
           pull-request-title-pattern: 'chore: release ${version}'
           labels: 'autorelease ${{ github.ref_name }}: pending'
           release-labels: 'autorelease ${{ github.ref_name }}: tagged'
-          prerelease: ${{ env.PRERELEASE == 'true' }}
+          release-as: '${{ steps.next-release.outputs.next-release }}'
+          prerelease: ${{ env.PRERELEASE != 'false' }}
           draft-pull-request: true
           include-v-in-tag: false
           token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
