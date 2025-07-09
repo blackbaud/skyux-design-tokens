@@ -9,7 +9,7 @@ on:
       - master
 
 env:
-  PRERELEASE: 'beta'
+  PRERELEASE: 'alpha'
   MAJOR_VERSION: 2
 
 permissions:
