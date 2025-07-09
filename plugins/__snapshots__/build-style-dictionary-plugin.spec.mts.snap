@@ -84,7 +84,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-line_height-20: 20px;
   --modern-line_height-normal: normal;
   --modern-opacity-600: .6;
-  --modern-shadow-size-0: 0 0 0 0 #000000;
+  --modern-shadow-size-0: 0 0 0 0 rgba(0, 0, 0, 0);
   --modern-shadow-thumb: 0 1px 2px 0 rgba(0,0,0,0.5);
   --modern-size-0: 0rem;
   --modern-size-1: 1px;
@@ -1155,7 +1155,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-line_height-700: calc(32/24);
   --bb-line_height-800: calc(36/26);
   --bb-opacity-600: .6;
-  --bb-shadow-blue-0: 0 0 0 0 #000000;
+  --bb-shadow-blue-0: 0 0 0 0 rgba(0, 0, 0, 0);
   --bb-size-0: 0rem;
   --bb-size-fixed-100: 16px;
   --bb-size-fixed-12: 2px;
