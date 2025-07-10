@@ -892,7 +892,7 @@
       "heading": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.semibold}"
+          "$value": "{bb.font.style.regular}"
         },
         "2": {
           "$type": "fontWeights",
