@@ -372,6 +372,28 @@
           "$type": "color",
           "$value": "{bb.color.gray.50}"
         }
+      },
+      "tab": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.50}"
+        }
       }
     },
     "border": {
@@ -641,6 +663,50 @@
         "row": {
           "$type": "color",
           "$value": "{bb.color.blue.200}"
+        }
+      },
+      "tab": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.200}"
+        }
+      },
+      "nav": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "active": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "focus": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.200}"
         }
       }
     },
