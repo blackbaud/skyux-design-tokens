@@ -1308,19 +1308,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           }
         }
@@ -1330,19 +1330,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         }
@@ -1353,19 +1353,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -1375,19 +1375,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             }
           }
@@ -1398,19 +1398,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.100}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.100}"
           }
         }
@@ -1419,19 +1419,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -1441,19 +1441,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             }
           }
@@ -1463,19 +1463,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             }
           }
@@ -1485,19 +1485,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -1508,19 +1508,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           }
         }
@@ -1531,19 +1531,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -1553,19 +1553,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -1577,19 +1577,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -1599,19 +1599,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -1621,19 +1621,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -1643,37 +1643,37 @@
         "offset": {
           "xs": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.50}"
             }
           },
           "sm": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.100}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.100}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fixed.100}"
             }
           }
@@ -1684,37 +1684,37 @@
           "offset": {
             "xs": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.50}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.50}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.50}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.50}"
               }
             },
             "sm": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.75}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.75}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.75}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fixed.75}"
               }
             }
@@ -1727,19 +1727,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -1751,19 +1751,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -1773,19 +1773,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -1795,19 +1795,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -1819,19 +1819,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -1842,19 +1842,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         }
@@ -1865,19 +1865,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -1888,19 +1888,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.6}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.6}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           }
         }
@@ -1910,19 +1910,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           }
         }
@@ -1933,19 +1933,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.37}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             }
           }
@@ -1955,19 +1955,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             }
           }
@@ -1978,19 +1978,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.12}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.12}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         }
@@ -2000,19 +2000,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         }
@@ -2025,37 +2025,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2067,37 +2067,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2109,37 +2109,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2151,37 +2151,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.100}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2195,37 +2195,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2237,37 +2237,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2279,37 +2279,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 }
               }
@@ -2321,37 +2321,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2365,37 +2365,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2407,37 +2407,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2449,37 +2449,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2493,37 +2493,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.150}"
                 }
               }
@@ -2537,19 +2537,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             }
           }
@@ -2559,19 +2559,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             }
           }
@@ -2582,19 +2582,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         }
@@ -2604,19 +2604,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         }
@@ -2625,19 +2625,19 @@
         "space": {
           "offset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             }
           }
@@ -2648,37 +2648,37 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           }
         },
         "offset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           }
         }
@@ -2689,19 +2689,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -2711,19 +2711,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -2735,19 +2735,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             }
           }
@@ -2759,19 +2759,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -2781,19 +2781,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -2802,19 +2802,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.75}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.75}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               }
             }
@@ -2823,19 +2823,19 @@
             "space": {
               "inset": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 }
               }
@@ -2847,37 +2847,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.50}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 }
               }
@@ -2890,19 +2890,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.0}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.0}"
           }
         }
@@ -2912,19 +2912,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           }
         }
@@ -2934,19 +2934,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           }
         }
@@ -2955,19 +2955,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             }
           }
@@ -2978,37 +2978,37 @@
           "inset": {
             "xs": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               }
             },
             "sm": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               }
             }
@@ -3019,37 +3019,37 @@
             "inset": {
               "xs": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 }
               },
               "sm": {
                 "top": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "right": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 },
                 "bottom": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.0}"
                 },
                 "left": {
-                  "$type": "other",
+                  "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 }
               }
@@ -3064,19 +3064,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               }
             }
@@ -3086,19 +3086,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               }
             }
@@ -3109,19 +3109,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.100}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -3133,19 +3133,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -3155,19 +3155,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -3178,19 +3178,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.150}"
           }
         }
@@ -3200,19 +3200,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.75}"
           }
         }
@@ -3223,19 +3223,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.75}"
             }
           }
@@ -3245,19 +3245,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             }
           }
@@ -3269,19 +3269,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.50}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -3290,19 +3290,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               }
             }
@@ -3314,19 +3314,19 @@
       "space": {
         "inset": {
           "top": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.6}"
           },
           "right": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           },
           "bottom": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.6}"
           },
           "left": {
-            "$type": "other",
+            "$type": "spacing",
             "$value": "{bb.size.fluid.25}"
           }
         }
@@ -3335,19 +3335,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.12}"
             }
           }
@@ -3359,19 +3359,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.25}"
             }
           }
@@ -3381,19 +3381,19 @@
         "space": {
           "inset": {
             "top": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "right": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "bottom": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.0}"
             },
             "left": {
-              "$type": "other",
+              "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
           }
@@ -3406,19 +3406,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               }
             }
@@ -3428,19 +3428,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               }
             }
@@ -3450,19 +3450,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.150}"
               }
             }
@@ -3474,19 +3474,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.0}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               }
             }
@@ -3496,19 +3496,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               }
             }
@@ -3518,19 +3518,19 @@
           "space": {
             "inset": {
               "top": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "right": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               },
               "bottom": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.50}"
               },
               "left": {
-                "$type": "other",
+                "$type": "spacing",
                 "$value": "{bb.size.fluid.100}"
               }
             }
