@@ -813,7 +813,7 @@
               "y": "3",
               "blur": "4",
               "spread": "0",
-              "color": "rgba({bb.color.blue.900}0.14)",
+              "color": "rgba({bb.color.blue.900},0.14)",
               "type": "dropShadow"
             }
           ]
