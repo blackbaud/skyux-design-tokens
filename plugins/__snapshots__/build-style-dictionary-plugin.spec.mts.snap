@@ -1208,7 +1208,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
   --bb-shadow-blue-100: 0 1px 3px 0 rgba(17, 43, 85, 0.2), 0 2px 1px -1px rgba(17, 43, 85, 0.12), 0 1px 1px 0 rgba(17, 43, 85, 0.14);
   --bb-shadow-blue-1600: 0 8px 10px -5px rgba(17, 43, 85, 0.2), 0 6px 30px 5px rgba(17, 43, 85, 0.12), 0 16px 24px 2px rgba(17, 43, 85, 0.14);
-  --bb-shadow-blue-200: 0 1px 8px 0 rgba(17, 43, 85, 0.2), 0 3px 3px -2px rgba(17, 43, 85, 0.12), 0 3px 4px 0 rgba(var(--bb-color-blue-900)0.14);
+  --bb-shadow-blue-200: 0 1px 8px 0 rgba(17, 43, 85, 0.2), 0 3px 3px -2px rgba(17, 43, 85, 0.12), 0 3px 4px 0 rgba(17, 43, 85, 0.14);
   --bb-shadow-blue-2400: 0 11px 15px -7px rgba(17, 43, 85, 0.2), 0 9px 46px 8px rgba(17, 43, 85, 0.12), 0 24px 38px 3px rgba(17, 43, 85, 0.14);
   --bb-shadow-blue-25: 0 1px 1px 0 rgba(17, 43, 85, 0.05);
   --bb-shadow-blue-400: 0 2px 4px -1px rgba(17, 43, 85, 0.2), 0 1px 10px 0 rgba(17, 43, 85, 0.12), 0 4px 5px 0 rgba(17, 43, 85, 0.14);
