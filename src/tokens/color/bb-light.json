@@ -297,10 +297,10 @@
           "$value": "{bb.color.gray.50}"
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.white}"
         },
         "hover": {
           "$type": "color",
