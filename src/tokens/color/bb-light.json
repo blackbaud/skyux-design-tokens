@@ -27,7 +27,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.blue.900}"
+        "$value": "{bb.color.gray.1100}"
       },
       "action_contrast": {
         "$type": "color",
@@ -81,7 +81,7 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.slate.100}"
+        "$value": "{bb.color.gray.50}"
       },
       "scrim": {
         "$type": "color",
@@ -290,7 +290,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.25}"
+          "$value": "{bb.color.gray.25}"
         },
         "disabled": {
           "$type": "color",
@@ -300,7 +300,7 @@
       "list": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.white}"
         },
         "hover": {
           "$type": "color",
