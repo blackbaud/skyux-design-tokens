@@ -297,7 +297,7 @@
           "$value": "{bb.color.gray.50}"
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
           "$value": "{bb.color.white}"
