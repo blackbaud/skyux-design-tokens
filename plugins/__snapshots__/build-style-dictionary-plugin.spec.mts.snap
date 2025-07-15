@@ -172,6 +172,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-blocking: var(--modern-color-blocking);
   --sky-color-background-container-base: var(--modern-color-white);
   --sky-color-background-container-danger: var(--modern-color-red-30);
+  --sky-color-background-container-dimmed: var(--modern-color-transparent);
   --sky-color-background-container-info: var(--modern-color-blue-10);
   --sky-color-background-container-menu: var(--modern-color-white);
   --sky-color-background-container-success: var(--modern-color-green-30);
@@ -1284,6 +1285,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-blocking: var(--bb-color-blocking);
   --sky-color-background-container-base: var(--bb-color-gray-1000);
   --sky-color-background-container-danger: var(--bb-color-red-800);
+  --sky-color-background-container-dimmed: var(--bb-color-gray-1000);
   --sky-color-background-container-info: var(--bb-color-blue-800);
   --sky-color-background-container-menu: var(--bb-color-gray-900);
   --sky-color-background-container-success: var(--bb-color-green-900);
@@ -1456,6 +1458,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-blocking: var(--bb-color-blocking);
   --sky-color-background-container-base: var(--bb-color-white);
   --sky-color-background-container-danger: var(--bb-color-red-300);
+  --sky-color-background-container-dimmed: var(--bb-color-blue-25);
   --sky-color-background-container-info: var(--bb-color-blue-200);
   --sky-color-background-container-menu: var(--bb-color-white);
   --sky-color-background-container-success: var(--bb-color-green-300);
