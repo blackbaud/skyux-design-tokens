@@ -261,6 +261,10 @@
         "info": {
           "$type": "color",
           "$value": "{modern.color.blue.10}"
+        },
+        "dimmed": {
+          "$type": "color",
+          "$value": "{modern.color.transparent}"
         }
       },
       "icon_matte": {
