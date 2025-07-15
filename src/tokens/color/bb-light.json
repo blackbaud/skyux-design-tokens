@@ -533,7 +533,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.200}"
+            "$value": "{bb.color.blue.250}"
           },
           "hover": {
             "$type": "color",
@@ -584,7 +584,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         },
         "hover": {
           "$type": "color",
@@ -658,11 +658,11 @@
       "separator": {
         "light": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         }
       },
       "tab": {
