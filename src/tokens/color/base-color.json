@@ -786,11 +786,11 @@
       "primary": {
         "base": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "hover": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "active": {
           "$type": "boxShadow",
@@ -798,7 +798,7 @@
         },
         "focus": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
           "$type": "boxShadow",
@@ -808,11 +808,11 @@
       "secondary": {
         "base": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "hover": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "active": {
           "$type": "boxShadow",
@@ -820,7 +820,7 @@
         },
         "focus": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
           "$type": "boxShadow",
@@ -834,7 +834,7 @@
         },
         "hover": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "active": {
           "$type": "boxShadow",
@@ -852,11 +852,11 @@
       "danger": {
         "base": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "hover": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "active": {
           "$type": "boxShadow",
@@ -864,7 +864,7 @@
         },
         "focus": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
           "$type": "boxShadow",
@@ -874,19 +874,19 @@
       "input": {
         "base": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.25}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "hover": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.25}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "active": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.25}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "focus": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.25}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
           "$type": "boxShadow",
@@ -900,7 +900,7 @@
         },
         "hover": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.blue.50}"
+          "$value": "{bb.shadow.blue.0}"
         },
         "active": {
           "$type": "boxShadow",
@@ -919,7 +919,7 @@
     "input": {
       "base": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.blue.25}"
+        "$value": "{bb.shadow.blue.0}"
       },
       "disabled": {
         "$type": "boxShadow",
