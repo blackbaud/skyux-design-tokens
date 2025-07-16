@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.2](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.1...2.0.0-alpha.2) (2025-07-16)
+
+
+### Features
+
+* add brand name ([#234](https://github.com/blackbaud/skyux-design-tokens/issues/234)) ([85a03c6](https://github.com/blackbaud/skyux-design-tokens/commit/85a03c6c17639f26a9f339972e1a1a3b1569684a))
+* add split view drawer spacing ([#219](https://github.com/blackbaud/skyux-design-tokens/issues/219)) ([1d47046](https://github.com/blackbaud/skyux-design-tokens/commit/1d47046766fd9d1f9a93d021c942f3b462e58fc4))
+
 ## [2.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.0...2.0.0-alpha.1) (2025-07-10)
 
 
