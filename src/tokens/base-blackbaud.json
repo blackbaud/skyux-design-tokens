@@ -1093,6 +1093,12 @@
         "$type": "opacity",
         "$value": ".6"
       }
+    },
+    "brand": {
+      "name": {
+        "$type": "other",
+        "$value": "Blackbaud"
+      }
     }
   }
 }

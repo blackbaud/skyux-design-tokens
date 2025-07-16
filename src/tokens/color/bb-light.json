@@ -938,5 +938,11 @@
         }
       }
     }
+  },
+  "brand": {
+    "name": {
+      "$type": "other",
+      "$value": "{bb.brand.name}"
+    }
   }
 }
