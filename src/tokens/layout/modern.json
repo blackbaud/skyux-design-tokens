@@ -1860,7 +1860,7 @@
         }
       }
     },
-    "page": {
+    "layout": {
       "header": {
         "blocks": {
           "space": {
