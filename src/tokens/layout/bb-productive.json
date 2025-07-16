@@ -2752,6 +2752,48 @@
             }
           }
         }
+      },
+      "drawer": {
+        "space": {
+          "inset": {
+            "xs": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.50}"
+              }
+            },
+            "sm": {
+              "top": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.75}"
+              },
+              "right": {
+                "$type": "other",
+                "$value": "{bb.size.0}"
+              },
+              "bottom": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.75}"
+              },
+              "left": {
+                "$type": "other",
+                "$value": "{bb.size.fluid.75}"
+              }
+            }
+          }
+        }
       }
     },
     "tab": {
