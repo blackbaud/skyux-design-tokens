@@ -14,6 +14,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-border-radius-round: 50%;
   --modern-border-style-dotted: dotted;
   --modern-border-style-solid: solid;
+  --modern-brand-name: Blackbaud;
   --modern-color-black: #000000;
   --modern-color-blocking: rgba(255, 255, 255, 0.7);
   --modern-color-blue-05: #ebfbff;
@@ -139,6 +140,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-shadow-size-8: 0 2px 15px 2px var(--modern-color-shadow_color);
 }
 .sky-theme-modern {
+  --sky-brand-name: var(--modern-brand-name);
   --sky-color-background-action-danger-active: var(--modern-color-red-70);
   --sky-color-background-action-danger-base: var(--modern-color-red-70);
   --sky-color-background-action-danger-disabled: var(--modern-color-gray-07);
@@ -1032,6 +1034,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-border-radius-round: 50%;
   --bb-border-style-dotted: dotted;
   --bb-border-style-solid: solid;
+  --bb-brand-name: Blackbaud;
   --bb-color-black: #000000;
   --bb-color-blocking: rgba(255, 255, 255, 0.7);
   --bb-color-blue-100: #eef3fc;
@@ -1431,6 +1434,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-elevation-raised-100: var(--bb-shadow-blue-100);
 }
 .sky-theme-modern.sky-theme-brand-base {
+  --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-danger-active: var(--bb-color-red-800);
   --sky-color-background-action-danger-base: var(--bb-color-red-600);
   --sky-color-background-action-danger-disabled: var(--bb-color-gray-50);
