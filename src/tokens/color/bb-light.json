@@ -81,7 +81,7 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.gray.50}"
+        "$value": "{bb.color.slate.100}"
       },
       "scrim": {
         "$type": "color",
