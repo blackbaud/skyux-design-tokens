@@ -2161,7 +2161,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-display-3: var(--bb-font-style-regular);
   --sky-font-style-display-4: var(--bb-font-style-regular);
   --sky-font-style-emphasized: var(--bb-font-style-semibold);
-  --sky-font-style-heading-1: var(--bb-font-style-semibold);
+  --sky-font-style-heading-1: var(--bb-font-style-regular);
   --sky-font-style-heading-2: var(--bb-font-style-semibold);
   --sky-font-style-heading-3: var(--bb-font-style-semibold);
   --sky-font-style-heading-4: var(--bb-font-style-semibold);
