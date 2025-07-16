@@ -370,7 +370,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
+          "$value": "{bb.color.gray.600}"
         }
       },
       "tab": {
