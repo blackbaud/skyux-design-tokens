@@ -327,7 +327,11 @@
         },
         "200": {
           "$type": "color",
-          "$value": "#D0E1F7"
+          "$value": "#D5E1F7"
+        },
+        "250": {
+          "$type": "color",
+          "$value": "#bfd3f2"
         },
         "300": {
           "$type": "color",

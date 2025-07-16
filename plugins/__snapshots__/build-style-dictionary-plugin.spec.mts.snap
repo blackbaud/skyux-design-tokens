@@ -1039,8 +1039,9 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-blocking: rgba(255, 255, 255, 0.7);
   --bb-color-blue-100: #eef3fc;
   --bb-color-blue-1000: #09152b;
-  --bb-color-blue-200: #d0e1f7;
+  --bb-color-blue-200: #d5e1f7;
   --bb-color-blue-25: #fbfcfe;
+  --bb-color-blue-250: #bfd3f2;
   --bb-color-blue-300: #aac4ee;
   --bb-color-blue-400: #80a6e6;
   --bb-color-blue-50: #f4f8fd;
@@ -1512,7 +1513,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-action-danger-focus: var(--bb-color-red-1000);
   --sky-color-border-action-danger-hover: var(--bb-color-red-1000);
   --sky-color-border-action-input-active: var(--bb-color-blue-600);
-  --sky-color-border-action-input-base: var(--bb-color-blue-200);
+  --sky-color-border-action-input-base: var(--bb-color-blue-250);
   --sky-color-border-action-input-disabled: var(--bb-color-gray-200);
   --sky-color-border-action-input-focus: var(--bb-color-blue-600);
   --sky-color-border-action-input-hover: var(--bb-color-blue-600);
@@ -1543,7 +1544,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-elevation: var(--bb-color-blue-200);
   --sky-color-border-info: var(--bb-color-blue-600);
   --sky-color-border-input-active: var(--bb-color-blue-600);
-  --sky-color-border-input-base: var(--bb-color-blue-200);
+  --sky-color-border-input-base: var(--bb-color-blue-250);
   --sky-color-border-input-disabled: var(--bb-color-gray-200);
   --sky-color-border-input-error: var(--bb-color-red-600);
   --sky-color-border-input-focus: var(--bb-color-blue-600);
@@ -1556,8 +1557,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-border-progress_step: var(--bb-color-gray-400);
   --sky-color-border-selected: var(--bb-color-blue-600);
   --sky-color-border-selected_soft: var(--bb-color-blue-300);
-  --sky-color-border-separator-light: var(--bb-color-blue-200);
-  --sky-color-border-separator-row: var(--bb-color-blue-200);
+  --sky-color-border-separator-light: var(--bb-color-blue-250);
+  --sky-color-border-separator-row: var(--bb-color-blue-250);
   --sky-color-border-success: var(--bb-color-green-700);
   --sky-color-border-switch-active: var(--bb-color-blue-600);
   --sky-color-border-switch-base: var(--bb-color-blue-500);
