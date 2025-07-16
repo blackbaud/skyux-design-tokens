@@ -2,6 +2,18 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.0...2.0.0-alpha.1) (2025-07-10)
+
+
+### Features
+
+* add border colors for nav and tabs, and background colors for tabs ([#221](https://github.com/blackbaud/skyux-design-tokens/issues/221)) ([1ea9c67](https://github.com/blackbaud/skyux-design-tokens/commit/1ea9c676585dd88c057e41b3e5723db5c16d0d4c))
+
+
+### Bug Fixes
+
+* blue 200 shadow in bb base tokens is formatted correctly ([#226](https://github.com/blackbaud/skyux-design-tokens/issues/226)) ([56c4fbc](https://github.com/blackbaud/skyux-design-tokens/commit/56c4fbc0c0dfc9d8239c0e3a94c3b27e8e4e0bb5))
+
 ## [2.0.0-alpha.0](https://github.com/blackbaud/skyux-design-tokens/compare/1.0.1...2.0.0-alpha.0) (2025-07-09)
 
 
