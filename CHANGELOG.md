@@ -2,6 +2,25 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.5](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.4...2.0.0-alpha.5) (2025-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* tab selected background color ([#239](https://github.com/blackbaud/skyux-design-tokens/issues/239))
+* display type update ([#241](https://github.com/blackbaud/skyux-design-tokens/issues/241))
+* change color of disabled toggle switch thumb ([#237](https://github.com/blackbaud/skyux-design-tokens/issues/237))
+
+### Features
+
+* display type update ([#241](https://github.com/blackbaud/skyux-design-tokens/issues/241)) ([83233d5](https://github.com/blackbaud/skyux-design-tokens/commit/83233d5a04f826f51a4ad824ce0b6a17b54b5f1b))
+* tab selected background color ([#239](https://github.com/blackbaud/skyux-design-tokens/issues/239)) ([942f688](https://github.com/blackbaud/skyux-design-tokens/commit/942f6887e4e10e9492c68a84c6d290d55f9c7ca2))
+
+
+### Bug Fixes
+
+* change color of disabled toggle switch thumb ([#237](https://github.com/blackbaud/skyux-design-tokens/issues/237)) ([b4d1476](https://github.com/blackbaud/skyux-design-tokens/commit/b4d1476a2f930e99f695dfd6c8ac2eef2f67a1b6))
+
 ## [2.0.0-alpha.4](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.3...2.0.0-alpha.4) (2025-07-17)
 
 
