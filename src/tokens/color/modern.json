@@ -265,7 +265,7 @@
           }
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
@@ -893,6 +893,12 @@
           "$value": "{modern.image.logo.primary.src}"
         }
       }
+    }
+  },
+  "brand": {
+    "name": {
+      "$type": "other",
+      "$value": "{modern.brand.name}"
     }
   }
 }

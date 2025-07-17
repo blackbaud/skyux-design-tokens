@@ -275,10 +275,10 @@
           "$value": "{bb.color.gray.700}"
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.gray.1000}"
         },
         "hover": {
           "$type": "color",

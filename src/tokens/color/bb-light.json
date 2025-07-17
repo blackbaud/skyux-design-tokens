@@ -275,10 +275,10 @@
           "$value": "{bb.color.gray.50}"
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.white}"
         },
         "hover": {
           "$type": "color",
@@ -511,7 +511,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.200}"
+            "$value": "{bb.color.blue.250}"
           },
           "hover": {
             "$type": "color",
@@ -540,7 +540,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         },
         "hover": {
           "$type": "color",
@@ -614,11 +614,11 @@
       "separator": {
         "light": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         }
       },
       "tab": {
@@ -893,6 +893,12 @@
           "$value": "{bb.image.logo.primary.src}"
         }
       }
+    }
+  },
+  "brand": {
+    "name": {
+      "$type": "other",
+      "$value": "{bb.brand.name}"
     }
   }
 }
