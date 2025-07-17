@@ -368,6 +368,10 @@
           "$type": "color",
           "$value": "{modern.color.transparent}"
         },
+        "selected": {
+          "$type": "color",
+          "$value": "{modern.color.transparent}"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{modern.color.transparent}"

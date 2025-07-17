@@ -203,6 +203,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-tab-disabled: var(--modern-color-transparent);
   --sky-color-background-tab-focus: var(--modern-color-transparent);
   --sky-color-background-tab-hover: var(--modern-color-transparent);
+  --sky-color-background-tab-selected: var(--modern-color-transparent);
   --sky-color-background-text_highlight: var(--modern-color-yellow-40);
   --sky-color-background-thumb-base: var(--modern-color-white);
   --sky-color-background-thumb-disabled: var(--modern-color-gray-07);
@@ -1317,6 +1318,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-tab-disabled: var(--bb-color-gray-700);
   --sky-color-background-tab-focus: var(--bb-color-transparent);
   --sky-color-background-tab-hover: var(--bb-color-transparent);
+  --sky-color-background-tab-selected: var(--bb-color-transparent);
   --sky-color-background-text_highlight: var(--bb-color-yellow-800);
   --sky-color-background-thumb-base: var(--bb-color-white);
   --sky-color-background-thumb-disabled: var(--bb-color-gray-600);
@@ -1480,6 +1482,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-tab-disabled: var(--bb-color-gray-50);
   --sky-color-background-tab-focus: var(--bb-color-transparent);
   --sky-color-background-tab-hover: var(--bb-color-transparent);
+  --sky-color-background-tab-selected: var(--bb-color-transparent);
   --sky-color-background-text_highlight: var(--bb-color-yellow-400);
   --sky-color-background-thumb-base: var(--bb-color-white);
   --sky-color-background-thumb-disabled: var(--bb-color-gray-25);
