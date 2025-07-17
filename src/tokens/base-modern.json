@@ -1,6 +1,43 @@
 {
   "modern": {
+    "image": {
+      "logo": {
+        "primary": {
+          "src": {
+            "$extensions": {
+              "com.blackbaud.developer.sky-token-format": "url"
+            },
+            "$type": "other",
+            "$value": "~/assets/images/bb-logo.png"
+          }
+        }
+      }
+    },
     "color": {
+      "white": {
+        "$type": "color",
+        "$value": "#FFFFFF"
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000"
+      },
+      "transparent": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "shadow_color": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.3)"
+      },
+      "scrim": {
+        "$type": "color",
+        "$value": "rgba(0,0,0,.5)"
+      },
+      "blocking": {
+        "$type": "color",
+        "$value": "rgba(255,255,255,.7)"
+      },
       "gray": {
         "10": {
           "$type": "color",
@@ -52,26 +89,6 @@
           "$type": "color",
           "$value": "#d93a3d"
         }
-      },
-      "white": {
-        "$type": "color",
-        "$value": "#FFFFFF"
-      },
-      "black": {
-        "$type": "color",
-        "$value": "#000000"
-      },
-      "transparent": {
-        "$type": "color",
-        "$value": "transparent"
-      },
-      "shadow_color": {
-        "$type": "color",
-        "$value": "rgba(0, 0, 0, 0.3)"
-      },
-      "scrim": {
-        "$type": "color",
-        "$value": "rgba(0,0,0,.5)"
       },
       "blue": {
         "10": {
@@ -127,14 +144,46 @@
           "$value": "#c57c00"
         }
       },
-      "sky_blue": {
-        "20": {
-          "$type": "color",
-          "$value": "#bfecfb"
+      "category": {
+        "sky_blue": {
+          "20": {
+            "$type": "color",
+            "$value": "#bfecfb"
+          },
+          "40": {
+            "$type": "color",
+            "$value": "#40c7f4"
+          }
         },
-        "40": {
-          "$type": "color",
-          "$value": "#40c7f4"
+        "purple": {
+          "30": {
+            "$type": "color",
+            "$value": "#c9b6d7"
+          }
+        },
+        "green": {
+          "30": {
+            "$type": "color",
+            "$value": "#80dbca"
+          }
+        },
+        "orange": {
+          "30": {
+            "$type": "color",
+            "$value": "#f9ba90"
+          }
+        },
+        "yellow": {
+          "30": {
+            "$type": "color",
+            "$value": "#fdd799"
+          }
+        },
+        "red": {
+          "30": {
+            "$type": "color",
+            "$value": "#f7a0a1"
+          }
         }
       }
     },
@@ -301,13 +350,21 @@
         "$type": "sizing",
         "$value": "296"
       },
-      "320": {
+      "300": {
         "$type": "sizing",
-        "$value": "320"
+        "$value": "300"
       },
       "400": {
         "$type": "sizing",
         "$value": "400"
+      },
+      "600": {
+        "$type": "sizing",
+        "$value": "600"
+      },
+      "900": {
+        "$type": "sizing",
+        "$value": "900"
       }
     },
     "font": {
@@ -455,7 +512,7 @@
             "y": "0",
             "blur": "0",
             "spread": "0",
-            "color": "#000000",
+            "color": "rgba(0, 0, 0, 0)",
             "type": "dropShadow"
           }
         },
@@ -566,6 +623,18 @@
           "$type": "other",
           "$value": "dotted"
         }
+      }
+    },
+    "opacity": {
+      "600": {
+        "$type": "opacity",
+        "$value": ".6"
+      }
+    },
+    "brand": {
+      "name": {
+        "$type": "other",
+        "$value": "Blackbaud"
       }
     }
   }

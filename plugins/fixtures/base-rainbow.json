@@ -1,0 +1,32 @@
+{
+  "rainbow": {
+    "color": {
+      "gray": {
+        "1": {
+          "$type": "color",
+          "$value": "#e2e3e7"
+        },
+        "2": {
+          "$type": "color",
+          "$value": "#c0c2c5"
+        }
+      },
+      "red": {
+        "1": {
+          "$type": "color",
+          "$value": "#fc0330"
+        },
+        "2": {
+          "$type": "color",
+          "$value": "#8a2538"
+        }
+      }
+    },
+    "space": {
+      "s": {
+        "$type": "spacing",
+        "$value": "10"
+      }
+    }
+  }
+}

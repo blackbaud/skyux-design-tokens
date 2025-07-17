@@ -15,3 +15,11 @@ This repository contains design tokens for building styles for SKY UX. The token
 ```
 
 To create these result files locally, clone this repository, run `npm install` and then `npm run build`.
+
+## Updating snapshot tests
+
+If you see a test failure that indicates the test is "obsolete," it means that the outputted tokens have changed and the snapshot test failed. To update the snapshot, run `vitest run --update` and review the changes to the snapshot file to ensure they are all expected. If you do not have `vitest` installed, run `npm i -g vitest`.
+
+## Testing CSS with local preview
+
+To add CSS to any SPA you are locally previewing, create a file `src/dev/extra-styles.css`. `:ng-deep`, `:host`, and SCSS syntax will not work in this file.

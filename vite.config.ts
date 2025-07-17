@@ -29,6 +29,17 @@ export default ({ mode }) => {
           }
         : undefined,
       open: true,
+      cors: {
+        origin: '*',
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        allowedHeaders: ['Content-Type', 'Authorization'],
+      },
+    },
+    test: {
+      name: 'Design Tokens',
+      environment: 'node',
+      root: path.resolve(__dirname),
+      mockReset: true,
     },
     plugins: [
       buildStylesPlugin(),
