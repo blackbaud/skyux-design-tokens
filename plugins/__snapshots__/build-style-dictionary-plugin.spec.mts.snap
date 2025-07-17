@@ -1317,7 +1317,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-tab-hover: var(--bb-color-transparent);
   --sky-color-background-text_highlight: var(--bb-color-yellow-800);
   --sky-color-background-thumb-base: var(--bb-color-white);
-  --sky-color-background-thumb-disabled: var(--bb-color-gray-50);
+  --sky-color-background-thumb-disabled: var(--bb-color-gray-600);
   --sky-color-background-thumbnail_matte: var(--bb-color-white);
   --sky-color-border-action-danger-active: var(--bb-color-red-200);
   --sky-color-border-action-danger-base: var(--bb-color-red-600);
@@ -1480,7 +1480,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-tab-hover: var(--bb-color-transparent);
   --sky-color-background-text_highlight: var(--bb-color-yellow-400);
   --sky-color-background-thumb-base: var(--bb-color-white);
-  --sky-color-background-thumb-disabled: var(--bb-color-gray-50);
+  --sky-color-background-thumb-disabled: var(--bb-color-gray-25);
   --sky-color-background-thumbnail_matte: var(--bb-color-white);
   --sky-color-border-action-danger-active: var(--bb-color-red-1000);
   --sky-color-border-action-danger-base: var(--bb-color-red-600);
