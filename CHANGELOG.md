@@ -2,6 +2,19 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.4](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.3...2.0.0-alpha.4) (2025-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* delete toolbar button background and border colors ([#233](https://github.com/blackbaud/skyux-design-tokens/issues/233))
+* change row background colors ([#229](https://github.com/blackbaud/skyux-design-tokens/issues/229))
+
+### Bug Fixes
+
+* change row background colors ([#229](https://github.com/blackbaud/skyux-design-tokens/issues/229)) ([8df042d](https://github.com/blackbaud/skyux-design-tokens/commit/8df042d35c3cd02c9bdd767402d0b5a8373db3c7))
+* delete toolbar button background and border colors ([#233](https://github.com/blackbaud/skyux-design-tokens/issues/233)) ([d428dec](https://github.com/blackbaud/skyux-design-tokens/commit/d428dec886af1feec89cf037b49f8fc15a3b7bef))
+
 ## [2.0.0-alpha.3](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.2...2.0.0-alpha.3) (2025-07-16)
 
 

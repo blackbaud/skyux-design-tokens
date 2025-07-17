@@ -794,15 +794,15 @@
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.600}"
+          "$value": "{bb.font.size.650}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.500}"
+          "$value": "{bb.font.size.600}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.400}"
+          "$value": "{bb.font.size.500}"
         }
       },
       "heading": {
@@ -874,19 +874,19 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         }
       },
       "heading": {
@@ -950,15 +950,15 @@
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.600}"
+          "$value": "{bb.line_height.650}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.500}"
+          "$value": "{bb.line_height.600}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.400}"
+          "$value": "{bb.line_height.500}"
         }
       },
       "heading": {
@@ -1040,11 +1040,11 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
+          "$value": "{bb.font.weight.semibold}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.regular}"
+          "$value": "{bb.font.weight.semibold}"
         },
         "3": {
           "$type": "fontWeights",
