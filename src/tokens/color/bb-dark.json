@@ -390,6 +390,10 @@
           "$type": "color",
           "$value": "{bb.color.transparent}"
         },
+        "selected": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.700}"
