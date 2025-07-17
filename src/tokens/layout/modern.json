@@ -2760,7 +2760,7 @@
       "drawer": {
         "repeater": {
           "space": {
-            "outset": {
+            "offset": {
               "xs": {
                 "top": {
                   "$type": "spacing",

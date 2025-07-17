@@ -2894,7 +2894,7 @@
       "drawer": {
         "repeater": {
           "space": {
-            "outset": {
+            "offset": {
               "sm": {
                 "top": {
                   "$type": "spacing",
