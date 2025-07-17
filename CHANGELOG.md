@@ -2,6 +2,33 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.3](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.2...2.0.0-alpha.3) (2025-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* change heading-1 style from semibold to regular ([#225](https://github.com/blackbaud/skyux-design-tokens/issues/225))
+* add blue-250 and change border references ([#230](https://github.com/blackbaud/skyux-design-tokens/issues/230))
+* layout fit list inset space reduction ([#231](https://github.com/blackbaud/skyux-design-tokens/issues/231))
+
+### Features
+
+* add blue-250 and change border references ([#230](https://github.com/blackbaud/skyux-design-tokens/issues/230)) ([1ad9628](https://github.com/blackbaud/skyux-design-tokens/commit/1ad9628028f548215fc21de5e1d91af93a956b92))
+* layout fit list inset space reduction ([#231](https://github.com/blackbaud/skyux-design-tokens/issues/231)) ([98ecefd](https://github.com/blackbaud/skyux-design-tokens/commit/98ecefd02cf502114dd5ff82f66700fb6299c546))
+
+
+### Bug Fixes
+
+* change heading-1 style from semibold to regular ([#225](https://github.com/blackbaud/skyux-design-tokens/issues/225)) ([61fcb40](https://github.com/blackbaud/skyux-design-tokens/commit/61fcb40a89d723257e15f5aabfd6815b7574c950))
+
+## [2.0.0-alpha.2](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.1...2.0.0-alpha.2) (2025-07-16)
+
+
+### Features
+
+* add brand name ([#234](https://github.com/blackbaud/skyux-design-tokens/issues/234)) ([85a03c6](https://github.com/blackbaud/skyux-design-tokens/commit/85a03c6c17639f26a9f339972e1a1a3b1569684a))
+* add split view drawer spacing ([#219](https://github.com/blackbaud/skyux-design-tokens/issues/219)) ([1d47046](https://github.com/blackbaud/skyux-design-tokens/commit/1d47046766fd9d1f9a93d021c942f3b462e58fc4))
+
 ## [2.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.0...2.0.0-alpha.1) (2025-07-10)
 
 
