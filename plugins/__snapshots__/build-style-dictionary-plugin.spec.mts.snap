@@ -861,7 +861,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-display-2: var(--modern-font-style-regular);
   --sky-font-style-display-3: var(--modern-font-style-regular);
   --sky-font-style-display-4: var(--modern-font-style-bold);
-  --sky-font-style-emphasized: var(--modern-font-style-semibold);
+  --sky-font-style-emphasized: var(--modern-font-style-bold);
   --sky-font-style-heading-1: var(--modern-font-style-light);
   --sky-font-style-heading-2: var(--modern-font-style-regular);
   --sky-font-style-heading-3: var(--modern-font-style-regular);
@@ -2155,7 +2155,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-font-style-input-label: var(--bb-font-style-regular);
   --sky-font-weight-body-l: var(--bb-font-weight-regular);
   --sky-font-weight-body-m: var(--bb-font-weight-regular);
-  --sky-font-weight-body-s: var(--bb-font-weight-semibold);
+  --sky-font-weight-body-s: var(--bb-font-weight-regular);
   --sky-font-weight-display-1: var(--bb-font-weight-semibold);
   --sky-font-weight-display-2: var(--bb-font-weight-semibold);
   --sky-font-weight-display-3: var(--bb-font-weight-semibold);
