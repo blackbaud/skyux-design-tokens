@@ -1026,7 +1026,7 @@
       "body": {
         "s": {
           "$type": "fontWeights",
-          "$value": "{bb.font.weight.semibold}"
+          "$value": "{bb.font.weight.regular}"
         },
         "m": {
           "$type": "fontWeights",
