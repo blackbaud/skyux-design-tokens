@@ -466,6 +466,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-card-small-header-space-inset-left: var(--modern-size-15);
   --sky-comp-card-small-header-space-inset-right: var(--modern-size-15);
   --sky-comp-card-small-header-space-inset-top: var(--modern-size-15);
+  --sky-comp-card-space-offset-bottom: var(--modern-size-10);
+  --sky-comp-card-space-offset-left: var(--modern-size-0);
+  --sky-comp-card-space-offset-right: var(--modern-size-10);
+  --sky-comp-card-space-offset-top: var(--modern-size-0);
   --sky-comp-colorpicker-content-space-inset-bottom: var(--modern-size-15);
   --sky-comp-colorpicker-content-space-inset-left: var(--modern-size-30);
   --sky-comp-colorpicker-content-space-inset-right: var(--modern-size-30);
@@ -1745,6 +1749,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-card-small-header-space-inset-left: var(--bb-size-fluid-100);
   --sky-comp-card-small-header-space-inset-right: var(--bb-size-fluid-100);
   --sky-comp-card-small-header-space-inset-top: var(--bb-size-fluid-100);
+  --sky-comp-card-space-offset-bottom: var(--bb-size-fluid-50);
+  --sky-comp-card-space-offset-left: var(--bb-size-0);
+  --sky-comp-card-space-offset-right: var(--bb-size-fluid-50);
+  --sky-comp-card-space-offset-top: var(--bb-size-0);
   --sky-comp-colorpicker-content-space-inset-bottom: var(--bb-size-fluid-50);
   --sky-comp-colorpicker-content-space-inset-left: var(--bb-size-fluid-75);
   --sky-comp-colorpicker-content-space-inset-right: var(--bb-size-fluid-75);
