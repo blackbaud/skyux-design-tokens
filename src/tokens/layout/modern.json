@@ -159,7 +159,7 @@
       },
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.semibold}"
+        "$value": "{modern.font.style.bold}"
       },
       "body": {
         "s": {
