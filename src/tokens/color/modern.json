@@ -213,28 +213,6 @@
             "$type": "color",
             "$value": "{modern.color.gray.07}"
           }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{modern.color.gray.07}"
-          }
         }
       },
       "container": {
@@ -291,7 +269,7 @@
           }
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
@@ -391,6 +369,10 @@
           "$value": "{modern.color.transparent}"
         },
         "focus": {
+          "$type": "color",
+          "$value": "{modern.color.transparent}"
+        },
+        "selected": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
         },
@@ -560,28 +542,6 @@
           "disabled": {
             "$type": "color",
             "$value": "{modern.color.gray.50}"
-          }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{modern.color.blue.74}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{modern.color.blue.74}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{modern.color.blue.74}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{modern.color.gray.15}"
           }
         }
       },
@@ -941,6 +901,12 @@
           "$value": "{modern.image.logo.primary.src}"
         }
       }
+    }
+  },
+  "brand": {
+    "name": {
+      "$type": "other",
+      "$value": "{modern.brand.name}"
     }
   }
 }

@@ -31,6 +31,10 @@
           "$type": "fontSizes",
           "$value": "1.1875rem"
         },
+        "650": {
+          "$type": "fontSizes",
+          "$value": "1.3125rem"
+        },
         "700": {
           "$type": "fontSizes",
           "$value": "1.5rem"
@@ -136,13 +140,17 @@
         "$type": "lineHeights",
         "$value": "calc(28/19)"
       },
+      "650": {
+        "$type": "lineHeights",
+        "$value": "calc(28/21)"
+      },
       "700": {
         "$type": "lineHeights",
         "$value": "calc(32/24)"
       },
       "800": {
         "$type": "lineHeights",
-        "$value": "calc(36/26)"
+        "$value": "calc(36/27)"
       }
     },
     "border": {
@@ -327,7 +335,11 @@
         },
         "200": {
           "$type": "color",
-          "$value": "#D0E1F7"
+          "$value": "#D5E1F7"
+        },
+        "250": {
+          "$type": "color",
+          "$value": "#bfd3f2"
         },
         "300": {
           "$type": "color",
@@ -1092,6 +1104,12 @@
       "600": {
         "$type": "opacity",
         "$value": ".6"
+      }
+    },
+    "brand": {
+      "name": {
+        "$type": "other",
+        "$value": "Blackbaud"
       }
     }
   }
