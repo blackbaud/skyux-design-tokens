@@ -14,7 +14,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-border-radius-round: 50%;
   --modern-border-style-dotted: dotted;
   --modern-border-style-solid: solid;
-  --modern-brand-name: Blackbaud;
+  --modern-brand-name: 'Blackbaud';
   --modern-color-black: #000000;
   --modern-color-blocking: rgba(255, 255, 255, 0.7);
   --modern-color-blue-05: #ebfbff;
@@ -1030,7 +1030,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-border-radius-round: 50%;
   --bb-border-style-dotted: dotted;
   --bb-border-style-solid: solid;
-  --bb-brand-name: Blackbaud;
+  --bb-brand-name: 'Blackbaud';
   --bb-color-black: #000000;
   --bb-color-blocking: rgba(255, 255, 255, 0.7);
   --bb-color-blue-100: #eef3fc;
