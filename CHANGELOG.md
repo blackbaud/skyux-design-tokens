@@ -2,6 +2,22 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.7](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.6...2.0.0-alpha.7) (2025-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* change font weights ([#248](https://github.com/blackbaud/skyux-design-tokens/issues/248))
+
+### Features
+
+* add tokens for card margins ([#245](https://github.com/blackbaud/skyux-design-tokens/issues/245)) ([30f849b](https://github.com/blackbaud/skyux-design-tokens/commit/30f849b70743e8776a797be40c14df22339196f4))
+
+
+### Bug Fixes
+
+* change font weights ([#248](https://github.com/blackbaud/skyux-design-tokens/issues/248)) ([150428e](https://github.com/blackbaud/skyux-design-tokens/commit/150428e4367069294e7980f77d014d22332eab06))
+
 ## [2.0.0-alpha.6](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.5...2.0.0-alpha.6) (2025-07-18)
 
 
