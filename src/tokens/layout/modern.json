@@ -3420,6 +3420,26 @@
             }
           }
         }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
+          }
+        }
       }
     }
   }
