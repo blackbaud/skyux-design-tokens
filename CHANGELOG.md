@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.6](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.5...2.0.0-alpha.6) (2025-07-18)
+
+
+### Features
+
+* add dimmed container background color ([#232](https://github.com/blackbaud/skyux-design-tokens/issues/232)) ([f370faf](https://github.com/blackbaud/skyux-design-tokens/commit/f370faf858cca7b4dcd115a57e84b0eca6588d87))
+
 ## [2.0.0-alpha.5](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.4...2.0.0-alpha.5) (2025-07-17)
 
 
