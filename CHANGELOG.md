@@ -2,6 +2,72 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.8](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.7...2.0.0-alpha.8) (2025-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* wrap brand name token in quotes ([#249](https://github.com/blackbaud/skyux-design-tokens/issues/249))
+
+### Bug Fixes
+
+* wrap brand name token in quotes ([#249](https://github.com/blackbaud/skyux-design-tokens/issues/249)) ([e09752b](https://github.com/blackbaud/skyux-design-tokens/commit/e09752bd44e601ce80d7e6d76c294b04b3f7e37e))
+
+## [2.0.0-alpha.7](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.6...2.0.0-alpha.7) (2025-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* change font weights ([#248](https://github.com/blackbaud/skyux-design-tokens/issues/248))
+
+### Features
+
+* add tokens for card margins ([#245](https://github.com/blackbaud/skyux-design-tokens/issues/245)) ([30f849b](https://github.com/blackbaud/skyux-design-tokens/commit/30f849b70743e8776a797be40c14df22339196f4))
+
+
+### Bug Fixes
+
+* change font weights ([#248](https://github.com/blackbaud/skyux-design-tokens/issues/248)) ([150428e](https://github.com/blackbaud/skyux-design-tokens/commit/150428e4367069294e7980f77d014d22332eab06))
+
+## [2.0.0-alpha.6](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.5...2.0.0-alpha.6) (2025-07-18)
+
+
+### Features
+
+* add dimmed container background color ([#232](https://github.com/blackbaud/skyux-design-tokens/issues/232)) ([f370faf](https://github.com/blackbaud/skyux-design-tokens/commit/f370faf858cca7b4dcd115a57e84b0eca6588d87))
+
+## [2.0.0-alpha.5](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.4...2.0.0-alpha.5) (2025-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* tab selected background color ([#239](https://github.com/blackbaud/skyux-design-tokens/issues/239))
+* display type update ([#241](https://github.com/blackbaud/skyux-design-tokens/issues/241))
+* change color of disabled toggle switch thumb ([#237](https://github.com/blackbaud/skyux-design-tokens/issues/237))
+
+### Features
+
+* display type update ([#241](https://github.com/blackbaud/skyux-design-tokens/issues/241)) ([83233d5](https://github.com/blackbaud/skyux-design-tokens/commit/83233d5a04f826f51a4ad824ce0b6a17b54b5f1b))
+* tab selected background color ([#239](https://github.com/blackbaud/skyux-design-tokens/issues/239)) ([942f688](https://github.com/blackbaud/skyux-design-tokens/commit/942f6887e4e10e9492c68a84c6d290d55f9c7ca2))
+
+
+### Bug Fixes
+
+* change color of disabled toggle switch thumb ([#237](https://github.com/blackbaud/skyux-design-tokens/issues/237)) ([b4d1476](https://github.com/blackbaud/skyux-design-tokens/commit/b4d1476a2f930e99f695dfd6c8ac2eef2f67a1b6))
+
+## [2.0.0-alpha.4](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.3...2.0.0-alpha.4) (2025-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* delete toolbar button background and border colors ([#233](https://github.com/blackbaud/skyux-design-tokens/issues/233))
+* change row background colors ([#229](https://github.com/blackbaud/skyux-design-tokens/issues/229))
+
+### Bug Fixes
+
+* change row background colors ([#229](https://github.com/blackbaud/skyux-design-tokens/issues/229)) ([8df042d](https://github.com/blackbaud/skyux-design-tokens/commit/8df042d35c3cd02c9bdd767402d0b5a8373db3c7))
+* delete toolbar button background and border colors ([#233](https://github.com/blackbaud/skyux-design-tokens/issues/233)) ([d428dec](https://github.com/blackbaud/skyux-design-tokens/commit/d428dec886af1feec89cf037b49f8fc15a3b7bef))
+
 ## [2.0.0-alpha.3](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.2...2.0.0-alpha.3) (2025-07-16)
 
 

@@ -159,7 +159,7 @@
       },
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.semibold}"
+        "$value": "{modern.font.style.bold}"
       },
       "body": {
         "s": {
@@ -3112,6 +3112,26 @@
                 "$value": "{modern.size.15}"
               }
             }
+          }
+        }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
           }
         }
       }
