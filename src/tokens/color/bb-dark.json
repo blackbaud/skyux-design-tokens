@@ -239,6 +239,10 @@
         "info": {
           "$type": "color",
           "$value": "{bb.color.blue.800}"
+        },
+        "dimmed": {
+          "$type": "color",
+          "$value": "{bb.color.gray.1000}"
         }
       },
       "icon_matte": {

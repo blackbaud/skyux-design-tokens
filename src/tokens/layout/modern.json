@@ -159,7 +159,7 @@
       },
       "emphasized": {
         "$type": "fontWeights",
-        "$value": "{modern.font.style.semibold}"
+        "$value": "{modern.font.style.bold}"
       },
       "body": {
         "s": {
@@ -391,34 +391,6 @@
         "xl": {
           "$type": "spacing",
           "$value": "{modern.space.xl}"
-        }
-      },
-      "letterbox": {
-        "2_3": {
-          "top": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.md}"
-            }
-          },
-          "right": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.s}"
-            }
-          },
-          "bottom": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.md}"
-            }
-          },
-          "left": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.s}"
-            }
-          }
         }
       },
       "thumbnail_matte": {
@@ -1146,6 +1118,30 @@
     }
   },
   "comp": {
+    "grid": {
+      "cell": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{modern.space.s}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{modern.space.s}"
+            }
+          }
+        }
+      }
+    },
     "action_button": {
       "space": {
         "inset": {
@@ -3418,6 +3414,26 @@
                 "$value": "{modern.size.15}"
               }
             }
+          }
+        }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
           }
         }
       }

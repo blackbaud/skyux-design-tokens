@@ -2,6 +2,51 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.9](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.8...2.0.0-alpha.9) (2025-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* letterbox spacing is now comp.grid.cell spacing ([#238](https://github.com/blackbaud/skyux-design-tokens/issues/238))
+
+### Bug Fixes
+
+* letterbox spacing is now comp.grid.cell spacing ([#238](https://github.com/blackbaud/skyux-design-tokens/issues/238)) ([b9cde87](https://github.com/blackbaud/skyux-design-tokens/commit/b9cde879634668ea74047b4e5d06b48ae4a619c5))
+
+## [2.0.0-alpha.8](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.7...2.0.0-alpha.8) (2025-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* wrap brand name token in quotes ([#249](https://github.com/blackbaud/skyux-design-tokens/issues/249))
+
+### Bug Fixes
+
+* wrap brand name token in quotes ([#249](https://github.com/blackbaud/skyux-design-tokens/issues/249)) ([e09752b](https://github.com/blackbaud/skyux-design-tokens/commit/e09752bd44e601ce80d7e6d76c294b04b3f7e37e))
+
+## [2.0.0-alpha.7](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.6...2.0.0-alpha.7) (2025-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* change font weights ([#248](https://github.com/blackbaud/skyux-design-tokens/issues/248))
+
+### Features
+
+* add tokens for card margins ([#245](https://github.com/blackbaud/skyux-design-tokens/issues/245)) ([30f849b](https://github.com/blackbaud/skyux-design-tokens/commit/30f849b70743e8776a797be40c14df22339196f4))
+
+
+### Bug Fixes
+
+* change font weights ([#248](https://github.com/blackbaud/skyux-design-tokens/issues/248)) ([150428e](https://github.com/blackbaud/skyux-design-tokens/commit/150428e4367069294e7980f77d014d22332eab06))
+
+## [2.0.0-alpha.6](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.5...2.0.0-alpha.6) (2025-07-18)
+
+
+### Features
+
+* add dimmed container background color ([#232](https://github.com/blackbaud/skyux-design-tokens/issues/232)) ([f370faf](https://github.com/blackbaud/skyux-design-tokens/commit/f370faf858cca7b4dcd115a57e84b0eca6588d87))
+
 ## [2.0.0-alpha.5](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.4...2.0.0-alpha.5) (2025-07-17)
 
 
