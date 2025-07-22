@@ -379,6 +379,12 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.50}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       }
     },
@@ -649,6 +655,12 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.200}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       },
       "nav": {
