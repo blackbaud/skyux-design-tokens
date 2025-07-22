@@ -239,6 +239,10 @@
         "info": {
           "$type": "color",
           "$value": "{bb.color.blue.800}"
+        },
+        "dimmed": {
+          "$type": "color",
+          "$value": "{bb.color.gray.1000}"
         }
       },
       "icon_matte": {
@@ -348,7 +352,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
+          "$value": "{bb.color.gray.600}"
         }
       },
       "tab": {
@@ -368,9 +372,19 @@
           "$type": "color",
           "$value": "{bb.color.transparent}"
         },
+        "selected": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.700}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       }
     },
@@ -645,6 +659,12 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.800}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       },
       "nav": {

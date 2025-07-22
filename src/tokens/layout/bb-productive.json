@@ -31,34 +31,6 @@
           "$value": "{bb.size.fluid.150}"
         }
       },
-      "letterbox": {
-        "2_3": {
-          "top": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.75}"
-            }
-          },
-          "right": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
-            }
-          },
-          "bottom": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.75}"
-            }
-          },
-          "left": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
-            }
-          }
-        }
-      },
       "thumbnail_matte": {
         "s": {
           "$type": "spacing",
@@ -794,15 +766,15 @@
         },
         "2": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.600}"
+          "$value": "{bb.font.size.650}"
         },
         "3": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.500}"
+          "$value": "{bb.font.size.600}"
         },
         "4": {
           "$type": "fontSizes",
-          "$value": "{bb.font.size.400}"
+          "$value": "{bb.font.size.500}"
         }
       },
       "heading": {
@@ -874,19 +846,19 @@
       "display": {
         "1": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "2": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "3": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         },
         "4": {
           "$type": "fontWeights",
-          "$value": "{bb.font.style.regular}"
+          "$value": "{bb.font.style.semibold}"
         }
       },
       "heading": {
@@ -950,15 +922,15 @@
         },
         "2": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.600}"
+          "$value": "{bb.line_height.650}"
         },
         "3": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.500}"
+          "$value": "{bb.line_height.600}"
         },
         "4": {
           "$type": "lineHeights",
-          "$value": "{bb.line_height.400}"
+          "$value": "{bb.line_height.500}"
         }
       },
       "heading": {
@@ -1228,6 +1200,30 @@
     }
   },
   "comp": {
+    "grid": {
+      "cell": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          }
+        }
+      }
+    },
     "action_button": {
       "space": {
         "inset": {
@@ -3500,6 +3496,26 @@
                 "$value": "{bb.size.fluid.100}"
               }
             }
+          }
+        }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
           }
         }
       }

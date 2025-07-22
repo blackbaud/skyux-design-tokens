@@ -634,7 +634,7 @@
     "brand": {
       "name": {
         "$type": "other",
-        "$value": "Blackbaud"
+        "$value": "'Blackbaud'"
       }
     }
   }
