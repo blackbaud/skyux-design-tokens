@@ -2,6 +2,18 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.10](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.9...2.0.0-alpha.10) (2025-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove unneeded font-weight tokens ([#141](https://github.com/blackbaud/skyux-design-tokens/issues/141))
+
+### Features
+
+* add colors for disabled wizard tabs ([#244](https://github.com/blackbaud/skyux-design-tokens/issues/244)) ([a4479c6](https://github.com/blackbaud/skyux-design-tokens/commit/a4479c69f3630313feaaedde7cf5b58b74ab9fe4))
+* remove unneeded font-weight tokens ([#141](https://github.com/blackbaud/skyux-design-tokens/issues/141)) ([9f23375](https://github.com/blackbaud/skyux-design-tokens/commit/9f233751b8e6e57daf3cf1a1075da8a29abc49c5))
+
 ## [2.0.0-alpha.9](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.8...2.0.0-alpha.9) (2025-07-22)
 
 
