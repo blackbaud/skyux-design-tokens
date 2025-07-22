@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.9](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.8...2.0.0-alpha.9) (2025-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* letterbox spacing is now comp.grid.cell spacing ([#238](https://github.com/blackbaud/skyux-design-tokens/issues/238))
+
+### Bug Fixes
+
+* letterbox spacing is now comp.grid.cell spacing ([#238](https://github.com/blackbaud/skyux-design-tokens/issues/238)) ([b9cde87](https://github.com/blackbaud/skyux-design-tokens/commit/b9cde879634668ea74047b4e5d06b48ae4a619c5))
+
 ## [2.0.0-alpha.8](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.7...2.0.0-alpha.8) (2025-07-18)
 
 
