@@ -507,6 +507,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-flyout-header-space-inset-left: var(--modern-space-s);
   --sky-comp-flyout-header-space-inset-right: var(--modern-space-s);
   --sky-comp-flyout-header-space-inset-top: var(--modern-space-md);
+  --sky-comp-grid-cell-space-inset-bottom: var(--modern-space-md);
+  --sky-comp-grid-cell-space-inset-left: var(--modern-space-s);
+  --sky-comp-grid-cell-space-inset-right: var(--modern-space-s);
+  --sky-comp-grid-cell-space-inset-top: var(--modern-space-md);
   --sky-comp-help_inline-space-inset-bottom: var(--modern-size-1);
   --sky-comp-help_inline-space-inset-left: var(--modern-size-5);
   --sky-comp-help_inline-space-inset-right: var(--modern-size-5);
@@ -972,10 +976,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-horizontal-top-m: var(--modern-size-0);
   --sky-space-inset-horizontal-top-s: var(--modern-size-0);
   --sky-space-inset-horizontal-top-xl: var(--modern-size-0);
-  --sky-space-inset-letterbox-2_3-bottom-m: var(--modern-space-md);
-  --sky-space-inset-letterbox-2_3-left-m: var(--modern-space-s);
-  --sky-space-inset-letterbox-2_3-right-m: var(--modern-space-s);
-  --sky-space-inset-letterbox-2_3-top-m: var(--modern-space-md);
   --sky-space-inset-thumb: var(--modern-size-1);
   --sky-space-inset-thumbnail_matte-l: var(--modern-size-5);
   --sky-space-inset-thumbnail_matte-m: var(--modern-size-3);
@@ -1792,6 +1792,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-flyout-header-space-inset-left: var(--bb-size-fluid-50);
   --sky-comp-flyout-header-space-inset-right: var(--bb-size-fluid-50);
   --sky-comp-flyout-header-space-inset-top: var(--bb-size-fluid-75);
+  --sky-comp-grid-cell-space-inset-bottom: var(--bb-size-fluid-75);
+  --sky-comp-grid-cell-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-grid-cell-space-inset-right: var(--bb-size-fluid-50);
+  --sky-comp-grid-cell-space-inset-top: var(--bb-size-fluid-75);
   --sky-comp-help_inline-space-inset-bottom: var(--bb-size-fluid-6);
   --sky-comp-help_inline-space-inset-left: var(--bb-size-fluid-25);
   --sky-comp-help_inline-space-inset-right: var(--bb-size-fluid-25);
@@ -2257,10 +2261,6 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-inset-horizontal-top-m: var(--bb-size-0);
   --sky-space-inset-horizontal-top-s: var(--bb-size-0);
   --sky-space-inset-horizontal-top-xl: var(--bb-size-0);
-  --sky-space-inset-letterbox-2_3-bottom-m: var(--bb-size-fluid-75);
-  --sky-space-inset-letterbox-2_3-left-m: var(--bb-size-fluid-50);
-  --sky-space-inset-letterbox-2_3-right-m: var(--bb-size-fluid-50);
-  --sky-space-inset-letterbox-2_3-top-m: var(--bb-size-fluid-75);
   --sky-space-inset-thumb: var(--bb-size-fixed-6);
   --sky-space-inset-thumbnail_matte-l: var(--bb-size-fluid-25);
   --sky-space-inset-thumbnail_matte-m: var(--bb-size-fluid-18);

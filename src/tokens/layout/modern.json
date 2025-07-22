@@ -393,34 +393,6 @@
           "$value": "{modern.space.xl}"
         }
       },
-      "letterbox": {
-        "2_3": {
-          "top": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.md}"
-            }
-          },
-          "right": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.s}"
-            }
-          },
-          "bottom": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.md}"
-            }
-          },
-          "left": {
-            "m": {
-              "$type": "spacing",
-              "$value": "{modern.space.s}"
-            }
-          }
-        }
-      },
       "thumbnail_matte": {
         "s": {
           "$type": "spacing",
@@ -1146,6 +1118,30 @@
     }
   },
   "comp": {
+    "grid": {
+      "cell": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{modern.space.md}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{modern.space.s}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{modern.space.md}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{modern.space.s}"
+            }
+          }
+        }
+      }
+    },
     "action_button": {
       "space": {
         "inset": {
