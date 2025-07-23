@@ -1334,6 +1334,144 @@
         }
       }
     },
+    "card": {
+      "large": {
+        "header": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              }
+            }
+          }
+        },
+        "content": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              }
+            }
+          }
+        },
+        "actions": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.10}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.10}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.30}"
+              }
+            }
+          }
+        }
+      },
+      "small": {
+        "header": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              }
+            }
+          }
+        },
+        "content": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              }
+            }
+          }
+        },
+        "actions": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.10}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.10}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.15}"
+              }
+            }
+          }
+        }
+      }
+    },
     "colorpicker": {
       "content": {
         "space": {
@@ -2540,42 +2678,44 @@
         }
       },
       "drawer": {
-        "space": {
-          "inset": {
-            "xs": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+        "repeater": {
+          "space": {
+            "offset": {
+              "xs": {
+                "top": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                }
               },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              }
-            },
-            "sm": {
-              "top": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "right": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "bottom": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "other",
-                "$value": "{modern.size.0}"
+              "sm": {
+                "top": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                },
+                "right": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                },
+                "bottom": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                },
+                "left": {
+                  "$type": "spacing",
+                  "$value": "{modern.size.0}"
+                }
               }
             }
           }
