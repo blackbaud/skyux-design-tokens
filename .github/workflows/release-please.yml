@@ -35,7 +35,7 @@ jobs:
           # Get the current prerelease version.
           ACC="Accept: application/vnd.github+json"
           VER="X-GitHub-Api-Version: 2022-11-28"
-          JSON='map(.tag_name) | [.[] | select(startswith("${{ env.MAJOR_VERSION }}.")) ] | .[0] // empty'
+          JSON='sort_by(.published_at) | reverse | map(.tag_name) | [.[] | select(startswith("${{ env.MAJOR_VERSION }}.")) ] | .[0] // empty'
           CURRENT_RELEASE=$(gh api -H "${ACC}" -H "${VER}" /repos/${{ github.repository }}/releases | jq -r "${JSON}")
 
           # Bump the prerelease version.
