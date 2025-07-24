@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.11](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.10...2.0.0-alpha.11) (2025-07-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* outset for repeater when in split view drawer ([#243](https://github.com/blackbaud/skyux-design-tokens/issues/243))
+
+### Features
+
+* outset for repeater when in split view drawer ([#243](https://github.com/blackbaud/skyux-design-tokens/issues/243)) ([b67e368](https://github.com/blackbaud/skyux-design-tokens/commit/b67e36898f5c4dd969cb981d6b5ef3d89395f507))
+
 ## [2.0.0-alpha.10](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.9...2.0.0-alpha.10) (2025-07-22)
 
 
