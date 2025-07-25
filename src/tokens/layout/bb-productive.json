@@ -1628,6 +1628,26 @@
             }
           }
         }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          }
+        }
       }
     },
     "colorpicker": {
@@ -3498,164 +3518,6 @@
               "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
-          }
-        }
-      }
-    },
-    "card": {
-      "large": {
-        "header": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{bb.size.0}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              }
-            }
-          }
-        },
-        "content": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              }
-            }
-          }
-        },
-        "actions": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.50}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.50}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.150}"
-              }
-            }
-          }
-        }
-      },
-      "small": {
-        "header": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{bb.size.0}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              }
-            }
-          }
-        },
-        "content": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              }
-            }
-          }
-        },
-        "actions": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.50}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.50}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{bb.size.fluid.100}"
-              }
-            }
-          }
-        }
-      },
-      "space": {
-        "offset": {
-          "top": {
-            "$type": "spacing",
-            "$value": "{bb.size.0}"
-          },
-          "right": {
-            "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
-          },
-          "bottom": {
-            "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
-          },
-          "left": {
-            "$type": "spacing",
-            "$value": "{bb.size.0}"
           }
         }
       }
