@@ -715,6 +715,26 @@
         "$type": "color",
         "$value": "{bb.color.red.300}"
       }
+    },
+    "illustration": {
+      "stroke": {
+        "$type": "color",
+        "$value": "{bb.color.brand.trusted_blue}"
+      },
+      "fill": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.green.400}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.green.100}"
+        },
+        "highlight": {
+          "$type": "color",
+          "$value": "{bb.color.white}"
+        }
+      }
     }
   },
   "elevation": {

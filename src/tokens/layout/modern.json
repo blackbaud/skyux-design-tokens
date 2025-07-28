@@ -1470,6 +1470,26 @@
             }
           }
         }
+      },
+      "space": {
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{modern.size.0}"
+          }
+        }
       }
     },
     "colorpicker": {
@@ -3340,164 +3360,6 @@
               "$type": "spacing",
               "$value": "{modern.space.md}"
             }
-          }
-        }
-      }
-    },
-    "card": {
-      "large": {
-        "header": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              }
-            }
-          }
-        },
-        "content": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              }
-            }
-          }
-        },
-        "actions": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{modern.size.10}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{modern.size.10}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{modern.size.30}"
-              }
-            }
-          }
-        }
-      },
-      "small": {
-        "header": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{modern.size.0}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              }
-            }
-          }
-        },
-        "content": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              }
-            }
-          }
-        },
-        "actions": {
-          "space": {
-            "inset": {
-              "top": {
-                "$type": "spacing",
-                "$value": "{modern.size.10}"
-              },
-              "right": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              },
-              "bottom": {
-                "$type": "spacing",
-                "$value": "{modern.size.10}"
-              },
-              "left": {
-                "$type": "spacing",
-                "$value": "{modern.size.15}"
-              }
-            }
-          }
-        }
-      },
-      "space": {
-        "offset": {
-          "top": {
-            "$type": "spacing",
-            "$value": "{modern.size.0}"
-          },
-          "right": {
-            "$type": "spacing",
-            "$value": "{modern.size.10}"
-          },
-          "bottom": {
-            "$type": "spacing",
-            "$value": "{modern.size.10}"
-          },
-          "left": {
-            "$type": "spacing",
-            "$value": "{modern.size.0}"
           }
         }
       }

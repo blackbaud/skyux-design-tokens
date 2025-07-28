@@ -721,6 +721,12 @@
           "$type": "color",
           "$value": "#f1f5fa"
         }
+      },
+      "brand": {
+        "trusted_blue": {
+          "$type": "color",
+          "$value": "#004054"
+        }
       }
     },
     "shadow": {

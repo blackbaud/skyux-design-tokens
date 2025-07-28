@@ -38,6 +38,18 @@
         "$type": "color",
         "$value": "rgba(255,255,255,.7)"
       },
+      "trusted_blue": {
+        "$type": "color",
+        "$value": "#004054"
+      },
+      "bb_green": {
+        "$type": "color",
+        "$value": "#6DE8AB"
+      },
+      "bb_green_tint": {
+        "$type": "color",
+        "$value": "#E7FBF1"
+      },
       "gray": {
         "10": {
           "$type": "color",
