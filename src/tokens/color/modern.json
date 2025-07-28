@@ -213,28 +213,6 @@
             "$type": "color",
             "$value": "{modern.color.gray.07}"
           }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{modern.color.gray.07}"
-          }
         }
       },
       "container": {
@@ -261,6 +239,10 @@
         "info": {
           "$type": "color",
           "$value": "{modern.color.blue.10}"
+        },
+        "dimmed": {
+          "$type": "color",
+          "$value": "{modern.color.transparent}"
         }
       },
       "icon_matte": {
@@ -287,7 +269,7 @@
           }
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
@@ -390,9 +372,19 @@
           "$type": "color",
           "$value": "{modern.color.transparent}"
         },
+        "selected": {
+          "$type": "color",
+          "$value": "{modern.color.transparent}"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          }
         }
       }
     },
@@ -557,28 +549,6 @@
             "$type": "color",
             "$value": "{modern.color.gray.50}"
           }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{modern.color.transparent}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{modern.color.blue.74}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{modern.color.blue.74}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{modern.color.blue.74}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{modern.color.gray.15}"
-          }
         }
       },
       "input": {
@@ -685,6 +655,12 @@
         "disabled": {
           "$type": "color",
           "$value": "{modern.color.transparent}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.transparent}"
+          }
         }
       },
       "nav": {
@@ -937,6 +913,12 @@
           "$value": "{modern.image.logo.primary.src}"
         }
       }
+    }
+  },
+  "brand": {
+    "name": {
+      "$type": "other",
+      "$value": "{modern.brand.name}"
     }
   }
 }

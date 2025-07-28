@@ -213,28 +213,6 @@
             "$type": "color",
             "$value": "{bb.color.gray.50}"
           }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{bb.color.white}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{bb.color.blue.50}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{bb.color.blue.100}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{bb.color.white}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.50}"
-          }
         }
       },
       "container": {
@@ -261,6 +239,10 @@
         "info": {
           "$type": "color",
           "$value": "{bb.color.blue.200}"
+        },
+        "dimmed": {
+          "$type": "color",
+          "$value": "{bb.color.blue.25}"
         }
       },
       "icon_matte": {
@@ -297,10 +279,10 @@
           "$value": "{bb.color.gray.50}"
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.white}"
         },
         "hover": {
           "$type": "color",
@@ -370,7 +352,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
+          "$value": "{bb.color.gray.25}"
         }
       },
       "tab": {
@@ -390,9 +372,19 @@
           "$type": "color",
           "$value": "{bb.color.transparent}"
         },
+        "selected": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.50}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       }
     },
@@ -533,29 +525,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.200}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{bb.color.blue.600}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{bb.color.blue.600}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{bb.color.blue.600}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.200}"
-          }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{bb.color.blue.300}"
+            "$value": "{bb.color.blue.250}"
           },
           "hover": {
             "$type": "color",
@@ -584,7 +554,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         },
         "hover": {
           "$type": "color",
@@ -658,11 +628,11 @@
       "separator": {
         "light": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.250}"
         }
       },
       "tab": {
@@ -685,6 +655,12 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.200}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       },
       "nav": {
@@ -937,6 +913,12 @@
           "$value": "{bb.image.logo.primary.src}"
         }
       }
+    }
+  },
+  "brand": {
+    "name": {
+      "$type": "other",
+      "$value": "{bb.brand.name}"
     }
   }
 }

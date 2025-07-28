@@ -213,28 +213,6 @@
             "$type": "color",
             "$value": "{bb.color.gray.700}"
           }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{bb.color.transparent}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{bb.color.transparent}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{bb.color.transparent}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{bb.color.transparent}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.700}"
-          }
         }
       },
       "container": {
@@ -261,6 +239,10 @@
         "info": {
           "$type": "color",
           "$value": "{bb.color.blue.800}"
+        },
+        "dimmed": {
+          "$type": "color",
+          "$value": "{bb.color.gray.1000}"
         }
       },
       "icon_matte": {
@@ -297,10 +279,10 @@
           "$value": "{bb.color.gray.700}"
         }
       },
-      "list": {
+      "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.gray.1000}"
         },
         "hover": {
           "$type": "color",
@@ -370,7 +352,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.50}"
+          "$value": "{bb.color.gray.600}"
         }
       },
       "tab": {
@@ -390,9 +372,19 @@
           "$type": "color",
           "$value": "{bb.color.transparent}"
         },
+        "selected": {
+          "$type": "color",
+          "$value": "{bb.color.transparent}"
+        },
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.700}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       }
     },
@@ -551,28 +543,6 @@
             "$type": "color",
             "$value": "{bb.color.gray.800}"
           }
-        },
-        "toolbar": {
-          "base": {
-            "$type": "color",
-            "$value": "{bb.color.transparent}"
-          },
-          "hover": {
-            "$type": "color",
-            "$value": "{bb.color.sky.600}"
-          },
-          "active": {
-            "$type": "color",
-            "$value": "{bb.color.sky.500}"
-          },
-          "focus": {
-            "$type": "color",
-            "$value": "{bb.color.sky.600}"
-          },
-          "disabled": {
-            "$type": "color",
-            "$value": "{bb.color.gray.800}"
-          }
         }
       },
       "container": {
@@ -689,6 +659,12 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.800}"
+        },
+        "wizard": {
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          }
         }
       },
       "nav": {
