@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.13](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.12...2.0.0-alpha.13) (2025-07-29)
+
+
+### Features
+
+* add component-specific border radius to checkbox ([#257](https://github.com/blackbaud/skyux-design-tokens/issues/257)) ([f04077c](https://github.com/blackbaud/skyux-design-tokens/commit/f04077cf5438f9dc8d81373f6ec193080429cc31))
+
 ## [2.0.0-alpha.12](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.11...2.0.0-alpha.12) (2025-07-28)
 
 
