@@ -994,6 +994,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-stacked-xl: var(--modern-space-xl);
   --sky-space-stacked-xs: var(--modern-space-xs);
   --sky-space-stacked-xxl: var(--modern-space-xxl);
+  --sky-comp-checkbox-border-radius: var(--sky-border-radius-s);
   --sky-font-family-primary: var(--modern-font-blkb_sans-family);
   --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
 }
@@ -2267,6 +2268,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-space-stacked-xl: var(--bb-size-fluid-150);
   --sky-space-stacked-xs: var(--bb-size-fluid-25);
   --sky-space-stacked-xxl: var(--bb-size-fluid-300);
+  --sky-comp-checkbox-border-radius: var(--sky-border-radius-s);
   --sky-font-family-primary: var(--bb-font-blkb_sans-family);
   --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
   --sky-type-body-l: var(--sky-font-style-body-l) var(--sky-font-size-body-l)/var(--sky-font-line_height-body-l) var(--sky-font-family-primary);
