@@ -704,7 +704,7 @@
           "$type": "color",
           "$value": "{bb.color.green.700}"
         },
-        "highlight": {
+        "softest": {
           "$type": "color",
           "$value": "{bb.color.gray.900}"
         }

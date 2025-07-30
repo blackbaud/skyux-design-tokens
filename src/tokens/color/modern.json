@@ -730,7 +730,7 @@
           "$type": "color",
           "$value": "{modern.color.bb_green_tint}"
         },
-        "highlight": {
+        "softest": {
           "$type": "color",
           "$value": "{modern.color.white}"
         }
