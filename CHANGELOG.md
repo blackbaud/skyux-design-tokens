@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.14](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.13...2.0.0-alpha.14) (2025-07-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* left and right padding for v2 toolbar button update ([#259](https://github.com/blackbaud/skyux-design-tokens/issues/259))
+
+### Bug Fixes
+
+* left and right padding for v2 toolbar button update ([#259](https://github.com/blackbaud/skyux-design-tokens/issues/259)) ([32a23a8](https://github.com/blackbaud/skyux-design-tokens/commit/32a23a8e16073264f56baa32f307227c41fa45fa))
+
 ## [2.0.0-alpha.13](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.12...2.0.0-alpha.13) (2025-07-29)
 
 
