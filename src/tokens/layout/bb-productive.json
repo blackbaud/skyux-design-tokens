@@ -2937,7 +2937,7 @@
               },
               "left": {
                 "$type": "spacing",
-                "$value": "{bb.size.0}"
+                "$value": "{bb.size.fluid.50}"
               }
             }
           },
@@ -3002,6 +3002,28 @@
                   "$type": "spacing",
                   "$value": "{bb.size.fluid.75}"
                 }
+              }
+            }
+          }
+        },
+        "subgroup": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{bb.size.0}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.150}"
               }
             }
           }

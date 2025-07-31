@@ -2871,6 +2871,28 @@
               }
             }
           }
+        },
+        "subgroup": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{modern.size.0}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{modern.size.0}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{modern.size.0}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{modern.size.10}"
+              }
+            }
+          }
         }
       }
     },
