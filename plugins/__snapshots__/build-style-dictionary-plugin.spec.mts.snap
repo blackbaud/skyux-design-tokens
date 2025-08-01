@@ -2086,8 +2086,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-token-space-inset-right: var(--bb-size-fluid-25);
   --sky-comp-token-space-inset-top: var(--bb-size-fluid-6);
   --sky-comp-toolbar-space-inset-bottom: var(--bb-size-fluid-50);
-  --sky-comp-toolbar-space-inset-left: var(--bb-size-0);
-  --sky-comp-toolbar-space-inset-right: var(--bb-size-0);
+  --sky-comp-toolbar-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-toolbar-space-inset-right: var(--bb-size-fluid-50);
   --sky-comp-toolbar-space-inset-top: var(--bb-size-fluid-50);
   --sky-comp-tree-child-space-inset-bottom: var(--bb-size-0);
   --sky-comp-tree-child-space-inset-left: var(--bb-size-fluid-150);
