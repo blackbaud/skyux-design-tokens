@@ -631,6 +631,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-layout-tabset-tabs-space-inset-xs-left: var(--modern-space-md);
   --sky-comp-layout-tabset-tabs-space-inset-xs-right: var(--modern-size-0);
   --sky-comp-layout-tabset-tabs-space-inset-xs-top: var(--modern-size-0);
+  --sky-comp-list_summary-space-inset-bottom: var(--modern-size-5);
+  --sky-comp-list_summary-space-inset-left: var(--modern-size-10);
+  --sky-comp-list_summary-space-inset-right: var(--modern-size-10);
+  --sky-comp-list_summary-space-inset-top: var(--modern-size-5);
   --sky-comp-modal-content-space-inset-bottom: var(--modern-space-xl);
   --sky-comp-modal-content-space-inset-left: var(--modern-space-xl);
   --sky-comp-modal-content-space-inset-right: var(--modern-space-xl);
@@ -1909,6 +1913,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-layout-tabset-tabs-space-inset-xs-left: var(--bb-size-fluid-50);
   --sky-comp-layout-tabset-tabs-space-inset-xs-right: var(--bb-size-0);
   --sky-comp-layout-tabset-tabs-space-inset-xs-top: var(--bb-size-0);
+  --sky-comp-list_summary-space-inset-bottom: var(--bb-size-fluid-25);
+  --sky-comp-list_summary-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-list_summary-space-inset-right: var(--bb-size-fluid-50);
+  --sky-comp-list_summary-space-inset-top: var(--bb-size-fluid-25);
   --sky-comp-modal-content-space-inset-bottom: var(--bb-size-fluid-150);
   --sky-comp-modal-content-space-inset-left: var(--bb-size-fluid-150);
   --sky-comp-modal-content-space-inset-right: var(--bb-size-fluid-150);
