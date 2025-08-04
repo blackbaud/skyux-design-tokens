@@ -3017,7 +3017,7 @@
           },
           "right": {
             "$type": "spacing",
-            "$value": "{bb.size.0}"
+            "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
             "$type": "spacing",
@@ -3025,7 +3025,7 @@
           },
           "left": {
             "$type": "spacing",
-            "$value": "{bb.size.0}"
+            "$value": "{bb.size.fluid.50}"
           }
         }
       }

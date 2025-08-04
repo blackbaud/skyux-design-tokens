@@ -333,6 +333,16 @@
         "success": {
           "$type": "color",
           "$value": "{modern.color.green.30}"
+        },
+        "switch": {
+          "base": {
+            "$type": "color",
+            "$value": "{modern.color.blue.05}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{modern.color.gray.07}"
+          }
         }
       },
       "input": {
