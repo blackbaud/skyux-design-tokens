@@ -1,4 +1,3 @@
-import { EmittedFile } from 'rollup';
 import { describe, expect, it, vi } from 'vitest';
 import * as exports from '../src/tokens/token-config.mts';
 import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs';
@@ -10,7 +9,7 @@ vi.stubEnv('PACKAGEJSON_VERSION', undefined);
 describe('buildStyleDictionaryPlugin', () => {
   async function validate(
     tokenSets: TokenSet[],
-    expectedEmittedFiles: Partial<EmittedFile>[],
+    expectedEmittedFiles: { fileName: string; source: string }[],
     assetsCssMock = async (basePath: string) => '',
   ): Promise<void> {
     vi.spyOn(assetsUtils, 'generateAssetsCss').mockImplementation(
@@ -23,21 +22,35 @@ describe('buildStyleDictionaryPlugin', () => {
     const plugin = buildStyleDictionaryPlugin();
     const emitFileSpy = vi.fn();
     if (plugin.generateBundle) {
-      await plugin.generateBundle.call({
+      await (plugin.generateBundle as any).call({
         emitFile: emitFileSpy,
       });
     }
 
-    expect(emitFileSpy).toHaveBeenCalledTimes(expectedEmittedFiles.length);
+    // Each token set should generate both assets/scss/ and bundles/ files
+    expect(emitFileSpy).toHaveBeenCalledTimes(expectedEmittedFiles.length * 2);
 
-    for (const { fileName, source } of expectedEmittedFiles) {
+    for (const expectedFile of expectedEmittedFiles) {
+      // Check for assets/scss/ file
       expect(emitFileSpy).toHaveBeenCalledWith({
         type: 'asset',
-        fileName,
-        source,
+        fileName: expectedFile.fileName,
+        source: expectedFile.source,
+      });
+
+      // Check for corresponding bundles/ file
+      const bundleFileName = expectedFile.fileName.replace(
+        'assets/scss/',
+        'bundles/',
+      );
+      expect(emitFileSpy).toHaveBeenCalledWith({
+        type: 'asset',
+        fileName: bundleFileName,
+        source: expectedFile.source,
       });
     }
   }
+
   it('should create style files for each token set provided', async () => {
     const tokenSets: TokenSet[] = [
       {
@@ -71,7 +84,7 @@ describe('buildStyleDictionaryPlugin', () => {
       },
     ];
 
-    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+    const expectedEmittedFiles: { fileName: string; source: string }[] = [
       {
         fileName: 'assets/scss/muted.css',
         source: `.sky-theme-muted {
@@ -146,7 +159,7 @@ describe('buildStyleDictionaryPlugin', () => {
       },
     ];
 
-    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+    const expectedEmittedFiles: { fileName: string; source: string }[] = [
       {
         fileName: 'assets/scss/responsive-rainbow.css',
         source: `.sky-theme-rainbow {
@@ -186,7 +199,7 @@ describe('buildStyleDictionaryPlugin', () => {
       },
     ];
 
-    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+    const expectedEmittedFiles: { fileName: string; source: string }[] = [
       {
         fileName: 'assets/scss/zeroes.css',
         source: `.sky-theme-zero {
@@ -216,7 +229,7 @@ describe('buildStyleDictionaryPlugin', () => {
       },
     ];
 
-    const expectedEmittedFiles: Partial<EmittedFile>[] = [
+    const expectedEmittedFiles: { fileName: string; source: string }[] = [
       {
         fileName: 'assets/scss/zeroes.css',
         source: `@font-face {
