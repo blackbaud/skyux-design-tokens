@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.15](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.14...2.0.0-alpha.15) (2025-08-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* add selected switch backgrounds ([#260](https://github.com/blackbaud/skyux-design-tokens/issues/260))
+
+### Features
+
+* add selected switch backgrounds ([#260](https://github.com/blackbaud/skyux-design-tokens/issues/260)) ([341a4ec](https://github.com/blackbaud/skyux-design-tokens/commit/341a4eca483a3d4e295750464eb3776b681cab43))
+
 ## [2.0.0-alpha.14](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.13...2.0.0-alpha.14) (2025-07-31)
 
 
