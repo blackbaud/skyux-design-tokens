@@ -198,6 +198,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-selected-heavy: var(--modern-color-blue-05);
   --sky-color-background-selected-soft: var(--modern-color-blue-05);
   --sky-color-background-selected-success: var(--modern-color-green-30);
+  --sky-color-background-selected-switch-base: var(--modern-color-blue-05);
+  --sky-color-background-selected-switch-disabled: var(--modern-color-gray-07);
   --sky-color-background-selected-warning: var(--modern-color-yellow-30);
   --sky-color-background-tab-active: var(--modern-color-transparent);
   --sky-color-background-tab-base: var(--modern-color-transparent);
@@ -1295,13 +1297,13 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-input-disabled: var(--bb-color-gray-700);
   --sky-color-background-nav-active: var(--bb-color-transparent);
   --sky-color-background-nav-base: var(--bb-color-transparent);
-  --sky-color-background-nav-disabled: var(--bb-color-gray-50);
+  --sky-color-background-nav-disabled: var(--bb-color-gray-700);
   --sky-color-background-nav-focus: var(--bb-color-transparent);
   --sky-color-background-nav-hover: var(--bb-color-transparent);
   --sky-color-background-page: var(--bb-color-gray-1100);
   --sky-color-background-row-active: var(--bb-color-transparent);
   --sky-color-background-row-base: var(--bb-color-gray-1000);
-  --sky-color-background-row-disabled: var(--bb-color-gray-50);
+  --sky-color-background-row-disabled: var(--bb-color-gray-700);
   --sky-color-background-row-focus: var(--bb-color-transparent);
   --sky-color-background-row-hover: var(--bb-color-transparent);
   --sky-color-background-scrim: var(--bb-color-scrim);
@@ -1309,6 +1311,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-selected-heavy: var(--bb-color-blue-600);
   --sky-color-background-selected-soft: var(--bb-color-blue-900);
   --sky-color-background-selected-success: var(--bb-color-green-900);
+  --sky-color-background-selected-switch-base: var(--bb-color-blue-600);
+  --sky-color-background-selected-switch-disabled: var(--bb-color-gray-700);
   --sky-color-background-selected-warning: var(--bb-color-yellow-900);
   --sky-color-background-tab-active: var(--bb-color-transparent);
   --sky-color-background-tab-base: var(--bb-color-transparent);
@@ -1476,6 +1480,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-background-selected-heavy: var(--bb-color-blue-600);
   --sky-color-background-selected-soft: var(--bb-color-blue-100);
   --sky-color-background-selected-success: var(--bb-color-green-300);
+  --sky-color-background-selected-switch-disabled: var(--bb-color-gray-50);
   --sky-color-background-selected-warning: var(--bb-color-yellow-300);
   --sky-color-background-tab-active: var(--bb-color-transparent);
   --sky-color-background-tab-base: var(--bb-color-transparent);
@@ -1599,6 +1604,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-elevation-none: var(--bb-shadow-blue-0);
   --sky-image-logo-primary-src: var(--bb-image-logo-primary-src);
   --sky-opacity-wait: var(--bb-opacity-600);
+  --sky-color-background-selected-switch-base: var(--bb-color-gradient-blue);
   --sky-elevation-action-danger-base: var(--bb-shadow-blue-50);
   --sky-elevation-action-danger-focus: var(--bb-shadow-blue-50);
   --sky-elevation-action-danger-hover: var(--bb-shadow-blue-50);
@@ -2088,8 +2094,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-comp-token-space-inset-right: var(--bb-size-fluid-25);
   --sky-comp-token-space-inset-top: var(--bb-size-fluid-6);
   --sky-comp-toolbar-space-inset-bottom: var(--bb-size-fluid-50);
-  --sky-comp-toolbar-space-inset-left: var(--bb-size-0);
-  --sky-comp-toolbar-space-inset-right: var(--bb-size-0);
+  --sky-comp-toolbar-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-toolbar-space-inset-right: var(--bb-size-fluid-50);
   --sky-comp-toolbar-space-inset-top: var(--bb-size-fluid-50);
   --sky-comp-tree-child-space-inset-bottom: var(--bb-size-0);
   --sky-comp-tree-child-space-inset-left: var(--bb-size-fluid-150);
