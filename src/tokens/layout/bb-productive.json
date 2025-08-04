@@ -1650,6 +1650,14 @@
         }
       }
     },
+    "checkbox": {
+      "border": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.s}"
+        }
+      }
+    },
     "colorpicker": {
       "content": {
         "space": {
@@ -1924,6 +1932,28 @@
         }
       }
     },
+    "list_summary": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          }
+        }
+      }
+    },
     "modal": {
       "content": {
         "space": {
@@ -2096,7 +2126,7 @@
         }
       }
     },
-    "page": {
+    "layout": {
       "header": {
         "blocks": {
           "space": {
@@ -3017,7 +3047,7 @@
           },
           "right": {
             "$type": "spacing",
-            "$value": "{bb.size.0}"
+            "$value": "{bb.size.fluid.50}"
           },
           "bottom": {
             "$type": "spacing",
@@ -3025,7 +3055,7 @@
           },
           "left": {
             "$type": "spacing",
-            "$value": "{bb.size.0}"
+            "$value": "{bb.size.fluid.50}"
           }
         }
       }

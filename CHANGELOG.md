@@ -2,6 +2,46 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.15](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.14...2.0.0-alpha.15) (2025-08-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* add selected switch backgrounds ([#260](https://github.com/blackbaud/skyux-design-tokens/issues/260))
+
+### Features
+
+* add selected switch backgrounds ([#260](https://github.com/blackbaud/skyux-design-tokens/issues/260)) ([341a4ec](https://github.com/blackbaud/skyux-design-tokens/commit/341a4eca483a3d4e295750464eb3776b681cab43))
+
+## [2.0.0-alpha.14](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.13...2.0.0-alpha.14) (2025-07-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* left and right padding for v2 toolbar button update ([#259](https://github.com/blackbaud/skyux-design-tokens/issues/259))
+
+### Bug Fixes
+
+* left and right padding for v2 toolbar button update ([#259](https://github.com/blackbaud/skyux-design-tokens/issues/259)) ([32a23a8](https://github.com/blackbaud/skyux-design-tokens/commit/32a23a8e16073264f56baa32f307227c41fa45fa))
+
+## [2.0.0-alpha.13](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.12...2.0.0-alpha.13) (2025-07-29)
+
+
+### Features
+
+* add component-specific border radius to checkbox ([#257](https://github.com/blackbaud/skyux-design-tokens/issues/257)) ([f04077c](https://github.com/blackbaud/skyux-design-tokens/commit/f04077cf5438f9dc8d81373f6ec193080429cc31))
+
+## [2.0.0-alpha.12](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.11...2.0.0-alpha.12) (2025-07-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* rename all comp.page tokens to comp.layout in both themes ([#228](https://github.com/blackbaud/skyux-design-tokens/issues/228))
+
+### Features
+
+* rename all comp.page tokens to comp.layout in both themes ([#228](https://github.com/blackbaud/skyux-design-tokens/issues/228)) ([55ce452](https://github.com/blackbaud/skyux-design-tokens/commit/55ce452b1b53525e6712696f9f00d809e9aa2893))
+
 ## [2.0.0-alpha.11](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.10...2.0.0-alpha.11) (2025-07-24)
 
 

@@ -343,6 +343,16 @@
         "success": {
           "$type": "color",
           "$value": "{bb.color.green.300}"
+        },
+        "switch": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gradient.blue}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
+          }
         }
       },
       "thumb": {

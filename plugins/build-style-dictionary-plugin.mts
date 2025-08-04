@@ -338,12 +338,16 @@ ${variables}
         if (file.destination) {
           const fileParts = file.destination.split('/');
           const tokenSetType = fileParts[1];
-          const fileName = `assets/scss/${tokenSetType}.css`;
+          const fileName = `bundles/${tokenSetType}.css`;
+          // For backwards compatibility with older versions of SKY UX; remove this in a future
+          // breaking change.
+          const compatFileName = `assets/scss/${tokenSetType}.css`;
 
           let fileContents = compositeFiles[fileName] || '';
           fileContents = fileContents.concat(file.output ?? '');
 
           compositeFiles[fileName] = fileContents;
+          compositeFiles[compatFileName] = fileContents;
         }
       }
 
