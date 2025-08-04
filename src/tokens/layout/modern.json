@@ -1766,6 +1766,28 @@
         }
       }
     },
+    "list_summary": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{modern.size.5}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{modern.size.5}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{modern.size.10}"
+          }
+        }
+      }
+    },
     "modal": {
       "header": {
         "space": {
