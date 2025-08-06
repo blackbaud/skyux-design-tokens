@@ -2,6 +2,16 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [2.0.0-alpha.16](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.15...2.0.0-alpha.16) (2025-08-06)
+
+
+### Features
+
+* add support for favicon ([#267](https://github.com/blackbaud/skyux-design-tokens/issues/267)) ([ee8be86](https://github.com/blackbaud/skyux-design-tokens/commit/ee8be86a99d796ccfcaad64b448ac26a0beb422c))
+* initial colors for illustrations ([#255](https://github.com/blackbaud/skyux-design-tokens/issues/255)) ([93039f6](https://github.com/blackbaud/skyux-design-tokens/commit/93039f6c9d2edd329af756c94ad4894cb2979cd6))
+* list summary tokens ([#261](https://github.com/blackbaud/skyux-design-tokens/issues/261)) ([b0f3837](https://github.com/blackbaud/skyux-design-tokens/commit/b0f3837997cb2c2f7f3bb76a644e05f24effa247))
+* publish stylesheets to bundles ([#265](https://github.com/blackbaud/skyux-design-tokens/issues/265)) ([2b53bd0](https://github.com/blackbaud/skyux-design-tokens/commit/2b53bd057bbe1ead0e48915d90e85e72506f79f5))
+
 ## [2.0.0-alpha.15](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0-alpha.14...2.0.0-alpha.15) (2025-08-04)
 
 
