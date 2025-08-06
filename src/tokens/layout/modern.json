@@ -1492,6 +1492,14 @@
         }
       }
     },
+    "checkbox": {
+      "border": {
+        "radius": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.s}"
+        }
+      }
+    },
     "colorpicker": {
       "content": {
         "space": {
@@ -3383,14 +3391,6 @@
               "$value": "{modern.space.md}"
             }
           }
-        }
-      }
-    },
-    "checkbox": {
-      "border": {
-        "radius": {
-          "$type": "borderRadius",
-          "$value": "{border.radius.s}"
         }
       }
     }

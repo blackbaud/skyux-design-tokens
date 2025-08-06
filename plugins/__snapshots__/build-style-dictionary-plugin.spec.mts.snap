@@ -15,6 +15,8 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-border-style-dotted: dotted;
   --modern-border-style-solid: solid;
   --modern-brand-name: 'Blackbaud';
+  --modern-color-bb_green: #6de8ab;
+  --modern-color-bb_green_tint: #e7fbf1;
   --modern-color-black: #000000;
   --modern-color-blocking: rgba(255, 255, 255, 0.7);
   --modern-color-blue-05: #ebfbff;
@@ -47,6 +49,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --modern-color-scrim: rgba(0, 0, 0, 0.5);
   --modern-color-shadow_color: rgba(0, 0, 0, 0.3);
   --modern-color-transparent: rgba(0, 0, 0, 0);
+  --modern-color-trusted_blue: #004054;
   --modern-color-white: #ffffff;
   --modern-color-yellow-30: #ffd597;
   --modern-color-yellow-40: #fcd085;
@@ -296,6 +299,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-selected: var(--modern-color-blue-74);
   --sky-color-icon-success: var(--modern-color-green-50);
   --sky-color-icon-warning: var(--modern-color-yellow-50);
+  --sky-color-illustration-fill-heavy: var(--modern-color-bb_green);
+  --sky-color-illustration-fill-soft: var(--modern-color-bb_green_tint);
+  --sky-color-illustration-fill-softest: var(--modern-color-white);
+  --sky-color-illustration-stroke: var(--modern-color-trusted_blue);
   --sky-color-text-action: var(--modern-color-blue-74);
   --sky-color-text-action_contrast: var(--modern-color-blue-80);
   --sky-color-text-danger: var(--modern-color-red-70);
@@ -1039,6 +1046,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --bb-color-blue-700: #2256aa;
   --bb-color-blue-800: #1a4080;
   --bb-color-blue-900: #112b55;
+  --bb-color-brand-trusted_blue: #004054;
   --bb-color-gray-100: #d3d5d6;
   --bb-color-gray-1000: #1e2229;
   --bb-color-gray-1100: #161a1f;
@@ -1403,6 +1411,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
+  --sky-color-illustration-fill-heavy: var(--bb-color-green-700);
+  --sky-color-illustration-fill-soft: var(--bb-color-green-900);
+  --sky-color-illustration-fill-softest: var(--bb-color-gray-900);
+  --sky-color-illustration-stroke: var(--bb-color-green-200);
   --sky-color-text-action: var(--bb-color-sky-600);
   --sky-color-text-action_contrast: var(--bb-color-blue-300);
   --sky-color-text-danger: var(--bb-color-red-400);
@@ -1577,6 +1589,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct blackbaud and 
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
+  --sky-color-illustration-fill-heavy: var(--bb-color-green-400);
+  --sky-color-illustration-fill-soft: var(--bb-color-green-100);
+  --sky-color-illustration-fill-softest: var(--bb-color-white);
+  --sky-color-illustration-stroke: var(--bb-color-brand-trusted_blue);
   --sky-color-text-action: var(--bb-color-blue-600);
   --sky-color-text-action_contrast: var(--bb-color-blue-700);
   --sky-color-text-danger: var(--bb-color-red-600);

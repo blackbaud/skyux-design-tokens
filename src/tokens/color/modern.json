@@ -725,6 +725,26 @@
         "$type": "color",
         "$value": "{modern.color.category.red.30}"
       }
+    },
+    "illustration": {
+      "stroke": {
+        "$type": "color",
+        "$value": "{modern.color.trusted_blue}"
+      },
+      "fill": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{modern.color.bb_green}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{modern.color.bb_green_tint}"
+        },
+        "softest": {
+          "$type": "color",
+          "$value": "{modern.color.white}"
+        }
+      }
     }
   },
   "elevation": {
