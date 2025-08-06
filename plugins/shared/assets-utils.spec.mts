@@ -1,7 +1,11 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { existsSync } from 'fs';
 import { readFile } from 'fs/promises';
-import { fixAssetsUrlValue, generateAssetsCss } from './assets-utils.mts';
+import {
+  fixAssetsUrl,
+  fixAssetsUrlValue,
+  generateAssetsCss,
+} from './assets-utils.mts';
 
 // Mock fs modules
 vi.mock('fs', () => ({
@@ -33,6 +37,50 @@ describe('assets-utils', () => {
   afterEach(() => {
     consoleWarnSpy.mockClear();
     consoleErrorSpy.mockClear();
+  });
+
+  describe('fixAssetsUrl', () => {
+    it('should return original value when basePath is undefined', () => {
+      const value = '~/assets/fonts/roboto.ttf';
+      const expected = '~/assets/fonts/roboto.ttf';
+      const result = fixAssetsUrl(undefined, value);
+      expect(result).toBe(expected);
+    });
+
+    it('should replace ~/assets/ with basePath when basePath is provided', () => {
+      const basePath = '/static/assets/';
+      const value = '~/assets/fonts/roboto.ttf';
+      const expected = '/static/assets/fonts/roboto.ttf';
+      const result = fixAssetsUrl(basePath, value);
+      expect(result).toBe(expected);
+    });
+
+    it('should handle empty basePath string', () => {
+      const basePath = '';
+      const value = '~/assets/fonts/roboto.ttf';
+      const expected = 'fonts/roboto.ttf';
+      const result = fixAssetsUrl(basePath, value);
+      expect(result).toBe(expected);
+    });
+
+    it('should handle values without ~/assets/ pattern', () => {
+      const basePath = '/assets/';
+      const value = '/some/other/path/font.ttf';
+      const expected = '/some/other/path/font.ttf';
+      const result = fixAssetsUrl(basePath, value);
+      expect(result).toBe(expected);
+    });
+
+    it('should return CDN url when package environment variable set', () => {
+      const basePath = '/';
+      vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
+      const value = '~/assets/fonts/roboto-regular.ttf';
+      const expected =
+        'https://sky.blackbaudcdn.net/static/test-package/0.0.1/assets/fonts/roboto-regular.ttf';
+      const result = fixAssetsUrl(basePath, value);
+
+      expect(result).toBe(expected);
+    });
   });
 
   describe('fixAssetsUrlValue', () => {
@@ -69,13 +117,23 @@ describe('assets-utils', () => {
 
     it('should return CDN url when package environment variable set', () => {
       const basePath = '/';
-      const stub = vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
+      vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
       const value = '~/assets/fonts/roboto-regular.ttf';
       const expected =
         "url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/assets/fonts/roboto-regular.ttf')";
       const result = fixAssetsUrlValue(basePath, value);
 
       expect(result).toBe(expected);
+    });
+
+    it('should wrap the result of fixAssetsUrl in url() format', () => {
+      const basePath = '/static/assets/';
+      const value = '~/assets/fonts/roboto.ttf';
+      const rawUrl = fixAssetsUrl(basePath, value);
+      const result = fixAssetsUrlValue(basePath, value);
+
+      expect(result).toBe(`url('${rawUrl}')`);
+      expect(result).toBe("url('/static/assets/fonts/roboto.ttf')");
     });
   });
 
@@ -149,6 +207,33 @@ describe('assets-utils', () => {
 @font-face {
   font-family: 'Roboto';
   src: url('fonts/roboto-italic-variable.ttf');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}`;
+
+      expect(result).toBe(expected);
+    });
+
+    it('should generate CSS font declarations with the CDN url when package environment variable set', async () => {
+      const basePath = '/';
+      vi.stubEnv('PACKAGEJSON_VERSION', '0.0.1');
+      vi.mocked(existsSync).mockReturnValue(true);
+      vi.mocked(readFile).mockResolvedValue(JSON.stringify(mockAssetsConfig));
+
+      const result = await generateAssetsCss(basePath);
+
+      const expected = `@font-face {
+  font-family: 'Roboto';
+  src: url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/assets/fonts/roboto-variable.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://sky.blackbaudcdn.net/static/test-package/0.0.1/assets/fonts/roboto-italic-variable.ttf');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;

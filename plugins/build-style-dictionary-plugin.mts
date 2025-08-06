@@ -107,17 +107,15 @@ async function generateDictionaryFiles(
             destination: string | undefined;
             breakpoint?: Breakpoint;
           }[] = await referenceTokenDictionary.formatPlatform('css');
-          const selector = `${tokenSet.selector}${referenceTokenSet.selector || ''}`;
-
           files.forEach((file) => {
             if (referenceTokenSet.responsive) {
-              const orignialOutput = file.output as string;
+              const originalOutput = file.output as string;
 
               // NOTE: No return character after original output as we have already added one there when we alphabetize
               file.output =
                 referenceTokenSet.responsive.breakpoint === 'xs'
-                  ? orignialOutput
-                  : `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.responsive.breakpoint)}) {\n${orignialOutput}}\n`;
+                  ? originalOutput
+                  : `@media (min-width: ${getMediaQueryMinWidth(referenceTokenSet.responsive.breakpoint)}) {\n${originalOutput}}\n`;
               file.breakpoint = referenceTokenSet.responsive.breakpoint;
             }
           });
@@ -304,13 +302,12 @@ ${variables}
     async transform(code: string, id: string) {
       const rootPath = tokenConfig.rootPath || 'src/tokens/';
       const files = sync(`${rootPath}**/*.json`);
-      for (let file of files) {
+      for (const file of files) {
         this.addWatchFile(path.join(process.cwd(), file));
       }
 
       if (id.includes('src/dev/tokens.css')) {
         const assetsBasePath = '/assets/';
-        const sd = new StyleDictionary(undefined);
 
         const allFiles = await generateDictionaryFiles(tokenConfig, {
           assetsBasePath,
@@ -334,7 +331,7 @@ ${variables}
 
       const compositeFiles = {};
 
-      for (let file of allFiles) {
+      for (const file of allFiles) {
         if (file.destination) {
           const fileParts = file.destination.split('/');
           const tokenSetType = fileParts[1];
@@ -351,7 +348,7 @@ ${variables}
         }
       }
 
-      for (let fileName of Object.keys(compositeFiles)) {
+      for (const fileName of Object.keys(compositeFiles)) {
         const fileContents = await addAssetsCss(
           assetsBasePath,
           compositeFiles[fileName],

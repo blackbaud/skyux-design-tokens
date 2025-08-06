@@ -1,3 +1,11 @@
 {
-  "fonts": []
+  "fonts": [],
+  "images": {
+    "favicon": {
+      "src": "~/assets/images/favicon.ico"
+    }
+  },
+  "strings": {
+    "title": "Blackbaud"
+  }
 }

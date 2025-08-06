@@ -2,19 +2,9 @@ import { existsSync } from 'fs';
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 import packageJson from '../../package.json' with { type: 'json' };
+import { AssetsConfig } from './assets-config';
 
-interface FontAsset {
-  family: string;
-  src: string;
-  weight: string;
-  style: string;
-}
-
-interface AssetsConfig {
-  fonts?: FontAsset[];
-}
-
-export function fixAssetsUrlValue(
+export function fixAssetsUrl(
   basePath: string | undefined,
   value: string,
 ): string {
@@ -23,21 +13,26 @@ export function fixAssetsUrlValue(
   if (effectiveBasePath !== undefined) {
     if (effectiveBasePath === basePath) {
       // Local path - replace ~/assets/ with the base path
-      value = value
-        .replace(/~\/assets\//g, effectiveBasePath)
-        .replaceAll("'", "\'");
+      value = value.replace(/~\/assets\//g, effectiveBasePath);
     } else {
       // CDN path - replace ~/ with the CDN base path
-      value = value.replace(/~\//g, effectiveBasePath).replaceAll("'", "\'");
+      value = value.replace(/~\//g, effectiveBasePath);
     }
   }
 
-  return `url('${value}')`;
+  return value;
+}
+
+export function fixAssetsUrlValue(
+  basePath: string | undefined,
+  value: string,
+): string {
+  const rawUrl = fixAssetsUrl(basePath, value);
+  return `url('${rawUrl}')`;
 }
 
 export async function generateAssetsCss(basePath: string): Promise<string> {
   const assetsJsonPath = join('public', 'assets', 'assets.json');
-  const effectiveBasePath = getBasePath(basePath);
 
   try {
     // Check if assets.json exists
@@ -60,7 +55,7 @@ export async function generateAssetsCss(basePath: string): Promise<string> {
       .map((font) => {
         return `@font-face {
   font-family: '${font.family}';
-  src: ${fixAssetsUrlValue(effectiveBasePath, font.src)};
+  src: ${fixAssetsUrlValue(basePath, font.src)};
   font-weight: ${font.weight};
   font-style: ${font.style};
   font-display: swap;
