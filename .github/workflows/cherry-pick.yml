@@ -1,0 +1,154 @@
+name: Cherry pick
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - '[0-9]+.x.x'
+
+env:
+  TARGET_BRANCH: main
+  FROM_BRANCH: ${{ github.event.pull_request.base.ref }}
+
+jobs:
+  cherry-pick:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 0
+          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+      - uses: actions/setup-node@v4
+        id: setup-node
+        with:
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+      - name: npm install
+        run: npm ci
+      - name: Cherry pick
+        id: cherry-pick
+        run: |
+          # Set the git user to the author of the merge commit.
+          git config user.name "$(git log -1 --pretty=format:'%an' ${{ github.event.pull_request.merge_commit_sha }})"
+          git config user.email "$(git log -1 --pretty=format:'%ae' ${{ github.event.pull_request.merge_commit_sha }})"
+
+          # Echo commands to the log.
+          set -x
+
+          # Do not exit on error.
+          set +e
+
+          # Cherry-pick the merge commit into the target branch, which is checked out.
+          npx skyux-dev cherry-pick \
+            --baseBranch=${{ env.TARGET_BRANCH }} \
+            --hash=${{ github.event.pull_request.merge_commit_sha }} \
+            --skip-confirmation
+
+          if [ $? -ne 0 ]; then
+            echo "CHERRY_PICK_RESULT=failed" >> $GITHUB_ENV
+            exit 0
+          fi
+
+          # Any changes to package.json and package-lock.json should not be committed.
+          git restore package.json package-lock.json
+          git add -A
+          git status
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit --amend --no-edit
+          fi
+
+          # Get the name of the cherry-pick branch.
+          CHERRY_PICK_BRANCH=$(git branch --show-current)
+          # Add the cherry-pick branch to the environment.
+          echo "CHERRY_PICK_BRANCH=${CHERRY_PICK_BRANCH}" >> $GITHUB_ENV
+
+          # Push the cherry-pick to a new cherry-pick branch.
+          git push -u origin ${CHERRY_PICK_BRANCH}
+
+          if [ $? -ne 0 ]; then
+            echo "CHERRY_PICK_RESULT=failed" >> $GITHUB_ENV
+            exit 0
+          fi
+
+          echo "commit_message=$(git log -1 --pretty=%s)" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+
+      - uses: actions/github-script@v7
+        if: ${{ env.CHERRY_PICK_RESULT != 'failed' }}
+        with:
+          github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const title = ${{ toJson(steps.cherry-pick.outputs.commit_message) }};
+            let body = `:cherries: Cherry picked from #${pr.number} [${pr.title}](${pr.html_url})`
+            const prAzureBoardLink = pr.body?.match(/(?<=\[)AB#\d+(?=])/g);
+            if (prAzureBoardLink) {
+              body += `\n\n${prAzureBoardLink.join(' \n')} `;
+            }
+            github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: process.env.CHERRY_PICK_BRANCH,
+              base: process.env.TARGET_BRANCH,
+              title,
+              body
+            }).then(result => {
+              console.log(`Created PR #${result.data.number}: ${result.data.html_url}`);
+              core.exportVariable('PR_URL', result.data.html_url);
+              core.exportVariable('CHERRY_PICK_RESULT', 'success');
+              const assignees = pr.user.login && pr.user.type === 'User' && pr.user.login !== 'blackbaud-sky-build-user' ? [pr.user.login] : [];
+              return github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: result.data.number,
+                assignees: assignees,
+              });
+            }).catch(error => {
+              console.log(error);
+              core.warning(`Failed to create PR: ${error.message}`);
+              core.exportVariable('CHERRY_PICK_RESULT', 'failed');
+            });
+
+      - name: Comment on the original PR when cherry-pick is successful
+        if: ${{ env.CHERRY_PICK_RESULT == 'success' }}
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.payload.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Cherry-pick successful! :cherries: :tada: See ${{ env.PR_URL }}'
+            })
+
+      - name: Comment on the original PR when cherry-pick fails
+        if: ${{ env.CHERRY_PICK_RESULT != 'success' }}
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.payload.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Cherry-pick [failed](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})! :x: Please resolve conflicts and create a new PR.'
+            })
+
+      - name: Notify Slack when cherry-pick fails
+        if: ${{ env.CHERRY_PICK_RESULT != 'success' }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_TITLE: ':cherries: :x: Cherry-pick failed for “${{ github.event.pull_request.title }} (#${{ github.event.pull_request.number}})”'
+          SLACK_MESSAGE: '${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+          SLACK_ICON_EMOJI: ':github:'
+          SLACK_USERNAME: GitHub
+          #cor-skyux-notifications
+          SLACK_CHANNEL: C01GY7ZP4HM
+          SLACK_COLOR: 'fail'
+          SLACK_FOOTER: 'Blackbaud Sky Build User'
+          MSG_MINIMAL: 'true'
