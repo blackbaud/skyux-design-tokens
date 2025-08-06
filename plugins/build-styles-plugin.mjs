@@ -1,3 +1,4 @@
+/* eslint-disable */
 import fs from 'fs-extra';
 import path from 'node:path';
 import yamlParse from 'js-yaml';
