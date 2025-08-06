@@ -1,16 +1,32 @@
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, Mock, vi } from 'vitest';
+import type { EmittedAsset } from 'rollup';
 import * as exports from '../src/tokens/token-config.mts';
+import { TokenSet } from '../src/types/token-set';
 import { buildStyleDictionaryPlugin } from './build-style-dictionary-plugin.mjs';
 import * as assetsUtils from './shared/assets-utils.mjs';
-import { TokenSet } from '../src/types/token-set';
 
 vi.stubEnv('PACKAGEJSON_VERSION', undefined);
 
 describe('buildStyleDictionaryPlugin', () => {
+  async function callGenerateBundle(
+    plugin: ReturnType<typeof buildStyleDictionaryPlugin>,
+    emitFileSpy: Mock,
+  ): Promise<void> {
+    if (plugin.generateBundle) {
+      await (
+        plugin.generateBundle as (this: {
+          emitFile: (emittedFile: EmittedAsset) => string;
+        }) => void | Promise<void>
+      ).call({
+        emitFile: emitFileSpy,
+      });
+    }
+  }
+
   async function validate(
     tokenSets: TokenSet[],
     expectedEmittedFiles: { fileName: string; source: string }[],
-    assetsCssMock = async (basePath: string) => '',
+    assetsCssMock: (basePath?: string) => Promise<string> = async () => '',
   ): Promise<void> {
     vi.spyOn(assetsUtils, 'generateAssetsCss').mockImplementation(
       assetsCssMock,
@@ -21,11 +37,7 @@ describe('buildStyleDictionaryPlugin', () => {
     });
     const plugin = buildStyleDictionaryPlugin();
     const emitFileSpy = vi.fn();
-    if (plugin.generateBundle) {
-      await (plugin.generateBundle as any).call({
-        emitFile: emitFileSpy,
-      });
-    }
+    await callGenerateBundle(plugin, emitFileSpy);
 
     // Each token set should generate both assets/scss/ and bundles/ files
     expect(emitFileSpy).toHaveBeenCalledTimes(expectedEmittedFiles.length * 2);
@@ -250,14 +262,13 @@ describe('buildStyleDictionaryPlugin', () => {
       },
     ];
 
-    const assetsCssMock = async (basePath: string) => `@font-face {
+    const assetsCssMock = async (basePath?: string) => `@font-face {
   font-family: Test;
   src: url('${basePath}test.tff');
 }`;
 
     await validate(tokenSets, expectedEmittedFiles, assetsCssMock);
   });
-
   it('should generate the correct blackbaud and modern styles', async () => {
     const plugin = buildStyleDictionaryPlugin();
     const emitFileSpy = vi.fn();
