@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+      - '[0-9]+.x.x'
 
 env:
   PRERELEASE: 'false'
@@ -65,7 +66,8 @@ jobs:
           pull-request-title-pattern: 'chore: release ${version}'
           labels: 'autorelease ${{ github.ref_name }}: pending'
           release-labels: 'autorelease ${{ github.ref_name }}: tagged'
-          release-as: '${{ steps.next-release.outputs.next-release }}'
+          # release-as: '${{ steps.next-release.outputs.next-release }}'
+          release-as: '2.0.0'
           prerelease: ${{ env.PRERELEASE != 'false' }}
           draft-pull-request: true
           include-v-in-tag: false
