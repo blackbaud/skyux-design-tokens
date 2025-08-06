@@ -10,8 +10,8 @@ on:
       - '[0-9]+.x.x'
 
 env:
-  PRERELEASE: 'false'
-  MAJOR_VERSION: 2
+  PRERELEASE: 'alpha'
+  MAJOR_VERSION: 3
 
 permissions:
   contents: write
@@ -66,8 +66,7 @@ jobs:
           pull-request-title-pattern: 'chore: release ${version}'
           labels: 'autorelease ${{ github.ref_name }}: pending'
           release-labels: 'autorelease ${{ github.ref_name }}: tagged'
-          # release-as: '${{ steps.next-release.outputs.next-release }}'
-          release-as: '2.0.0'
+          release-as: '${{ steps.next-release.outputs.next-release }}'
           prerelease: ${{ env.PRERELEASE != 'false' }}
           draft-pull-request: true
           include-v-in-tag: false
