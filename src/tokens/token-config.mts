@@ -19,9 +19,31 @@ export const tokenConfig: TokenConfig = {
       ],
     },
     {
-      name: 'blackbaud',
+      name: 'base',
       path: 'base-blackbaud.json',
       selector: '.sky-theme-modern.sky-theme-brand-base',
+      outputPath: 'base.css',
+      referenceTokens: [
+        {
+          name: 'base-light',
+          path: 'color/base-light.json',
+        },
+        {
+          name: 'base-dark',
+          selector: '.sky-theme-mode-dark',
+          path: 'color/base-dark.json',
+        },
+        {
+          name: 'base-productive',
+          path: 'layout/base-productive.json',
+        },
+      ],
+    },
+    {
+      name: 'blackbaud',
+      path: 'base-blackbaud.json',
+      selector:
+        '.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud',
       outputPath: 'blackbaud.css',
       referenceTokens: [
         {
@@ -36,11 +58,6 @@ export const tokenConfig: TokenConfig = {
         {
           name: 'bb-productive',
           path: 'layout/bb-productive.json',
-        },
-        {
-          name: 'bb-compact',
-          selector: '.sky-theme-mode-compact',
-          path: 'layout/bb-compact.json',
         },
       ],
     },

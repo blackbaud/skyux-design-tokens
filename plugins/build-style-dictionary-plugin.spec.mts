@@ -269,7 +269,7 @@ describe('buildStyleDictionaryPlugin', () => {
 
     await validate(tokenSets, expectedEmittedFiles, assetsCssMock);
   });
-  it('should generate the correct blackbaud and modern styles', async () => {
+  it('should generate the correct base, blackbaud, and modern styles', async () => {
     const plugin = buildStyleDictionaryPlugin();
     const emitFileSpy = vi.fn();
     if (plugin.generateBundle) {
@@ -281,11 +281,15 @@ describe('buildStyleDictionaryPlugin', () => {
     const modernResults = emitFileSpy.mock.calls.find(
       (call) => call[0]?.fileName === 'assets/scss/modern.css',
     )?.[0];
+    const baseResults = emitFileSpy.mock.calls.find(
+      (call) => call[0]?.fileName === 'assets/scss/base.css',
+    )?.[0];
     const blackbaudResults = emitFileSpy.mock.calls.find(
       (call) => call[0]?.fileName === 'assets/scss/blackbaud.css',
     )?.[0];
 
     expect(modernResults?.source).toMatchSnapshot();
+    expect(baseResults?.source).toMatchSnapshot();
     expect(blackbaudResults?.source).toMatchSnapshot();
   });
 });
