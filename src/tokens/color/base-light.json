@@ -27,7 +27,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.blue.900}"
+        "$value": "{bb.color.gray.1100}"
       },
       "action_contrast": {
         "$type": "color",
@@ -74,14 +74,14 @@
       "input": {
         "action": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{bb.color.gray.600}"
         }
       }
     },
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.slate.100}"
+        "$value": "{bb.color.gray.50}"
       },
       "scrim": {
         "$type": "color",
@@ -97,7 +97,7 @@
       },
       "file_drop": {
         "$type": "color",
-        "$value": "{bb.color.blue.25}"
+        "$value": "{bb.color.gray.25}"
       },
       "thumbnail_matte": {
         "$type": "color",
@@ -242,7 +242,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.blue.25}"
+          "$value": "{bb.color.gray.25}"
         }
       },
       "icon_matte": {
@@ -272,7 +272,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.25}"
+          "$value": "{bb.color.white}"
         },
         "disabled": {
           "$type": "color",
