@@ -347,7 +347,7 @@
         "switch": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gradient.blue}"
+            "$value": "{bb.color.blue.600}"
           },
           "disabled": {
             "$type": "color",
@@ -425,11 +425,11 @@
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.blue.300}"
+        "$value": "{bb.color.gray.200}"
       },
       "elevation": {
         "$type": "color",
-        "$value": "{bb.color.blue.200}"
+        "$value": "{bb.color.gray.100}"
       },
       "column_divider": {
         "$type": "color",
@@ -469,7 +469,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.300}"
+            "$value": "{bb.color.gray.200}"
           },
           "hover": {
             "$type": "color",
@@ -535,7 +535,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.250}"
+            "$value": "{bb.color.gray.200}"
           },
           "hover": {
             "$type": "color",
@@ -558,13 +558,13 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.gray.100}"
         }
       },
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.250}"
+          "$value": "{bb.color.gray.200}"
         },
         "hover": {
           "$type": "color",
@@ -590,7 +590,7 @@
       "switch": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.500}"
+          "$value": "{bb.color.gray.500}"
         },
         "hover": {
           "$type": "color",
@@ -638,11 +638,11 @@
       "separator": {
         "light": {
           "$type": "color",
-          "$value": "{bb.color.blue.250}"
+          "$value": "{bb.color.gray.100}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.blue.250}"
+          "$value": "{bb.color.gray.100}"
         }
       },
       "tab": {
