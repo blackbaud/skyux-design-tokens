@@ -3,7 +3,7 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{modern.color.gray.105}"
+        "$value": "pink"
       },
       "deemphasized": {
         "$type": "color",

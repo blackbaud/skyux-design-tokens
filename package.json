@@ -28,6 +28,7 @@
     "glob": "11.0.2",
     "js-yaml": "4.1.0",
     "prettier": "3.6.2",
+    "skyux-brand-builder": "1.0.0",
     "style-dictionary": "4.4.0",
     "typescript": "5.8.3",
     "typescript-eslint": "8.38.0",
@@ -41,5 +42,8 @@
   "engines": {
     "node": ">= 4.2.1",
     "npm": ">= 3"
+  },
+  "dependencies": {
+    "skyux-brand-builder": "file:.yalc/skyux-brand-builder"
   }
 }
