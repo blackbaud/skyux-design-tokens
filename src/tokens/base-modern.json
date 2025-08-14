@@ -524,7 +524,7 @@
             "blur": "0",
             "spread": "0",
             "color": "rgba(0, 0, 0, 0)",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         },
@@ -535,7 +535,7 @@
             "blur": "3px",
             "spread": "0",
             "color": "{modern.color.shadow_color}",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         },
@@ -546,7 +546,7 @@
             "blur": "8px",
             "spread": "0",
             "color": "{modern.color.shadow_color}",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         },
@@ -557,7 +557,7 @@
             "blur": "12px",
             "spread": "0",
             "color": "{modern.color.shadow_color}",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         },
@@ -568,7 +568,7 @@
             "blur": "15px",
             "spread": "2px",
             "color": "{modern.color.shadow_color}",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         },
@@ -579,7 +579,7 @@
             "blur": "25px",
             "spread": "2px",
             "color": "{modern.color.shadow_color}",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         },
@@ -590,7 +590,7 @@
             "blur": "27px",
             "spread": "3px",
             "color": "{modern.color.shadow_color}",
-            "$type": "dropShadow"
+            "type": "dropShadow"
           },
           "$type": "boxShadow"
         }
@@ -602,7 +602,7 @@
           "blur": "2",
           "spread": "0",
           "color": "rgba(0,0,0,0.5)",
-          "$type": "dropShadow"
+          "type": "dropShadow"
         },
         "$type": "boxShadow"
       }
