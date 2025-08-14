@@ -13,8 +13,6 @@ export function fixAssetsUrl(
   if (effectiveBasePath !== undefined) {
     if (effectiveBasePath === basePath) {
       // Local path - replace ~/assets/ with the base path
-      console.log('helloooooo');
-      console.log(value);
       value = value.replace(/~\/assets\//g, effectiveBasePath);
     } else {
       // CDN path - replace ~/ with the CDN base path
