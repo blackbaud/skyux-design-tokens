@@ -2,357 +2,357 @@
   "color": {
     "text": {
       "heading": {
-        "$value": "{bb.color.blue.900}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.blue.900}"
       }
     },
     "icon": {
       "input": {
         "action": {
-          "$value": "{bb.color.blue.600}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
         }
       }
     },
     "background": {
       "page": {
-        "$value": "{bb.color.slate.100}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.slate.100}"
       },
       "scrim": {
-        "$value": "{bb.color.scrim}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.scrim}"
       },
       "file_drop": {
-        "$value": "{bb.color.blue.25}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.blue.25}"
       },
       "container": {
         "dimmed": {
-          "$value": "{bb.color.blue.25}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.25}"
         }
       },
       "input": {
         "base": {
-          "$value": "{bb.color.blue.25}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.25}"
         }
       },
       "selected": {
         "switch": {
           "base": {
-            "$value": "{bb.color.gradient.blue}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{bb.color.gradient.blue}"
           }
         }
       }
     },
     "border": {
       "divider": {
-        "$value": "{bb.color.blue.300}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.blue.300}"
       },
       "elevation": {
-        "$value": "{bb.color.blue.200}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.blue.200}"
       },
       "action": {
         "secondary": {
           "base": {
-            "$value": "{bb.color.blue.300}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{bb.color.blue.300}"
           }
         },
         "input": {
           "base": {
-            "$value": "{bb.color.blue.250}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{bb.color.blue.250}"
           }
         }
       },
       "container": {
         "base": {
-          "$value": "{bb.color.blue.200}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.200}"
         }
       },
       "input": {
         "base": {
-          "$value": "{bb.color.blue.250}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.250}"
         }
       },
       "switch": {
         "base": {
-          "$value": "{bb.color.blue.500}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.500}"
         }
       },
       "separator": {
         "light": {
-          "$value": "{bb.color.blue.250}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.250}"
         },
         "row": {
-          "$value": "{bb.color.blue.250}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.blue.250}"
         }
       }
     },
     "category": {
       "green": {
-        "$value": "{bb.color.green.300}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.green.300}"
       },
       "teal": {
-        "$value": "{bb.color.teal.400}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.teal.400}"
       },
       "purple": {
-        "$value": "{bb.color.purple.300}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.purple.300}"
       },
       "orange": {
-        "$value": "{bb.color.orange.400}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.orange.400}"
       },
       "blue": {
-        "$value": "{bb.color.sky.300}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.sky.300}"
       },
       "yellow": {
-        "$value": "{bb.color.yellow.300}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.yellow.300}"
       },
       "red": {
-        "$value": "{bb.color.red.300}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.red.300}"
       }
     },
     "illustration": {
       "stroke": {
-        "$value": "{bb.color.brand.trusted_blue}",
-        "$type": "color"
+        "$type": "color",
+        "$value": "{bb.color.brand.trusted_blue}"
       },
       "fill": {
         "heavy": {
-          "$value": "{bb.color.green.400}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.green.400}"
         },
         "soft": {
-          "$value": "{bb.color.green.100}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.green.100}"
         },
         "softest": {
-          "$value": "{bb.color.white}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{bb.color.white}"
         }
       }
     }
   },
   "elevation": {
     "none": {
-      "$value": "{bb.shadow.blue.0}",
-      "$type": "boxShadow"
+      "$type": "boxShadow",
+      "$value": "{bb.shadow.blue.0}"
     },
     "focus": {
-      "$value": "{bb.shadow.blue.200}",
-      "$type": "boxShadow"
+      "$type": "boxShadow",
+      "$value": "{bb.shadow.blue.200}"
     },
     "overflow": {
-      "$value": "{bb.shadow.blue.200}",
-      "$type": "boxShadow"
+      "$type": "boxShadow",
+      "$value": "{bb.shadow.blue.200}"
     },
     "raised": {
       "100": {
-        "$value": "{bb.shadow.blue.100}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.100}"
       }
     },
     "overlay": {
       "100": {
-        "$value": "{bb.shadow.blue.400}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.400}"
       },
       "200": {
-        "$value": "{bb.shadow.blue.800}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.800}"
       },
       "300": {
-        "$value": "{bb.shadow.blue.1600}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.1600}"
       },
       "400": {
-        "$value": "{bb.shadow.blue.2400}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.2400}"
       }
     },
     "action": {
       "primary": {
         "base": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "hover": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "active": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "focus": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "disabled": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         }
       },
       "secondary": {
         "base": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "hover": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "active": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "focus": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "disabled": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         }
       },
       "tertiary": {
         "base": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "hover": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "active": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "focus": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         }
       },
       "danger": {
         "base": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "hover": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "active": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "focus": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "disabled": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         }
       },
       "input": {
         "base": {
-          "$value": "{bb.shadow.blue.25}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.25}"
         },
         "hover": {
-          "$value": "{bb.shadow.blue.25}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.25}"
         },
         "active": {
-          "$value": "{bb.shadow.blue.25}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.25}"
         },
         "focus": {
-          "$value": "{bb.shadow.blue.25}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.25}"
         },
         "disabled": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         }
       },
       "toolbar": {
         "base": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "hover": {
-          "$value": "{bb.shadow.blue.50}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.50}"
         },
         "active": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "focus": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         },
         "disabled": {
-          "$value": "{bb.shadow.blue.0}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.blue.0}"
         }
       }
     },
     "input": {
       "base": {
-        "$value": "{bb.shadow.blue.25}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.25}"
       },
       "disabled": {
-        "$value": "{bb.shadow.blue.0}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{bb.shadow.blue.0}"
       }
     }
   },
   "opacity": {
     "wait": {
-      "$value": "{bb.opacity.600}",
-      "$type": "opacity"
+      "$type": "opacity",
+      "$value": "{bb.opacity.600}"
     }
   },
   "image": {
     "logo": {
       "primary": {
         "src": {
-          "$value": "{bb.image.logo.primary.src}",
-          "$type": "other"
+          "$type": "other",
+          "$value": "{bb.image.logo.primary.src}"
         }
       }
     }
   },
   "brand": {
     "name": {
-      "$value": "{bb.brand.name}",
-      "$type": "other"
+      "$type": "other",
+      "$value": "{bb.brand.name}"
     }
   }
 }
