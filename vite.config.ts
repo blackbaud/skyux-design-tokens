@@ -5,7 +5,7 @@ import {
   buildAssetsManifestPlugin,
   buildStyleDictionaryPlugin,
   preparePackagePlugin,
-} from 'skyux-brand-builder';
+} from '@blackbaud/skyux-branding-builder';
 import { tokenConfig } from './src/tokens/token-config.mts';
 
 export default ({ mode }) => {

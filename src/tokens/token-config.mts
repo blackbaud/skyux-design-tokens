@@ -1,4 +1,4 @@
-import { TokenConfig } from 'skyux-brand-builder';
+import { TokenConfig } from '@blackbaud/skyux-branding-builder';
 
 export const tokenConfig: TokenConfig = {
   projectName: 'skyux-design-tokens',

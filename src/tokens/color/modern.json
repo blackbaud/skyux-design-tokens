@@ -2,13 +2,8 @@
   "color": {
     "text": {
       "default": {
-<<<<<<< HEAD
-        "$type": "color",
-        "$value": "pink"
-=======
         "$value": "{modern.color.gray.105}",
         "$type": "color"
->>>>>>> master
       },
       "deemphasized": {
         "$value": "{modern.color.gray.70}",
