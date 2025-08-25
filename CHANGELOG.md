@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [3.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/3.0.0-alpha.0...3.0.0-alpha.1) (2025-08-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* changes to vertical tab spacing ([#276](https://github.com/blackbaud/skyux-design-tokens/issues/276))
+
+### Features
+
+* changes to vertical tab spacing ([#276](https://github.com/blackbaud/skyux-design-tokens/issues/276)) ([1acc740](https://github.com/blackbaud/skyux-design-tokens/commit/1acc74021aa37603ebae6e0e983ea23164409242))
+
 ## [3.0.0-alpha.0](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0...3.0.0-alpha.0) (2025-08-15)
 
 
