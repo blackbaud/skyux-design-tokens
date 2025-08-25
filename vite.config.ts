@@ -1,9 +1,12 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { buildStylesPlugin } from './plugins/build-styles-plugin.mjs';
-import { buildStyleDictionaryPlugin } from './plugins/build-style-dictionary-plugin.mjs';
-import { buildAssetsManifestPlugin } from './plugins/build-assets-manifest-plugin.mjs';
-import { preparePackagePlugin } from './plugins/prepare-package-plugin.mjs';
+import {
+  buildAssetsManifestPlugin,
+  buildStyleDictionaryPlugin,
+  preparePackagePlugin,
+} from '@blackbaud/skyux-branding-builder';
+import { tokenConfig } from './src/tokens/token-config.mts';
 
 export default ({ mode }) => {
   const viteEnv = loadEnv(mode, process.cwd());
@@ -44,9 +47,9 @@ export default ({ mode }) => {
     },
     plugins: [
       buildStylesPlugin(),
-      buildStyleDictionaryPlugin(),
-      buildAssetsManifestPlugin(),
-      preparePackagePlugin(),
+      buildStyleDictionaryPlugin(tokenConfig),
+      buildAssetsManifestPlugin(tokenConfig.projectName),
+      preparePackagePlugin(__dirname),
     ],
   });
 };

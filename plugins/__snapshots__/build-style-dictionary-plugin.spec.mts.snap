@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbaud, and modern styles 1`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 1`] = `
 "@property --modern-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
@@ -1018,7 +1018,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbau
 "
 `;
 
-exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbaud, and modern styles 2`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 2`] = `
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
@@ -2302,7 +2302,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbau
 "
 `;
 
-exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbaud, and modern styles 3`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 3`] = `
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
