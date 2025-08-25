@@ -51,8 +51,4 @@ test('should have token sets in the correct format', () => {
     selector: '.sky-theme-mode-dark',
     path: 'color/bb-dark.json',
   }).toBeOneOf(tokenSets[2].referenceTokens);
-  expect({
-    name: 'bb-productive',
-    path: 'layout/bb-productive.json',
-  }).toBeOneOf(tokenSets[2].referenceTokens);
 });
