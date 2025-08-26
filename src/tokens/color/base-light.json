@@ -207,7 +207,7 @@
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.transparent}"
+            "$value": "{bb.color.white}"
           },
           "disabled": {
             "$type": "color",
@@ -294,7 +294,7 @@
         },
         "focus": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.white}"
         },
         "disabled": {
           "$type": "color",

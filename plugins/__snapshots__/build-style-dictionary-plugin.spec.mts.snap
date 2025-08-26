@@ -1263,7 +1263,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-input-active: var(--bb-color-transparent);
   --sky-color-background-action-input-base: var(--bb-color-blue-900);
   --sky-color-background-action-input-disabled: var(--bb-color-gray-700);
-  --sky-color-background-action-input-focus: var(--bb-color-transparent);
+  --sky-color-background-action-input-focus: var(--bb-color-blue-900);
   --sky-color-background-action-input-hover: var(--bb-color-transparent);
   --sky-color-background-action-primary-active: var(--bb-color-sky-500);
   --sky-color-background-action-primary-base: var(--bb-color-sky-600);
@@ -1305,7 +1305,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-row-active: var(--bb-color-transparent);
   --sky-color-background-row-base: var(--bb-color-gray-1000);
   --sky-color-background-row-disabled: var(--bb-color-gray-700);
-  --sky-color-background-row-focus: var(--bb-color-transparent);
+  --sky-color-background-row-focus: var(--bb-color-gray-1000);
   --sky-color-background-row-hover: var(--bb-color-transparent);
   --sky-color-background-scrim: var(--bb-color-scrim);
   --sky-color-background-selected-danger: var(--bb-color-red-900);
@@ -1436,7 +1436,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-input-active: var(--bb-color-blue-100);
   --sky-color-background-action-input-base: var(--bb-color-white);
   --sky-color-background-action-input-disabled: var(--bb-color-gray-50);
-  --sky-color-background-action-input-focus: var(--bb-color-transparent);
+  --sky-color-background-action-input-focus: var(--bb-color-white);
   --sky-color-background-action-input-hover: var(--bb-color-blue-50);
   --sky-color-background-action-primary-active: var(--bb-color-blue-800);
   --sky-color-background-action-primary-base: var(--bb-color-blue-600);
@@ -1478,7 +1478,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-row-active: var(--bb-color-blue-100);
   --sky-color-background-row-base: var(--bb-color-white);
   --sky-color-background-row-disabled: var(--bb-color-gray-50);
-  --sky-color-background-row-focus: var(--bb-color-transparent);
+  --sky-color-background-row-focus: var(--bb-color-white);
   --sky-color-background-row-hover: var(--bb-color-blue-50);
   --sky-color-background-scrim: var(--bb-color-scrim);
   --sky-color-background-selected-danger: var(--bb-color-red-300);
