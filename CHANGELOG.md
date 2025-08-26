@@ -2,6 +2,24 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [3.0.0-alpha.2](https://github.com/blackbaud/skyux-design-tokens/compare/3.0.0-alpha.1...3.0.0-alpha.2) (2025-08-25)
+
+
+### Features
+
+* use new branding builder package ([#278](https://github.com/blackbaud/skyux-design-tokens/issues/278)) ([f1dee0f](https://github.com/blackbaud/skyux-design-tokens/commit/f1dee0fa76c2b41533969288bd54f23abfc61d71))
+
+## [3.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/3.0.0-alpha.0...3.0.0-alpha.1) (2025-08-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* changes to vertical tab spacing ([#276](https://github.com/blackbaud/skyux-design-tokens/issues/276))
+
+### Features
+
+* changes to vertical tab spacing ([#276](https://github.com/blackbaud/skyux-design-tokens/issues/276)) ([1acc740](https://github.com/blackbaud/skyux-design-tokens/commit/1acc74021aa37603ebae6e0e983ea23164409242))
+
 ## [3.0.0-alpha.0](https://github.com/blackbaud/skyux-design-tokens/compare/2.0.0...3.0.0-alpha.0) (2025-08-15)
 
 

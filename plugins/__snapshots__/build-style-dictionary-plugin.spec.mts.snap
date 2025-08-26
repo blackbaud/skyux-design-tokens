@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbaud, and modern styles 1`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 1`] = `
 "@property --modern-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
@@ -758,6 +758,10 @@ exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbau
   --sky-comp-tab-vertical-space-inset-left: var(--modern-size-15);
   --sky-comp-tab-vertical-space-inset-right: var(--modern-size-15);
   --sky-comp-tab-vertical-space-inset-top: var(--modern-size-10);
+  --sky-comp-tab-vertical-subgroup-space-inset-bottom: var(--modern-size-0);
+  --sky-comp-tab-vertical-subgroup-space-inset-left: var(--modern-size-10);
+  --sky-comp-tab-vertical-subgroup-space-inset-right: var(--modern-size-0);
+  --sky-comp-tab-vertical-subgroup-space-inset-top: var(--modern-size-0);
   --sky-comp-tabset-button-space-inset-bottom: var(--modern-size-5);
   --sky-comp-tabset-button-space-inset-left: var(--modern-size-5);
   --sky-comp-tabset-button-space-inset-right: var(--modern-size-5);
@@ -1014,7 +1018,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbau
 "
 `;
 
-exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbaud, and modern styles 2`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 2`] = `
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
@@ -2031,13 +2035,17 @@ exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbau
   --sky-comp-tab-vertical-group-button-space-inset-right: var(--bb-size-fluid-50);
   --sky-comp-tab-vertical-group-button-space-inset-top: var(--bb-size-fluid-50);
   --sky-comp-tab-vertical-group-space-inset-bottom: var(--bb-size-fluid-75);
-  --sky-comp-tab-vertical-group-space-inset-left: var(--bb-size-0);
+  --sky-comp-tab-vertical-group-space-inset-left: var(--bb-size-fluid-50);
   --sky-comp-tab-vertical-group-space-inset-right: var(--bb-size-0);
   --sky-comp-tab-vertical-group-space-inset-top: var(--bb-size-fluid-75);
   --sky-comp-tab-vertical-space-inset-bottom: var(--bb-size-fluid-50);
   --sky-comp-tab-vertical-space-inset-left: var(--bb-size-fluid-75);
   --sky-comp-tab-vertical-space-inset-right: var(--bb-size-fluid-75);
   --sky-comp-tab-vertical-space-inset-top: var(--bb-size-fluid-50);
+  --sky-comp-tab-vertical-subgroup-space-inset-bottom: var(--bb-size-fluid-50);
+  --sky-comp-tab-vertical-subgroup-space-inset-left: var(--bb-size-fluid-150);
+  --sky-comp-tab-vertical-subgroup-space-inset-right: var(--bb-size-0);
+  --sky-comp-tab-vertical-subgroup-space-inset-top: var(--bb-size-0);
   --sky-comp-tabset-button-space-inset-bottom: var(--bb-size-fluid-25);
   --sky-comp-tabset-button-space-inset-left: var(--bb-size-fluid-25);
   --sky-comp-tabset-button-space-inset-right: var(--bb-size-fluid-25);
@@ -2294,7 +2302,7 @@ exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbau
 "
 `;
 
-exports[`buildStyleDictionaryPlugin > should generate the correct base, blackbaud, and modern styles 3`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 3`] = `
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
