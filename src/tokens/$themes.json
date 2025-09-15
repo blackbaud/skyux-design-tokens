@@ -196,8 +196,7 @@
       "type.input.val": "S:606f355c3cf994bbe86e801664367781e0033704,"
     },
     "selectedTokenSets": {
-      "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "base-blackbaud": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:3631:53332",
     "$figmaModeId": "3631:14",
@@ -464,8 +463,7 @@
     "name": "compact",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "base-blackbaud": "source"
     },
     "$figmaVariableReferences": {
       "space.inset.balanced.s": "5e5949c25019fc09e94d224593f30e3bb48a392a",
@@ -612,8 +610,7 @@
     "selectedTokenSets": {
       "base-modern": "source",
       "layout/modern": "enabled",
-      "base-blackbaud": "source",
-      "layout/bb-productive": "enabled"
+      "base-blackbaud": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",
     "$figmaModeId": "2196:2",
