@@ -2,6 +2,22 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [3.0.0-alpha.4](https://github.com/blackbaud/skyux-design-tokens/compare/3.0.0-alpha.3...3.0.0-alpha.4) (2025-09-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* update from blue to slate ([#282](https://github.com/blackbaud/skyux-design-tokens/issues/282))
+
+### Features
+
+* update from blue to slate ([#282](https://github.com/blackbaud/skyux-design-tokens/issues/282)) ([2c04854](https://github.com/blackbaud/skyux-design-tokens/commit/2c04854152eb4074e8c9a5ed6a9a6ba519696436))
+
+
+### Bug Fixes
+
+* remove typo ([#281](https://github.com/blackbaud/skyux-design-tokens/issues/281)) ([d77b204](https://github.com/blackbaud/skyux-design-tokens/commit/d77b204251c644c890c5cd653d24650d72614054))
+
 ## [3.0.0-alpha.3](https://github.com/blackbaud/skyux-design-tokens/compare/3.0.0-alpha.2...3.0.0-alpha.3) (2025-08-26)
 
 
