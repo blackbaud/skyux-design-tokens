@@ -1126,7 +1126,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-sky-700: #00a6cc;
   --bb-color-sky-800: #007c99;
   --bb-color-sky-900: #005366;
-  --bb-color-slate-100: #eef1f5;
+  --bb-color-slate-100: #f1f3f7;
   --bb-color-slate-1000: #1a2231;
   --bb-color-slate-1100: #141b26;
   --bb-color-slate-1200: #0c1016;
@@ -2424,7 +2424,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-sky-700: #00a6cc;
   --bb-color-sky-800: #007c99;
   --bb-color-sky-900: #005366;
-  --bb-color-slate-100: #eef1f5;
+  --bb-color-slate-100: #f1f3f7;
   --bb-color-slate-1000: #1a2231;
   --bb-color-slate-1100: #141b26;
   --bb-color-slate-1200: #0c1016;
