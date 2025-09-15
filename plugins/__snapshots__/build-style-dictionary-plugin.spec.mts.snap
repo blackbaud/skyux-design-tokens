@@ -2312,6 +2312,22 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-checkbox-border-radius: var(--sky-border-radius-s);
   --sky-font-family-primary: var(--bb-font-blkb_sans-family);
   --sky-space-inset-switch: calc(var(--sky-size-switch) + var(--sky-space-gap-label-s));
+  --sky-type-body-l: var(--sky-font-style-body-l) var(--sky-font-size-body-l)/var(--sky-font-line_height-body-l) var(--sky-font-family-primary);
+  --sky-type-body-m: var(--sky-font-style-body-m) var(--sky-font-size-body-m)/var(--sky-font-line_height-body-m) var(--sky-font-family-primary);
+  --sky-type-body-s: var(--sky-font-style-body-s) var(--sky-font-size-body-s)/var(--sky-font-line_height-body-s) var(--sky-font-family-primary);
+  --sky-type-heading-1: var(--sky-font-style-heading-1) var(--sky-font-size-heading-1)/var(--sky-font-line_height-heading-1) var(--sky-font-family-primary);
+  --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/var(--sky-font-line_height-input-val) var(--sky-font-family-primary);
+  --sky-type-display-1: var(--sky-font-style-display-1) var(--sky-font-size-display-1)/var(--sky-font-line_height-display-1) var(--sky-font-family-primary);
+  --sky-type-display-2: var(--sky-font-style-display-2) var(--sky-font-size-display-2)/var(--sky-font-line_height-display-2) var(--sky-font-family-primary);
+  --sky-type-display-3: var(--sky-font-style-display-3) var(--sky-font-size-display-3)/var(--sky-font-line_height-display-3) var(--sky-font-family-primary);
+  --sky-type-display-4: var(--sky-font-style-display-4) var(--sky-font-size-display-4)/var(--sky-font-line_height-display-4) var(--sky-font-family-primary);
+  --sky-type-heading-2: var(--sky-font-style-heading-2) var(--sky-font-size-heading-2)/var(--sky-font-line_height-heading-2) var(--sky-font-family-primary);
+  --sky-type-heading-3: var(--sky-font-style-heading-3) var(--sky-font-size-heading-3)/var(--sky-font-line_height-heading-3) var(--sky-font-family-primary);
+  --sky-type-heading-4: var(--sky-font-style-heading-4) var(--sky-font-size-heading-4)/var(--sky-font-line_height-heading-4) var(--sky-font-family-primary);
+  --sky-type-heading-5: var(--sky-font-style-heading-5) var(--sky-font-size-heading-5)/var(--sky-font-line_height-heading-5) var(--sky-font-family-primary);
+  --sky-type-hint-m: italic 400 var(--sky-font-size-hint-m)/var(--sky-font-line_height-hint-m) var(--sky-font-family-primary);
+  --sky-type-hint-s: italic 400 var(--sky-font-size-hint-s)/var(--sky-font-line_height-hint-s) var(--sky-font-family-primary);
+  --sky-type-input-label: var(--sky-font-style-input-label) var(--sky-font-size-input-label)/var(--sky-font-line_height-input-label) var(--sky-font-family-primary);
 }
 "
 `;

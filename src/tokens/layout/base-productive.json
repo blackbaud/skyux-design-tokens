@@ -575,7 +575,7 @@
       }
     }
   },
-  "$type": {
+  "type": {
     "heading": {
       "1": {
         "$type": "typography",
