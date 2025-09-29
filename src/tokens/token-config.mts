@@ -56,6 +56,10 @@ export const tokenConfig: TokenConfig = {
           selector: '.sky-theme-mode-dark',
           path: 'color/bb-dark.json',
         },
+        {
+          name: 'bb-productive',
+          path: 'layout/bb-productive.json',
+        },
       ],
     },
   ],

@@ -2584,6 +2584,9 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
+  --sky-border-width-switch-selected: var(--bb-size-0);
+}
+.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-container-dimmed: var(--bb-color-slate-25);
   --sky-color-background-file_drop: var(--bb-color-slate-25);
