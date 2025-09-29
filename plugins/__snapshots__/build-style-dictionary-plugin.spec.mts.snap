@@ -1711,6 +1711,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-border-width-separator-dark: var(--bb-size-fixed-6);
   --sky-border-width-separator-light: var(--bb-size-fixed-6);
   --sky-border-width-separator-row: var(--bb-size-fixed-6);
+  --sky-border-width-switch-selected: var(--bb-size-fixed-6);
   --sky-border-width-text_highlight: var(--bb-size-fixed-6);
   --sky-comp-action_button-space-inset-bottom: var(--bb-size-fluid-150);
   --sky-comp-action_button-space-inset-left: var(--bb-size-fluid-150);

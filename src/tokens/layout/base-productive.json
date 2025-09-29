@@ -1168,6 +1168,12 @@
           "$type": "borderWidth",
           "$value": "{bb.size.fixed.6}"
         }
+      },
+      "switch": {
+        "selected": {
+          "$type": "borderWidth",
+          "$value": "{bb.size.fixed.6}"
+        }
       }
     },
     "style": {
