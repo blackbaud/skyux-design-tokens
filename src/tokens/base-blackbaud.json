@@ -776,6 +776,12 @@
         "blue": {
           "$type": "color",
           "$value": "linear-gradient( {bb.color.blue.500}, {bb.color.blue.700})"
+        },
+        "brand": {
+          "secondary": {
+            "$type": "color",
+            "$value": "linear-gradient(90deg, {bb.color.sky.600}66, {bb.color.purple.600}66)"
+          }
         }
       },
       "brand": {

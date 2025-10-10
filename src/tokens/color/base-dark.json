@@ -243,6 +243,10 @@
         "dimmed": {
           "$type": "color",
           "$value": "{bb.color.gray.1000}"
+        },
+        "tooltip": {
+          "$type": "color",
+          "$value": "{bb.color.gray.25}"
         }
       },
       "icon_matte": {
