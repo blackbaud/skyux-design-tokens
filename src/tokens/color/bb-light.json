@@ -138,11 +138,11 @@
       "fill": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.green.400}"
+          "$value": "{bb.color.green.300}"
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.green.100}"
+          "$value": "{bb.color.green.50}"
         },
         "softest": {
           "$type": "color",
