@@ -226,15 +226,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.300}"
+          "$value": "{bb.color.red.200}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.300}"
+          "$value": "{bb.color.yellow.200}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.300}"
+          "$value": "{bb.color.green.200}"
         },
         "info": {
           "$type": "color",
@@ -334,15 +334,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.300}"
+          "$value": "{bb.color.red.200}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.300}"
+          "$value": "{bb.color.yellow.200}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.300}"
+          "$value": "{bb.color.green.200}"
         },
         "switch": {
           "base": {
