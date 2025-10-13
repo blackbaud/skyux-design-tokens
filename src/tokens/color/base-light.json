@@ -425,11 +425,11 @@
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.gray.200}"
+        "$value": "{bb.color.gray.300}"
       },
       "elevation": {
         "$type": "color",
-        "$value": "{bb.color.gray.100}"
+        "$value": "{bb.color.gray.200}"
       },
       "column_divider": {
         "$type": "color",
@@ -558,7 +558,7 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{bb.color.gray.200}"
         }
       },
       "input": {
@@ -638,11 +638,11 @@
       "separator": {
         "light": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{bb.color.gray.200}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.gray.100}"
+          "$value": "{bb.color.gray.200}"
         }
       },
       "tab": {
