@@ -463,13 +463,13 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           }
         },
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           },
           "hover": {
             "$type": "color",
@@ -485,7 +485,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           }
         },
         "tertiary": {
@@ -507,7 +507,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           }
         },
         "danger": {
@@ -529,13 +529,13 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           }
         },
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           },
           "hover": {
             "$type": "color",
@@ -551,7 +551,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           }
         }
       },
@@ -564,7 +564,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.200}"
+          "$value": "{bb.color.gray.300}"
         },
         "hover": {
           "$type": "color",
@@ -580,7 +580,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.200}"
+          "$value": "{bb.color.gray.300}"
         },
         "error": {
           "$type": "color",
@@ -606,7 +606,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.200}"
+          "$value": "{bb.color.gray.300}"
         },
         "error": {
           "$type": "color",
@@ -631,7 +631,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.gray.200}"
+            "$value": "{bb.color.gray.300}"
           }
         }
       },
@@ -664,7 +664,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.200}"
+          "$value": "{bb.color.gray.300}"
         },
         "wizard": {
           "disabled": {
@@ -692,7 +692,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.200}"
+          "$value": "{bb.color.gray.300}"
         }
       }
     },
