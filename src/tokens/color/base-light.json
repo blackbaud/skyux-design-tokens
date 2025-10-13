@@ -57,7 +57,7 @@
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.700}"
+        "$value": "{bb.color.green.600}"
       },
       "info": {
         "$type": "color",
@@ -256,7 +256,7 @@
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.700}"
+          "$value": "{bb.color.green.600}"
         },
         "action": {
           "heavy": {
@@ -417,7 +417,7 @@
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.700}"
+        "$value": "{bb.color.green.600}"
       },
       "info": {
         "$type": "color",
