@@ -745,6 +745,182 @@
           "$value": "{bb.color.white}"
         }
       }
+    },
+    "viz": {
+      "axis": {
+        "$type": "color",
+        "$value": "{bb.color.gray.500}"
+      },
+      "gridline": {
+        "$type": "color",
+        "$value": "{bb.color.gray.200}"
+      },
+      "marker": {
+        "$type": "color",
+        "$value": "{bb.color.gray.900}"
+      },
+      "category": {
+        "1": {
+          "$type": "color",
+          "$value": "{bb.color.teal.500}"
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{bb.color.purple.800}"
+        },
+        "3": {
+          "$type": "color",
+          "$value": "{bb.color.blue.500}"
+        },
+        "4": {
+          "$type": "color",
+          "$value": "{bb.color.sky.900}"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "{bb.color.orange.600}"
+        },
+        "6": {
+          "$type": "color",
+          "$value": "{bb.color.red.800}"
+        },
+        "7": {
+          "$type": "color",
+          "$value": "{bb.color.pink.600}"
+        },
+        "8": {
+          "$type": "color",
+          "$value": "{bb.color.green.700}"
+        }
+      },
+      "sequence": {
+        "1": {
+          "$type": "color",
+          "$value": "{bb.color.teal.100}"
+        },
+        "2": {
+          "$type": "color",
+          "$value": "{bb.color.teal.200}"
+        },
+        "3": {
+          "$type": "color",
+          "$value": "{bb.color.teal.300}"
+        },
+        "4": {
+          "$type": "color",
+          "$value": "{bb.color.teal.400}"
+        },
+        "5": {
+          "$type": "color",
+          "$value": "{bb.color.teal.500}"
+        },
+        "6": {
+          "$type": "color",
+          "$value": "{bb.color.teal.600}"
+        },
+        "7": {
+          "$type": "color",
+          "$value": "{bb.color.teal.700}"
+        },
+        "8": {
+          "$type": "color",
+          "$value": "{bb.color.teal.800}"
+        },
+        "9": {
+          "$type": "color",
+          "$value": "{bb.color.teal.900}"
+        },
+        "10": {
+          "$type": "color",
+          "$value": "{bb.color.teal.1000}"
+        }
+      },
+      "diverge": {
+        "neg": {
+          "1": {
+            "$type": "color",
+            "$value": "{bb.color.red.100}"
+          },
+          "2": {
+            "$type": "color",
+            "$value": "{bb.color.red.200}"
+          },
+          "3": {
+            "$type": "color",
+            "$value": "{bb.color.red.300}"
+          },
+          "4": {
+            "$type": "color",
+            "$value": "{bb.color.red.400}"
+          },
+          "5": {
+            "$type": "color",
+            "$value": "{bb.color.red.500}"
+          },
+          "6": {
+            "$type": "color",
+            "$value": "{bb.color.red.600}"
+          },
+          "7": {
+            "$type": "color",
+            "$value": "{bb.color.red.700}"
+          },
+          "8": {
+            "$type": "color",
+            "$value": "{bb.color.red.800}"
+          },
+          "9": {
+            "$type": "color",
+            "$value": "{bb.color.red.900}"
+          },
+          "10": {
+            "$type": "color",
+            "$value": "{bb.color.red.1000}"
+          }
+        },
+        "pos": {
+          "1": {
+            "$type": "color",
+            "$value": "{bb.color.blue.100}"
+          },
+          "2": {
+            "$type": "color",
+            "$value": "{bb.color.blue.200}"
+          },
+          "3": {
+            "$type": "color",
+            "$value": "{bb.color.blue.300}"
+          },
+          "4": {
+            "$type": "color",
+            "$value": "{bb.color.blue.400}"
+          },
+          "5": {
+            "$type": "color",
+            "$value": "{bb.color.blue.500}"
+          },
+          "6": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "7": {
+            "$type": "color",
+            "$value": "{bb.color.blue.700}"
+          },
+          "8": {
+            "$type": "color",
+            "$value": "{bb.color.blue.800}"
+          },
+          "9": {
+            "$type": "color",
+            "$value": "{bb.color.blue.900}"
+          },
+          "10": {
+            "$type": "color",
+            "$value": "{bb.color.blue.1000}"
+          }
+        }
+      }
     }
   },
   "elevation": {
