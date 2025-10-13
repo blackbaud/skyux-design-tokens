@@ -93,7 +93,7 @@
       },
       "text_highlight": {
         "$type": "color",
-        "$value": "{bb.color.yellow.400}"
+        "$value": "{bb.color.yellow.300}"
       },
       "file_drop": {
         "$type": "color",
@@ -437,7 +437,7 @@
       },
       "text_highlight": {
         "$type": "color",
-        "$value": "{bb.color.yellow.800}"
+        "$value": "{bb.color.yellow.700}"
       },
       "progress_step": {
         "$type": "color",
