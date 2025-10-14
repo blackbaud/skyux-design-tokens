@@ -1312,6 +1312,50 @@
             }
           }
         }
+      },
+      "separator": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            }
+          }
+        }
+      },
+      "subheader": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.75}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            }
+          }
+        }
       }
     },
     "button": {
@@ -3570,6 +3614,120 @@
               "$type": "spacing",
               "$value": "{bb.size.fluid.150}"
             }
+          }
+        }
+      }
+    },
+    "omnibar": {
+      "vertical": {
+        "menu": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.75}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.75}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.75}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.75}"
+              }
+            }
+          }
+        },
+        "item": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.50}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.50}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.50}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{bb.size.fixed.50}"
+              }
+            }
+          }
+        },
+        "submenu": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{bb.size.0}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{bb.size.0}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.100}"
+              }
+            }
+          }
+        },
+        "subitem": {
+          "space": {
+            "inset": {
+              "top": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "right": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.100}"
+              },
+              "bottom": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.50}"
+              },
+              "left": {
+                "$type": "spacing",
+                "$value": "{bb.size.fluid.100}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "tooltip": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
           }
         }
       }
