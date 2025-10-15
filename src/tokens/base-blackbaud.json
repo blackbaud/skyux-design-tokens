@@ -525,10 +525,6 @@
           "$type": "color",
           "$value": "#B061F2"
         },
-        "600_rgba_40": {
-          "$type": "color",
-          "$value": "rgba(#B061F2, .4)"
-        },
         "700": {
           "$type": "color",
           "$value": "#8D4EC2"
@@ -544,6 +540,24 @@
         "1000": {
           "$type": "color",
           "$value": "#231330"
+        }
+      },
+      "rgba": {
+        "purple": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#B061F2, .4)"
+            }
+          }
+        },
+        "sky": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#00CFFF, .4)"
+            }
+          }
         }
       },
       "red": {
@@ -675,10 +689,6 @@
           "$type": "color",
           "$value": "#00CFFF"
         },
-        "600_rgba_40": {
-          "$type": "color",
-          "$value": "rgba(#00CFFF, .4)"
-        },
         "700": {
           "$type": "color",
           "$value": "#00A6CC"
@@ -788,7 +798,7 @@
         "brand": {
           "secondary": {
             "$type": "color",
-            "$value": "linear-gradient(90deg, {bb.color.sky.600_rgba_40}, {bb.color.purple.600_rgba_40})"
+            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
           }
         }
       },
