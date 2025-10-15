@@ -542,6 +542,24 @@
           "$value": "#231330"
         }
       },
+      "rgba": {
+        "purple": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#B061F2, .4)"
+            }
+          }
+        },
+        "sky": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#00CFFF, .4)"
+            }
+          }
+        }
+      },
       "red": {
         "100": {
           "$type": "color",
@@ -780,7 +798,7 @@
         "brand": {
           "secondary": {
             "$type": "color",
-            "$value": "linear-gradient(90deg, {bb.color.sky.600}66, {bb.color.purple.600}66)"
+            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
           }
         }
       },
