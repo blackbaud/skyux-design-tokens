@@ -1102,6 +1102,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-purple-400: #d0a0f7;
   --bb-color-purple-500: #c081f5;
   --bb-color-purple-600: #b061f2;
+  --bb-color-purple-600_rgba_40: rgba(176, 97, 242, 0.4);
   --bb-color-purple-700: #8d4ec2;
   --bb-color-purple-800: #6a3a91;
   --bb-color-purple-900: #462761;
@@ -1123,6 +1124,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-sky-400: #66e2ff;
   --bb-color-sky-500: #33d9ff;
   --bb-color-sky-600: #00cfff;
+  --bb-color-sky-600_rgba_40: rgba(0, 207, 255, 0.4);
   --bb-color-sky-700: #00a6cc;
   --bb-color-sky-800: #007c99;
   --bb-color-sky-900: #005366;
@@ -1250,7 +1252,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-space-8: 24px;
   --bb-space-9: 36px;
   --bb-color-gradient-blue: linear-gradient( var(--bb-color-blue-500), var(--bb-color-blue-700));
-  --bb-color-gradient-brand-secondary: linear-gradient(90deg, var(--bb-color-sky-600)66, var(--bb-color-purple-600)66);
+  --bb-color-gradient-brand-secondary: linear-gradient(90deg, var(--bb-color-sky-600_rgba_40), var(--bb-color-purple-600_rgba_40));
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
   --bb-shadow-gray-100: 0 1px 3px 0 rgba(22, 26, 31, 0.2), 0 2px 1px -1px rgba(22, 26, 31, 0.12), 0 1px 1px 0 rgba(22, 26, 31, 0.14);
   --bb-shadow-gray-1600: 0 8px 10px -5px rgba(22, 26, 31, 0.2), 0 6px 30px 5px rgba(22, 26, 31, 0.12), 0 16px 24px 2px rgba(30, 34, 41, 0.14);
@@ -2457,6 +2459,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-purple-400: #d0a0f7;
   --bb-color-purple-500: #c081f5;
   --bb-color-purple-600: #b061f2;
+  --bb-color-purple-600_rgba_40: rgba(176, 97, 242, 0.4);
   --bb-color-purple-700: #8d4ec2;
   --bb-color-purple-800: #6a3a91;
   --bb-color-purple-900: #462761;
@@ -2478,6 +2481,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-sky-400: #66e2ff;
   --bb-color-sky-500: #33d9ff;
   --bb-color-sky-600: #00cfff;
+  --bb-color-sky-600_rgba_40: rgba(0, 207, 255, 0.4);
   --bb-color-sky-700: #00a6cc;
   --bb-color-sky-800: #007c99;
   --bb-color-sky-900: #005366;
@@ -2605,7 +2609,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-space-8: 24px;
   --bb-space-9: 36px;
   --bb-color-gradient-blue: linear-gradient( var(--bb-color-blue-500), var(--bb-color-blue-700));
-  --bb-color-gradient-brand-secondary: linear-gradient(90deg, var(--bb-color-sky-600)66, var(--bb-color-purple-600)66);
+  --bb-color-gradient-brand-secondary: linear-gradient(90deg, var(--bb-color-sky-600_rgba_40), var(--bb-color-purple-600_rgba_40));
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
   --bb-shadow-gray-100: 0 1px 3px 0 rgba(22, 26, 31, 0.2), 0 2px 1px -1px rgba(22, 26, 31, 0.12), 0 1px 1px 0 rgba(22, 26, 31, 0.14);
   --bb-shadow-gray-1600: 0 8px 10px -5px rgba(22, 26, 31, 0.2), 0 6px 30px 5px rgba(22, 26, 31, 0.12), 0 16px 24px 2px rgba(30, 34, 41, 0.14);
