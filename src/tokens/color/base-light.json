@@ -921,6 +921,78 @@
           }
         }
       }
+    },
+    "classify": {
+      "blue": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.blue.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.blue.200}"
+        }
+      },
+      "green": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.green.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.green.200}"
+        }
+      },
+      "orange": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.orange.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.orange.200}"
+        }
+      },
+      "pink": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.pink.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.pink.200}"
+        }
+      },
+      "purple": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.purple.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.purple.200}"
+        }
+      },
+      "red": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.red.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.red.200}"
+        }
+      },
+      "teal": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.teal.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.teal.200}"
+        }
+      }
     }
   },
   "elevation": {
