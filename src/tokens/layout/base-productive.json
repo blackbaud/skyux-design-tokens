@@ -580,26 +580,26 @@
       "1": {
         "$type": "typography",
         "$value": {
-          "lineHeight": "1.3333333",
+          "lineHeight": "36",
           "fontWeight": "{font.style.heading.1}",
           "fontSize": "{font.size.heading.1}",
-          "fontFamily": "{bb.font.blkb_sans.name}"
+          "fontFamily": "{font.family.primary}"
         }
       },
       "2": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.heading.2}",
           "fontSize": "{font.size.heading.2}",
-          "lineHeight": "1.4736842105"
+          "lineHeight": "28"
         }
       },
       "3": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
-          "lineHeight": "1.4117647059",
+          "fontFamily": "{font.family.primary}",
+          "lineHeight": "24",
           "fontSize": "{font.size.heading.3}",
           "fontWeight": "{font.style.heading.3}"
         }
@@ -607,19 +607,19 @@
       "4": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontSize": "{font.size.heading.4}",
-          "lineHeight": "1.3333333",
+          "lineHeight": "20",
           "fontWeight": "{font.style.heading.4}"
         }
       },
       "5": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.heading.5}",
           "fontSize": "{font.size.heading.5}",
-          "lineHeight": "1.3333333"
+          "lineHeight": "20"
         }
       }
     },
@@ -629,8 +629,8 @@
         "$value": {
           "fontWeight": "{font.style.body.s}",
           "fontSize": "{font.size.body.s}",
-          "lineHeight": "1.3846153846",
-          "fontFamily": "{bb.font.blkb_sans.name}"
+          "lineHeight": "18",
+          "fontFamily": "{font.family.primary}"
         }
       },
       "m": {
@@ -638,8 +638,8 @@
         "$value": {
           "fontWeight": "{font.style.body.m}",
           "fontSize": "{font.size.body.m}",
-          "lineHeight": "1.3333333",
-          "fontFamily": "{bb.font.blkb_sans.name}"
+          "lineHeight": "20",
+          "fontFamily": "{font.family.primary}"
         }
       },
       "l": {
@@ -647,8 +647,8 @@
         "$value": {
           "fontWeight": "{font.style.body.l}",
           "fontSize": "{font.size.body.l}",
-          "lineHeight": "1.4117647059",
-          "fontFamily": "{bb.font.blkb_sans.name}"
+          "lineHeight": "24",
+          "fontFamily": "{font.family.primary}"
         }
       }
     },
@@ -656,37 +656,37 @@
       "1": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.1}",
           "fontSize": "{font.size.display.1}",
-          "lineHeight": "1.3333333"
+          "lineHeight": "32"
         }
       },
       "2": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.2}",
           "fontSize": "{font.size.display.2}",
-          "lineHeight": "1.33333333"
+          "lineHeight": "28"
         }
       },
       "3": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.3}",
           "fontSize": "{font.size.display.3}",
-          "lineHeight": "1.4736842105"
+          "lineHeight": "28"
         }
       },
       "4": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.display.4}",
           "fontSize": "{font.size.display.4}",
-          "lineHeight": "1.4117647059"
+          "lineHeight": "24"
         }
       }
     },
@@ -697,7 +697,7 @@
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.hint.s}",
           "fontSize": "{font.size.hint.s}",
-          "lineHeight": "1.3846153846",
+          "lineHeight": "18",
           "letterSpacing": "{font.letter_spacing.hint.s}"
         }
       },
@@ -707,7 +707,7 @@
           "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.hint.m}",
           "fontSize": "{font.size.hint.m}",
-          "lineHeight": "1.3333333"
+          "lineHeight": "20"
         }
       }
     },
@@ -715,10 +715,10 @@
       "label": {
         "$type": "typography",
         "$value": {
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontWeight": "{font.style.input.label}",
           "fontSize": "{font.size.input.label}",
-          "lineHeight": "1.3846153846",
+          "lineHeight": "18",
           "letterSpacing": "{font.letter_spacing.input.label}"
         }
       },
@@ -726,9 +726,9 @@
         "$type": "typography",
         "$value": {
           "fontWeight": "{font.style.body.s}",
-          "fontFamily": "{bb.font.blkb_sans.name}",
+          "fontFamily": "{font.family.primary}",
           "fontSize": "{font.size.input.val}",
-          "lineHeight": "1.3846153846"
+          "lineHeight": "20"
         }
       }
     }
