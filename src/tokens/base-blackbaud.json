@@ -15,6 +15,10 @@
     },
     "font": {
       "size": {
+        "200": {
+          "$type": "fontSizes",
+          "$value": "0.6875rem"
+        },
         "300": {
           "$type": "fontSizes",
           "$value": "0.8125rem"
@@ -124,6 +128,10 @@
       }
     },
     "line_height": {
+      "200": {
+        "$type": "lineHeights",
+        "$value": "calc(16/11)"
+      },
       "300": {
         "$type": "lineHeights",
         "$value": "calc(18/13)"
