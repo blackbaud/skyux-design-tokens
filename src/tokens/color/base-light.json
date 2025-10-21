@@ -923,47 +923,17 @@
       }
     },
     "classify": {
-      "blue": {
+      "1": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.blue.700}"
+          "$value": "{bb.color.teal.700}"
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.teal.200}"
         }
       },
-      "green": {
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.green.700}"
-        },
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.green.200}"
-        }
-      },
-      "orange": {
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.orange.700}"
-        },
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.orange.200}"
-        }
-      },
-      "pink": {
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.pink.700}"
-        },
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.pink.200}"
-        }
-      },
-      "purple": {
+      "2": {
         "heavy": {
           "$type": "color",
           "$value": "{bb.color.purple.700}"
@@ -973,7 +943,47 @@
           "$value": "{bb.color.purple.200}"
         }
       },
-      "red": {
+      "3": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.blue.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.blue.200}"
+        }
+      },
+      "4": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.orange.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.orange.200}"
+        }
+      },
+      "5": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.pink.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.pink.200}"
+        }
+      },
+      "6": {
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.green.700}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.green.200}"
+        }
+      },
+      "7": {
         "heavy": {
           "$type": "color",
           "$value": "{bb.color.red.700}"
@@ -981,16 +991,6 @@
         "soft": {
           "$type": "color",
           "$value": "{bb.color.red.200}"
-        }
-      },
-      "teal": {
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.teal.700}"
-        },
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.teal.200}"
         }
       }
     }
