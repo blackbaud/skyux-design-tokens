@@ -2363,6 +2363,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-type-body-l: var(--sky-font-style-body-l) var(--sky-font-size-body-l)/24 var(--sky-font-family-primary);
   --sky-type-body-m: var(--sky-font-style-body-m) var(--sky-font-size-body-m)/20 var(--sky-font-family-primary);
   --sky-type-body-s: var(--sky-font-style-body-s) var(--sky-font-size-body-s)/18 var(--sky-font-family-primary);
+  --sky-type-body-xs: var(--sky-font-style-body-xs) var(--sky-font-size-body-xs)/16 var(--sky-font-family-primary);
   --sky-type-heading-1: var(--sky-font-style-heading-1) var(--sky-font-size-heading-1)/36 var(--sky-font-family-primary);
   --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/20 var(--sky-font-family-primary);
   --sky-type-display-1: var(--sky-font-style-display-1) var(--sky-font-size-display-1)/32 var(--sky-font-family-primary);
