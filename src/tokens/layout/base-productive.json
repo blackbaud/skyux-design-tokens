@@ -629,7 +629,7 @@
         "$value": {
           "fontWeight": "{font.style.body.xs}",
           "fontSize": "{font.size.body.xs}",
-          "lineHeight": "{font.line_height.body.xs}",
+          "lineHeight": "16",
           "fontFamily": "{font.family.primary}"
         }
       },
