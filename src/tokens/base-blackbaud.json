@@ -15,6 +15,10 @@
     },
     "font": {
       "size": {
+        "200": {
+          "$type": "fontSizes",
+          "$value": "0.6875rem"
+        },
         "300": {
           "$type": "fontSizes",
           "$value": "0.8125rem"
@@ -124,6 +128,10 @@
       }
     },
     "line_height": {
+      "200": {
+        "$type": "lineHeights",
+        "$value": "calc(16/11)"
+      },
       "300": {
         "$type": "lineHeights",
         "$value": "calc(18/13)"
@@ -542,6 +550,24 @@
           "$value": "#231330"
         }
       },
+      "rgba": {
+        "purple": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#B061F2, .4)"
+            }
+          }
+        },
+        "sky": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#00CFFF, .4)"
+            }
+          }
+        }
+      },
       "red": {
         "100": {
           "$type": "color",
@@ -780,7 +806,7 @@
         "brand": {
           "secondary": {
             "$type": "color",
-            "$value": "linear-gradient(90deg, {bb.color.sky.600}66, {bb.color.purple.600}66)"
+            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
           }
         }
       },

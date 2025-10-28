@@ -624,6 +624,15 @@
       }
     },
     "body": {
+      "xs": {
+        "$type": "typography",
+        "$value": {
+          "fontWeight": "{font.style.body.xs}",
+          "fontSize": "{font.size.body.xs}",
+          "lineHeight": "{font.line_height.body.xs}",
+          "fontFamily": "{font.family.primary}"
+        }
+      },
       "s": {
         "$type": "typography",
         "$value": {
@@ -746,6 +755,10 @@
     },
     "size": {
       "body": {
+        "xs": {
+          "$type": "fontSizes",
+          "$value": "{bb.font.size.200}"
+        },
         "s": {
           "$type": "fontSizes",
           "$value": "{bb.font.size.300}"
@@ -830,6 +843,10 @@
         "$value": "{bb.font.style.semibold}"
       },
       "body": {
+        "xs": {
+          "$type": "fontWeights",
+          "$value": "{bb.font.style.regular}"
+        },
         "s": {
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
@@ -902,6 +919,10 @@
     },
     "line_height": {
       "body": {
+        "xs": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.200}"
+        },
         "s": {
           "$type": "lineHeights",
           "$value": "{bb.line_height.300}"
