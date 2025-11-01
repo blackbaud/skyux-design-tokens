@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [3.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/3.2.0...3.2.1) (2025-11-01)
+
+
+### Bug Fixes
+
+* update tokens for Figma export ([#296](https://github.com/blackbaud/skyux-design-tokens/issues/296)) ([20e5f02](https://github.com/blackbaud/skyux-design-tokens/commit/20e5f0216c8280661c02fab5d5075d5dcf66f4a4))
+* update type composite tokens for Figma export ([#298](https://github.com/blackbaud/skyux-design-tokens/issues/298)) ([88f56c1](https://github.com/blackbaud/skyux-design-tokens/commit/88f56c1a7676782987939518d3ec6fd8328ce0ab))
+
 ## [3.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/3.1.1...3.2.0) (2025-10-20)
 
 
