@@ -94,6 +94,10 @@
         "semibold-italic": {
           "$type": "fontWeights",
           "$value": "Semibold Italic"
+        },
+        "uppercase": {
+          "$type": "textCase",
+          "$value": "uppercase"
         }
       },
       "blkb_sans": {
@@ -125,6 +129,10 @@
       "normal": {
         "$type": "letterSpacing",
         "$value": "normal"
+      },
+      "widest": {
+        "$type": "letterSpacing",
+        "$value": "0.75px"
       }
     },
     "line_height": {
@@ -814,6 +822,10 @@
         "trusted_blue": {
           "$type": "color",
           "$value": "#004054"
+        },
+        "impact_green": {
+          "$type": "color",
+          "$value": "#0CD973"
         }
       }
     },
