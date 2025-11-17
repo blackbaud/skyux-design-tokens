@@ -124,7 +124,7 @@
     "letter_spacing": {
       "wider": {
         "$type": "letterSpacing",
-        "$value": "0.16px"
+        "$value": "0.01rem"
       },
       "normal": {
         "$type": "letterSpacing",
@@ -132,7 +132,7 @@
       },
       "widest": {
         "$type": "letterSpacing",
-        "$value": "0.75px"
+        "$value": "0.046875rem"
       }
     },
     "line_height": {
