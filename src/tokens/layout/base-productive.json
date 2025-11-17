@@ -584,7 +584,7 @@
         "lineHeight": "20",
         "fontWeight": "{font.style.eyebrow}",
         "letterSpacing": "{font.letter_spacing.eyebrow}",
-        "textCase": "{font.case.eyebrow}"
+        "textCase": "{font.text_transform.eyebrow}"
       }
     },
     "heading": {
@@ -1066,7 +1066,7 @@
         }
       }
     },
-    "case": {
+    "text_transform": {
       "eyebrow": {
         "$type": "textCase",
         "$value": "{bb.font.text_transform.uppercase}"
