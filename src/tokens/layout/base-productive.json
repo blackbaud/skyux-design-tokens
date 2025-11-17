@@ -1069,7 +1069,7 @@
     "case": {
       "eyebrow": {
         "$type": "textCase",
-        "$value": "{bb.font.style.uppercase}"
+        "$value": "{bb.font.text_transform.uppercase}"
       }
     }
   },

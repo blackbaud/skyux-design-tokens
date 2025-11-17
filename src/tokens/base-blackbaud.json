@@ -94,7 +94,9 @@
         "semibold-italic": {
           "$type": "fontWeights",
           "$value": "Semibold Italic"
-        },
+        }
+      },
+      "text_transform": {
         "uppercase": {
           "$type": "textCase",
           "$value": "uppercase"
