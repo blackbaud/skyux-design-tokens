@@ -2190,7 +2190,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-wizard-tabset-tabs-space-inset-left: var(--bb-size-fluid-150);
   --sky-comp-wizard-tabset-tabs-space-inset-right: var(--bb-size-fluid-150);
   --sky-comp-wizard-tabset-tabs-space-inset-top: var(--bb-size-0);
-  --sky-font-case-eyebrow: var(--bb-font-text_transform-uppercase);
   --sky-font-family-monospaced: var(--bb-font-monospaced-family);
   --sky-font-letter_spacing-eyebrow: var(--bb-letter_spacing-widest);
   --sky-font-letter_spacing-hint-s: var(--bb-letter_spacing-wider);
@@ -2247,6 +2246,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-style-heading-4: var(--bb-font-style-semibold);
   --sky-font-style-heading-5: var(--bb-font-style-semibold);
   --sky-font-style-input-label: var(--bb-font-style-regular);
+  --sky-font-text_transform-eyebrow: var(--bb-font-text_transform-uppercase);
   --sky-size-avatar-l: var(--bb-size-fluid-550);
   --sky-size-avatar-m: var(--bb-size-fluid-350);
   --sky-size-avatar-s: var(--bb-size-fluid-200);
