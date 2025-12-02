@@ -71,6 +71,10 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
+      "eyebrow": {
+        "$type": "color",
+        "$value": "{bb.color.brand.impact_green}"
+      },
       "input": {
         "action": {
           "$type": "color",

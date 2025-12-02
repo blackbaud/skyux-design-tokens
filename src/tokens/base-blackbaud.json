@@ -96,6 +96,12 @@
           "$value": "Semibold Italic"
         }
       },
+      "text_transform": {
+        "uppercase": {
+          "$type": "textCase",
+          "$value": "uppercase"
+        }
+      },
       "blkb_sans": {
         "name": {
           "$type": "other",
@@ -120,11 +126,15 @@
     "letter_spacing": {
       "wider": {
         "$type": "letterSpacing",
-        "$value": "0.16px"
+        "$value": "0.01rem"
       },
       "normal": {
         "$type": "letterSpacing",
         "$value": "normal"
+      },
+      "widest": {
+        "$type": "letterSpacing",
+        "$value": "0.046875rem"
       }
     },
     "line_height": {
@@ -814,6 +824,10 @@
         "trusted_blue": {
           "$type": "color",
           "$value": "#004054"
+        },
+        "impact_green": {
+          "$type": "color",
+          "$value": "#0CD973"
         }
       }
     },
