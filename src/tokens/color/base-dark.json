@@ -266,6 +266,10 @@
           "$type": "color",
           "$value": "{bb.color.green.700}"
         },
+        "info": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
+        },
         "action": {
           "heavy": {
             "$type": "color",

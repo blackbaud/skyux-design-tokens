@@ -1315,6 +1315,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-icon_matte-action-heavy: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-action-soft: var(--bb-color-blue-900);
   --sky-color-background-icon_matte-danger: var(--bb-color-red-600);
+  --sky-color-background-icon_matte-info: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-700);
   --sky-color-background-icon_matte-warning: var(--bb-color-yellow-600);
   --sky-color-background-input-base: var(--bb-color-gray-900);
@@ -1495,6 +1496,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-icon_matte-action-heavy: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-action-soft: var(--bb-color-blue-100);
   --sky-color-background-icon_matte-danger: var(--bb-color-red-600);
+  --sky-color-background-icon_matte-info: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-700);
   --sky-color-background-icon_matte-warning: var(--bb-color-yellow-600);
   --sky-color-background-input-base: var(--bb-color-white);
@@ -2763,6 +2765,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-icon_matte-action-heavy: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-action-soft: var(--bb-color-blue-900);
   --sky-color-background-icon_matte-danger: var(--bb-color-red-600);
+  --sky-color-background-icon_matte-info: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-700);
   --sky-color-background-icon_matte-warning: var(--bb-color-yellow-600);
   --sky-color-background-input-base: var(--bb-color-gray-900);
