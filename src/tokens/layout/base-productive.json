@@ -576,6 +576,17 @@
     }
   },
   "type": {
+    "eyebrow": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{bb.font.blkb_sans.name}",
+        "fontSize": "{font.size.eyebrow}",
+        "lineHeight": "20",
+        "fontWeight": "{font.style.eyebrow}",
+        "letterSpacing": "{font.letter_spacing.eyebrow}",
+        "textCase": "{font.text_transform.eyebrow}"
+      }
+    },
     "heading": {
       "1": {
         "$type": "typography",
@@ -831,6 +842,10 @@
           "$type": "fontSizes",
           "$value": "{bb.font.size.400}"
         }
+      },
+      "eyebrow": {
+        "$type": "fontSizes",
+        "$value": "{bb.font.size.400}"
       }
     },
     "style": {
@@ -915,6 +930,10 @@
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
+      },
+      "eyebrow": {
+        "$type": "fontWeights",
+        "$value": "{bb.font.style.semibold}"
       }
     },
     "line_height": {
@@ -995,6 +1014,10 @@
           "$type": "lineHeights",
           "$value": "{bb.line_height.400}"
         }
+      },
+      "eyebrow": {
+        "$type": "lineHeights",
+        "$value": "{bb.line_height.400}"
       }
     },
     "letter_spacing": {
@@ -1009,6 +1032,10 @@
           "$type": "letterSpacing",
           "$value": "{bb.letter_spacing.wider}"
         }
+      },
+      "eyebrow": {
+        "$type": "letterSpacing",
+        "$value": "{bb.letter_spacing.widest}"
       }
     },
     "text_decoration": {
@@ -1037,6 +1064,12 @@
           "$type": "textDecoration",
           "$value": "none"
         }
+      }
+    },
+    "text_transform": {
+      "eyebrow": {
+        "$type": "textCase",
+        "$value": "{bb.font.text_transform.uppercase}"
       }
     }
   },

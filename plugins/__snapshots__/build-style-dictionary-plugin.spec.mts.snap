@@ -1050,6 +1050,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-blue-700: #2256aa;
   --bb-color-blue-800: #1a4080;
   --bb-color-blue-900: #112b55;
+  --bb-color-brand-impact_green: #0cd973;
   --bb-color-brand-trusted_blue: #004054;
   --bb-color-gray-100: #d3d5d6;
   --bb-color-gray-1000: #1e2229;
@@ -1187,13 +1188,15 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-style-semibold: 600;
   --bb-font-style-semibold-italic-style: italic;
   --bb-font-style-semibold-italic-weight: 600;
+  --bb-font-text_transform-uppercase: uppercase;
   --bb-font-weight-bold: 700;
   --bb-font-weight-light: 300;
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
   --bb-image-logo-primary-src: url('../images/bb-logo.png');
   --bb-letter_spacing-normal: normal;
-  --bb-letter_spacing-wider: 0.16px;
+  --bb-letter_spacing-wider: 0.01rem;
+  --bb-letter_spacing-widest: 0.046875rem;
   --bb-line_height-200: calc(16/11);
   --bb-line_height-300: calc(18/13);
   --bb-line_height-400: calc(20/15);
@@ -1418,6 +1421,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-danger: var(--bb-color-red-400);
   --sky-color-icon-deemphasized: var(--bb-color-gray-300);
   --sky-color-icon-default: var(--bb-color-gray-25);
+  --sky-color-icon-eyebrow: var(--bb-color-brand-impact_green);
   --sky-color-icon-info: var(--bb-color-blue-600);
   --sky-color-icon-input-action: var(--bb-color-sky-600);
   --sky-color-icon-inverse: var(--bb-color-gray-1100);
@@ -1608,6 +1612,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-danger: var(--bb-color-red-600);
   --sky-color-icon-deemphasized: var(--bb-color-gray-600);
   --sky-color-icon-default: var(--bb-color-gray-900);
+  --sky-color-icon-eyebrow: var(--bb-color-brand-impact_green);
   --sky-color-icon-info: var(--bb-color-blue-600);
   --sky-color-icon-input-action: var(--bb-color-gray-600);
   --sky-color-icon-inverse: var(--bb-color-white);
@@ -2186,6 +2191,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-wizard-tabset-tabs-space-inset-right: var(--bb-size-fluid-150);
   --sky-comp-wizard-tabset-tabs-space-inset-top: var(--bb-size-0);
   --sky-font-family-monospaced: var(--bb-font-monospaced-family);
+  --sky-font-letter_spacing-eyebrow: var(--bb-letter_spacing-widest);
   --sky-font-letter_spacing-hint-s: var(--bb-letter_spacing-wider);
   --sky-font-letter_spacing-input-label: var(--bb-letter_spacing-wider);
   --sky-font-line_height-body-l: var(--bb-line_height-500);
@@ -2196,6 +2202,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-line_height-display-2: var(--bb-line_height-650);
   --sky-font-line_height-display-3: var(--bb-line_height-600);
   --sky-font-line_height-display-4: var(--bb-line_height-500);
+  --sky-font-line_height-eyebrow: var(--bb-line_height-400);
   --sky-font-line_height-heading-1: var(--bb-line_height-800);
   --sky-font-line_height-heading-2: var(--bb-line_height-600);
   --sky-font-line_height-heading-3: var(--bb-line_height-500);
@@ -2213,6 +2220,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-size-display-2: var(--bb-font-size-650);
   --sky-font-size-display-3: var(--bb-font-size-600);
   --sky-font-size-display-4: var(--bb-font-size-500);
+  --sky-font-size-eyebrow: var(--bb-font-size-400);
   --sky-font-size-heading-1: var(--bb-font-size-800);
   --sky-font-size-heading-2: var(--bb-font-size-600);
   --sky-font-size-heading-3: var(--bb-font-size-500);
@@ -2231,12 +2239,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-style-display-3: var(--bb-font-style-semibold);
   --sky-font-style-display-4: var(--bb-font-style-semibold);
   --sky-font-style-emphasized: var(--bb-font-style-semibold);
+  --sky-font-style-eyebrow: var(--bb-font-style-semibold);
   --sky-font-style-heading-1: var(--bb-font-style-regular);
   --sky-font-style-heading-2: var(--bb-font-style-semibold);
   --sky-font-style-heading-3: var(--bb-font-style-semibold);
   --sky-font-style-heading-4: var(--bb-font-style-semibold);
   --sky-font-style-heading-5: var(--bb-font-style-semibold);
   --sky-font-style-input-label: var(--bb-font-style-regular);
+  --sky-font-text_transform-eyebrow: var(--bb-font-text_transform-uppercase);
   --sky-size-avatar-l: var(--bb-size-fluid-550);
   --sky-size-avatar-m: var(--bb-size-fluid-350);
   --sky-size-avatar-s: var(--bb-size-fluid-200);
@@ -2361,6 +2371,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-type-display-2: var(--sky-font-style-display-2) var(--sky-font-size-display-2)/28 'var(--bb-font-blkb_sans-name)';
   --sky-type-display-3: var(--sky-font-style-display-3) var(--sky-font-size-display-3)/28 'var(--bb-font-blkb_sans-name)';
   --sky-type-display-4: var(--sky-font-style-display-4) var(--sky-font-size-display-4)/24 'var(--bb-font-blkb_sans-name)';
+  --sky-type-eyebrow: var(--sky-font-style-eyebrow) var(--sky-font-size-eyebrow)/20 'var(--bb-font-blkb_sans-name)';
   --sky-type-heading-2: var(--sky-font-style-heading-2) var(--sky-font-size-heading-2)/28 'var(--bb-font-blkb_sans-name)';
   --sky-type-heading-3: var(--sky-font-style-heading-3) var(--sky-font-size-heading-3)/24 'var(--bb-font-blkb_sans-name)';
   --sky-type-heading-4: var(--sky-font-style-heading-4) var(--sky-font-size-heading-4)/20 'var(--bb-font-blkb_sans-name)';
@@ -2413,6 +2424,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-blue-700: #2256aa;
   --bb-color-blue-800: #1a4080;
   --bb-color-blue-900: #112b55;
+  --bb-color-brand-impact_green: #0cd973;
   --bb-color-brand-trusted_blue: #004054;
   --bb-color-gray-100: #d3d5d6;
   --bb-color-gray-1000: #1e2229;
@@ -2550,13 +2562,15 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-style-semibold: 600;
   --bb-font-style-semibold-italic-style: italic;
   --bb-font-style-semibold-italic-weight: 600;
+  --bb-font-text_transform-uppercase: uppercase;
   --bb-font-weight-bold: 700;
   --bb-font-weight-light: 300;
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
   --bb-image-logo-primary-src: url('../images/bb-logo.png');
   --bb-letter_spacing-normal: normal;
-  --bb-letter_spacing-wider: 0.16px;
+  --bb-letter_spacing-wider: 0.01rem;
+  --bb-letter_spacing-widest: 0.046875rem;
   --bb-line_height-200: calc(16/11);
   --bb-line_height-300: calc(18/13);
   --bb-line_height-400: calc(20/15);
