@@ -2,6 +2,20 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [3.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/3.2.0...3.3.0) (2025-12-02)
+
+
+### Features
+
+* add color.background.icon_matte.info to light and dark ([#299](https://github.com/blackbaud/skyux-design-tokens/issues/299)) ([c1edcd8](https://github.com/blackbaud/skyux-design-tokens/commit/c1edcd8634c74876044be16cd3fc6aad9acc3ca3))
+* colors and font styles for eyebrows ([#300](https://github.com/blackbaud/skyux-design-tokens/issues/300)) ([d953471](https://github.com/blackbaud/skyux-design-tokens/commit/d9534719d9a2ded88d07b4918dae0329708e7635))
+
+
+### Bug Fixes
+
+* update tokens for Figma export ([#296](https://github.com/blackbaud/skyux-design-tokens/issues/296)) ([20e5f02](https://github.com/blackbaud/skyux-design-tokens/commit/20e5f0216c8280661c02fab5d5075d5dcf66f4a4))
+* update type composite tokens for Figma export ([#298](https://github.com/blackbaud/skyux-design-tokens/issues/298)) ([88f56c1](https://github.com/blackbaud/skyux-design-tokens/commit/88f56c1a7676782987939518d3ec6fd8328ce0ab))
+
 ## [3.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/3.1.1...3.2.0) (2025-10-20)
 
 
