@@ -71,6 +71,10 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
+      "eyebrow": {
+        "$type": "color",
+        "$value": "{bb.color.brand.impact_green}"
+      },
       "input": {
         "action": {
           "$type": "color",
@@ -213,6 +217,28 @@
             "$type": "color",
             "$value": "{bb.color.gray.100}"
           }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue.50}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue.100}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.white}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.50}"
+          }
         }
       },
       "container": {
@@ -243,6 +269,10 @@
         "dimmed": {
           "$type": "color",
           "$value": "{bb.color.gray.25}"
+        },
+        "tooltip": {
+          "$type": "color",
+          "$value": "{bb.color.gray.900}"
         }
       },
       "icon_matte": {
@@ -257,6 +287,10 @@
         "success": {
           "$type": "color",
           "$value": "{bb.color.green.600}"
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
         },
         "action": {
           "heavy": {
@@ -552,6 +586,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{bb.color.gray.300}"
+          }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gray.200}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.blue.600}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{bb.color.gray.200}"
           }
         }
       },

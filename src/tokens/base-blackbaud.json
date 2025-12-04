@@ -15,6 +15,10 @@
     },
     "font": {
       "size": {
+        "200": {
+          "$type": "fontSizes",
+          "$value": "0.6875rem"
+        },
         "300": {
           "$type": "fontSizes",
           "$value": "0.8125rem"
@@ -65,31 +69,37 @@
       "style": {
         "light": {
           "$type": "fontWeights",
-          "$value": "light"
+          "$value": "Light"
         },
         "light-italic": {
           "$type": "fontWeights",
-          "$value": "light italic"
+          "$value": "Light Italic"
         },
         "regular": {
           "$type": "fontWeights",
-          "$value": "regular"
+          "$value": "Regular"
         },
         "normal": {
           "$type": "fontWeights",
-          "$value": "normal"
+          "$value": "Normal"
         },
         "italic": {
           "$type": "fontWeights",
-          "$value": "italic"
+          "$value": "Italic"
         },
         "semibold": {
           "$type": "fontWeights",
-          "$value": "semibold"
+          "$value": "Semibold"
         },
         "semibold-italic": {
           "$type": "fontWeights",
-          "$value": "semibold italic"
+          "$value": "Semibold Italic"
+        }
+      },
+      "text_transform": {
+        "uppercase": {
+          "$type": "textCase",
+          "$value": "uppercase"
         }
       },
       "blkb_sans": {
@@ -116,14 +126,22 @@
     "letter_spacing": {
       "wider": {
         "$type": "letterSpacing",
-        "$value": "0.16px"
+        "$value": "0.01rem"
       },
       "normal": {
         "$type": "letterSpacing",
         "$value": "normal"
+      },
+      "widest": {
+        "$type": "letterSpacing",
+        "$value": "0.046875rem"
       }
     },
     "line_height": {
+      "200": {
+        "$type": "lineHeights",
+        "$value": "calc(16/11)"
+      },
       "300": {
         "$type": "lineHeights",
         "$value": "calc(18/13)"
@@ -614,6 +632,24 @@
           "$value": "#190e22"
         }
       },
+      "rgba": {
+        "purple": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#B061F2, .4)"
+            }
+          }
+        },
+        "sky": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#00CFFF, .4)"
+            }
+          }
+        }
+      },
       "red": {
         "25": {
           "$type": "color",
@@ -912,12 +948,22 @@
         "blue": {
           "$type": "color",
           "$value": "linear-gradient( {bb.color.blue.500}, {bb.color.blue.700})"
+        },
+        "brand": {
+          "secondary": {
+            "$type": "color",
+            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
+          }
         }
       },
       "brand": {
         "trusted_blue": {
           "$type": "color",
           "$value": "#004054"
+        },
+        "impact_green": {
+          "$type": "color",
+          "$value": "#0CD973"
         }
       }
     },

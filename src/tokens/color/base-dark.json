@@ -71,6 +71,10 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
+      "eyebrow": {
+        "$type": "color",
+        "$value": "{bb.color.brand.impact_green}"
+      },
       "input": {
         "action": {
           "$type": "color",
@@ -243,6 +247,10 @@
         "dimmed": {
           "$type": "color",
           "$value": "{bb.color.gray.1000}"
+        },
+        "tooltip": {
+          "$type": "color",
+          "$value": "{bb.color.gray.25}"
         }
       },
       "icon_matte": {
@@ -257,6 +265,10 @@
         "success": {
           "$type": "color",
           "$value": "{bb.color.green.700}"
+        },
+        "info": {
+          "$type": "color",
+          "$value": "{bb.color.blue.600}"
         },
         "action": {
           "heavy": {

@@ -46,6 +46,14 @@
             "$value": "{bb.color.gradient.blue}"
           }
         }
+      },
+      "action": {
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.blue.25}"
+          }
+        }
       }
     },
     "border": {
@@ -68,6 +76,12 @@
           "base": {
             "$type": "color",
             "$value": "{bb.color.slate.250}"
+          }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gradient.brand.secondary}"
           }
         }
       },
