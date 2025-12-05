@@ -1532,7 +1532,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-icon_matte-danger: var(--bb-color-red-600);
   --sky-color-background-icon_matte-info: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-600);
-  --sky-color-background-icon_matte-warning: var(--bb-color-yellow-600);
+  --sky-color-background-icon_matte-warning: var(--bb-color-yellow-400);
   --sky-color-background-input-base: var(--bb-color-white);
   --sky-color-background-input-disabled: var(--bb-color-gray-100);
   --sky-color-background-nav-active: var(--bb-color-blue-100);
@@ -1636,7 +1636,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-tab-hover: var(--bb-color-blue-600);
   --sky-color-border-tab-wizard-disabled: var(--bb-color-transparent);
   --sky-color-border-text_highlight: var(--bb-color-yellow-700);
-  --sky-color-border-warning: var(--bb-color-yellow-600);
+  --sky-color-border-warning: var(--bb-color-yellow-400);
   --sky-color-category-blue: var(--bb-color-sky-300);
   --sky-color-category-green: var(--bb-color-green-300);
   --sky-color-category-orange: var(--bb-color-orange-400);
@@ -1668,7 +1668,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-inverse: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-600);
-  --sky-color-icon-warning: var(--bb-color-yellow-600);
+  --sky-color-icon-warning: var(--bb-color-yellow-400);
   --sky-color-illustration-fill-heavy: var(--bb-color-green-300);
   --sky-color-illustration-fill-soft: var(--bb-color-green-50);
   --sky-color-illustration-fill-softest: var(--bb-color-white);
