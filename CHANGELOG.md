@@ -2,6 +2,17 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/3.3.0...4.0.0) (2025-12-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* cielab, data viz, classify palettes ([#293](https://github.com/blackbaud/skyux-design-tokens/issues/293))
+
+### Features
+
+* cielab, data viz, classify palettes ([#293](https://github.com/blackbaud/skyux-design-tokens/issues/293)) ([680bb11](https://github.com/blackbaud/skyux-design-tokens/commit/680bb118ad7bbcc6770a08c286311cefe1661a2a))
+
 ## [3.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/3.2.0...3.3.0) (2025-12-02)
 
 
