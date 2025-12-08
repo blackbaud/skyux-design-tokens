@@ -1639,10 +1639,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-warning: var(--bb-color-yellow-400);
   --sky-color-category-blue: var(--bb-color-sky-300);
   --sky-color-category-green: var(--bb-color-green-300);
-  --sky-color-category-orange: var(--bb-color-orange-400);
+  --sky-color-category-orange: var(--bb-color-orange-300);
   --sky-color-category-purple: var(--bb-color-purple-300);
   --sky-color-category-red: var(--bb-color-red-300);
-  --sky-color-category-teal: var(--bb-color-teal-400);
+  --sky-color-category-teal: var(--bb-color-teal-300);
   --sky-color-category-yellow: var(--bb-color-yellow-300);
   --sky-color-classify-1-heavy: var(--bb-color-teal-700);
   --sky-color-classify-1-soft: var(--bb-color-teal-200);

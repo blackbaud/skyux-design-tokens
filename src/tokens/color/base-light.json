@@ -759,7 +759,7 @@
       },
       "teal": {
         "$type": "color",
-        "$value": "{bb.color.teal.400}"
+        "$value": "{bb.color.teal.300}"
       },
       "purple": {
         "$type": "color",
@@ -767,7 +767,7 @@
       },
       "orange": {
         "$type": "color",
-        "$value": "{bb.color.orange.400}"
+        "$value": "{bb.color.orange.300}"
       },
       "blue": {
         "$type": "color",
