@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.0.1](https://github.com/blackbaud/skyux-design-tokens/compare/4.0.0...4.0.1) (2025-12-08)
+
+
+### Bug Fixes
+
+* category colors all to same 300 level  ([#304](https://github.com/blackbaud/skyux-design-tokens/issues/304)) ([51662f5](https://github.com/blackbaud/skyux-design-tokens/commit/51662f542598eccbc967a3c9a0a080c33000dc4f))
+* update warning color to 400 from 600 ([#302](https://github.com/blackbaud/skyux-design-tokens/issues/302)) ([4951f11](https://github.com/blackbaud/skyux-design-tokens/commit/4951f11a3ceb53ca526dea785b54012156dad810))
+
 ## [4.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/3.3.0...4.0.0) (2025-12-05)
 
 
