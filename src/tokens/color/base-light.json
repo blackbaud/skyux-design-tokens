@@ -755,31 +755,31 @@
     "category": {
       "green": {
         "$type": "color",
-        "$value": "{bb.color.green.300}"
+        "$value": "{bb.color.green.200}"
       },
       "teal": {
         "$type": "color",
-        "$value": "{bb.color.teal.300}"
+        "$value": "{bb.color.teal.200}"
       },
       "purple": {
         "$type": "color",
-        "$value": "{bb.color.purple.300}"
+        "$value": "{bb.color.purple.200}"
       },
       "orange": {
         "$type": "color",
-        "$value": "{bb.color.orange.300}"
+        "$value": "{bb.color.orange.200}"
       },
       "blue": {
         "$type": "color",
-        "$value": "{bb.color.sky.300}"
+        "$value": "{bb.color.sky.200}"
       },
       "yellow": {
         "$type": "color",
-        "$value": "{bb.color.yellow.300}"
+        "$value": "{bb.color.yellow.200}"
       },
       "red": {
         "$type": "color",
-        "$value": "{bb.color.red.300}"
+        "$value": "{bb.color.red.200}"
       }
     },
     "illustration": {
@@ -1002,11 +1002,11 @@
       "3": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.blue.700}"
+          "$value": "{bb.color.sky.700}"
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.sky.200}"
         }
       },
       "4": {
