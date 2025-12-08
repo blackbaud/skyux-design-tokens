@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.0.2](https://github.com/blackbaud/skyux-design-tokens/compare/4.0.1...4.0.2) (2025-12-08)
+
+
+### Bug Fixes
+
+* category colors for cielab ([#305](https://github.com/blackbaud/skyux-design-tokens/issues/305)) ([a08ec02](https://github.com/blackbaud/skyux-design-tokens/commit/a08ec02c83cba7e81aa73dd7237f1cf6551f236f))
+
 ## [4.0.1](https://github.com/blackbaud/skyux-design-tokens/compare/4.0.0...4.0.1) (2025-12-08)
 
 
