@@ -1064,7 +1064,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-gray-400: #a3a6a9;
   --bb-color-gray-50: #f4f4f5;
   --bb-color-gray-500: #85888d;
-  --bb-color-gray-600: #6b6f74;
+  --bb-color-gray-600: #666b70;
   --bb-color-gray-700: #51555c;
   --bb-color-gray-800: #3b4047;
   --bb-color-gray-900: #252b33;
@@ -2529,7 +2529,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-gray-400: #a3a6a9;
   --bb-color-gray-50: #f4f4f5;
   --bb-color-gray-500: #85888d;
-  --bb-color-gray-600: #6b6f74;
+  --bb-color-gray-600: #666b70;
   --bb-color-gray-700: #51555c;
   --bb-color-gray-800: #3b4047;
   --bb-color-gray-900: #252b33;
