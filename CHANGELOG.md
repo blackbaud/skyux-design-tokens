@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/4.0.2...4.1.0) (2026-01-09)
+
+
+### Features
+
+* flip viz and category colors on base scales for dark mode ([#309](https://github.com/blackbaud/skyux-design-tokens/issues/309)) ([563bab6](https://github.com/blackbaud/skyux-design-tokens/commit/563bab6f6b502d5e72adaddd6b5a6decb30680f6))
+
 ## [4.0.2](https://github.com/blackbaud/skyux-design-tokens/compare/4.0.1...4.0.2) (2025-12-08)
 
 
