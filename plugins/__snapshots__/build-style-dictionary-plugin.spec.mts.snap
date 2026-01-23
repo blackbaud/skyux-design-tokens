@@ -1025,6 +1025,54 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   initial-value: url('data:,');
 }
 
+@property --bb-image-select_icon-base-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-base-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-bb-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-bb-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-base-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-base-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-bb-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-bb-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
 .sky-theme-modern.sky-theme-brand-base {
   --bb-border-radius-0: 0rem;
   --bb-border-radius-012: .125rem;
@@ -1228,6 +1276,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
   --bb-image-logo-primary-src: url('../images/bb-logo.png');
+  --bb-image-select_icon-base-dark-src: url('../images/chevron_up_down_24_fill-base-dark.svg');
+  --bb-image-select_icon-base-light-src: url('../images/chevron_up_down_24_fill-base-light.svg');
+  --bb-image-select_icon-bb-dark-src: url('../images/chevron_up_down_24_fill-bb-dark.svg');
+  --bb-image-select_icon-bb-light-src: url('../images/chevron_up_down_24_fill-bb-light.svg');
+  --bb-image-select_icon-disabled-base-dark-src: url('../images/chevron_up_down_24_fill-disabled-base-dark.svg');
+  --bb-image-select_icon-disabled-base-light-src: url('../images/chevron_up_down_24_fill-disabled-base-light.svg');
+  --bb-image-select_icon-disabled-bb-dark-src: url('../images/chevron_up_down_24_fill-disabled-bb-dark.svg');
+  --bb-image-select_icon-disabled-bb-light-src: url('../images/chevron_up_down_24_fill-disabled-bb-light.svg');
   --bb-letter_spacing-normal: normal;
   --bb-letter_spacing-wider: 0.01rem;
   --bb-letter_spacing-widest: 0.046875rem;
@@ -1538,6 +1594,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-sequence-8: var(--bb-color-teal-300);
   --sky-color-viz-sequence-9: var(--bb-color-teal-200);
   --sky-elevation-none: var(--bb-shadow-gray-0);
+  --sky-image-select_icon-base: var(--bb-image-select_icon-base-dark-src);
+  --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-base-dark-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-elevation-focus: var(--bb-shadow-gray-200);
   --sky-elevation-overflow: var(--bb-shadow-gray-200);
@@ -1818,6 +1876,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-input-disabled: var(--bb-shadow-gray-0);
   --sky-elevation-none: var(--bb-shadow-gray-0);
   --sky-image-logo-primary-src: var(--bb-image-logo-primary-src);
+  --sky-image-select_icon-base: var(--bb-image-select_icon-base-light-src);
+  --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-base-light-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-elevation-focus: var(--bb-shadow-gray-200);
   --sky-elevation-overflow: var(--bb-shadow-gray-200);
@@ -2552,6 +2612,54 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   initial-value: url('data:,');
 }
 
+@property --bb-image-select_icon-base-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-base-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-bb-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-bb-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-base-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-base-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-bb-dark-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
+@property --bb-image-select_icon-disabled-bb-light-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
   --bb-border-radius-0: 0rem;
   --bb-border-radius-012: .125rem;
@@ -2755,6 +2863,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
   --bb-image-logo-primary-src: url('../images/bb-logo.png');
+  --bb-image-select_icon-base-dark-src: url('../images/chevron_up_down_24_fill-base-dark.svg');
+  --bb-image-select_icon-base-light-src: url('../images/chevron_up_down_24_fill-base-light.svg');
+  --bb-image-select_icon-bb-dark-src: url('../images/chevron_up_down_24_fill-bb-dark.svg');
+  --bb-image-select_icon-bb-light-src: url('../images/chevron_up_down_24_fill-bb-light.svg');
+  --bb-image-select_icon-disabled-base-dark-src: url('../images/chevron_up_down_24_fill-disabled-base-dark.svg');
+  --bb-image-select_icon-disabled-base-light-src: url('../images/chevron_up_down_24_fill-disabled-base-light.svg');
+  --bb-image-select_icon-disabled-bb-dark-src: url('../images/chevron_up_down_24_fill-disabled-bb-dark.svg');
+  --bb-image-select_icon-disabled-bb-light-src: url('../images/chevron_up_down_24_fill-disabled-bb-light.svg');
   --bb-letter_spacing-normal: normal;
   --bb-letter_spacing-wider: 0.01rem;
   --bb-letter_spacing-widest: 0.046875rem;
@@ -2878,6 +2994,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-input-disabled: var(--bb-shadow-slate-0);
   --sky-elevation-none: var(--bb-shadow-slate-0);
   --sky-image-logo-primary-src: var(--bb-image-logo-primary-src);
+  --sky-image-select_icon-base: var(--bb-image-select_icon-bb-light-src);
+  --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-bb-light-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-color-background-selected-switch-base: var(--bb-color-gradient-blue);
   --sky-color-border-action-accent-base: var(--bb-color-gradient-brand-secondary);
@@ -3069,6 +3187,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-inverse: var(--bb-color-gray-1100);
   --sky-color-text-selected: var(--bb-color-blue-400);
   --sky-elevation-none: var(--bb-shadow-slate-0);
+  --sky-image-select_icon-base: var(--bb-image-select_icon-bb-dark-src);
+  --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-bb-dark-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-elevation-focus: var(--bb-shadow-slate-200);
   --sky-elevation-overflow: var(--bb-shadow-slate-200);
