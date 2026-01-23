@@ -331,6 +331,16 @@
           "$value": "{bb.image.logo.primary.src}"
         }
       }
+    },
+    "select_icon": {
+      "base": {
+        "$type": "other",
+        "$value": "{bb.image.select_icon.bb.light.src}"
+      },
+      "disabled": {
+        "$type": "other",
+        "$value": "{bb.image.select_icon.disabled.bb.light.src}"
+      }
     }
   },
   "brand": {
