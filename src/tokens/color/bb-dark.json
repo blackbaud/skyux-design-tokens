@@ -768,5 +768,17 @@
       "$type": "opacity",
       "$value": "{bb.opacity.600}"
     }
+  },
+  "image": {
+    "select_icon": {
+      "base": {
+        "$type": "other",
+        "$value": "{bb.image.select_icon.bb.dark.src}"
+      },
+      "disabled": {
+        "$type": "other",
+        "$value": "{bb.image.select_icon.disabled.bb.dark.src}"
+      }
+    }
   }
 }

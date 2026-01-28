@@ -11,6 +11,90 @@
             "$value": "~/assets/images/bb-logo.png"
           }
         }
+      },
+      "select_icon": {
+        "base": {
+          "light": {
+            "src": {
+              "$extensions": {
+                "com.blackbaud.developer.sky-token-format": "url"
+              },
+              "$type": "other",
+              "$value": "~/assets/images/chevron_up_down_24_fill-base-light.svg"
+            }
+          },
+          "dark": {
+            "src": {
+              "$extensions": {
+                "com.blackbaud.developer.sky-token-format": "url"
+              },
+              "$type": "other",
+              "$value": "~/assets/images/chevron_up_down_24_fill-base-dark.svg"
+            }
+          }
+        },
+        "bb": {
+          "light": {
+            "src": {
+              "$extensions": {
+                "com.blackbaud.developer.sky-token-format": "url"
+              },
+              "$type": "other",
+              "$value": "~/assets/images/chevron_up_down_24_fill-bb-light.svg"
+            }
+          },
+          "dark": {
+            "src": {
+              "$extensions": {
+                "com.blackbaud.developer.sky-token-format": "url"
+              },
+              "$type": "other",
+              "$value": "~/assets/images/chevron_up_down_24_fill-bb-dark.svg"
+            }
+          }
+        },
+        "disabled": {
+          "base": {
+            "light": {
+              "src": {
+                "$extensions": {
+                  "com.blackbaud.developer.sky-token-format": "url"
+                },
+                "$type": "other",
+                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-base-light.svg"
+              }
+            },
+            "dark": {
+              "src": {
+                "$extensions": {
+                  "com.blackbaud.developer.sky-token-format": "url"
+                },
+                "$type": "other",
+                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-base-dark.svg"
+              }
+            }
+          },
+          "bb": {
+            "light": {
+              "src": {
+                "$extensions": {
+                  "com.blackbaud.developer.sky-token-format": "url"
+                },
+                "$type": "other",
+                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-bb-light.svg"
+              }
+            },
+            "dark": {
+              "src": {
+                "$extensions": {
+                  "com.blackbaud.developer.sky-token-format": "url"
+                },
+                "$type": "other",
+                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-bb-dark.svg"
+              }
+            }
+          }
+        }
       }
     },
     "font": {
