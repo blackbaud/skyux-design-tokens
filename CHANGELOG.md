@@ -2,6 +2,15 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/4.1.1...4.2.0) (2026-01-29)
+
+
+### Features
+
+* add new configuration for Figma export ([#307](https://github.com/blackbaud/skyux-design-tokens/issues/307)) ([c0e28ce](https://github.com/blackbaud/skyux-design-tokens/commit/c0e28ce7150394e1e13991b5a0d8b73db8f441c5))
+* add select chevron icon ([#313](https://github.com/blackbaud/skyux-design-tokens/issues/313)) ([8eba3f4](https://github.com/blackbaud/skyux-design-tokens/commit/8eba3f4701688a684770d941a419cc79be8fd273))
+* border and background disabled color ref token layer ([#312](https://github.com/blackbaud/skyux-design-tokens/issues/312)) ([5fb431d](https://github.com/blackbaud/skyux-design-tokens/commit/5fb431d0e97eeb2845f1b3ad225c7c854f790f1f))
+
 ## [4.1.1](https://github.com/blackbaud/skyux-design-tokens/compare/4.1.0...4.1.1) (2026-01-09)
 
 
