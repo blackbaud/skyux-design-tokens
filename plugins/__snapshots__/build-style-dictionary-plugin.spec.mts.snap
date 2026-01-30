@@ -1084,7 +1084,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-border-style-solid: solid;
   --bb-brand-name: 'Blackbaud';
   --bb-color-black: #000000;
-  --bb-color-blocking: rgba(255, 255, 255, 0.7);
   --bb-color-blue-100: #eef3fc;
   --bb-color-blue-1000: #0d2040;
   --bb-color-blue-1100: #0b1b35;
@@ -1186,8 +1185,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-red-700: #ae2e31;
   --bb-color-red-800: #822325;
   --bb-color-red-900: #641b1c;
+  --bb-color-rgba-black-70: rgba(0, 0, 0, 0.7);
   --bb-color-rgba-purple-600-40: rgba(176, 97, 242, 0.4);
   --bb-color-rgba-sky-600-40: rgba(0, 207, 255, 0.4);
+  --bb-color-rgba-white-70: rgba(255, 255, 255, 0.7);
   --bb-color-scrim: rgba(37, 43, 51, 0.5);
   --bb-color-sky-100: #d6f7ff;
   --bb-color-sky-1000: #002933;
@@ -1387,7 +1388,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-hover: var(--bb-color-transparent);
-  --sky-color-background-blocking: var(--bb-color-blocking);
+  --sky-color-background-blocking: var(--bb-color-rgba-black-70);
   --sky-color-background-container-base: var(--bb-color-gray-1000);
   --sky-color-background-container-danger: var(--bb-color-red-800);
   --sky-color-background-container-dimmed: var(--bb-color-gray-1000);
@@ -1633,7 +1634,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-hover: var(--bb-color-blue-50);
-  --sky-color-background-blocking: var(--bb-color-blocking);
+  --sky-color-background-blocking: var(--bb-color-rgba-white-70);
   --sky-color-background-container-base: var(--bb-color-white);
   --sky-color-background-container-danger: var(--bb-color-red-200);
   --sky-color-background-container-dimmed: var(--bb-color-gray-25);
@@ -2675,7 +2676,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-border-style-solid: solid;
   --bb-brand-name: 'Blackbaud';
   --bb-color-black: #000000;
-  --bb-color-blocking: rgba(255, 255, 255, 0.7);
   --bb-color-blue-100: #eef3fc;
   --bb-color-blue-1000: #0d2040;
   --bb-color-blue-1100: #0b1b35;
@@ -2777,8 +2777,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-red-700: #ae2e31;
   --bb-color-red-800: #822325;
   --bb-color-red-900: #641b1c;
+  --bb-color-rgba-black-70: rgba(0, 0, 0, 0.7);
   --bb-color-rgba-purple-600-40: rgba(176, 97, 242, 0.4);
   --bb-color-rgba-sky-600-40: rgba(0, 207, 255, 0.4);
+  --bb-color-rgba-white-70: rgba(255, 255, 255, 0.7);
   --bb-color-scrim: rgba(37, 43, 51, 0.5);
   --bb-color-sky-100: #d6f7ff;
   --bb-color-sky-1000: #002933;
@@ -3053,7 +3055,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-disabled: var(--bb-color-gray-700);
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-hover: var(--bb-color-transparent);
-  --sky-color-background-blocking: var(--bb-color-blocking);
+  --sky-color-background-blocking: var(--bb-color-rgba-black-70);
   --sky-color-background-container-base: var(--bb-color-gray-1000);
   --sky-color-background-container-danger: var(--bb-color-red-800);
   --sky-color-background-container-dimmed: var(--bb-color-gray-1000);
