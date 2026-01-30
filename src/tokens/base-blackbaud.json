@@ -360,9 +360,35 @@
         "$type": "color",
         "$value": "rgba(37,43,51,.5)"
       },
-      "blocking": {
-        "$type": "color",
-        "$value": "rgba(255,255,255,.7)"
+      "rgba": {
+        "white": {
+          "70": {
+            "$type": "color",
+            "$value": "rgba(255,255,255,.7)"
+          }
+        },
+        "purple": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#B061F2, .4)"
+            }
+          }
+        },
+        "sky": {
+          "600": {
+            "40": {
+              "$type": "color",
+              "$value": "rgba(#00CFFF, .4)"
+            }
+          }
+        },
+        "black": {
+          "70": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.7)"
+          }
+        }
       },
       "gray": {
         "25": {
@@ -714,24 +740,6 @@
         "1200": {
           "$type": "color",
           "$value": "#190e22"
-        }
-      },
-      "rgba": {
-        "purple": {
-          "600": {
-            "40": {
-              "$type": "color",
-              "$value": "rgba(#B061F2, .4)"
-            }
-          }
-        },
-        "sky": {
-          "600": {
-            "40": {
-              "$type": "color",
-              "$value": "rgba(#00CFFF, .4)"
-            }
-          }
         }
       },
       "red": {

@@ -89,7 +89,7 @@
       },
       "blocking": {
         "$type": "color",
-        "$value": "{bb.color.blocking}"
+        "$value": "{bb.color.rgba.black.70}"
       },
       "text_highlight": {
         "$type": "color",
