@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/4.2.0...4.2.1) (2026-01-30)
+
+
+### Bug Fixes
+
+* remove invalid characters from chevron SVGs ([#316](https://github.com/blackbaud/skyux-design-tokens/issues/316)) ([7ebe59f](https://github.com/blackbaud/skyux-design-tokens/commit/7ebe59fead44bd4a76b78a8f73c3d72faacfe73e))
+
 ## [4.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/4.1.1...4.2.0) (2026-01-29)
 
 
