@@ -20,7 +20,7 @@
                 "com.blackbaud.developer.sky-token-format": "url"
               },
               "$type": "other",
-              "$value": "~/assets/images/chevron_up_down_24_fill-base-light.svg"
+              "$value": "~/assets/images/chevron_up_down_20_fill-base-light.svg"
             }
           },
           "dark": {
@@ -29,7 +29,7 @@
                 "com.blackbaud.developer.sky-token-format": "url"
               },
               "$type": "other",
-              "$value": "~/assets/images/chevron_up_down_24_fill-base-dark.svg"
+              "$value": "~/assets/images/chevron_up_down_20_fill-base-dark.svg"
             }
           }
         },
@@ -40,7 +40,7 @@
                 "com.blackbaud.developer.sky-token-format": "url"
               },
               "$type": "other",
-              "$value": "~/assets/images/chevron_up_down_24_fill-bb-light.svg"
+              "$value": "~/assets/images/chevron_up_down_20_fill-bb-light.svg"
             }
           },
           "dark": {
@@ -49,7 +49,7 @@
                 "com.blackbaud.developer.sky-token-format": "url"
               },
               "$type": "other",
-              "$value": "~/assets/images/chevron_up_down_24_fill-bb-dark.svg"
+              "$value": "~/assets/images/chevron_up_down_20_fill-bb-dark.svg"
             }
           }
         },
@@ -61,7 +61,7 @@
                   "com.blackbaud.developer.sky-token-format": "url"
                 },
                 "$type": "other",
-                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-base-light.svg"
+                "$value": "~/assets/images/chevron_up_down_20_fill-disabled-base-light.svg"
               }
             },
             "dark": {
@@ -70,7 +70,7 @@
                   "com.blackbaud.developer.sky-token-format": "url"
                 },
                 "$type": "other",
-                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-base-dark.svg"
+                "$value": "~/assets/images/chevron_up_down_20_fill-disabled-base-dark.svg"
               }
             }
           },
@@ -81,7 +81,7 @@
                   "com.blackbaud.developer.sky-token-format": "url"
                 },
                 "$type": "other",
-                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-bb-light.svg"
+                "$value": "~/assets/images/chevron_up_down_20_fill-disabled-bb-light.svg"
               }
             },
             "dark": {
@@ -90,7 +90,7 @@
                   "com.blackbaud.developer.sky-token-format": "url"
                 },
                 "$type": "other",
-                "$value": "~/assets/images/chevron_up_down_24_fill-disabled-bb-dark.svg"
+                "$value": "~/assets/images/chevron_up_down_20_fill-disabled-bb-dark.svg"
               }
             }
           }
