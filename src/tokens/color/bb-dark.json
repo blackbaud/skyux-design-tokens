@@ -213,6 +213,28 @@
             "$type": "color",
             "$value": "{bb.color.gray.700}"
           }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.blue.900}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.gray.700}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.gray.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.gray.700}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.background.disabled}"
+          }
         }
       },
       "container": {
@@ -556,6 +578,12 @@
           "disabled": {
             "$type": "color",
             "$value": "{bb.color.gray.800}"
+          }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gradient.brand.secondary}"
           }
         }
       },
