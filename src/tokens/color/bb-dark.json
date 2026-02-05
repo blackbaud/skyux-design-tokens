@@ -87,6 +87,10 @@
         "$type": "color",
         "$value": "{bb.color.scrim}"
       },
+      "disabled": {
+        "$type": "color",
+        "$value": "{bb.color.gray.700}"
+      },
       "blocking": {
         "$type": "color",
         "$value": "{bb.color.rgba.black.70}"
@@ -212,6 +216,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{bb.color.gray.700}"
+          }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.blue.900}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.gray.700}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.gray.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.gray.700}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.background.disabled}"
           }
         }
       },
@@ -427,11 +453,15 @@
         "$type": "color",
         "$value": "{bb.color.blue.400}"
       },
-      "divider": {
+      "disabled": {
         "$type": "color",
         "$value": "{bb.color.gray.800}"
       },
       "elevation": {
+        "$type": "color",
+        "$value": "{bb.color.gray.800}"
+      },
+      "divider": {
         "$type": "color",
         "$value": "{bb.color.gray.800}"
       },
@@ -556,6 +586,12 @@
           "disabled": {
             "$type": "color",
             "$value": "{bb.color.gray.800}"
+          }
+        },
+        "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gradient.brand.secondary}"
           }
         }
       },
