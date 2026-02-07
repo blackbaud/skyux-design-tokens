@@ -2,6 +2,19 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [4.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/4.2.1...4.3.0) (2026-02-07)
+
+
+### Features
+
+* add dark mode colors for accent button ([#320](https://github.com/blackbaud/skyux-design-tokens/issues/320)) ([72e0404](https://github.com/blackbaud/skyux-design-tokens/commit/72e0404901353ef6f7759579088cbffbaa9ebe16))
+* update base tokens for blocking colors in light and dark mode ([#315](https://github.com/blackbaud/skyux-design-tokens/issues/315)) ([f8fb7da](https://github.com/blackbaud/skyux-design-tokens/commit/f8fb7dad22f92ec866d401aa11d9020430d93a7e))
+
+
+### Bug Fixes
+
+* renaming select icons to 20 size ([#319](https://github.com/blackbaud/skyux-design-tokens/issues/319)) ([9bbd24f](https://github.com/blackbaud/skyux-design-tokens/commit/9bbd24f112e0301a45d9f563577a275ca4794668))
+
 ## [4.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/4.2.0...4.2.1) (2026-01-30)
 
 
