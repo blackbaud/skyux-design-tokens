@@ -1748,6 +1748,30 @@
         }
       }
     },
+    "chart": {
+      "tooltip": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          }
+        }
+      }
+    },
     "checkbox": {
       "border": {
         "radius": {
