@@ -817,7 +817,7 @@
       },
       "gridline": {
         "$type": "color",
-        "$value": "{bb.color.gray.200}"
+        "$value": "{bb.color.gray.250}"
       },
       "marker": {
         "$type": "color",
