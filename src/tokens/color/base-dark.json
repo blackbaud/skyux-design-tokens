@@ -1098,6 +1098,12 @@
       "400": {
         "$type": "boxShadow",
         "$value": "{bb.shadow.gray.2400}"
+      },
+      "simple": {
+        "100": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.gray.simple.400}"
+        }
       }
     }
   },

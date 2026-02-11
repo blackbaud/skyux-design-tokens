@@ -796,6 +796,12 @@
       "400": {
         "$type": "boxShadow",
         "$value": "{bb.shadow.slate.2400}"
+      },
+      "simple": {
+        "100": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.simple.400}"
+        }
       }
     }
   },

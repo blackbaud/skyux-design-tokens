@@ -1297,6 +1297,19 @@
               "type": "dropShadow"
             }
           ]
+        },
+        "simple": {
+          "400": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "1",
+              "y": "2",
+              "blur": "4",
+              "spread": "0",
+              "color": "rgba( {bb.color.slate.900},0.5)",
+              "type": "dropShadow"
+            }
+          }
         }
       },
       "gray": {
@@ -1520,6 +1533,19 @@
               "type": "dropShadow"
             }
           ]
+        },
+        "simple": {
+          "400": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "1",
+              "y": "2",
+              "blur": "4",
+              "spread": "0",
+              "color": "rgba( {bb.color.gray.1100},0.5)",
+              "type": "dropShadow"
+            }
+          }
         }
       }
     },
