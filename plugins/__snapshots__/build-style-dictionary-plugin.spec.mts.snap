@@ -1651,7 +1651,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-info: var(--bb-color-blue-200);
   --sky-color-background-container-menu: var(--bb-color-white);
   --sky-color-background-container-success: var(--bb-color-green-200);
-  --sky-color-background-container-tooltip: var(--bb-color-gray-900);
+  --sky-color-background-container-tooltip: var(--bb-color-gray-1000);
   --sky-color-background-container-warning: var(--bb-color-yellow-200);
   --sky-color-background-disabled: var(--bb-color-gray-100);
   --sky-color-background-file_drop: var(--bb-color-gray-25);
@@ -1774,7 +1774,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-action: var(--bb-color-blue-600);
   --sky-color-icon-danger: var(--bb-color-red-600);
   --sky-color-icon-deemphasized: var(--bb-color-gray-600);
-  --sky-color-icon-default: var(--bb-color-gray-900);
+  --sky-color-icon-default: var(--bb-color-gray-1000);
   --sky-color-icon-eyebrow: var(--bb-color-brand-impact_green);
   --sky-color-icon-info: var(--bb-color-blue-600);
   --sky-color-icon-input-action: var(--bb-color-gray-600);
@@ -1790,7 +1790,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-action_contrast: var(--bb-color-blue-700);
   --sky-color-text-danger: var(--bb-color-red-600);
   --sky-color-text-deemphasized: var(--bb-color-gray-600);
-  --sky-color-text-default: var(--bb-color-gray-900);
+  --sky-color-text-default: var(--bb-color-gray-1000);
   --sky-color-text-heading: var(--bb-color-gray-1100);
   --sky-color-text-inverse: var(--bb-color-white);
   --sky-color-text-selected: var(--bb-color-blue-600);
@@ -1824,7 +1824,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-diverge-pos-8: var(--bb-color-blue-800);
   --sky-color-viz-diverge-pos-9: var(--bb-color-blue-900);
   --sky-color-viz-gridline: var(--bb-color-gray-200);
-  --sky-color-viz-marker: var(--bb-color-gray-900);
+  --sky-color-viz-marker: var(--bb-color-gray-1000);
   --sky-color-viz-sequence-1: var(--bb-color-teal-100);
   --sky-color-viz-sequence-10: var(--bb-color-teal-1000);
   --sky-color-viz-sequence-2: var(--bb-color-teal-200);
