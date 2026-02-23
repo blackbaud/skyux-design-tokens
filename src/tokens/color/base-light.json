@@ -276,7 +276,7 @@
         },
         "tooltip": {
           "$type": "color",
-          "$value": "{bb.color.gray.900}"
+          "$value": "{bb.color.gray.1000}"
         }
       },
       "icon_matte": {
@@ -821,7 +821,7 @@
       },
       "marker": {
         "$type": "color",
-        "$value": "{bb.color.gray.900}"
+        "$value": "{bb.color.gray.1000}"
       },
       "category": {
         "1": {
