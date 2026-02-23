@@ -1782,6 +1782,28 @@
             }
           }
         }
+      },
+      "legend_item": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          }
+        }
       }
     },
     "checkbox": {
