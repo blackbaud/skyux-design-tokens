@@ -2038,6 +2038,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-card-space-offset-left: var(--bb-size-0);
   --sky-comp-card-space-offset-right: var(--bb-size-fluid-50);
   --sky-comp-card-space-offset-top: var(--bb-size-0);
+  --sky-comp-chart-legend_item-space-inset-bottom: var(--bb-size-fluid-25);
+  --sky-comp-chart-legend_item-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-chart-legend_item-space-inset-right: var(--bb-size-fluid-50);
+  --sky-comp-chart-legend_item-space-inset-top: var(--bb-size-fluid-25);
   --sky-comp-chart-tooltip-space-inset-bottom: var(--bb-size-fluid-50);
   --sky-comp-chart-tooltip-space-inset-left: var(--bb-size-fluid-50);
   --sky-comp-chart-tooltip-space-inset-right: var(--bb-size-fluid-50);
