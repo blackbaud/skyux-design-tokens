@@ -2,6 +2,13 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [5.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.0.0...5.1.0) (2026-02-26)
+
+
+### Features
+
+* chart component tokens color scale updates ([#321](https://github.com/blackbaud/skyux-design-tokens/issues/321)) ([1121b0b](https://github.com/blackbaud/skyux-design-tokens/commit/1121b0bb4ebd387f158c64a95fd17ac097d477ac))
+
 ## [5.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/4.3.0...5.0.0) (2026-02-24)
 
 
