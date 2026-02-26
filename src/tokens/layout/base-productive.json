@@ -466,6 +466,32 @@
       "$type": "sizing",
       "$value": "{bb.size.fluid.75}"
     },
+    "avatar": {
+      "s": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.200}"
+      },
+      "m": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.350}"
+      },
+      "l": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.550}"
+      }
+    },
+    "chart": {
+      "tick_length": {
+        "measure": {
+          "$type": "sizing",
+          "$value": "{bb.size.fluid.75}"
+        },
+        "category": {
+          "$type": "sizing",
+          "$value": "{bb.size.0}"
+        }
+      }
+    },
     "icon": {
       "xxxs": {
         "$type": "sizing",
@@ -522,6 +548,18 @@
         "$value": "{bb.size.fluid.600}"
       }
     },
+    "max_width": {
+      "overlay_message": {
+        "$type": "sizing",
+        "$value": "{bb.size.reading_container.max_width}"
+      }
+    },
+    "thumbnail": {
+      "l": {
+        "$type": "sizing",
+        "$value": "{bb.size.fixed.600}"
+      }
+    },
     "width": {
       "resize_handle": {
         "$type": "sizing",
@@ -546,32 +584,6 @@
           "$type": "sizing",
           "$value": "{bb.size.fixed.6000}"
         }
-      }
-    },
-    "max_width": {
-      "overlay_message": {
-        "$type": "sizing",
-        "$value": "{bb.size.reading_container.max_width}"
-      }
-    },
-    "thumbnail": {
-      "l": {
-        "$type": "sizing",
-        "$value": "{bb.size.fixed.600}"
-      }
-    },
-    "avatar": {
-      "s": {
-        "$type": "sizing",
-        "$value": "{bb.size.fluid.200}"
-      },
-      "m": {
-        "$type": "sizing",
-        "$value": "{bb.size.fluid.350}"
-      },
-      "l": {
-        "$type": "sizing",
-        "$value": "{bb.size.fluid.550}"
       }
     }
   },
@@ -1744,6 +1756,52 @@
           "left": {
             "$type": "spacing",
             "$value": "{bb.size.0}"
+          }
+        }
+      }
+    },
+    "chart": {
+      "tooltip": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
+          }
+        }
+      },
+      "legend_item": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.25}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            }
           }
         }
       }

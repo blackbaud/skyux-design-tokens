@@ -1098,6 +1098,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-blue-600: #2b6bd5;
   --bb-color-blue-700: #2256aa;
   --bb-color-blue-800: #1a4080;
+  --bb-color-blue-850: #16366b;
   --bb-color-blue-900: #112b55;
   --bb-color-brand-impact_green: #0cd973;
   --bb-color-brand-trusted_blue: #004054;
@@ -1107,6 +1108,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-gray-1200: #0f1114;
   --bb-color-gray-200: #e0e1e2;
   --bb-color-gray-25: #fbfbfb;
+  --bb-color-gray-250: #d5d6d8;
   --bb-color-gray-300: #c2c4c6;
   --bb-color-gray-400: #a3a6a9;
   --bb-color-gray-50: #f4f4f5;
@@ -1114,6 +1116,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-gray-600: #666b70;
   --bb-color-gray-700: #51555c;
   --bb-color-gray-800: #3b4047;
+  --bb-color-gray-850: #30363d;
   --bb-color-gray-900: #252b33;
   --bb-color-green-100: #d8f9e9;
   --bb-color-green-1000: #033019;
@@ -1218,6 +1221,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-slate-600: #536f9d;
   --bb-color-slate-700: #42597e;
   --bb-color-slate-800: #32435e;
+  --bb-color-slate-850: #2a384f;
   --bb-color-slate-900: #212c3f;
   --bb-color-teal-100: #dcf6f5;
   --bb-color-teal-1000: #022a28;
@@ -1358,6 +1362,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-gray-400: 0 2px 4px -1px rgba(22, 26, 31, 0.2), 0 1px 10px 0 rgba(22, 26, 31, 0.12), 0 4px 5px 0 rgba(22, 26, 31, 0.14);
   --bb-shadow-gray-50: 0 1px 1px 0 rgba(22, 26, 31, 0.12), 0 1.5px 1px -1px rgba(22, 26, 31, 0.12);
   --bb-shadow-gray-800: 0 5px 5px -3px rgba(22, 26, 31, 0.2), 0 3px 14px 2px rgba(22, 26, 31, 0.12), 0 8px 10px 1px rgba(22, 26, 31, 0.14);
+  --bb-shadow-gray-simple-400: 1px 2px 4px 0 rgba(22, 26, 31, 0.5);
   --bb-shadow-slate-100: 0 1px 3px 0 rgba(33, 44, 63, 0.2), 0 2px 1px -1px rgba(33, 44, 63, 0.12), 0 1px 1px 0 rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-1600: 0 8px 10px -5px rgba(33, 44, 63, 0.2), 0 6px 30px 5px rgba(33, 44, 63, 0.12), 0 16px 24px 2px rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-200: 0 1px 8px 0 rgba(33, 44, 63, 0.2), 0 3px 3px -2px rgba(33, 44, 63, 0.12), 0 3px 4px 0 rgba(33, 44, 63, 0.14);
@@ -1366,6 +1371,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-slate-400: 0 2px 4px -1px rgba(33, 44, 63, 0.2), 0 1px 10px 0 rgba(33, 44, 63, 0.12), 0 4px 5px 0 rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-50: 0 1px 1px 0 rgba(33, 44, 63, 0.12), 0 1.5px 1px -1px rgba(33, 44, 63, 0.12);
   --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(33, 44, 63, 0.5);
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
   --sky-color-background-action-accent-active: var(--bb-color-gray-600);
@@ -1572,7 +1578,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-diverge-pos-7: var(--bb-color-blue-400);
   --sky-color-viz-diverge-pos-8: var(--bb-color-blue-300);
   --sky-color-viz-diverge-pos-9: var(--bb-color-blue-200);
-  --sky-color-viz-gridline: var(--bb-color-gray-900);
+  --sky-color-viz-gridline: var(--bb-color-gray-850);
   --sky-color-viz-marker: var(--bb-color-gray-200);
   --sky-color-viz-sequence-1: var(--bb-color-teal-1000);
   --sky-color-viz-sequence-10: var(--bb-color-teal-100);
@@ -1616,6 +1622,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-200: var(--bb-shadow-gray-800);
   --sky-elevation-overlay-300: var(--bb-shadow-gray-1600);
   --sky-elevation-overlay-400: var(--bb-shadow-gray-2400);
+  --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
 }
 .sky-theme-modern.sky-theme-brand-base {
@@ -1823,7 +1830,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-diverge-pos-7: var(--bb-color-blue-700);
   --sky-color-viz-diverge-pos-8: var(--bb-color-blue-800);
   --sky-color-viz-diverge-pos-9: var(--bb-color-blue-900);
-  --sky-color-viz-gridline: var(--bb-color-gray-200);
+  --sky-color-viz-gridline: var(--bb-color-gray-250);
   --sky-color-viz-marker: var(--bb-color-gray-1000);
   --sky-color-viz-sequence-1: var(--bb-color-teal-100);
   --sky-color-viz-sequence-10: var(--bb-color-teal-1000);
@@ -1900,6 +1907,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-200: var(--bb-shadow-gray-800);
   --sky-elevation-overlay-300: var(--bb-shadow-gray-1600);
   --sky-elevation-overlay-400: var(--bb-shadow-gray-2400);
+  --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
 }
 .sky-theme-modern.sky-theme-brand-base {
@@ -2030,6 +2038,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-card-space-offset-left: var(--bb-size-0);
   --sky-comp-card-space-offset-right: var(--bb-size-fluid-50);
   --sky-comp-card-space-offset-top: var(--bb-size-0);
+  --sky-comp-chart-legend_item-space-inset-bottom: var(--bb-size-fluid-25);
+  --sky-comp-chart-legend_item-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-chart-legend_item-space-inset-right: var(--bb-size-fluid-50);
+  --sky-comp-chart-legend_item-space-inset-top: var(--bb-size-fluid-25);
+  --sky-comp-chart-tooltip-space-inset-bottom: var(--bb-size-fluid-50);
+  --sky-comp-chart-tooltip-space-inset-left: var(--bb-size-fluid-50);
+  --sky-comp-chart-tooltip-space-inset-right: var(--bb-size-fluid-50);
+  --sky-comp-chart-tooltip-space-inset-top: var(--bb-size-fluid-50);
   --sky-comp-colorpicker-content-space-inset-bottom: var(--bb-size-fluid-50);
   --sky-comp-colorpicker-content-space-inset-left: var(--bb-size-fluid-75);
   --sky-comp-colorpicker-content-space-inset-right: var(--bb-size-fluid-75);
@@ -2478,6 +2494,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-size-avatar-l: var(--bb-size-fluid-550);
   --sky-size-avatar-m: var(--bb-size-fluid-350);
   --sky-size-avatar-s: var(--bb-size-fluid-200);
+  --sky-size-chart-tick_length-category: var(--bb-size-0);
+  --sky-size-chart-tick_length-measure: var(--bb-size-fluid-75);
   --sky-size-icon-l: var(--bb-size-fluid-150);
   --sky-size-icon-m: var(--bb-size-fluid-125);
   --sky-size-icon-s: var(--bb-size-fluid-100);
@@ -2700,6 +2718,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-blue-600: #2b6bd5;
   --bb-color-blue-700: #2256aa;
   --bb-color-blue-800: #1a4080;
+  --bb-color-blue-850: #16366b;
   --bb-color-blue-900: #112b55;
   --bb-color-brand-impact_green: #0cd973;
   --bb-color-brand-trusted_blue: #004054;
@@ -2709,6 +2728,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-gray-1200: #0f1114;
   --bb-color-gray-200: #e0e1e2;
   --bb-color-gray-25: #fbfbfb;
+  --bb-color-gray-250: #d5d6d8;
   --bb-color-gray-300: #c2c4c6;
   --bb-color-gray-400: #a3a6a9;
   --bb-color-gray-50: #f4f4f5;
@@ -2716,6 +2736,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-gray-600: #666b70;
   --bb-color-gray-700: #51555c;
   --bb-color-gray-800: #3b4047;
+  --bb-color-gray-850: #30363d;
   --bb-color-gray-900: #252b33;
   --bb-color-green-100: #d8f9e9;
   --bb-color-green-1000: #033019;
@@ -2820,6 +2841,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-slate-600: #536f9d;
   --bb-color-slate-700: #42597e;
   --bb-color-slate-800: #32435e;
+  --bb-color-slate-850: #2a384f;
   --bb-color-slate-900: #212c3f;
   --bb-color-teal-100: #dcf6f5;
   --bb-color-teal-1000: #022a28;
@@ -2960,6 +2982,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-gray-400: 0 2px 4px -1px rgba(22, 26, 31, 0.2), 0 1px 10px 0 rgba(22, 26, 31, 0.12), 0 4px 5px 0 rgba(22, 26, 31, 0.14);
   --bb-shadow-gray-50: 0 1px 1px 0 rgba(22, 26, 31, 0.12), 0 1.5px 1px -1px rgba(22, 26, 31, 0.12);
   --bb-shadow-gray-800: 0 5px 5px -3px rgba(22, 26, 31, 0.2), 0 3px 14px 2px rgba(22, 26, 31, 0.12), 0 8px 10px 1px rgba(22, 26, 31, 0.14);
+  --bb-shadow-gray-simple-400: 1px 2px 4px 0 rgba(22, 26, 31, 0.5);
   --bb-shadow-slate-100: 0 1px 3px 0 rgba(33, 44, 63, 0.2), 0 2px 1px -1px rgba(33, 44, 63, 0.12), 0 1px 1px 0 rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-1600: 0 8px 10px -5px rgba(33, 44, 63, 0.2), 0 6px 30px 5px rgba(33, 44, 63, 0.12), 0 16px 24px 2px rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-200: 0 1px 8px 0 rgba(33, 44, 63, 0.2), 0 3px 3px -2px rgba(33, 44, 63, 0.12), 0 3px 4px 0 rgba(33, 44, 63, 0.14);
@@ -2968,6 +2991,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-slate-400: 0 2px 4px -1px rgba(33, 44, 63, 0.2), 0 1px 10px 0 rgba(33, 44, 63, 0.12), 0 4px 5px 0 rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-50: 0 1px 1px 0 rgba(33, 44, 63, 0.12), 0 1.5px 1px -1px rgba(33, 44, 63, 0.12);
   --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(33, 44, 63, 0.5);
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
   --sky-brand-name: var(--bb-brand-name);
@@ -3037,6 +3061,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-200: var(--bb-shadow-slate-800);
   --sky-elevation-overlay-300: var(--bb-shadow-slate-1600);
   --sky-elevation-overlay-400: var(--bb-shadow-slate-2400);
+  --sky-elevation-overlay-simple-100: var(--bb-shadow-slate-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-slate-100);
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud.sky-theme-mode-dark {
@@ -3220,6 +3245,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-200: var(--bb-shadow-slate-800);
   --sky-elevation-overlay-300: var(--bb-shadow-slate-1600);
   --sky-elevation-overlay-400: var(--bb-shadow-slate-2400);
+  --sky-elevation-overlay-simple-100: var(--bb-shadow-slate-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-slate-100);
 }
 "

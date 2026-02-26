@@ -817,7 +817,7 @@
       },
       "gridline": {
         "$type": "color",
-        "$value": "{bb.color.gray.200}"
+        "$value": "{bb.color.gray.250}"
       },
       "marker": {
         "$type": "color",
@@ -1094,6 +1094,12 @@
       "400": {
         "$type": "boxShadow",
         "$value": "{bb.shadow.gray.2400}"
+      },
+      "simple": {
+        "100": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.gray.simple.400}"
+        }
       }
     },
     "action": {
