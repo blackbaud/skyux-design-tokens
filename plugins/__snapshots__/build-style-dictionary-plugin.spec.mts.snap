@@ -2495,7 +2495,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-size-avatar-m: var(--bb-size-fluid-350);
   --sky-size-avatar-s: var(--bb-size-fluid-200);
   --sky-size-chart-tick_length-category: var(--bb-size-0);
-  --sky-size-chart-tick_length-value: var(--bb-size-fluid-75);
+  --sky-size-chart-tick_length-measure: var(--bb-size-fluid-75);
   --sky-size-icon-l: var(--bb-size-fluid-150);
   --sky-size-icon-m: var(--bb-size-fluid-125);
   --sky-size-icon-s: var(--bb-size-fluid-100);

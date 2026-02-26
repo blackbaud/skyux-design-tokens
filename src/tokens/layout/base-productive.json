@@ -482,7 +482,7 @@
     },
     "chart": {
       "tick_length": {
-        "value": {
+        "measure": {
           "$type": "sizing",
           "$value": "{bb.size.fluid.75}"
         },
