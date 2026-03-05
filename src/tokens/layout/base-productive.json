@@ -3844,5 +3844,15 @@
         }
       }
     }
+  },
+  "duration": {
+    "short": {
+      "$type": "duration",
+      "$value": "{bb.duration.150}"
+    },
+    "medium": {
+      "$type": "duration",
+      "$value": "{bb.duration.250}"
+    }
   }
 }

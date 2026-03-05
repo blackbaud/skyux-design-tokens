@@ -1712,6 +1712,16 @@
         "$type": "other",
         "$value": "'Blackbaud'"
       }
+    },
+    "duration": {
+      "150": {
+        "$type": "duration",
+        "$value": "150ms"
+      },
+      "250": {
+        "$type": "duration",
+        "$value": "250ms"
+      }
     }
   }
 }
