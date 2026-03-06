@@ -1399,6 +1399,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-hover: var(--bb-color-transparent);
   --sky-color-background-blocking: var(--bb-color-rgba-black-70);
+  --sky-color-background-container-backdrop: var(--bb-color-gray-900);
   --sky-color-background-container-base: var(--bb-color-gray-1000);
   --sky-color-background-container-danger: var(--bb-color-red-800);
   --sky-color-background-container-dimmed: var(--bb-color-gray-1000);
@@ -1652,6 +1653,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-hover: var(--bb-color-blue-50);
   --sky-color-background-blocking: var(--bb-color-rgba-white-70);
+  --sky-color-background-container-backdrop: var(--bb-color-gray-200);
   --sky-color-background-container-base: var(--bb-color-white);
   --sky-color-background-container-danger: var(--bb-color-red-200);
   --sky-color-background-container-dimmed: var(--bb-color-gray-25);
@@ -2996,6 +2998,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-base: var(--bb-color-blue-25);
+  --sky-color-background-container-backdrop: var(--bb-color-slate-200);
   --sky-color-background-container-dimmed: var(--bb-color-slate-25);
   --sky-color-background-file_drop: var(--bb-color-slate-25);
   --sky-color-background-input-base: var(--bb-color-slate-25);
