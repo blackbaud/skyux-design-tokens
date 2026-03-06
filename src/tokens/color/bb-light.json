@@ -31,6 +31,10 @@
         "dimmed": {
           "$type": "color",
           "$value": "{bb.color.slate.25}"
+        },
+        "backdrop": {
+          "$type": "color",
+          "$value": "{bb.color.slate.200}"
         }
       },
       "input": {
