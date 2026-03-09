@@ -1253,6 +1253,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-yellow-700: #92661e;
   --bb-color-yellow-800: #6e4d17;
   --bb-color-yellow-900: #503811;
+  --bb-duration-150: 150ms;
+  --bb-duration-250: 250ms;
   --bb-font-blkb_sans-fallback: Helvetica Neue, Arial, sans-serif;
   --bb-font-blkb_sans-name: BLKB Sans;
   --bb-font-monospaced-family: Menlo, Monaco, Consolas, Courier New, monospace;
@@ -2434,6 +2436,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-wizard-tabset-tabs-space-inset-left: var(--bb-size-fluid-150);
   --sky-comp-wizard-tabset-tabs-space-inset-right: var(--bb-size-fluid-150);
   --sky-comp-wizard-tabset-tabs-space-inset-top: var(--bb-size-0);
+  --sky-duration-medium: var(--bb-duration-250);
+  --sky-duration-short: var(--bb-duration-150);
   --sky-font-family-monospaced: var(--bb-font-monospaced-family);
   --sky-font-letter_spacing-eyebrow: var(--bb-letter_spacing-widest);
   --sky-font-letter_spacing-hint-s: var(--bb-letter_spacing-wider);
@@ -2873,6 +2877,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-yellow-700: #92661e;
   --bb-color-yellow-800: #6e4d17;
   --bb-color-yellow-900: #503811;
+  --bb-duration-150: 150ms;
+  --bb-duration-250: 250ms;
   --bb-font-blkb_sans-fallback: Helvetica Neue, Arial, sans-serif;
   --bb-font-blkb_sans-name: BLKB Sans;
   --bb-font-monospaced-family: Menlo, Monaco, Consolas, Courier New, monospace;
