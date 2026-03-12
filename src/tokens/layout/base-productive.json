@@ -777,6 +777,10 @@
       }
     },
     "size": {
+      "eyebrow": {
+        "$type": "fontSizes",
+        "$value": "{bb.font.size.400}"
+      },
       "body": {
         "xs": {
           "$type": "fontSizes",
@@ -854,10 +858,6 @@
           "$type": "fontSizes",
           "$value": "{bb.font.size.400}"
         }
-      },
-      "eyebrow": {
-        "$type": "fontSizes",
-        "$value": "{bb.font.size.400}"
       }
     },
     "style": {
@@ -865,9 +865,21 @@
         "$type": "fontWeights",
         "$value": "{bb.font.style.italic}"
       },
+      "em": {
+        "$type": "fontWeights",
+        "$value": "{bb.font.style.italic}"
+      },
       "emphasized": {
         "$type": "fontWeights",
         "$value": "{bb.font.style.semibold}"
+      },
+      "eyebrow": {
+        "$type": "fontWeights",
+        "$value": "{bb.font.style.semibold}"
+      },
+      "strong": {
+        "$type": "fontWeights",
+        "$value": "{bb.font.weight.bold}"
       },
       "body": {
         "xs": {
@@ -942,13 +954,13 @@
           "$type": "fontWeights",
           "$value": "{bb.font.style.regular}"
         }
-      },
-      "eyebrow": {
-        "$type": "fontWeights",
-        "$value": "{bb.font.style.semibold}"
       }
     },
     "line_height": {
+      "eyebrow": {
+        "$type": "lineHeights",
+        "$value": "{bb.line_height.400}"
+      },
       "body": {
         "xs": {
           "$type": "lineHeights",
@@ -1027,17 +1039,21 @@
           "$value": "{bb.line_height.400}"
         }
       },
-      "eyebrow": {
-        "$type": "lineHeights",
-        "$value": "{bb.line_height.400}"
+      "paragraph": {
+        "m": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.450}"
+        },
+        "l": {
+          "$type": "lineHeights",
+          "$value": "{bb.line_height.550}"
+        }
       }
     },
     "letter_spacing": {
-      "input": {
-        "label": {
-          "$type": "letterSpacing",
-          "$value": "{bb.letter_spacing.wider}"
-        }
+      "eyebrow": {
+        "$type": "letterSpacing",
+        "$value": "{bb.letter_spacing.widest}"
       },
       "hint": {
         "s": {
@@ -1045,9 +1061,11 @@
           "$value": "{bb.letter_spacing.wider}"
         }
       },
-      "eyebrow": {
-        "$type": "letterSpacing",
-        "$value": "{bb.letter_spacing.widest}"
+      "input": {
+        "label": {
+          "$type": "letterSpacing",
+          "$value": "{bb.letter_spacing.wider}"
+        }
       }
     },
     "text_decoration": {

@@ -234,9 +234,17 @@
         "$type": "lineHeights",
         "$value": "calc(20/15)"
       },
+      "450": {
+        "$type": "lineHeights",
+        "$value": "calc(22/15)"
+      },
       "500": {
         "$type": "lineHeights",
         "$value": "calc(24/17)"
+      },
+      "550": {
+        "$type": "lineHeights",
+        "$value": "calc(26/17)"
       },
       "600": {
         "$type": "lineHeights",
