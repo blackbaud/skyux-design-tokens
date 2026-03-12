@@ -1297,7 +1297,9 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-line_height-200: calc(16/11);
   --bb-line_height-300: calc(18/13);
   --bb-line_height-400: calc(20/15);
+  --bb-line_height-450: calc(22/15);
   --bb-line_height-500: calc(24/17);
+  --bb-line_height-550: calc(26/17);
   --bb-line_height-600: calc(28/19);
   --bb-line_height-650: calc(28/21);
   --bb-line_height-700: calc(32/24);
@@ -1917,6 +1919,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
 .sky-theme-modern.sky-theme-brand-base {
   --sky-font-style-deemphasized-style: italic;
   --sky-font-style-deemphasized-weight: 400;
+  --sky-font-style-em-style: italic;
+  --sky-font-style-em-weight: 400;
   --sky-font-style-hint-m-style: italic;
   --sky-font-style-hint-m-weight: 400;
   --sky-font-style-hint-s-style: italic;
@@ -2462,6 +2466,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-line_height-hint-s: var(--bb-line_height-300);
   --sky-font-line_height-input-label: var(--bb-line_height-300);
   --sky-font-line_height-input-val: var(--bb-line_height-400);
+  --sky-font-line_height-paragraph-l: var(--bb-line_height-550);
+  --sky-font-line_height-paragraph-m: var(--bb-line_height-450);
   --sky-font-size-body-l: var(--bb-font-size-500);
   --sky-font-size-body-m: var(--bb-font-size-400);
   --sky-font-size-body-s: var(--bb-font-size-300);
@@ -2496,6 +2502,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-style-heading-4: var(--bb-font-style-semibold);
   --sky-font-style-heading-5: var(--bb-font-style-semibold);
   --sky-font-style-input-label: var(--bb-font-style-regular);
+  --sky-font-style-strong: var(--bb-font-weight-bold);
   --sky-font-text_transform-eyebrow: var(--bb-font-text_transform-uppercase);
   --sky-size-avatar-l: var(--bb-size-fluid-550);
   --sky-size-avatar-m: var(--bb-size-fluid-350);
@@ -2923,7 +2930,9 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-line_height-200: calc(16/11);
   --bb-line_height-300: calc(18/13);
   --bb-line_height-400: calc(20/15);
+  --bb-line_height-450: calc(22/15);
   --bb-line_height-500: calc(24/17);
+  --bb-line_height-550: calc(26/17);
   --bb-line_height-600: calc(28/19);
   --bb-line_height-650: calc(28/21);
   --bb-line_height-700: calc(32/24);
