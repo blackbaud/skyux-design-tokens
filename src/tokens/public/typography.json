@@ -330,7 +330,7 @@
           },
           "deemphasized": {
             "m": {
-              "$value": "{font.style.deemphasized}",
+              "$value": "{font.style.body.m}",
               "$type": "fontWeights",
               "$description": "Use for secondary information that describes or contextualizes an item to lower it in the visual hierarchy alongside the primary text that identifies an item.",
               "$extensions": {
@@ -342,7 +342,7 @@
               }
             },
             "s": {
-              "$value": "{font.style.deemphasized}",
+              "$value": "{font.style.body.s}",
               "$type": "fontWeights",
               "$description": "Use for tertiary information in a text group to lower it in the visual hierarchy below secondary information.",
               "$extensions": {

@@ -80,7 +80,7 @@
               "className": "sky-theme-font-body-deemphasized-m",
               "description": "Use for secondary information that describes or contextualizes an item to lower it in the visual hierarchy alongside the primary text that identifies an item.",
               "properties": {
-                "font": "var(--sky-theme-font-weight-body-deemphasized-m-weight) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m)"
+                "font": "var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m)"
               },
               "deprecatedClassNames": ["sky-font-deemphasized"]
             },
@@ -106,7 +106,7 @@
               "className": "sky-theme-font-body-deemphasized-s",
               "description": "Use for tertiary information in a text group to lower it in the visual hierarchy below secondary information.",
               "properties": {
-                "font": "var(--sky-theme-font-weight-body-deemphasized-s-weight) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s)"
+                "font": "var(--sky-theme-font-weight-body-deemphasized-s) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s)"
               }
             },
             {
