@@ -1,6 +1,11 @@
 {
   "theme": {
     "space": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Spacing"
+        }
+      },
       "stacked": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
