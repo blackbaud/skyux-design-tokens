@@ -879,7 +879,7 @@
       },
       "strong": {
         "$type": "fontWeights",
-        "$value": "{bb.font.weight.bold}"
+        "$value": "{bb.font.style.bold}"
       },
       "body": {
         "xs": {
