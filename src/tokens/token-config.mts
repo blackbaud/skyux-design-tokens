@@ -39,6 +39,20 @@ export const tokenConfig: TokenConfig = {
           path: 'layout/base-productive.json',
         },
       ],
+      publicTokens: [
+        {
+          name: 'public-layout',
+          path: 'public/layout.json',
+        },
+        {
+          name: 'public-typography',
+          path: 'public/typography.json',
+        },
+      ],
+      publicStyles: [
+        { name: 'spacing', path: '../classes/public/spacing.json' },
+        { name: 'typography', path: '../classes/public/typography.json' },
+      ],
     },
     {
       name: 'blackbaud',
@@ -56,6 +70,27 @@ export const tokenConfig: TokenConfig = {
           selector: '.sky-theme-mode-dark',
           path: 'color/bb-dark.json',
         },
+      ],
+    },
+    {
+      name: 'default',
+      path: 'default/base.json',
+      selector: '.sky-theme-default',
+      outputPath: 'default.css',
+      referenceTokens: [],
+      publicTokens: [
+        {
+          name: 'public-layout',
+          path: 'public/default/layout.json',
+        },
+        {
+          name: 'public-typography',
+          path: 'public/default/typography.json',
+        },
+      ],
+      publicStyles: [
+        { name: 'spacing', path: '../classes/public/spacing.json' },
+        { name: 'typography', path: '../classes/public/typography.json' },
       ],
     },
   ],

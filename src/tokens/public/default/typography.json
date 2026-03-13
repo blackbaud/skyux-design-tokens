@@ -1,0 +1,930 @@
+{
+  "theme": {
+    "font": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Typography"
+        }
+      },
+      "family": {
+        "primary": {
+          "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+          "$type": "fontFamilies",
+          "$description": "The font family used for all elements on a page including headings, content, and components.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Primary font family"
+            }
+          }
+        },
+        "heading": {
+          "1": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 1",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "2": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 2",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "3": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 3",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "4": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 4",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "5": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 5",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Headings"
+            }
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Medium body",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "emphasized": {
+            "m": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium emphasized",
+                  "cssProperty": "font-family"
+                }
+              }
+            },
+            "s": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small emphasized",
+                  "cssProperty": "font-family"
+                }
+              }
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium deemphasized",
+                  "cssProperty": "font-family"
+                }
+              }
+            },
+            "s": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small deemphasized",
+                  "cssProperty": "font-family"
+                }
+              }
+            }
+          },
+          "s": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Small body",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "l": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Large body",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Body text"
+            }
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 1",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "2": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 2",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "3": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 3",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "4": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 4",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Display text"
+            }
+          }
+        },
+        "hint": {
+          "m": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint medium",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "s": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint small",
+                "cssProperty": "font-family"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Help text"
+            }
+          }
+        }
+      },
+      "weight": {
+        "heading": {
+          "1": {
+            "$value": "300",
+            "$type": "fontWeights",
+            "$description": "Use for page titles and record names. Use only one heading 1 element per page.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 1",
+                "name": "Heading 1",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "2": {
+            "$value": "300",
+            "$type": "fontWeights",
+            "$description": "Use for main sections and container headings.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 2",
+                "name": "Heading 2",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "3": {
+            "$value": "300",
+            "$type": "fontWeights",
+            "$description": "Use for subsections within containers and within heading 2 sections.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 3",
+                "name": "Heading 3",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "4": {
+            "$value": "600",
+            "$type": "fontWeights",
+            "$description": "Use for subsections within heading 3 sections.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 4",
+                "name": "Heading 4",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "5": {
+            "$value": "400",
+            "$type": "fontWeights",
+            "$description": "Use for subsections within heading 4 sections.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 5",
+                "name": "Heading 5",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Headings"
+            }
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "400",
+            "$type": "fontWeights",
+            "$description": "Default size for majority of information on the page including component labels, data, and paragraphs.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Medium body",
+                "name": "Medium body",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "emphasized": {
+            "m": {
+              "$value": "600",
+              "$type": "fontWeights",
+              "$description": "Use for elevating the primary text that identifies an item in a text group’s visual hierarchy.",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium emphasized",
+                  "name": "Medium emphasized",
+                  "cssProperty": "font-weight"
+                }
+              }
+            },
+            "s": {
+              "$value": "600",
+              "$type": "fontWeights",
+              "$description": "Use to elevate the primary text that identifies an item in a text group’s visual hierarchy when using small body text.",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small emphasized",
+                  "name": "Small emphasized",
+                  "cssProperty": "font-weight"
+                }
+              }
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "italic",
+              "$type": "fontWeights",
+              "$description": "Use for secondary information that describes or contextualizes an item to lower it in the visual hierarchy alongside the primary text that identifies an item.",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium deemphasized",
+                  "name": "Medium deemphasized",
+                  "cssProperty": "font-weight"
+                }
+              }
+            },
+            "s": {
+              "$value": "italic",
+              "$type": "fontWeights",
+              "$description": "Use for tertiary information in a text group to lower it in the visual hierarchy below secondary information.",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small deemphasized",
+                  "name": "Small deemphasized",
+                  "cssProperty": "font-weight"
+                }
+              }
+            }
+          },
+          "s": {
+            "$value": "400",
+            "$type": "fontWeights",
+            "$description": "Use for text only when space is limited and only for a section or container within a page.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Small body",
+                "name": "Small body",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "l": {
+            "$value": "400",
+            "$type": "fontWeights",
+            "$description": "Use for lead paragraphs in long-form content.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Large body",
+                "name": "Large body",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Body text"
+            }
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "300",
+            "$type": "fontWeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 1",
+                "name": "Display 1",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "2": {
+            "$value": "300",
+            "$type": "fontWeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 2",
+                "name": "Display 2",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "3": {
+            "$value": "600",
+            "$type": "fontWeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 3",
+                "name": "Display 3",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "4": {
+            "$value": "600",
+            "$type": "fontWeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 4",
+                "name": "Display 4",
+                "cssProperty": "font-weight"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Display text"
+            }
+          }
+        }
+      },
+      "size": {
+        "heading": {
+          "1": {
+            "$value": "34px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 1",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "2": {
+            "$value": "26px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 2",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "3": {
+            "$value": "19px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 3",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "4": {
+            "$value": "16px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 4",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "5": {
+            "$value": "15px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 5",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Headings"
+            }
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "15px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Medium body",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "emphasized": {
+            "m": {
+              "$value": "15px",
+              "$type": "fontSizes",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium emphasized",
+                  "cssProperty": "font-size"
+                }
+              }
+            },
+            "s": {
+              "$value": "13px",
+              "$type": "fontSizes",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small emphasized",
+                  "cssProperty": "font-size"
+                }
+              }
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "15px",
+              "$type": "fontSizes",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium deemphasized",
+                  "cssProperty": "font-size"
+                }
+              }
+            },
+            "s": {
+              "$value": "13px",
+              "$type": "fontSizes",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small deemphasized",
+                  "cssProperty": "font-size"
+                }
+              }
+            }
+          },
+          "s": {
+            "$value": "13px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Small body",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "l": {
+            "$value": "16px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Large body",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Body text"
+            }
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "34px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 1",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "2": {
+            "$value": "26px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 2",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "3": {
+            "$value": "22px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 3",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "4": {
+            "$value": "16px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 4",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Display text"
+            }
+          }
+        },
+        "hint": {
+          "m": {
+            "$value": "15px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint medium",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "s": {
+            "$value": "13px",
+            "$type": "fontSizes",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint small",
+                "cssProperty": "font-size"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Help text"
+            }
+          }
+        }
+      },
+      "style": {
+        "hint": {
+          "m": {
+            "$value": "italic",
+            "$type": "fontWeights",
+            "$description": "Use for page- and form-level help.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint medium",
+                "name": "Hint medium",
+                "cssProperty": "font-style"
+              }
+            }
+          },
+          "s": {
+            "$value": "italic",
+            "$type": "fontWeights",
+            "$description": "Used for field- and label-level help within components.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint small",
+                "name": "Hint small",
+                "cssProperty": "font-style"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Help text"
+            }
+          }
+        }
+      },
+      "line_height": {
+        "heading": {
+          "1": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 1",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "2": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 2",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "3": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 3",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "4": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 4",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "5": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Heading 5",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Headings"
+            }
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Medium body",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "emphasized": {
+            "m": {
+              "$value": "inherit",
+              "$type": "lineHeights",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium emphasized",
+                  "cssProperty": "line-height"
+                }
+              }
+            },
+            "s": {
+              "$value": "inherit",
+              "$type": "lineHeights",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small emphasized",
+                  "cssProperty": "line-height"
+                }
+              }
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "inherit",
+              "$type": "lineHeights",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Medium deemphasized",
+                  "cssProperty": "line-height"
+                }
+              }
+            },
+            "s": {
+              "$value": "inherit",
+              "$type": "lineHeights",
+              "$extensions": {
+                "com.blackbaud.developer.docs": {
+                  "groupName": "Small deemphasized",
+                  "cssProperty": "line-height"
+                }
+              }
+            }
+          },
+          "s": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Small body",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "l": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Large body",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Body text"
+            }
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 1",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "2": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 2",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "3": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 3",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "4": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Display 4",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Display text"
+            }
+          }
+        },
+        "hint": {
+          "m": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint medium",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "s": {
+            "$value": "inherit",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint small",
+                "cssProperty": "line-height"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Help text"
+            }
+          }
+        }
+      },
+      "letter_spacing": {
+        "hint": {
+          "s": {
+            "$value": "inherit",
+            "$type": "letterSpacings",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Hint small",
+                "cssProperty": "letter-spacing"
+              }
+            }
+          },
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Help text"
+            }
+          }
+        }
+      }
+    }
+  }
+}
