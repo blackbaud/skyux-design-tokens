@@ -1266,6 +1266,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-size-650: 1.3125rem;
   --bb-font-size-700: 1.5rem;
   --bb-font-size-800: 1.6875rem;
+  --bb-font-style-bold: 700;
   --bb-font-style-italic-style: italic;
   --bb-font-style-italic-weight: 400;
   --bb-font-style-light: 300;
@@ -2502,7 +2503,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-style-heading-4: var(--bb-font-style-semibold);
   --sky-font-style-heading-5: var(--bb-font-style-semibold);
   --sky-font-style-input-label: var(--bb-font-style-regular);
-  --sky-font-style-strong: var(--bb-font-weight-bold);
+  --sky-font-style-strong: var(--bb-font-style-bold);
   --sky-font-text_transform-eyebrow: var(--bb-font-text_transform-uppercase);
   --sky-size-avatar-l: var(--bb-size-fluid-550);
   --sky-size-avatar-m: var(--bb-size-fluid-350);
@@ -2899,6 +2900,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-size-650: 1.3125rem;
   --bb-font-size-700: 1.5rem;
   --bb-font-size-800: 1.6875rem;
+  --bb-font-style-bold: 700;
   --bb-font-style-italic-style: italic;
   --bb-font-style-italic-weight: 400;
   --bb-font-style-light: 300;
