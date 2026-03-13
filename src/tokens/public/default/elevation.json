@@ -1,0 +1,73 @@
+{
+  "theme": {
+    "elevation": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Elevation"
+        }
+      },
+      "raised": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Raised",
+            "name": "Raised"
+          }
+        },
+        "100": {
+          "$value": "0 0 5px #0000004d",
+          "$type": "boxShadow",
+          "$description": "For slightly raised elevation to give a subtle emphasis to elements on the page background. Examples: alerts and avatars"
+        }
+      },
+      "overflow": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Overflow",
+            "name": "Overflow"
+          }
+        },
+        "$value": "0 0 5px #0000004d",
+        "$type": "boxShadow",
+        "$description": "For elements that remain fixed, staying in view on scroll, to appear above scrolling content. Examples: back to top and summary action bar"
+      },
+      "overlay": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Overlays"
+          }
+        },
+        "$description": "Overlay elevation is used for elements that are temporal and more visually distinct via higher elevation from the surface.",
+        "100": {
+          "$value": "0 0 5px #0000004d",
+          "$type": "boxShadow",
+          "$description": "For a small overlay elevation on temporal elements that are easily dismissed. Examples: popovers, dropdown menus, and picker inputs",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Overlay 100"
+            }
+          }
+        },
+        "200": {
+          "$value": "0 0 5px #0000004d",
+          "$type": "boxShadow",
+          "$description": "For an overlay elevation that gives more emphasis to larger elements that are used in conjunction with the main page. Example: flyouts",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Overlay 200"
+            }
+          }
+        },
+        "300": {
+          "$value": "0 0 5px #0000004d",
+          "$type": "boxShadow",
+          "$description": "For floating overlays that require clear visual separation. Use for interruptive elements. Examples: modals and toasts",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Overlay 300"
+            }
+          }
+        }
+      }
+    }
+  }
+}

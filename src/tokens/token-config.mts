@@ -48,10 +48,15 @@ export const tokenConfig: TokenConfig = {
           name: 'public-typography',
           path: 'public/typography.json',
         },
+        {
+          name: 'public-elevation',
+          path: 'public/elevation.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
+        { name: 'elevation', path: '../classes/public/elevation.json' },
       ],
     },
     {
@@ -87,10 +92,15 @@ export const tokenConfig: TokenConfig = {
           name: 'public-typography',
           path: 'public/default/typography.json',
         },
+        {
+          name: 'public-elevation',
+          path: 'public/default/elevation.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
+        { name: 'elevation', path: '../classes/public/elevation.json' },
       ],
     },
   ],
