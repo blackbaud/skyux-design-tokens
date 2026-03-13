@@ -14,7 +14,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1)"
               },
-              "deprecatedClassName": "sky-font-heading-1"
+              "deprecatedClassNames": ["sky-font-heading-1"]
             },
             {
               "name": "Heading 2",
@@ -23,7 +23,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2)"
               },
-              "deprecatedClassName": "sky-font-heading-2"
+              "deprecatedClassNames": ["sky-font-heading-2"]
             },
             {
               "name": "Heading 3",
@@ -32,7 +32,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3)"
               },
-              "deprecatedClassName": "sky-font-heading-3"
+              "deprecatedClassNames": ["sky-font-heading-3"]
             },
             {
               "name": "Heading 4",
@@ -41,7 +41,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-heading-4) var(--sky-theme-font-size-heading-4)/var(--sky-theme-font-line_height-heading-4) var(--sky-theme-font-family-heading-4)"
               },
-              "deprecatedClassName": "sky-font-heading-4"
+              "deprecatedClassNames": ["sky-font-heading-4"]
             },
             {
               "name": "Heading 5",
@@ -50,7 +50,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-heading-5) var(--sky-theme-font-size-heading-5)/var(--sky-theme-font-line_height-heading-5) var(--sky-theme-font-family-heading-5)"
               },
-              "deprecatedClassName": "sky-font-heading-5"
+              "deprecatedClassNames": ["sky-font-heading-5"]
             }
           ]
         },
@@ -64,7 +64,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-m) var(--sky-theme-font-size-body-m)/var(--sky-theme-font-line_height-body-m) var(--sky-theme-font-family-body-m)"
               },
-              "deprecatedClassName": "sky-font-body-default"
+              "deprecatedClassNames": ["sky-font-body-default"]
             },
             {
               "name": "Medium emphasized",
@@ -73,7 +73,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m)"
               },
-              "deprecatedClassName": "sky-font-emphasized"
+              "deprecatedClassNames": ["sky-font-emphasized"]
             },
             {
               "name": "Medium deemphasized",
@@ -82,7 +82,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-deemphasized-m-weight) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m)"
               },
-              "deprecatedClassName": "sky-font-deemphasized"
+              "deprecatedClassNames": ["sky-font-deemphasized"]
             },
             {
               "name": "Small body",
@@ -91,7 +91,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-s) var(--sky-theme-font-size-body-s)/var(--sky-theme-font-line_height-body-s) var(--sky-theme-font-family-body-s)"
               },
-              "deprecatedClassName": "sky-font-body-sm"
+              "deprecatedClassNames": ["sky-font-body-sm"]
             },
             {
               "name": "Small emphasized",
@@ -116,7 +116,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-l) var(--sky-theme-font-size-body-l)/var(--sky-theme-font-line_height-body-l) var(--sky-theme-font-family-body-l)"
               },
-              "deprecatedClassName": "sky-font-body-lg"
+              "deprecatedClassNames": ["sky-font-body-lg"]
             }
           ]
         },
@@ -130,7 +130,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-display-1) var(--sky-theme-font-size-display-1)/var(--sky-theme-font-line_height-display-1) var(--sky-theme-font-family-display-1)"
               },
-              "deprecatedClassName": "sky-font-display-1"
+              "deprecatedClassNames": ["sky-font-display-1"]
             },
             {
               "name": "Display 2",
@@ -138,7 +138,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-display-2) var(--sky-theme-font-size-display-2)/var(--sky-theme-font-line_height-display-2) var(--sky-theme-font-family-display-2)"
               },
-              "deprecatedClassName": "sky-font-display-2"
+              "deprecatedClassNames": ["sky-font-display-2"]
             },
             {
               "name": "Display 3",
@@ -146,7 +146,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3)"
               },
-              "deprecatedClassName": "sky-font-display-3"
+              "deprecatedClassNames": ["sky-font-display-3"]
             },
             {
               "name": "Display 4",
@@ -154,7 +154,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-display-4) var(--sky-theme-font-size-display-4)/var(--sky-theme-font-line_height-display-4) var(--sky-theme-font-family-display-4)"
               },
-              "deprecatedClassName": "sky-font-display-4"
+              "deprecatedClassNames": ["sky-font-display-4"]
             }
           ]
         },
@@ -168,7 +168,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m)"
               },
-              "deprecatedClassName": "sky-font-deemphasized"
+              "deprecatedClassNames": ["sky-font-deemphasized"]
             },
             {
               "name": "Hint small",

@@ -30,7 +30,7 @@ interface PublicApiClass {
   className: string;
   properties: Record<string, string>;
   description?: string;
-  deprecatedClassName?: string;
+  deprecatedClassNames?: string[];
 }
 ```
 
@@ -60,7 +60,7 @@ The CSV has these relevant columns (amongst others that should be ignored):
 2. **`className`**: Strip the leading `.` from the "API class" value.
 3. **`name`**: Use the "Name" column. If "Name" is empty, derive it by humanizing the class name (strip `sky-theme-` prefix, replace `-` with spaces, title-case). **Alert the user** when a name was missing so they can fix the source data.
 4. **`description`**: Include only if the "Description" cell on the class row is non-empty.
-5. **`deprecatedClassName`**: Include only if the "Deprecated" cell is non-empty. Use the value as-is.
+5. **`deprecatedClassNames`**: Include only if the "Deprecated" cell is non-empty. Provide the value as a single-element array.
 6. **`properties`**: Build from the "Property" (key) and "Value" (value) columns.
    - If a value contains custom property references (tokens starting with `--`), wrap **each one** in `var()`. For example: `--sky-theme-space-stacked-xs` → `var(--sky-theme-space-stacked-xs)`. If multiple custom properties appear in a single value (e.g. shorthand), wrap each one individually.
    - Non-custom-property values (e.g. `none`, `0`, `solid`) are used as-is.
@@ -77,7 +77,7 @@ The CSV has these relevant columns (amongst others that should be ignored):
 ### General
 
 10. **Merge** new data into the existing file if one exists — preserve any groups/styles already present and add/overwrite from the CSV.
-11. Omit optional fields (`description`, `deprecatedClassName`, `groups`, `styles`) when they would be empty or undefined.
+11. Omit optional fields (`description`, `deprecatedClassNames`, `groups`, `styles`) when they would be empty or undefined.
 
 ## Example
 
@@ -135,7 +135,7 @@ Type: **spacing**. Input CSV:
               "properties": {
                 "margin-bottom": "var(--sky-theme-space-stacked-xs)"
               },
-              "deprecatedClassName": "sky-margin-stacked-xs"
+              "deprecatedClassNames": ["sky-margin-stacked-xs"]
             }
           ]
         }

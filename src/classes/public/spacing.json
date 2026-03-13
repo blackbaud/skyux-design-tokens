@@ -61,7 +61,7 @@
               "properties": {
                 "margin-bottom": "var(--sky-theme-space-stacked-xs)"
               },
-              "deprecatedClassName": "sky-margin-stacked-xs"
+              "deprecatedClassNames": ["sky-margin-stacked-xs"]
             },
             {
               "name": "Margin-bottom S",
@@ -69,7 +69,7 @@
               "properties": {
                 "margin-bottom": "var(--sky-theme-space-stacked-s)"
               },
-              "deprecatedClassName": "sky-margin-stacked-s"
+              "deprecatedClassNames": ["sky-margin-stacked-s"]
             },
             {
               "name": "Margin-bottom M",
@@ -84,7 +84,7 @@
               "properties": {
                 "margin-bottom": "var(--sky-theme-space-stacked-l)"
               },
-              "deprecatedClassName": "sky-margin-stacked-lg"
+              "deprecatedClassNames": ["sky-margin-stacked-lg"]
             },
             {
               "name": "Margin-bottom XL",
@@ -92,7 +92,7 @@
               "properties": {
                 "margin-bottom": "var(--sky-theme-space-stacked-xl)"
               },
-              "deprecatedClassName": "sky-margin-stacked-xl"
+              "deprecatedClassNames": ["sky-margin-stacked-xl"]
             },
             {
               "name": "Margin-bottom XXL",
@@ -100,7 +100,7 @@
               "properties": {
                 "margin-bottom": "var(--sky-theme-space-stacked-xxl)"
               },
-              "deprecatedClassName": "sky-margin-stacked-xxl"
+              "deprecatedClassNames": ["sky-margin-stacked-xxl"]
             }
           ]
         }
@@ -118,7 +118,7 @@
               "properties": {
                 "margin-right": "var(--sky-theme-space-inline-xs)"
               },
-              "deprecatedClassName": "sky-margin-inline-xs"
+              "deprecatedClassNames": ["sky-margin-inline-xs"]
             },
             {
               "name": "Margin-right S",
@@ -126,7 +126,7 @@
               "properties": {
                 "margin-right": "var(--sky-theme-space-inline-s)"
               },
-              "deprecatedClassName": "sky-margin-inline-s"
+              "deprecatedClassNames": ["sky-margin-inline-s"]
             },
             {
               "name": "Margin-right M",
@@ -141,7 +141,7 @@
               "properties": {
                 "margin-right": "var(--sky-theme-space-inline-l)"
               },
-              "deprecatedClassName": "sky-margin-inline-lg"
+              "deprecatedClassNames": ["sky-margin-inline-lg"]
             },
             {
               "name": "Margin-right XL",
@@ -149,7 +149,7 @@
               "properties": {
                 "margin-right": "var(--sky-theme-space-inline-xl)"
               },
-              "deprecatedClassName": "sky-margin-inline-xl"
+              "deprecatedClassNames": ["sky-margin-inline-xl"]
             },
             {
               "name": "Margin-right XXL",
@@ -157,7 +157,7 @@
               "properties": {
                 "margin-right": "var(--sky-theme-space-inline-xxl)"
               },
-              "deprecatedClassName": "sky-margin-inline-xxl"
+              "deprecatedClassNames": ["sky-margin-inline-xxl"]
             }
           ]
         },
@@ -435,7 +435,7 @@
               "properties": {
                 "padding": "var(--sky-theme-space-inset-balanced-m)"
               },
-              "deprecatedClassName": "sky-padding-even-md"
+              "deprecatedClassNames": ["sky-padding-even-md"]
             },
             {
               "name": "Inset balanced padding L",
@@ -450,7 +450,7 @@
               "properties": {
                 "padding": "var(--sky-theme-space-inset-balanced-xl)"
               },
-              "deprecatedClassName": "sky-padding-even-xl"
+              "deprecatedClassNames": ["sky-padding-even-xl"]
             }
           ]
         }

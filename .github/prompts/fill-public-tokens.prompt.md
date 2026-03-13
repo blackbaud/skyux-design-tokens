@@ -58,7 +58,7 @@ The CSV has these relevant columns (amongst others that should be ignored):
 5. **`$description`**: Include only if the Description cell on the token row is non-empty.
 6. **`$extensions`**: Include only if any extension fields are present. All extension properties must be nested inside a `"com.blackbaud.developer.docs"` namespace object:
    - **`name`**: Include if the "name" cell is non-empty. No additional formatting.
-   - **`deprecatedCustomProperty`**: Include if the "deprecated" cell is non-empty. The value is the name of the replacing custom property — use as-is.
+   - **`deprecatedCustomProperties`**: Include if the "deprecated" cell is non-empty. The value is the name of the replacing custom property — provide it as a single-element array.
    - **`cssProperty`**: For **typography** tokens only, include if the "Property" cell is non-empty. Use the value as-is.
 
 ### Group header rows (no "API custom property")
@@ -115,7 +115,7 @@ Category: **layout**. Input CSV:
           "$type": "spacing",
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "deprecatedCustomProperty": "--sky-theme-space-inline-l"
+              "deprecatedCustomProperties": ["--sky-theme-space-inline-l"]
             }
           }
         },
@@ -169,7 +169,7 @@ Category: **layout**. Input CSV:
           "$type": "spacing",
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "deprecatedCustomProperty": "--sky-theme-space-inline-l"
+              "deprecatedCustomProperties": ["--sky-theme-space-inline-l"]
             }
           }
         },
