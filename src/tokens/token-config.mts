@@ -61,6 +61,7 @@ export const tokenConfig: TokenConfig = {
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
+        { name: 'color', path: '../classes/public/color.json' },
       ],
     },
     {
@@ -109,6 +110,7 @@ export const tokenConfig: TokenConfig = {
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
+        { name: 'color', path: '../classes/public/color.json' },
       ],
     },
   ],

@@ -1,6 +1,11 @@
 {
   "theme": {
     "color": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Color"
+        }
+      },
       "background": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
@@ -581,6 +586,7 @@
           "$description": "The color for gridlines and tick marks on charts.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Chart elements",
               "name": "Chart gridline"
             }
           }
@@ -591,6 +597,7 @@
           "$description": "The color for thresholds, benchmarks, or goals on charts.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Chart elements",
               "name": "Chart marker"
             }
           }
@@ -606,56 +613,72 @@
             "$value": "#06a39e",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 1" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 1"
+              }
             }
           },
           "2": {
             "$value": "#6d3c96",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 2" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 2"
+              }
             }
           },
           "3": {
             "$value": "#5589DD",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 3" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 3"
+              }
             }
           },
           "4": {
             "$value": "#004252",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 4" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 4"
+              }
             }
           },
           "5": {
             "$value": "#ce5600",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 5" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 5"
+              }
             }
           },
           "6": {
             "$value": "#822325",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 6" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 6"
+              }
             }
           },
           "7": {
             "$value": "#c650c1",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 7" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 7"
+              }
             }
           },
           "8": {
             "$value": "#077e43",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Category 8" }
+              "com.blackbaud.developer.docs": {
+                "name": "Category 8"
+              }
             }
           }
         },
@@ -670,70 +693,90 @@
             "$value": "#dcf6f5",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 1" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 1"
+              }
             }
           },
           "2": {
             "$value": "#abe9e7",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 2" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 2"
+              }
             }
           },
           "3": {
             "$value": "#60d5d2",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 3" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 3"
+              }
             }
           },
           "4": {
             "$value": "#07beb8",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 4" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 4"
+              }
             }
           },
           "5": {
             "$value": "#06a39e",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 5" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 5"
+              }
             }
           },
           "6": {
             "$value": "#058984",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 6" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 6"
+              }
             }
           },
           "7": {
             "$value": "#046e6b",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 7" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 7"
+              }
             }
           },
           "8": {
             "$value": "#035755",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 8" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 8"
+              }
             }
           },
           "9": {
             "$value": "#02413f",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 9" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 9"
+              }
             }
           },
           "10": {
             "$value": "#022a28",
             "$type": "color",
             "$extensions": {
-              "com.blackbaud.developer.docs": { "name": "Sequence 10" }
+              "com.blackbaud.developer.docs": {
+                "name": "Sequence 10"
+              }
             }
           }
         },
@@ -748,70 +791,90 @@
               "$value": "#eef3fc",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 1" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 1"
+                }
               }
             },
             "2": {
               "$value": "#d5e1f7",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 2" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 2"
+                }
               }
             },
             "3": {
               "$value": "#aac4ee",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 3" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 3"
+                }
               }
             },
             "4": {
               "$value": "#80a6e6",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 4" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 4"
+                }
               }
             },
             "5": {
               "$value": "#5589dd",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 5" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 5"
+                }
               }
             },
             "6": {
               "$value": "#2b6bd5",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 6" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 6"
+                }
               }
             },
             "7": {
               "$value": "#2256aa",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 7" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 7"
+                }
               }
             },
             "8": {
               "$value": "#1a4080",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 8" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 8"
+                }
               }
             },
             "9": {
               "$value": "#112b55",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 9" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 9"
+                }
               }
             },
             "10": {
               "$value": "#0d2040",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Positive 10" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Positive 10"
+                }
               }
             }
           },
@@ -825,70 +888,90 @@
               "$value": "#fae7e8",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 1" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 1"
+                }
               }
             },
             "2": {
               "$value": "#f5cccd",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 2" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 2"
+                }
               }
             },
             "3": {
               "$value": "#f1b4b5",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 3" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 3"
+                }
               }
             },
             "4": {
               "$value": "#ea9596",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 4" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 4"
+                }
               }
             },
             "5": {
               "$value": "#e36d6f",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 5" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 5"
+                }
               }
             },
             "6": {
               "$value": "#d93a3d",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 6" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 6"
+                }
               }
             },
             "7": {
               "$value": "#ae2e31",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 7" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 7"
+                }
               }
             },
             "8": {
               "$value": "#822325",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 8" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 8"
+                }
               }
             },
             "9": {
               "$value": "#641b1c",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 9" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 9"
+                }
               }
             },
             "10": {
               "$value": "#4a1415",
               "$type": "color",
               "$extensions": {
-                "com.blackbaud.developer.docs": { "name": "Negative 10" }
+                "com.blackbaud.developer.docs": {
+                  "name": "Negative 10"
+                }
               }
             }
           }
