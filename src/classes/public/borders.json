@@ -241,30 +241,6 @@
           "description": "Add these in addition to border classes to modify the border width of certain elements.",
           "styles": [
             {
-              "name": "Container base width",
-              "className": "sky-theme-border-width-container-base",
-              "description": "The width for borders that wrap around a container.",
-              "properties": {
-                "border-width": "var(--sky-theme-border-width-container-base)"
-              }
-            },
-            {
-              "name": "Divider base width",
-              "className": "sky-theme-border-width-divider",
-              "description": "The width for borders that separate a page into heterogeneous sections or areas.",
-              "properties": {
-                "border-width": "var(--sky-theme-border-width-divider)"
-              }
-            },
-            {
-              "name": "Divider soft width",
-              "className": "sky-theme-border-width-separator-row",
-              "description": "The width for borders that separate homogenous sections or rows inside of a container.",
-              "properties": {
-                "border-width": "var(--sky-theme-border-width-separator-row)"
-              }
-            },
-            {
               "name": "Emphasized border width",
               "className": "sky-theme-border-width-emphasized",
               "description": "The width to add emphasis to dividers or status borders.",
@@ -278,36 +254,6 @@
               "description": "The width to highlight an element with a status border in the visual hierarchy.",
               "properties": {
                 "border-width": "var(--sky-theme-border-width-emphasized)"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Border styles",
-          "description": "Add these in addition to border classes to modify the border style of certain elements.",
-          "styles": [
-            {
-              "name": "Divider base style",
-              "className": "sky-theme-border-style-divider",
-              "description": "The style of a border that wraps around a container or separates a page into heterogeneous sections or areas.",
-              "properties": {
-                "border-style": "var(--sky-theme-border-style-divider)"
-              }
-            },
-            {
-              "name": "Divider soft style",
-              "className": "sky-theme-border-style-separator-row",
-              "description": "The style of a border that separates homogenous sections or rows inside of a container.",
-              "properties": {
-                "border-style": "var(--sky-theme-border-style-separator-row)"
-              }
-            },
-            {
-              "name": "Accent border style",
-              "className": "sky-theme-border-style-accent",
-              "description": "The style of a border that highlights an element with a status border in the visual hierarchy.",
-              "properties": {
-                "border-style": "var(--sky-theme-border-style-accent)"
               }
             }
           ]
