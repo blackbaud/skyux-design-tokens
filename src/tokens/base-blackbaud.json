@@ -133,6 +133,10 @@
         }
       },
       "weight": {
+        "bold": {
+          "$type": "fontWeights",
+          "$value": "700"
+        },
         "light": {
           "$type": "fontWeights",
           "$value": "300"
@@ -144,13 +148,17 @@
         "semibold": {
           "$type": "fontWeights",
           "$value": "600"
-        },
-        "bold": {
-          "$type": "fontWeights",
-          "$value": "700"
         }
       },
       "style": {
+        "bold": {
+          "$type": "fontWeights",
+          "$value": "Bold"
+        },
+        "italic": {
+          "$type": "fontWeights",
+          "$value": "Italic"
+        },
         "light": {
           "$type": "fontWeights",
           "$value": "Light"
@@ -159,17 +167,13 @@
           "$type": "fontWeights",
           "$value": "Light Italic"
         },
-        "regular": {
-          "$type": "fontWeights",
-          "$value": "Regular"
-        },
         "normal": {
           "$type": "fontWeights",
           "$value": "Normal"
         },
-        "italic": {
+        "regular": {
           "$type": "fontWeights",
-          "$value": "Italic"
+          "$value": "Regular"
         },
         "semibold": {
           "$type": "fontWeights",
@@ -234,9 +238,17 @@
         "$type": "lineHeights",
         "$value": "calc(20/15)"
       },
+      "450": {
+        "$type": "lineHeights",
+        "$value": "calc(22/15)"
+      },
       "500": {
         "$type": "lineHeights",
         "$value": "calc(24/17)"
+      },
+      "550": {
+        "$type": "lineHeights",
+        "$value": "calc(26/17)"
       },
       "600": {
         "$type": "lineHeights",
