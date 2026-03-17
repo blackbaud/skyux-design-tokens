@@ -1,5 +1,5 @@
 ---
-mode: 'edit'
+agent: 'edit'
 description: 'Fill out public API classes from a CSV'
 ---
 
@@ -71,13 +71,14 @@ The CSV has these relevant columns (amongst others that should be ignored):
 
 ### Group header rows
 
-8. A row with a **Subcategory** value (and no "API class" or "API custom property") is a **top-level group** (`PublicApiClassGroup`). Use "Subcategory" as `name` and "Description" as `description` (if non-empty). Class rows that follow belong in this group's `styles` array, unless they fall under a sub-group.
-9. A row with a **Group** value (and no "API class" or "API custom property") is a **nested sub-group** within the current subcategory. Use "Group" as `name` and "Description" as `description` (if non-empty). It belongs in the parent group's `groups` array. Class rows that follow belong in this sub-group's `styles` array.
+8. **Top-level type group**: The root `groups` array must always contain exactly one top-level group whose `name` is the title-cased type (e.g., `"Spacing"` for the `spacing` type, `"Color"` for `color`, `"Typography"` for `typography`, `"Borders"` for `borders`, `"Elevation"` for `elevation`). All subcategory groups generated from the CSV belong in this type group's `groups` array.
+9. A row with a **Subcategory** value (and no "API class" or "API custom property") is a **subcategory group** (`PublicApiClassGroup`). Use "Subcategory" as `name` and "Description" as `description` (if non-empty). Class rows that follow belong in this group's `styles` array, unless they fall under a sub-group.
+10. A row with a **Group** value (and no "API class" or "API custom property") is a **nested sub-group** within the current subcategory. Use "Group" as `name` and "Description" as `description` (if non-empty). It belongs in the parent group's `groups` array. Class rows that follow belong in this sub-group's `styles` array.
 
 ### General
 
-10. **Merge** new data into the existing file if one exists — preserve any groups/styles already present and add/overwrite from the CSV.
-11. Omit optional fields (`description`, `deprecatedClassNames`, `groups`, `styles`) when they would be empty or undefined.
+11. **Merge** new data into the existing file if one exists — preserve any groups/styles already present and add/overwrite from the CSV.
+12. Omit optional fields (`description`, `deprecatedClassNames`, `groups`, `styles`) when they would be empty or undefined.
 
 ## Example
 
@@ -103,57 +104,62 @@ Type: **spacing**. Input CSV:
 {
   "groups": [
     {
-      "name": "Stacked margin",
+      "name": "Spacing",
       "groups": [
         {
-          "name": "Margin top",
-          "description": "Use these classes to add a top margin.",
-          "styles": [
+          "name": "Stacked margin",
+          "groups": [
             {
-              "name": "Margin top xs",
-              "className": "sky-theme-margin-top-xs",
-              "properties": {
-                "margin-top": "var(--sky-theme-space-stacked-xs)"
-              }
+              "name": "Margin top",
+              "description": "Use these classes to add a top margin.",
+              "styles": [
+                {
+                  "name": "Margin top xs",
+                  "className": "sky-theme-margin-top-xs",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-xs)"
+                  }
+                },
+                {
+                  "name": "Margin top s",
+                  "className": "sky-theme-margin-top-s",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-s)"
+                  }
+                }
+              ]
             },
             {
-              "name": "Margin top s",
-              "className": "sky-theme-margin-top-s",
-              "properties": {
-                "margin-top": "var(--sky-theme-space-stacked-s)"
-              }
+              "name": "Margin bottom",
+              "description": "Use these classes to add a bottom margin.",
+              "styles": [
+                {
+                  "name": "Margin bottom xs",
+                  "className": "sky-theme-margin-bottom-xs",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-xs)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-xs"]
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Margin bottom",
-          "description": "Use these classes to add a bottom margin.",
-          "styles": [
+          "name": "Insets within elements",
+          "description": "Use these classes to add inset padding.",
+          "groups": [
             {
-              "name": "Margin bottom xs",
-              "className": "sky-theme-margin-bottom-xs",
-              "properties": {
-                "margin-bottom": "var(--sky-theme-space-stacked-xs)"
-              },
-              "deprecatedClassNames": ["sky-margin-stacked-xs"]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Insets within elements",
-      "description": "Use these classes to add inset padding.",
-      "groups": [
-        {
-          "name": "Balanced",
-          "styles": [
-            {
-              "name": "Padding inset balanced xs",
-              "className": "sky-theme-padding-inset-balanced-xs",
-              "properties": {
-                "padding": "var(--sky-theme-space-inset-balanced-xs)"
-              }
+              "name": "Balanced",
+              "styles": [
+                {
+                  "name": "Padding inset balanced xs",
+                  "className": "sky-theme-padding-inset-balanced-xs",
+                  "properties": {
+                    "padding": "var(--sky-theme-space-inset-balanced-xs)"
+                  }
+                }
+              ]
             }
           ]
         }

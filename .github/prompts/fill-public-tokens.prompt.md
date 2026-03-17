@@ -1,5 +1,5 @@
 ---
-mode: 'edit'
+agent: 'edit'
 description: 'Fill out public tokens from a CSV'
 ---
 
@@ -75,6 +75,7 @@ The CSV has these relevant columns (amongst others that should be ignored):
 ### General
 
 9. **Merge** the new tokens into each existing file — preserve any tokens already present and add/overwrite from the CSV.
+10. **Top-level group name**: The top-level JSON object directly under `theme` (e.g., `space` for the `layout` category, `font` for `typography`, `color` for `color`) must have `$extensions["com.blackbaud.developer.docs"].groupName` set to the title-cased category name: `"Layout"` for layout, `"Typography"` for typography, `"Color"` for color, `"Border"` for border, `"Elevation"` for elevation. This applies to **both** the theme and default files.
 
 ## Example
 
@@ -93,6 +94,11 @@ Category: **layout**. Input CSV:
 {
   "theme": {
     "space": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Layout"
+        }
+      },
       "inline": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
@@ -147,6 +153,11 @@ Category: **layout**. Input CSV:
 {
   "theme": {
     "space": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Layout"
+        }
+      },
       "inline": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
@@ -215,6 +226,11 @@ Category: **typography**. Input CSV (rows without an API custom property are ski
 {
   "theme": {
     "font": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Typography"
+        }
+      },
       "family": {
         "primary": {
           "$value": "{font.family.primary}",
@@ -289,6 +305,11 @@ Category: **typography**. Input CSV (rows without an API custom property are ski
 {
   "theme": {
     "font": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Typography"
+        }
+      },
       "family": {
         "primary": {
           "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
