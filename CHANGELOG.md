@@ -2,6 +2,21 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [5.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.1.0...5.2.0) (2026-03-11)
+
+
+### Features
+
+* add backdrop ref token to base, dark, and bb-light ([#325](https://github.com/blackbaud/skyux-design-tokens/issues/325)) ([86eaa64](https://github.com/blackbaud/skyux-design-tokens/commit/86eaa64846494fa936fb3e44957b3ec20a156a87))
+* add duration tokens ([#326](https://github.com/blackbaud/skyux-design-tokens/issues/326)) ([4d7a790](https://github.com/blackbaud/skyux-design-tokens/commit/4d7a7905ac2e6366e61df11b7120e415ac0e4d0b))
+
+## [5.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.0.0...5.1.0) (2026-02-26)
+
+
+### Features
+
+* chart component tokens color scale updates ([#321](https://github.com/blackbaud/skyux-design-tokens/issues/321)) ([1121b0b](https://github.com/blackbaud/skyux-design-tokens/commit/1121b0bb4ebd387f158c64a95fd17ac097d477ac))
+
 ## [5.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/4.3.0...5.0.0) (2026-02-24)
 
 

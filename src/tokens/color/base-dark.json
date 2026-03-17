@@ -274,6 +274,10 @@
           "$type": "color",
           "$value": "{bb.color.gray.1000}"
         },
+        "backdrop": {
+          "$type": "color",
+          "$value": "{bb.color.gray.900}"
+        },
         "tooltip": {
           "$type": "color",
           "$value": "{bb.color.gray.25}"
