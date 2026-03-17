@@ -1,66 +1,71 @@
 {
   "groups": [
     {
-      "name": "Raised",
-      "styles": [
+      "name": "Elevation",
+      "groups": [
         {
-          "name": "Raised 100",
-          "className": "sky-theme-elevation-raised-100",
-          "description": "For slightly raised elevation to give a subtle emphasis to elements on the page background. Examples: alerts and avatars",
-          "properties": {
-            "box-shadow": "var(--sky-theme-elevation-raised-100)"
-          },
-          "deprecatedClassNames": [
-            "sky-elevation-1",
-            "sky-elevation-1-bordered"
+          "name": "Raised",
+          "styles": [
+            {
+              "name": "Raised 100",
+              "className": "sky-theme-elevation-raised-100",
+              "description": "For slightly raised elevation to give a subtle emphasis to elements on the page background. Examples: alerts and avatars",
+              "properties": {
+                "box-shadow": "var(--sky-theme-elevation-raised-100)"
+              },
+              "deprecatedClassNames": [
+                "sky-elevation-1",
+                "sky-elevation-1-bordered"
+              ]
+            }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Overflow",
-      "styles": [
+        },
         {
           "name": "Overflow",
-          "className": "sky-theme-elevation-overflow",
-          "description": "For elements that remain fixed, staying in view on scroll, to appear above scrolling content. Examples: back to top and summary action bar",
-          "properties": {
-            "box-shadow": "var(--sky-theme-elevation-overflow)"
-          },
-          "deprecatedClassNames": ["sky-elevation-3", "sky-shadow"]
-        }
-      ]
-    },
-    {
-      "name": "Overlays",
-      "description": "Overlay elevation is used for elements that are temporal and more visually distinct via higher elevation from the surface.",
-      "styles": [
-        {
-          "name": "Overlay 100",
-          "className": "sky-theme-elevation-overlay-100",
-          "description": "For a small overlay elevation on temporal elements that are easily dismissed. Examples: popovers, dropdown menus, and picker inputs",
-          "properties": {
-            "box-shadow": "var(--sky-theme-elevation-overlay-100)"
-          },
-          "deprecatedClassNames": ["sky-elevation-4"]
+          "styles": [
+            {
+              "name": "Overflow",
+              "className": "sky-theme-elevation-overflow",
+              "description": "For elements that remain fixed, staying in view on scroll, to appear above scrolling content. Examples: back to top and summary action bar",
+              "properties": {
+                "box-shadow": "var(--sky-theme-elevation-overflow)"
+              },
+              "deprecatedClassNames": ["sky-elevation-3", "sky-shadow"]
+            }
+          ]
         },
         {
-          "name": "Overlay 200",
-          "className": "sky-theme-elevation-overlay-200",
-          "description": "For an overlay elevation that gives more emphasis to larger elements that are used in conjunction with the main page. Example: flyouts",
-          "properties": {
-            "box-shadow": "var(--sky-theme-elevation-overlay-200)"
-          },
-          "deprecatedClassNames": ["sky-elevation-8"]
-        },
-        {
-          "name": "Overlay 300",
-          "className": "sky-theme-elevation-overlay-300",
-          "description": "For floating overlays that require clear visual separation. Use for interruptive elements. Examples: modals and toasts",
-          "properties": {
-            "box-shadow": "var(--sky-theme-elevation-overlay-200)"
-          },
-          "deprecatedClassNames": ["sky-elevation-16"]
+          "name": "Overlays",
+          "description": "Overlay elevation is used for elements that are temporal and more visually distinct via higher elevation from the surface.",
+          "styles": [
+            {
+              "name": "Overlay 100",
+              "className": "sky-theme-elevation-overlay-100",
+              "description": "For a small overlay elevation on temporal elements that are easily dismissed. Examples: popovers, dropdown menus, and picker inputs",
+              "properties": {
+                "box-shadow": "var(--sky-theme-elevation-overlay-100)"
+              },
+              "deprecatedClassNames": ["sky-elevation-4"]
+            },
+            {
+              "name": "Overlay 200",
+              "className": "sky-theme-elevation-overlay-200",
+              "description": "For an overlay elevation that gives more emphasis to larger elements that are used in conjunction with the main page. Example: flyouts",
+              "properties": {
+                "box-shadow": "var(--sky-theme-elevation-overlay-200)"
+              },
+              "deprecatedClassNames": ["sky-elevation-8"]
+            },
+            {
+              "name": "Overlay 300",
+              "className": "sky-theme-elevation-overlay-300",
+              "description": "For floating overlays that require clear visual separation. Use for interruptive elements. Examples: modals and toasts",
+              "properties": {
+                "box-shadow": "var(--sky-theme-elevation-overlay-200)"
+              },
+              "deprecatedClassNames": ["sky-elevation-16"]
+            }
+          ]
         }
       ]
     }
