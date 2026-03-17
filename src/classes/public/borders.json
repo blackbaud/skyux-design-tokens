@@ -27,21 +27,21 @@
                   "name": "Divider base top",
                   "className": "sky-theme-border-divider-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-divider-top)"
+                    "border-top": "var(--sky-theme-border-divider-base)"
                   }
                 },
                 {
                   "name": "Divider base right",
                   "className": "sky-theme-border-divider-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-divider-right)"
+                    "border-right": "var(--sky-theme-border-divider-base)"
                   }
                 },
                 {
                   "name": "Divider base bottom",
                   "className": "sky-theme-border-divider-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-divider-bottom)"
+                    "border-bottom": "var(--sky-theme-border-divider-base)"
                   },
                   "deprecatedClassNames": [
                     "sky-border-bottom-dark",
@@ -52,7 +52,7 @@
                   "name": "Divider base left",
                   "className": "sky-theme-border-divider-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-divider-left)"
+                    "border-left": "var(--sky-theme-border-divider-base)"
                   }
                 }
               ]
@@ -65,21 +65,21 @@
                   "name": "Divider soft top",
                   "className": "sky-theme-border-divider-soft-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-divider-soft-top)"
+                    "border-top": "var(--sky-theme-border-divider-soft)"
                   }
                 },
                 {
                   "name": "Divider soft right",
                   "className": "sky-theme-border-divider-soft-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-divider-soft-right)"
+                    "border-right": "var(--sky-theme-border-divider-soft)"
                   }
                 },
                 {
                   "name": "Divider soft bottom",
                   "className": "sky-theme-border-divider-soft-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-divider-soft-bottom)"
+                    "border-bottom": "var(--sky-theme-border-divider-soft)"
                   },
                   "deprecatedClassNames": ["sky-border-bottom-row"]
                 },
@@ -87,7 +87,7 @@
                   "name": "Divider soft left",
                   "className": "sky-theme-border-divider-soft-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-divider-soft-left)"
+                    "border-left": "var(--sky-theme-border-divider-soft)"
                   }
                 }
               ]
@@ -106,28 +106,28 @@
                   "name": "Danger border top",
                   "className": "sky-theme-border-danger-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-danger-top)"
+                    "border-top": "var(--sky-theme-border-danger)"
                   }
                 },
                 {
                   "name": "Danger border right",
                   "className": "sky-theme-border-danger-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-danger-right)"
+                    "border-right": "var(--sky-theme-border-danger)"
                   }
                 },
                 {
                   "name": "Danger border bottom",
                   "className": "sky-theme-border-danger-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-danger-bottom)"
+                    "border-bottom": "var(--sky-theme-border-danger)"
                   }
                 },
                 {
                   "name": "Danger border left",
                   "className": "sky-theme-border-danger-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-danger-left)"
+                    "border-left": "var(--sky-theme-border-danger)"
                   }
                 }
               ]
@@ -140,28 +140,28 @@
                   "name": "Info border top",
                   "className": "sky-theme-border-info-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-info-top)"
+                    "border-top": "var(--sky-theme-border-info)"
                   }
                 },
                 {
                   "name": "Info border right",
                   "className": "sky-theme-border-info-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-info-right)"
+                    "border-right": "var(--sky-theme-border-info)"
                   }
                 },
                 {
                   "name": "Info border bottom",
                   "className": "sky-theme-border-info-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-info-bottom)"
+                    "border-bottom": "var(--sky-theme-border-info)"
                   }
                 },
                 {
                   "name": "Info border left",
                   "className": "sky-theme-border-info-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-info-left)"
+                    "border-left": "var(--sky-theme-border-info)"
                   }
                 }
               ]
@@ -174,28 +174,28 @@
                   "name": "Success border top",
                   "className": "sky-theme-border-success-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-success-top)"
+                    "border-top": "var(--sky-theme-border-success)"
                   }
                 },
                 {
                   "name": "Success border right",
                   "className": "sky-theme-border-success-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-success-right)"
+                    "border-right": "var(--sky-theme-border-success)"
                   }
                 },
                 {
                   "name": "Success border bottom",
                   "className": "sky-theme-border-success-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-success-bottom)"
+                    "border-bottom": "var(--sky-theme-border-success)"
                   }
                 },
                 {
                   "name": "Success border left",
                   "className": "sky-theme-border-success-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-success-left)"
+                    "border-left": "var(--sky-theme-border-success)"
                   }
                 }
               ]
@@ -208,28 +208,28 @@
                   "name": "Warning border top",
                   "className": "sky-theme-border-warning-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-warning-top)"
+                    "border-top": "var(--sky-theme-border-warning)"
                   }
                 },
                 {
                   "name": "Warning border right",
                   "className": "sky-theme-border-warning-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-warning-right)"
+                    "border-right": "var(--sky-theme-border-warning)"
                   }
                 },
                 {
                   "name": "Warning border bottom",
                   "className": "sky-theme-border-warning-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-warning-bottom)"
+                    "border-bottom": "var(--sky-theme-border-warning)"
                   }
                 },
                 {
                   "name": "Warning border left",
                   "className": "sky-theme-border-warning-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-warning-left)"
+                    "border-left": "var(--sky-theme-border-warning)"
                   }
                 }
               ]

@@ -29,88 +29,23 @@
             "groupName": "Dividers"
           }
         },
-        "$description": "Borders that separate a page into heterogeneous sections or areas.",
-        "top": {
+        "base": {
+          "$description": "Border that separates a page into heterogeneous sections or areas.",
           "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)",
           "$type": "border",
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "groupName": "Divider base",
-              "name": "Divider base top"
-            }
-          }
-        },
-        "right": {
-          "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Divider base",
-              "name": "Divider base right"
-            }
-          }
-        },
-        "bottom": {
-          "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Divider base",
-              "name": "Divider base bottom"
-            }
-          }
-        },
-        "left": {
-          "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Divider base",
-              "name": "Divider base left"
+              "name": "Divider base shorthand"
             }
           }
         },
         "soft": {
+          "$description": "Border that separates homogenous sections or rows inside of a container.",
+          "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)",
+          "$type": "border",
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "groupName": "Divider soft"
-            }
-          },
-          "$description": "Borders that separate homogenous sections or rows inside of a container.",
-          "top": {
-            "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)",
-            "$type": "border",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Divider soft top"
-              }
-            }
-          },
-          "right": {
-            "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)",
-            "$type": "border",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Divider soft right"
-              }
-            }
-          },
-          "bottom": {
-            "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)",
-            "$type": "border",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Divider soft bottom"
-              }
-            }
-          },
-          "left": {
-            "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)",
-            "$type": "border",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Divider soft left"
-              }
+              "name": "Divider soft shorthand"
             }
           }
         }
@@ -118,178 +53,46 @@
       "danger": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Danger borders"
+            "groupName": "Status borders",
+            "name": "Danger border shorthand"
           }
         },
-        "$description": "The borders for an element that conveys danger, error, or a critical warning.",
-        "top": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Danger border top"
-            }
-          }
-        },
-        "right": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Danger border right"
-            }
-          }
-        },
-        "bottom": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Danger border bottom"
-            }
-          }
-        },
-        "left": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Danger border left"
-            }
-          }
-        }
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)",
+        "$type": "border",
+        "$description": "The border for an element that conveys danger, error, or a critical warning."
       },
       "info": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Info borders"
+            "groupName": "Status borders",
+            "name": "Info border shorthand"
           }
         },
-        "$description": "The borders for an element that contains important information, but conveys no danger.",
-        "top": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Info border top"
-            }
-          }
-        },
-        "right": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Info border right"
-            }
-          }
-        },
-        "bottom": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Info border bottom"
-            }
-          }
-        },
-        "left": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Info border left"
-            }
-          }
-        }
+        "$description": "The border for an element that contains important information, but conveys no danger.",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)",
+        "$type": "border"
       },
       "success": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Success borders"
+            "groupName": "Status borders",
+            "name": "Success border shorthand"
           }
         },
-        "$description": "The borders for an element that conveys success or completion.",
-        "top": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Success border top"
-            }
-          }
-        },
-        "right": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Success border right"
-            }
-          }
-        },
-        "bottom": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Success border bottom"
-            }
-          }
-        },
-        "left": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Success border left"
-            }
-          }
-        }
+        "$description": "The border for an element that conveys success or completion.",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)",
+        "$type": "border"
       },
       "warning": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Warning borders"
+            "groupName": "Status borders",
+            "name": "Warning border shorthand"
           }
         },
-        "$description": "The borders for an element that conveys warning or caution.",
-        "top": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Warning border top"
-            }
-          }
-        },
-        "right": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Warning border right"
-            }
-          }
-        },
-        "bottom": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Warning border bottom"
-            }
-          }
-        },
-        "left": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)",
-          "$type": "border",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Warning border left"
-            }
-          }
-        }
+        "$description": "The border for an element that conveys warning or caution.",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)",
+        "$type": "border"
       },
       "width": {
         "$extensions": {

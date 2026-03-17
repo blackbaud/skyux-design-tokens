@@ -71,6 +71,7 @@
             "$description": "The background color for an element that conveys danger, error, or a critical warning.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status backgrounds",
                 "name": "Danger background",
                 "deprecatedCustomProperties": ["--sky-background-color-danger"]
               }
@@ -82,6 +83,7 @@
             "$description": "The background color for an element that contains important information, but conveys no danger.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status backgrounds",
                 "name": "Info background",
                 "deprecatedCustomProperties": ["--sky-background-color-info"]
               }
@@ -93,6 +95,7 @@
             "$description": "The background color for an element that conveys success or completion.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status backgrounds",
                 "name": "Success background",
                 "deprecatedCustomProperties": ["--sky-background-color-success"]
               }
@@ -104,6 +107,7 @@
             "$description": "The background color for an element that conveys warning or caution.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status backgrounds",
                 "name": "Warning background",
                 "deprecatedCustomProperties": ["--sky-background-color-warning"]
               }
@@ -251,6 +255,7 @@
           "$description": "The border color for an element that contains important information, but conveys no danger.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Status borders",
               "name": "Info border",
               "deprecatedCustomProperties": ["--sky-highlight-color-info"]
             }
@@ -262,6 +267,7 @@
           "$description": "The border color for an element that conveys success or completion.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Status borders",
               "name": "Success border",
               "deprecatedCustomProperties": ["--sky-highlight-color-success"]
             }
@@ -273,6 +279,7 @@
           "$description": "The border color for an element that conveys warning or caution.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Status borders",
               "name": "Warning border",
               "deprecatedCustomProperties": ["--sky-highlight-color-warning"]
             }
@@ -418,6 +425,7 @@
           "$description": "The color for an icon that conveys important information, but no danger.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Status icon glyphs",
               "name": "Info icon"
             }
           }
@@ -428,6 +436,7 @@
           "$description": "The color for an icon that conveys success or completion.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Status icon glyphs",
               "name": "Success icon"
             }
           }
