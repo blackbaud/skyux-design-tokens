@@ -660,6 +660,28 @@
         }
       },
       "style": {
+        "em": {
+          "$value": "italic",
+          "$type": "fontWeights",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Paragraphs",
+              "name": "Em",
+              "cssProperty": "font-style"
+            }
+          }
+        },
+        "strong": {
+          "$value": "700",
+          "$type": "fontWeights",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Paragraphs",
+              "name": "Strong",
+              "cssProperty": "font-weight"
+            }
+          }
+        },
         "hint": {
           "m": {
             "$value": "italic",
@@ -902,6 +924,19 @@
           "$extensions": {
             "com.blackbaud.developer.docs": {
               "groupName": "Help text"
+            }
+          }
+        },
+        "paragraph": {
+          "m": {
+            "$value": "normal",
+            "$type": "lineHeights",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "groupName": "Paragraphs",
+                "name": "Paragraph M",
+                "cssProperty": "line-height"
+              }
             }
           }
         }

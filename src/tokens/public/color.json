@@ -9,7 +9,10 @@
       "background": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Backgrounds"
+            "groupName": "Backgrounds",
+            "demoMetadata": {
+              "type": "background-color"
+            }
           }
         },
         "page": {
@@ -110,7 +113,10 @@
         "icon_matte": {
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "groupName": "Icon mattes"
+              "groupName": "Icon mattes",
+              "demoMetadata": {
+                "color": "--sky-theme-color-icon-inverse"
+              }
             }
           },
           "$description": "Use icon matte colors for the background of elements that an icon component is placed inside of. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
@@ -120,7 +126,10 @@
               "$type": "color",
               "$extensions": {
                 "com.blackbaud.developer.docs": {
-                  "name": "Action soft icon matte"
+                  "name": "Action soft icon matte",
+                  "demoMetadata": {
+                    "color": "--sky-theme-color-icon-action"
+                  }
                 }
               }
             }
@@ -131,7 +140,8 @@
             "$description": "The color for a small background behind an icon that conveys danger, error, or a critical warning.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Danger icon matte"
+                "name": "Danger icon matte",
+                "cssProperty": "background-color"
               }
             }
           },
@@ -141,7 +151,8 @@
             "$description": "The color for a small background behind an icon that conveys important information, but no danger.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Info icon matte"
+                "name": "Info icon matte",
+                "cssProperty": "background-color"
               }
             }
           },
@@ -151,7 +162,8 @@
             "$description": "The color for a small background behind an icon that conveys success or completion.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Success icon matte"
+                "name": "Success icon matte",
+                "cssProperty": "background-color"
               }
             }
           },
@@ -161,7 +173,11 @@
             "$description": "The color for a small background behind an icon that conveys warning or caution.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Warning icon matte"
+                "name": "Warning icon matte",
+                "cssProperty": "background-color",
+                "demoMetadata": {
+                  "color": "--sky-theme-color-icon-default"
+                }
               }
             }
           }
@@ -170,7 +186,10 @@
       "border": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Borders"
+            "groupName": "Borders",
+            "demoMetadata": {
+              "type": "border-color"
+            }
           }
         },
         "container": {
@@ -263,7 +282,10 @@
       "text": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Text"
+            "groupName": "Text",
+            "demoMetadata": {
+              "type": "text-color"
+            }
           }
         },
         "default": {
@@ -326,7 +348,10 @@
           "$extensions": {
             "com.blackbaud.developer.docs": {
               "name": "Inverse text",
-              "deprecatedCustomProperties": ["--sky-text-color-on-dark"]
+              "deprecatedCustomProperties": ["--sky-text-color-on-dark"],
+              "demoMetadata": {
+                "color": "--sky-theme-color-background-default"
+              }
             }
           }
         }

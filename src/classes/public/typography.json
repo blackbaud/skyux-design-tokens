@@ -133,6 +133,35 @@
           ]
         },
         {
+          "name": "Paragraphs",
+          "styles": [
+            {
+              "name": "Paragraph",
+              "selectors": ["p"],
+              "description": "Use paragraphs to give one or more complete sentences reading line-height.",
+              "properties": {
+                "line-height": "var( --sky-theme-font-line_height-paragraph-m)"
+              }
+            },
+            {
+              "name": "Strong",
+              "selectors": ["strong"],
+              "description": "Use <strong> to create visual and semantic importance on a word or words.",
+              "properties": {
+                "font-weight": "var(--sky-theme-font-style-strong)"
+              }
+            },
+            {
+              "name": "Stressed text",
+              "selectors": ["em"],
+              "description": "Use <em> to create reading and semantic emphasis or stress on a word or words.",
+              "properties": {
+                "font-style": "var(--sky-theme-font-style-em-style)"
+              }
+            }
+          ]
+        },
+        {
           "name": "Display text",
           "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
           "styles": [
