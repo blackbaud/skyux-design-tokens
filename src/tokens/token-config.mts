@@ -56,12 +56,17 @@ export const tokenConfig: TokenConfig = {
           name: 'public-color',
           path: 'public/color.json',
         },
+        {
+          name: 'public-border',
+          path: 'public/border.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'color', path: '../classes/public/color.json' },
+        { name: 'border', path: '../classes/public/borders.json' },
       ],
     },
     {
@@ -105,12 +110,17 @@ export const tokenConfig: TokenConfig = {
           name: 'public-color',
           path: 'public/default/color.json',
         },
+        {
+          name: 'public-border',
+          path: 'public/default/border.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'color', path: '../classes/public/color.json' },
+        { name: 'border', path: '../classes/public/borders.json' },
       ],
     },
   ],

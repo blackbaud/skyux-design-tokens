@@ -1,0 +1,455 @@
+{
+  "theme": {
+    "border": {
+      "$extensions": {
+        "com.blackbaud.developer.docs": {
+          "groupName": "Borders"
+        }
+      },
+      "container": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Containers"
+          }
+        },
+        "$description": "A border that wraps around a container and separates it from its surroundings.",
+        "base": {
+          "$value": "1px solid #cdcfd2",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Container base"
+            }
+          }
+        }
+      },
+      "divider": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Dividers"
+          }
+        },
+        "$description": "Borders that separate a page into heterogeneous sections or areas.",
+        "top": {
+          "$value": "1px solid #cdcfd2",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Divider base",
+              "name": "Divider base top"
+            }
+          }
+        },
+        "right": {
+          "$value": "1px solid #cdcfd2",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Divider base",
+              "name": "Divider base right"
+            }
+          }
+        },
+        "bottom": {
+          "$value": "1px solid #cdcfd2",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Divider base",
+              "name": "Divider base bottom"
+            }
+          }
+        },
+        "left": {
+          "$value": "1px solid #cdcfd2",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Divider base",
+              "name": "Divider base left"
+            }
+          }
+        },
+        "soft": {
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "groupName": "Divider soft"
+            }
+          },
+          "$description": "Borders that separate homogenous sections or rows inside of a container.",
+          "top": {
+            "$value": "1px solid #cdcfd2",
+            "$type": "border",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Divider soft top"
+              }
+            }
+          },
+          "right": {
+            "$value": "1px solid #cdcfd2",
+            "$type": "border",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Divider soft right"
+              }
+            }
+          },
+          "bottom": {
+            "$value": "1px solid #cdcfd2",
+            "$type": "border",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Divider soft bottom"
+              }
+            }
+          },
+          "left": {
+            "$value": "1px solid #cdcfd2",
+            "$type": "border",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Divider soft left"
+              }
+            }
+          }
+        }
+      },
+      "danger": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Danger borders"
+          }
+        },
+        "$description": "The borders for an element that conveys danger, error, or a critical warning.",
+        "top": {
+          "$value": "1px solid #ef4044",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Danger border top"
+            }
+          }
+        },
+        "right": {
+          "$value": "1px solid #ef4045",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Danger border right"
+            }
+          }
+        },
+        "bottom": {
+          "$value": "1px solid #ef4046",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Danger border bottom"
+            }
+          }
+        },
+        "left": {
+          "$value": "1px solid #ef4047",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Danger border left"
+            }
+          }
+        }
+      },
+      "info": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Info borders"
+          }
+        },
+        "$description": "The borders for an element that contains important information, but conveys no danger.",
+        "top": {
+          "$value": "1px solid #00b4f1",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Info border top"
+            }
+          }
+        },
+        "right": {
+          "$value": "1px solid #00b4f2",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Info border right"
+            }
+          }
+        },
+        "bottom": {
+          "$value": "1px solid #00b4f3",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Info border bottom"
+            }
+          }
+        },
+        "left": {
+          "$value": "1px solid #00b4f4",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Info border left"
+            }
+          }
+        }
+      },
+      "success": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Success borders"
+          }
+        },
+        "$description": "The borders for an element that conveys success or completion.",
+        "top": {
+          "$value": "1px solid #72bf44",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Success border top"
+            }
+          }
+        },
+        "right": {
+          "$value": "1px solid #72bf45",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Success border right"
+            }
+          }
+        },
+        "bottom": {
+          "$value": "1px solid #72bf46",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Success border bottom"
+            }
+          }
+        },
+        "left": {
+          "$value": "1px solid #72bf47",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Success border left"
+            }
+          }
+        }
+      },
+      "warning": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Warning borders"
+          }
+        },
+        "$description": "The borders for an element that conveys warning or caution.",
+        "top": {
+          "$value": "1px solid #fbb034",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Warning border top"
+            }
+          }
+        },
+        "right": {
+          "$value": "1px solid #fbb035",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Warning border right"
+            }
+          }
+        },
+        "bottom": {
+          "$value": "1px solid #fbb036",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Warning border bottom"
+            }
+          }
+        },
+        "left": {
+          "$value": "1px solid #fbb037",
+          "$type": "border",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Warning border left"
+            }
+          }
+        }
+      },
+      "width": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Border widths"
+          }
+        },
+        "$description": "Add these in addition to border properties to modify the border width of certain elements.",
+        "container": {
+          "base": {
+            "$value": "1px",
+            "$type": "border",
+            "$description": "The width for borders that wrap around a container.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Container base width"
+              }
+            }
+          }
+        },
+        "divider": {
+          "$value": "1px",
+          "$type": "border",
+          "$description": "The width for borders that separate a page into heterogeneous sections or areas.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Divider base width"
+            }
+          }
+        },
+        "separator": {
+          "row": {
+            "$value": "1px",
+            "$type": "border",
+            "$description": "The width for borders that separate homogenous sections or rows inside of a container.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Divider soft width"
+              }
+            }
+          }
+        },
+        "emphasized": {
+          "$value": "2px",
+          "$type": "border",
+          "$description": "The width to add emphasis to dividers or status borders.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Emphasized border width"
+            }
+          }
+        },
+        "accent": {
+          "$value": "4px",
+          "$type": "border",
+          "$description": "The width to highlight an element with a status border in the visual hierarchy.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Accent border width"
+            }
+          }
+        }
+      },
+      "style": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Border styles"
+          }
+        },
+        "$description": "Add these in addition to border properties to modify the border style of certain elements.",
+        "divider": {
+          "$value": "solid",
+          "$type": "border",
+          "$description": "The style of a border that wraps around a container or separates a page into heterogeneous sections or areas.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Divider base style"
+            }
+          }
+        },
+        "separator": {
+          "row": {
+            "$value": "solid",
+            "$type": "border",
+            "$description": "The style of a border that separates homogenous sections or rows inside of a container.",
+            "$extensions": {
+              "com.blackbaud.developer.docs": {
+                "name": "Divider soft style"
+              }
+            }
+          }
+        },
+        "accent": {
+          "$value": "solid",
+          "$type": "border",
+          "$description": "The style of a border that highlights an element with a status border in the visual hierarchy.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Accent border style"
+            }
+          }
+        }
+      },
+      "radius": {
+        "$extensions": {
+          "com.blackbaud.developer.docs": {
+            "groupName": "Border radius"
+          }
+        },
+        "xs": {
+          "$value": "4px",
+          "$type": "border",
+          "$description": "The border radius for very small elements like tokens.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Border radius XS"
+            }
+          }
+        },
+        "s": {
+          "$value": "4px",
+          "$type": "border",
+          "$description": "The border radius for most interactive elements like buttons.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Border radius S"
+            }
+          }
+        },
+        "m": {
+          "$value": "4px",
+          "$type": "border",
+          "$description": "The border radius for overlay containers like menus.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Border radius M"
+            }
+          }
+        },
+        "pill": {
+          "$value": "1000px",
+          "$type": "border",
+          "$description": "The border radius for heavily rounded rectangles like labels.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Pill border radius"
+            }
+          }
+        },
+        "round": {
+          "$value": "50%",
+          "$type": "border",
+          "$description": "The border radius for circular elements like avatars.",
+          "$extensions": {
+            "com.blackbaud.developer.docs": {
+              "name": "Round border radius"
+            }
+          }
+        }
+      }
+    }
+  }
+}
