@@ -588,6 +588,32 @@
               ]
             }
           ]
+        },
+        {
+          "groupName": "Deprecated colors",
+          "description": "These colors are deprecated and will be removed in a future version of SKY UX. To replace them with supported values, follow component patterns and use concepts above.",
+          "tokens": [
+            {
+              "name": "Primary action background",
+              "deprecatedCustomProperties": ["--sky-background-color-primary-dark"]
+            }, 
+            {
+              "name": "Light background",
+              "deprecatedCustomProperties": ["--sky-background-color-neutral-light"]
+            },
+            {
+              "name": "Selected element background",
+              "deprecatedCustomProperties": ["--sky-background-color-input-selected"]
+            },
+            {
+              "name": "Info background light",
+              "deprecatedCustomProperties": ["--sky-background-color-info-light"]
+            },
+            {
+              "name": "Danger background dark",
+              "deprecatedCustomProperties": ["--sky-background-color-danger-dark"]
+            }
+          ]
         }
       ]
     }
