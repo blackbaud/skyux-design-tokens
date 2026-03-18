@@ -59,17 +59,18 @@ export const tokenConfig: TokenConfig = {
           path: 'public/color.json',
           docsPath: 'public/docs/color.json',
         },
-        // {
-        //   name: 'public-border',
-        //   path: 'public/border.json',
-        // },
+        {
+          name: 'public-border',
+          path: 'public/border.json',
+          docsPath: 'public/docs/border.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         // { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'color', path: '../classes/public/color.json' },
-        // { name: 'border', path: '../classes/public/borders.json' },
+        { name: 'border', path: '../classes/public/borders.json' },
       ],
     },
     {
@@ -116,17 +117,18 @@ export const tokenConfig: TokenConfig = {
           path: 'public/default/color.json',
           docsPath: 'public/docs/color.json',
         },
-        // {
-        //   name: 'public-border',
-        //   path: 'public/default/border.json',
-        // },
+        {
+          name: 'public-border',
+          path: 'public/default/border.json',
+          docsPath: 'public/docs/border.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         // { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'color', path: '../classes/public/color.json' },
-        // { name: 'border', path: '../classes/public/borders.json' },
+        { name: 'border', path: '../classes/public/borders.json' },
       ],
     },
   ],
