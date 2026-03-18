@@ -1,7 +1,7 @@
 {
   "groups": [
     {
-      "groupName": "Layout",
+      "groupName": "Spacing",
       "groups": [
         {
           "groupName": "Stacked space",

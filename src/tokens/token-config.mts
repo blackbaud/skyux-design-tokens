@@ -41,9 +41,9 @@ export const tokenConfig: TokenConfig = {
       ],
       publicTokens: [
         {
-          name: 'public-layout',
-          path: 'public/layout.json',
-          docsPath: 'public/docs/layout.json',
+          name: 'public-spacing',
+          path: 'public/spacing.json',
+          docsPath: 'public/docs/spacing.json',
         },
         {
           name: 'public-typography',
@@ -56,22 +56,22 @@ export const tokenConfig: TokenConfig = {
           docsPath: 'public/docs/elevation.json',
         },
         {
-          name: 'public-color',
-          path: 'public/color.json',
-          docsPath: 'public/docs/color.json',
+          name: 'public-colors',
+          path: 'public/colors.json',
+          docsPath: 'public/docs/colors.json',
         },
         {
-          name: 'public-border',
-          path: 'public/border.json',
-          docsPath: 'public/docs/border.json',
+          name: 'public-borders',
+          path: 'public/borders.json',
+          docsPath: 'public/docs/borders.json',
         },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
-        { name: 'color', path: '../classes/public/color.json' },
-        { name: 'border', path: '../classes/public/borders.json' },
+        { name: 'colors', path: '../classes/public/colors.json' },
+        { name: 'borders', path: '../classes/public/borders.json' },
       ],
     },
     {
@@ -100,9 +100,9 @@ export const tokenConfig: TokenConfig = {
       referenceTokens: [],
       publicTokens: [
         {
-          name: 'public-layout',
-          path: 'public/default/layout.json',
-          docsPath: 'public/docs/layout.json',
+          name: 'public-spacing',
+          path: 'public/default/spacing.json',
+          docsPath: 'public/docs/spacing.json',
         },
         {
           name: 'public-typography',
@@ -115,22 +115,22 @@ export const tokenConfig: TokenConfig = {
           docsPath: 'public/docs/elevation.json',
         },
         {
-          name: 'public-color',
-          path: 'public/default/color.json',
-          docsPath: 'public/docs/color.json',
+          name: 'public-colors',
+          path: 'public/default/colors.json',
+          docsPath: 'public/docs/colors.json',
         },
         {
-          name: 'public-border',
-          path: 'public/default/border.json',
-          docsPath: 'public/docs/border.json',
+          name: 'public-borders',
+          path: 'public/default/borders.json',
+          docsPath: 'public/docs/borders.json',
         },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
-        { name: 'color', path: '../classes/public/color.json' },
-        { name: 'border', path: '../classes/public/borders.json' },
+        { name: 'colors', path: '../classes/public/colors.json' },
+        { name: 'borders', path: '../classes/public/borders.json' },
       ],
     },
   ],
