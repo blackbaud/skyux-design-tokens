@@ -49,10 +49,11 @@ export const tokenConfig: TokenConfig = {
         //   name: 'public-typography',
         //   path: 'public/typography.json',
         // },
-        // {
-        //   name: 'public-elevation',
-        //   path: 'public/elevation.json',
-        // },
+        {
+          name: 'public-elevation',
+          path: 'public/elevation.json',
+          docsPath: 'public/docs/elevation.json',
+        },
         // {
         //   name: 'public-color',
         //   path: 'public/color.json',
@@ -65,7 +66,7 @@ export const tokenConfig: TokenConfig = {
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         // { name: 'typography', path: '../classes/public/typography.json' },
-        // { name: 'elevation', path: '../classes/public/elevation.json' },
+        { name: 'elevation', path: '../classes/public/elevation.json' },
         // { name: 'color', path: '../classes/public/color.json' },
         // { name: 'border', path: '../classes/public/borders.json' },
       ],
@@ -104,10 +105,11 @@ export const tokenConfig: TokenConfig = {
         //   name: 'public-typography',
         //   path: 'public/default/typography.json',
         // },
-        // {
-        //   name: 'public-elevation',
-        //   path: 'public/default/elevation.json',
-        // },
+        {
+          name: 'public-elevation',
+          path: 'public/default/elevation.json',
+          docsPath: 'public/docs/elevation.json',
+        },
         // {
         //   name: 'public-color',
         //   path: 'public/default/color.json',
@@ -120,7 +122,7 @@ export const tokenConfig: TokenConfig = {
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
         // { name: 'typography', path: '../classes/public/typography.json' },
-        // { name: 'elevation', path: '../classes/public/elevation.json' },
+        { name: 'elevation', path: '../classes/public/elevation.json' },
         // { name: 'color', path: '../classes/public/color.json' },
         // { name: 'border', path: '../classes/public/borders.json' },
       ],

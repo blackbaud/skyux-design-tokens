@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "groupName": "Elevation",
+      "groups": [
+        {
+          "groupName": "Raised",
+          "tokens": [
+            {
+              "name": "Raised",
+              "customProperty": "--sky-theme-elevation-raised-100",
+              "description": "For slightly raised elevation to give a subtle emphasis to elements on the page background. Examples: alerts and avatars"
+            }
+          ]
+        },
+        {
+          "groupName": "Overflow",
+          "tokens": [
+            {
+              "name": "Overflow",
+              "customProperty": "--sky-theme-elevation-overflow",
+              "description": "For elements that remain fixed, staying in view on scroll, to appear above scrolling content. Examples: back to top and summary action bar"
+            }
+          ]
+        },
+        {
+          "groupName": "Overlays",
+          "description": "Overlay elevation is used for elements that are temporary and more visually distinct via higher elevation from the surface.",
+          "tokens": [
+            {
+              "name": "Overlay 100",
+              "customProperty": "--sky-theme-elevation-overlay-100",
+              "description": "For a small overlay elevation on temporary elements that are easily dismissed. Examples: popovers, dropdown menus, and picker inputs"
+            },
+            {
+              "name": "Overlay 200",
+              "customProperty": "--sky-theme-elevation-overlay-200",
+              "description": "For an overlay elevation that gives more emphasis to larger elements that are used in conjunction with the main page. Example: flyouts"
+            },
+            {
+              "name": "Overlay 300",
+              "customProperty": "--sky-theme-elevation-overlay-300",
+              "description": "For floating overlays that require clear visual separation. Use for interruptive elements. Examples: modals and toasts"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
