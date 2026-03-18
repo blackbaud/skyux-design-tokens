@@ -1,0 +1,546 @@
+{
+  "groups": [
+    {
+      "groupName": "Typography",
+      "groups": [
+        {
+          "groupName": "Font families",
+          "tokens": [
+            {
+              "name": "Primary font family",
+              "customProperty": "--sky-theme-font-family-primary",
+              "description": "The font family used for all elements on a page including headings, content, and components.",
+              "cssProperty": "font-family"
+            }
+          ]
+        },
+        {
+          "groupName": "Headings",
+          "description": "Use headings to introduce the page and sections of content within a page. Don't skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
+          "groups": [
+            {
+              "groupName": "Heading 1",
+              "description": "Use for page titles and record names. Use only one heading 1 element per page.",
+              "tokens": [
+                {
+                  "name": "Heading 1 font weight",
+                  "customProperty": "--sky-theme-font-weight-heading-1",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Heading 1 font size",
+                  "customProperty": "--sky-theme-font-size-heading-1",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Heading 1 line height",
+                  "customProperty": "--sky-theme-font-line_height-heading-1",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Heading 1 font family",
+                  "customProperty": "--sky-theme-font-family-heading-1",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Heading 2",
+              "description": "Use for main sections and container headings.",
+              "tokens": [
+                {
+                  "name": "Heading 2 font weight",
+                  "customProperty": "--sky-theme-font-weight-heading-2",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Heading 2 font size",
+                  "customProperty": "--sky-theme-font-size-heading-2",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Heading 2 line height",
+                  "customProperty": "--sky-theme-font-line_height-heading-2",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Heading 2 font family",
+                  "customProperty": "--sky-theme-font-family-heading-2",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Heading 3",
+              "description": "Use for subsections within containers and within heading 2 sections.",
+              "tokens": [
+                {
+                  "name": "Heading 3 font weight",
+                  "customProperty": "--sky-theme-font-weight-heading-3",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Heading 3 font size",
+                  "customProperty": "--sky-theme-font-size-heading-3",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Heading 3 line height",
+                  "customProperty": "--sky-theme-font-line_height-heading-3",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Heading 3 font family",
+                  "customProperty": "--sky-theme-font-family-heading-3",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Heading 4",
+              "description": "Use for subsections within heading 3 sections.",
+              "tokens": [
+                {
+                  "name": "Heading 4 font weight",
+                  "customProperty": "--sky-theme-font-weight-heading-4",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Heading 4 font size",
+                  "customProperty": "--sky-theme-font-size-heading-4",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Heading 4 line height",
+                  "customProperty": "--sky-theme-font-line_height-heading-4",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Heading 4 font family",
+                  "customProperty": "--sky-theme-font-family-heading-4",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Heading 5",
+              "description": "Use for subsections within heading 4 sections.",
+              "tokens": [
+                {
+                  "name": "Heading 5 font weight",
+                  "customProperty": "--sky-theme-font-weight-heading-5",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Heading 5 font size",
+                  "customProperty": "--sky-theme-font-size-heading-5",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Heading 5 line height",
+                  "customProperty": "--sky-theme-font-line_height-heading-5",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Heading 5 font family",
+                  "customProperty": "--sky-theme-font-family-heading-5",
+                  "cssProperty": "font-family"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Body text",
+          "groups": [
+            {
+              "groupName": "Medium body",
+              "description": "Default size for majority of information on the page including component labels, data, and paragraphs.",
+              "tokens": [
+                {
+                  "name": "Medium body font weight",
+                  "customProperty": "--sky-theme-font-weight-body-m",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Medium body font size",
+                  "customProperty": "--sky-theme-font-size-body-m",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Medium body line height",
+                  "customProperty": "--sky-theme-font-line_height-body-m",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Medium body font family",
+                  "customProperty": "--sky-theme-font-family-body-m",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Medium emphasized",
+              "description": "Use for elevating the primary text that identifies an item in a text group's visual hierarchy.",
+              "tokens": [
+                {
+                  "name": "Medium emphasized font weight",
+                  "customProperty": "--sky-theme-font-weight-body-emphasized-m",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Medium emphasized font size",
+                  "customProperty": "--sky-theme-font-size-body-emphasized-m",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Medium emphasized line height",
+                  "customProperty": "--sky-theme-font-line_height-body-emphasized-m",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Medium emphasized font family",
+                  "customProperty": "--sky-theme-font-family-body-emphasized-m",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Medium deemphasized",
+              "description": "Use for secondary information that describes or contextualizes an item to lower it in the visual hierarchy alongside the primary text that identifies an item.",
+              "tokens": [
+                {
+                  "name": "Medium deemphasized font weight",
+                  "customProperty": "--sky-theme-font-weight-body-deemphasized-m",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Medium deemphasized font size",
+                  "customProperty": "--sky-theme-font-size-body-deemphasized-m",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Medium deemphasized line height",
+                  "customProperty": "--sky-theme-font-line_height-body-deemphasized-m",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Medium deemphasized font family",
+                  "customProperty": "--sky-theme-font-family-body-deemphasized-m",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Small body",
+              "description": "Use for text only when space is limited and only for a section or container within a page.",
+              "tokens": [
+                {
+                  "name": "Small body font weight",
+                  "customProperty": "--sky-theme-font-weight-body-s",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Small body font size",
+                  "customProperty": "--sky-theme-font-size-body-s",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Small body line height",
+                  "customProperty": "--sky-theme-font-line_height-body-s",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Small body font family",
+                  "customProperty": "--sky-theme-font-family-body-s",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Small emphasized",
+              "description": "Use to elevate the primary text that identifies an item in a text group's visual hierarchy when using small body text.",
+              "tokens": [
+                {
+                  "name": "Small emphasized font weight",
+                  "customProperty": "--sky-theme-font-weight-body-emphasized-s",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Small emphasized font size",
+                  "customProperty": "--sky-theme-font-size-body-emphasized-s",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Small emphasized line height",
+                  "customProperty": "--sky-theme-font-line_height-body-emphasized-s",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Small emphasized font family",
+                  "customProperty": "--sky-theme-font-family-body-emphasized-s",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Small deemphasized",
+              "description": "Use for tertiary information in a text group to lower it in the visual hierarchy below secondary information.",
+              "tokens": [
+                {
+                  "name": "Small deemphasized font weight",
+                  "customProperty": "--sky-theme-font-weight-body-deemphasized-s",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Small deemphasized font size",
+                  "customProperty": "--sky-theme-font-size-body-deemphasized-s",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Small deemphasized line height",
+                  "customProperty": "--sky-theme-font-line_height-body-deemphasized-s",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Small deemphasized font family",
+                  "customProperty": "--sky-theme-font-family-body-deemphasized-s",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Large body",
+              "description": "Use for lead paragraphs in long-form content.",
+              "tokens": [
+                {
+                  "name": "Large body font weight",
+                  "customProperty": "--sky-theme-font-weight-body-l",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Large body font size",
+                  "customProperty": "--sky-theme-font-size-body-l",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Large body line height",
+                  "customProperty": "--sky-theme-font-line_height-body-l",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Large body font family",
+                  "customProperty": "--sky-theme-font-family-body-l",
+                  "cssProperty": "font-family"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Display text",
+          "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
+          "groups": [
+            {
+              "groupName": "Display 1",
+              "tokens": [
+                {
+                  "name": "Display 1 font weight",
+                  "customProperty": "--sky-theme-font-weight-display-1",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Display 1 font size",
+                  "customProperty": "--sky-theme-font-size-display-1",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Display 1 line height",
+                  "customProperty": "--sky-theme-font-line_height-display-1",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Display 1 font family",
+                  "customProperty": "--sky-theme-font-family-display-1",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Display 2",
+              "tokens": [
+                {
+                  "name": "Display 2 font weight",
+                  "customProperty": "--sky-theme-font-weight-display-2",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Display 2 font size",
+                  "customProperty": "--sky-theme-font-size-display-2",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Display 2 line height",
+                  "customProperty": "--sky-theme-font-line_height-display-2",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Display 2 font family",
+                  "customProperty": "--sky-theme-font-family-display-2",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Display 3",
+              "tokens": [
+                {
+                  "name": "Display 3 font weight",
+                  "customProperty": "--sky-theme-font-weight-display-3",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Display 3 font size",
+                  "customProperty": "--sky-theme-font-size-display-3",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Display 3 line height",
+                  "customProperty": "--sky-theme-font-line_height-display-3",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Display 3 font family",
+                  "customProperty": "--sky-theme-font-family-display-3",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Display 4",
+              "tokens": [
+                {
+                  "name": "Display 4 font weight",
+                  "customProperty": "--sky-theme-font-weight-display-4",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Display 4 font size",
+                  "customProperty": "--sky-theme-font-size-display-4",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Display 4 line height",
+                  "customProperty": "--sky-theme-font-line_height-display-4",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Display 4 font family",
+                  "customProperty": "--sky-theme-font-family-display-4",
+                  "cssProperty": "font-family"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Paragraphs",
+          "tokens": [
+            {
+              "name": "Paragraph line height",
+              "customProperty": "--sky-theme-font-line_height-paragraph-m",
+              "cssProperty": "line-height"
+            },
+            {
+              "name": "Strong font weight",
+              "customProperty": "--sky-theme-font-style-strong",
+              "cssProperty": "font-weight"
+            },
+            {
+              "name": "Em font style",
+              "customProperty": "--sky-theme-font-style-em-style",
+              "cssProperty": "font-style"
+            },
+            {
+              "name": "Em font weight",
+              "customProperty": "--sky-theme-font-style-em-weight",
+              "cssProperty": "font-weight"
+            }
+          ]
+        },
+        {
+          "groupName": "Help text",
+          "groups": [
+            {
+              "groupName": "Hint medium",
+              "description": "Use for page- and form-level help.",
+              "tokens": [
+                {
+                  "name": "Hint medium font style",
+                  "customProperty": "--sky-theme-font-style-hint-m-style",
+                  "cssProperty": "font-style"
+                },
+                {
+                  "name": "Hint medium font weight",
+                  "customProperty": "--sky-theme-font-style-hint-m-weight",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Hint medium font size",
+                  "customProperty": "--sky-theme-font-size-hint-m",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Hint medium line height",
+                  "customProperty": "--sky-theme-font-line_height-hint-m",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Hint medium font family",
+                  "customProperty": "--sky-theme-font-family-hint-m",
+                  "cssProperty": "font-family"
+                }
+              ]
+            },
+            {
+              "groupName": "Hint small",
+              "description": "Used for field- and label-level help within components.",
+              "tokens": [
+                {
+                  "name": "Hint small font style",
+                  "customProperty": "--sky-theme-font-style-hint-s-style",
+                  "cssProperty": "font-style"
+                },
+                {
+                  "name": "Hint small font weight",
+                  "customProperty": "--sky-theme-font-style-hint-s-weight",
+                  "cssProperty": "font-weight"
+                },
+                {
+                  "name": "Hint small font size",
+                  "customProperty": "--sky-theme-font-size-hint-s",
+                  "cssProperty": "font-size"
+                },
+                {
+                  "name": "Hint small line height",
+                  "customProperty": "--sky-theme-font-line_height-hint-s",
+                  "cssProperty": "line-height"
+                },
+                {
+                  "name": "Hint small font family",
+                  "customProperty": "--sky-theme-font-family-hint-s",
+                  "cssProperty": "font-family"
+                },
+                {
+                  "name": "Hint small letter spacing",
+                  "customProperty": "--sky-theme-font-letter_spacing-hint-s",
+                  "cssProperty": "letter-spacing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

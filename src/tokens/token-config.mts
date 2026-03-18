@@ -45,10 +45,11 @@ export const tokenConfig: TokenConfig = {
           path: 'public/layout.json',
           docsPath: 'public/docs/layout.json',
         },
-        // {
-        //   name: 'public-typography',
-        //   path: 'public/typography.json',
-        // },
+        {
+          name: 'public-typography',
+          path: 'public/typography.json',
+          docsPath: 'public/docs/typography.json',
+        },
         {
           name: 'public-elevation',
           path: 'public/elevation.json',
@@ -67,7 +68,7 @@ export const tokenConfig: TokenConfig = {
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
-        // { name: 'typography', path: '../classes/public/typography.json' },
+        { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'color', path: '../classes/public/color.json' },
         { name: 'border', path: '../classes/public/borders.json' },
@@ -103,10 +104,11 @@ export const tokenConfig: TokenConfig = {
           path: 'public/default/layout.json',
           docsPath: 'public/docs/layout.json',
         },
-        // {
-        //   name: 'public-typography',
-        //   path: 'public/default/typography.json',
-        // },
+        {
+          name: 'public-typography',
+          path: 'public/default/typography.json',
+          docsPath: 'public/docs/typography.json',
+        },
         {
           name: 'public-elevation',
           path: 'public/default/elevation.json',
@@ -125,7 +127,7 @@ export const tokenConfig: TokenConfig = {
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
-        // { name: 'typography', path: '../classes/public/typography.json' },
+        { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'color', path: '../classes/public/color.json' },
         { name: 'border', path: '../classes/public/borders.json' },
