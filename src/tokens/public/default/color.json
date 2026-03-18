@@ -135,6 +135,7 @@
             "$description": "The color for a small background behind an icon that conveys danger, error, or a critical warning.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status icon mattes",
                 "name": "Danger icon matte"
               }
             }
@@ -145,6 +146,7 @@
             "$description": "The color for a small background behind an icon that conveys important information, but no danger.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status icon mattes",
                 "name": "Info icon matte"
               }
             }
@@ -155,6 +157,7 @@
             "$description": "The color for a small background behind an icon that conveys success or completion.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status icon mattes",
                 "name": "Success icon matte"
               }
             }
@@ -165,6 +168,7 @@
             "$description": "The color for a small background behind an icon that conveys warning or caution.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status icon mattes",
                 "name": "Warning icon matte"
               }
             }
@@ -213,6 +217,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Dividers",
                 "name": "Divider soft"
               }
             }
@@ -359,6 +364,7 @@
           "$type": "color",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Icon glyphs",
               "name": "Deemphasized icon"
             }
           }
@@ -369,6 +375,7 @@
           "$description": "The color for icons on links and link buttons.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Icon glyphs",
               "name": "Action icon"
             }
           }
@@ -379,6 +386,7 @@
           "$description": "The color for icons on heavy background colors, such as primary and danger button labels.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Icon glyphs",
               "name": "Inverse icon"
             }
           }

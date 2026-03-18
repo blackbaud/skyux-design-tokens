@@ -11,7 +11,7 @@
           "com.blackbaud.developer.docs": {
             "groupName": "Backgrounds",
             "demoMetadata": {
-              "type": "background-color"
+              "type": "color-swatch"
             }
           }
         },
@@ -119,6 +119,7 @@
             "com.blackbaud.developer.docs": {
               "groupName": "Icon mattes",
               "demoMetadata": {
+                "type": "icon-background-color",
                 "color": "--sky-theme-color-icon-inverse"
               }
             }
@@ -144,8 +145,8 @@
             "$description": "The color for a small background behind an icon that conveys danger, error, or a critical warning.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Danger icon matte",
-                "cssProperty": "background-color"
+                "groupName": "Status icon mattes",
+                "name": "Danger icon matte"
               }
             }
           },
@@ -155,8 +156,8 @@
             "$description": "The color for a small background behind an icon that conveys important information, but no danger.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Info icon matte",
-                "cssProperty": "background-color"
+                "groupName": "Status icon mattes",
+                "name": "Info icon matte"
               }
             }
           },
@@ -166,8 +167,8 @@
             "$description": "The color for a small background behind an icon that conveys success or completion.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "name": "Success icon matte",
-                "cssProperty": "background-color"
+                "groupName": "Status icon mattes",
+                "name": "Success icon matte"
               }
             }
           },
@@ -177,8 +178,8 @@
             "$description": "The color for a small background behind an icon that conveys warning or caution.",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Status icon mattes",
                 "name": "Warning icon matte",
-                "cssProperty": "background-color",
                 "demoMetadata": {
                   "color": "--sky-theme-color-icon-default"
                 }
@@ -232,6 +233,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Dividers",
                 "name": "Divider soft"
               }
             }
@@ -357,7 +359,7 @@
               "name": "Inverse text",
               "deprecatedCustomProperties": ["--sky-text-color-on-dark"],
               "demoMetadata": {
-                "color": "--sky-theme-color-background-default"
+                "background": "--sky-theme-color-background-icon_matte-info"
               }
             }
           }
@@ -366,7 +368,10 @@
       "icon": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Icons"
+            "groupName": "Icons",
+            "demoMetadata": {
+              "type": "icon-color"
+            }
           }
         },
         "default": {
@@ -384,6 +389,7 @@
           "$type": "color",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Icon glyphs",
               "name": "Deemphasized icon"
             }
           }
@@ -394,6 +400,7 @@
           "$description": "The color for icons on links and link buttons.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
+              "groupName": "Icon glyphs",
               "name": "Action icon"
             }
           }
@@ -404,7 +411,11 @@
           "$description": "The color for icons on heavy background colors, such as primary and danger button labels.",
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "name": "Inverse icon"
+              "groupName": "Icon glyphs",
+              "name": "Inverse icon",
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-icon_matte-info"
+              }
             }
           }
         },
@@ -445,7 +456,10 @@
       "classify": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Classification"
+            "groupName": "Classification",
+            "demoMetadata": {
+              "type": "color-swatch"
+            }
           }
         },
         "$description": "Use classification colors to color-code blocks of content when the distinction between types of content is significant to users. For example, use classification colors for different types of events in calendars. Don't rely on color alone to classify content; include classification labels for users with color vision differences.\n\nDon't use classification colors to communicate statuses, such as danger or success.",
@@ -455,6 +469,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 1",
                 "deprecatedCustomProperties": ["--sky-category-color-teal"]
               }
@@ -465,6 +480,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 1"
               }
             }
@@ -476,6 +492,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 2",
                 "deprecatedCustomProperties": ["--sky-category-color-purple"]
               }
@@ -486,6 +503,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 2"
               }
             }
@@ -497,6 +515,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 3",
                 "deprecatedCustomProperties": ["--sky-category-color-blue"]
               }
@@ -507,6 +526,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 3"
               }
             }
@@ -518,6 +538,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 4",
                 "deprecatedCustomProperties": ["--sky-category-color-orange"]
               }
@@ -528,6 +549,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 4"
               }
             }
@@ -539,6 +561,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 5",
                 "deprecatedCustomProperties": ["--sky-category-color-yellow"]
               }
@@ -549,6 +572,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 5"
               }
             }
@@ -560,6 +584,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 6",
                 "deprecatedCustomProperties": ["--sky-category-color-green"]
               }
@@ -570,6 +595,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 6"
               }
             }
@@ -581,6 +607,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Backgrounds",
                 "name": "Classification background 7",
                 "deprecatedCustomProperties": ["--sky-category-color-red"]
               }
@@ -591,6 +618,7 @@
             "$type": "color",
             "$extensions": {
               "com.blackbaud.developer.docs": {
+                "groupName": "Foregrounds",
                 "name": "Classification foreground 7"
               }
             }
@@ -600,7 +628,10 @@
       "viz": {
         "$extensions": {
           "com.blackbaud.developer.docs": {
-            "groupName": "Data visualization"
+            "groupName": "Data visualization",
+            "demoMetadata": {
+              "type": "border-color"
+            }
           }
         },
         "axis": {
@@ -639,7 +670,10 @@
         "category": {
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "groupName": "Categorical palette"
+              "groupName": "Categorical palette",
+              "demoMetadata": {
+                "type": "color-swatch"
+              }
             }
           },
           "$description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. For example, use categorical colors for slices in a pie chart and bars in a bar chart. Categorical colors are visually distinct, and all eight meet 3:1 contrast on white backgrounds. Use them in their intended order, and use the first one when visualizations have just one category or no categories.",
@@ -727,7 +761,10 @@
         "sequence": {
           "$extensions": {
             "com.blackbaud.developer.docs": {
-              "groupName": "Sequential palette"
+              "groupName": "Sequential palette",
+              "demoMetadata": {
+                "type": "color-swatch"
+              }
             }
           },
           "$description": "Use the sequential palette to indicate different magnitudes within a range. For data with fewer than 10 magnitudes, always use the first and last color in the palette for the minimum and maximum magnitudes and evenly distribute the remaining values between them.",
@@ -826,7 +863,10 @@
           "pos": {
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "groupName": "Positive diverging palette"
+                "groupName": "Positive diverging palette",
+                "demoMetadata": {
+                  "type": "color-swatch"
+                }
               }
             },
             "1": {
@@ -923,7 +963,10 @@
           "neg": {
             "$extensions": {
               "com.blackbaud.developer.docs": {
-                "groupName": "Negative diverging palette"
+                "groupName": "Negative diverging palette",
+                "demoMetadata": {
+                  "type": "color-swatch"
+                }
               }
             },
             "1": {
