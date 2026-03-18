@@ -17,6 +17,9 @@
         {
           "groupName": "Headings",
           "description": "Use headings to introduce the page and sections of content within a page. Don't skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
+          "demoMetadata": {
+            "type": "text-group"
+          },
           "groups": [
             {
               "groupName": "Heading 1",
@@ -152,6 +155,9 @@
         },
         {
           "groupName": "Body text",
+          "demoMetadata": {
+            "type": "text-group"
+          },
           "groups": [
             {
               "groupName": "Medium body",
@@ -340,6 +346,9 @@
         {
           "groupName": "Display text",
           "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
+          "demoMetadata": {
+            "type": "text-group"
+          },
           "groups": [
             {
               "groupName": "Display 1",
@@ -445,31 +454,53 @@
         },
         {
           "groupName": "Paragraphs",
+          "demoMetadata": {
+            "type": "text-single"
+          },
           "tokens": [
             {
               "name": "Paragraph line height",
               "customProperty": "--sky-theme-font-line_height-paragraph-m",
-              "cssProperty": "line-height"
+              "cssProperty": "line-height",
+              "demoMetadata": {
+                "text": "They are volunteers."
+              }
             },
             {
               "name": "Strong font weight",
               "customProperty": "--sky-theme-font-style-strong",
-              "cssProperty": "font-weight"
-            },
+              "cssProperty": "font-weight",
+              "demoMetadata": {
+                "text": "Strong"
+              }
+            }
+          ],
+          "groups": [
             {
-              "name": "Em font style",
-              "customProperty": "--sky-theme-font-style-em-style",
-              "cssProperty": "font-style"
-            },
-            {
-              "name": "Em font weight",
-              "customProperty": "--sky-theme-font-style-em-weight",
-              "cssProperty": "font-weight"
+              "groupName": "Stressed text",
+              "demoMetadata": {
+                "type": "text-group"
+              },
+              "tokens": [
+                {
+                  "name": "Em font style",
+                  "customProperty": "--sky-theme-font-style-em-style",
+                  "cssProperty": "font-style"
+                },
+                {
+                  "name": "Em font weight",
+                  "customProperty": "--sky-theme-font-style-em-weight",
+                  "cssProperty": "font-weight"
+                }
+              ]
             }
           ]
         },
         {
           "groupName": "Help text",
+          "demoMetadata": {
+            "type": "text-group"
+          },
           "groups": [
             {
               "groupName": "Hint medium",

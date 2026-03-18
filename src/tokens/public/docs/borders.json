@@ -6,6 +6,9 @@
         {
           "groupName": "Containers",
           "description": "Borders that wraps around a container and separates it from its surroundings.",
+          "demoMetadata": {
+            "type": "border"
+          },
           "tokens": [
             {
               "name": "Container base",
@@ -15,6 +18,9 @@
         },
         {
           "groupName": "Dividers",
+          "demoMetadata": {
+            "type": "border"
+          },
           "tokens": [
             {
               "name": "Divider base",
@@ -31,6 +37,9 @@
         {
           "groupName": "Status borders",
           "description": "Use status borders for elements that convey status or urgency.",
+          "demoMetadata": {
+            "type": "border"
+          },
           "tokens": [
             {
               "name": "Danger border",
@@ -57,6 +66,9 @@
         {
           "groupName": "Border widths",
           "description": "Add these in addition to border properties to modify the border width of certain elements.",
+          "demoMetadata": {
+            "type": "border-width"
+          },
           "tokens": [
             {
               "name": "Container base width",
@@ -88,6 +100,9 @@
         {
           "groupName": "Border styles",
           "description": "Add these in addition to border properties to modify the border style of certain elements.",
+          "demoMetadata": {
+            "type": "border-style"
+          },
           "tokens": [
             {
               "name": "Divider base style",
@@ -108,6 +123,9 @@
         },
         {
           "groupName": "Border radius",
+          "demoMetadata": {
+            "type": "border-radius"
+          },
           "tokens": [
             {
               "name": "Border radius XS",
