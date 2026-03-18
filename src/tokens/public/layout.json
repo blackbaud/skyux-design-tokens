@@ -1,205 +1,86 @@
 {
   "theme": {
     "space": {
-      "$extensions": {
-        "com.blackbaud.developer.docs": {
-          "groupName": "Spacing"
-        }
-      },
       "stacked": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Stacked space"
-          }
-        },
-        "$description": "Use stacked custom properties for vertical top and bottom space. Use them for either margin or padding.",
         "xs": {
           "$value": "{space.stacked.xs}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Stacked space XS"
-            }
-          }
+          "$type": "spacing"
         },
         "s": {
           "$value": "{space.stacked.s}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Stacked space S"
-            }
-          }
+          "$type": "spacing"
         },
         "m": {
           "$value": "{space.stacked.m}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Stacked space M"
-            }
-          }
+          "$type": "spacing"
         },
         "l": {
           "$value": "{space.stacked.l}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Stacked space L"
-            }
-          }
+          "$type": "spacing"
         },
         "xl": {
           "$value": "{space.stacked.xl}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Stacked space XL"
-            }
-          }
+          "$type": "spacing"
         },
         "xxl": {
           "$value": "{space.stacked.xxl}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Stacked space XXL"
-            }
-          }
+          "$type": "spacing"
         }
       },
       "inline": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Inline space"
-          }
-        },
-        "$description": "Use inline custom properties for horizontal right and left space. Use them for either margin or padding.",
         "xs": {
           "$value": "{space.inline.xs}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inline Space XS"
-            }
-          }
+          "$type": "spacing"
         },
         "s": {
           "$value": "{space.inline.s}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inline Space S"
-            }
-          }
+          "$type": "spacing"
         },
         "m": {
           "$value": "{space.inline.m}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inline Space M"
-            }
-          }
+          "$type": "spacing"
         },
         "l": {
           "$value": "{space.inline.l}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inline Space L"
-            }
-          }
+          "$type": "spacing"
         },
         "xl": {
           "$value": "{space.inline.xl}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inline Space XL"
-            }
-          }
+          "$type": "spacing"
         },
         "xxl": {
           "$value": "{space.inline.xxl}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inline Space XXL"
-            }
-          }
+          "$type": "spacing"
         }
       },
       "inset": {
         "balanced": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Inset padding"
-            }
-          },
-          "$description": "Use inset padding custom properties for padding around all sides of an element.",
           "xs": {
             "$value": "{space.inset.balanced.xs}",
-            "$type": "spacing",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Inset balanced space XS"
-              }
-            }
+            "$type": "spacing"
           },
           "s": {
             "$value": "{space.inset.balanced.s}",
-            "$type": "spacing",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Inset balanced space S"
-              }
-            }
+            "$type": "spacing"
           },
           "m": {
             "$value": "{space.inset.balanced.m}",
-            "$type": "spacing",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Inset balanced space M"
-              }
-            }
+            "$type": "spacing"
           },
           "l": {
             "$value": "{space.inset.balanced.l}",
-            "$type": "spacing",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Inset balanced space L"
-              }
-            }
+            "$type": "spacing"
           },
           "xl": {
             "$value": "{space.inset.balanced.xl}",
-            "$type": "spacing",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Inset balanced space XL"
-              }
-            }
+            "$type": "spacing"
           }
         }
       },
       "conditional": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Conditional form input space"
-          }
-        },
-        "$description": "Use this custom property for the left margin or padding of conditional inputs or content below a checkbox or radio button.",
         "input": {
           "$value": "{space.inset.switch}",
-          "$type": "spacing",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Conditional input inset"
-            }
-          }
+          "$type": "spacing"
         }
       }
     }

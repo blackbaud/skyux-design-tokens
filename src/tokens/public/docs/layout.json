@@ -1,0 +1,112 @@
+{
+  "groups": [
+    {
+      "groupName": "Layout",
+      "groups": [
+        {
+          "groupName": "Stacked space",
+          "description": "Use stacked custom properties for vertical top and bottom space. Use them for either margin or padding.",
+          "tokens": [
+            {
+              "name": "Stacked space XS",
+              "customProperty": "--sky-theme-space-stacked-xs",
+              "deprecatedScssVariables": ["$sky-margin-stacked-compact"]
+            },
+            {
+              "name": "Stacked space S",
+              "customProperty": "--sky-theme-space-stacked-s"
+            },
+            {
+              "name": "Stacked space M",
+              "customProperty": "--sky-theme-space-stacked-m"
+            },
+            {
+              "name": "Stacked space L",
+              "customProperty": "--sky-theme-space-stacked-l",
+              "deprecatedScssVariables": ["$sky-margin-stacked-default"]
+            },
+            {
+              "name": "Stacked space XL",
+              "customProperty": "--sky-theme-space-stacked-xl",
+              "deprecatedScssVariables": ["$sky-margin-stacked-separate"]
+            },
+            {
+              "name": "Stacked space XXL",
+              "customProperty": "--sky-theme-space-stacked-xxl"
+            }
+          ]
+        },
+        {
+          "groupName": "Inline space",
+          "description": "Use inline custom properties for horizontal right and left space. Use them for either margin or padding.",
+          "tokens": [
+            {
+              "name": "Inline Space XS",
+              "customProperty": "--sky-theme-space-inline-xs",
+              "deprecatedScssVariables": ["$sky-margin-inline-compact"]
+            },
+            {
+              "name": "Inline Space S",
+              "customProperty": "--sky-theme-space-inline-s",
+              "deprecatedScssVariables": ["$sky-margin-inline-default"]
+            },
+            {
+              "name": "Inline Space M",
+              "customProperty": "--sky-theme-space-inline-m"
+            },
+            {
+              "name": "Inline Space L",
+              "customProperty": "--sky-theme-space-inline-l"
+            },
+            {
+              "name": "Inline Space XL",
+              "customProperty": "--sky-theme-space-inline-xl"
+            },
+            {
+              "name": "Inline Space XXL",
+              "customProperty": "--sky-theme-space-inline-xxl"
+            }
+          ]
+        },
+        {
+          "groupName": "Inset padding",
+          "description": "Use inset padding custom properties for padding around all sides of an element.",
+          "tokens": [
+            {
+              "name": "Inset balanced space XS",
+              "customProperty": "--sky-theme-space-inset-balanced-xs"
+            },
+            {
+              "name": "Inset balanced space S",
+              "customProperty": "--sky-theme-space-inset-balanced-s",
+              "deprecatedScssVariables": ["$sky-padding-even-default"]
+            },
+            {
+              "name": "Inset balanced space M",
+              "customProperty": "--sky-theme-space-inset-balanced-m",
+              "deprecatedScssVariables": ["$sky-padding-even-large"]
+            },
+            {
+              "name": "Inset balanced space L",
+              "customProperty": "--sky-theme-space-inset-balanced-l"
+            },
+            {
+              "name": "Inset balanced space XL",
+              "customProperty": "--sky-theme-space-inset-balanced-xl"
+            }
+          ]
+        },
+        {
+          "groupName": "Conditional form input space",
+          "description": "Use this custom property for the left margin or padding of conditional inputs or content below a checkbox or radio button.",
+          "tokens": [
+            {
+              "name": "Conditional input inset",
+              "customProperty": "--sky-theme-space-conditional-input"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
