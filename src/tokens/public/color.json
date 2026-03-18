@@ -1,1064 +1,236 @@
 {
   "theme": {
     "color": {
-      "$extensions": {
-        "com.blackbaud.developer.docs": {
-          "groupName": "Colors"
-        }
-      },
       "background": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Backgrounds",
-            "demoMetadata": {
-              "type": "color-swatch"
-            }
-          }
-        },
         "page": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Page background",
-              "name": "Page background"
-            }
-          },
           "$value": "{color.background.page}",
-          "$type": "color",
-          "$description": "The background color for the page."
+          "$type": "color"
         },
         "container": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Container backgrounds"
-            }
-          },
           "base": {
             "$value": "{color.background.container.base}",
-            "$type": "color",
-            "$description": "The main backgrounds color for containers that hold content and actions on a page.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Base container background",
-                "deprecatedCustomProperties": [
-                  "--sky-background-color-container-default"
-                ]
-              }
-            }
+            "$type": "color"
           },
           "dimmed": {
             "$value": "{color.background.container.dimmed}",
-            "$type": "color",
-            "$description": "The background color for containers holding actions or content that is secondary or supporting base containers.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Dimmed container background"
-              }
-            }
+            "$type": "color"
           },
           "backdrop": {
             "$value": "{color.background.container.backdrop}",
-            "$type": "color",
-            "$description": "The background color for containers behind a canvas, WYSIWYG editor, or preview.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Backdrop container background"
-              }
-            }
+            "$type": "color"
           },
           "danger": {
             "$value": "{color.background.container.danger}",
-            "$type": "color",
-            "$description": "The background color for an element that conveys danger, error, or a critical warning.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status backgrounds",
-                "name": "Danger background",
-                "deprecatedCustomProperties": ["--sky-background-color-danger"]
-              }
-            }
+            "$type": "color"
           },
           "info": {
             "$value": "{color.background.container.info}",
-            "$type": "color",
-            "$description": "The background color for an element that contains important information, but conveys no danger.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status backgrounds",
-                "name": "Info background",
-                "deprecatedCustomProperties": ["--sky-background-color-info"]
-              }
-            }
+            "$type": "color"
           },
           "success": {
             "$value": "{color.background.container.success}",
-            "$type": "color",
-            "$description": "The background color for an element that conveys success or completion.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status backgrounds",
-                "name": "Success background",
-                "deprecatedCustomProperties": ["--sky-background-color-success"]
-              }
-            }
+            "$type": "color"
           },
           "warning": {
             "$value": "{color.background.container.warning}",
-            "$type": "color",
-            "$description": "The background color for an element that conveys warning or caution.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status backgrounds",
-                "name": "Warning background",
-                "deprecatedCustomProperties": ["--sky-background-color-warning"]
-              }
-            }
+            "$type": "color"
           }
         },
         "icon_matte": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Icon mattes",
-              "demoMetadata": {
-                "type": "icon-background-color",
-                "color": "--sky-theme-color-icon-inverse"
-              }
-            }
-          },
-          "$description": "Use icon matte colors for the background of elements that an icon component is placed inside of. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
           "action": {
             "soft": {
               "$value": "{color.background.icon_matte.action.soft}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Action soft icon matte",
-                  "demoMetadata": {
-                    "color": "--sky-theme-color-icon-action"
-                  }
-                }
-              }
+              "$type": "color"
             }
           },
           "danger": {
             "$value": "{color.background.icon_matte.danger}",
-            "$type": "color",
-            "$description": "The color for a small background behind an icon that conveys danger, error, or a critical warning.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status icon mattes",
-                "name": "Danger icon matte"
-              }
-            }
+            "$type": "color"
           },
           "info": {
             "$value": "{color.background.icon_matte.info}",
-            "$type": "color",
-            "$description": "The color for a small background behind an icon that conveys important information, but no danger.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status icon mattes",
-                "name": "Info icon matte"
-              }
-            }
+            "$type": "color"
           },
           "success": {
             "$value": "{color.background.icon_matte.success}",
-            "$type": "color",
-            "$description": "The color for a small background behind an icon that conveys success or completion.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status icon mattes",
-                "name": "Success icon matte"
-              }
-            }
+            "$type": "color"
           },
           "warning": {
             "$value": "{color.background.icon_matte.warning}",
-            "$type": "color",
-            "$description": "The color for a small background behind an icon that conveys warning or caution.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Status icon mattes",
-                "name": "Warning icon matte",
-                "demoMetadata": {
-                  "color": "--sky-theme-color-icon-default"
-                }
-              }
-            }
+            "$type": "color"
           }
         }
       },
       "border": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Borders",
-            "demoMetadata": {
-              "type": "border-color"
-            }
-          }
-        },
         "container": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Container borders"
-            }
-          },
           "base": {
             "$value": "{color.border.container.base}",
-            "$type": "color",
-            "$description": "The border color for separating containers from their surroundings.",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Base container border"
-              }
-            }
+            "$type": "color"
           }
         },
         "divider": {
           "$value": "{color.border.divider}",
-          "$type": "color",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Dividers",
-              "name": "Divider base",
-              "deprecatedCustomProperties": [
-                "--sky-border-color-neutral-medium"
-              ]
-            }
-          }
+          "$type": "color"
         },
         "separator": {
           "row": {
             "$value": "{color.border.separator.row}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Dividers",
-                "name": "Divider soft"
-              }
-            }
+            "$type": "color"
           }
         },
         "danger": {
           "$value": "{color.border.danger}",
-          "$type": "color",
-          "$description": "The border color for an element that conveys danger, error, or a critical warning.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status borders",
-              "name": "Danger border",
-              "deprecatedCustomProperties": ["--sky-highlight-color-danger"]
-            }
-          }
+          "$type": "color"
         },
         "info": {
           "$value": "{color.border.info}",
-          "$type": "color",
-          "$description": "The border color for an element that contains important information, but conveys no danger.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status borders",
-              "name": "Info border",
-              "deprecatedCustomProperties": ["--sky-highlight-color-info"]
-            }
-          }
+          "$type": "color"
         },
         "success": {
           "$value": "{color.border.success}",
-          "$type": "color",
-          "$description": "The border color for an element that conveys success or completion.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status borders",
-              "name": "Success border",
-              "deprecatedCustomProperties": ["--sky-highlight-color-success"]
-            }
-          }
+          "$type": "color"
         },
         "warning": {
           "$value": "{color.border.warning}",
-          "$type": "color",
-          "$description": "The border color for an element that conveys warning or caution.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status borders",
-              "name": "Warning border",
-              "deprecatedCustomProperties": ["--sky-highlight-color-warning"]
-            }
-          }
+          "$type": "color"
         }
       },
       "text": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Text",
-            "demoMetadata": {
-              "type": "text-color"
-            }
-          }
-        },
         "default": {
           "$value": "{color.text.default}",
-          "$type": "color",
-          "$description": "The default color for text on the page.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Default text",
-              "deprecatedCustomProperties": ["--sky-text-color-default"]
-            }
-          }
+          "$type": "color"
         },
         "deemphasized": {
           "$value": "{color.text.deemphasized}",
-          "$type": "color",
-          "$description": "The color for deemphasized text, such as content labels or hint text.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Deemphasized text",
-              "deprecatedCustomProperties": ["--sky-text-color-deemphasized"]
-            }
-          }
+          "$type": "color"
         },
         "heading": {
           "$value": "{color.text.heading}",
-          "$type": "color",
-          "$description": "The color for headings.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Heading text"
-            }
-          }
+          "$type": "color"
         },
         "action": {
           "$value": "{color.text.action}",
-          "$type": "color",
-          "$description": "The color for text in links and link buttons.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Action text",
-              "deprecatedCustomProperties": ["--sky-text-color-action-primary"]
-            }
-          }
+          "$type": "color"
         },
         "action_contrast": {
           "$value": "{color.text.action_contrast}",
-          "$type": "color",
-          "$description": "The color for links and link buttons on backgrounds that require more color contrast to meet accessibility success criteria, such as status containers.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Action contrast text"
-            }
-          }
+          "$type": "color"
         },
         "inverse": {
           "$value": "{color.text.inverse}",
-          "$type": "color",
-          "$description": "The color for text on heavy background colors, such as primary and danger button labels.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "name": "Inverse text",
-              "deprecatedCustomProperties": ["--sky-text-color-on-dark"],
-              "demoMetadata": {
-                "background": "--sky-theme-color-background-icon_matte-info"
-              }
-            }
-          }
+          "$type": "color"
         }
       },
       "icon": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Icons",
-            "demoMetadata": {
-              "type": "icon-color"
-            }
-          }
-        },
         "default": {
           "$value": "{color.icon.default}",
-          "$type": "color",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Icon glyphs",
-              "name": "Default icon"
-            }
-          }
+          "$type": "color"
         },
         "deemphasized": {
           "$value": "{color.icon.deemphasized}",
-          "$type": "color",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Icon glyphs",
-              "name": "Deemphasized icon"
-            }
-          }
+          "$type": "color"
         },
         "action": {
           "$value": "{color.icon.action}",
-          "$type": "color",
-          "$description": "The color for icons on links and link buttons.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Icon glyphs",
-              "name": "Action icon"
-            }
-          }
+          "$type": "color"
         },
         "inverse": {
           "$value": "{color.icon.inverse}",
-          "$type": "color",
-          "$description": "The color for icons on heavy background colors, such as primary and danger button labels.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Icon glyphs",
-              "name": "Inverse icon",
-              "demoMetadata": {
-                "background": "--sky-theme-color-background-icon_matte-info"
-              }
-            }
-          }
+          "$type": "color"
         },
         "danger": {
           "$value": "{color.icon.danger}",
-          "$type": "color",
-          "$description": "The color for an icon that conveys danger, error, or a critical warning.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status icon glyphs",
-              "name": "Danger icon"
-            }
-          }
+          "$type": "color"
         },
         "info": {
           "$value": "{color.icon.info}",
-          "$type": "color",
-          "$description": "The color for an icon that conveys important information, but no danger.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status icon glyphs",
-              "name": "Info icon"
-            }
-          }
+          "$type": "color"
         },
         "success": {
           "$value": "{color.icon.success}",
-          "$type": "color",
-          "$description": "The color for an icon that conveys success or completion.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Status icon glyphs",
-              "name": "Success icon"
-            }
-          }
+          "$type": "color"
         }
       },
       "classify": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Classification",
-            "demoMetadata": {
-              "type": "color-swatch"
-            }
-          }
-        },
-        "$description": "Use classification colors to color-code blocks of content when the distinction between types of content is significant to users. For example, use classification colors for different types of events in calendars. Don't rely on color alone to classify content; include classification labels for users with color vision differences.\n\nDon't use classification colors to communicate statuses, such as danger or success.",
         "1": {
-          "soft": {
-            "$value": "{color.classify.1.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 1",
-                "deprecatedCustomProperties": ["--sky-category-color-teal"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.1.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 1"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.1.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.1.heavy}", "$type": "color" }
         },
         "2": {
-          "soft": {
-            "$value": "{color.classify.2.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 2",
-                "deprecatedCustomProperties": ["--sky-category-color-purple"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.2.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 2"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.2.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.2.heavy}", "$type": "color" }
         },
         "3": {
-          "soft": {
-            "$value": "{color.classify.3.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 3",
-                "deprecatedCustomProperties": ["--sky-category-color-blue"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.3.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 3"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.3.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.3.heavy}", "$type": "color" }
         },
         "4": {
-          "soft": {
-            "$value": "{color.classify.4.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 4",
-                "deprecatedCustomProperties": ["--sky-category-color-orange"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.4.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 4"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.4.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.4.heavy}", "$type": "color" }
         },
         "5": {
-          "soft": {
-            "$value": "{color.classify.5.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 5",
-                "deprecatedCustomProperties": ["--sky-category-color-yellow"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.5.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 5"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.5.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.5.heavy}", "$type": "color" }
         },
         "6": {
-          "soft": {
-            "$value": "{color.classify.6.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 6",
-                "deprecatedCustomProperties": ["--sky-category-color-green"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.6.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 6"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.6.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.6.heavy}", "$type": "color" }
         },
         "7": {
-          "soft": {
-            "$value": "{color.classify.7.soft}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Backgrounds",
-                "name": "Classification background 7",
-                "deprecatedCustomProperties": ["--sky-category-color-red"]
-              }
-            }
-          },
-          "heavy": {
-            "$value": "{color.classify.7.heavy}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Foregrounds",
-                "name": "Classification foreground 7"
-              }
-            }
-          }
+          "soft": { "$value": "{color.classify.7.soft}", "$type": "color" },
+          "heavy": { "$value": "{color.classify.7.heavy}", "$type": "color" }
         }
       },
       "viz": {
-        "$extensions": {
-          "com.blackbaud.developer.docs": {
-            "groupName": "Data visualization",
-            "demoMetadata": {
-              "type": "border-color"
-            }
-          }
-        },
-        "axis": {
-          "$value": "{color.viz.axis}",
-          "$type": "color",
-          "$description": "The color for axis lines on charts.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Chart elements",
-              "name": "Chart axis"
-            }
-          }
-        },
-        "gridline": {
-          "$value": "{color.viz.gridline}",
-          "$type": "color",
-          "$description": "The color for gridlines and tick marks on charts.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Chart elements",
-              "name": "Chart gridline"
-            }
-          }
-        },
-        "marker": {
-          "$value": "{color.viz.marker}",
-          "$type": "color",
-          "$description": "The color for thresholds, benchmarks, or goals on charts.",
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Chart elements",
-              "name": "Chart marker"
-            }
-          }
-        },
+        "axis": { "$value": "{color.viz.axis}", "$type": "color" },
+        "gridline": { "$value": "{color.viz.gridline}", "$type": "color" },
+        "marker": { "$value": "{color.viz.marker}", "$type": "color" },
         "category": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Categorical palette",
-              "demoMetadata": {
-                "type": "color-swatch"
-              }
-            }
-          },
-          "$description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. For example, use categorical colors for slices in a pie chart and bars in a bar chart. Categorical colors are visually distinct, and all eight meet 3:1 contrast on white backgrounds. Use them in their intended order, and use the first one when visualizations have just one category or no categories.",
-          "1": {
-            "$value": "{color.viz.category.1}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 1",
-                "deprecatedCustomProperties": ["--sky-category-color-teal"]
-              }
-            }
-          },
-          "2": {
-            "$value": "{color.viz.category.2}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 2",
-                "deprecatedCustomProperties": ["--sky-category-color-purple"]
-              }
-            }
-          },
-          "3": {
-            "$value": "{color.viz.category.3}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 3",
-                "deprecatedCustomProperties": ["--sky-category-color-blue"]
-              }
-            }
-          },
-          "4": {
-            "$value": "{color.viz.category.4}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 4",
-                "deprecatedCustomProperties": ["--sky-category-color-sky"]
-              }
-            }
-          },
-          "5": {
-            "$value": "{color.viz.category.5}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 5",
-                "deprecatedCustomProperties": ["--sky-category-color-orange"]
-              }
-            }
-          },
-          "6": {
-            "$value": "{color.viz.category.6}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 6",
-                "deprecatedCustomProperties": ["--sky-category-color-red"]
-              }
-            }
-          },
-          "7": {
-            "$value": "{color.viz.category.7}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 7",
-                "deprecatedCustomProperties": ["--sky-category-color-pink"]
-              }
-            }
-          },
-          "8": {
-            "$value": "{color.viz.category.8}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Category 8",
-                "deprecatedCustomProperties": ["--sky-category-color-green"]
-              }
-            }
-          }
+          "1": { "$value": "{color.viz.category.1}", "$type": "color" },
+          "2": { "$value": "{color.viz.category.2}", "$type": "color" },
+          "3": { "$value": "{color.viz.category.3}", "$type": "color" },
+          "4": { "$value": "{color.viz.category.4}", "$type": "color" },
+          "5": { "$value": "{color.viz.category.5}", "$type": "color" },
+          "6": { "$value": "{color.viz.category.6}", "$type": "color" },
+          "7": { "$value": "{color.viz.category.7}", "$type": "color" },
+          "8": { "$value": "{color.viz.category.8}", "$type": "color" }
         },
         "sequence": {
-          "$extensions": {
-            "com.blackbaud.developer.docs": {
-              "groupName": "Sequential palette",
-              "demoMetadata": {
-                "type": "color-swatch"
-              }
-            }
-          },
-          "$description": "Use the sequential palette to indicate different magnitudes within a range. For data with fewer than 10 magnitudes, always use the first and last color in the palette for the minimum and maximum magnitudes and evenly distribute the remaining values between them.",
-          "1": {
-            "$value": "{color.viz.sequence.1}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 1"
-              }
-            }
-          },
-          "2": {
-            "$value": "{color.viz.sequence.2}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 2"
-              }
-            }
-          },
-          "3": {
-            "$value": "{color.viz.sequence.3}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 3"
-              }
-            }
-          },
-          "4": {
-            "$value": "{color.viz.sequence.4}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 4"
-              }
-            }
-          },
-          "5": {
-            "$value": "{color.viz.sequence.5}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 5"
-              }
-            }
-          },
-          "6": {
-            "$value": "{color.viz.sequence.6}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 6"
-              }
-            }
-          },
-          "7": {
-            "$value": "{color.viz.sequence.7}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 7"
-              }
-            }
-          },
-          "8": {
-            "$value": "{color.viz.sequence.8}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 8"
-              }
-            }
-          },
-          "9": {
-            "$value": "{color.viz.sequence.9}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 9"
-              }
-            }
-          },
-          "10": {
-            "$value": "{color.viz.sequence.10}",
-            "$type": "color",
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "name": "Sequence 10"
-              }
-            }
-          }
+          "1": { "$value": "{color.viz.sequence.1}", "$type": "color" },
+          "2": { "$value": "{color.viz.sequence.2}", "$type": "color" },
+          "3": { "$value": "{color.viz.sequence.3}", "$type": "color" },
+          "4": { "$value": "{color.viz.sequence.4}", "$type": "color" },
+          "5": { "$value": "{color.viz.sequence.5}", "$type": "color" },
+          "6": { "$value": "{color.viz.sequence.6}", "$type": "color" },
+          "7": { "$value": "{color.viz.sequence.7}", "$type": "color" },
+          "8": { "$value": "{color.viz.sequence.8}", "$type": "color" },
+          "9": { "$value": "{color.viz.sequence.9}", "$type": "color" },
+          "10": { "$value": "{color.viz.sequence.10}", "$type": "color" }
         },
         "diverge": {
           "pos": {
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Positive diverging palette",
-                "demoMetadata": {
-                  "type": "color-swatch"
-                }
-              }
-            },
-            "1": {
-              "$value": "{color.viz.diverge.pos.1}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 1"
-                }
-              }
-            },
-            "2": {
-              "$value": "{color.viz.diverge.pos.2}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 2"
-                }
-              }
-            },
-            "3": {
-              "$value": "{color.viz.diverge.pos.3}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 3"
-                }
-              }
-            },
-            "4": {
-              "$value": "{color.viz.diverge.pos.4}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 4"
-                }
-              }
-            },
-            "5": {
-              "$value": "{color.viz.diverge.pos.5}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 5"
-                }
-              }
-            },
-            "6": {
-              "$value": "{color.viz.diverge.pos.6}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 6"
-                }
-              }
-            },
-            "7": {
-              "$value": "{color.viz.diverge.pos.7}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 7"
-                }
-              }
-            },
-            "8": {
-              "$value": "{color.viz.diverge.pos.8}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 8"
-                }
-              }
-            },
-            "9": {
-              "$value": "{color.viz.diverge.pos.9}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 9"
-                }
-              }
-            },
-            "10": {
-              "$value": "{color.viz.diverge.pos.10}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Positive 10"
-                }
-              }
-            }
+            "1": { "$value": "{color.viz.diverge.pos.1}", "$type": "color" },
+            "2": { "$value": "{color.viz.diverge.pos.2}", "$type": "color" },
+            "3": { "$value": "{color.viz.diverge.pos.3}", "$type": "color" },
+            "4": { "$value": "{color.viz.diverge.pos.4}", "$type": "color" },
+            "5": { "$value": "{color.viz.diverge.pos.5}", "$type": "color" },
+            "6": { "$value": "{color.viz.diverge.pos.6}", "$type": "color" },
+            "7": { "$value": "{color.viz.diverge.pos.7}", "$type": "color" },
+            "8": { "$value": "{color.viz.diverge.pos.8}", "$type": "color" },
+            "9": { "$value": "{color.viz.diverge.pos.9}", "$type": "color" },
+            "10": { "$value": "{color.viz.diverge.pos.10}", "$type": "color" }
           },
           "neg": {
-            "$extensions": {
-              "com.blackbaud.developer.docs": {
-                "groupName": "Negative diverging palette",
-                "demoMetadata": {
-                  "type": "color-swatch"
-                }
-              }
-            },
-            "1": {
-              "$value": "{color.viz.diverge.neg.1}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 1"
-                }
-              }
-            },
-            "2": {
-              "$value": "{color.viz.diverge.neg.2}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 2"
-                }
-              }
-            },
-            "3": {
-              "$value": "{color.viz.diverge.neg.3}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 3"
-                }
-              }
-            },
-            "4": {
-              "$value": "{color.viz.diverge.neg.4}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 4"
-                }
-              }
-            },
-            "5": {
-              "$value": "{color.viz.diverge.neg.5}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 5"
-                }
-              }
-            },
-            "6": {
-              "$value": "{color.viz.diverge.neg.6}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 6"
-                }
-              }
-            },
-            "7": {
-              "$value": "{color.viz.diverge.neg.7}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 7"
-                }
-              }
-            },
-            "8": {
-              "$value": "{color.viz.diverge.neg.8}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 8"
-                }
-              }
-            },
-            "9": {
-              "$value": "{color.viz.diverge.neg.9}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 9"
-                }
-              }
-            },
-            "10": {
-              "$value": "{color.viz.diverge.neg.10}",
-              "$type": "color",
-              "$extensions": {
-                "com.blackbaud.developer.docs": {
-                  "name": "Negative 10"
-                }
-              }
-            }
+            "1": { "$value": "{color.viz.diverge.neg.1}", "$type": "color" },
+            "2": { "$value": "{color.viz.diverge.neg.2}", "$type": "color" },
+            "3": { "$value": "{color.viz.diverge.neg.3}", "$type": "color" },
+            "4": { "$value": "{color.viz.diverge.neg.4}", "$type": "color" },
+            "5": { "$value": "{color.viz.diverge.neg.5}", "$type": "color" },
+            "6": { "$value": "{color.viz.diverge.neg.6}", "$type": "color" },
+            "7": { "$value": "{color.viz.diverge.neg.7}", "$type": "color" },
+            "8": { "$value": "{color.viz.diverge.neg.8}", "$type": "color" },
+            "9": { "$value": "{color.viz.diverge.neg.9}", "$type": "color" },
+            "10": { "$value": "{color.viz.diverge.neg.10}", "$type": "color" }
           }
         }
       }

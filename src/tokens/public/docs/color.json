@@ -1,0 +1,598 @@
+{
+  "groups": [
+    {
+      "groupName": "Color",
+      "groups": [
+        {
+          "groupName": "Backgrounds",
+          "demoMetadata": { "type": "color-swatch" },
+          "groups": [
+            {
+              "groupName": "Page background",
+              "tokens": [
+                {
+                  "name": "Page background",
+                  "customProperty": "--sky-theme-color-background-page",
+                  "description": "The background color for the page.",
+                  "deprecatedCustomProperties": [
+                    "--sky-background-color-page-default"
+                  ]
+                }
+              ]
+            },
+            {
+              "groupName": "Container backgrounds",
+              "tokens": [
+                {
+                  "name": "Base container background",
+                  "customProperty": "--sky-theme-color-background-container-base",
+                  "description": "The main backgrounds color for containers that hold content and actions on a page.",
+                  "deprecatedCustomProperties": [
+                    "--sky-background-color-container-default"
+                  ]
+                },
+                {
+                  "name": "Dimmed container background",
+                  "customProperty": "--sky-theme-color-background-container-dimmed",
+                  "description": "The background color for containers holding actions or content that is secondary or supporting base containers."
+                },
+                {
+                  "name": "Backdrop container background",
+                  "customProperty": "--sky-theme-color-background-container-backdrop",
+                  "description": "The background color for containers behind a canvas, WYSIWYG editor, or preview."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Borders",
+          "demoMetadata": { "type": "border-color" },
+          "groups": [
+            {
+              "groupName": "Container borders",
+              "tokens": [
+                {
+                  "name": "Base container border",
+                  "customProperty": "--sky-theme-color-border-container-base",
+                  "description": "The border color for separating containers from their surroundings."
+                }
+              ]
+            },
+            {
+              "groupName": "Dividers",
+              "tokens": [
+                {
+                  "name": "Divider base",
+                  "customProperty": "--sky-theme-color-border-divider",
+                  "deprecatedCustomProperties": [
+                    "--sky-border-color-neutral-medium"
+                  ]
+                },
+                {
+                  "name": "Divider soft",
+                  "customProperty": "--sky-theme-color-border-separator-row"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Text",
+          "demoMetadata": { "type": "text-color" },
+          "tokens": [
+            {
+              "name": "Default text",
+              "customProperty": "--sky-theme-color-text-default",
+              "description": "The default color for text on the page.",
+              "deprecatedCustomProperties": ["--sky-text-color-default"]
+            },
+            {
+              "name": "Deemphasized text",
+              "customProperty": "--sky-theme-color-text-deemphasized",
+              "description": "The color for deemphasized text, such as content labels or hint text.",
+              "deprecatedCustomProperties": ["--sky-text-color-deemphasized"]
+            },
+            {
+              "name": "Heading text",
+              "customProperty": "--sky-theme-color-text-heading",
+              "description": "The color for headings."
+            },
+            {
+              "name": "Action text",
+              "customProperty": "--sky-theme-color-text-action",
+              "description": "The color for text in links and link buttons.",
+              "deprecatedCustomProperties": ["--sky-text-color-action-primary"]
+            },
+            {
+              "name": "Action contrast text",
+              "customProperty": "--sky-theme-color-text-action_contrast",
+              "description": "The color for links and link buttons on backgrounds that require more color contrast to meet accessibility success criteria, such as status containers."
+            },
+            {
+              "name": "Inverse text",
+              "customProperty": "--sky-theme-color-text-inverse",
+              "description": "The color for text on heavy background colors, such as primary and danger button labels.",
+              "deprecatedCustomProperties": ["--sky-text-color-on-dark"],
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-icon_matte-info"
+              }
+            }
+          ]
+        },
+        {
+          "groupName": "Icons",
+          "demoMetadata": { "type": "icon-color" },
+          "groups": [
+            {
+              "groupName": "Icon glyphs",
+              "description": "Use icon colors for the glyphs in the icon component.",
+              "tokens": [
+                {
+                  "name": "Default icon",
+                  "customProperty": "--sky-theme-color-icon-default",
+                  "description": "The color for icons that match default text."
+                },
+                {
+                  "name": "Deemphasized icon",
+                  "customProperty": "--sky-theme-color-icon-deemphasized"
+                },
+                {
+                  "name": "Action icon",
+                  "customProperty": "--sky-theme-color-icon-action",
+                  "description": "The color for icons on links and link buttons."
+                },
+                {
+                  "name": "Inverse icon",
+                  "customProperty": "--sky-theme-color-icon-inverse",
+                  "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-icon_matte-info"
+                  }
+                }
+              ]
+            },
+            {
+              "groupName": "Icon mattes",
+              "description": "Use icon matte colors for the background of elements that an icon component is placed inside of. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
+              "demoMetadata": {
+                "type": "icon-background-color",
+                "color": "--sky-theme-color-icon-inverse"
+              },
+              "tokens": [
+                {
+                  "name": "Action soft icon matte",
+                  "customProperty": "--sky-theme-color-background-icon_matte-action-soft",
+                  "demoMetadata": { "color": "--sky-theme-color-icon-action" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Status colors",
+          "groups": [
+            {
+              "groupName": "Status backgrounds",
+              "description": "Use status background colors for containers of elements that convey a status or urgency.",
+              "demoMetadata": { "type": "color-swatch" },
+              "tokens": [
+                {
+                  "name": "Danger background",
+                  "customProperty": "--sky-theme-color-background-container-danger",
+                  "description": "The background color for an element that conveys danger, error, or a critical warning.",
+                  "deprecatedCustomProperties": [
+                    "--sky-background-color-danger"
+                  ]
+                },
+                {
+                  "name": "Info background",
+                  "customProperty": "--sky-theme-color-background-container-info",
+                  "description": "The background color for an element that contains important information, but conveys no danger.",
+                  "deprecatedCustomProperties": ["--sky-background-color-info"]
+                },
+                {
+                  "name": "Success background",
+                  "customProperty": "--sky-theme-color-background-container-success",
+                  "description": "The background color for an element that conveys success or completion.",
+                  "deprecatedCustomProperties": [
+                    "--sky-background-color-success"
+                  ]
+                },
+                {
+                  "name": "Warning background",
+                  "customProperty": "--sky-theme-color-background-container-warning",
+                  "description": "The background color for an element that conveys warning or caution.",
+                  "deprecatedCustomProperties": [
+                    "--sky-background-color-warning"
+                  ]
+                }
+              ]
+            },
+            {
+              "groupName": "Status borders",
+              "description": "Use status borders for elements that convey a status or urgency.",
+              "demoMetadata": { "type": "border-color" },
+              "tokens": [
+                {
+                  "name": "Danger border",
+                  "customProperty": "--sky-theme-color-border-danger",
+                  "description": "The border color for an element that conveys danger, error, or a critical warning.",
+                  "deprecatedCustomProperties": ["--sky-highlight-color-danger"]
+                },
+                {
+                  "name": "Info border",
+                  "customProperty": "--sky-theme-color-border-info",
+                  "description": "The border color for an element that contains important information, but conveys no danger.",
+                  "deprecatedCustomProperties": ["--sky-highlight-color-info"]
+                },
+                {
+                  "name": "Success border",
+                  "customProperty": "--sky-theme-color-border-success",
+                  "description": "The border color for an element that conveys success or completion.",
+                  "deprecatedCustomProperties": [
+                    "--sky-highlight-color-success"
+                  ]
+                },
+                {
+                  "name": "Warning border",
+                  "customProperty": "--sky-theme-color-border-warning",
+                  "description": "The border color for an element that conveys warning or caution.",
+                  "deprecatedCustomProperties": [
+                    "--sky-highlight-color-warning"
+                  ]
+                }
+              ]
+            },
+            {
+              "groupName": "Status icon glyphs",
+              "description": "Use status icon colors for icons that convey a status or urgency.",
+              "demoMetadata": { "type": "icon-color" },
+              "tokens": [
+                {
+                  "name": "Danger icon",
+                  "customProperty": "--sky-theme-color-icon-danger",
+                  "description": "The color for an icon that conveys danger, error, or a critical warning."
+                },
+                {
+                  "name": "Info icon",
+                  "customProperty": "--sky-theme-color-icon-info",
+                  "description": "The color for an icon that conveys important information, but no danger."
+                },
+                {
+                  "name": "Success icon",
+                  "customProperty": "--sky-theme-color-icon-success",
+                  "description": "The color for an icon that conveys success or completion."
+                }
+              ]
+            },
+            {
+              "groupName": "Status icon mattes",
+              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency.",
+              "demoMetadata": {
+                "type": "icon-background-color",
+                "color": "--sky-theme-color-icon-inverse"
+              },
+              "tokens": [
+                {
+                  "name": "Danger icon matte",
+                  "customProperty": "--sky-theme-color-background-icon_matte-danger",
+                  "description": "The color for a small background behind an icon that conveys danger, error, or a critical warning."
+                },
+                {
+                  "name": "Info icon matte",
+                  "customProperty": "--sky-theme-color-background-icon_matte-info",
+                  "description": "The color for a small background behind an icon that conveys important information, but no danger."
+                },
+                {
+                  "name": "Success icon matte",
+                  "customProperty": "--sky-theme-color-background-icon_matte-success",
+                  "description": "The color for a small background behind an icon that conveys success or completion."
+                },
+                {
+                  "name": "Warning icon matte",
+                  "customProperty": "--sky-theme-color-background-icon_matte-warning",
+                  "description": "The color for a small background behind an icon that conveys warning or caution.",
+                  "demoMetadata": { "color": "--sky-theme-color-icon-default" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Classification",
+          "description": "Use classification colors to color-code blocks of content when the distinction between types of content is significant to users. For example, use classification colors for different types of events in calendars. Don't rely on color alone to classify content; include classification labels for users with color vision differences.\n\nDon't use classification colors to communicate statuses, such as danger or success.",
+          "demoMetadata": { "type": "color-swatch" },
+          "groups": [
+            {
+              "groupName": "Backgrounds",
+              "description": "Use classification background colors to color-code containers that include text or icons. Use the default colors for text and icons in these containers to maintain high color contrast.",
+              "tokens": [
+                {
+                  "name": "Classification background 1",
+                  "customProperty": "--sky-theme-color-classify-1-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-teal"]
+                },
+                {
+                  "name": "Classification background 2",
+                  "customProperty": "--sky-theme-color-classify-2-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-purple"]
+                },
+                {
+                  "name": "Classification background 3",
+                  "customProperty": "--sky-theme-color-classify-3-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-blue"]
+                },
+                {
+                  "name": "Classification background 4",
+                  "customProperty": "--sky-theme-color-classify-4-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-orange"]
+                },
+                {
+                  "name": "Classification background 5",
+                  "customProperty": "--sky-theme-color-classify-5-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-yellow"]
+                },
+                {
+                  "name": "Classification background 6",
+                  "customProperty": "--sky-theme-color-classify-6-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-green"]
+                },
+                {
+                  "name": "Classification background 7",
+                  "customProperty": "--sky-theme-color-classify-7-soft",
+                  "deprecatedCustomProperties": ["--sky-category-color-red"]
+                }
+              ]
+            },
+            {
+              "groupName": "Foregrounds",
+              "description": "Use classification foreground colors to color-code icons or add classifying borders to containers.",
+              "tokens": [
+                {
+                  "name": "Classification foreground 1",
+                  "customProperty": "--sky-theme-color-classify-1-heavy"
+                },
+                {
+                  "name": "Classification foreground 2",
+                  "customProperty": "--sky-theme-color-classify-2-heavy"
+                },
+                {
+                  "name": "Classification foreground 3",
+                  "customProperty": "--sky-theme-color-classify-3-heavy"
+                },
+                {
+                  "name": "Classification foreground 4",
+                  "customProperty": "--sky-theme-color-classify-4-heavy"
+                },
+                {
+                  "name": "Classification foreground 5",
+                  "customProperty": "--sky-theme-color-classify-5-heavy"
+                },
+                {
+                  "name": "Classification foreground 6",
+                  "customProperty": "--sky-theme-color-classify-6-heavy"
+                },
+                {
+                  "name": "Classification foreground 7",
+                  "customProperty": "--sky-theme-color-classify-7-heavy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Data visualization",
+          "groups": [
+            {
+              "groupName": "Chart elements",
+              "tokens": [
+                {
+                  "name": "Chart axis",
+                  "customProperty": "--sky-theme-color-viz-axis",
+                  "description": "The color for axis lines on charts."
+                },
+                {
+                  "name": "Chart gridline",
+                  "customProperty": "--sky-theme-color-viz-gridline",
+                  "description": "The color for gridlines and tick marks on charts."
+                },
+                {
+                  "name": "Chart marker",
+                  "customProperty": "--sky-theme-color-viz-marker",
+                  "description": "The color for thresholds, benchmarks, or goals on charts."
+                }
+              ]
+            },
+            {
+              "groupName": "Categorical palette",
+              "description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. For example, use categorical colors for slices in a pie chart and bars in a bar chart. Categorical colors are visually distinct, and all eight meet 3:1 contrast on white backgrounds. Use them in their intended order, and use the first one when visualizations have just one category or no categories.",
+              "demoMetadata": { "type": "color-swatch" },
+              "tokens": [
+                {
+                  "name": "Category 1",
+                  "customProperty": "--sky-theme-color-viz-category-1",
+                  "deprecatedCustomProperties": ["--sky-category-color-teal"]
+                },
+                {
+                  "name": "Category 2",
+                  "customProperty": "--sky-theme-color-viz-category-2",
+                  "deprecatedCustomProperties": ["--sky-category-color-purple"]
+                },
+                {
+                  "name": "Category 3",
+                  "customProperty": "--sky-theme-color-viz-category-3",
+                  "deprecatedCustomProperties": ["--sky-category-color-blue"]
+                },
+                {
+                  "name": "Category 4",
+                  "customProperty": "--sky-theme-color-viz-category-4",
+                  "deprecatedCustomProperties": ["--sky-category-color-sky"]
+                },
+                {
+                  "name": "Category 5",
+                  "customProperty": "--sky-theme-color-viz-category-5",
+                  "deprecatedCustomProperties": ["--sky-category-color-orange"]
+                },
+                {
+                  "name": "Category 6",
+                  "customProperty": "--sky-theme-color-viz-category-6",
+                  "deprecatedCustomProperties": ["--sky-category-color-red"]
+                },
+                {
+                  "name": "Category 7",
+                  "customProperty": "--sky-theme-color-viz-category-7",
+                  "deprecatedCustomProperties": ["--sky-category-color-pink"]
+                },
+                {
+                  "name": "Category 8",
+                  "customProperty": "--sky-theme-color-viz-category-8",
+                  "deprecatedCustomProperties": ["--sky-category-color-green"]
+                }
+              ]
+            },
+            {
+              "groupName": "Sequential palette",
+              "description": "Use the sequential palette to indicate different magnitudes within a range. For data with fewer than 10 magnitudes, always use the first and last color in the palette for the minimum and maximum magnitudes and evenly distribute the remaining values between them.",
+              "demoMetadata": { "type": "color-swatch" },
+              "tokens": [
+                {
+                  "name": "Sequence 1",
+                  "customProperty": "--sky-theme-color-viz-sequence-1"
+                },
+                {
+                  "name": "Sequence 2",
+                  "customProperty": "--sky-theme-color-viz-sequence-2"
+                },
+                {
+                  "name": "Sequence 3",
+                  "customProperty": "--sky-theme-color-viz-sequence-3"
+                },
+                {
+                  "name": "Sequence 4",
+                  "customProperty": "--sky-theme-color-viz-sequence-4"
+                },
+                {
+                  "name": "Sequence 5",
+                  "customProperty": "--sky-theme-color-viz-sequence-5"
+                },
+                {
+                  "name": "Sequence 6",
+                  "customProperty": "--sky-theme-color-viz-sequence-6"
+                },
+                {
+                  "name": "Sequence 7",
+                  "customProperty": "--sky-theme-color-viz-sequence-7"
+                },
+                {
+                  "name": "Sequence 8",
+                  "customProperty": "--sky-theme-color-viz-sequence-8"
+                },
+                {
+                  "name": "Sequence 9",
+                  "customProperty": "--sky-theme-color-viz-sequence-9"
+                },
+                {
+                  "name": "Sequence 10",
+                  "customProperty": "--sky-theme-color-viz-sequence-10"
+                }
+              ]
+            },
+            {
+              "groupName": "Positive diverging palette",
+              "demoMetadata": { "type": "color-swatch" },
+              "tokens": [
+                {
+                  "name": "Positive 1",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-1"
+                },
+                {
+                  "name": "Positive 2",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-2"
+                },
+                {
+                  "name": "Positive 3",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-3"
+                },
+                {
+                  "name": "Positive 4",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-4"
+                },
+                {
+                  "name": "Positive 5",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-5"
+                },
+                {
+                  "name": "Positive 6",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-6"
+                },
+                {
+                  "name": "Positive 7",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-7"
+                },
+                {
+                  "name": "Positive 8",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-8"
+                },
+                {
+                  "name": "Positive 9",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-9"
+                },
+                {
+                  "name": "Positive 10",
+                  "customProperty": "--sky-theme-color-viz-diverge-pos-10"
+                }
+              ]
+            },
+            {
+              "groupName": "Negative diverging palette",
+              "demoMetadata": { "type": "color-swatch" },
+              "tokens": [
+                {
+                  "name": "Negative 1",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-1"
+                },
+                {
+                  "name": "Negative 2",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-2"
+                },
+                {
+                  "name": "Negative 3",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-3"
+                },
+                {
+                  "name": "Negative 4",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-4"
+                },
+                {
+                  "name": "Negative 5",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-5"
+                },
+                {
+                  "name": "Negative 6",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-6"
+                },
+                {
+                  "name": "Negative 7",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-7"
+                },
+                {
+                  "name": "Negative 8",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-8"
+                },
+                {
+                  "name": "Negative 9",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-9"
+                },
+                {
+                  "name": "Negative 10",
+                  "customProperty": "--sky-theme-color-viz-diverge-neg-10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

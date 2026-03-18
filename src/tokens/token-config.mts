@@ -54,10 +54,11 @@ export const tokenConfig: TokenConfig = {
           path: 'public/elevation.json',
           docsPath: 'public/docs/elevation.json',
         },
-        // {
-        //   name: 'public-color',
-        //   path: 'public/color.json',
-        // },
+        {
+          name: 'public-color',
+          path: 'public/color.json',
+          docsPath: 'public/docs/color.json',
+        },
         // {
         //   name: 'public-border',
         //   path: 'public/border.json',
@@ -67,7 +68,7 @@ export const tokenConfig: TokenConfig = {
         { name: 'spacing', path: '../classes/public/spacing.json' },
         // { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
-        // { name: 'color', path: '../classes/public/color.json' },
+        { name: 'color', path: '../classes/public/color.json' },
         // { name: 'border', path: '../classes/public/borders.json' },
       ],
     },
@@ -110,10 +111,11 @@ export const tokenConfig: TokenConfig = {
           path: 'public/default/elevation.json',
           docsPath: 'public/docs/elevation.json',
         },
-        // {
-        //   name: 'public-color',
-        //   path: 'public/default/color.json',
-        // },
+        {
+          name: 'public-color',
+          path: 'public/default/color.json',
+          docsPath: 'public/docs/color.json',
+        },
         // {
         //   name: 'public-border',
         //   path: 'public/default/border.json',
@@ -123,7 +125,7 @@ export const tokenConfig: TokenConfig = {
         { name: 'spacing', path: '../classes/public/spacing.json' },
         // { name: 'typography', path: '../classes/public/typography.json' },
         { name: 'elevation', path: '../classes/public/elevation.json' },
-        // { name: 'color', path: '../classes/public/color.json' },
+        { name: 'color', path: '../classes/public/color.json' },
         // { name: 'border', path: '../classes/public/borders.json' },
       ],
     },
