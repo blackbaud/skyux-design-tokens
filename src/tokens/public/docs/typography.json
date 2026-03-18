@@ -18,7 +18,7 @@
           "groupName": "Headings",
           "description": "Use headings to introduce the page and sections of content within a page. Don't skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
           "demoMetadata": {
-            "type": "text-group"
+            "type": "text-multi-prop"
           },
           "groups": [
             {
@@ -156,7 +156,7 @@
         {
           "groupName": "Body text",
           "demoMetadata": {
-            "type": "text-group"
+            "type": "text-multi-prop"
           },
           "groups": [
             {
@@ -347,7 +347,7 @@
           "groupName": "Display text",
           "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
           "demoMetadata": {
-            "type": "text-group"
+            "type": "text-multi-prop"
           },
           "groups": [
             {
@@ -455,7 +455,7 @@
         {
           "groupName": "Paragraphs",
           "demoMetadata": {
-            "type": "text-single"
+            "type": "text-single-prop"
           },
           "tokens": [
             {
@@ -479,7 +479,7 @@
             {
               "groupName": "Stressed text",
               "demoMetadata": {
-                "type": "text-group"
+                "type": "text-multi-prop"
               },
               "tokens": [
                 {
@@ -499,7 +499,7 @@
         {
           "groupName": "Help text",
           "demoMetadata": {
-            "type": "text-group"
+            "type": "text-multi-prop"
           },
           "groups": [
             {

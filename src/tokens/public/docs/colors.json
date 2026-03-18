@@ -122,11 +122,11 @@
         },
         {
           "groupName": "Icons",
-          "demoMetadata": { "type": "icon-color" },
           "groups": [
             {
               "groupName": "Icon glyphs",
               "description": "Use icon colors for the glyphs in the icon component.",
+              "demoMetadata": { "type": "icon-color" },
               "tokens": [
                 {
                   "name": "Default icon",
@@ -156,8 +156,7 @@
               "groupName": "Icon mattes",
               "description": "Use icon matte colors for the background of elements that an icon component is placed inside of. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
               "demoMetadata": {
-                "type": "icon-background-color",
-                "color": "--sky-theme-color-icon-inverse"
+                "type": "icon-background-color"
               },
               "tokens": [
                 {
@@ -383,9 +382,11 @@
         },
         {
           "groupName": "Data visualization",
+          "demoMetadata": { "type": "color-swatch" },
           "groups": [
             {
               "groupName": "Chart elements",
+              "demoMetadata": { "type": "border-color" },
               "tokens": [
                 {
                   "name": "Chart axis",
@@ -407,7 +408,6 @@
             {
               "groupName": "Categorical palette",
               "description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. For example, use categorical colors for slices in a pie chart and bars in a bar chart. Categorical colors are visually distinct, and all eight meet 3:1 contrast on white backgrounds. Use them in their intended order, and use the first one when visualizations have just one category or no categories.",
-              "demoMetadata": { "type": "color-swatch" },
               "tokens": [
                 {
                   "name": "Category 1",
@@ -454,7 +454,6 @@
             {
               "groupName": "Sequential palette",
               "description": "Use the sequential palette to indicate different magnitudes within a range. For data with fewer than 10 magnitudes, always use the first and last color in the palette for the minimum and maximum magnitudes and evenly distribute the remaining values between them.",
-              "demoMetadata": { "type": "color-swatch" },
               "tokens": [
                 {
                   "name": "Sequence 1",
@@ -500,7 +499,6 @@
             },
             {
               "groupName": "Positive diverging palette",
-              "demoMetadata": { "type": "color-swatch" },
               "tokens": [
                 {
                   "name": "Positive 1",
@@ -546,7 +544,6 @@
             },
             {
               "groupName": "Negative diverging palette",
-              "demoMetadata": { "type": "color-swatch" },
               "tokens": [
                 {
                   "name": "Negative 1",

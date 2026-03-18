@@ -2,6 +2,9 @@
   "groups": [
     {
       "name": "Borders",
+      "demoMetadata": {
+        "type": "border"
+      },
       "groups": [
         {
           "name": "Containers",
@@ -239,6 +242,9 @@
         {
           "name": "Border widths",
           "description": "Add these in addition to border classes to modify the border width of certain elements.",
+          "demoMetadata": {
+            "type": "border-width"
+          },
           "styles": [
             {
               "name": "Emphasized border width",
@@ -260,6 +266,9 @@
         },
         {
           "name": "Border radius",
+          "demoMetadata": {
+            "type": "border-radius"
+          },
           "styles": [
             {
               "name": "Border radius XS",

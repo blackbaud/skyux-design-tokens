@@ -5,6 +5,7 @@
       "groups": [
         {
           "name": "Backgrounds",
+          "demoMetadata": { "type": "color-swatch" },
           "groups": [
             {
               "name": "Page background",
@@ -57,6 +58,7 @@
         {
           "name": "Text",
           "description": "When using SKY UX classes, use specific typography classes to include all properties of the border, including color. In rare cases, use the custom properties below to assign a text color directly.",
+          "demoMetadata": { "type": "text-color" },
           "styles": [
             {
               "name": "Inverse text",
@@ -64,6 +66,9 @@
               "description": "The color for text on heavy background colors, such as primary and danger button labels.",
               "properties": {
                 "color": "var(--sky-theme-color-text-inverse)"
+              },
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-icon_matte-info"
               }
             }
           ]
@@ -74,6 +79,7 @@
             {
               "name": "Icon glyphs",
               "description": "Use icon colors for the glyphs in the icon component.",
+              "demoMetadata": { "type": "icon-color" },
               "styles": [
                 {
                   "name": "Default icon",
@@ -104,6 +110,9 @@
                   "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
                   "properties": {
                     "color": "var(--sky-theme-color-icon-inverse)"
+                  },
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-icon_matte-info"
                   }
                 }
               ]
@@ -111,6 +120,9 @@
             {
               "name": "Icon mattes",
               "description": "Use icon matte colors for small backgrounds behind icons. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
+              "demoMetadata": {
+                "type": "icon-background-color"
+              },
               "styles": [
                 {
                   "name": "Action soft icon matte",
@@ -118,6 +130,9 @@
                   "description": "The color for a matte behind an icon with the action icon color.",
                   "properties": {
                     "background-color": "var(--sky-theme-color-background-icon_matte-action-soft)"
+                  },
+                  "demoMetadata": {
+                    "color": "--sky-theme-color-icon-action"
                   }
                 }
               ]
@@ -130,6 +145,7 @@
             {
               "name": "Status backgrounds",
               "description": "Use status background colors for containers of elements that convey a status or urgency.",
+              "demoMetadata": { "type": "color-swatch" },
               "styles": [
                 {
                   "name": "Danger background",
@@ -168,6 +184,7 @@
             {
               "name": "Status borders",
               "description": "Use status borders for elements that convey a status or urgency.",
+              "demoMetadata": { "type": "border-color" },
               "styles": [
                 {
                   "name": "Danger border",
@@ -206,6 +223,7 @@
             {
               "name": "Status icon glyphs",
               "description": "Use status icon colors for icons that convey a status or urgency.",
+              "demoMetadata": { "type": "icon-color" },
               "styles": [
                 {
                   "name": "Danger icon",
@@ -236,6 +254,10 @@
             {
               "name": "Status icon mattes",
               "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency.",
+              "demoMetadata": {
+                "type": "icon-background-color",
+                "color": "--sky-theme-color-icon-inverse"
+              },
               "styles": [
                 {
                   "name": "Danger icon matte",
@@ -267,7 +289,8 @@
                   "description": "The color for a small background behind an icon that conveys warning or caution.",
                   "properties": {
                     "background-color": "var(--sky-theme-color-background-icon_matte-warning)"
-                  }
+                  },
+                  "demoMetadata": { "color": "--sky-theme-color-icon-default" }
                 }
               ]
             }
@@ -276,6 +299,9 @@
         {
           "name": "Classification",
           "description": "Use classification colors to color-code blocks of content when the distinction between types of content is significant to users. For example, use classification colors for different types of events in calendars. Don't rely on color alone to classify content; include classification labels for users with color vision differences.\n\nDon't use classification colors to communicate statuses, such as danger or success.",
+          "demoMetadata": {
+            "type": "color-swatch"
+          },
           "groups": [
             {
               "name": "Backgrounds",
@@ -340,9 +366,15 @@
         },
         {
           "name": "Data visualization",
+          "demoMetadata": {
+            "type": "color-swatch"
+          },
           "groups": [
             {
               "name": "Chart elements",
+              "demoMetadata": {
+                "type": "border-color"
+              },
               "styles": [
                 {
                   "name": "Chart axis",

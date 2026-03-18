@@ -2,6 +2,9 @@
   "groups": [
     {
       "name": "Typography",
+      "demoMetadata": {
+        "type": "text"
+      },
       "groups": [
         {
           "name": "Headings",
@@ -134,13 +137,16 @@
         },
         {
           "name": "Paragraphs",
+          "demoMetadata": {
+            "type": "element"
+          },
           "styles": [
             {
               "name": "Paragraph",
               "selectors": ["p"],
               "description": "Use paragraphs to give one or more complete sentences reading line-height.",
               "properties": {
-                "line-height": "var( --sky-theme-font-line_height-paragraph-m)"
+                "line-height": "var(--sky-theme-font-line_height-paragraph-m)"
               }
             },
             {

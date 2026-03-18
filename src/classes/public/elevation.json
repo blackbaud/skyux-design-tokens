@@ -2,6 +2,9 @@
   "groups": [
     {
       "name": "Elevation",
+      "demoMetadata": {
+        "type": "elevation"
+      },
       "groups": [
         {
           "name": "Raised",
