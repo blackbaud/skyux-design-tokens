@@ -41,7 +41,7 @@
           }
         },
         "divider": {
-          "base": {
+          "default": {
             "$value": "{border.width.divider}",
             "$type": "border"
           },
@@ -58,7 +58,7 @@
       },
       "style": {
         "divider": {
-          "base": {
+          "default": {
             "$value": "{border.style.divider}",
             "$type": "border"
           },
