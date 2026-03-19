@@ -3383,8 +3383,8 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 }
 .sky-theme-modern.sky-theme-brand-base {
   --sky-theme-color-background-container-backdrop: var(--sky-color-background-container-backdrop);
-  --sky-theme-color-background-container-base: var(--sky-color-background-container-base);
   --sky-theme-color-background-container-danger: var(--sky-color-background-container-danger);
+  --sky-theme-color-background-container-default: var(--sky-color-background-container-base);
   --sky-theme-color-background-container-dimmed: var(--sky-color-background-container-dimmed);
   --sky-theme-color-background-container-info: var(--sky-color-background-container-info);
   --sky-theme-color-background-container-success: var(--sky-color-background-container-success);
@@ -3396,12 +3396,12 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-background-icon_matte-success: var(--sky-color-background-icon_matte-success);
   --sky-theme-color-background-icon_matte-warning: var(--sky-color-background-icon_matte-warning);
   --sky-theme-color-background-page: var(--sky-color-background-page);
-  --sky-theme-color-border-container-base: var(--sky-color-border-container-base);
+  --sky-theme-color-border-container-default: var(--sky-color-border-container-base);
   --sky-theme-color-border-danger: var(--sky-color-border-danger);
   --sky-theme-color-border-disabled: var(--sky-color-border-disabled);
-  --sky-theme-color-border-divider: var(--sky-color-border-divider);
+  --sky-theme-color-border-divider-default: var(--sky-color-border-divider);
+  --sky-theme-color-border-divider-soft: var(--sky-color-border-separator-row);
   --sky-theme-color-border-info: var(--sky-color-border-info);
-  --sky-theme-color-border-separator-row: var(--sky-color-border-separator-row);
   --sky-theme-color-border-success: var(--sky-color-border-success);
   --sky-theme-color-border-warning: var(--sky-color-border-warning);
   --sky-theme-color-classify-1-heavy: var(--sky-color-classify-1-heavy);
@@ -3474,9 +3474,9 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-viz-sequence-9: var(--sky-color-viz-sequence-9);
 }
 .sky-theme-modern.sky-theme-brand-base {
-  --sky-theme-border-container-base: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base);
+  --sky-theme-border-container-default: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base);
   --sky-theme-border-danger: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger);
-  --sky-theme-border-divider-base: var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider);
+  --sky-theme-border-divider-default: var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider);
   --sky-theme-border-divider-soft: var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row);
   --sky-theme-border-info: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info);
   --sky-theme-border-success: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success);
@@ -3487,13 +3487,13 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-radius-s: var(--sky-border-radius-s);
   --sky-theme-border-radius-xs: var(--sky-border-radius-xs);
   --sky-theme-border-style-accent: var(--sky-border-style-accent);
-  --sky-theme-border-style-divider: var(--sky-border-style-divider);
-  --sky-theme-border-style-separator-row: var(--sky-border-style-separator-row);
+  --sky-theme-border-style-divider-default: var(--sky-border-style-divider);
+  --sky-theme-border-style-divider-soft: var(--sky-border-style-separator-row);
   --sky-theme-border-width-accent: var(--sky-border-width-accent);
-  --sky-theme-border-width-container-base: var(--sky-border-width-container-base);
-  --sky-theme-border-width-divider: var(--sky-border-width-divider);
+  --sky-theme-border-width-container-default: var(--sky-border-width-container-base);
+  --sky-theme-border-width-divider-default: var(--sky-border-width-divider);
+  --sky-theme-border-width-divider-soft: var(--sky-border-width-separator-row);
   --sky-theme-border-width-emphasized: var(--sky-border-width-emphasized);
-  --sky-theme-border-width-separator-row: var(--sky-border-width-separator-row);
 }
 .sky-theme-default {
   --sky-theme-space-conditional-input: 27px;
@@ -3606,8 +3606,8 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 }
 .sky-theme-default {
   --sky-theme-color-background-container-backdrop: #eeeeef;
-  --sky-theme-color-background-container-base: #ffffff;
   --sky-theme-color-background-container-danger: #f7a08f;
+  --sky-theme-color-background-container-default: #ffffff;
   --sky-theme-color-background-container-dimmed: #eeeeef;
   --sky-theme-color-background-container-info: #81d4f7;
   --sky-theme-color-background-container-success: #b7da9b;
@@ -3619,12 +3619,12 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-background-icon_matte-success: #b7da9b;
   --sky-theme-color-background-icon_matte-warning: #ffd597;
   --sky-theme-color-background-page: #ffffff;
-  --sky-theme-color-border-container-base: #cdcfd2;
+  --sky-theme-color-border-container-default: #cdcfd2;
   --sky-theme-color-border-danger: #ef4044;
   --sky-theme-color-border-disabled: #cdcfd2;
-  --sky-theme-color-border-divider: #cdcfd2;
+  --sky-theme-color-border-divider-default: #cdcfd2;
+  --sky-theme-color-border-divider-soft: #cdcfd2;
   --sky-theme-color-border-info: #00b4f1;
-  --sky-theme-color-border-separator-row: #cdcfd2;
   --sky-theme-color-border-success: #72bf44;
   --sky-theme-color-border-warning: #fbb034;
   --sky-theme-color-classify-1-heavy: #046e6b;
@@ -3697,9 +3697,9 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-viz-sequence-9: #02413f;
 }
 .sky-theme-default {
-  --sky-theme-border-container-base: 1px solid #cdcfd2;
+  --sky-theme-border-container-default: 1px solid #cdcfd2;
   --sky-theme-border-danger: 1px solid #ef4044;
-  --sky-theme-border-divider-base: 1px solid #cdcfd2;
+  --sky-theme-border-divider-default: 1px solid #cdcfd2;
   --sky-theme-border-divider-soft: 1px solid #cdcfd2;
   --sky-theme-border-info: 1px solid #00b4f1;
   --sky-theme-border-radius-m: 4px;
@@ -3708,15 +3708,15 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-radius-s: 4px;
   --sky-theme-border-radius-xs: 4px;
   --sky-theme-border-style-accent: solid;
-  --sky-theme-border-style-divider: solid;
-  --sky-theme-border-style-separator-row: solid;
+  --sky-theme-border-style-divider-default: solid;
+  --sky-theme-border-style-divider-soft: solid;
   --sky-theme-border-success: 1px solid #72bf44;
   --sky-theme-border-warning: 1px solid #fbb034;
   --sky-theme-border-width-accent: 4px;
-  --sky-theme-border-width-container-base: 1px;
-  --sky-theme-border-width-divider: 1px;
+  --sky-theme-border-width-container-default: 1px;
+  --sky-theme-border-width-divider-default: 1px;
+  --sky-theme-border-width-divider-soft: 1px;
   --sky-theme-border-width-emphasized: 2px;
-  --sky-theme-border-width-separator-row: 1px;
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-xs {
   margin-top: var(--sky-theme-space-stacked-xs);
@@ -3985,8 +3985,8 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 .sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-page {
   background-color: var(--sky-theme-color-background-page);
 }
-.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-base {
-  background-color: var(--sky-theme-color-background-container-base);
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-default {
+  background-color: var(--sky-theme-color-background-container-default);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-dimmed {
   background-color: var(--sky-theme-color-background-container-dimmed);
@@ -4093,20 +4093,20 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 .sky-theme-modern.sky-theme-brand-base .sky-theme-color-viz-marker {
   border-color: var(--sky-theme-color-viz-marker);
 }
-.sky-theme-modern.sky-theme-brand-base .sky-theme-border-container-base {
-  border: var(--sky-theme-border-container-base);
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-container-default {
+  border: var(--sky-theme-border-container-default);
 }
-.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-top {
-  border-top: var(--sky-theme-border-divider-base);
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-default-top {
+  border-top: var(--sky-theme-border-divider-default);
 }
-.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-right {
-  border-right: var(--sky-theme-border-divider-base);
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-default-right {
+  border-right: var(--sky-theme-border-divider-default);
 }
-.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-bottom {
-  border-bottom: var(--sky-theme-border-divider-base);
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-default-bottom {
+  border-bottom: var(--sky-theme-border-divider-default);
 }
-.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-left {
-  border-left: var(--sky-theme-border-divider-base);
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-default-left {
+  border-left: var(--sky-theme-border-divider-default);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-soft-top {
   border-top: var(--sky-theme-border-divider-soft);
@@ -4456,8 +4456,8 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 .sky-theme-default .sky-theme-color-background-page {
   background-color: var(--sky-theme-color-background-page);
 }
-.sky-theme-default .sky-theme-color-background-container-base {
-  background-color: var(--sky-theme-color-background-container-base);
+.sky-theme-default .sky-theme-color-background-container-default {
+  background-color: var(--sky-theme-color-background-container-default);
 }
 .sky-theme-default .sky-theme-color-background-container-dimmed {
   background-color: var(--sky-theme-color-background-container-dimmed);
@@ -4564,20 +4564,20 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 .sky-theme-default .sky-theme-color-viz-marker {
   border-color: var(--sky-theme-color-viz-marker);
 }
-.sky-theme-default .sky-theme-border-container-base {
-  border: var(--sky-theme-border-container-base);
+.sky-theme-default .sky-theme-border-container-default {
+  border: var(--sky-theme-border-container-default);
 }
-.sky-theme-default .sky-theme-border-divider-top {
-  border-top: var(--sky-theme-border-divider-base);
+.sky-theme-default .sky-theme-border-divider-default-top {
+  border-top: var(--sky-theme-border-divider-default);
 }
-.sky-theme-default .sky-theme-border-divider-right {
-  border-right: var(--sky-theme-border-divider-base);
+.sky-theme-default .sky-theme-border-divider-default-right {
+  border-right: var(--sky-theme-border-divider-default);
 }
-.sky-theme-default .sky-theme-border-divider-bottom {
-  border-bottom: var(--sky-theme-border-divider-base);
+.sky-theme-default .sky-theme-border-divider-default-bottom {
+  border-bottom: var(--sky-theme-border-divider-default);
 }
-.sky-theme-default .sky-theme-border-divider-left {
-  border-left: var(--sky-theme-border-divider-base);
+.sky-theme-default .sky-theme-border-divider-default-left {
+  border-left: var(--sky-theme-border-divider-default);
 }
 .sky-theme-default .sky-theme-border-divider-soft-top {
   border-top: var(--sky-theme-border-divider-soft);
