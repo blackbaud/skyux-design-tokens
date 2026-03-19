@@ -28,4 +28,20 @@ describe('build styles', () => {
     expect(baseResults?.source).toMatchSnapshot();
     expect(blackbaudResults?.source).toMatchSnapshot();
   });
+
+  it('should generate the correct public API styles', async () => {
+    const plugin = buildStyleDictionaryPlugin(tokenConfig);
+    const emitFileSpy = vi.fn();
+    if (plugin.generateBundle) {
+      await plugin.generateBundle.call({
+        emitFile: emitFileSpy,
+      });
+    }
+
+    const publicApiResults = emitFileSpy.mock.calls.find(
+      (call) => call[0]?.fileName === 'bundles/public-api.css',
+    )?.[0];
+
+    expect(publicApiResults?.source).toMatchSnapshot();
+  });
 });

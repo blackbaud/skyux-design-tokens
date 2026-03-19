@@ -3270,3 +3270,1395 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
 }
 "
 `;
+
+exports[`build styles > should generate the correct public API styles 1`] = `
+".sky-theme-modern.sky-theme-brand-base {
+  --sky-theme-space-inline-l: var(--sky-space-inline-l);
+  --sky-theme-space-inline-m: var(--sky-space-inline-m);
+  --sky-theme-space-inline-s: var(--sky-space-inline-s);
+  --sky-theme-space-inline-xl: var(--sky-space-inline-xl);
+  --sky-theme-space-inline-xs: var(--sky-space-inline-xs);
+  --sky-theme-space-inline-xxl: var(--sky-space-inline-xxl);
+  --sky-theme-space-inset-balanced-l: var(--sky-space-inset-balanced-l);
+  --sky-theme-space-inset-balanced-m: var(--sky-space-inset-balanced-m);
+  --sky-theme-space-inset-balanced-s: var(--sky-space-inset-balanced-s);
+  --sky-theme-space-inset-balanced-xl: var(--sky-space-inset-balanced-xl);
+  --sky-theme-space-inset-balanced-xs: var(--sky-space-inset-balanced-xs);
+  --sky-theme-space-stacked-l: var(--sky-space-stacked-l);
+  --sky-theme-space-stacked-m: var(--sky-space-stacked-m);
+  --sky-theme-space-stacked-s: var(--sky-space-stacked-s);
+  --sky-theme-space-stacked-xl: var(--sky-space-stacked-xl);
+  --sky-theme-space-stacked-xs: var(--sky-space-stacked-xs);
+  --sky-theme-space-stacked-xxl: var(--sky-space-stacked-xxl);
+  --sky-theme-space-conditional-input: var(--sky-space-inset-switch);
+}
+.sky-theme-modern.sky-theme-brand-base {
+  --sky-theme-font-style-em-style: italic;
+  --sky-theme-font-style-em-weight: 400;
+  --sky-theme-font-style-hint-m-style: italic;
+  --sky-theme-font-style-hint-m-weight: 400;
+  --sky-theme-font-style-hint-s-style: italic;
+  --sky-theme-font-style-hint-s-weight: 400;
+  --sky-theme-font-letter_spacing-hint-s: var(--sky-font-letter_spacing-hint-s);
+  --sky-theme-font-line_height-body-deemphasized-m: var(--sky-font-line_height-body-m);
+  --sky-theme-font-line_height-body-deemphasized-s: var(--sky-font-line_height-body-s);
+  --sky-theme-font-line_height-body-emphasized-m: var(--sky-font-line_height-body-m);
+  --sky-theme-font-line_height-body-emphasized-s: var(--sky-font-line_height-body-s);
+  --sky-theme-font-line_height-body-l: var(--sky-font-line_height-body-l);
+  --sky-theme-font-line_height-body-m: var(--sky-font-line_height-body-m);
+  --sky-theme-font-line_height-body-s: var(--sky-font-line_height-body-s);
+  --sky-theme-font-line_height-display-1: var(--sky-font-line_height-display-1);
+  --sky-theme-font-line_height-display-2: var(--sky-font-line_height-display-2);
+  --sky-theme-font-line_height-display-3: var(--sky-font-line_height-display-3);
+  --sky-theme-font-line_height-display-4: var(--sky-font-line_height-display-4);
+  --sky-theme-font-line_height-heading-1: var(--sky-font-line_height-heading-1);
+  --sky-theme-font-line_height-heading-2: var(--sky-font-line_height-heading-2);
+  --sky-theme-font-line_height-heading-3: var(--sky-font-line_height-heading-3);
+  --sky-theme-font-line_height-heading-4: var(--sky-font-line_height-heading-4);
+  --sky-theme-font-line_height-heading-5: var(--sky-font-line_height-heading-5);
+  --sky-theme-font-line_height-hint-m: var(--sky-font-line_height-hint-m);
+  --sky-theme-font-line_height-hint-s: var(--sky-font-line_height-hint-s);
+  --sky-theme-font-line_height-paragraph-m: var(--sky-font-line_height-paragraph-m);
+  --sky-theme-font-size-body-deemphasized-m: var(--sky-font-size-body-m);
+  --sky-theme-font-size-body-deemphasized-s: var(--sky-font-size-body-s);
+  --sky-theme-font-size-body-emphasized-m: var(--sky-font-size-body-m);
+  --sky-theme-font-size-body-emphasized-s: var(--sky-font-size-body-s);
+  --sky-theme-font-size-body-l: var(--sky-font-size-body-l);
+  --sky-theme-font-size-body-m: var(--sky-font-size-body-m);
+  --sky-theme-font-size-body-s: var(--sky-font-size-body-s);
+  --sky-theme-font-size-display-1: var(--sky-font-size-display-1);
+  --sky-theme-font-size-display-2: var(--sky-font-size-display-2);
+  --sky-theme-font-size-display-3: var(--sky-font-size-display-3);
+  --sky-theme-font-size-display-4: var(--sky-font-size-display-4);
+  --sky-theme-font-size-heading-1: var(--sky-font-size-heading-1);
+  --sky-theme-font-size-heading-2: var(--sky-font-size-heading-2);
+  --sky-theme-font-size-heading-3: var(--sky-font-size-heading-3);
+  --sky-theme-font-size-heading-4: var(--sky-font-size-heading-4);
+  --sky-theme-font-size-heading-5: var(--sky-font-size-heading-5);
+  --sky-theme-font-size-hint-m: var(--sky-font-size-hint-m);
+  --sky-theme-font-size-hint-s: var(--sky-font-size-hint-s);
+  --sky-theme-font-style-strong: var(--sky-font-style-strong);
+  --sky-theme-font-weight-body-deemphasized-m: var(--sky-font-style-body-m);
+  --sky-theme-font-weight-body-deemphasized-s: var(--sky-font-style-body-s);
+  --sky-theme-font-weight-body-emphasized-m: var(--sky-font-style-emphasized);
+  --sky-theme-font-weight-body-emphasized-s: var(--sky-font-style-emphasized);
+  --sky-theme-font-weight-body-l: var(--sky-font-style-body-l);
+  --sky-theme-font-weight-body-m: var(--sky-font-style-body-m);
+  --sky-theme-font-weight-body-s: var(--sky-font-style-body-s);
+  --sky-theme-font-weight-display-1: var(--sky-font-style-display-1);
+  --sky-theme-font-weight-display-2: var(--sky-font-style-display-2);
+  --sky-theme-font-weight-display-3: var(--sky-font-style-display-3);
+  --sky-theme-font-weight-display-4: var(--sky-font-style-display-4);
+  --sky-theme-font-weight-heading-1: var(--sky-font-style-heading-1);
+  --sky-theme-font-weight-heading-2: var(--sky-font-style-heading-2);
+  --sky-theme-font-weight-heading-3: var(--sky-font-style-heading-3);
+  --sky-theme-font-weight-heading-4: var(--sky-font-style-heading-4);
+  --sky-theme-font-weight-heading-5: var(--sky-font-style-heading-5);
+  --sky-theme-font-family-body-deemphasized-m: var(--sky-font-family-primary);
+  --sky-theme-font-family-body-deemphasized-s: var(--sky-font-family-primary);
+  --sky-theme-font-family-body-emphasized-m: var(--sky-font-family-primary);
+  --sky-theme-font-family-body-emphasized-s: var(--sky-font-family-primary);
+  --sky-theme-font-family-body-l: var(--sky-font-family-primary);
+  --sky-theme-font-family-body-m: var(--sky-font-family-primary);
+  --sky-theme-font-family-body-s: var(--sky-font-family-primary);
+  --sky-theme-font-family-display-1: var(--sky-font-family-primary);
+  --sky-theme-font-family-display-2: var(--sky-font-family-primary);
+  --sky-theme-font-family-display-3: var(--sky-font-family-primary);
+  --sky-theme-font-family-display-4: var(--sky-font-family-primary);
+  --sky-theme-font-family-heading-1: var(--sky-font-family-primary);
+  --sky-theme-font-family-heading-2: var(--sky-font-family-primary);
+  --sky-theme-font-family-heading-3: var(--sky-font-family-primary);
+  --sky-theme-font-family-heading-4: var(--sky-font-family-primary);
+  --sky-theme-font-family-heading-5: var(--sky-font-family-primary);
+  --sky-theme-font-family-hint-m: var(--sky-font-family-primary);
+  --sky-theme-font-family-hint-s: var(--sky-font-family-primary);
+  --sky-theme-font-family-primary: var(--sky-font-family-primary);
+}
+.sky-theme-modern.sky-theme-brand-base {
+  --sky-theme-elevation-overflow: var(--sky-elevation-overflow);
+  --sky-theme-elevation-overlay-100: var(--sky-elevation-overlay-100);
+  --sky-theme-elevation-overlay-200: var(--sky-elevation-overlay-200);
+  --sky-theme-elevation-overlay-300: var(--sky-elevation-overlay-300);
+  --sky-theme-elevation-raised-100: var(--sky-elevation-raised-100);
+}
+.sky-theme-modern.sky-theme-brand-base {
+  --sky-theme-color-background-container-backdrop: var(--sky-color-background-container-backdrop);
+  --sky-theme-color-background-container-base: var(--sky-color-background-container-base);
+  --sky-theme-color-background-container-danger: var(--sky-color-background-container-danger);
+  --sky-theme-color-background-container-dimmed: var(--sky-color-background-container-dimmed);
+  --sky-theme-color-background-container-info: var(--sky-color-background-container-info);
+  --sky-theme-color-background-container-success: var(--sky-color-background-container-success);
+  --sky-theme-color-background-container-warning: var(--sky-color-background-container-warning);
+  --sky-theme-color-background-disabled: var(--sky-color-background-disabled);
+  --sky-theme-color-background-icon_matte-action-soft: var(--sky-color-background-icon_matte-action-soft);
+  --sky-theme-color-background-icon_matte-danger: var(--sky-color-background-icon_matte-danger);
+  --sky-theme-color-background-icon_matte-info: var(--sky-color-background-icon_matte-info);
+  --sky-theme-color-background-icon_matte-success: var(--sky-color-background-icon_matte-success);
+  --sky-theme-color-background-icon_matte-warning: var(--sky-color-background-icon_matte-warning);
+  --sky-theme-color-background-page: var(--sky-color-background-page);
+  --sky-theme-color-border-container-base: var(--sky-color-border-container-base);
+  --sky-theme-color-border-danger: var(--sky-color-border-danger);
+  --sky-theme-color-border-disabled: var(--sky-color-border-disabled);
+  --sky-theme-color-border-divider: var(--sky-color-border-divider);
+  --sky-theme-color-border-info: var(--sky-color-border-info);
+  --sky-theme-color-border-separator-row: var(--sky-color-border-separator-row);
+  --sky-theme-color-border-success: var(--sky-color-border-success);
+  --sky-theme-color-border-warning: var(--sky-color-border-warning);
+  --sky-theme-color-classify-1-heavy: var(--sky-color-classify-1-heavy);
+  --sky-theme-color-classify-1-soft: var(--sky-color-classify-1-soft);
+  --sky-theme-color-classify-2-heavy: var(--sky-color-classify-2-heavy);
+  --sky-theme-color-classify-2-soft: var(--sky-color-classify-2-soft);
+  --sky-theme-color-classify-3-heavy: var(--sky-color-classify-3-heavy);
+  --sky-theme-color-classify-3-soft: var(--sky-color-classify-3-soft);
+  --sky-theme-color-classify-4-heavy: var(--sky-color-classify-4-heavy);
+  --sky-theme-color-classify-4-soft: var(--sky-color-classify-4-soft);
+  --sky-theme-color-classify-5-heavy: var(--sky-color-classify-5-heavy);
+  --sky-theme-color-classify-5-soft: var(--sky-color-classify-5-soft);
+  --sky-theme-color-classify-6-heavy: var(--sky-color-classify-6-heavy);
+  --sky-theme-color-classify-6-soft: var(--sky-color-classify-6-soft);
+  --sky-theme-color-classify-7-heavy: var(--sky-color-classify-7-heavy);
+  --sky-theme-color-classify-7-soft: var(--sky-color-classify-7-soft);
+  --sky-theme-color-icon-action: var(--sky-color-icon-action);
+  --sky-theme-color-icon-danger: var(--sky-color-icon-danger);
+  --sky-theme-color-icon-deemphasized: var(--sky-color-icon-deemphasized);
+  --sky-theme-color-icon-default: var(--sky-color-icon-default);
+  --sky-theme-color-icon-info: var(--sky-color-icon-info);
+  --sky-theme-color-icon-inverse: var(--sky-color-icon-inverse);
+  --sky-theme-color-icon-success: var(--sky-color-icon-success);
+  --sky-theme-color-text-action: var(--sky-color-text-action);
+  --sky-theme-color-text-action_contrast: var(--sky-color-text-action_contrast);
+  --sky-theme-color-text-deemphasized: var(--sky-color-text-deemphasized);
+  --sky-theme-color-text-default: var(--sky-color-text-default);
+  --sky-theme-color-text-heading: var(--sky-color-text-heading);
+  --sky-theme-color-text-inverse: var(--sky-color-text-inverse);
+  --sky-theme-color-viz-axis: var(--sky-color-viz-axis);
+  --sky-theme-color-viz-category-1: var(--sky-color-viz-category-1);
+  --sky-theme-color-viz-category-2: var(--sky-color-viz-category-2);
+  --sky-theme-color-viz-category-3: var(--sky-color-viz-category-3);
+  --sky-theme-color-viz-category-4: var(--sky-color-viz-category-4);
+  --sky-theme-color-viz-category-5: var(--sky-color-viz-category-5);
+  --sky-theme-color-viz-category-6: var(--sky-color-viz-category-6);
+  --sky-theme-color-viz-category-7: var(--sky-color-viz-category-7);
+  --sky-theme-color-viz-category-8: var(--sky-color-viz-category-8);
+  --sky-theme-color-viz-diverge-neg-1: var(--sky-color-viz-diverge-neg-1);
+  --sky-theme-color-viz-diverge-neg-10: var(--sky-color-viz-diverge-neg-10);
+  --sky-theme-color-viz-diverge-neg-2: var(--sky-color-viz-diverge-neg-2);
+  --sky-theme-color-viz-diverge-neg-3: var(--sky-color-viz-diverge-neg-3);
+  --sky-theme-color-viz-diverge-neg-4: var(--sky-color-viz-diverge-neg-4);
+  --sky-theme-color-viz-diverge-neg-5: var(--sky-color-viz-diverge-neg-5);
+  --sky-theme-color-viz-diverge-neg-6: var(--sky-color-viz-diverge-neg-6);
+  --sky-theme-color-viz-diverge-neg-7: var(--sky-color-viz-diverge-neg-7);
+  --sky-theme-color-viz-diverge-neg-8: var(--sky-color-viz-diverge-neg-8);
+  --sky-theme-color-viz-diverge-neg-9: var(--sky-color-viz-diverge-neg-9);
+  --sky-theme-color-viz-diverge-pos-1: var(--sky-color-viz-diverge-pos-1);
+  --sky-theme-color-viz-diverge-pos-10: var(--sky-color-viz-diverge-pos-10);
+  --sky-theme-color-viz-diverge-pos-2: var(--sky-color-viz-diverge-pos-2);
+  --sky-theme-color-viz-diverge-pos-3: var(--sky-color-viz-diverge-pos-3);
+  --sky-theme-color-viz-diverge-pos-4: var(--sky-color-viz-diverge-pos-4);
+  --sky-theme-color-viz-diverge-pos-5: var(--sky-color-viz-diverge-pos-5);
+  --sky-theme-color-viz-diverge-pos-6: var(--sky-color-viz-diverge-pos-6);
+  --sky-theme-color-viz-diverge-pos-7: var(--sky-color-viz-diverge-pos-7);
+  --sky-theme-color-viz-diverge-pos-8: var(--sky-color-viz-diverge-pos-8);
+  --sky-theme-color-viz-diverge-pos-9: var(--sky-color-viz-diverge-pos-9);
+  --sky-theme-color-viz-gridline: var(--sky-color-viz-gridline);
+  --sky-theme-color-viz-marker: var(--sky-color-viz-marker);
+  --sky-theme-color-viz-sequence-1: var(--sky-color-viz-sequence-1);
+  --sky-theme-color-viz-sequence-10: var(--sky-color-viz-sequence-10);
+  --sky-theme-color-viz-sequence-2: var(--sky-color-viz-sequence-2);
+  --sky-theme-color-viz-sequence-3: var(--sky-color-viz-sequence-3);
+  --sky-theme-color-viz-sequence-4: var(--sky-color-viz-sequence-4);
+  --sky-theme-color-viz-sequence-5: var(--sky-color-viz-sequence-5);
+  --sky-theme-color-viz-sequence-6: var(--sky-color-viz-sequence-6);
+  --sky-theme-color-viz-sequence-7: var(--sky-color-viz-sequence-7);
+  --sky-theme-color-viz-sequence-8: var(--sky-color-viz-sequence-8);
+  --sky-theme-color-viz-sequence-9: var(--sky-color-viz-sequence-9);
+}
+.sky-theme-modern.sky-theme-brand-base {
+  --sky-theme-border-container-base: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base);
+  --sky-theme-border-danger: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger);
+  --sky-theme-border-divider-base: var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider);
+  --sky-theme-border-divider-soft: var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row);
+  --sky-theme-border-info: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info);
+  --sky-theme-border-success: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success);
+  --sky-theme-border-warning: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning);
+  --sky-theme-border-radius-m: var(--sky-border-radius-m);
+  --sky-theme-border-radius-pill: var(--sky-border-radius-pill);
+  --sky-theme-border-radius-round: var(--sky-border-radius-round);
+  --sky-theme-border-radius-s: var(--sky-border-radius-s);
+  --sky-theme-border-radius-xs: var(--sky-border-radius-xs);
+  --sky-theme-border-style-accent: var(--sky-border-style-accent);
+  --sky-theme-border-style-divider: var(--sky-border-style-divider);
+  --sky-theme-border-style-separator-row: var(--sky-border-style-separator-row);
+  --sky-theme-border-width-accent: var(--sky-border-width-accent);
+  --sky-theme-border-width-container-base: var(--sky-border-width-container-base);
+  --sky-theme-border-width-divider: var(--sky-border-width-divider);
+  --sky-theme-border-width-emphasized: var(--sky-border-width-emphasized);
+  --sky-theme-border-width-separator-row: var(--sky-border-width-separator-row);
+}
+.sky-theme-default {
+  --sky-theme-space-conditional-input: 27px;
+  --sky-theme-space-inline-l: 15px;
+  --sky-theme-space-inline-m: 12px;
+  --sky-theme-space-inline-s: 10px;
+  --sky-theme-space-inline-xl: 20px;
+  --sky-theme-space-inline-xs: 5px;
+  --sky-theme-space-inline-xxl: 40px;
+  --sky-theme-space-inset-balanced-l: 18px;
+  --sky-theme-space-inset-balanced-m: 15px;
+  --sky-theme-space-inset-balanced-s: 10px;
+  --sky-theme-space-inset-balanced-xl: 20px;
+  --sky-theme-space-inset-balanced-xs: 5px;
+  --sky-theme-space-stacked-l: 10px;
+  --sky-theme-space-stacked-m: 9px;
+  --sky-theme-space-stacked-s: 8px;
+  --sky-theme-space-stacked-xl: 20px;
+  --sky-theme-space-stacked-xs: 5px;
+  --sky-theme-space-stacked-xxl: 40px;
+}
+.sky-theme-default {
+  --sky-theme-font-family-body-deemphasized-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-deemphasized-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-emphasized-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-emphasized-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-l: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-display-1: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
+  --sky-theme-font-family-display-2: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
+  --sky-theme-font-family-display-3: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
+  --sky-theme-font-family-display-4: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-heading-1: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
+  --sky-theme-font-family-heading-2: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
+  --sky-theme-font-family-heading-3: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-heading-4: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-heading-5: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-hint-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-hint-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-primary: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-letter_spacing-hint-s: inherit;
+  --sky-theme-font-line_height-body-deemphasized-m: inherit;
+  --sky-theme-font-line_height-body-deemphasized-s: inherit;
+  --sky-theme-font-line_height-body-emphasized-m: inherit;
+  --sky-theme-font-line_height-body-emphasized-s: inherit;
+  --sky-theme-font-line_height-body-l: inherit;
+  --sky-theme-font-line_height-body-m: inherit;
+  --sky-theme-font-line_height-body-s: inherit;
+  --sky-theme-font-line_height-display-1: inherit;
+  --sky-theme-font-line_height-display-2: inherit;
+  --sky-theme-font-line_height-display-3: inherit;
+  --sky-theme-font-line_height-display-4: inherit;
+  --sky-theme-font-line_height-heading-1: inherit;
+  --sky-theme-font-line_height-heading-2: inherit;
+  --sky-theme-font-line_height-heading-3: inherit;
+  --sky-theme-font-line_height-heading-4: inherit;
+  --sky-theme-font-line_height-heading-5: inherit;
+  --sky-theme-font-line_height-hint-m: inherit;
+  --sky-theme-font-line_height-hint-s: inherit;
+  --sky-theme-font-line_height-paragraph-m: normal;
+  --sky-theme-font-size-body-deemphasized-m: 15px;
+  --sky-theme-font-size-body-deemphasized-s: 13px;
+  --sky-theme-font-size-body-emphasized-m: 15px;
+  --sky-theme-font-size-body-emphasized-s: 13px;
+  --sky-theme-font-size-body-l: 16px;
+  --sky-theme-font-size-body-m: 15px;
+  --sky-theme-font-size-body-s: 13px;
+  --sky-theme-font-size-display-1: 34px;
+  --sky-theme-font-size-display-2: 26px;
+  --sky-theme-font-size-display-3: 22px;
+  --sky-theme-font-size-display-4: 16px;
+  --sky-theme-font-size-heading-1: 34px;
+  --sky-theme-font-size-heading-2: 26px;
+  --sky-theme-font-size-heading-3: 19px;
+  --sky-theme-font-size-heading-4: 16px;
+  --sky-theme-font-size-heading-5: 15px;
+  --sky-theme-font-size-hint-m: 15px;
+  --sky-theme-font-size-hint-s: 13px;
+  --sky-theme-font-style-em-style: italic;
+  --sky-theme-font-style-em-weight: 400;
+  --sky-theme-font-style-hint-m-style: italic;
+  --sky-theme-font-style-hint-m-weight: 400;
+  --sky-theme-font-style-hint-s-style: italic;
+  --sky-theme-font-style-hint-s-weight: 400;
+  --sky-theme-font-style-strong: 700;
+  --sky-theme-font-weight-body-deemphasized-m: 400;
+  --sky-theme-font-weight-body-deemphasized-s: 400;
+  --sky-theme-font-weight-body-emphasized-m: 600;
+  --sky-theme-font-weight-body-emphasized-s: 600;
+  --sky-theme-font-weight-body-l: 400;
+  --sky-theme-font-weight-body-m: 400;
+  --sky-theme-font-weight-body-s: 400;
+  --sky-theme-font-weight-display-1: 300;
+  --sky-theme-font-weight-display-2: 300;
+  --sky-theme-font-weight-display-3: 600;
+  --sky-theme-font-weight-display-4: 600;
+  --sky-theme-font-weight-heading-1: 300;
+  --sky-theme-font-weight-heading-2: 300;
+  --sky-theme-font-weight-heading-3: 300;
+  --sky-theme-font-weight-heading-4: 600;
+  --sky-theme-font-weight-heading-5: 400;
+}
+.sky-theme-default {
+  --sky-theme-elevation-overflow: 0 0 5px #0000004d;
+  --sky-theme-elevation-overlay-100: 0 0 5px #0000004d;
+  --sky-theme-elevation-overlay-200: none;
+  --sky-theme-elevation-overlay-300: none;
+  --sky-theme-elevation-raised-100: none;
+}
+.sky-theme-default {
+  --sky-theme-color-background-container-backdrop: #eeeeef;
+  --sky-theme-color-background-container-base: #ffffff;
+  --sky-theme-color-background-container-danger: #f7a08f;
+  --sky-theme-color-background-container-dimmed: #eeeeef;
+  --sky-theme-color-background-container-info: #81d4f7;
+  --sky-theme-color-background-container-success: #b7da9b;
+  --sky-theme-color-background-container-warning: #ffd597;
+  --sky-theme-color-background-disabled: #cdcfd2;
+  --sky-theme-color-background-icon_matte-action-soft: #c1e8fb;
+  --sky-theme-color-background-icon_matte-danger: #f7a08f;
+  --sky-theme-color-background-icon_matte-info: #81d4f7;
+  --sky-theme-color-background-icon_matte-success: #b7da9b;
+  --sky-theme-color-background-icon_matte-warning: #ffd597;
+  --sky-theme-color-background-page: #ffffff;
+  --sky-theme-color-border-container-base: #cdcfd2;
+  --sky-theme-color-border-danger: #ef4044;
+  --sky-theme-color-border-disabled: #cdcfd2;
+  --sky-theme-color-border-divider: #cdcfd2;
+  --sky-theme-color-border-info: #00b4f1;
+  --sky-theme-color-border-separator-row: #cdcfd2;
+  --sky-theme-color-border-success: #72bf44;
+  --sky-theme-color-border-warning: #fbb034;
+  --sky-theme-color-classify-1-heavy: #046e6b;
+  --sky-theme-color-classify-1-soft: #abe9e7;
+  --sky-theme-color-classify-2-heavy: #8d4ec2;
+  --sky-theme-color-classify-2-soft: #e9d3fb;
+  --sky-theme-color-classify-3-heavy: #007894;
+  --sky-theme-color-classify-3-soft: #a8efff;
+  --sky-theme-color-classify-4-heavy: #a74500;
+  --sky-theme-color-classify-4-soft: #fcd7bd;
+  --sky-theme-color-classify-5-heavy: #a542a0;
+  --sky-theme-color-classify-5-soft: #fcd9fa;
+  --sky-theme-color-classify-6-heavy: #077e43;
+  --sky-theme-color-classify-6-soft: #a8f1cd;
+  --sky-theme-color-classify-7-heavy: #ae2e31;
+  --sky-theme-color-classify-7-soft: #f5cccd;
+  --sky-theme-color-icon-action: #0974a1;
+  --sky-theme-color-icon-danger: #ef4044;
+  --sky-theme-color-icon-deemphasized: #686c73;
+  --sky-theme-color-icon-default: #212327;
+  --sky-theme-color-icon-info: #00b4f1;
+  --sky-theme-color-icon-inverse: #ffffff;
+  --sky-theme-color-icon-success: #72bf44;
+  --sky-theme-color-text-action: #0974a1;
+  --sky-theme-color-text-action_contrast: #0974a1;
+  --sky-theme-color-text-deemphasized: #686c73;
+  --sky-theme-color-text-default: #212327;
+  --sky-theme-color-text-heading: #212327;
+  --sky-theme-color-text-inverse: #ffffff;
+  --sky-theme-color-viz-axis: #85888d;
+  --sky-theme-color-viz-category-1: #06a39e;
+  --sky-theme-color-viz-category-2: #6d3c96;
+  --sky-theme-color-viz-category-3: #5589dd;
+  --sky-theme-color-viz-category-4: #004252;
+  --sky-theme-color-viz-category-5: #ce5600;
+  --sky-theme-color-viz-category-6: #822325;
+  --sky-theme-color-viz-category-7: #c650c1;
+  --sky-theme-color-viz-category-8: #077e43;
+  --sky-theme-color-viz-diverge-neg-1: #fae7e8;
+  --sky-theme-color-viz-diverge-neg-10: #4a1415;
+  --sky-theme-color-viz-diverge-neg-2: #f5cccd;
+  --sky-theme-color-viz-diverge-neg-3: #f1b4b5;
+  --sky-theme-color-viz-diverge-neg-4: #ea9596;
+  --sky-theme-color-viz-diverge-neg-5: #e36d6f;
+  --sky-theme-color-viz-diverge-neg-6: #d93a3d;
+  --sky-theme-color-viz-diverge-neg-7: #ae2e31;
+  --sky-theme-color-viz-diverge-neg-8: #822325;
+  --sky-theme-color-viz-diverge-neg-9: #641b1c;
+  --sky-theme-color-viz-diverge-pos-1: #eef3fc;
+  --sky-theme-color-viz-diverge-pos-10: #0d2040;
+  --sky-theme-color-viz-diverge-pos-2: #d5e1f7;
+  --sky-theme-color-viz-diverge-pos-3: #aac4ee;
+  --sky-theme-color-viz-diverge-pos-4: #80a6e6;
+  --sky-theme-color-viz-diverge-pos-5: #5589dd;
+  --sky-theme-color-viz-diverge-pos-6: #2b6bd5;
+  --sky-theme-color-viz-diverge-pos-7: #2256aa;
+  --sky-theme-color-viz-diverge-pos-8: #1a4080;
+  --sky-theme-color-viz-diverge-pos-9: #112b55;
+  --sky-theme-color-viz-gridline: #d5d6d8;
+  --sky-theme-color-viz-marker: #1e2229;
+  --sky-theme-color-viz-sequence-1: #dcf6f5;
+  --sky-theme-color-viz-sequence-10: #022a28;
+  --sky-theme-color-viz-sequence-2: #abe9e7;
+  --sky-theme-color-viz-sequence-3: #60d5d2;
+  --sky-theme-color-viz-sequence-4: #07beb8;
+  --sky-theme-color-viz-sequence-5: #06a39e;
+  --sky-theme-color-viz-sequence-6: #058984;
+  --sky-theme-color-viz-sequence-7: #046e6b;
+  --sky-theme-color-viz-sequence-8: #035755;
+  --sky-theme-color-viz-sequence-9: #02413f;
+}
+.sky-theme-default {
+  --sky-theme-border-container-base: 1px solid #cdcfd2;
+  --sky-theme-border-danger: 1px solid #ef4044;
+  --sky-theme-border-divider-base: 1px solid #cdcfd2;
+  --sky-theme-border-divider-soft: 1px solid #cdcfd2;
+  --sky-theme-border-info: 1px solid #00b4f1;
+  --sky-theme-border-radius-m: 4px;
+  --sky-theme-border-radius-pill: 1000px;
+  --sky-theme-border-radius-round: 50%;
+  --sky-theme-border-radius-s: 4px;
+  --sky-theme-border-radius-xs: 4px;
+  --sky-theme-border-style-accent: solid;
+  --sky-theme-border-style-divider: solid;
+  --sky-theme-border-style-separator-row: solid;
+  --sky-theme-border-success: 1px solid #72bf44;
+  --sky-theme-border-warning: 1px solid #fbb034;
+  --sky-theme-border-width-accent: 4px;
+  --sky-theme-border-width-container-base: 1px;
+  --sky-theme-border-width-divider: 1px;
+  --sky-theme-border-width-emphasized: 2px;
+  --sky-theme-border-width-separator-row: 1px;
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-xs {
+  margin-top: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-s {
+  margin-top: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-m {
+  margin-top: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-l {
+  margin-top: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-xl {
+  margin-top: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-top-xxl {
+  margin-top: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-bottom-xs {
+  margin-bottom: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-bottom-s {
+  margin-bottom: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-bottom-m {
+  margin-bottom: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-bottom-l {
+  margin-bottom: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-bottom-xl {
+  margin-bottom: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-bottom-xxl {
+  margin-bottom: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-right-xs {
+  margin-right: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-right-s {
+  margin-right: var(--sky-theme-space-inline-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-right-m {
+  margin-right: var(--sky-theme-space-inline-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-right-l {
+  margin-right: var(--sky-theme-space-inline-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-right-xl {
+  margin-right: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-right-xxl {
+  margin-right: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-left-xs {
+  margin-left: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-left-s {
+  margin-left: var(--sky-theme-space-inline-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-left-m {
+  margin-left: var(--sky-theme-space-inline-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-left-l {
+  margin-left: var(--sky-theme-space-inline-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-left-xl {
+  margin-left: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-margin-left-xxl {
+  margin-left: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-top-xs {
+  padding-top: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-top-s {
+  padding-top: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-top-m {
+  padding-top: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-top-l {
+  padding-top: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-top-xl {
+  padding-top: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-top-xxl {
+  padding-top: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-bottom-xs {
+  padding-bottom: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-bottom-s {
+  padding-bottom: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-bottom-m {
+  padding-bottom: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-bottom-l {
+  padding-bottom: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-bottom-xl {
+  padding-bottom: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-bottom-xxl {
+  padding-bottom: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-right-xs {
+  padding-right: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-right-s {
+  padding-right: var(--sky-theme-space-inline-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-right-m {
+  padding-right: var(--sky-theme-space-inline-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-right-l {
+  padding-right: var(--sky-theme-space-inline-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-right-xl {
+  padding-right: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-right-xxl {
+  padding-right: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-left-xs {
+  padding-left: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-left-s {
+  padding-left: var(--sky-theme-space-inline-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-left-m {
+  padding-left: var(--sky-theme-space-inline-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-left-l {
+  padding-left: var(--sky-theme-space-inline-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-left-xl {
+  padding-left: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-left-xxl {
+  padding-left: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-inset-balanced-xs {
+  padding: var(--sky-theme-space-inset-balanced-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-inset-balanced-s {
+  padding: var(--sky-theme-space-inset-balanced-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-inset-balanced-m {
+  padding: var(--sky-theme-space-inset-balanced-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-inset-balanced-l {
+  padding: var(--sky-theme-space-inset-balanced-l);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-inset-balanced-xl {
+  padding: var(--sky-theme-space-inset-balanced-xl);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-padding-conditional-input {
+  padding-left: var(--sky-theme-space-conditional-input);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-1 {
+  font: var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-2 {
+  font: var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-3 {
+  font: var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-4 {
+  font: var(--sky-theme-font-weight-heading-4) var(--sky-theme-font-size-heading-4)/var(--sky-theme-font-line_height-heading-4) var(--sky-theme-font-family-heading-4);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-5 {
+  font: var(--sky-theme-font-weight-heading-5) var(--sky-theme-font-size-heading-5)/var(--sky-theme-font-line_height-heading-5) var(--sky-theme-font-family-heading-5);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-m {
+  font: var(--sky-theme-font-weight-body-m) var(--sky-theme-font-size-body-m)/var(--sky-theme-font-line_height-body-m) var(--sky-theme-font-family-body-m);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-emphasized-m {
+  font: var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-deemphasized-m {
+  font: var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-s {
+  font: var(--sky-theme-font-weight-body-s) var(--sky-theme-font-size-body-s)/var(--sky-theme-font-line_height-body-s) var(--sky-theme-font-family-body-s);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-emphasized-s {
+  font: var(--sky-theme-font-weight-body-emphasized-s) var(--sky-theme-font-size-body-emphasized-s)/var(--sky-theme-font-line_height-body-emphasized-s) var(--sky-theme-font-family-body-emphasized-s);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-deemphasized-s {
+  font: var(--sky-theme-font-weight-body-deemphasized-s) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-l {
+  font: var(--sky-theme-font-weight-body-l) var(--sky-theme-font-size-body-l)/var(--sky-theme-font-line_height-body-l) var(--sky-theme-font-family-body-l);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-modern.sky-theme-brand-base p {
+  line-height: var(--sky-theme-font-line_height-paragraph-m);
+}
+.sky-theme-modern.sky-theme-brand-base strong {
+  font-weight: var(--sky-theme-font-style-strong);
+}
+.sky-theme-modern.sky-theme-brand-base em {
+  font-style: var(--sky-theme-font-style-em-style);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-list-unstyled li:not(:last-of-type) {
+  padding-bottom: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-1 {
+  font: var(--sky-theme-font-weight-display-1) var(--sky-theme-font-size-display-1)/var(--sky-theme-font-line_height-display-1) var(--sky-theme-font-family-display-1);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-2 {
+  font: var(--sky-theme-font-weight-display-2) var(--sky-theme-font-size-display-2)/var(--sky-theme-font-line_height-display-2) var(--sky-theme-font-family-display-2);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-3 {
+  font: var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-4 {
+  font: var(--sky-theme-font-weight-display-4) var(--sky-theme-font-size-display-4)/var(--sky-theme-font-line_height-display-4) var(--sky-theme-font-family-display-4);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-hint-m {
+  font: var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-font-hint-s {
+  font: var(--sky-theme-font-style-hint-s-style) var(--sky-theme-font-size-hint-s)/var(--sky-theme-font-line_height-hint-s) var(--sky-theme-font-family-hint-s);
+  letter-spacing: var(--sky-theme-font-letter_spacing-hint-s);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-elevation-raised-100 {
+  box-shadow: var(--sky-theme-elevation-raised-100);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-elevation-overflow {
+  box-shadow: var(--sky-theme-elevation-overflow);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-elevation-overlay-100 {
+  box-shadow: var(--sky-theme-elevation-overlay-100);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-elevation-overlay-200 {
+  box-shadow: var(--sky-theme-elevation-overlay-200);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-elevation-overlay-300 {
+  box-shadow: var(--sky-theme-elevation-overlay-200);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-page {
+  background-color: var(--sky-theme-color-background-page);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-base {
+  background-color: var(--sky-theme-color-background-container-base);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-dimmed {
+  background-color: var(--sky-theme-color-background-container-dimmed);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-backdrop {
+  background-color: var(--sky-theme-color-background-container-backdrop);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-disabled {
+  background-color: var(--sky-theme-color-background-disabled);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-border-disabled {
+  border-color: var(--sky-theme-color-border-disabled);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-text-inverse {
+  color: var(--sky-theme-color-text-inverse);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-default {
+  color: var(--sky-theme-color-icon-default);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-deemphasized {
+  color: var(--sky-theme-color-icon-deemphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-action {
+  color: var(--sky-theme-color-icon-action);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-inverse {
+  color: var(--sky-theme-color-icon-inverse);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-icon_matte-action-soft {
+  background-color: var(--sky-theme-color-background-icon_matte-action-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-danger {
+  background-color: var(--sky-theme-color-background-container-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-info {
+  background-color: var(--sky-theme-color-background-container-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-success {
+  background-color: var(--sky-theme-color-background-container-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-container-warning {
+  background-color: var(--sky-theme-color-background-container-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-border-danger {
+  border-color: var(--sky-theme-color-border-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-border-info {
+  border-color: var(--sky-theme-color-border-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-border-success {
+  border-color: var(--sky-theme-color-border-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-border-warning {
+  border-color: var(--sky-theme-color-border-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-danger {
+  color: var(--sky-theme-color-icon-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-info {
+  color: var(--sky-theme-color-icon-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-icon-success {
+  color: var(--sky-theme-color-icon-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-icon_matte-danger {
+  background-color: var(--sky-theme-color-background-icon_matte-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-icon_matte-info {
+  background-color: var(--sky-theme-color-background-icon_matte-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-icon_matte-success {
+  background-color: var(--sky-theme-color-background-icon_matte-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-icon_matte-warning {
+  background-color: var(--sky-theme-color-background-icon_matte-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-1-soft {
+  background-color: var(--sky-theme-color-classify-1-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-2-soft {
+  background-color: var(--sky-theme-color-classify-2-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-3-soft {
+  background-color: var(--sky-theme-color-classify-3-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-4-soft {
+  background-color: var(--sky-theme-color-classify-4-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-5-soft {
+  background-color: var(--sky-theme-color-classify-5-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-6-soft {
+  background-color: var(--sky-theme-color-classify-6-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-classify-7-soft {
+  background-color: var(--sky-theme-color-classify-7-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-viz-axis {
+  border-color: var(--sky-theme-color-viz-axis);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-viz-gridline {
+  border-color: var(--sky-theme-color-viz-gridline);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-color-viz-marker {
+  border-color: var(--sky-theme-color-viz-marker);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-container-base {
+  border: var(--sky-theme-border-container-base);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-top {
+  border-top: var(--sky-theme-border-divider-base);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-right {
+  border-right: var(--sky-theme-border-divider-base);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-bottom {
+  border-bottom: var(--sky-theme-border-divider-base);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-left {
+  border-left: var(--sky-theme-border-divider-base);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-soft-top {
+  border-top: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-soft-right {
+  border-right: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-soft-bottom {
+  border-bottom: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-divider-soft-left {
+  border-left: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-danger-top {
+  border-top: var(--sky-theme-border-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-danger-right {
+  border-right: var(--sky-theme-border-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-danger-bottom {
+  border-bottom: var(--sky-theme-border-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-danger-left {
+  border-left: var(--sky-theme-border-danger);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-info-top {
+  border-top: var(--sky-theme-border-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-info-right {
+  border-right: var(--sky-theme-border-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-info-bottom {
+  border-bottom: var(--sky-theme-border-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-info-left {
+  border-left: var(--sky-theme-border-info);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-success-top {
+  border-top: var(--sky-theme-border-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-success-right {
+  border-right: var(--sky-theme-border-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-success-bottom {
+  border-bottom: var(--sky-theme-border-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-success-left {
+  border-left: var(--sky-theme-border-success);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-warning-top {
+  border-top: var(--sky-theme-border-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-warning-right {
+  border-right: var(--sky-theme-border-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-warning-bottom {
+  border-bottom: var(--sky-theme-border-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-warning-left {
+  border-left: var(--sky-theme-border-warning);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-width-emphasized {
+  border-width: var(--sky-theme-border-width-emphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-width-accent {
+  border-width: var(--sky-theme-border-width-emphasized);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-radius-xs {
+  border-radius: var(--sky-theme-border-radius-xs);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-radius-s {
+  border-radius: var(--sky-theme-border-radius-s);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-radius-m {
+  border-radius: var(--sky-theme-border-radius-m);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-radius-pill {
+  border-radius: var(--sky-theme-border-radius-pill);
+}
+.sky-theme-modern.sky-theme-brand-base .sky-theme-border-radius-round {
+  border-radius: var(--sky-theme-border-radius-round);
+}
+.sky-theme-default .sky-theme-margin-top-xs {
+  margin-top: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-default .sky-theme-margin-top-s {
+  margin-top: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-default .sky-theme-margin-top-m {
+  margin-top: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-default .sky-theme-margin-top-l {
+  margin-top: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-default .sky-theme-margin-top-xl {
+  margin-top: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-default .sky-theme-margin-top-xxl {
+  margin-top: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-default .sky-theme-margin-bottom-xs {
+  margin-bottom: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-default .sky-theme-margin-bottom-s {
+  margin-bottom: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-default .sky-theme-margin-bottom-m {
+  margin-bottom: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-default .sky-theme-margin-bottom-l {
+  margin-bottom: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-default .sky-theme-margin-bottom-xl {
+  margin-bottom: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-default .sky-theme-margin-bottom-xxl {
+  margin-bottom: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-default .sky-theme-margin-right-xs {
+  margin-right: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-default .sky-theme-margin-right-s {
+  margin-right: var(--sky-theme-space-inline-s);
+}
+.sky-theme-default .sky-theme-margin-right-m {
+  margin-right: var(--sky-theme-space-inline-m);
+}
+.sky-theme-default .sky-theme-margin-right-l {
+  margin-right: var(--sky-theme-space-inline-l);
+}
+.sky-theme-default .sky-theme-margin-right-xl {
+  margin-right: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-default .sky-theme-margin-right-xxl {
+  margin-right: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-default .sky-theme-margin-left-xs {
+  margin-left: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-default .sky-theme-margin-left-s {
+  margin-left: var(--sky-theme-space-inline-s);
+}
+.sky-theme-default .sky-theme-margin-left-m {
+  margin-left: var(--sky-theme-space-inline-m);
+}
+.sky-theme-default .sky-theme-margin-left-l {
+  margin-left: var(--sky-theme-space-inline-l);
+}
+.sky-theme-default .sky-theme-margin-left-xl {
+  margin-left: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-default .sky-theme-margin-left-xxl {
+  margin-left: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-default .sky-theme-padding-top-xs {
+  padding-top: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-default .sky-theme-padding-top-s {
+  padding-top: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-default .sky-theme-padding-top-m {
+  padding-top: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-default .sky-theme-padding-top-l {
+  padding-top: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-default .sky-theme-padding-top-xl {
+  padding-top: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-default .sky-theme-padding-top-xxl {
+  padding-top: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-default .sky-theme-padding-bottom-xs {
+  padding-bottom: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-default .sky-theme-padding-bottom-s {
+  padding-bottom: var(--sky-theme-space-stacked-s);
+}
+.sky-theme-default .sky-theme-padding-bottom-m {
+  padding-bottom: var(--sky-theme-space-stacked-m);
+}
+.sky-theme-default .sky-theme-padding-bottom-l {
+  padding-bottom: var(--sky-theme-space-stacked-l);
+}
+.sky-theme-default .sky-theme-padding-bottom-xl {
+  padding-bottom: var(--sky-theme-space-stacked-xl);
+}
+.sky-theme-default .sky-theme-padding-bottom-xxl {
+  padding-bottom: var(--sky-theme-space-stacked-xxl);
+}
+.sky-theme-default .sky-theme-padding-right-xs {
+  padding-right: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-default .sky-theme-padding-right-s {
+  padding-right: var(--sky-theme-space-inline-s);
+}
+.sky-theme-default .sky-theme-padding-right-m {
+  padding-right: var(--sky-theme-space-inline-m);
+}
+.sky-theme-default .sky-theme-padding-right-l {
+  padding-right: var(--sky-theme-space-inline-l);
+}
+.sky-theme-default .sky-theme-padding-right-xl {
+  padding-right: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-default .sky-theme-padding-right-xxl {
+  padding-right: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-default .sky-theme-padding-left-xs {
+  padding-left: var(--sky-theme-space-inline-xs);
+}
+.sky-theme-default .sky-theme-padding-left-s {
+  padding-left: var(--sky-theme-space-inline-s);
+}
+.sky-theme-default .sky-theme-padding-left-m {
+  padding-left: var(--sky-theme-space-inline-m);
+}
+.sky-theme-default .sky-theme-padding-left-l {
+  padding-left: var(--sky-theme-space-inline-l);
+}
+.sky-theme-default .sky-theme-padding-left-xl {
+  padding-left: var(--sky-theme-space-inline-xl);
+}
+.sky-theme-default .sky-theme-padding-left-xxl {
+  padding-left: var(--sky-theme-space-inline-xxl);
+}
+.sky-theme-default .sky-theme-padding-inset-balanced-xs {
+  padding: var(--sky-theme-space-inset-balanced-xs);
+}
+.sky-theme-default .sky-theme-padding-inset-balanced-s {
+  padding: var(--sky-theme-space-inset-balanced-s);
+}
+.sky-theme-default .sky-theme-padding-inset-balanced-m {
+  padding: var(--sky-theme-space-inset-balanced-m);
+}
+.sky-theme-default .sky-theme-padding-inset-balanced-l {
+  padding: var(--sky-theme-space-inset-balanced-l);
+}
+.sky-theme-default .sky-theme-padding-inset-balanced-xl {
+  padding: var(--sky-theme-space-inset-balanced-xl);
+}
+.sky-theme-default .sky-theme-padding-conditional-input {
+  padding-left: var(--sky-theme-space-conditional-input);
+}
+.sky-theme-default .sky-theme-font-heading-1 {
+  font: var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-default .sky-theme-font-heading-2 {
+  font: var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-default .sky-theme-font-heading-3 {
+  font: var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-default .sky-theme-font-heading-4 {
+  font: var(--sky-theme-font-weight-heading-4) var(--sky-theme-font-size-heading-4)/var(--sky-theme-font-line_height-heading-4) var(--sky-theme-font-family-heading-4);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-default .sky-theme-font-heading-5 {
+  font: var(--sky-theme-font-weight-heading-5) var(--sky-theme-font-size-heading-5)/var(--sky-theme-font-line_height-heading-5) var(--sky-theme-font-family-heading-5);
+  color: var(--sky-theme-color-text-heading);
+}
+.sky-theme-default .sky-theme-font-body-m {
+  font: var(--sky-theme-font-weight-body-m) var(--sky-theme-font-size-body-m)/var(--sky-theme-font-line_height-body-m) var(--sky-theme-font-family-body-m);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-default .sky-theme-font-body-emphasized-m {
+  font: var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-default .sky-theme-font-body-deemphasized-m {
+  font: var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-default .sky-theme-font-body-s {
+  font: var(--sky-theme-font-weight-body-s) var(--sky-theme-font-size-body-s)/var(--sky-theme-font-line_height-body-s) var(--sky-theme-font-family-body-s);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-default .sky-theme-font-body-emphasized-s {
+  font: var(--sky-theme-font-weight-body-emphasized-s) var(--sky-theme-font-size-body-emphasized-s)/var(--sky-theme-font-line_height-body-emphasized-s) var(--sky-theme-font-family-body-emphasized-s);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-default .sky-theme-font-body-deemphasized-s {
+  font: var(--sky-theme-font-weight-body-deemphasized-s) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-default .sky-theme-font-body-l {
+  font: var(--sky-theme-font-weight-body-l) var(--sky-theme-font-size-body-l)/var(--sky-theme-font-line_height-body-l) var(--sky-theme-font-family-body-l);
+  color: var(--sky-theme-color-text-default);
+}
+.sky-theme-default p {
+  line-height: var(--sky-theme-font-line_height-paragraph-m);
+}
+.sky-theme-default strong {
+  font-weight: var(--sky-theme-font-style-strong);
+}
+.sky-theme-default em {
+  font-style: var(--sky-theme-font-style-em-style);
+}
+.sky-theme-default .sky-theme-list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sky-theme-default .sky-theme-list-unstyled li:not(:last-of-type) {
+  padding-bottom: var(--sky-theme-space-stacked-xs);
+}
+.sky-theme-default .sky-theme-font-display-1 {
+  font: var(--sky-theme-font-weight-display-1) var(--sky-theme-font-size-display-1)/var(--sky-theme-font-line_height-display-1) var(--sky-theme-font-family-display-1);
+}
+.sky-theme-default .sky-theme-font-display-2 {
+  font: var(--sky-theme-font-weight-display-2) var(--sky-theme-font-size-display-2)/var(--sky-theme-font-line_height-display-2) var(--sky-theme-font-family-display-2);
+}
+.sky-theme-default .sky-theme-font-display-3 {
+  font: var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3);
+}
+.sky-theme-default .sky-theme-font-display-4 {
+  font: var(--sky-theme-font-weight-display-4) var(--sky-theme-font-size-display-4)/var(--sky-theme-font-line_height-display-4) var(--sky-theme-font-family-display-4);
+}
+.sky-theme-default .sky-theme-font-hint-m {
+  font: var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-default .sky-theme-font-hint-s {
+  font: var(--sky-theme-font-style-hint-s-style) var(--sky-theme-font-size-hint-s)/var(--sky-theme-font-line_height-hint-s) var(--sky-theme-font-family-hint-s);
+  letter-spacing: var(--sky-theme-font-letter_spacing-hint-s);
+  color: var(--sky-theme-color-text-deemphasized);
+}
+.sky-theme-default .sky-theme-elevation-raised-100 {
+  box-shadow: var(--sky-theme-elevation-raised-100);
+}
+.sky-theme-default .sky-theme-elevation-overflow {
+  box-shadow: var(--sky-theme-elevation-overflow);
+}
+.sky-theme-default .sky-theme-elevation-overlay-100 {
+  box-shadow: var(--sky-theme-elevation-overlay-100);
+}
+.sky-theme-default .sky-theme-elevation-overlay-200 {
+  box-shadow: var(--sky-theme-elevation-overlay-200);
+}
+.sky-theme-default .sky-theme-elevation-overlay-300 {
+  box-shadow: var(--sky-theme-elevation-overlay-200);
+}
+.sky-theme-default .sky-theme-color-background-page {
+  background-color: var(--sky-theme-color-background-page);
+}
+.sky-theme-default .sky-theme-color-background-container-base {
+  background-color: var(--sky-theme-color-background-container-base);
+}
+.sky-theme-default .sky-theme-color-background-container-dimmed {
+  background-color: var(--sky-theme-color-background-container-dimmed);
+}
+.sky-theme-default .sky-theme-color-background-container-backdrop {
+  background-color: var(--sky-theme-color-background-container-backdrop);
+}
+.sky-theme-default .sky-theme-color-background-disabled {
+  background-color: var(--sky-theme-color-background-disabled);
+}
+.sky-theme-default .sky-theme-color-border-disabled {
+  border-color: var(--sky-theme-color-border-disabled);
+}
+.sky-theme-default .sky-theme-color-text-inverse {
+  color: var(--sky-theme-color-text-inverse);
+}
+.sky-theme-default .sky-theme-color-icon-default {
+  color: var(--sky-theme-color-icon-default);
+}
+.sky-theme-default .sky-theme-color-icon-deemphasized {
+  color: var(--sky-theme-color-icon-deemphasized);
+}
+.sky-theme-default .sky-theme-color-icon-action {
+  color: var(--sky-theme-color-icon-action);
+}
+.sky-theme-default .sky-theme-color-icon-inverse {
+  color: var(--sky-theme-color-icon-inverse);
+}
+.sky-theme-default .sky-theme-color-background-icon_matte-action-soft {
+  background-color: var(--sky-theme-color-background-icon_matte-action-soft);
+}
+.sky-theme-default .sky-theme-color-background-container-danger {
+  background-color: var(--sky-theme-color-background-container-danger);
+}
+.sky-theme-default .sky-theme-color-background-container-info {
+  background-color: var(--sky-theme-color-background-container-info);
+}
+.sky-theme-default .sky-theme-color-background-container-success {
+  background-color: var(--sky-theme-color-background-container-success);
+}
+.sky-theme-default .sky-theme-color-background-container-warning {
+  background-color: var(--sky-theme-color-background-container-warning);
+}
+.sky-theme-default .sky-theme-color-border-danger {
+  border-color: var(--sky-theme-color-border-danger);
+}
+.sky-theme-default .sky-theme-color-border-info {
+  border-color: var(--sky-theme-color-border-info);
+}
+.sky-theme-default .sky-theme-color-border-success {
+  border-color: var(--sky-theme-color-border-success);
+}
+.sky-theme-default .sky-theme-color-border-warning {
+  border-color: var(--sky-theme-color-border-warning);
+}
+.sky-theme-default .sky-theme-color-icon-danger {
+  color: var(--sky-theme-color-icon-danger);
+}
+.sky-theme-default .sky-theme-color-icon-info {
+  color: var(--sky-theme-color-icon-info);
+}
+.sky-theme-default .sky-theme-color-icon-success {
+  color: var(--sky-theme-color-icon-success);
+}
+.sky-theme-default .sky-theme-color-background-icon_matte-danger {
+  background-color: var(--sky-theme-color-background-icon_matte-danger);
+}
+.sky-theme-default .sky-theme-color-background-icon_matte-info {
+  background-color: var(--sky-theme-color-background-icon_matte-info);
+}
+.sky-theme-default .sky-theme-color-background-icon_matte-success {
+  background-color: var(--sky-theme-color-background-icon_matte-success);
+}
+.sky-theme-default .sky-theme-color-background-icon_matte-warning {
+  background-color: var(--sky-theme-color-background-icon_matte-warning);
+}
+.sky-theme-default .sky-theme-color-classify-1-soft {
+  background-color: var(--sky-theme-color-classify-1-soft);
+}
+.sky-theme-default .sky-theme-color-classify-2-soft {
+  background-color: var(--sky-theme-color-classify-2-soft);
+}
+.sky-theme-default .sky-theme-color-classify-3-soft {
+  background-color: var(--sky-theme-color-classify-3-soft);
+}
+.sky-theme-default .sky-theme-color-classify-4-soft {
+  background-color: var(--sky-theme-color-classify-4-soft);
+}
+.sky-theme-default .sky-theme-color-classify-5-soft {
+  background-color: var(--sky-theme-color-classify-5-soft);
+}
+.sky-theme-default .sky-theme-color-classify-6-soft {
+  background-color: var(--sky-theme-color-classify-6-soft);
+}
+.sky-theme-default .sky-theme-color-classify-7-soft {
+  background-color: var(--sky-theme-color-classify-7-soft);
+}
+.sky-theme-default .sky-theme-color-viz-axis {
+  border-color: var(--sky-theme-color-viz-axis);
+}
+.sky-theme-default .sky-theme-color-viz-gridline {
+  border-color: var(--sky-theme-color-viz-gridline);
+}
+.sky-theme-default .sky-theme-color-viz-marker {
+  border-color: var(--sky-theme-color-viz-marker);
+}
+.sky-theme-default .sky-theme-border-container-base {
+  border: var(--sky-theme-border-container-base);
+}
+.sky-theme-default .sky-theme-border-divider-top {
+  border-top: var(--sky-theme-border-divider-base);
+}
+.sky-theme-default .sky-theme-border-divider-right {
+  border-right: var(--sky-theme-border-divider-base);
+}
+.sky-theme-default .sky-theme-border-divider-bottom {
+  border-bottom: var(--sky-theme-border-divider-base);
+}
+.sky-theme-default .sky-theme-border-divider-left {
+  border-left: var(--sky-theme-border-divider-base);
+}
+.sky-theme-default .sky-theme-border-divider-soft-top {
+  border-top: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-default .sky-theme-border-divider-soft-right {
+  border-right: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-default .sky-theme-border-divider-soft-bottom {
+  border-bottom: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-default .sky-theme-border-divider-soft-left {
+  border-left: var(--sky-theme-border-divider-soft);
+}
+.sky-theme-default .sky-theme-border-danger-top {
+  border-top: var(--sky-theme-border-danger);
+}
+.sky-theme-default .sky-theme-border-danger-right {
+  border-right: var(--sky-theme-border-danger);
+}
+.sky-theme-default .sky-theme-border-danger-bottom {
+  border-bottom: var(--sky-theme-border-danger);
+}
+.sky-theme-default .sky-theme-border-danger-left {
+  border-left: var(--sky-theme-border-danger);
+}
+.sky-theme-default .sky-theme-border-info-top {
+  border-top: var(--sky-theme-border-info);
+}
+.sky-theme-default .sky-theme-border-info-right {
+  border-right: var(--sky-theme-border-info);
+}
+.sky-theme-default .sky-theme-border-info-bottom {
+  border-bottom: var(--sky-theme-border-info);
+}
+.sky-theme-default .sky-theme-border-info-left {
+  border-left: var(--sky-theme-border-info);
+}
+.sky-theme-default .sky-theme-border-success-top {
+  border-top: var(--sky-theme-border-success);
+}
+.sky-theme-default .sky-theme-border-success-right {
+  border-right: var(--sky-theme-border-success);
+}
+.sky-theme-default .sky-theme-border-success-bottom {
+  border-bottom: var(--sky-theme-border-success);
+}
+.sky-theme-default .sky-theme-border-success-left {
+  border-left: var(--sky-theme-border-success);
+}
+.sky-theme-default .sky-theme-border-warning-top {
+  border-top: var(--sky-theme-border-warning);
+}
+.sky-theme-default .sky-theme-border-warning-right {
+  border-right: var(--sky-theme-border-warning);
+}
+.sky-theme-default .sky-theme-border-warning-bottom {
+  border-bottom: var(--sky-theme-border-warning);
+}
+.sky-theme-default .sky-theme-border-warning-left {
+  border-left: var(--sky-theme-border-warning);
+}
+.sky-theme-default .sky-theme-border-width-emphasized {
+  border-width: var(--sky-theme-border-width-emphasized);
+}
+.sky-theme-default .sky-theme-border-width-accent {
+  border-width: var(--sky-theme-border-width-emphasized);
+}
+.sky-theme-default .sky-theme-border-radius-xs {
+  border-radius: var(--sky-theme-border-radius-xs);
+}
+.sky-theme-default .sky-theme-border-radius-s {
+  border-radius: var(--sky-theme-border-radius-s);
+}
+.sky-theme-default .sky-theme-border-radius-m {
+  border-radius: var(--sky-theme-border-radius-m);
+}
+.sky-theme-default .sky-theme-border-radius-pill {
+  border-radius: var(--sky-theme-border-radius-pill);
+}
+.sky-theme-default .sky-theme-border-radius-round {
+  border-radius: var(--sky-theme-border-radius-round);
+}
+"
+`;
