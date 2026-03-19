@@ -3980,7 +3980,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   box-shadow: var(--sky-theme-elevation-overlay-200);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-elevation-overlay-300 {
-  box-shadow: var(--sky-theme-elevation-overlay-200);
+  box-shadow: var(--sky-theme-elevation-overlay-300);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-color-background-page {
   background-color: var(--sky-theme-color-background-page);
@@ -4172,7 +4172,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   border-width: var(--sky-theme-border-width-emphasized);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-border-width-accent {
-  border-width: var(--sky-theme-border-width-emphasized);
+  border-width: var(--sky-theme-border-width-accent);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-border-radius-xs {
   border-radius: var(--sky-theme-border-radius-xs);
@@ -4451,7 +4451,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   box-shadow: var(--sky-theme-elevation-overlay-200);
 }
 .sky-theme-default .sky-theme-elevation-overlay-300 {
-  box-shadow: var(--sky-theme-elevation-overlay-200);
+  box-shadow: var(--sky-theme-elevation-overlay-300);
 }
 .sky-theme-default .sky-theme-color-background-page {
   background-color: var(--sky-theme-color-background-page);
@@ -4643,7 +4643,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   border-width: var(--sky-theme-border-width-emphasized);
 }
 .sky-theme-default .sky-theme-border-width-accent {
-  border-width: var(--sky-theme-border-width-emphasized);
+  border-width: var(--sky-theme-border-width-accent);
 }
 .sky-theme-default .sky-theme-border-radius-xs {
   border-radius: var(--sky-theme-border-radius-xs);
