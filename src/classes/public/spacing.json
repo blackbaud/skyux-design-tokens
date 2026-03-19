@@ -64,7 +64,8 @@
                   "properties": {
                     "margin-bottom": "var(--sky-theme-space-stacked-xs)"
                   },
-                  "deprecatedClassNames": ["sky-margin-stacked-xs"]
+                  "deprecatedClassNames": ["sky-margin-stacked-xs"],
+                  "obsoleteClassNames": ["sky-margin-stacked-compact"]
                 },
                 {
                   "name": "Margin-bottom S",
@@ -72,7 +73,7 @@
                   "properties": {
                     "margin-bottom": "var(--sky-theme-space-stacked-s)"
                   },
-                  "deprecatedClassNames": ["sky-margin-stacked-s"]
+                  "deprecatedClassNames": ["sky-margin-stacked-sm"]
                 },
                 {
                   "name": "Margin-bottom M",
@@ -87,7 +88,8 @@
                   "properties": {
                     "margin-bottom": "var(--sky-theme-space-stacked-l)"
                   },
-                  "deprecatedClassNames": ["sky-margin-stacked-lg"]
+                  "deprecatedClassNames": ["sky-margin-stacked-lg"],
+                  "obsoleteClassNames": ["sky-margin-stacked-default"]
                 },
                 {
                   "name": "Margin-bottom XL",
@@ -95,7 +97,8 @@
                   "properties": {
                     "margin-bottom": "var(--sky-theme-space-stacked-xl)"
                   },
-                  "deprecatedClassNames": ["sky-margin-stacked-xl"]
+                  "deprecatedClassNames": ["sky-margin-stacked-xl"],
+                  "obsoleteClassNames": ["sky-margin-stacked-separate"]
                 },
                 {
                   "name": "Margin-bottom XXL",
@@ -121,7 +124,8 @@
                   "properties": {
                     "margin-right": "var(--sky-theme-space-inline-xs)"
                   },
-                  "deprecatedClassNames": ["sky-margin-inline-xs"]
+                  "deprecatedClassNames": ["sky-margin-inline-xs"],
+                  "obsoleteClassNames": ["sky-margin-inline-compact"]
                 },
                 {
                   "name": "Margin-right S",
@@ -129,7 +133,8 @@
                   "properties": {
                     "margin-right": "var(--sky-theme-space-inline-s)"
                   },
-                  "deprecatedClassNames": ["sky-margin-inline-s"]
+                  "deprecatedClassNames": ["sky-margin-inline-sm"],
+                  "obsoleteClassNames": ["sky-margin-inline-default"]
                 },
                 {
                   "name": "Margin-right M",
@@ -438,7 +443,8 @@
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-m)"
                   },
-                  "deprecatedClassNames": ["sky-padding-even-md"]
+                  "deprecatedClassNames": ["sky-padding-even-md"],
+                  "obsoleteClassNames": ["sky-padding-even-default"]
                 },
                 {
                   "name": "Inset balanced padding L",
@@ -453,7 +459,8 @@
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-xl)"
                   },
-                  "deprecatedClassNames": ["sky-padding-even-xl"]
+                  "deprecatedClassNames": ["sky-padding-even-xl"],
+                  "obsoleteClassNames": ["sky-padding-even-large"]
                 }
               ]
             }
