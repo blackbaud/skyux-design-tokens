@@ -43,27 +43,27 @@ export const tokenConfig: TokenConfig = {
         {
           name: 'public-spacing',
           path: 'public/spacing.json',
-          docsPath: 'public/docs/spacing.json',
+          docsPath: '../docs/spacing.json',
         },
         {
           name: 'public-typography',
           path: 'public/typography.json',
-          docsPath: 'public/docs/typography.json',
+          docsPath: '../docs/typography.json',
         },
         {
           name: 'public-elevation',
           path: 'public/elevation.json',
-          docsPath: 'public/docs/elevation.json',
+          docsPath: '../docs/elevation.json',
         },
         {
           name: 'public-colors',
           path: 'public/colors.json',
-          docsPath: 'public/docs/colors.json',
+          docsPath: '../docs/colors.json',
         },
         {
           name: 'public-borders',
           path: 'public/borders.json',
-          docsPath: 'public/docs/borders.json',
+          docsPath: '../docs/borders.json',
         },
       ],
       publicStyles: [
@@ -102,27 +102,27 @@ export const tokenConfig: TokenConfig = {
         {
           name: 'public-spacing',
           path: 'public/default/spacing.json',
-          docsPath: 'public/docs/spacing.json',
+          docsPath: '../docs/spacing.json',
         },
         {
           name: 'public-typography',
           path: 'public/default/typography.json',
-          docsPath: 'public/docs/typography.json',
+          docsPath: '../docs/typography.json',
         },
         {
           name: 'public-elevation',
           path: 'public/default/elevation.json',
-          docsPath: 'public/docs/elevation.json',
+          docsPath: '../docs/elevation.json',
         },
         {
           name: 'public-colors',
           path: 'public/default/colors.json',
-          docsPath: 'public/docs/colors.json',
+          docsPath: '../docs/colors.json',
         },
         {
           name: 'public-borders',
           path: 'public/default/borders.json',
-          docsPath: 'public/docs/borders.json',
+          docsPath: '../docs/borders.json',
         },
       ],
       publicStyles: [

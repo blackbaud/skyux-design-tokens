@@ -18,11 +18,6 @@
     "public/default/colors",
     "public/default/elevation",
     "public/default/spacing",
-    "public/default/typography",
-    "public/docs/borders",
-    "public/docs/colors",
-    "public/docs/elevation",
-    "public/docs/spacing",
-    "public/docs/typography"
+    "public/default/typography"
   ]
 }
