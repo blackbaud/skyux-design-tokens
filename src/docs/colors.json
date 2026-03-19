@@ -24,8 +24,8 @@
               "groupName": "Container backgrounds",
               "tokens": [
                 {
-                  "name": "Base container background",
-                  "customProperty": "--sky-theme-color-background-container-base",
+                  "name": "Default container background",
+                  "customProperty": "--sky-theme-color-background-container-default",
                   "description": "The main background color for containers that hold content and actions on a page.",
                   "deprecatedCustomProperties": [
                     "--sky-background-color-container-default"
@@ -61,8 +61,8 @@
               "groupName": "Container borders",
               "tokens": [
                 {
-                  "name": "Base container border",
-                  "customProperty": "--sky-theme-color-border-container-base",
+                  "name": "Default container border",
+                  "customProperty": "--sky-theme-color-border-container-default",
                   "description": "The border color for separating containers from their surroundings."
                 },
                 {
@@ -76,15 +76,15 @@
               "groupName": "Dividers",
               "tokens": [
                 {
-                  "name": "Divider base",
-                  "customProperty": "--sky-theme-color-border-divider",
+                  "name": "Divider default",
+                  "customProperty": "--sky-theme-color-border-divider-default",
                   "deprecatedCustomProperties": [
                     "--sky-border-color-neutral-medium"
                   ]
                 },
                 {
                   "name": "Divider soft",
-                  "customProperty": "--sky-theme-color-border-separator-row"
+                  "customProperty": "--sky-theme-color-border-divider-soft"
                 }
               ]
             }

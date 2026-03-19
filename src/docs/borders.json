@@ -11,8 +11,8 @@
           },
           "tokens": [
             {
-              "name": "Container base",
-              "customProperty": "--sky-theme-border-container-base"
+              "name": "Container default",
+              "customProperty": "--sky-theme-border-container-default"
             }
           ]
         },
@@ -23,8 +23,8 @@
           },
           "tokens": [
             {
-              "name": "Divider base",
-              "customProperty": "--sky-theme-border-divider-base",
+              "name": "Divider default",
+              "customProperty": "--sky-theme-border-divider-default",
               "description": "A border that separates a page into heterogeneous sections or areas."
             },
             {
@@ -71,18 +71,18 @@
           },
           "tokens": [
             {
-              "name": "Container base width",
-              "customProperty": "--sky-theme-border-width-container-base",
+              "name": "Container default width",
+              "customProperty": "--sky-theme-border-width-container-default",
               "description": "The width for borders that wrap around a container."
             },
             {
-              "name": "Divider base width",
-              "customProperty": "--sky-theme-border-width-divider",
+              "name": "Divider default width",
+              "customProperty": "--sky-theme-border-width-divider-default",
               "description": "The width for borders that separate a page into heterogeneous sections or areas."
             },
             {
               "name": "Divider soft width",
-              "customProperty": "--sky-theme-border-width-separator-row",
+              "customProperty": "--sky-theme-border-width-divider-soft",
               "description": "The width for borders that separate homogenous sections or rows inside of a container."
             },
             {
@@ -105,13 +105,13 @@
           },
           "tokens": [
             {
-              "name": "Divider base style",
-              "customProperty": "--sky-theme-border-style-divider",
+              "name": "Divider default style",
+              "customProperty": "--sky-theme-border-style-divider-default",
               "description": "The style of a border that wraps around a container or separates a page into heterogeneous sections or areas."
             },
             {
               "name": "Divider soft style",
-              "customProperty": "--sky-theme-border-style-separator-row",
+              "customProperty": "--sky-theme-border-style-divider-soft",
               "description": "The style of a border that separates homogenous sections or rows inside of a container."
             },
             {

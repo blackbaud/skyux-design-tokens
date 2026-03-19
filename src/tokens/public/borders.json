@@ -2,13 +2,13 @@
   "theme": {
     "border": {
       "container": {
-        "base": {
+        "default": {
           "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base)",
           "$type": "border"
         }
       },
       "divider": {
-        "base": {
+        "default": {
           "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)",
           "$type": "border"
         },
@@ -35,14 +35,20 @@
       },
       "width": {
         "container": {
-          "base": {
+          "default": {
             "$value": "{border.width.container.base}",
             "$type": "border"
           }
         },
-        "divider": { "$value": "{border.width.divider}", "$type": "border" },
-        "separator": {
-          "row": { "$value": "{border.width.separator.row}", "$type": "border" }
+        "divider": {
+          "base": {
+            "$value": "{border.width.divider}",
+            "$type": "border"
+          },
+          "soft": {
+            "$value": "{border.width.separator.row}",
+            "$type": "border"
+          }
         },
         "emphasized": {
           "$value": "{border.width.emphasized}",
@@ -51,9 +57,15 @@
         "accent": { "$value": "{border.width.accent}", "$type": "border" }
       },
       "style": {
-        "divider": { "$value": "{border.style.divider}", "$type": "border" },
-        "separator": {
-          "row": { "$value": "{border.style.separator.row}", "$type": "border" }
+        "divider": {
+          "base": {
+            "$value": "{border.style.divider}",
+            "$type": "border"
+          },
+          "soft": {
+            "$value": "{border.style.separator.row}",
+            "$type": "border"
+          }
         },
         "accent": { "$value": "{border.style.accent}", "$type": "border" }
       },

@@ -24,11 +24,11 @@
               "name": "Container backgrounds",
               "styles": [
                 {
-                  "name": "Base container background",
-                  "className": "sky-theme-color-background-container-base",
+                  "name": "Default container background",
+                  "className": "sky-theme-color-background-container-default",
                   "description": "The main backgrounds color for containers that hold content and actions on a page.",
                   "properties": {
-                    "background-color": "var(--sky-theme-color-background-container-base)"
+                    "background-color": "var(--sky-theme-color-background-container-default)"
                   }
                 },
                 {
