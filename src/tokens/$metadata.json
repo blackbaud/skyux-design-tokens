@@ -8,6 +8,21 @@
     "color/bb-light",
     "color/bb-dark",
     "layout/modern",
-    "layout/base-productive"
+    "layout/base-productive",
+    "public/borders",
+    "public/colors",
+    "public/elevation",
+    "public/spacing",
+    "public/typography",
+    "public/default/borders",
+    "public/default/colors",
+    "public/default/elevation",
+    "public/default/spacing",
+    "public/default/typography",
+    "public/docs/borders",
+    "public/docs/colors",
+    "public/docs/elevation",
+    "public/docs/spacing",
+    "public/docs/typography"
   ]
 }
