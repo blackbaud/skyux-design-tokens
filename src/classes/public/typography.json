@@ -8,7 +8,7 @@
       "groups": [
         {
           "name": "Headings",
-          "description": "Use headings to introduce the page and sections of content within a page. Donít skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
+          "description": "Use headings to introduce the page and sections of content within a page. Don't skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
           "styles": [
             {
               "name": "Heading 1",
@@ -81,7 +81,7 @@
             {
               "name": "Medium emphasized",
               "className": "sky-theme-font-body-emphasized-m",
-              "description": "Use for elevating the primary text that identifies an item in a text groupís visual hierarchy.",
+              "description": "Use for elevating the primary text that identifies an item in a text group's visual hierarchy.",
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m)",
                 "color": "var(--sky-theme-color-text-default)"
@@ -113,7 +113,7 @@
             {
               "name": "Small emphasized",
               "className": "sky-theme-font-body-emphasized-s",
-              "description": "Use to elevate the primary text that identifies an item in a text groupís visual hierarchy when using small body text.",
+              "description": "Use to elevate the primary text that identifies an item in a text group's visual hierarchy when using small body text.",
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-emphasized-s) var(--sky-theme-font-size-body-emphasized-s)/var(--sky-theme-font-line_height-body-emphasized-s) var(--sky-theme-font-family-body-emphasized-s)",
                 "color": "var(--sky-theme-color-text-default)"
@@ -269,7 +269,9 @@
           "styles": [
             {
               "name": "Data label",
-              "description": "Use for labeling data visualizations and charts."
+              "description": "This class formats labels for read-only data. It uses a muted color because the label that identifies the data is less important than the content.",
+              "deprecatedClassNames": ["sky-font-data-label"],
+              "obsoleteClassNames": ["sky-field-label"]
             }
           ]
         }

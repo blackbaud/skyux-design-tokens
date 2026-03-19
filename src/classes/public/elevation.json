@@ -64,7 +64,7 @@
               "className": "sky-theme-elevation-overlay-300",
               "description": "For floating overlays that require clear visual separation. Use for interruptive elements. Examples: modals and toasts",
               "properties": {
-                "box-shadow": "var(--sky-theme-elevation-overlay-200)"
+                "box-shadow": "var(--sky-theme-elevation-overlay-300)"
               },
               "deprecatedClassNames": ["sky-elevation-16"]
             }

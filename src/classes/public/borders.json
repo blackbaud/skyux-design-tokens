@@ -259,7 +259,7 @@
               "className": "sky-theme-border-width-accent",
               "description": "The width to highlight an element with a status border in the visual hierarchy.",
               "properties": {
-                "border-width": "var(--sky-theme-border-width-emphasized)"
+                "border-width": "var(--sky-theme-border-width-accent)"
               }
             }
           ]

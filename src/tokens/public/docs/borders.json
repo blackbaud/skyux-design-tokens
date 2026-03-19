@@ -5,7 +5,7 @@
       "groups": [
         {
           "groupName": "Containers",
-          "description": "Borders that wraps around a container and separates it from its surroundings.",
+          "description": "Borders that wrap around a container and separate it from its surroundings.",
           "demoMetadata": {
             "type": "border"
           },
@@ -25,12 +25,12 @@
             {
               "name": "Divider base",
               "customProperty": "--sky-theme-border-divider-base",
-              "description": "A border that separate a page into heterogeneous sections or areas."
+              "description": "A border that separates a page into heterogeneous sections or areas."
             },
             {
               "name": "Divider soft",
               "customProperty": "--sky-theme-border-divider-soft",
-              "description": "A border that separate homogenous sections or rows inside of a container."
+              "description": "A border that separates homogenous sections or rows inside of a container."
             }
           ]
         },
@@ -44,7 +44,7 @@
             {
               "name": "Danger border",
               "customProperty": "--sky-theme-border-danger",
-              "description": "The border for an elemant that conveys danger, error, or a critical warning."
+              "description": "The border for an element that conveys danger, error, or a critical warning."
             },
             {
               "name": "Info border",
@@ -107,12 +107,12 @@
             {
               "name": "Divider base style",
               "customProperty": "--sky-theme-border-style-divider",
-              "description": "The style of a border that wraps around a container or separates a page into hetergeneous sections or areas."
+              "description": "The style of a border that wraps around a container or separates a page into heterogeneous sections or areas."
             },
             {
               "name": "Divider soft style",
               "customProperty": "--sky-theme-border-style-separator-row",
-              "description": "The style of a border the separates homogenous sections or rows inside of a container."
+              "description": "The style of a border that separates homogenous sections or rows inside of a container."
             },
             {
               "name": "Accent border style",

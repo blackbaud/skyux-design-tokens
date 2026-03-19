@@ -41,29 +41,29 @@
           "description": "Use inline custom properties for horizontal right and left space. Use them for either margin or padding.",
           "tokens": [
             {
-              "name": "Inline Space XS",
+              "name": "Inline space XS",
               "customProperty": "--sky-theme-space-inline-xs",
               "deprecatedScssVariables": ["$sky-margin-inline-compact"]
             },
             {
-              "name": "Inline Space S",
+              "name": "Inline space S",
               "customProperty": "--sky-theme-space-inline-s",
               "deprecatedScssVariables": ["$sky-margin-inline-default"]
             },
             {
-              "name": "Inline Space M",
+              "name": "Inline space M",
               "customProperty": "--sky-theme-space-inline-m"
             },
             {
-              "name": "Inline Space L",
+              "name": "Inline space L",
               "customProperty": "--sky-theme-space-inline-l"
             },
             {
-              "name": "Inline Space XL",
+              "name": "Inline space XL",
               "customProperty": "--sky-theme-space-inline-xl"
             },
             {
-              "name": "Inline Space XXL",
+              "name": "Inline space XXL",
               "customProperty": "--sky-theme-space-inline-xxl"
             }
           ]
