@@ -1,0 +1,160 @@
+{
+  "groups": [
+    {
+      "groupName": "Borders",
+      "groups": [
+        {
+          "groupName": "Containers",
+          "description": "Borders that wrap around a container and separate it from its surroundings.",
+          "demoMetadata": {
+            "type": "border"
+          },
+          "tokens": [
+            {
+              "name": "Container base",
+              "customProperty": "--sky-theme-border-container-base"
+            }
+          ]
+        },
+        {
+          "groupName": "Dividers",
+          "demoMetadata": {
+            "type": "border"
+          },
+          "tokens": [
+            {
+              "name": "Divider base",
+              "customProperty": "--sky-theme-border-divider-base",
+              "description": "A border that separates a page into heterogeneous sections or areas."
+            },
+            {
+              "name": "Divider soft",
+              "customProperty": "--sky-theme-border-divider-soft",
+              "description": "A border that separates homogenous sections or rows inside of a container."
+            }
+          ]
+        },
+        {
+          "groupName": "Status borders",
+          "description": "Use status borders for elements that convey status or urgency.",
+          "demoMetadata": {
+            "type": "border"
+          },
+          "tokens": [
+            {
+              "name": "Danger border",
+              "customProperty": "--sky-theme-border-danger",
+              "description": "The border for an element that conveys danger, error, or a critical warning."
+            },
+            {
+              "name": "Info border",
+              "customProperty": "--sky-theme-border-info",
+              "description": "The border for an element that contains important information, but conveys no danger."
+            },
+            {
+              "name": "Success border",
+              "customProperty": "--sky-theme-border-success",
+              "description": "The border for an element that conveys success or completion."
+            },
+            {
+              "name": "Warning border",
+              "customProperty": "--sky-theme-border-warning",
+              "description": "The border for an element that conveys warning or caution."
+            }
+          ]
+        },
+        {
+          "groupName": "Border widths",
+          "description": "Add these in addition to border properties to modify the border width of certain elements.",
+          "demoMetadata": {
+            "type": "border-width"
+          },
+          "tokens": [
+            {
+              "name": "Container base width",
+              "customProperty": "--sky-theme-border-width-container-base",
+              "description": "The width for borders that wrap around a container."
+            },
+            {
+              "name": "Divider base width",
+              "customProperty": "--sky-theme-border-width-divider",
+              "description": "The width for borders that separate a page into heterogeneous sections or areas."
+            },
+            {
+              "name": "Divider soft width",
+              "customProperty": "--sky-theme-border-width-separator-row",
+              "description": "The width for borders that separate homogenous sections or rows inside of a container."
+            },
+            {
+              "name": "Emphasized border width",
+              "customProperty": "--sky-theme-border-width-emphasized",
+              "description": "The width to add emphasis to dividers or status borders."
+            },
+            {
+              "name": "Accent border width",
+              "customProperty": "--sky-theme-border-width-accent",
+              "description": "The width to highlight an element with a status border in the visual hierarchy."
+            }
+          ]
+        },
+        {
+          "groupName": "Border styles",
+          "description": "Add these in addition to border properties to modify the border style of certain elements.",
+          "demoMetadata": {
+            "type": "border-style"
+          },
+          "tokens": [
+            {
+              "name": "Divider base style",
+              "customProperty": "--sky-theme-border-style-divider",
+              "description": "The style of a border that wraps around a container or separates a page into heterogeneous sections or areas."
+            },
+            {
+              "name": "Divider soft style",
+              "customProperty": "--sky-theme-border-style-separator-row",
+              "description": "The style of a border that separates homogenous sections or rows inside of a container."
+            },
+            {
+              "name": "Accent border style",
+              "customProperty": "--sky-theme-border-style-accent",
+              "description": "The style of a border that highlights an element with a status border in the visual hierarchy."
+            }
+          ]
+        },
+        {
+          "groupName": "Border radius",
+          "demoMetadata": {
+            "type": "border-radius"
+          },
+          "tokens": [
+            {
+              "name": "Border radius XS",
+              "customProperty": "--sky-theme-border-radius-xs",
+              "description": "The border radius for very small elements like tokens."
+            },
+            {
+              "name": "Border radius S",
+              "customProperty": "--sky-theme-border-radius-s",
+              "description": "The border radius for most interactive elements like buttons."
+            },
+            {
+              "name": "Border radius M",
+              "customProperty": "--sky-theme-border-radius-m",
+              "description": "The border radius for overlay containers like menus."
+            },
+            {
+              "name": "Pill border radius",
+              "customProperty": "--sky-theme-border-radius-pill",
+              "description": "The border radius for heavily rounded rectangles like labels."
+            },
+            {
+              "name": "Round border radius",
+              "customProperty": "--sky-theme-border-radius-round",
+              "description": "The border radius for circular elements like avatars."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

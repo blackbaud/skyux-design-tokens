@@ -1,0 +1,444 @@
+{
+  "groups": [
+    {
+      "name": "Colors",
+      "groups": [
+        {
+          "name": "Backgrounds",
+          "demoMetadata": { "type": "color-swatch" },
+          "groups": [
+            {
+              "name": "Page background",
+              "styles": [
+                {
+                  "name": "Page background",
+                  "className": "sky-theme-color-background-page",
+                  "description": "The background color for the page.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-page)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Container backgrounds",
+              "styles": [
+                {
+                  "name": "Base container background",
+                  "className": "sky-theme-color-background-container-base",
+                  "description": "The main backgrounds color for containers that hold content and actions on a page.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-base)"
+                  }
+                },
+                {
+                  "name": "Dimmed container background",
+                  "className": "sky-theme-color-background-container-dimmed",
+                  "description": "The background color for containers holding actions or content that is secondary or supporting base containers.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-dimmed)"
+                  }
+                },
+                {
+                  "name": "Backdrop container background",
+                  "className": "sky-theme-color-background-container-backdrop",
+                  "description": "The background color for containers behind a canvas, WYSIWYG editor, or preview.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-backdrop)"
+                  }
+                },
+                {
+                  "name": "Disabled background",
+                  "className": "sky-theme-color-background-disabled",
+                  "description": "The background color for disabled elements.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-disabled)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Borders",
+          "description": "When using SKY UX classes, use specific border classes to include all properties of the border, including color. In rare cases, use the custom properties below to assign a border color directly.",
+          "styles": [
+            {
+              "name": "Disabled border",
+              "className": "sky-theme-color-border-disabled",
+              "description": "The border color for disabled elements.",
+              "properties": {
+                "border-color": "var(--sky-theme-color-border-disabled)"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Text",
+          "description": "When using SKY UX classes, use specific typography classes to include all properties of the font, including color. In rare cases, use the custom properties below to assign a text color directly.",
+          "demoMetadata": { "type": "text-color" },
+          "styles": [
+            {
+              "name": "Inverse text",
+              "className": "sky-theme-color-text-inverse",
+              "description": "The color for text on heavy background colors, such as primary and danger button labels.",
+              "properties": {
+                "color": "var(--sky-theme-color-text-inverse)"
+              },
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-icon_matte-info"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Icons",
+          "groups": [
+            {
+              "name": "Icon glyphs",
+              "description": "Use icon colors for the glyphs in the icon component.",
+              "demoMetadata": { "type": "icon-color" },
+              "styles": [
+                {
+                  "name": "Default icon",
+                  "className": "sky-theme-color-icon-default",
+                  "description": "The color for icons that match default text.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-default)"
+                  }
+                },
+                {
+                  "name": "Deemphasized icon",
+                  "className": "sky-theme-color-icon-deemphasized",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-deemphasized)"
+                  }
+                },
+                {
+                  "name": "Action icon",
+                  "className": "sky-theme-color-icon-action",
+                  "description": "The color for icons on links and link buttons.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-action)"
+                  }
+                },
+                {
+                  "name": "Inverse icon",
+                  "className": "sky-theme-color-icon-inverse",
+                  "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-inverse)"
+                  },
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-icon_matte-info"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Icon mattes",
+              "description": "Use icon matte colors for small backgrounds behind icons. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
+              "demoMetadata": {
+                "type": "icon-background-color"
+              },
+              "styles": [
+                {
+                  "name": "Action soft icon matte",
+                  "className": "sky-theme-color-background-icon_matte-action-soft",
+                  "description": "The color for a matte behind an icon with the action icon color.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-icon_matte-action-soft)"
+                  },
+                  "demoMetadata": {
+                    "color": "--sky-theme-color-icon-action"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Status colors",
+          "groups": [
+            {
+              "name": "Status backgrounds",
+              "description": "Use status background colors for containers of elements that convey a status or urgency.",
+              "demoMetadata": { "type": "color-swatch" },
+              "styles": [
+                {
+                  "name": "Danger background",
+                  "className": "sky-theme-color-background-container-danger",
+                  "description": "The background color for an element that conveys danger, error, or a critical warning.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-danger)"
+                  }
+                },
+                {
+                  "name": "Info background",
+                  "className": "sky-theme-color-background-container-info",
+                  "description": "The background color for an element that contains important information, but conveys no danger.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-info)"
+                  }
+                },
+                {
+                  "name": "Success background",
+                  "className": "sky-theme-color-background-container-success",
+                  "description": "The background color for an element that conveys success or completion.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-success)"
+                  }
+                },
+                {
+                  "name": "Warning background",
+                  "className": "sky-theme-color-background-container-warning",
+                  "description": "The background color for an element that conveys warning or caution.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-warning)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Status borders",
+              "description": "Use status borders for elements that convey a status or urgency.",
+              "demoMetadata": { "type": "border-color" },
+              "styles": [
+                {
+                  "name": "Danger border",
+                  "className": "sky-theme-color-border-danger",
+                  "description": "The border color for an element that conveys danger, error, or a critical warning.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-border-danger)"
+                  }
+                },
+                {
+                  "name": "Info border",
+                  "className": "sky-theme-color-border-info",
+                  "description": "The border color for an element that contains important information, but conveys no danger.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-border-info)"
+                  }
+                },
+                {
+                  "name": "Success border",
+                  "className": "sky-theme-color-border-success",
+                  "description": "The border color for an element that conveys success or completion.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-border-success)"
+                  }
+                },
+                {
+                  "name": "Warning border",
+                  "className": "sky-theme-color-border-warning",
+                  "description": "The border color for an element that conveys warning or caution.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-border-warning)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Status icon glyphs",
+              "description": "Use status icon colors for icons that convey a status or urgency.",
+              "demoMetadata": { "type": "icon-color" },
+              "styles": [
+                {
+                  "name": "Danger icon",
+                  "className": "sky-theme-color-icon-danger",
+                  "description": "The color for an icon that conveys danger, error, or a critical warning.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-danger)"
+                  }
+                },
+                {
+                  "name": "Info icon",
+                  "className": "sky-theme-color-icon-info",
+                  "description": "The color for an icon that conveys important information, but no danger.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-info)"
+                  }
+                },
+                {
+                  "name": "Success icon",
+                  "className": "sky-theme-color-icon-success",
+                  "description": "The color for an icon that conveys success or completion.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-success)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Status icon mattes",
+              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency.",
+              "demoMetadata": {
+                "type": "icon-background-color",
+                "color": "--sky-theme-color-icon-inverse"
+              },
+              "styles": [
+                {
+                  "name": "Danger icon matte",
+                  "className": "sky-theme-color-background-icon_matte-danger",
+                  "description": "The color for a small background behind an icon that conveys danger, error, or a critical warning.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-icon_matte-danger)"
+                  }
+                },
+                {
+                  "name": "Info icon matte",
+                  "className": "sky-theme-color-background-icon_matte-info",
+                  "description": "The color for a small background behind an icon that conveys important information, but no danger.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-icon_matte-info)"
+                  }
+                },
+                {
+                  "name": "Success icon matte",
+                  "className": "sky-theme-color-background-icon_matte-success",
+                  "description": "The color for a small background behind an icon that conveys success or completion.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-icon_matte-success)"
+                  }
+                },
+                {
+                  "name": "Warning icon matte",
+                  "className": "sky-theme-color-background-icon_matte-warning",
+                  "description": "The color for a small background behind an icon that conveys warning or caution.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-icon_matte-warning)"
+                  },
+                  "demoMetadata": { "color": "--sky-theme-color-icon-default" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Classification",
+          "description": "Use classification colors to color-code blocks of content when the distinction between types of content is significant to users. For example, use classification colors for different types of events in calendars. Don't rely on color alone to classify content; include classification labels for users with color vision differences.\n\nDon't use classification colors to communicate statuses, such as danger or success.",
+          "demoMetadata": {
+            "type": "color-swatch"
+          },
+          "groups": [
+            {
+              "name": "Backgrounds",
+              "description": "Use classification background colors to color-code containers that include text or icons. Use the default colors for text and icons in these containers to maintain high color contrast.",
+              "styles": [
+                {
+                  "name": "Classification background 1",
+                  "className": "sky-theme-color-classify-1-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-1-soft)"
+                  }
+                },
+                {
+                  "name": "Classification background 2",
+                  "className": "sky-theme-color-classify-2-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-2-soft)"
+                  }
+                },
+                {
+                  "name": "Classification background 3",
+                  "className": "sky-theme-color-classify-3-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-3-soft)"
+                  }
+                },
+                {
+                  "name": "Classification background 4",
+                  "className": "sky-theme-color-classify-4-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-4-soft)"
+                  }
+                },
+                {
+                  "name": "Classification background 5",
+                  "className": "sky-theme-color-classify-5-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-5-soft)"
+                  }
+                },
+                {
+                  "name": "Classification background 6",
+                  "className": "sky-theme-color-classify-6-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-6-soft)"
+                  }
+                },
+                {
+                  "name": "Classification background 7",
+                  "className": "sky-theme-color-classify-7-soft",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-classify-7-soft)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Foregrounds",
+              "description": "Use classification foreground colors to color-code icons or add classifying borders to containers."
+            }
+          ]
+        },
+        {
+          "name": "Data visualization",
+          "demoMetadata": {
+            "type": "color-swatch"
+          },
+          "groups": [
+            {
+              "name": "Chart elements",
+              "demoMetadata": {
+                "type": "border-color"
+              },
+              "styles": [
+                {
+                  "name": "Chart axis",
+                  "className": "sky-theme-color-viz-axis",
+                  "description": "The color for axis lines on charts.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-viz-axis)"
+                  }
+                },
+                {
+                  "name": "Chart gridline",
+                  "className": "sky-theme-color-viz-gridline",
+                  "description": "The color for gridlines and tick marks on charts.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-viz-gridline)"
+                  }
+                },
+                {
+                  "name": "Chart marker",
+                  "className": "sky-theme-color-viz-marker",
+                  "description": "The color for thresholds, benchmarks, or goals on charts.",
+                  "properties": {
+                    "border-color": "var(--sky-theme-color-viz-marker)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Categorical palette",
+              "description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. Use the custom properties below to assign these colors directly."
+            },
+            {
+              "name": "Sequential palette",
+              "description": "Use the sequential palette to indicate different magnitudes within a range. Use the custom properties below to assign these colors directly."
+            },
+            {
+              "name": "Positive diverging palette",
+              "description": "Use the positive diverging palette in conjunction with the negative diverging palette to show positive and negative deviations from a central value. Use the custom properties below to assign these colors directly."
+            },
+            {
+              "name": "Negative diverging palette",
+              "description": "Use the negative diverging palette in conjunction with the positive diverging palette to show positive and negative deviations from a central value. Use the custom properties below to assign these colors directly."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

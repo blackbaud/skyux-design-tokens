@@ -1,0 +1,378 @@
+{
+  "theme": {
+    "font": {
+      "family": {
+        "primary": {
+          "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+          "$type": "fontFamilies"
+        },
+        "heading": {
+          "1": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies"
+          },
+          "2": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies"
+          },
+          "3": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          },
+          "4": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          },
+          "5": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          },
+          "emphasized": {
+            "m": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies"
+            },
+            "s": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies"
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies"
+            },
+            "s": {
+              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$type": "fontFamilies"
+            }
+          },
+          "s": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          },
+          "l": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies"
+          },
+          "2": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies"
+          },
+          "3": {
+            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$type": "fontFamilies"
+          },
+          "4": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          }
+        },
+        "hint": {
+          "m": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          },
+          "s": {
+            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$type": "fontFamilies"
+          }
+        }
+      },
+      "weight": {
+        "heading": {
+          "1": {
+            "$value": "300",
+            "$type": "fontWeights"
+          },
+          "2": {
+            "$value": "300",
+            "$type": "fontWeights"
+          },
+          "3": {
+            "$value": "300",
+            "$type": "fontWeights"
+          },
+          "4": {
+            "$value": "600",
+            "$type": "fontWeights"
+          },
+          "5": {
+            "$value": "400",
+            "$type": "fontWeights"
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "400",
+            "$type": "fontWeights"
+          },
+          "emphasized": {
+            "m": {
+              "$value": "600",
+              "$type": "fontWeights"
+            },
+            "s": {
+              "$value": "600",
+              "$type": "fontWeights"
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "400",
+              "$type": "fontWeights"
+            },
+            "s": {
+              "$value": "400",
+              "$type": "fontWeights"
+            }
+          },
+          "s": {
+            "$value": "400",
+            "$type": "fontWeights"
+          },
+          "l": {
+            "$value": "400",
+            "$type": "fontWeights"
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "300",
+            "$type": "fontWeights"
+          },
+          "2": {
+            "$value": "300",
+            "$type": "fontWeights"
+          },
+          "3": {
+            "$value": "600",
+            "$type": "fontWeights"
+          },
+          "4": {
+            "$value": "600",
+            "$type": "fontWeights"
+          }
+        }
+      },
+      "size": {
+        "heading": {
+          "1": {
+            "$value": "34px",
+            "$type": "fontSizes"
+          },
+          "2": {
+            "$value": "26px",
+            "$type": "fontSizes"
+          },
+          "3": {
+            "$value": "19px",
+            "$type": "fontSizes"
+          },
+          "4": {
+            "$value": "16px",
+            "$type": "fontSizes"
+          },
+          "5": {
+            "$value": "15px",
+            "$type": "fontSizes"
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "15px",
+            "$type": "fontSizes"
+          },
+          "emphasized": {
+            "m": {
+              "$value": "15px",
+              "$type": "fontSizes"
+            },
+            "s": {
+              "$value": "13px",
+              "$type": "fontSizes"
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "15px",
+              "$type": "fontSizes"
+            },
+            "s": {
+              "$value": "13px",
+              "$type": "fontSizes"
+            }
+          },
+          "s": {
+            "$value": "13px",
+            "$type": "fontSizes"
+          },
+          "l": {
+            "$value": "16px",
+            "$type": "fontSizes"
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "34px",
+            "$type": "fontSizes"
+          },
+          "2": {
+            "$value": "26px",
+            "$type": "fontSizes"
+          },
+          "3": {
+            "$value": "22px",
+            "$type": "fontSizes"
+          },
+          "4": {
+            "$value": "16px",
+            "$type": "fontSizes"
+          }
+        },
+        "hint": {
+          "m": {
+            "$value": "15px",
+            "$type": "fontSizes"
+          },
+          "s": {
+            "$value": "13px",
+            "$type": "fontSizes"
+          }
+        }
+      },
+      "style": {
+        "em": {
+          "$value": "italic",
+          "$type": "fontWeights"
+        },
+        "strong": {
+          "$value": "700",
+          "$type": "fontWeights"
+        },
+        "hint": {
+          "m": {
+            "$value": "italic",
+            "$type": "fontWeights"
+          },
+          "s": {
+            "$value": "italic",
+            "$type": "fontWeights"
+          }
+        }
+      },
+      "line_height": {
+        "heading": {
+          "1": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "2": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "3": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "4": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "5": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          }
+        },
+        "body": {
+          "m": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "emphasized": {
+            "m": {
+              "$value": "inherit",
+              "$type": "lineHeights"
+            },
+            "s": {
+              "$value": "inherit",
+              "$type": "lineHeights"
+            }
+          },
+          "deemphasized": {
+            "m": {
+              "$value": "inherit",
+              "$type": "lineHeights"
+            },
+            "s": {
+              "$value": "inherit",
+              "$type": "lineHeights"
+            }
+          },
+          "s": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "l": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          }
+        },
+        "display": {
+          "1": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "2": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "3": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "4": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          }
+        },
+        "hint": {
+          "m": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          },
+          "s": {
+            "$value": "inherit",
+            "$type": "lineHeights"
+          }
+        },
+        "paragraph": {
+          "m": {
+            "$value": "normal",
+            "$type": "lineHeights"
+          }
+        }
+      },
+      "letter_spacing": {
+        "hint": {
+          "s": {
+            "$value": "inherit",
+            "$type": "letterSpacings"
+          }
+        }
+      }
+    }
+  }
+}

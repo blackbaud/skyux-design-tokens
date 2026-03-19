@@ -1,0 +1,487 @@
+{
+  "groups": [
+    {
+      "name": "Spacing",
+      "groups": [
+        {
+          "name": "Stacked margin",
+          "groups": [
+            {
+              "name": "Margin top",
+              "description": "Use these classes to add a top margin to an element.",
+              "styles": [
+                {
+                  "name": "Margin-top XS",
+                  "className": "sky-theme-margin-top-xs",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-xs)"
+                  }
+                },
+                {
+                  "name": "Margin-top S",
+                  "className": "sky-theme-margin-top-s",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-s)"
+                  }
+                },
+                {
+                  "name": "Margin-top M",
+                  "className": "sky-theme-margin-top-m",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-m)"
+                  }
+                },
+                {
+                  "name": "Margin-top L",
+                  "className": "sky-theme-margin-top-l",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-l)"
+                  }
+                },
+                {
+                  "name": "Margin-top XL",
+                  "className": "sky-theme-margin-top-xl",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-xl)"
+                  }
+                },
+                {
+                  "name": "Margin-top XXL",
+                  "className": "sky-theme-margin-top-xxl",
+                  "properties": {
+                    "margin-top": "var(--sky-theme-space-stacked-xxl)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Margin bottom",
+              "description": "Use these classes to add a bottom margin to an element.",
+              "styles": [
+                {
+                  "name": "Margin-bottom XS",
+                  "className": "sky-theme-margin-bottom-xs",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-xs)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-xs"],
+                  "obsoleteClassNames": ["sky-margin-stacked-compact"]
+                },
+                {
+                  "name": "Margin-bottom S",
+                  "className": "sky-theme-margin-bottom-s",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-s)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-sm"]
+                },
+                {
+                  "name": "Margin-bottom M",
+                  "className": "sky-theme-margin-bottom-m",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-m)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-md"]
+                },
+                {
+                  "name": "Margin-bottom L",
+                  "className": "sky-theme-margin-bottom-l",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-l)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-lg"],
+                  "obsoleteClassNames": ["sky-margin-stacked-default"]
+                },
+                {
+                  "name": "Margin-bottom XL",
+                  "className": "sky-theme-margin-bottom-xl",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-xl)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-xl"],
+                  "obsoleteClassNames": ["sky-margin-stacked-separate"]
+                },
+                {
+                  "name": "Margin-bottom XXL",
+                  "className": "sky-theme-margin-bottom-xxl",
+                  "properties": {
+                    "margin-bottom": "var(--sky-theme-space-stacked-xxl)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-xxl"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Inline margin",
+          "groups": [
+            {
+              "name": "Margin right",
+              "styles": [
+                {
+                  "name": "Margin-right XS",
+                  "className": "sky-theme-margin-right-xs",
+                  "properties": {
+                    "margin-right": "var(--sky-theme-space-inline-xs)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-xs"],
+                  "obsoleteClassNames": ["sky-margin-inline-compact"]
+                },
+                {
+                  "name": "Margin-right S",
+                  "className": "sky-theme-margin-right-s",
+                  "properties": {
+                    "margin-right": "var(--sky-theme-space-inline-s)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-sm"],
+                  "obsoleteClassNames": ["sky-margin-inline-default"]
+                },
+                {
+                  "name": "Margin-right M",
+                  "className": "sky-theme-margin-right-m",
+                  "properties": {
+                    "margin-right": "var(--sky-theme-space-inline-m)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-md"]
+                },
+                {
+                  "name": "Margin-right L",
+                  "className": "sky-theme-margin-right-l",
+                  "properties": {
+                    "margin-right": "var(--sky-theme-space-inline-l)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-lg"]
+                },
+                {
+                  "name": "Margin-right XL",
+                  "className": "sky-theme-margin-right-xl",
+                  "properties": {
+                    "margin-right": "var(--sky-theme-space-inline-xl)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-xl"]
+                },
+                {
+                  "name": "Margin-right XXL",
+                  "className": "sky-theme-margin-right-xxl",
+                  "properties": {
+                    "margin-right": "var(--sky-theme-space-inline-xxl)"
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-xxl"]
+                }
+              ]
+            },
+            {
+              "name": "Margin left",
+              "styles": [
+                {
+                  "name": "Margin-left XS",
+                  "className": "sky-theme-margin-left-xs",
+                  "properties": {
+                    "margin-left": "var(--sky-theme-space-inline-xs)"
+                  }
+                },
+                {
+                  "name": "Margin-left S",
+                  "className": "sky-theme-margin-left-s",
+                  "properties": {
+                    "margin-left": "var(--sky-theme-space-inline-s)"
+                  }
+                },
+                {
+                  "name": "Margin-left M",
+                  "className": "sky-theme-margin-left-m",
+                  "properties": {
+                    "margin-left": "var(--sky-theme-space-inline-m)"
+                  }
+                },
+                {
+                  "name": "Margin-left L",
+                  "className": "sky-theme-margin-left-l",
+                  "properties": {
+                    "margin-left": "var(--sky-theme-space-inline-l)"
+                  }
+                },
+                {
+                  "name": "Margin-left XL",
+                  "className": "sky-theme-margin-left-xl",
+                  "properties": {
+                    "margin-left": "var(--sky-theme-space-inline-xl)"
+                  }
+                },
+                {
+                  "name": "Margin-left XXL",
+                  "className": "sky-theme-margin-left-xxl",
+                  "properties": {
+                    "margin-left": "var(--sky-theme-space-inline-xxl)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stacked padding",
+          "groups": [
+            {
+              "name": "Padding top",
+              "styles": [
+                {
+                  "name": "Padding-top XS",
+                  "className": "sky-theme-padding-top-xs",
+                  "properties": {
+                    "padding-top": "var(--sky-theme-space-stacked-xs)"
+                  }
+                },
+                {
+                  "name": "Padding-top S",
+                  "className": "sky-theme-padding-top-s",
+                  "properties": {
+                    "padding-top": "var(--sky-theme-space-stacked-s)"
+                  }
+                },
+                {
+                  "name": "Padding-top M",
+                  "className": "sky-theme-padding-top-m",
+                  "properties": {
+                    "padding-top": "var(--sky-theme-space-stacked-m)"
+                  }
+                },
+                {
+                  "name": "Padding-top L",
+                  "className": "sky-theme-padding-top-l",
+                  "properties": {
+                    "padding-top": "var(--sky-theme-space-stacked-l)"
+                  }
+                },
+                {
+                  "name": "Padding-top XL",
+                  "className": "sky-theme-padding-top-xl",
+                  "properties": {
+                    "padding-top": "var(--sky-theme-space-stacked-xl)"
+                  }
+                },
+                {
+                  "name": "Padding-top XXL",
+                  "className": "sky-theme-padding-top-xxl",
+                  "properties": {
+                    "padding-top": "var(--sky-theme-space-stacked-xxl)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Padding bottom",
+              "styles": [
+                {
+                  "name": "Padding-bottom XS",
+                  "className": "sky-theme-padding-bottom-xs",
+                  "properties": {
+                    "padding-bottom": "var(--sky-theme-space-stacked-xs)"
+                  }
+                },
+                {
+                  "name": "Padding-bottom S",
+                  "className": "sky-theme-padding-bottom-s",
+                  "properties": {
+                    "padding-bottom": "var(--sky-theme-space-stacked-s)"
+                  }
+                },
+                {
+                  "name": "Padding-bottom M",
+                  "className": "sky-theme-padding-bottom-m",
+                  "properties": {
+                    "padding-bottom": "var(--sky-theme-space-stacked-m)"
+                  }
+                },
+                {
+                  "name": "Padding-bottom L",
+                  "className": "sky-theme-padding-bottom-l",
+                  "properties": {
+                    "padding-bottom": "var(--sky-theme-space-stacked-l)"
+                  }
+                },
+                {
+                  "name": "Padding-bottom XL",
+                  "className": "sky-theme-padding-bottom-xl",
+                  "properties": {
+                    "padding-bottom": "var(--sky-theme-space-stacked-xl)"
+                  }
+                },
+                {
+                  "name": "Padding-bottom XXL",
+                  "className": "sky-theme-padding-bottom-xxl",
+                  "properties": {
+                    "padding-bottom": "var(--sky-theme-space-stacked-xxl)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Inline padding",
+          "groups": [
+            {
+              "name": "Padding right",
+              "styles": [
+                {
+                  "name": "Padding-right XS",
+                  "className": "sky-theme-padding-right-xs",
+                  "properties": {
+                    "padding-right": "var(--sky-theme-space-inline-xs)"
+                  }
+                },
+                {
+                  "name": "Padding-right S",
+                  "className": "sky-theme-padding-right-s",
+                  "properties": {
+                    "padding-right": "var(--sky-theme-space-inline-s)"
+                  }
+                },
+                {
+                  "name": "Padding-right M",
+                  "className": "sky-theme-padding-right-m",
+                  "properties": {
+                    "padding-right": "var(--sky-theme-space-inline-m)"
+                  }
+                },
+                {
+                  "name": "Padding-right L",
+                  "className": "sky-theme-padding-right-l",
+                  "properties": {
+                    "padding-right": "var(--sky-theme-space-inline-l)"
+                  }
+                },
+                {
+                  "name": "Padding-right XL",
+                  "className": "sky-theme-padding-right-xl",
+                  "properties": {
+                    "padding-right": "var(--sky-theme-space-inline-xl)"
+                  }
+                },
+                {
+                  "name": "Padding-right XXL",
+                  "className": "sky-theme-padding-right-xxl",
+                  "properties": {
+                    "padding-right": "var(--sky-theme-space-inline-xxl)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Padding left",
+              "styles": [
+                {
+                  "name": "Padding-left XS",
+                  "className": "sky-theme-padding-left-xs",
+                  "properties": {
+                    "padding-left": "var(--sky-theme-space-inline-xs)"
+                  }
+                },
+                {
+                  "name": "Padding-left S",
+                  "className": "sky-theme-padding-left-s",
+                  "properties": {
+                    "padding-left": "var(--sky-theme-space-inline-s)"
+                  }
+                },
+                {
+                  "name": "Padding-left M",
+                  "className": "sky-theme-padding-left-m",
+                  "properties": {
+                    "padding-left": "var(--sky-theme-space-inline-m)"
+                  }
+                },
+                {
+                  "name": "Padding-left L",
+                  "className": "sky-theme-padding-left-l",
+                  "properties": {
+                    "padding-left": "var(--sky-theme-space-inline-l)"
+                  }
+                },
+                {
+                  "name": "Padding-left XL",
+                  "className": "sky-theme-padding-left-xl",
+                  "properties": {
+                    "padding-left": "var(--sky-theme-space-inline-xl)"
+                  }
+                },
+                {
+                  "name": "Padding-left XXL",
+                  "className": "sky-theme-padding-left-xxl",
+                  "properties": {
+                    "padding-left": "var(--sky-theme-space-inline-xxl)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Insets within elements",
+          "description": "Use these classes to add an even amount of inset padding all the way around the sides of an element.",
+          "groups": [
+            {
+              "name": "Balanced",
+              "styles": [
+                {
+                  "name": "Inset balanced padding XS",
+                  "className": "sky-theme-padding-inset-balanced-xs",
+                  "properties": {
+                    "padding": "var(--sky-theme-space-inset-balanced-xs)"
+                  }
+                },
+                {
+                  "name": "Inset balanced padding S",
+                  "className": "sky-theme-padding-inset-balanced-s",
+                  "properties": {
+                    "padding": "var(--sky-theme-space-inset-balanced-s)"
+                  }
+                },
+                {
+                  "name": "Inset balanced padding M",
+                  "className": "sky-theme-padding-inset-balanced-m",
+                  "properties": {
+                    "padding": "var(--sky-theme-space-inset-balanced-m)"
+                  },
+                  "deprecatedClassNames": ["sky-padding-even-md"],
+                  "obsoleteClassNames": ["sky-padding-even-default"]
+                },
+                {
+                  "name": "Inset balanced padding L",
+                  "className": "sky-theme-padding-inset-balanced-l",
+                  "properties": {
+                    "padding": "var(--sky-theme-space-inset-balanced-l)"
+                  }
+                },
+                {
+                  "name": "Inset balanced padding XL",
+                  "className": "sky-theme-padding-inset-balanced-xl",
+                  "properties": {
+                    "padding": "var(--sky-theme-space-inset-balanced-xl)"
+                  },
+                  "deprecatedClassNames": ["sky-padding-even-xl"],
+                  "obsoleteClassNames": ["sky-padding-even-large"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Conditional input inset padding",
+          "description": "Use this class to add left inset padding to conditional inputs or content below a checkbox or radio button.",
+          "styles": [
+            {
+              "name": "Conditional input inset padding",
+              "className": "sky-theme-padding-conditional-input",
+              "properties": {
+                "padding-left": "var(--sky-theme-space-conditional-input)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "theme": {
+    "elevation": {
+      "raised": {
+        "100": {
+          "$value": "{elevation.raised.100}",
+          "$type": "boxShadow"
+        }
+      },
+      "overflow": {
+        "$value": "{elevation.overflow}",
+        "$type": "boxShadow"
+      },
+      "overlay": {
+        "100": {
+          "$value": "{elevation.overlay.100}",
+          "$type": "boxShadow"
+        },
+        "200": {
+          "$value": "{elevation.overlay.200}",
+          "$type": "boxShadow"
+        },
+        "300": {
+          "$value": "{elevation.overlay.300}",
+          "$type": "boxShadow"
+        }
+      }
+    }
+  }
+}

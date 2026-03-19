@@ -1,0 +1,284 @@
+{
+  "groups": [
+    {
+      "name": "Typography",
+      "demoMetadata": {
+        "type": "text"
+      },
+      "groups": [
+        {
+          "name": "Headings",
+          "description": "Use headings to introduce the page and sections of content within a page. Don't skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
+          "styles": [
+            {
+              "name": "Heading 1",
+              "className": "sky-theme-font-heading-1",
+              "description": "Use for page titles and record names. Use only one heading 1 element per page.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1)",
+                "color": "var(--sky-theme-color-text-heading)"
+              },
+              "deprecatedClassNames": ["sky-font-heading-1"],
+              "obsoleteClassNames": ["sky-page-heading"]
+            },
+            {
+              "name": "Heading 2",
+              "className": "sky-theme-font-heading-2",
+              "description": "Use for main sections and container headings.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2)",
+                "color": "var(--sky-theme-color-text-heading)"
+              },
+              "deprecatedClassNames": ["sky-font-heading-2"],
+              "obsoleteClassNames": ["sky-section-heading"]
+            },
+            {
+              "name": "Heading 3",
+              "className": "sky-theme-font-heading-3",
+              "description": "Use for subsections within containers and within heading 2 sections.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3)",
+                "color": "var(--sky-theme-color-text-heading)"
+              },
+              "deprecatedClassNames": ["sky-font-heading-3"],
+              "obsoleteClassNames": ["sky-subsection-heading"]
+            },
+            {
+              "name": "Heading 4",
+              "className": "sky-theme-font-heading-4",
+              "description": "Use for subsections within heading 3 sections.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-heading-4) var(--sky-theme-font-size-heading-4)/var(--sky-theme-font-line_height-heading-4) var(--sky-theme-font-family-heading-4)",
+                "color": "var(--sky-theme-color-text-heading)"
+              },
+              "deprecatedClassNames": ["sky-font-heading-4"]
+            },
+            {
+              "name": "Heading 5",
+              "className": "sky-theme-font-heading-5",
+              "description": "Use for subsections within heading 4 sections.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-heading-5) var(--sky-theme-font-size-heading-5)/var(--sky-theme-font-line_height-heading-5) var(--sky-theme-font-family-heading-5)",
+                "color": "var(--sky-theme-color-text-heading)"
+              },
+              "deprecatedClassNames": ["sky-font-heading-5"]
+            }
+          ]
+        },
+        {
+          "name": "Body text",
+          "styles": [
+            {
+              "name": "Medium body",
+              "className": "sky-theme-font-body-m",
+              "description": "Default size for majority of information on the page including component labels, data, and paragraphs.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-m) var(--sky-theme-font-size-body-m)/var(--sky-theme-font-line_height-body-m) var(--sky-theme-font-family-body-m)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "deprecatedClassNames": ["sky-font-body-default"]
+            },
+            {
+              "name": "Medium emphasized",
+              "className": "sky-theme-font-body-emphasized-m",
+              "description": "Use for elevating the primary text that identifies an item in a text group's visual hierarchy.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "deprecatedClassNames": ["sky-font-emphasized"],
+              "obsoleteClassNames": ["sky-emphasized"]
+            },
+            {
+              "name": "Medium deemphasized",
+              "className": "sky-theme-font-body-deemphasized-m",
+              "description": "Use for secondary information that describes or contextualizes an item to lower it in the visual hierarchy alongside the primary text that identifies an item.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m)",
+                "color": "var(--sky-theme-color-text-deemphasized)"
+              }
+            },
+            {
+              "name": "Small body",
+              "className": "sky-theme-font-body-s",
+              "description": "Use for text only when space is limited and only for a section or container within a page.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-s) var(--sky-theme-font-size-body-s)/var(--sky-theme-font-line_height-body-s) var(--sky-theme-font-family-body-s)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "deprecatedClassNames": ["sky-font-body-sm"]
+            },
+            {
+              "name": "Small emphasized",
+              "className": "sky-theme-font-body-emphasized-s",
+              "description": "Use to elevate the primary text that identifies an item in a text group's visual hierarchy when using small body text.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-emphasized-s) var(--sky-theme-font-size-body-emphasized-s)/var(--sky-theme-font-line_height-body-emphasized-s) var(--sky-theme-font-family-body-emphasized-s)",
+                "color": "var(--sky-theme-color-text-default)"
+              }
+            },
+            {
+              "name": "Small deemphasized",
+              "className": "sky-theme-font-body-deemphasized-s",
+              "description": "Use for tertiary information in a text group to lower it in the visual hierarchy below secondary information.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-deemphasized-s) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s)",
+                "color": "var(--sky-theme-color-text-deemphasized)"
+              }
+            },
+            {
+              "name": "Large body",
+              "className": "sky-theme-font-body-l",
+              "description": "Use for lead paragraphs in long-form content.",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-body-l) var(--sky-theme-font-size-body-l)/var(--sky-theme-font-line_height-body-l) var(--sky-theme-font-family-body-l)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "deprecatedClassNames": ["sky-font-body-lg"]
+            }
+          ]
+        },
+        {
+          "name": "Paragraphs",
+          "demoMetadata": {
+            "type": "element"
+          },
+          "styles": [
+            {
+              "name": "Paragraph",
+              "selectors": ["p"],
+              "description": "Use paragraphs to give one or more complete sentences reading line-height.",
+              "properties": {
+                "line-height": "var(--sky-theme-font-line_height-paragraph-m)"
+              }
+            },
+            {
+              "name": "Strong",
+              "selectors": ["strong"],
+              "description": "Use <strong> to create visual and semantic importance on a word or words.",
+              "properties": {
+                "font-weight": "var(--sky-theme-font-style-strong)"
+              }
+            },
+            {
+              "name": "Stressed text",
+              "selectors": ["em"],
+              "description": "Use <em> to create reading and semantic emphasis or stress on a word or words.",
+              "properties": {
+                "font-style": "var(--sky-theme-font-style-em-style)"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Lists",
+          "demoMetadata": {
+            "type": "none"
+          },
+          "styles": [
+            {
+              "name": "Unstyled list",
+              "className": "sky-theme-list-unstyled",
+              "description": "Use for lists of unordered items without bullet points to have correct semantic structure.",
+              "properties": {
+                "list-style": "none",
+                "padding-left": "0",
+                "margin-top": "0",
+                "margin-bottom": "0"
+              },
+              "deprecatedClassNames": ["sky-list-unstyled"]
+            },
+            {
+              "name": "Unstyled list li",
+              "excludeFromDocs": true,
+              "selectors": [".sky-theme-list-unstyled li:not(:last-of-type)"],
+              "properties": {
+                "padding-bottom": "var(--sky-theme-space-stacked-xs)"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Display text",
+          "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
+          "styles": [
+            {
+              "name": "Display 1",
+              "className": "sky-theme-font-display-1",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-display-1) var(--sky-theme-font-size-display-1)/var(--sky-theme-font-line_height-display-1) var(--sky-theme-font-family-display-1)"
+              },
+              "deprecatedClassNames": ["sky-font-display-1"]
+            },
+            {
+              "name": "Display 2",
+              "className": "sky-theme-font-display-2",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-display-2) var(--sky-theme-font-size-display-2)/var(--sky-theme-font-line_height-display-2) var(--sky-theme-font-family-display-2)"
+              },
+              "deprecatedClassNames": ["sky-font-display-2"]
+            },
+            {
+              "name": "Display 3",
+              "className": "sky-theme-font-display-3",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3)"
+              },
+              "deprecatedClassNames": ["sky-font-display-3"],
+              "obsoleteClassNames": ["sky-headline"]
+            },
+            {
+              "name": "Display 4",
+              "className": "sky-theme-font-display-4",
+              "properties": {
+                "font": "var(--sky-theme-font-weight-display-4) var(--sky-theme-font-size-display-4)/var(--sky-theme-font-line_height-display-4) var(--sky-theme-font-family-display-4)"
+              },
+              "deprecatedClassNames": ["sky-font-display-4"]
+            }
+          ]
+        },
+        {
+          "name": "Help text",
+          "styles": [
+            {
+              "name": "Hint medium",
+              "className": "sky-theme-font-hint-m",
+              "description": "Use for page- and form-level help.",
+              "properties": {
+                "font": "var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m)",
+                "color": "var(--sky-theme-color-text-deemphasized)"
+              }
+            },
+            {
+              "name": "Hint small",
+              "className": "sky-theme-font-hint-s",
+              "description": "Used for field- and label-level help within components.",
+              "properties": {
+                "font": "var(--sky-theme-font-style-hint-s-style) var(--sky-theme-font-size-hint-s)/var(--sky-theme-font-line_height-hint-s) var(--sky-theme-font-family-hint-s)",
+                "letter-spacing": "var(--sky-theme-font-letter_spacing-hint-s)",
+                "color": "var(--sky-theme-color-text-deemphasized)"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Deprecated typography",
+          "styles": [
+            {
+              "name": "Data label",
+              "description": "This class formats labels for read-only data. It uses a muted color because the label that identifies the data is less important than the content.",
+              "deprecatedClassNames": ["sky-font-data-label", "sky-field-label"]
+            },
+            {
+              "name": "Deemphasized",
+              "deprecatedClassNames": [
+                "sky-font-deemphasized",
+                "sky-deemphasized"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

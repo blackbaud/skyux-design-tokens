@@ -1,0 +1,88 @@
+{
+  "theme": {
+    "space": {
+      "stacked": {
+        "xs": {
+          "$value": "5px",
+          "$type": "spacing"
+        },
+        "s": {
+          "$value": "8px",
+          "$type": "spacing"
+        },
+        "m": {
+          "$value": "9px",
+          "$type": "spacing"
+        },
+        "l": {
+          "$value": "10px",
+          "$type": "spacing"
+        },
+        "xl": {
+          "$value": "20px",
+          "$type": "spacing"
+        },
+        "xxl": {
+          "$value": "40px",
+          "$type": "spacing"
+        }
+      },
+      "inline": {
+        "xs": {
+          "$value": "5px",
+          "$type": "spacing"
+        },
+        "s": {
+          "$value": "10px",
+          "$type": "spacing"
+        },
+        "m": {
+          "$value": "12px",
+          "$type": "spacing"
+        },
+        "l": {
+          "$value": "15px",
+          "$type": "spacing"
+        },
+        "xl": {
+          "$value": "20px",
+          "$type": "spacing"
+        },
+        "xxl": {
+          "$value": "40px",
+          "$type": "spacing"
+        }
+      },
+      "inset": {
+        "balanced": {
+          "xs": {
+            "$value": "5px",
+            "$type": "spacing"
+          },
+          "s": {
+            "$value": "10px",
+            "$type": "spacing"
+          },
+          "m": {
+            "$value": "15px",
+            "$type": "spacing"
+          },
+          "l": {
+            "$value": "18px",
+            "$type": "spacing"
+          },
+          "xl": {
+            "$value": "20px",
+            "$type": "spacing"
+          }
+        }
+      },
+      "conditional": {
+        "input": {
+          "$value": "27px",
+          "$type": "spacing"
+        }
+      }
+    }
+  }
+}

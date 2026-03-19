@@ -1,0 +1,320 @@
+{
+  "groups": [
+    {
+      "name": "Borders",
+      "demoMetadata": {
+        "type": "border"
+      },
+      "groups": [
+        {
+          "name": "Containers",
+          "description": "A border that wraps around a container and separates it from its surroundings.",
+          "styles": [
+            {
+              "name": "Container base",
+              "className": "sky-theme-border-container-base",
+              "properties": {
+                "border": "var(--sky-theme-border-container-base)"
+              },
+              "deprecatedClassNames": ["sky-border-dark", "sky-border-light"]
+            }
+          ]
+        },
+        {
+          "name": "Dividers",
+          "description": "Borders that separate a page into heterogeneous sections or areas.",
+          "groups": [
+            {
+              "name": "Divider base",
+              "styles": [
+                {
+                  "name": "Divider base top",
+                  "className": "sky-theme-border-divider-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-divider-base)"
+                  }
+                },
+                {
+                  "name": "Divider base right",
+                  "className": "sky-theme-border-divider-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-divider-base)"
+                  }
+                },
+                {
+                  "name": "Divider base bottom",
+                  "className": "sky-theme-border-divider-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-divider-base)"
+                  },
+                  "deprecatedClassNames": ["sky-border-bottom-dark"]
+                },
+                {
+                  "name": "Divider base left",
+                  "className": "sky-theme-border-divider-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-divider-base)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Divider soft",
+              "description": "Borders that separate homogenous sections or rows inside of a container.",
+              "styles": [
+                {
+                  "name": "Divider soft top",
+                  "className": "sky-theme-border-divider-soft-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-divider-soft)"
+                  }
+                },
+                {
+                  "name": "Divider soft right",
+                  "className": "sky-theme-border-divider-soft-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-divider-soft)"
+                  }
+                },
+                {
+                  "name": "Divider soft bottom",
+                  "className": "sky-theme-border-divider-soft-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-divider-soft)"
+                  },
+                  "deprecatedClassNames": [
+                    "sky-border-bottom-row",
+                    "sky-border-bottom-light"
+                  ]
+                },
+                {
+                  "name": "Divider soft left",
+                  "className": "sky-theme-border-divider-soft-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-divider-soft)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Status borders",
+          "description": "Use status borders for elements that convey status or urgency.",
+          "groups": [
+            {
+              "name": "Danger borders",
+              "description": "The borders for an element that conveys danger, error, or a critical warning.",
+              "styles": [
+                {
+                  "name": "Danger border top",
+                  "className": "sky-theme-border-danger-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-danger)"
+                  }
+                },
+                {
+                  "name": "Danger border right",
+                  "className": "sky-theme-border-danger-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-danger)"
+                  }
+                },
+                {
+                  "name": "Danger border bottom",
+                  "className": "sky-theme-border-danger-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-danger)"
+                  }
+                },
+                {
+                  "name": "Danger border left",
+                  "className": "sky-theme-border-danger-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-danger)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Info borders",
+              "description": "The borders for an element that contains important information, but conveys no danger.",
+              "styles": [
+                {
+                  "name": "Info border top",
+                  "className": "sky-theme-border-info-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-info)"
+                  }
+                },
+                {
+                  "name": "Info border right",
+                  "className": "sky-theme-border-info-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-info)"
+                  }
+                },
+                {
+                  "name": "Info border bottom",
+                  "className": "sky-theme-border-info-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-info)"
+                  }
+                },
+                {
+                  "name": "Info border left",
+                  "className": "sky-theme-border-info-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-info)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Success borders",
+              "description": "The borders for an element that conveys success or completion.",
+              "styles": [
+                {
+                  "name": "Success border top",
+                  "className": "sky-theme-border-success-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-success)"
+                  }
+                },
+                {
+                  "name": "Success border right",
+                  "className": "sky-theme-border-success-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-success)"
+                  }
+                },
+                {
+                  "name": "Success border bottom",
+                  "className": "sky-theme-border-success-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-success)"
+                  }
+                },
+                {
+                  "name": "Success border left",
+                  "className": "sky-theme-border-success-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-success)"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Warning borders",
+              "description": "The borders for an element that conveys warning or caution.",
+              "styles": [
+                {
+                  "name": "Warning border top",
+                  "className": "sky-theme-border-warning-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-warning)"
+                  }
+                },
+                {
+                  "name": "Warning border right",
+                  "className": "sky-theme-border-warning-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-warning)"
+                  }
+                },
+                {
+                  "name": "Warning border bottom",
+                  "className": "sky-theme-border-warning-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-warning)"
+                  }
+                },
+                {
+                  "name": "Warning border left",
+                  "className": "sky-theme-border-warning-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-warning)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Border widths",
+          "description": "Add these in addition to border classes to modify the border width of certain elements.",
+          "demoMetadata": {
+            "type": "border-width"
+          },
+          "styles": [
+            {
+              "name": "Emphasized border width",
+              "className": "sky-theme-border-width-emphasized",
+              "description": "The width to add emphasis to dividers or status borders.",
+              "properties": {
+                "border-width": "var(--sky-theme-border-width-emphasized)"
+              }
+            },
+            {
+              "name": "Accent border width",
+              "className": "sky-theme-border-width-accent",
+              "description": "The width to highlight an element with a status border in the visual hierarchy.",
+              "properties": {
+                "border-width": "var(--sky-theme-border-width-accent)"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Border radius",
+          "demoMetadata": {
+            "type": "border-radius"
+          },
+          "styles": [
+            {
+              "name": "Border radius XS",
+              "className": "sky-theme-border-radius-xs",
+              "description": "The border radius for very small elements like tokens.",
+              "properties": {
+                "border-radius": "var(--sky-theme-border-radius-xs)"
+              }
+            },
+            {
+              "name": "Border radius S",
+              "className": "sky-theme-border-radius-s",
+              "description": "The border radius for most interactive elements like buttons.",
+              "properties": {
+                "border-radius": "var(--sky-theme-border-radius-s)"
+              },
+              "deprecatedClassNames": ["sky-rounded-corners"]
+            },
+            {
+              "name": "Border radius M",
+              "className": "sky-theme-border-radius-m",
+              "description": "The border radius for overlay containers like menus.",
+              "properties": {
+                "border-radius": "var(--sky-theme-border-radius-m)"
+              }
+            },
+            {
+              "name": "Pill border radius",
+              "className": "sky-theme-border-radius-pill",
+              "description": "The border radius for heavily rounded rectangles like labels.",
+              "properties": {
+                "border-radius": "var(--sky-theme-border-radius-pill)"
+              }
+            },
+            {
+              "name": "Round border radius",
+              "className": "sky-theme-border-radius-round",
+              "description": "The border radius for circular elements like avatars.",
+              "properties": {
+                "border-radius": "var(--sky-theme-border-radius-round)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

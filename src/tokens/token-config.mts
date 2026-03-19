@@ -39,6 +39,40 @@ export const tokenConfig: TokenConfig = {
           path: 'layout/base-productive.json',
         },
       ],
+      publicTokens: [
+        {
+          name: 'public-spacing',
+          path: 'public/spacing.json',
+          docsPath: '../docs/spacing.json',
+        },
+        {
+          name: 'public-typography',
+          path: 'public/typography.json',
+          docsPath: '../docs/typography.json',
+        },
+        {
+          name: 'public-elevation',
+          path: 'public/elevation.json',
+          docsPath: '../docs/elevation.json',
+        },
+        {
+          name: 'public-colors',
+          path: 'public/colors.json',
+          docsPath: '../docs/colors.json',
+        },
+        {
+          name: 'public-borders',
+          path: 'public/borders.json',
+          docsPath: '../docs/borders.json',
+        },
+      ],
+      publicStyles: [
+        { name: 'spacing', path: '../classes/public/spacing.json' },
+        { name: 'typography', path: '../classes/public/typography.json' },
+        { name: 'elevation', path: '../classes/public/elevation.json' },
+        { name: 'colors', path: '../classes/public/colors.json' },
+        { name: 'borders', path: '../classes/public/borders.json' },
+      ],
     },
     {
       name: 'blackbaud',
@@ -56,6 +90,47 @@ export const tokenConfig: TokenConfig = {
           selector: '.sky-theme-mode-dark',
           path: 'color/bb-dark.json',
         },
+      ],
+    },
+    {
+      name: 'default',
+      path: 'default/base.json',
+      selector: '.sky-theme-default',
+      outputPath: 'default.css',
+      referenceTokens: [],
+      publicTokens: [
+        {
+          name: 'public-spacing',
+          path: 'public/default/spacing.json',
+          docsPath: '../docs/spacing.json',
+        },
+        {
+          name: 'public-typography',
+          path: 'public/default/typography.json',
+          docsPath: '../docs/typography.json',
+        },
+        {
+          name: 'public-elevation',
+          path: 'public/default/elevation.json',
+          docsPath: '../docs/elevation.json',
+        },
+        {
+          name: 'public-colors',
+          path: 'public/default/colors.json',
+          docsPath: '../docs/colors.json',
+        },
+        {
+          name: 'public-borders',
+          path: 'public/default/borders.json',
+          docsPath: '../docs/borders.json',
+        },
+      ],
+      publicStyles: [
+        { name: 'spacing', path: '../classes/public/spacing.json' },
+        { name: 'typography', path: '../classes/public/typography.json' },
+        { name: 'elevation', path: '../classes/public/elevation.json' },
+        { name: 'colors', path: '../classes/public/colors.json' },
+        { name: 'borders', path: '../classes/public/borders.json' },
       ],
     },
   ],
