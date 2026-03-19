@@ -40,6 +40,14 @@
                   "name": "Backdrop container background",
                   "customProperty": "--sky-theme-color-background-container-backdrop",
                   "description": "The background color for containers behind a canvas, WYSIWYG editor, or preview."
+                },
+                {
+                  "name": "Disabled background",
+                  "customProperty": "--sky-theme-color-background-disabled",
+                  "description": "The background color for disabled elements.",
+                  "deprecatedCustomProperties": [
+                    "--sky-background-color-disabled"
+                  ]
                 }
               ]
             }
@@ -56,6 +64,11 @@
                   "name": "Base container border",
                   "customProperty": "--sky-theme-color-border-container-base",
                   "description": "The border color for separating containers from their surroundings."
+                },
+                {
+                  "name": "Disabled border",
+                  "customProperty": "--sky-theme-color-border-disabled",
+                  "description": "The border color around disabled elements."
                 }
               ]
             },
@@ -595,23 +608,33 @@
           "tokens": [
             {
               "name": "Primary action background",
-              "deprecatedCustomProperties": ["--sky-background-color-primary-dark"]
-            }, 
+              "deprecatedCustomProperties": [
+                "--sky-background-color-primary-dark"
+              ]
+            },
             {
               "name": "Light background",
-              "deprecatedCustomProperties": ["--sky-background-color-neutral-light"]
+              "deprecatedCustomProperties": [
+                "--sky-background-color-neutral-light"
+              ]
             },
             {
               "name": "Selected element background",
-              "deprecatedCustomProperties": ["--sky-background-color-input-selected"]
+              "deprecatedCustomProperties": [
+                "--sky-background-color-input-selected"
+              ]
             },
             {
               "name": "Info background light",
-              "deprecatedCustomProperties": ["--sky-background-color-info-light"]
+              "deprecatedCustomProperties": [
+                "--sky-background-color-info-light"
+              ]
             },
             {
               "name": "Danger background dark",
-              "deprecatedCustomProperties": ["--sky-background-color-danger-dark"]
+              "deprecatedCustomProperties": [
+                "--sky-background-color-danger-dark"
+              ]
             }
           ]
         }

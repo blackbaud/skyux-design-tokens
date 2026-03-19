@@ -36,6 +36,10 @@
             "$type": "color"
           }
         },
+        "disabled": {
+          "$value": "{color.background.disabled}",
+          "$type": "color"
+        },
         "icon_matte": {
           "action": {
             "soft": {
@@ -67,6 +71,10 @@
             "$value": "{color.border.container.base}",
             "$type": "color"
           }
+        },
+        "disabled": {
+          "$value": "{color.border.disabled}",
+          "$type": "color"
         },
         "divider": {
           "$value": "{color.border.divider}",

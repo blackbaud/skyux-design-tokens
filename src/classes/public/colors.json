@@ -46,6 +46,14 @@
                   "properties": {
                     "background-color": "var(--sky-theme-color-background-container-backdrop)"
                   }
+                },
+                {
+                  "name": "Disabled background",
+                  "className": "sky-theme-color-background-disabled",
+                  "description": "The background color for disabled elements.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-disabled)"
+                  }
                 }
               ]
             }
@@ -53,7 +61,17 @@
         },
         {
           "name": "Borders",
-          "description": "When using SKY UX classes, use specific border classes to include all properties of the border, including color. In rare cases, use the custom properties below to assign a border color directly."
+          "description": "When using SKY UX classes, use specific border classes to include all properties of the border, including color. In rare cases, use the custom properties below to assign a border color directly.",
+          "styles": [
+            {
+              "name": "Disabled border",
+              "className": "sky-theme-color-border-disabled",
+              "description": "The border color for disabled elements.",
+              "properties": {
+                "border-color": "var(--sky-theme-color-border-disabled)"
+              }
+            }
+          ]
         },
         {
           "name": "Text",

@@ -12,6 +12,7 @@
           "success": { "$value": "#b7da9b", "$type": "color" },
           "warning": { "$value": "#ffd597", "$type": "color" }
         },
+        "disabled": { "$value": "#cdcfd2", "$type": "color" },
         "icon_matte": {
           "action": {
             "soft": { "$value": "#c1e8fb", "$type": "color" }
@@ -26,6 +27,7 @@
         "container": {
           "base": { "$value": "#cdcfd2", "$type": "color" }
         },
+        "disabled": { "$value": "#cdcfd2", "$type": "color" },
         "divider": { "$value": "#cdcfd2", "$type": "color" },
         "separator": {
           "row": { "$value": "#cdcfd2", "$type": "color" }
