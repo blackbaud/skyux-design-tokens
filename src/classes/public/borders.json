@@ -15,7 +15,8 @@
               "className": "sky-theme-border-container-base",
               "properties": {
                 "border": "var(--sky-theme-border-container-base)"
-              }
+              },
+              "deprecatedClassNames": ["sky-border-dark", "sky-border-light"]
             }
           ]
         },
@@ -46,10 +47,7 @@
                   "properties": {
                     "border-bottom": "var(--sky-theme-border-divider-base)"
                   },
-                  "deprecatedClassNames": [
-                    "sky-border-bottom-dark",
-                    "sky-border-dark"
-                  ]
+                  "deprecatedClassNames": ["sky-border-bottom-dark"]
                 },
                 {
                   "name": "Divider base left",
@@ -84,7 +82,10 @@
                   "properties": {
                     "border-bottom": "var(--sky-theme-border-divider-soft)"
                   },
-                  "deprecatedClassNames": ["sky-border-bottom-row"]
+                  "deprecatedClassNames": [
+                    "sky-border-bottom-row",
+                    "sky-border-bottom-light"
+                  ]
                 },
                 {
                   "name": "Divider soft left",

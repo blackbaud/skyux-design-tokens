@@ -80,7 +80,8 @@
                   "className": "sky-theme-margin-bottom-m",
                   "properties": {
                     "margin-bottom": "var(--sky-theme-space-stacked-m)"
-                  }
+                  },
+                  "deprecatedClassNames": ["sky-margin-stacked-md"]
                 },
                 {
                   "name": "Margin-bottom L",
@@ -141,7 +142,8 @@
                   "className": "sky-theme-margin-right-m",
                   "properties": {
                     "margin-right": "var(--sky-theme-space-inline-m)"
-                  }
+                  },
+                  "deprecatedClassNames": ["sky-margin-inline-md"]
                 },
                 {
                   "name": "Margin-right L",

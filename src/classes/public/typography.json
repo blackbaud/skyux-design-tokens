@@ -96,9 +96,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m)",
                 "color": "var(--sky-theme-color-text-deemphasized)"
-              },
-              "deprecatedClassNames": ["sky-font-deemphasized"],
-              "obsoleteClassNames": ["sky-deemphasized"]
+              }
             },
             {
               "name": "Small body",
@@ -249,8 +247,7 @@
               "properties": {
                 "font": "var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m)",
                 "color": "var(--sky-theme-color-text-deemphasized)"
-              },
-              "deprecatedClassNames": ["sky-font-deemphasized"]
+              }
             },
             {
               "name": "Hint small",
@@ -265,13 +262,19 @@
           ]
         },
         {
-          "name": "Miscellaneous",
+          "name": "Deprecated typography",
           "styles": [
             {
               "name": "Data label",
               "description": "This class formats labels for read-only data. It uses a muted color because the label that identifies the data is less important than the content.",
-              "deprecatedClassNames": ["sky-font-data-label"],
-              "obsoleteClassNames": ["sky-field-label"]
+              "deprecatedClassNames": ["sky-font-data-label", "sky-field-label"]
+            },
+            {
+              "name": "Deemphasized",
+              "deprecatedClassNames": [
+                "sky-font-deemphasized",
+                "sky-deemphasized"
+              ]
             }
           ]
         }
