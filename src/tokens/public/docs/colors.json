@@ -635,6 +635,18 @@
               "deprecatedCustomProperties": [
                 "--sky-background-color-danger-dark"
               ]
+            },
+            {
+              "name": "Neutral medium dark border",
+              "deprecatedCustomProperties": [
+                "--sky-border-color-neutral-medium-dark"
+              ]
+            },
+            {
+              "name": "Selected item background",
+              "deprecatedCustomProperties": [
+                "--sky-background-color-item-selected"
+              ]
             }
           ]
         }

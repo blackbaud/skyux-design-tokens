@@ -18,7 +18,8 @@
                 "font": "var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1)",
                 "color": "var(--sky-theme-color-text-heading)"
               },
-              "deprecatedClassNames": ["sky-font-heading-1"]
+              "deprecatedClassNames": ["sky-font-heading-1"],
+              "obsoleteClassNames": ["sky-page-heading"]
             },
             {
               "name": "Heading 2",
@@ -28,7 +29,8 @@
                 "font": "var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2)",
                 "color": "var(--sky-theme-color-text-heading)"
               },
-              "deprecatedClassNames": ["sky-font-heading-2"]
+              "deprecatedClassNames": ["sky-font-heading-2"],
+              "obsoleteClassNames": ["sky-section-heading"]
             },
             {
               "name": "Heading 3",
@@ -38,7 +40,8 @@
                 "font": "var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3)",
                 "color": "var(--sky-theme-color-text-heading)"
               },
-              "deprecatedClassNames": ["sky-font-heading-3"]
+              "deprecatedClassNames": ["sky-font-heading-3"],
+              "obsoleteClassNames": ["sky-subsection-heading"]
             },
             {
               "name": "Heading 4",
@@ -83,7 +86,8 @@
                 "font": "var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m)",
                 "color": "var(--sky-theme-color-text-default)"
               },
-              "deprecatedClassNames": ["sky-font-emphasized"]
+              "deprecatedClassNames": ["sky-font-emphasized"],
+              "obsoleteClassNames": ["sky-emphasized"]
             },
             {
               "name": "Medium deemphasized",
@@ -93,7 +97,8 @@
                 "font": "var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m)",
                 "color": "var(--sky-theme-color-text-deemphasized)"
               },
-              "deprecatedClassNames": ["sky-font-deemphasized"]
+              "deprecatedClassNames": ["sky-font-deemphasized"],
+              "obsoleteClassNames": ["sky-deemphasized"]
             },
             {
               "name": "Small body",
@@ -168,6 +173,34 @@
           ]
         },
         {
+          "name": "Lists",
+          "demoMetadata": {
+            "type": "none"
+          },
+          "styles": [
+            {
+              "name": "Unstyled list",
+              "className": "sky-theme-list-unstyled",
+              "description": "Use for lists of unordered items without bullet points to have correct semantic structure.",
+              "properties": {
+                "list-style": "none",
+                "padding-left": "0",
+                "margin-top": "0",
+                "margin-bottom": "0"
+              },
+              "deprecatedClassNames": ["sky-list-unstyled"]
+            },
+            {
+              "name": "Unstyled list li",
+              "excludeFromDocs": true,
+              "selectors": [".sky-theme-list-unstyled li:not(:last-of-type)"],
+              "properties": {
+                "padding-bottom": "var(--sky-theme-space-stacked-xs)"
+              }
+            }
+          ]
+        },
+        {
           "name": "Display text",
           "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
           "styles": [
@@ -193,7 +226,8 @@
               "properties": {
                 "font": "var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3)"
               },
-              "deprecatedClassNames": ["sky-font-display-3"]
+              "deprecatedClassNames": ["sky-font-display-3"],
+              "obsoleteClassNames": ["sky-headline"]
             },
             {
               "name": "Display 4",
@@ -227,6 +261,15 @@
                 "letter-spacing": "var(--sky-theme-font-letter_spacing-hint-s)",
                 "color": "var(--sky-theme-color-text-deemphasized)"
               }
+            }
+          ]
+        },
+        {
+          "name": "Miscellaneous",
+          "styles": [
+            {
+              "name": "Data label",
+              "description": "Use for labeling data visualizations and charts."
             }
           ]
         }
