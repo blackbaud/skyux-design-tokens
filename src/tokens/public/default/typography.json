@@ -3,90 +3,90 @@
     "font": {
       "family": {
         "primary": {
-          "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+          "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
           "$type": "fontFamilies"
         },
         "heading": {
           "1": {
-            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$value": "BLKB Sans Condensed, Helvetica Neue Condensed, Arial Narrow",
             "$type": "fontFamilies"
           },
           "2": {
-            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$value": "BLKB Sans Condensed, Helvetica Neue Condensed, Arial Narrow",
             "$type": "fontFamilies"
           },
           "3": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           },
           "4": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           },
           "5": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           }
         },
         "body": {
           "m": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           },
           "emphasized": {
             "m": {
-              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
               "$type": "fontFamilies"
             },
             "s": {
-              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
               "$type": "fontFamilies"
             }
           },
           "deemphasized": {
             "m": {
-              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
               "$type": "fontFamilies"
             },
             "s": {
-              "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+              "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
               "$type": "fontFamilies"
             }
           },
           "s": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           },
           "l": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           }
         },
         "display": {
           "1": {
-            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$value": "BLKB Sans Condensed, Helvetica Neue Condensed, Arial Narrow",
             "$type": "fontFamilies"
           },
           "2": {
-            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$value": "BLKB Sans Condensed, Helvetica Neue Condensed, Arial Narrow",
             "$type": "fontFamilies"
           },
           "3": {
-            "$value": "\"BLKB Sans Condensed\", \"Helvetica Neue Condensed\", \"Arial Narrow\"",
+            "$value": "BLKB Sans Condensed, Helvetica Neue Condensed, Arial Narrow",
             "$type": "fontFamilies"
           },
           "4": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           }
         },
         "hint": {
           "m": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           },
           "s": {
-            "$value": "\"BLKB Sans\", \"Helvetica Neue\", Arial, sans-serif",
+            "$value": "BLKB Sans, Helvetica Neue, Arial, sans-serif",
             "$type": "fontFamilies"
           }
         }

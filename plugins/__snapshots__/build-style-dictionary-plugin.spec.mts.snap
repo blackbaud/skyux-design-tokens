@@ -3516,25 +3516,25 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-space-stacked-xxl: 40px;
 }
 .sky-theme-default {
-  --sky-theme-font-family-body-deemphasized-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-body-deemphasized-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-body-emphasized-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-body-emphasized-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-body-l: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-body-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-body-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-display-1: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
-  --sky-theme-font-family-display-2: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
-  --sky-theme-font-family-display-3: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
-  --sky-theme-font-family-display-4: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-heading-1: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
-  --sky-theme-font-family-heading-2: '"BLKB Sans Condensed"', '"Helvetica Neue Condensed"', '"Arial Narrow"';
-  --sky-theme-font-family-heading-3: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-heading-4: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-heading-5: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-hint-m: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-hint-s: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
-  --sky-theme-font-family-primary: '"BLKB Sans"', '"Helvetica Neue"', Arial, sans-serif;
+  --sky-theme-font-family-body-deemphasized-m: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-body-deemphasized-s: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-body-emphasized-m: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-body-emphasized-s: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-body-l: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-body-m: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-body-s: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-display-1: 'BLKB Sans Condensed', 'Helvetica Neue Condensed', 'Arial Narrow';
+  --sky-theme-font-family-display-2: 'BLKB Sans Condensed', 'Helvetica Neue Condensed', 'Arial Narrow';
+  --sky-theme-font-family-display-3: 'BLKB Sans Condensed', 'Helvetica Neue Condensed', 'Arial Narrow';
+  --sky-theme-font-family-display-4: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-heading-1: 'BLKB Sans Condensed', 'Helvetica Neue Condensed', 'Arial Narrow';
+  --sky-theme-font-family-heading-2: 'BLKB Sans Condensed', 'Helvetica Neue Condensed', 'Arial Narrow';
+  --sky-theme-font-family-heading-3: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-heading-4: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-heading-5: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-hint-m: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-hint-s: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
+  --sky-theme-font-family-primary: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
   --sky-theme-font-letter_spacing-hint-s: inherit;
   --sky-theme-font-line_height-body-deemphasized-m: inherit;
   --sky-theme-font-line_height-body-deemphasized-s: inherit;
@@ -3881,51 +3881,87 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   padding-left: var(--sky-theme-space-conditional-input);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-1 {
-  font: var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1);
+  font-weight: var(--sky-theme-font-weight-heading-1);
+  font-size: var(--sky-theme-font-size-heading-1);
+  line-height: var(--sky-theme-font-line_height-heading-1);
+  font-family: var(--sky-theme-font-family-heading-1);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-2 {
-  font: var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2);
+  font-weight: var(--sky-theme-font-weight-heading-2);
+  font-size: var(--sky-theme-font-size-heading-2);
+  line-height: var(--sky-theme-font-line_height-heading-2);
+  font-family: var(--sky-theme-font-family-heading-2);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-3 {
-  font: var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3);
+  font-weight: var(--sky-theme-font-weight-heading-3);
+  font-size: var(--sky-theme-font-size-heading-3);
+  line-height: var(--sky-theme-font-line_height-heading-3);
+  font-family: var(--sky-theme-font-family-heading-3);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-4 {
-  font: var(--sky-theme-font-weight-heading-4) var(--sky-theme-font-size-heading-4)/var(--sky-theme-font-line_height-heading-4) var(--sky-theme-font-family-heading-4);
+  font-weight: var(--sky-theme-font-weight-heading-4);
+  font-size: var(--sky-theme-font-size-heading-4);
+  line-height: var(--sky-theme-font-line_height-heading-4);
+  font-family: var(--sky-theme-font-family-heading-4);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-heading-5 {
-  font: var(--sky-theme-font-weight-heading-5) var(--sky-theme-font-size-heading-5)/var(--sky-theme-font-line_height-heading-5) var(--sky-theme-font-family-heading-5);
+  font-weight: var(--sky-theme-font-weight-heading-5);
+  font-size: var(--sky-theme-font-size-heading-5);
+  line-height: var(--sky-theme-font-line_height-heading-5);
+  font-family: var(--sky-theme-font-family-heading-5);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-m {
-  font: var(--sky-theme-font-weight-body-m) var(--sky-theme-font-size-body-m)/var(--sky-theme-font-line_height-body-m) var(--sky-theme-font-family-body-m);
+  font-weight: var(--sky-theme-font-weight-body-m);
+  font-size: var(--sky-theme-font-size-body-m);
+  line-height: var(--sky-theme-font-line_height-body-m);
+  font-family: var(--sky-theme-font-family-body-m);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-emphasized-m {
-  font: var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m);
+  font-weight: var(--sky-theme-font-weight-body-emphasized-m);
+  font-size: var(--sky-theme-font-size-body-emphasized-m);
+  line-height: var(--sky-theme-font-line_height-body-emphasized-m);
+  font-family: var(--sky-theme-font-family-body-emphasized-m);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-deemphasized-m {
-  font: var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m);
+  font-weight: var(--sky-theme-font-weight-body-deemphasized-m);
+  font-size: var(--sky-theme-font-size-body-deemphasized-m);
+  line-height: var(--sky-theme-font-line_height-body-deemphasized-m);
+  font-family: var(--sky-theme-font-family-body-deemphasized-m);
   color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-s {
-  font: var(--sky-theme-font-weight-body-s) var(--sky-theme-font-size-body-s)/var(--sky-theme-font-line_height-body-s) var(--sky-theme-font-family-body-s);
+  font-weight: var(--sky-theme-font-weight-body-s);
+  font-size: var(--sky-theme-font-size-body-s);
+  line-height: var(--sky-theme-font-line_height-body-s);
+  font-family: var(--sky-theme-font-family-body-s);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-emphasized-s {
-  font: var(--sky-theme-font-weight-body-emphasized-s) var(--sky-theme-font-size-body-emphasized-s)/var(--sky-theme-font-line_height-body-emphasized-s) var(--sky-theme-font-family-body-emphasized-s);
+  font-weight: var(--sky-theme-font-weight-body-emphasized-s);
+  font-size: var(--sky-theme-font-size-body-emphasized-s);
+  line-height: var(--sky-theme-font-line_height-body-emphasized-s);
+  font-family: var(--sky-theme-font-family-body-emphasized-s);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-deemphasized-s {
-  font: var(--sky-theme-font-weight-body-deemphasized-s) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s);
+  font-weight: var(--sky-theme-font-weight-body-deemphasized-s);
+  font-size: var(--sky-theme-font-size-body-deemphasized-s);
+  line-height: var(--sky-theme-font-line_height-body-deemphasized-s);
+  font-family: var(--sky-theme-font-family-body-deemphasized-s);
   color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-body-l {
-  font: var(--sky-theme-font-weight-body-l) var(--sky-theme-font-size-body-l)/var(--sky-theme-font-line_height-body-l) var(--sky-theme-font-family-body-l);
+  font-weight: var(--sky-theme-font-weight-body-l);
+  font-size: var(--sky-theme-font-size-body-l);
+  line-height: var(--sky-theme-font-line_height-body-l);
+  font-family: var(--sky-theme-font-family-body-l);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-modern.sky-theme-brand-base p {
@@ -3947,23 +3983,41 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   padding-bottom: var(--sky-theme-space-stacked-xs);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-1 {
-  font: var(--sky-theme-font-weight-display-1) var(--sky-theme-font-size-display-1)/var(--sky-theme-font-line_height-display-1) var(--sky-theme-font-family-display-1);
+  font-weight: var(--sky-theme-font-weight-display-1);
+  font-size: var(--sky-theme-font-size-display-1);
+  line-height: var(--sky-theme-font-line_height-display-1);
+  font-family: var(--sky-theme-font-family-display-1);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-2 {
-  font: var(--sky-theme-font-weight-display-2) var(--sky-theme-font-size-display-2)/var(--sky-theme-font-line_height-display-2) var(--sky-theme-font-family-display-2);
+  font-weight: var(--sky-theme-font-weight-display-2);
+  font-size: var(--sky-theme-font-size-display-2);
+  line-height: var(--sky-theme-font-line_height-display-2);
+  font-family: var(--sky-theme-font-family-display-2);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-3 {
-  font: var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3);
+  font-weight: var(--sky-theme-font-weight-display-3);
+  font-size: var(--sky-theme-font-size-display-3);
+  line-height: var(--sky-theme-font-line_height-display-3);
+  font-family: var(--sky-theme-font-family-display-3);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-display-4 {
-  font: var(--sky-theme-font-weight-display-4) var(--sky-theme-font-size-display-4)/var(--sky-theme-font-line_height-display-4) var(--sky-theme-font-family-display-4);
+  font-weight: var(--sky-theme-font-weight-display-4);
+  font-size: var(--sky-theme-font-size-display-4);
+  line-height: var(--sky-theme-font-line_height-display-4);
+  font-family: var(--sky-theme-font-family-display-4);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-hint-m {
-  font: var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m);
+  font-style: var(--sky-theme-font-style-hint-m-style);
+  font-size: var(--sky-theme-font-size-hint-m);
+  line-height: var(--sky-theme-font-line_height-hint-m);
+  font-family: var(--sky-theme-font-family-hint-m);
   color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-modern.sky-theme-brand-base .sky-theme-font-hint-s {
-  font: var(--sky-theme-font-style-hint-s-style) var(--sky-theme-font-size-hint-s)/var(--sky-theme-font-line_height-hint-s) var(--sky-theme-font-family-hint-s);
+  font-style: var(--sky-theme-font-style-hint-s-style);
+  font-size: var(--sky-theme-font-size-hint-s);
+  line-height: var(--sky-theme-font-line_height-hint-s);
+  font-family: var(--sky-theme-font-family-hint-s);
   letter-spacing: var(--sky-theme-font-letter_spacing-hint-s);
   color: var(--sky-theme-color-text-deemphasized);
 }
@@ -4352,51 +4406,87 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   padding-left: var(--sky-theme-space-conditional-input);
 }
 .sky-theme-default .sky-theme-font-heading-1 {
-  font: var(--sky-theme-font-weight-heading-1) var(--sky-theme-font-size-heading-1)/var(--sky-theme-font-line_height-heading-1) var(--sky-theme-font-family-heading-1);
+  font-weight: var(--sky-theme-font-weight-heading-1);
+  font-size: var(--sky-theme-font-size-heading-1);
+  line-height: var(--sky-theme-font-line_height-heading-1);
+  font-family: var(--sky-theme-font-family-heading-1);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-default .sky-theme-font-heading-2 {
-  font: var(--sky-theme-font-weight-heading-2) var(--sky-theme-font-size-heading-2)/var(--sky-theme-font-line_height-heading-2) var(--sky-theme-font-family-heading-2);
+  font-weight: var(--sky-theme-font-weight-heading-2);
+  font-size: var(--sky-theme-font-size-heading-2);
+  line-height: var(--sky-theme-font-line_height-heading-2);
+  font-family: var(--sky-theme-font-family-heading-2);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-default .sky-theme-font-heading-3 {
-  font: var(--sky-theme-font-weight-heading-3) var(--sky-theme-font-size-heading-3)/var(--sky-theme-font-line_height-heading-3) var(--sky-theme-font-family-heading-3);
+  font-weight: var(--sky-theme-font-weight-heading-3);
+  font-size: var(--sky-theme-font-size-heading-3);
+  line-height: var(--sky-theme-font-line_height-heading-3);
+  font-family: var(--sky-theme-font-family-heading-3);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-default .sky-theme-font-heading-4 {
-  font: var(--sky-theme-font-weight-heading-4) var(--sky-theme-font-size-heading-4)/var(--sky-theme-font-line_height-heading-4) var(--sky-theme-font-family-heading-4);
+  font-weight: var(--sky-theme-font-weight-heading-4);
+  font-size: var(--sky-theme-font-size-heading-4);
+  line-height: var(--sky-theme-font-line_height-heading-4);
+  font-family: var(--sky-theme-font-family-heading-4);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-default .sky-theme-font-heading-5 {
-  font: var(--sky-theme-font-weight-heading-5) var(--sky-theme-font-size-heading-5)/var(--sky-theme-font-line_height-heading-5) var(--sky-theme-font-family-heading-5);
+  font-weight: var(--sky-theme-font-weight-heading-5);
+  font-size: var(--sky-theme-font-size-heading-5);
+  line-height: var(--sky-theme-font-line_height-heading-5);
+  font-family: var(--sky-theme-font-family-heading-5);
   color: var(--sky-theme-color-text-heading);
 }
 .sky-theme-default .sky-theme-font-body-m {
-  font: var(--sky-theme-font-weight-body-m) var(--sky-theme-font-size-body-m)/var(--sky-theme-font-line_height-body-m) var(--sky-theme-font-family-body-m);
+  font-weight: var(--sky-theme-font-weight-body-m);
+  font-size: var(--sky-theme-font-size-body-m);
+  line-height: var(--sky-theme-font-line_height-body-m);
+  font-family: var(--sky-theme-font-family-body-m);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-default .sky-theme-font-body-emphasized-m {
-  font: var(--sky-theme-font-weight-body-emphasized-m) var(--sky-theme-font-size-body-emphasized-m)/var(--sky-theme-font-line_height-body-emphasized-m) var(--sky-theme-font-family-body-emphasized-m);
+  font-weight: var(--sky-theme-font-weight-body-emphasized-m);
+  font-size: var(--sky-theme-font-size-body-emphasized-m);
+  line-height: var(--sky-theme-font-line_height-body-emphasized-m);
+  font-family: var(--sky-theme-font-family-body-emphasized-m);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-default .sky-theme-font-body-deemphasized-m {
-  font: var(--sky-theme-font-weight-body-deemphasized-m) var(--sky-theme-font-size-body-deemphasized-m)/var(--sky-theme-font-line_height-body-deemphasized-m) var(--sky-theme-font-family-body-deemphasized-m);
+  font-weight: var(--sky-theme-font-weight-body-deemphasized-m);
+  font-size: var(--sky-theme-font-size-body-deemphasized-m);
+  line-height: var(--sky-theme-font-line_height-body-deemphasized-m);
+  font-family: var(--sky-theme-font-family-body-deemphasized-m);
   color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-default .sky-theme-font-body-s {
-  font: var(--sky-theme-font-weight-body-s) var(--sky-theme-font-size-body-s)/var(--sky-theme-font-line_height-body-s) var(--sky-theme-font-family-body-s);
+  font-weight: var(--sky-theme-font-weight-body-s);
+  font-size: var(--sky-theme-font-size-body-s);
+  line-height: var(--sky-theme-font-line_height-body-s);
+  font-family: var(--sky-theme-font-family-body-s);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-default .sky-theme-font-body-emphasized-s {
-  font: var(--sky-theme-font-weight-body-emphasized-s) var(--sky-theme-font-size-body-emphasized-s)/var(--sky-theme-font-line_height-body-emphasized-s) var(--sky-theme-font-family-body-emphasized-s);
+  font-weight: var(--sky-theme-font-weight-body-emphasized-s);
+  font-size: var(--sky-theme-font-size-body-emphasized-s);
+  line-height: var(--sky-theme-font-line_height-body-emphasized-s);
+  font-family: var(--sky-theme-font-family-body-emphasized-s);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-default .sky-theme-font-body-deemphasized-s {
-  font: var(--sky-theme-font-weight-body-deemphasized-s) var(--sky-theme-font-size-body-deemphasized-s)/var(--sky-theme-font-line_height-body-deemphasized-s) var(--sky-theme-font-family-body-deemphasized-s);
+  font-weight: var(--sky-theme-font-weight-body-deemphasized-s);
+  font-size: var(--sky-theme-font-size-body-deemphasized-s);
+  line-height: var(--sky-theme-font-line_height-body-deemphasized-s);
+  font-family: var(--sky-theme-font-family-body-deemphasized-s);
   color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-default .sky-theme-font-body-l {
-  font: var(--sky-theme-font-weight-body-l) var(--sky-theme-font-size-body-l)/var(--sky-theme-font-line_height-body-l) var(--sky-theme-font-family-body-l);
+  font-weight: var(--sky-theme-font-weight-body-l);
+  font-size: var(--sky-theme-font-size-body-l);
+  line-height: var(--sky-theme-font-line_height-body-l);
+  font-family: var(--sky-theme-font-family-body-l);
   color: var(--sky-theme-color-text-default);
 }
 .sky-theme-default p {
@@ -4418,23 +4508,41 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   padding-bottom: var(--sky-theme-space-stacked-xs);
 }
 .sky-theme-default .sky-theme-font-display-1 {
-  font: var(--sky-theme-font-weight-display-1) var(--sky-theme-font-size-display-1)/var(--sky-theme-font-line_height-display-1) var(--sky-theme-font-family-display-1);
+  font-weight: var(--sky-theme-font-weight-display-1);
+  font-size: var(--sky-theme-font-size-display-1);
+  line-height: var(--sky-theme-font-line_height-display-1);
+  font-family: var(--sky-theme-font-family-display-1);
 }
 .sky-theme-default .sky-theme-font-display-2 {
-  font: var(--sky-theme-font-weight-display-2) var(--sky-theme-font-size-display-2)/var(--sky-theme-font-line_height-display-2) var(--sky-theme-font-family-display-2);
+  font-weight: var(--sky-theme-font-weight-display-2);
+  font-size: var(--sky-theme-font-size-display-2);
+  line-height: var(--sky-theme-font-line_height-display-2);
+  font-family: var(--sky-theme-font-family-display-2);
 }
 .sky-theme-default .sky-theme-font-display-3 {
-  font: var(--sky-theme-font-weight-display-3) var(--sky-theme-font-size-display-3)/var(--sky-theme-font-line_height-display-3) var(--sky-theme-font-family-display-3);
+  font-weight: var(--sky-theme-font-weight-display-3);
+  font-size: var(--sky-theme-font-size-display-3);
+  line-height: var(--sky-theme-font-line_height-display-3);
+  font-family: var(--sky-theme-font-family-display-3);
 }
 .sky-theme-default .sky-theme-font-display-4 {
-  font: var(--sky-theme-font-weight-display-4) var(--sky-theme-font-size-display-4)/var(--sky-theme-font-line_height-display-4) var(--sky-theme-font-family-display-4);
+  font-weight: var(--sky-theme-font-weight-display-4);
+  font-size: var(--sky-theme-font-size-display-4);
+  line-height: var(--sky-theme-font-line_height-display-4);
+  font-family: var(--sky-theme-font-family-display-4);
 }
 .sky-theme-default .sky-theme-font-hint-m {
-  font: var(--sky-theme-font-style-hint-m-style) var(--sky-theme-font-size-hint-m)/var(--sky-theme-font-line_height-hint-m) var(--sky-theme-font-family-hint-m);
+  font-style: var(--sky-theme-font-style-hint-m-style);
+  font-size: var(--sky-theme-font-size-hint-m);
+  line-height: var(--sky-theme-font-line_height-hint-m);
+  font-family: var(--sky-theme-font-family-hint-m);
   color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-default .sky-theme-font-hint-s {
-  font: var(--sky-theme-font-style-hint-s-style) var(--sky-theme-font-size-hint-s)/var(--sky-theme-font-line_height-hint-s) var(--sky-theme-font-family-hint-s);
+  font-style: var(--sky-theme-font-style-hint-s-style);
+  font-size: var(--sky-theme-font-size-hint-s);
+  line-height: var(--sky-theme-font-line_height-hint-s);
+  font-family: var(--sky-theme-font-family-hint-s);
   letter-spacing: var(--sky-theme-font-letter_spacing-hint-s);
   color: var(--sky-theme-color-text-deemphasized);
 }
