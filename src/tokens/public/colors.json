@@ -7,7 +7,7 @@
           "$type": "color"
         },
         "container": {
-          "base": {
+          "default": {
             "$value": "{color.background.container.base}",
             "$type": "color"
           },
@@ -67,7 +67,7 @@
       },
       "border": {
         "container": {
-          "base": {
+          "default": {
             "$value": "{color.border.container.base}",
             "$type": "color"
           }
@@ -77,11 +77,11 @@
           "$type": "color"
         },
         "divider": {
-          "$value": "{color.border.divider}",
-          "$type": "color"
-        },
-        "separator": {
-          "row": {
+          "default": {
+            "$value": "{color.border.divider}",
+            "$type": "color"
+          },
+          "soft": {
             "$value": "{color.border.separator.row}",
             "$type": "color"
           }

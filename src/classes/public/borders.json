@@ -11,10 +11,10 @@
           "description": "A border that wraps around a container and separates it from its surroundings.",
           "styles": [
             {
-              "name": "Container base",
-              "className": "sky-theme-border-container-base",
+              "name": "Container default",
+              "className": "sky-theme-border-container-default",
               "properties": {
-                "border": "var(--sky-theme-border-container-base)"
+                "border": "var(--sky-theme-border-container-default)"
               },
               "deprecatedClassNames": ["sky-border-dark", "sky-border-light"]
             }
@@ -25,35 +25,35 @@
           "description": "Borders that separate a page into heterogeneous sections or areas.",
           "groups": [
             {
-              "name": "Divider base",
+              "name": "Divider default",
               "styles": [
                 {
-                  "name": "Divider base top",
-                  "className": "sky-theme-border-divider-top",
+                  "name": "Divider default top",
+                  "className": "sky-theme-border-divider-default-top",
                   "properties": {
-                    "border-top": "var(--sky-theme-border-divider-base)"
+                    "border-top": "var(--sky-theme-border-divider-default)"
                   }
                 },
                 {
-                  "name": "Divider base right",
-                  "className": "sky-theme-border-divider-right",
+                  "name": "Divider default right",
+                  "className": "sky-theme-border-divider-default-right",
                   "properties": {
-                    "border-right": "var(--sky-theme-border-divider-base)"
+                    "border-right": "var(--sky-theme-border-divider-default)"
                   }
                 },
                 {
-                  "name": "Divider base bottom",
-                  "className": "sky-theme-border-divider-bottom",
+                  "name": "Divider default bottom",
+                  "className": "sky-theme-border-divider-default-bottom",
                   "properties": {
-                    "border-bottom": "var(--sky-theme-border-divider-base)"
+                    "border-bottom": "var(--sky-theme-border-divider-default)"
                   },
                   "deprecatedClassNames": ["sky-border-bottom-dark"]
                 },
                 {
-                  "name": "Divider base left",
-                  "className": "sky-theme-border-divider-left",
+                  "name": "Divider default left",
+                  "className": "sky-theme-border-divider-default-left",
                   "properties": {
-                    "border-left": "var(--sky-theme-border-divider-base)"
+                    "border-left": "var(--sky-theme-border-divider-default)"
                   }
                 }
               ]

@@ -4,7 +4,7 @@
       "background": {
         "page": { "$value": "#ffffff", "$type": "color" },
         "container": {
-          "base": { "$value": "#ffffff", "$type": "color" },
+          "default": { "$value": "#ffffff", "$type": "color" },
           "dimmed": { "$value": "#eeeeef", "$type": "color" },
           "backdrop": { "$value": "#eeeeef", "$type": "color" },
           "danger": { "$value": "#f7a08f", "$type": "color" },
@@ -25,12 +25,12 @@
       },
       "border": {
         "container": {
-          "base": { "$value": "#cdcfd2", "$type": "color" }
+          "default": { "$value": "#cdcfd2", "$type": "color" }
         },
         "disabled": { "$value": "#cdcfd2", "$type": "color" },
-        "divider": { "$value": "#cdcfd2", "$type": "color" },
-        "separator": {
-          "row": { "$value": "#cdcfd2", "$type": "color" }
+        "divider": {
+          "default": { "$value": "#cdcfd2", "$type": "color" },
+          "soft": { "$value": "#cdcfd2", "$type": "color" }
         },
         "danger": { "$value": "#ef4044", "$type": "color" },
         "info": { "$value": "#00b4f1", "$type": "color" },
