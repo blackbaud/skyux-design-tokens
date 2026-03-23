@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [5.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.3.0...5.4.0) (2026-03-23)
+
+
+### Features
+
+* public typography fixes, don't namespace public classes ([#333](https://github.com/blackbaud/skyux-design-tokens/issues/333)) ([ac81208](https://github.com/blackbaud/skyux-design-tokens/commit/ac81208177182f400df09fa9f2956a316d5e1fb3))
+* update base names to default ([#331](https://github.com/blackbaud/skyux-design-tokens/issues/331)) ([9a98530](https://github.com/blackbaud/skyux-design-tokens/commit/9a98530a6cf8c5aecd65b37888c5bffbdd5140fc))
+
 ## [5.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.2.0...5.3.0) (2026-03-19)
 
 
