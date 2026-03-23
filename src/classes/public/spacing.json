@@ -446,7 +446,8 @@
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-m)"
                   },
-                  "deprecatedClassNames": ["sky-padding-even-md"]
+                  "deprecatedClassNames": ["sky-padding-even-md"],
+                  "obsoleteClassNames": ["sky-padding-even-large"]
                 },
                 {
                   "name": "Inset balanced padding L",
@@ -461,8 +462,7 @@
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-xl)"
                   },
-                  "deprecatedClassNames": ["sky-padding-even-xl"],
-                  "obsoleteClassNames": ["sky-padding-even-large"]
+                  "deprecatedClassNames": ["sky-padding-even-xl"]
                 }
               ]
             }
