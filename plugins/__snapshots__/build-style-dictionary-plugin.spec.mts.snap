@@ -4008,6 +4008,7 @@ em {
 }
 .sky-theme-font-hint-m {
   font-style: var(--sky-theme-font-style-hint-m-style);
+  font-weight: var(--sky-theme-font-style-hint-m-weight);
   font-size: var(--sky-theme-font-size-hint-m);
   line-height: var(--sky-theme-font-line_height-hint-m);
   font-family: var(--sky-theme-font-family-hint-m);
@@ -4015,6 +4016,7 @@ em {
 }
 .sky-theme-font-hint-s {
   font-style: var(--sky-theme-font-style-hint-s-style);
+  font-weight: var(--sky-theme-font-style-hint-s-weight);
   font-size: var(--sky-theme-font-size-hint-s);
   line-height: var(--sky-theme-font-line_height-hint-s);
   font-family: var(--sky-theme-font-family-hint-s);
