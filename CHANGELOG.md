@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [5.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.4.0...5.5.0) (2026-03-25)
+
+
+### Features
+
+* remove peer dependency; add heading tags, additional metadata ([#336](https://github.com/blackbaud/skyux-design-tokens/issues/336)) ([25fa826](https://github.com/blackbaud/skyux-design-tokens/commit/25fa826e180efffca288bebe031041cc755c0dc6))
+* update obsolete mapping for padding class ([#334](https://github.com/blackbaud/skyux-design-tokens/issues/334)) ([beb8562](https://github.com/blackbaud/skyux-design-tokens/commit/beb85623195c55c85d1ee817bb81f63ce16b5266))
+
 ## [5.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.3.0...5.4.0) (2026-03-23)
 
 
