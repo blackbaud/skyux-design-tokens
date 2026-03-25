@@ -276,23 +276,23 @@
       "line_height": {
         "heading": {
           "1": {
-            "$value": "inherit",
+            "$value": "1.1",
             "$type": "lineHeights"
           },
           "2": {
-            "$value": "inherit",
+            "$value": "1.1",
             "$type": "lineHeights"
           },
           "3": {
-            "$value": "inherit",
+            "$value": "1.1",
             "$type": "lineHeights"
           },
           "4": {
-            "$value": "inherit",
+            "$value": "1.1",
             "$type": "lineHeights"
           },
           "5": {
-            "$value": "inherit",
+            "$value": "1.1",
             "$type": "lineHeights"
           }
         },
