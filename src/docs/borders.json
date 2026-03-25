@@ -145,7 +145,8 @@
             {
               "name": "Pill border radius",
               "customProperty": "--sky-theme-border-radius-pill",
-              "description": "The border radius for heavily rounded rectangles like labels."
+              "description": "The border radius for heavily rounded rectangles like labels.",
+              "demoMetadata": { "height": "1.25rem" }
             },
             {
               "name": "Round border radius",

@@ -13,6 +13,7 @@
             {
               "name": "Heading 1",
               "className": "sky-theme-font-heading-1",
+              "selectors": ["h1"],
               "description": "Use for page titles and record names. Use only one heading 1 element per page.",
               "properties": {
                 "font-weight": "var(--sky-theme-font-weight-heading-1)",
@@ -27,6 +28,7 @@
             {
               "name": "Heading 2",
               "className": "sky-theme-font-heading-2",
+              "selectors": ["h2"],
               "description": "Use for main sections and container headings.",
               "properties": {
                 "font-weight": "var(--sky-theme-font-weight-heading-2)",
@@ -41,6 +43,7 @@
             {
               "name": "Heading 3",
               "className": "sky-theme-font-heading-3",
+              "selectors": ["h3"],
               "description": "Use for subsections within containers and within heading 2 sections.",
               "properties": {
                 "font-weight": "var(--sky-theme-font-weight-heading-3)",
@@ -55,6 +58,7 @@
             {
               "name": "Heading 4",
               "className": "sky-theme-font-heading-4",
+              "selectors": ["h4"],
               "description": "Use for subsections within heading 3 sections.",
               "properties": {
                 "font-weight": "var(--sky-theme-font-weight-heading-4)",
@@ -68,6 +72,7 @@
             {
               "name": "Heading 5",
               "className": "sky-theme-font-heading-5",
+              "selectors": ["h5"],
               "description": "Use for subsections within heading 4 sections.",
               "properties": {
                 "font-weight": "var(--sky-theme-font-weight-heading-5)",
@@ -177,7 +182,9 @@
         {
           "name": "Paragraphs",
           "demoMetadata": {
-            "type": "element"
+            "type": "text",
+            "renderAs": "element",
+            "width": "6rem"
           },
           "styles": [
             {
@@ -186,6 +193,10 @@
               "description": "Use paragraphs to give one or more complete sentences reading line-height.",
               "properties": {
                 "line-height": "var(--sky-theme-font-line_height-paragraph-m)"
+              },
+              "demoMetadata": {
+                "text": "They are volunteers.",
+                "height": "3rem"
               }
             },
             {
@@ -194,6 +205,9 @@
               "description": "Use <strong> to create visual and semantic importance on a word or words.",
               "properties": {
                 "font-weight": "var(--sky-theme-font-style-strong)"
+              },
+              "demoMetadata": {
+                "text": "Strong"
               }
             },
             {
@@ -202,6 +216,9 @@
               "description": "Use <em> to create reading and semantic emphasis or stress on a word or words.",
               "properties": {
                 "font-style": "var(--sky-theme-font-style-em-style)"
+              },
+              "demoMetadata": {
+                "text": "Italicized"
               }
             }
           ]
@@ -319,6 +336,9 @@
         },
         {
           "name": "Deprecated typography",
+          "demoMetadata": {
+            "type": "none"
+          },
           "styles": [
             {
               "name": "Data label",

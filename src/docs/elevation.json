@@ -3,7 +3,8 @@
     {
       "groupName": "Elevation",
       "demoMetadata": {
-        "type": "elevation"
+        "type": "elevation",
+        "background": "--sky-theme-color-background-container-default"
       },
       "groups": [
         {
@@ -12,7 +13,7 @@
             {
               "name": "Raised",
               "customProperty": "--sky-theme-elevation-raised-100",
-              "description": "For slightly raised elevation to give a subtle emphasis to elements on the page background. Examples: alerts and avatars"
+              "description": "For slightly raised elevation to give a subtle emphasis to elements on the page background.\n\nExamples: alerts and avatars"
             }
           ]
         },
@@ -22,7 +23,7 @@
             {
               "name": "Overflow",
               "customProperty": "--sky-theme-elevation-overflow",
-              "description": "For elements that remain fixed, staying in view on scroll, to appear above scrolling content. Examples: back to top and summary action bar"
+              "description": "For elements that remain fixed, staying in view on scroll, to appear above scrolling content.\n\nExamples: back to top and summary action bar"
             }
           ]
         },
@@ -33,17 +34,17 @@
             {
               "name": "Overlay 100",
               "customProperty": "--sky-theme-elevation-overlay-100",
-              "description": "For a small overlay elevation on temporary elements that are easily dismissed. Examples: popovers, dropdown menus, and picker inputs"
+              "description": "For a small overlay elevation on temporary elements that are easily dismissed.\n\nExamples: popovers, dropdown menus, and picker inputs"
             },
             {
               "name": "Overlay 200",
               "customProperty": "--sky-theme-elevation-overlay-200",
-              "description": "For an overlay elevation that gives more emphasis to larger elements that are used in conjunction with the main page. Example: flyouts"
+              "description": "For an overlay elevation that gives more emphasis to larger elements that are used in conjunction with the main page.\n\nExample: flyouts"
             },
             {
               "name": "Overlay 300",
               "customProperty": "--sky-theme-elevation-overlay-300",
-              "description": "For floating overlays that require clear visual separation. Use for interruptive elements. Examples: modals and toasts"
+              "description": "For floating overlays that require clear visual separation. Use for interruptive elements.\n\nExamples: modals and toasts"
             }
           ]
         }

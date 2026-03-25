@@ -3887,7 +3887,21 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   font-family: var(--sky-theme-font-family-heading-1);
   color: var(--sky-theme-color-text-heading);
 }
+h1 {
+  font-weight: var(--sky-theme-font-weight-heading-1);
+  font-size: var(--sky-theme-font-size-heading-1);
+  line-height: var(--sky-theme-font-line_height-heading-1);
+  font-family: var(--sky-theme-font-family-heading-1);
+  color: var(--sky-theme-color-text-heading);
+}
 .sky-theme-font-heading-2 {
+  font-weight: var(--sky-theme-font-weight-heading-2);
+  font-size: var(--sky-theme-font-size-heading-2);
+  line-height: var(--sky-theme-font-line_height-heading-2);
+  font-family: var(--sky-theme-font-family-heading-2);
+  color: var(--sky-theme-color-text-heading);
+}
+h2 {
   font-weight: var(--sky-theme-font-weight-heading-2);
   font-size: var(--sky-theme-font-size-heading-2);
   line-height: var(--sky-theme-font-line_height-heading-2);
@@ -3901,6 +3915,13 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   font-family: var(--sky-theme-font-family-heading-3);
   color: var(--sky-theme-color-text-heading);
 }
+h3 {
+  font-weight: var(--sky-theme-font-weight-heading-3);
+  font-size: var(--sky-theme-font-size-heading-3);
+  line-height: var(--sky-theme-font-line_height-heading-3);
+  font-family: var(--sky-theme-font-family-heading-3);
+  color: var(--sky-theme-color-text-heading);
+}
 .sky-theme-font-heading-4 {
   font-weight: var(--sky-theme-font-weight-heading-4);
   font-size: var(--sky-theme-font-size-heading-4);
@@ -3908,7 +3929,21 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   font-family: var(--sky-theme-font-family-heading-4);
   color: var(--sky-theme-color-text-heading);
 }
+h4 {
+  font-weight: var(--sky-theme-font-weight-heading-4);
+  font-size: var(--sky-theme-font-size-heading-4);
+  line-height: var(--sky-theme-font-line_height-heading-4);
+  font-family: var(--sky-theme-font-family-heading-4);
+  color: var(--sky-theme-color-text-heading);
+}
 .sky-theme-font-heading-5 {
+  font-weight: var(--sky-theme-font-weight-heading-5);
+  font-size: var(--sky-theme-font-size-heading-5);
+  line-height: var(--sky-theme-font-line_height-heading-5);
+  font-family: var(--sky-theme-font-family-heading-5);
+  color: var(--sky-theme-color-text-heading);
+}
+h5 {
   font-weight: var(--sky-theme-font-weight-heading-5);
   font-size: var(--sky-theme-font-size-heading-5);
   line-height: var(--sky-theme-font-line_height-heading-5);

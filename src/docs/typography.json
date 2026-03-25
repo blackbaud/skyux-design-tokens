@@ -18,7 +18,9 @@
           "groupName": "Headings",
           "description": "Use headings to introduce the page and sections of content within a page. Don't skip heading levels within the same page to clearly communicate the organization and hierarchy of the page content.",
           "demoMetadata": {
-            "type": "text-multi-prop"
+            "type": "text",
+            "renderAs": "multi-prop",
+            "color": "--sky-theme-color-text-heading"
           },
           "groups": [
             {
@@ -156,7 +158,8 @@
         {
           "groupName": "Body text",
           "demoMetadata": {
-            "type": "text-multi-prop"
+            "type": "text",
+            "renderAs": "multi-prop"
           },
           "groups": [
             {
@@ -347,7 +350,8 @@
           "groupName": "Display text",
           "description": "Use display text styles to call attention to key metrics or highlight a prominent, short message. Use the key info component which has the display text sizes and secondary label built-in.",
           "demoMetadata": {
-            "type": "text-multi-prop"
+            "type": "text",
+            "renderAs": "multi-prop"
           },
           "groups": [
             {
@@ -455,7 +459,8 @@
         {
           "groupName": "Paragraphs",
           "demoMetadata": {
-            "type": "text-single-prop"
+            "type": "text",
+            "width": "6rem"
           },
           "tokens": [
             {
@@ -463,7 +468,8 @@
               "customProperty": "--sky-theme-font-line_height-paragraph-m",
               "cssProperty": "line-height",
               "demoMetadata": {
-                "text": "They are volunteers."
+                "text": "They are volunteers.",
+                "height": "3rem"
               }
             },
             {
@@ -479,7 +485,9 @@
             {
               "groupName": "Stressed text",
               "demoMetadata": {
-                "type": "text-multi-prop"
+                "type": "text",
+                "renderAs": "multi-prop",
+                "text": "Italicized"
               },
               "tokens": [
                 {
@@ -499,7 +507,8 @@
         {
           "groupName": "Help text",
           "demoMetadata": {
-            "type": "text-multi-prop"
+            "type": "text",
+            "renderAs": "multi-prop"
           },
           "groups": [
             {
