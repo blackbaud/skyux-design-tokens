@@ -302,7 +302,8 @@
               "description": "The border radius for heavily rounded rectangles like labels.",
               "properties": {
                 "border-radius": "var(--sky-theme-border-radius-pill)"
-              }
+              },
+              "demoMetadata": { "height": "1.25rem" }
             },
             {
               "name": "Round border radius",

@@ -62,6 +62,7 @@
         {
           "name": "Borders",
           "description": "When using SKY UX classes, use specific border classes to include all properties of the border, including color. In rare cases, use the custom properties below to assign a border color directly.",
+          "demoMetadata": { "type": "border-color" },
           "styles": [
             {
               "name": "Disabled border",
