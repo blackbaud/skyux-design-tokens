@@ -61,7 +61,7 @@
         },
         {
           "name": "Borders",
-          "description": "When using SKY UX classes, use specific border classes to include all properties of the border, including color. In rare cases, use the custom properties below to assign a border color directly.",
+          "description": "When using SKY UX classes, use specific border classes to include all properties of the border, including color. In rare cases, use custom properties to assign a border color directly.",
           "demoMetadata": { "type": "border-color" },
           "styles": [
             {
@@ -76,7 +76,7 @@
         },
         {
           "name": "Text",
-          "description": "When using SKY UX classes, use specific typography classes to include all properties of the font, including color. In rare cases, use the custom properties below to assign a text color directly.",
+          "description": "When using SKY UX classes, use specific typography classes to include all properties of the font, including color. In rare cases, use custom properties to assign a text color directly.",
           "demoMetadata": { "type": "text-color" },
           "styles": [
             {
@@ -423,19 +423,19 @@
             },
             {
               "name": "Categorical palette",
-              "description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. Use the custom properties below to assign these colors directly."
+              "description": "Use the categorical palette to differentiate categories and data in charts and other data visualizations. Use custom properties to assign these colors directly."
             },
             {
               "name": "Sequential palette",
-              "description": "Use the sequential palette to indicate different magnitudes within a range. Use the custom properties below to assign these colors directly."
+              "description": "Use the sequential palette to indicate different magnitudes within a range. Use custom properties to assign these colors directly."
             },
             {
               "name": "Positive diverging palette",
-              "description": "Use the positive diverging palette in conjunction with the negative diverging palette to show positive and negative deviations from a central value. Use the custom properties below to assign these colors directly."
+              "description": "Use the positive diverging palette in conjunction with the negative diverging palette to show positive and negative deviations from a central value. Use custom properties to assign these colors directly."
             },
             {
               "name": "Negative diverging palette",
-              "description": "Use the negative diverging palette in conjunction with the positive diverging palette to show positive and negative deviations from a central value. Use the custom properties below to assign these colors directly."
+              "description": "Use the negative diverging palette in conjunction with the positive diverging palette to show positive and negative deviations from a central value. Use custom properties to assign these colors directly."
             }
           ]
         }

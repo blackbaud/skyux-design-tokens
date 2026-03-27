@@ -118,6 +118,7 @@
           "groups": [
             {
               "name": "Margin right",
+              "description": "Use these classes to add a right margin to an element.",
               "styles": [
                 {
                   "name": "Margin-right XS",
@@ -173,6 +174,7 @@
             },
             {
               "name": "Margin left",
+              "description": "Use these classes to add a left margin to an element.",
               "styles": [
                 {
                   "name": "Margin-left XS",
@@ -225,6 +227,7 @@
           "groups": [
             {
               "name": "Padding top",
+              "description": "Use these classes to add top padding to an element.",
               "styles": [
                 {
                   "name": "Padding-top XS",
@@ -272,6 +275,7 @@
             },
             {
               "name": "Padding bottom",
+              "description": "Use these classes to add bottom padding to an element.",
               "styles": [
                 {
                   "name": "Padding-bottom XS",
@@ -324,6 +328,7 @@
           "groups": [
             {
               "name": "Padding right",
+              "description": "Use these classes to add right padding to an element.",
               "styles": [
                 {
                   "name": "Padding-right XS",
@@ -371,6 +376,7 @@
             },
             {
               "name": "Padding left",
+              "description": "Use these classes to add left padding to an element.",
               "styles": [
                 {
                   "name": "Padding-left XS",
