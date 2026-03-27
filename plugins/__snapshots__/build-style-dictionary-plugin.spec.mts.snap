@@ -3547,11 +3547,11 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-font-line_height-display-2: inherit;
   --sky-theme-font-line_height-display-3: inherit;
   --sky-theme-font-line_height-display-4: inherit;
-  --sky-theme-font-line_height-heading-1: inherit;
-  --sky-theme-font-line_height-heading-2: inherit;
-  --sky-theme-font-line_height-heading-3: inherit;
-  --sky-theme-font-line_height-heading-4: inherit;
-  --sky-theme-font-line_height-heading-5: inherit;
+  --sky-theme-font-line_height-heading-1: 1.1;
+  --sky-theme-font-line_height-heading-2: 1.1;
+  --sky-theme-font-line_height-heading-3: 1.1;
+  --sky-theme-font-line_height-heading-4: 1.1;
+  --sky-theme-font-line_height-heading-5: 1.1;
   --sky-theme-font-line_height-hint-m: inherit;
   --sky-theme-font-line_height-hint-s: inherit;
   --sky-theme-font-line_height-paragraph-m: normal;
