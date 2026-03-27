@@ -2,6 +2,14 @@
 
 - Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
+## [5.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.5.0...5.6.0) (2026-03-27)
+
+
+### Features
+
+* add descriptions to spacing classes ([#339](https://github.com/blackbaud/skyux-design-tokens/issues/339)) ([310fff4](https://github.com/blackbaud/skyux-design-tokens/commit/310fff4fe04a87cf4a5ac479052e7a25b40dae78))
+* update default heading line-height ([#338](https://github.com/blackbaud/skyux-design-tokens/issues/338)) ([92045eb](https://github.com/blackbaud/skyux-design-tokens/commit/92045eb464ff68c96a6c26eb12f6746ac69999ba))
+
 ## [5.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.4.0...5.5.0) (2026-03-25)
 
 
