@@ -1316,6 +1316,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-size-fixed-2000: 320px;
   --bb-size-fixed-25: 4px;
   --bb-size-fixed-250: 36px;
+  --bb-size-fixed-300: 48px;
   --bb-size-fixed-37: 6px;
   --bb-size-fixed-4000: 640px;
   --bb-size-fixed-50: 8px;
@@ -2255,6 +2256,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-navbar_item-space-inset-left: var(--bb-size-fluid-50);
   --sky-comp-navbar_item-space-inset-right: var(--bb-size-fluid-50);
   --sky-comp-navbar_item-space-inset-top: var(--bb-size-fluid-75);
+  --sky-comp-omnibar-toaster-space-inset-bottom: var(--bb-size-fixed-300);
   --sky-comp-omnibar-vertical-item-space-inset-bottom: var(--bb-size-fixed-50);
   --sky-comp-omnibar-vertical-item-space-inset-left: var(--bb-size-fixed-50);
   --sky-comp-omnibar-vertical-item-space-inset-right: var(--bb-size-fixed-50);
@@ -2950,6 +2952,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-size-fixed-2000: 320px;
   --bb-size-fixed-25: 4px;
   --bb-size-fixed-250: 36px;
+  --bb-size-fixed-300: 48px;
   --bb-size-fixed-37: 6px;
   --bb-size-fixed-4000: 640px;
   --bb-size-fixed-50: 8px;
