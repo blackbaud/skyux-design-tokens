@@ -37,17 +37,17 @@
         "container": {
           "default": {
             "$type": "borderWidth",
-            "$value": "{border.width.container.base}"
+            "$value": "{border.width.container.default}"
           }
         },
         "divider": {
           "default": {
             "$type": "borderWidth",
-            "$value": "{border.width.divider}"
+            "$value": "{border.width.divider.default}"
           },
           "soft": {
             "$type": "borderWidth",
-            "$value": "{border.width.separator.row}"
+            "$value": "{border.width.divider.soft}"
           }
         },
         "emphasized": {
@@ -63,11 +63,11 @@
         "divider": {
           "default": {
             "$type": "other",
-            "$value": "{border.style.divider}"
+            "$value": "{border.style.divider.default}"
           },
           "soft": {
             "$type": "other",
-            "$value": "{border.style.separator.row}"
+            "$value": "{border.style.divider.soft}"
           }
         },
         "accent": {
