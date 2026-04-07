@@ -1,7 +1,3 @@
-## 0.0.28 (2023-10-11)
-
-- Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
-
 ## [5.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.6.0...5.7.0) (2026-04-07)
 
 
@@ -828,6 +824,10 @@
 ### Bug Fixes
 
 * remove calling deleted package script in publish ([#71](https://github.com/blackbaud/skyux-design-tokens/issues/71)) ([0a7a762](https://github.com/blackbaud/skyux-design-tokens/commit/0a7a76254dc3c4c27c861c89a8052ac727ed35d9))
+
+## 0.0.28 (2023-10-11)
+
+- Added `neutral-medium-dark` token in modern. [#64](https://github.com/blackbaud/skyux-design-tokens/pull/64)
 
 ## 0.0.27 (2023-06-22)
 
