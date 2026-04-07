@@ -3,84 +3,84 @@
     "space": {
       "stacked": {
         "xs": {
-          "$value": "{space.stacked.xs}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.stacked.xs}"
         },
         "s": {
-          "$value": "{space.stacked.s}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.stacked.s}"
         },
         "m": {
-          "$value": "{space.stacked.m}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.stacked.m}"
         },
         "l": {
-          "$value": "{space.stacked.l}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.stacked.l}"
         },
         "xl": {
-          "$value": "{space.stacked.xl}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.stacked.xl}"
         },
         "xxl": {
-          "$value": "{space.stacked.xxl}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.stacked.xxl}"
         }
       },
       "inline": {
         "xs": {
-          "$value": "{space.inline.xs}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inline.xs}"
         },
         "s": {
-          "$value": "{space.inline.s}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inline.s}"
         },
         "m": {
-          "$value": "{space.inline.m}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inline.m}"
         },
         "l": {
-          "$value": "{space.inline.l}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inline.l}"
         },
         "xl": {
-          "$value": "{space.inline.xl}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inline.xl}"
         },
         "xxl": {
-          "$value": "{space.inline.xxl}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inline.xxl}"
         }
       },
       "inset": {
         "balanced": {
           "xs": {
-            "$value": "{space.inset.balanced.xs}",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.inset.balanced.xs}"
           },
           "s": {
-            "$value": "{space.inset.balanced.s}",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.inset.balanced.s}"
           },
           "m": {
-            "$value": "{space.inset.balanced.m}",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.inset.balanced.m}"
           },
           "l": {
-            "$value": "{space.inset.balanced.l}",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.inset.balanced.l}"
           },
           "xl": {
-            "$value": "{space.inset.balanced.xl}",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.inset.balanced.xl}"
           }
         }
       },
       "conditional": {
         "input": {
-          "$value": "{space.inset.switch}",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.inset.switch}"
         }
       }
     }

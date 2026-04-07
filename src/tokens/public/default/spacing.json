@@ -3,84 +3,84 @@
     "space": {
       "stacked": {
         "xs": {
-          "$value": "5px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "5px"
         },
         "s": {
-          "$value": "8px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "8px"
         },
         "m": {
-          "$value": "9px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "9px"
         },
         "l": {
-          "$value": "10px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "10px"
         },
         "xl": {
-          "$value": "20px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "20px"
         },
         "xxl": {
-          "$value": "40px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "40px"
         }
       },
       "inline": {
         "xs": {
-          "$value": "5px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "5px"
         },
         "s": {
-          "$value": "10px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "10px"
         },
         "m": {
-          "$value": "12px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "12px"
         },
         "l": {
-          "$value": "15px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "15px"
         },
         "xl": {
-          "$value": "20px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "20px"
         },
         "xxl": {
-          "$value": "40px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "40px"
         }
       },
       "inset": {
         "balanced": {
           "xs": {
-            "$value": "5px",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "5px"
           },
           "s": {
-            "$value": "10px",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "10px"
           },
           "m": {
-            "$value": "15px",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "15px"
           },
           "l": {
-            "$value": "18px",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "18px"
           },
           "xl": {
-            "$value": "20px",
-            "$type": "spacing"
+            "$type": "spacing",
+            "$value": "20px"
           }
         }
       },
       "conditional": {
         "input": {
-          "$value": "27px",
-          "$type": "spacing"
+          "$type": "spacing",
+          "$value": "27px"
         }
       }
     }

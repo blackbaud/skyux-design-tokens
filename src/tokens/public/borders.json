@@ -3,78 +3,99 @@
     "border": {
       "container": {
         "default": {
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base)",
-          "$type": "border"
+          "$type": "border",
+          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base)"
         }
       },
       "divider": {
         "default": {
-          "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)",
-          "$type": "border"
+          "$type": "border",
+          "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)"
         },
         "soft": {
-          "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)",
-          "$type": "border"
+          "$type": "border",
+          "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)"
         }
       },
       "danger": {
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)",
-        "$type": "border"
+        "$type": "border",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)"
       },
       "info": {
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)",
-        "$type": "border"
+        "$type": "border",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)"
       },
       "success": {
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)",
-        "$type": "border"
+        "$type": "border",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)"
       },
       "warning": {
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)",
-        "$type": "border"
+        "$type": "border",
+        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)"
       },
       "width": {
         "container": {
           "default": {
-            "$value": "{border.width.container.base}",
-            "$type": "border"
+            "$type": "borderWidth",
+            "$value": "{border.width.container.base}"
           }
         },
         "divider": {
           "default": {
-            "$value": "{border.width.divider}",
-            "$type": "border"
+            "$type": "borderWidth",
+            "$value": "{border.width.divider}"
           },
           "soft": {
-            "$value": "{border.width.separator.row}",
-            "$type": "border"
+            "$type": "borderWidth",
+            "$value": "{border.width.separator.row}"
           }
         },
         "emphasized": {
-          "$value": "{border.width.emphasized}",
-          "$type": "border"
+          "$type": "borderWidth",
+          "$value": "{border.width.emphasized}"
         },
-        "accent": { "$value": "{border.width.accent}", "$type": "border" }
+        "accent": {
+          "$type": "borderWidth",
+          "$value": "{border.width.accent}"
+        }
       },
       "style": {
         "divider": {
           "default": {
-            "$value": "{border.style.divider}",
-            "$type": "border"
+            "$type": "other",
+            "$value": "{border.style.divider}"
           },
           "soft": {
-            "$value": "{border.style.separator.row}",
-            "$type": "border"
+            "$type": "other",
+            "$value": "{border.style.separator.row}"
           }
         },
-        "accent": { "$value": "{border.style.accent}", "$type": "border" }
+        "accent": {
+          "$type": "other",
+          "$value": "{border.style.accent}"
+        }
       },
       "radius": {
-        "xs": { "$value": "{border.radius.xs}", "$type": "border" },
-        "s": { "$value": "{border.radius.s}", "$type": "border" },
-        "m": { "$value": "{border.radius.m}", "$type": "border" },
-        "pill": { "$value": "{border.radius.pill}", "$type": "border" },
-        "round": { "$value": "{border.radius.round}", "$type": "border" }
+        "xs": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.xs}"
+        },
+        "s": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.s}"
+        },
+        "m": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.m}"
+        },
+        "pill": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.pill}"
+        },
+        "round": {
+          "$type": "borderRadius",
+          "$value": "{border.radius.round}"
+        }
       }
     }
   }

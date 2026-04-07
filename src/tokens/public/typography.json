@@ -3,373 +3,373 @@
     "font": {
       "family": {
         "primary": {
-          "$value": "{font.family.primary}",
-          "$type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{font.family.primary}"
         },
         "heading": {
           "1": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "2": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "3": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "4": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "5": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           }
         },
         "body": {
           "m": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "emphasized": {
             "m": {
-              "$value": "{font.family.primary}",
-              "$type": "fontFamilies"
+              "$type": "fontFamilies",
+              "$value": "{font.family.primary}"
             },
             "s": {
-              "$value": "{font.family.primary}",
-              "$type": "fontFamilies"
+              "$type": "fontFamilies",
+              "$value": "{font.family.primary}"
             }
           },
           "deemphasized": {
             "m": {
-              "$value": "{font.family.primary}",
-              "$type": "fontFamilies"
+              "$type": "fontFamilies",
+              "$value": "{font.family.primary}"
             },
             "s": {
-              "$value": "{font.family.primary}",
-              "$type": "fontFamilies"
+              "$type": "fontFamilies",
+              "$value": "{font.family.primary}"
             }
           },
           "s": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "l": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           }
         },
         "display": {
           "1": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "2": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "3": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "4": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           }
         },
         "hint": {
           "m": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           },
           "s": {
-            "$value": "{font.family.primary}",
-            "$type": "fontFamilies"
+            "$type": "fontFamilies",
+            "$value": "{font.family.primary}"
           }
         }
       },
       "weight": {
         "heading": {
           "1": {
-            "$value": "{font.style.heading.1}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.heading.1}"
           },
           "2": {
-            "$value": "{font.style.heading.2}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.heading.2}"
           },
           "3": {
-            "$value": "{font.style.heading.3}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.heading.3}"
           },
           "4": {
-            "$value": "{font.style.heading.4}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.heading.4}"
           },
           "5": {
-            "$value": "{font.style.heading.5}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.heading.5}"
           }
         },
         "body": {
           "m": {
-            "$value": "{font.style.body.m}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.body.m}"
           },
           "emphasized": {
             "m": {
-              "$value": "{font.style.emphasized}",
-              "$type": "fontWeights"
+              "$type": "fontWeights",
+              "$value": "{font.style.emphasized}"
             },
             "s": {
-              "$value": "{font.style.emphasized}",
-              "$type": "fontWeights"
+              "$type": "fontWeights",
+              "$value": "{font.style.emphasized}"
             }
           },
           "deemphasized": {
             "m": {
-              "$value": "{font.style.body.m}",
-              "$type": "fontWeights"
+              "$type": "fontWeights",
+              "$value": "{font.style.body.m}"
             },
             "s": {
-              "$value": "{font.style.body.s}",
-              "$type": "fontWeights"
+              "$type": "fontWeights",
+              "$value": "{font.style.body.s}"
             }
           },
           "s": {
-            "$value": "{font.style.body.s}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.body.s}"
           },
           "l": {
-            "$value": "{font.style.body.l}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.body.l}"
           }
         },
         "display": {
           "1": {
-            "$value": "{font.style.display.1}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.display.1}"
           },
           "2": {
-            "$value": "{font.style.display.2}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.display.2}"
           },
           "3": {
-            "$value": "{font.style.display.3}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.display.3}"
           },
           "4": {
-            "$value": "{font.style.display.4}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.display.4}"
           }
         }
       },
       "size": {
         "heading": {
           "1": {
-            "$value": "{font.size.heading.1}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.heading.1}"
           },
           "2": {
-            "$value": "{font.size.heading.2}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.heading.2}"
           },
           "3": {
-            "$value": "{font.size.heading.3}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.heading.3}"
           },
           "4": {
-            "$value": "{font.size.heading.4}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.heading.4}"
           },
           "5": {
-            "$value": "{font.size.heading.5}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.heading.5}"
           }
         },
         "body": {
           "m": {
-            "$value": "{font.size.body.m}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.body.m}"
           },
           "emphasized": {
             "m": {
-              "$value": "{font.size.body.m}",
-              "$type": "fontSizes"
+              "$type": "fontSizes",
+              "$value": "{font.size.body.m}"
             },
             "s": {
-              "$value": "{font.size.body.s}",
-              "$type": "fontSizes"
+              "$type": "fontSizes",
+              "$value": "{font.size.body.s}"
             }
           },
           "deemphasized": {
             "m": {
-              "$value": "{font.size.body.m}",
-              "$type": "fontSizes"
+              "$type": "fontSizes",
+              "$value": "{font.size.body.m}"
             },
             "s": {
-              "$value": "{font.size.body.s}",
-              "$type": "fontSizes"
+              "$type": "fontSizes",
+              "$value": "{font.size.body.s}"
             }
           },
           "s": {
-            "$value": "{font.size.body.s}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.body.s}"
           },
           "l": {
-            "$value": "{font.size.body.l}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.body.l}"
           }
         },
         "display": {
           "1": {
-            "$value": "{font.size.display.1}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.display.1}"
           },
           "2": {
-            "$value": "{font.size.display.2}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.display.2}"
           },
           "3": {
-            "$value": "{font.size.display.3}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.display.3}"
           },
           "4": {
-            "$value": "{font.size.display.4}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.display.4}"
           }
         },
         "hint": {
           "m": {
-            "$value": "{font.size.hint.m}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.hint.m}"
           },
           "s": {
-            "$value": "{font.size.hint.s}",
-            "$type": "fontSizes"
+            "$type": "fontSizes",
+            "$value": "{font.size.hint.s}"
           }
         }
       },
       "style": {
         "em": {
-          "$value": "{font.style.em}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.style.em}"
         },
         "strong": {
-          "$value": "{font.style.strong}",
-          "$type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{font.style.strong}"
         },
         "hint": {
           "m": {
-            "$value": "{font.style.hint.m}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.hint.m}"
           },
           "s": {
-            "$value": "{font.style.hint.s}",
-            "$type": "fontWeights"
+            "$type": "fontWeights",
+            "$value": "{font.style.hint.s}"
           }
         }
       },
       "line_height": {
         "heading": {
           "1": {
-            "$value": "{font.line_height.heading.1}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.heading.1}"
           },
           "2": {
-            "$value": "{font.line_height.heading.2}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.heading.2}"
           },
           "3": {
-            "$value": "{font.line_height.heading.3}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.heading.3}"
           },
           "4": {
-            "$value": "{font.line_height.heading.4}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.heading.4}"
           },
           "5": {
-            "$value": "{font.line_height.heading.5}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.heading.5}"
           }
         },
         "body": {
           "m": {
-            "$value": "{font.line_height.body.m}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.body.m}"
           },
           "emphasized": {
             "m": {
-              "$value": "{font.line_height.body.m}",
-              "$type": "lineHeights"
+              "$type": "lineHeights",
+              "$value": "{font.line_height.body.m}"
             },
             "s": {
-              "$value": "{font.line_height.body.s}",
-              "$type": "lineHeights"
+              "$type": "lineHeights",
+              "$value": "{font.line_height.body.s}"
             }
           },
           "deemphasized": {
             "m": {
-              "$value": "{font.line_height.body.m}",
-              "$type": "lineHeights"
+              "$type": "lineHeights",
+              "$value": "{font.line_height.body.m}"
             },
             "s": {
-              "$value": "{font.line_height.body.s}",
-              "$type": "lineHeights"
+              "$type": "lineHeights",
+              "$value": "{font.line_height.body.s}"
             }
           },
           "s": {
-            "$value": "{font.line_height.body.s}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.body.s}"
           },
           "l": {
-            "$value": "{font.line_height.body.l}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.body.l}"
           }
         },
         "display": {
           "1": {
-            "$value": "{font.line_height.display.1}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.display.1}"
           },
           "2": {
-            "$value": "{font.line_height.display.2}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.display.2}"
           },
           "3": {
-            "$value": "{font.line_height.display.3}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.display.3}"
           },
           "4": {
-            "$value": "{font.line_height.display.4}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.display.4}"
           }
         },
         "hint": {
           "m": {
-            "$value": "{font.line_height.hint.m}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.hint.m}"
           },
           "s": {
-            "$value": "{font.line_height.hint.s}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.hint.s}"
           }
         },
         "paragraph": {
           "m": {
-            "$value": "{font.line_height.paragraph.m}",
-            "$type": "lineHeights"
+            "$type": "lineHeights",
+            "$value": "{font.line_height.paragraph.m}"
           }
         }
       },
       "letter_spacing": {
         "hint": {
           "s": {
-            "$value": "{font.letter_spacing.hint.s}",
-            "$type": "letterSpacings"
+            "$type": "letterSpacings",
+            "$value": "{font.letter_spacing.hint.s}"
           }
         }
       }
