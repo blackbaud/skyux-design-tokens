@@ -36,64 +36,64 @@
       "width": {
         "container": {
           "default": {
-            "$type": "border",
+            "$type": "borderWidth",
             "$value": "1px"
           }
         },
         "divider": {
           "default": {
-            "$type": "border",
+            "$type": "borderWidth",
             "$value": "1px"
           },
           "soft": {
-            "$type": "border",
+            "$type": "borderWidth",
             "$value": "1px"
           }
         },
         "emphasized": {
-          "$type": "border",
+          "$type": "borderWidth",
           "$value": "2px"
         },
         "accent": {
-          "$type": "border",
+          "$type": "borderWidth",
           "$value": "4px"
         }
       },
       "style": {
         "divider": {
           "default": {
-            "$type": "border",
+            "$type": "other",
             "$value": "solid"
           },
           "soft": {
-            "$type": "border",
+            "$type": "other",
             "$value": "solid"
           }
         },
         "accent": {
-          "$type": "border",
+          "$type": "other",
           "$value": "solid"
         }
       },
       "radius": {
         "xs": {
-          "$type": "border",
+          "$type": "borderRadius",
           "$value": "4px"
         },
         "s": {
-          "$type": "border",
+          "$type": "borderRadius",
           "$value": "4px"
         },
         "m": {
-          "$type": "border",
+          "$type": "borderRadius",
           "$value": "4px"
         },
         "pill": {
-          "$type": "border",
+          "$type": "borderRadius",
           "$value": "1000px"
         },
         "round": {
-          "$type": "border",
+          "$type": "borderRadius",
           "$value": "50%"
         }
       }
