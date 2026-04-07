@@ -3,242 +3,407 @@
     "color": {
       "background": {
         "page": {
-          "$value": "{color.background.page}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.background.page}"
         },
         "container": {
           "default": {
-            "$value": "{color.background.container.base}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.base}"
           },
           "dimmed": {
-            "$value": "{color.background.container.dimmed}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.dimmed}"
           },
           "backdrop": {
-            "$value": "{color.background.container.backdrop}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.backdrop}"
           },
           "danger": {
-            "$value": "{color.background.container.danger}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.danger}"
           },
           "info": {
-            "$value": "{color.background.container.info}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.info}"
           },
           "success": {
-            "$value": "{color.background.container.success}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.success}"
           },
           "warning": {
-            "$value": "{color.background.container.warning}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.container.warning}"
           }
         },
         "disabled": {
-          "$value": "{color.background.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.background.disabled}"
         },
         "icon_matte": {
           "action": {
             "soft": {
-              "$value": "{color.background.icon_matte.action.soft}",
-              "$type": "color"
+              "$type": "color",
+              "$value": "{color.background.icon_matte.action.soft}"
             }
           },
           "danger": {
-            "$value": "{color.background.icon_matte.danger}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.icon_matte.danger}"
           },
           "info": {
-            "$value": "{color.background.icon_matte.info}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.icon_matte.info}"
           },
           "success": {
-            "$value": "{color.background.icon_matte.success}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.icon_matte.success}"
           },
           "warning": {
-            "$value": "{color.background.icon_matte.warning}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.background.icon_matte.warning}"
           }
         }
       },
       "border": {
         "container": {
           "default": {
-            "$value": "{color.border.container.base}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.border.container.base}"
           }
         },
         "disabled": {
-          "$value": "{color.border.disabled}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.border.disabled}"
         },
         "divider": {
           "default": {
-            "$value": "{color.border.divider}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.border.divider}"
           },
           "soft": {
-            "$value": "{color.border.separator.row}",
-            "$type": "color"
+            "$type": "color",
+            "$value": "{color.border.separator.row}"
           }
         },
         "danger": {
-          "$value": "{color.border.danger}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.border.danger}"
         },
         "info": {
-          "$value": "{color.border.info}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.border.info}"
         },
         "success": {
-          "$value": "{color.border.success}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.border.success}"
         },
         "warning": {
-          "$value": "{color.border.warning}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.border.warning}"
         }
       },
       "text": {
         "default": {
-          "$value": "{color.text.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.text.default}"
         },
         "deemphasized": {
-          "$value": "{color.text.deemphasized}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.text.deemphasized}"
         },
         "heading": {
-          "$value": "{color.text.heading}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.text.heading}"
         },
         "action": {
-          "$value": "{color.text.action}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.text.action}"
         },
         "action_contrast": {
-          "$value": "{color.text.action_contrast}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.text.action_contrast}"
         },
         "inverse": {
-          "$value": "{color.text.inverse}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.text.inverse}"
         }
       },
       "icon": {
         "default": {
-          "$value": "{color.icon.default}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.default}"
         },
         "deemphasized": {
-          "$value": "{color.icon.deemphasized}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.deemphasized}"
         },
         "action": {
-          "$value": "{color.icon.action}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.action}"
         },
         "inverse": {
-          "$value": "{color.icon.inverse}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.inverse}"
         },
         "danger": {
-          "$value": "{color.icon.danger}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.danger}"
         },
         "info": {
-          "$value": "{color.icon.info}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.info}"
         },
         "success": {
-          "$value": "{color.icon.success}",
-          "$type": "color"
+          "$type": "color",
+          "$value": "{color.icon.success}"
         }
       },
       "classify": {
         "1": {
-          "soft": { "$value": "{color.classify.1.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.1.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.1.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.1.heavy}"
+          }
         },
         "2": {
-          "soft": { "$value": "{color.classify.2.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.2.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.2.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.2.heavy}"
+          }
         },
         "3": {
-          "soft": { "$value": "{color.classify.3.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.3.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.3.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.3.heavy}"
+          }
         },
         "4": {
-          "soft": { "$value": "{color.classify.4.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.4.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.4.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.4.heavy}"
+          }
         },
         "5": {
-          "soft": { "$value": "{color.classify.5.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.5.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.5.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.5.heavy}"
+          }
         },
         "6": {
-          "soft": { "$value": "{color.classify.6.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.6.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.6.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.6.heavy}"
+          }
         },
         "7": {
-          "soft": { "$value": "{color.classify.7.soft}", "$type": "color" },
-          "heavy": { "$value": "{color.classify.7.heavy}", "$type": "color" }
+          "soft": {
+            "$type": "color",
+            "$value": "{color.classify.7.soft}"
+          },
+          "heavy": {
+            "$type": "color",
+            "$value": "{color.classify.7.heavy}"
+          }
         }
       },
       "viz": {
-        "axis": { "$value": "{color.viz.axis}", "$type": "color" },
-        "gridline": { "$value": "{color.viz.gridline}", "$type": "color" },
-        "marker": { "$value": "{color.viz.marker}", "$type": "color" },
+        "axis": {
+          "$type": "color",
+          "$value": "{color.viz.axis}"
+        },
+        "gridline": {
+          "$type": "color",
+          "$value": "{color.viz.gridline}"
+        },
+        "marker": {
+          "$type": "color",
+          "$value": "{color.viz.marker}"
+        },
         "category": {
-          "1": { "$value": "{color.viz.category.1}", "$type": "color" },
-          "2": { "$value": "{color.viz.category.2}", "$type": "color" },
-          "3": { "$value": "{color.viz.category.3}", "$type": "color" },
-          "4": { "$value": "{color.viz.category.4}", "$type": "color" },
-          "5": { "$value": "{color.viz.category.5}", "$type": "color" },
-          "6": { "$value": "{color.viz.category.6}", "$type": "color" },
-          "7": { "$value": "{color.viz.category.7}", "$type": "color" },
-          "8": { "$value": "{color.viz.category.8}", "$type": "color" }
+          "1": {
+            "$type": "color",
+            "$value": "{color.viz.category.1}"
+          },
+          "2": {
+            "$type": "color",
+            "$value": "{color.viz.category.2}"
+          },
+          "3": {
+            "$type": "color",
+            "$value": "{color.viz.category.3}"
+          },
+          "4": {
+            "$type": "color",
+            "$value": "{color.viz.category.4}"
+          },
+          "5": {
+            "$type": "color",
+            "$value": "{color.viz.category.5}"
+          },
+          "6": {
+            "$type": "color",
+            "$value": "{color.viz.category.6}"
+          },
+          "7": {
+            "$type": "color",
+            "$value": "{color.viz.category.7}"
+          },
+          "8": {
+            "$type": "color",
+            "$value": "{color.viz.category.8}"
+          }
         },
         "sequence": {
-          "1": { "$value": "{color.viz.sequence.1}", "$type": "color" },
-          "2": { "$value": "{color.viz.sequence.2}", "$type": "color" },
-          "3": { "$value": "{color.viz.sequence.3}", "$type": "color" },
-          "4": { "$value": "{color.viz.sequence.4}", "$type": "color" },
-          "5": { "$value": "{color.viz.sequence.5}", "$type": "color" },
-          "6": { "$value": "{color.viz.sequence.6}", "$type": "color" },
-          "7": { "$value": "{color.viz.sequence.7}", "$type": "color" },
-          "8": { "$value": "{color.viz.sequence.8}", "$type": "color" },
-          "9": { "$value": "{color.viz.sequence.9}", "$type": "color" },
-          "10": { "$value": "{color.viz.sequence.10}", "$type": "color" }
+          "1": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.1}"
+          },
+          "2": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.2}"
+          },
+          "3": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.3}"
+          },
+          "4": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.4}"
+          },
+          "5": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.5}"
+          },
+          "6": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.6}"
+          },
+          "7": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.7}"
+          },
+          "8": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.8}"
+          },
+          "9": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.9}"
+          },
+          "10": {
+            "$type": "color",
+            "$value": "{color.viz.sequence.10}"
+          }
         },
         "diverge": {
           "pos": {
-            "1": { "$value": "{color.viz.diverge.pos.1}", "$type": "color" },
-            "2": { "$value": "{color.viz.diverge.pos.2}", "$type": "color" },
-            "3": { "$value": "{color.viz.diverge.pos.3}", "$type": "color" },
-            "4": { "$value": "{color.viz.diverge.pos.4}", "$type": "color" },
-            "5": { "$value": "{color.viz.diverge.pos.5}", "$type": "color" },
-            "6": { "$value": "{color.viz.diverge.pos.6}", "$type": "color" },
-            "7": { "$value": "{color.viz.diverge.pos.7}", "$type": "color" },
-            "8": { "$value": "{color.viz.diverge.pos.8}", "$type": "color" },
-            "9": { "$value": "{color.viz.diverge.pos.9}", "$type": "color" },
-            "10": { "$value": "{color.viz.diverge.pos.10}", "$type": "color" }
+            "1": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.1}"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.2}"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.3}"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.4}"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.5}"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.6}"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.7}"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.8}"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.9}"
+            },
+            "10": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.pos.10}"
+            }
           },
           "neg": {
-            "1": { "$value": "{color.viz.diverge.neg.1}", "$type": "color" },
-            "2": { "$value": "{color.viz.diverge.neg.2}", "$type": "color" },
-            "3": { "$value": "{color.viz.diverge.neg.3}", "$type": "color" },
-            "4": { "$value": "{color.viz.diverge.neg.4}", "$type": "color" },
-            "5": { "$value": "{color.viz.diverge.neg.5}", "$type": "color" },
-            "6": { "$value": "{color.viz.diverge.neg.6}", "$type": "color" },
-            "7": { "$value": "{color.viz.diverge.neg.7}", "$type": "color" },
-            "8": { "$value": "{color.viz.diverge.neg.8}", "$type": "color" },
-            "9": { "$value": "{color.viz.diverge.neg.9}", "$type": "color" },
-            "10": { "$value": "{color.viz.diverge.neg.10}", "$type": "color" }
+            "1": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.1}"
+            },
+            "2": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.2}"
+            },
+            "3": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.3}"
+            },
+            "4": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.4}"
+            },
+            "5": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.5}"
+            },
+            "6": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.6}"
+            },
+            "7": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.7}"
+            },
+            "8": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.8}"
+            },
+            "9": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.9}"
+            },
+            "10": {
+              "$type": "color",
+              "$value": "{color.viz.diverge.neg.10}"
+            }
           }
         }
       }

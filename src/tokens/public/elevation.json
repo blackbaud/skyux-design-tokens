@@ -3,26 +3,26 @@
     "elevation": {
       "raised": {
         "100": {
-          "$value": "{elevation.raised.100}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{elevation.raised.100}"
         }
       },
       "overflow": {
-        "$value": "{elevation.overflow}",
-        "$type": "boxShadow"
+        "$type": "boxShadow",
+        "$value": "{elevation.overflow}"
       },
       "overlay": {
         "100": {
-          "$value": "{elevation.overlay.100}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{elevation.overlay.100}"
         },
         "200": {
-          "$value": "{elevation.overlay.200}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{elevation.overlay.200}"
         },
         "300": {
-          "$value": "{elevation.overlay.300}",
-          "$type": "boxShadow"
+          "$type": "boxShadow",
+          "$value": "{elevation.overlay.300}"
         }
       }
     }
