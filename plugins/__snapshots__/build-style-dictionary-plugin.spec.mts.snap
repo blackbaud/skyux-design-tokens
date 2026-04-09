@@ -3477,13 +3477,13 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-viz-sequence-9: var(--sky-color-viz-sequence-9);
 }
 .sky-theme-modern.sky-theme-brand-base {
-  --sky-theme-border-container-default: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base);
-  --sky-theme-border-danger: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger);
-  --sky-theme-border-divider-default: var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider);
-  --sky-theme-border-divider-soft: var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row);
-  --sky-theme-border-info: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info);
-  --sky-theme-border-success: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success);
-  --sky-theme-border-warning: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning);
+  --sky-theme-border-container-default: var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-container-default);
+  --sky-theme-border-danger: var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-danger);
+  --sky-theme-border-divider-default: var(--sky-border-width-divider-default) var(--sky-border-style-divider-default) var(--sky-color-border-divider-default);
+  --sky-theme-border-divider-soft: var(--sky-border-width-divider-soft) var(--sky-border-style-divider-soft) var(--sky-color-border-divider-soft);
+  --sky-theme-border-info: var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-info);
+  --sky-theme-border-success: var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-success);
+  --sky-theme-border-warning: var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-warning);
   --sky-theme-border-radius-m: var(--sky-border-radius-m);
   --sky-theme-border-radius-pill: var(--sky-border-radius-pill);
   --sky-theme-border-radius-round: var(--sky-border-radius-round);
