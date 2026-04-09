@@ -4,34 +4,34 @@
       "container": {
         "default": {
           "$type": "border",
-          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base)"
+          "$value": "var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-container-default)"
         }
       },
       "divider": {
         "default": {
           "$type": "border",
-          "$value": "var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider)"
+          "$value": "var(--sky-border-width-divider-default) var(--sky-border-style-divider-default) var(--sky-color-border-divider-default)"
         },
         "soft": {
           "$type": "border",
-          "$value": "var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row)"
+          "$value": "var(--sky-border-width-divider-soft) var(--sky-border-style-divider-soft) var(--sky-color-border-divider-soft)"
         }
       },
       "danger": {
         "$type": "border",
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger)"
+        "$value": "var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-danger)"
       },
       "info": {
         "$type": "border",
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-info)"
+        "$value": "var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-info)"
       },
       "success": {
         "$type": "border",
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-success)"
+        "$value": "var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-success)"
       },
       "warning": {
         "$type": "border",
-        "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-warning)"
+        "$value": "var(--sky-border-width-container-default) var(--sky-border-style-divider-default) var(--sky-color-border-warning)"
       },
       "width": {
         "container": {
