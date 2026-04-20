@@ -16,7 +16,11 @@
               "properties": {
                 "border": "var(--sky-theme-border-container-default)"
               },
-              "deprecatedClassNames": ["sky-border-dark", "sky-border-light"]
+              "deprecatedClassNames": [
+                "sky-border-dark",
+                "sky-border-light",
+                "sky-elevation-0-bordered"
+              ]
             }
           ]
         },
@@ -311,7 +315,8 @@
               "description": "The border radius for circular elements like avatars.",
               "properties": {
                 "border-radius": "var(--sky-theme-border-radius-round)"
-              }
+              },
+              "deprecatedClassNames": ["sky-rounded-circle"]
             }
           ]
         }

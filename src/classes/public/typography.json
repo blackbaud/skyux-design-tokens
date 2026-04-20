@@ -343,7 +343,11 @@
             {
               "name": "Data label",
               "description": "This class formats labels for read-only data. It uses a muted color because the label that identifies the data is less important than the content.",
-              "deprecatedClassNames": ["sky-font-data-label", "sky-field-label"]
+              "deprecatedClassNames": [
+                "sky-font-data-label",
+                "sky-field-label",
+                "sky-font-field-label"
+              ]
             },
             {
               "name": "Deemphasized",
@@ -351,6 +355,34 @@
                 "sky-font-deemphasized",
                 "sky-deemphasized"
               ]
+            },
+            {
+              "name": "Hint text M",
+              "deprecatedClassNames": ["sky-font-hint-text-m"]
+            },
+            {
+              "name": "Hint text S",
+              "deprecatedClassNames": ["sky-font-hint-text-s"]
+            },
+            {
+              "name": "Paragraph",
+              "deprecatedClassNames": ["sky-paragraph"]
+            },
+            {
+              "name": "Text danger",
+              "deprecatedClassNames": ["sky-text-danger"]
+            },
+            {
+              "name": "Text info",
+              "deprecatedClassNames": ["sky-text-info"]
+            },
+            {
+              "name": "Text success",
+              "deprecatedClassNames": ["sky-text-success"]
+            },
+            {
+              "name": "Text warning",
+              "deprecatedClassNames": ["sky-text-warning"]
             }
           ]
         }

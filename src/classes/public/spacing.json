@@ -444,7 +444,11 @@
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-s)"
                   },
-                  "obsoleteClassNames": ["sky-padding-even-default"]
+                  "deprecatedClassNames": ["sky-padding-even-small"],
+                  "obsoleteClassNames": [
+                    "sky-padding-even-default",
+                    "sky-padding-even-sm"
+                  ]
                 },
                 {
                   "name": "Inset balanced padding M",
@@ -460,7 +464,8 @@
                   "className": "sky-theme-padding-inset-balanced-l",
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-l)"
-                  }
+                  },
+                  "deprecatedClassNames": ["sky-padding-even-lg"]
                 },
                 {
                   "name": "Inset balanced padding XL",
@@ -484,6 +489,50 @@
               "properties": {
                 "padding-left": "var(--sky-theme-space-conditional-input)"
               }
+            }
+          ]
+        },
+        {
+          "name": "Deprecated spacing",
+          "demoMetadata": {
+            "type": "none"
+          },
+          "styles": [
+            {
+              "name": "Horizontal padding SM",
+              "deprecatedClassNames": ["sky-padding-horizontal-sm"]
+            },
+            {
+              "name": "Horizontal padding MD",
+              "deprecatedClassNames": ["sky-padding-horizontal-md"]
+            },
+            {
+              "name": "Horizontal padding XL",
+              "deprecatedClassNames": ["sky-padding-horizontal-xl"]
+            },
+            {
+              "name": "Vertical padding MD",
+              "deprecatedClassNames": ["sky-padding-vertical-md"]
+            },
+            {
+              "name": "Vertical padding LG",
+              "deprecatedClassNames": ["sky-padding-vertical-lg"]
+            },
+            {
+              "name": "Squish padding default",
+              "deprecatedClassNames": ["sky-padding-squish-default"]
+            },
+            {
+              "name": "Squish padding large",
+              "deprecatedClassNames": ["sky-padding-squish-large"]
+            },
+            {
+              "name": "Squish padding small",
+              "deprecatedClassNames": ["sky-padding-squish-small"]
+            },
+            {
+              "name": "Container",
+              "deprecatedClassNames": ["sky-container"]
             }
           ]
         }
