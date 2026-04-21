@@ -444,11 +444,11 @@
                   "properties": {
                     "padding": "var(--sky-theme-space-inset-balanced-s)"
                   },
-                  "deprecatedClassNames": ["sky-padding-even-small"],
-                  "obsoleteClassNames": [
-                    "sky-padding-even-default",
+                  "deprecatedClassNames": [
+                    "sky-padding-even-small",
                     "sky-padding-even-sm"
-                  ]
+                  ],
+                  "obsoleteClassNames": ["sky-padding-even-default"]
                 },
                 {
                   "name": "Inset balanced padding M",

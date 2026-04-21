@@ -10,7 +10,8 @@
               "name": "Primary font family",
               "customProperty": "--sky-theme-font-family-primary",
               "description": "The font family used for all elements on a page including headings, content, and components.",
-              "cssProperty": "font-family"
+              "cssProperty": "font-family",
+              "deprecatedScssVariables": ["$sky-font-family"]
             }
           ]
         },
@@ -174,7 +175,8 @@
                 {
                   "name": "Medium body font size",
                   "customProperty": "--sky-theme-font-size-body-m",
-                  "cssProperty": "font-size"
+                  "cssProperty": "font-size",
+                  "deprecatedScssVariables": ["$sky-font-size-base"]
                 },
                 {
                   "name": "Medium body line height",
@@ -576,6 +578,401 @@
                   "customProperty": "--sky-theme-font-letter_spacing-hint-s",
                   "cssProperty": "letter-spacing"
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "groupName": "Deprecated typography",
+          "tokens": [
+            {
+              "name": "Condensed font family",
+              "deprecatedScssVariables": ["$sky-font-family-condensed"]
+            },
+            {
+              "name": "Base line height",
+              "deprecatedScssVariables": ["$sky-line-height-base"]
+            },
+            {
+              "name": "Text size 100",
+              "deprecatedScssVariables": [
+                "$sky-text-size-100",
+                "$sky-theme-modern-text-size-100"
+              ]
+            },
+            {
+              "name": "Text size 125",
+              "deprecatedScssVariables": [
+                "$sky-text-size-125",
+                "$sky-theme-modern-text-size-125"
+              ]
+            },
+            {
+              "name": "Text size 150",
+              "deprecatedScssVariables": [
+                "$sky-text-size-150",
+                "$sky-theme-modern-text-size-150"
+              ]
+            },
+            {
+              "name": "Text size 200",
+              "deprecatedScssVariables": [
+                "$sky-text-size-200",
+                "$sky-theme-modern-text-size-200"
+              ]
+            },
+            {
+              "name": "Text size 250",
+              "deprecatedScssVariables": [
+                "$sky-text-size-250",
+                "$sky-theme-modern-text-size-250"
+              ]
+            },
+            {
+              "name": "Text size 300",
+              "deprecatedScssVariables": [
+                "$sky-text-size-300",
+                "$sky-theme-modern-text-size-300"
+              ]
+            },
+            {
+              "name": "Text size 400",
+              "deprecatedScssVariables": [
+                "$sky-text-size-400",
+                "$sky-theme-modern-text-size-400"
+              ]
+            },
+            {
+              "name": "Text size 500",
+              "deprecatedScssVariables": [
+                "$sky-text-size-500",
+                "$sky-theme-modern-text-size-500"
+              ]
+            },
+            {
+              "name": "Text size 600",
+              "deprecatedScssVariables": [
+                "$sky-text-size-600",
+                "$sky-theme-modern-text-size-600"
+              ]
+            },
+            {
+              "name": "Text size 800",
+              "deprecatedScssVariables": [
+                "$sky-text-size-800",
+                "$sky-theme-modern-text-size-800"
+              ]
+            },
+            {
+              "name": "Thin font weight file",
+              "deprecatedScssVariables": ["$sky-text-weight-thin-file"]
+            },
+            {
+              "name": "Thin font weight value",
+              "deprecatedScssVariables": ["$sky-text-weight-thin-value"]
+            },
+            {
+              "name": "Light font weight file",
+              "deprecatedScssVariables": ["$sky-text-weight-light-file"]
+            },
+            {
+              "name": "Light font weight value",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-light-value",
+                "$sky-theme-modern-text-weight-light-value"
+              ]
+            },
+            {
+              "name": "Regular font weight file",
+              "deprecatedScssVariables": ["$sky-text-weight-regular-file"]
+            },
+            {
+              "name": "Regular font weight value",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-regular-value",
+                "$sky-theme-modern-text-weight-regular-value"
+              ]
+            },
+            {
+              "name": "Semibold font weight file",
+              "deprecatedScssVariables": ["$sky-text-weight-semibold-file"]
+            },
+            {
+              "name": "Semibold font weight value",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-semibold-value",
+                "$sky-theme-modern-text-weight-semibold-value"
+              ]
+            },
+            {
+              "name": "Bold font weight file",
+              "deprecatedScssVariables": ["$sky-text-weight-bold-file"]
+            },
+            {
+              "name": "Bold font weight value",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-bold-value",
+                "$sky-theme-modern-text-weight-bold-value"
+              ]
+            },
+            {
+              "name": "Condensed light font weight file",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-condensed-light-file"
+              ]
+            },
+            {
+              "name": "Condensed light font weight value",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-condensed-light-value"
+              ]
+            },
+            {
+              "name": "Condensed semibold font weight file",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-condensed-semibold-file"
+              ]
+            },
+            {
+              "name": "Condensed semibold font weight value",
+              "deprecatedScssVariables": [
+                "$sky-text-weight-condensed-semibold-value"
+              ]
+            },
+            {
+              "name": "Italic font style file",
+              "deprecatedScssVariables": ["$sky-text-style-italic-file"]
+            },
+            {
+              "name": "Italic font style value",
+              "deprecatedScssVariables": [
+                "$sky-text-style-italic-value",
+                "$sky-theme-modern-text-style-italic-value"
+              ]
+            },
+            {
+              "name": "Uppercase text style",
+              "deprecatedScssVariables": [
+                "$sky-text-style-uppercase",
+                "$sky-theme-modern-text-style-uppercase"
+              ]
+            },
+            {
+              "name": "Modern body default size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-body-default-size"
+              ]
+            },
+            {
+              "name": "Modern body default weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-body-default-weight"
+              ]
+            },
+            {
+              "name": "Modern body SM size",
+              "deprecatedScssVariables": ["$sky-theme-modern-font-body-sm-size"]
+            },
+            {
+              "name": "Modern body SM weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-body-sm-weight"
+              ]
+            },
+            {
+              "name": "Modern body LG size",
+              "deprecatedScssVariables": ["$sky-theme-modern-font-body-lg-size"]
+            },
+            {
+              "name": "Modern body LG weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-body-lg-weight"
+              ]
+            },
+            {
+              "name": "Modern display 1 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-1-size"
+              ]
+            },
+            {
+              "name": "Modern display 1 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-1-weight"
+              ]
+            },
+            {
+              "name": "Modern display 2 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-2-size"
+              ]
+            },
+            {
+              "name": "Modern display 2 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-2-weight"
+              ]
+            },
+            {
+              "name": "Modern display 3 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-3-size"
+              ]
+            },
+            {
+              "name": "Modern display 3 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-3-weight"
+              ]
+            },
+            {
+              "name": "Modern display 4 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-4-size"
+              ]
+            },
+            {
+              "name": "Modern display 4 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-display-4-weight"
+              ]
+            },
+            {
+              "name": "Modern heading 1 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-1-size"
+              ]
+            },
+            {
+              "name": "Modern heading 1 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-1-weight"
+              ]
+            },
+            {
+              "name": "Modern heading 2 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-2-size"
+              ]
+            },
+            {
+              "name": "Modern heading 2 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-2-weight"
+              ]
+            },
+            {
+              "name": "Modern heading 3 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-3-size"
+              ]
+            },
+            {
+              "name": "Modern heading 3 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-3-weight"
+              ]
+            },
+            {
+              "name": "Modern heading 4 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-4-size"
+              ]
+            },
+            {
+              "name": "Modern heading 4 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-4-weight"
+              ]
+            },
+            {
+              "name": "Modern heading 4 color",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-4-color"
+              ]
+            },
+            {
+              "name": "Modern heading 4 transform",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-4-transform"
+              ]
+            },
+            {
+              "name": "Modern heading 5 size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-5-size"
+              ]
+            },
+            {
+              "name": "Modern heading 5 weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-5-weight"
+              ]
+            },
+            {
+              "name": "Modern heading 5 color",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-5-color"
+              ]
+            },
+            {
+              "name": "Modern heading 5 transform",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-heading-5-transform"
+              ]
+            },
+            {
+              "name": "Modern paragraph line height",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-paragraph-line-height"
+              ]
+            },
+            {
+              "name": "Modern deemphasized size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-deemphasized-size"
+              ]
+            },
+            {
+              "name": "Modern deemphasized weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-deemphasized-weight"
+              ]
+            },
+            {
+              "name": "Modern deemphasized color",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-deemphasized-color"
+              ]
+            },
+            {
+              "name": "Modern deemphasized style",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-deemphasized-style"
+              ]
+            },
+            {
+              "name": "Modern emphasized weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-emphasized-weight"
+              ]
+            },
+            {
+              "name": "Modern data label size",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-data-label-size"
+              ]
+            },
+            {
+              "name": "Modern data label weight",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-data-label-weight"
+              ]
+            },
+            {
+              "name": "Modern data label color",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-font-data-label-color"
               ]
             }
           ]
