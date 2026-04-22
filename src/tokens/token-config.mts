@@ -7,7 +7,6 @@ export const tokenConfig: TokenConfig = {
       name: 'modern',
       path: 'base-modern.json',
       selector: '.sky-theme-modern',
-      outputPath: 'modern.css',
       referenceTokens: [
         {
           name: 'modern-colors',
@@ -23,7 +22,6 @@ export const tokenConfig: TokenConfig = {
       name: 'base',
       path: 'base-blackbaud.json',
       selector: '.sky-theme-modern.sky-theme-brand-base',
-      outputPath: 'base.css',
       referenceTokens: [
         {
           name: 'base-light',
@@ -79,7 +77,6 @@ export const tokenConfig: TokenConfig = {
       path: 'base-blackbaud.json',
       selector:
         '.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud',
-      outputPath: 'blackbaud.css',
       referenceTokens: [
         {
           name: 'bb-light',
@@ -94,10 +91,7 @@ export const tokenConfig: TokenConfig = {
     },
     {
       name: 'default',
-      path: 'default/base.json',
       selector: '.sky-theme-default',
-      outputPath: 'default.css',
-      referenceTokens: [],
       publicTokens: [
         {
           name: 'public-spacing',
