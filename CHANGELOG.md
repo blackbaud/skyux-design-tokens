@@ -5,6 +5,19 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [5.8.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.7.0...5.8.0) (2026-04-22)
+
+
+### Features
+
+* add missing deprecated classes and scss variables to metadata ([#348](https://github.com/blackbaud/skyux-design-tokens/issues/348)) ([b8d882c](https://github.com/blackbaud/skyux-design-tokens/commit/b8d882c8e6394c32211e4befe4621ea76b47fe85))
+* update style dictionary ([#347](https://github.com/blackbaud/skyux-design-tokens/issues/347)) ([6acacbd](https://github.com/blackbaud/skyux-design-tokens/commit/6acacbd34c0a0cd9d90d7b29e0445134eff0de8f))
+
+
+### Bug Fixes
+
+* update token types for public border tokens ([#344](https://github.com/blackbaud/skyux-design-tokens/issues/344)) ([d4b9050](https://github.com/blackbaud/skyux-design-tokens/commit/d4b9050b83af188a246b9c740e530279671b3e1a))
+
 ## [5.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.5.0...5.6.0) (2026-03-27)
 
 
