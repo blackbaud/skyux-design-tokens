@@ -5,6 +5,17 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.8.1...6.0.0) (2026-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* delete modern theme v1 tokens ([#351](https://github.com/blackbaud/skyux-design-tokens/issues/351))
+
+### Features
+
+* delete modern theme v1 tokens ([#351](https://github.com/blackbaud/skyux-design-tokens/issues/351)) ([686d579](https://github.com/blackbaud/skyux-design-tokens/commit/686d5797636b821b53ba99a7c0b067e76d33b767))
+
 ## [5.8.1](https://github.com/blackbaud/skyux-design-tokens/compare/5.8.0...5.8.1) (2026-04-22)
 
 
