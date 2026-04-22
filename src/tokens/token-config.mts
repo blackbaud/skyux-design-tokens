@@ -4,21 +4,6 @@ export const tokenConfig: TokenConfig = {
   projectName: 'skyux-design-tokens',
   tokenSets: [
     {
-      name: 'modern',
-      path: 'base-modern.json',
-      selector: '.sky-theme-modern',
-      referenceTokens: [
-        {
-          name: 'modern-colors',
-          path: 'color/modern.json',
-        },
-        {
-          name: 'modern-layout',
-          path: 'layout/modern.json',
-        },
-      ],
-    },
-    {
       name: 'base',
       path: 'base-blackbaud.json',
       selector: '.sky-theme-modern.sky-theme-brand-base',
