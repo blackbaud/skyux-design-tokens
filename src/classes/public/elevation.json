@@ -67,7 +67,7 @@
               "properties": {
                 "box-shadow": "var(--sky-theme-elevation-overlay-300)"
               },
-              "deprecatedClassNames": ["sky-elevation-16"]
+              "deprecatedClassNames": ["sky-elevation-16", "sky-elevation-24"]
             }
           ]
         }

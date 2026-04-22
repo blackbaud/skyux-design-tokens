@@ -74,7 +74,8 @@
           "tokens": [
             {
               "name": "Inset balanced space XS",
-              "customProperty": "--sky-theme-space-inset-balanced-xs"
+              "customProperty": "--sky-theme-space-inset-balanced-xs",
+              "deprecatedScssVariables": ["$sky-padding-even-small"]
             },
             {
               "name": "Inset balanced space S",
@@ -103,6 +104,237 @@
             {
               "name": "Conditional input inset",
               "customProperty": "--sky-theme-space-conditional-input"
+            }
+          ]
+        },
+        {
+          "groupName": "Deprecated spacing",
+          "tokens": [
+            {
+              "name": "Padding",
+              "deprecatedScssVariables": ["$sky-padding"]
+            },
+            {
+              "name": "Padding half",
+              "deprecatedScssVariables": ["$sky-padding-half"]
+            },
+            {
+              "name": "Padding three-quarter",
+              "deprecatedScssVariables": ["$sky-padding-3_4"]
+            },
+            {
+              "name": "Padding plus half",
+              "deprecatedScssVariables": ["$sky-padding-plus-half"]
+            },
+            {
+              "name": "Padding double",
+              "deprecatedScssVariables": ["$sky-padding-double"]
+            },
+            {
+              "name": "Padding triple",
+              "deprecatedScssVariables": ["$sky-padding-triple"]
+            },
+            {
+              "name": "Margin",
+              "deprecatedScssVariables": ["$sky-margin"]
+            },
+            {
+              "name": "Margin half",
+              "deprecatedScssVariables": ["$sky-margin-half"]
+            },
+            {
+              "name": "Margin three-quarter",
+              "deprecatedScssVariables": ["$sky-margin-3_4"]
+            },
+            {
+              "name": "Margin plus half",
+              "deprecatedScssVariables": ["$sky-margin-plus-half"]
+            },
+            {
+              "name": "Margin double",
+              "deprecatedScssVariables": ["$sky-margin-double"]
+            },
+            {
+              "name": "Margin triple",
+              "deprecatedScssVariables": ["$sky-margin-triple"]
+            },
+            {
+              "name": "Context menu size",
+              "deprecatedScssVariables": ["$sky-context-menu-size"]
+            },
+            {
+              "name": "Tab button padding top-bottom",
+              "deprecatedScssVariables": ["$sky-tab-btn-padding-top-bottom"]
+            },
+            {
+              "name": "Tab button padding left-right",
+              "deprecatedScssVariables": ["$sky-tab-btn-padding-left-right"]
+            },
+            {
+              "name": "Tile header tool padding",
+              "deprecatedScssVariables": ["$sky-tile-header-tool-padding"]
+            },
+            {
+              "name": "Squish padding default",
+              "deprecatedScssVariables": ["$sky-padding-squish-default"]
+            },
+            {
+              "name": "Squish padding small",
+              "deprecatedScssVariables": ["$sky-padding-squish-small"]
+            },
+            {
+              "name": "Squish padding large",
+              "deprecatedScssVariables": ["$sky-padding-squish-large"]
+            },
+            {
+              "name": "Space default",
+              "deprecatedScssVariables": ["$sky-space-default"]
+            },
+            {
+              "name": "Space XXS",
+              "deprecatedScssVariables": ["$sky-space-xxs"]
+            },
+            {
+              "name": "Space XS",
+              "deprecatedScssVariables": ["$sky-space-xs"]
+            },
+            {
+              "name": "Space SM",
+              "deprecatedScssVariables": ["$sky-space-sm"]
+            },
+            {
+              "name": "Space MD",
+              "deprecatedScssVariables": ["$sky-space-md"]
+            },
+            {
+              "name": "Space LG",
+              "deprecatedScssVariables": ["$sky-space-lg"]
+            },
+            {
+              "name": "Space XL",
+              "deprecatedScssVariables": ["$sky-space-xl"]
+            },
+            {
+              "name": "Modern space XS",
+              "deprecatedScssVariables": ["$sky-theme-modern-space-xs"]
+            },
+            {
+              "name": "Modern space SM",
+              "deprecatedScssVariables": ["$sky-theme-modern-space-sm"]
+            },
+            {
+              "name": "Modern space MD",
+              "deprecatedScssVariables": ["$sky-theme-modern-space-md"]
+            },
+            {
+              "name": "Modern space LG",
+              "deprecatedScssVariables": ["$sky-theme-modern-space-lg"]
+            },
+            {
+              "name": "Modern space XL",
+              "deprecatedScssVariables": ["$sky-theme-modern-space-xl"]
+            },
+            {
+              "name": "Modern space XXL",
+              "deprecatedScssVariables": ["$sky-theme-modern-space-xxl"]
+            },
+            {
+              "name": "Modern padding even SM",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-even-sm"]
+            },
+            {
+              "name": "Modern padding even MD",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-even-md"]
+            },
+            {
+              "name": "Modern padding even LG",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-even-lg"]
+            },
+            {
+              "name": "Modern padding even XL",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-even-xl"]
+            },
+            {
+              "name": "Modern padding vertical MD",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-v-md"]
+            },
+            {
+              "name": "Modern padding vertical LG",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-v-lg"]
+            },
+            {
+              "name": "Modern padding horizontal SM",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-h-sm"]
+            },
+            {
+              "name": "Modern padding horizontal MD",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-h-md"]
+            },
+            {
+              "name": "Modern padding horizontal XL",
+              "deprecatedScssVariables": ["$sky-theme-modern-padding-h-xl"]
+            },
+            {
+              "name": "Modern button standard padding",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-padding-button-standard"
+              ]
+            },
+            {
+              "name": "Modern button icon padding",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-padding-button-icon"
+              ]
+            },
+            {
+              "name": "Modern margin inline XS",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-inline-xs"]
+            },
+            {
+              "name": "Modern margin inline SM",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-inline-sm"]
+            },
+            {
+              "name": "Modern margin inline MD",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-inline-md"]
+            },
+            {
+              "name": "Modern margin inline LG",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-inline-lg"]
+            },
+            {
+              "name": "Modern margin inline XL",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-inline-xl"]
+            },
+            {
+              "name": "Modern margin inline XXL",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-inline-xxl"]
+            },
+            {
+              "name": "Modern margin stacked XS",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-stacked-xs"]
+            },
+            {
+              "name": "Modern margin stacked SM",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-stacked-sm"]
+            },
+            {
+              "name": "Modern margin stacked MD",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-stacked-md"]
+            },
+            {
+              "name": "Modern margin stacked LG",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-stacked-lg"]
+            },
+            {
+              "name": "Modern margin stacked XL",
+              "deprecatedScssVariables": ["$sky-theme-modern-margin-stacked-xl"]
+            },
+            {
+              "name": "Modern margin stacked XXL",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-margin-stacked-xxl"
+              ]
             }
           ]
         }

@@ -140,7 +140,11 @@
             {
               "name": "Border radius M",
               "customProperty": "--sky-theme-border-radius-m",
-              "description": "The border radius for overlay containers like menus."
+              "description": "The border radius for overlay containers like menus.",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-border-radius-md",
+                "$sky-theme-modern-box-border-radius-default"
+              ]
             },
             {
               "name": "Pill border radius",
@@ -152,6 +156,15 @@
               "name": "Round border radius",
               "customProperty": "--sky-theme-border-radius-round",
               "description": "The border radius for circular elements like avatars."
+            }
+          ]
+        },
+        {
+          "groupName": "Deprecated borders",
+          "tokens": [
+            {
+              "name": "Nav selected border width",
+              "deprecatedScssVariables": ["$sky-nav-selected-border-width"]
             }
           ]
         }

@@ -49,6 +49,147 @@
           ]
         }
       ]
+    },
+    {
+      "groupName": "Deprecated elevation",
+      "tokens": [
+        {
+          "name": "Shadow border",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-border"]
+        },
+        {
+          "name": "Shadow color",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-color"]
+        },
+        {
+          "name": "Shadow size 1",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-size-1"]
+        },
+        {
+          "name": "Shadow size 3",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-size-3"]
+        },
+        {
+          "name": "Shadow size 4",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-size-4"]
+        },
+        {
+          "name": "Shadow size 8",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-size-8"]
+        },
+        {
+          "name": "Shadow size 16",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-size-16"]
+        },
+        {
+          "name": "Shadow size 24",
+          "deprecatedScssVariables": ["$sky-theme-modern-shadow-size-24"]
+        },
+        {
+          "name": "Elevation 1 shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-1-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 1 shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-1-shadow-size"
+          ]
+        },
+        {
+          "name": "Elevation 3 shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-3-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 3 shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-3-shadow-size"
+          ]
+        },
+        {
+          "name": "Elevation 4 shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-4-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 4 shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-4-shadow-size"
+          ]
+        },
+        {
+          "name": "Elevation 8 shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-8-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 8 shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-8-shadow-size"
+          ]
+        },
+        {
+          "name": "Elevation 16 shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-16-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 16 shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-16-shadow-size"
+          ]
+        },
+        {
+          "name": "Elevation 24 shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-24-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 24 shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-24-shadow-size"
+          ]
+        },
+        {
+          "name": "Elevation 0 bordered border",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-0-bordered-border"
+          ]
+        },
+        {
+          "name": "Elevation 1 bordered border",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-1-bordered-border"
+          ]
+        },
+        {
+          "name": "Elevation 1 bordered shadow color",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-1-bordered-shadow-color"
+          ]
+        },
+        {
+          "name": "Elevation 1 bordered shadow size",
+          "deprecatedScssVariables": [
+            "$sky-theme-modern-elevation-1-bordered-shadow-size"
+          ]
+        },
+        {
+          "name": "Page wait z-index",
+          "deprecatedScssVariables": ["$sky-page-wait-z-index"]
+        },
+        {
+          "name": "Component wait z-index",
+          "deprecatedScssVariables": ["$sky-component-wait-z-index"]
+        }
+      ]
     }
   ]
 }

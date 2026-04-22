@@ -336,21 +336,62 @@
         },
         {
           "name": "Deprecated typography",
+          "description": "These typography classes are deprecated and will be removed in a future version of SKY UX.",
           "demoMetadata": {
             "type": "none"
           },
           "styles": [
             {
               "name": "Data label",
-              "description": "This class formats labels for read-only data. It uses a muted color because the label that identifies the data is less important than the content.",
-              "deprecatedClassNames": ["sky-font-data-label", "sky-field-label"]
+              "description": "To replace this, follow component patterns and use supported typography classes above.",
+              "deprecatedClassNames": [
+                "sky-font-data-label",
+                "sky-field-label",
+                "sky-font-field-label"
+              ]
             },
             {
               "name": "Deemphasized",
+              "description": "Replace this with one of the deemphasized or help text classes above.",
               "deprecatedClassNames": [
                 "sky-font-deemphasized",
                 "sky-deemphasized"
               ]
+            },
+            {
+              "name": "Hint text M",
+              "description": "Replace this with a help text class above.",
+              "deprecatedClassNames": ["sky-font-hint-text-m"]
+            },
+            {
+              "name": "Hint text S",
+              "description": "Replace this with a help text class above.",
+              "deprecatedClassNames": ["sky-font-hint-text-s"]
+            },
+            {
+              "name": "Paragraph",
+              "description": "Replace this with a &lt;p&gt; element.",
+              "deprecatedClassNames": ["sky-paragraph"]
+            },
+            {
+              "name": "Text danger",
+              "description": "Replace this with the status indicator component.",
+              "deprecatedClassNames": ["sky-text-danger"]
+            },
+            {
+              "name": "Text info",
+              "description": "Replace this with the status indicator component.",
+              "deprecatedClassNames": ["sky-text-info"]
+            },
+            {
+              "name": "Text success",
+              "description": "Replace this with the status indicator component.",
+              "deprecatedClassNames": ["sky-text-success"]
+            },
+            {
+              "name": "Text warning",
+              "description": "Replace this with the status indicator component.",
+              "deprecatedClassNames": ["sky-text-warning"]
             }
           ]
         }

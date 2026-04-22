@@ -16,6 +16,10 @@
                   "description": "The background color for the page.",
                   "deprecatedCustomProperties": [
                     "--sky-background-color-page-default"
+                  ],
+                  "deprecatedScssVariables": [
+                    "$sky-theme-modern-background-color-page-default",
+                    "$sky-background-color-page-default"
                   ]
                 }
               ]
@@ -47,6 +51,10 @@
                   "description": "The background color for disabled elements.",
                   "deprecatedCustomProperties": [
                     "--sky-background-color-disabled"
+                  ],
+                  "deprecatedScssVariables": [
+                    "$sky-theme-modern-background-color-disabled",
+                    "$sky-background-color-disabled"
                   ]
                 }
               ]
@@ -80,6 +88,10 @@
                   "customProperty": "--sky-theme-color-border-divider-default",
                   "deprecatedCustomProperties": [
                     "--sky-border-color-neutral-medium"
+                  ],
+                  "deprecatedScssVariables": [
+                    "$sky-border-color-neutral-medium",
+                    "$sky-theme-modern-background-color-neutral-medium"
                   ]
                 },
                 {
@@ -98,13 +110,15 @@
               "name": "Default text",
               "customProperty": "--sky-theme-color-text-default",
               "description": "The default color for text on the page.",
-              "deprecatedCustomProperties": ["--sky-text-color-default"]
+              "deprecatedCustomProperties": ["--sky-text-color-default"],
+              "deprecatedScssVariables": ["$sky-text-color-default"]
             },
             {
               "name": "Deemphasized text",
               "customProperty": "--sky-theme-color-text-deemphasized",
               "description": "The color for deemphasized text, such as content labels or hint text.",
-              "deprecatedCustomProperties": ["--sky-text-color-deemphasized"]
+              "deprecatedCustomProperties": ["--sky-text-color-deemphasized"],
+              "deprecatedScssVariables": ["$sky-text-color-deemphasized"]
             },
             {
               "name": "Heading text",
@@ -115,7 +129,11 @@
               "name": "Action text",
               "customProperty": "--sky-theme-color-text-action",
               "description": "The color for text in links and link buttons.",
-              "deprecatedCustomProperties": ["--sky-text-color-action-primary"]
+              "deprecatedCustomProperties": ["--sky-text-color-action-primary"],
+              "deprecatedScssVariables": [
+                "$sky-text-color-action-primary",
+                "$sky-theme-modern-text-color-action-primary"
+              ]
             },
             {
               "name": "Action contrast text",
@@ -127,6 +145,7 @@
               "customProperty": "--sky-theme-color-text-inverse",
               "description": "The color for text on heavy background colors, such as primary and danger button labels.",
               "deprecatedCustomProperties": ["--sky-text-color-on-dark"],
+              "deprecatedScssVariables": ["$sky-text-color-on-dark"],
               "demoMetadata": {
                 "background": "--sky-theme-color-background-icon_matte-info"
               }
@@ -195,13 +214,15 @@
                   "description": "The background color for an element that conveys danger, error, or a critical warning.",
                   "deprecatedCustomProperties": [
                     "--sky-background-color-danger"
-                  ]
+                  ],
+                  "deprecatedScssVariables": ["$sky-background-color-danger"]
                 },
                 {
                   "name": "Info background",
                   "customProperty": "--sky-theme-color-background-container-info",
                   "description": "The background color for an element that contains important information, but conveys no danger.",
-                  "deprecatedCustomProperties": ["--sky-background-color-info"]
+                  "deprecatedCustomProperties": ["--sky-background-color-info"],
+                  "deprecatedScssVariables": ["$sky-background-color-info"]
                 },
                 {
                   "name": "Success background",
@@ -209,7 +230,8 @@
                   "description": "The background color for an element that conveys success or completion.",
                   "deprecatedCustomProperties": [
                     "--sky-background-color-success"
-                  ]
+                  ],
+                  "deprecatedScssVariables": ["$sky-background-color-success"]
                 },
                 {
                   "name": "Warning background",
@@ -217,7 +239,8 @@
                   "description": "The background color for an element that conveys warning or caution.",
                   "deprecatedCustomProperties": [
                     "--sky-background-color-warning"
-                  ]
+                  ],
+                  "deprecatedScssVariables": ["$sky-background-color-warning"]
                 }
               ]
             },
@@ -230,13 +253,17 @@
                   "name": "Danger border",
                   "customProperty": "--sky-theme-color-border-danger",
                   "description": "The border color for an element that conveys danger, error, or a critical warning.",
-                  "deprecatedCustomProperties": ["--sky-highlight-color-danger"]
+                  "deprecatedCustomProperties": [
+                    "--sky-highlight-color-danger"
+                  ],
+                  "deprecatedScssVariables": ["$sky-highlight-color-danger"]
                 },
                 {
                   "name": "Info border",
                   "customProperty": "--sky-theme-color-border-info",
                   "description": "The border color for an element that contains important information, but conveys no danger.",
-                  "deprecatedCustomProperties": ["--sky-highlight-color-info"]
+                  "deprecatedCustomProperties": ["--sky-highlight-color-info"],
+                  "deprecatedScssVariables": ["$sky-highlight-color-info"]
                 },
                 {
                   "name": "Success border",
@@ -244,7 +271,8 @@
                   "description": "The border color for an element that conveys success or completion.",
                   "deprecatedCustomProperties": [
                     "--sky-highlight-color-success"
-                  ]
+                  ],
+                  "deprecatedScssVariables": ["$sky-highlight-color-success"]
                 },
                 {
                   "name": "Warning border",
@@ -252,7 +280,8 @@
                   "description": "The border color for an element that conveys warning or caution.",
                   "deprecatedCustomProperties": [
                     "--sky-highlight-color-warning"
-                  ]
+                  ],
+                  "deprecatedScssVariables": ["$sky-highlight-color-warning"]
                 }
               ]
             },
@@ -323,37 +352,44 @@
                 {
                   "name": "Classification background 1",
                   "customProperty": "--sky-theme-color-classify-1-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-teal"]
+                  "deprecatedCustomProperties": ["--sky-category-color-teal"],
+                  "deprecatedScssVariables": ["$sky-category-color-teal"]
                 },
                 {
                   "name": "Classification background 2",
                   "customProperty": "--sky-theme-color-classify-2-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-purple"]
+                  "deprecatedCustomProperties": ["--sky-category-color-purple"],
+                  "deprecatedScssVariables": ["$sky-category-color-purple"]
                 },
                 {
                   "name": "Classification background 3",
                   "customProperty": "--sky-theme-color-classify-3-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-blue"]
+                  "deprecatedCustomProperties": ["--sky-category-color-blue"],
+                  "deprecatedScssVariables": ["$sky-category-color-blue"]
                 },
                 {
                   "name": "Classification background 4",
                   "customProperty": "--sky-theme-color-classify-4-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-orange"]
+                  "deprecatedCustomProperties": ["--sky-category-color-orange"],
+                  "deprecatedScssVariables": ["$sky-category-color-orange"]
                 },
                 {
                   "name": "Classification background 5",
                   "customProperty": "--sky-theme-color-classify-5-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-yellow"]
+                  "deprecatedCustomProperties": ["--sky-category-color-yellow"],
+                  "deprecatedScssVariables": ["$sky-category-color-yellow"]
                 },
                 {
                   "name": "Classification background 6",
                   "customProperty": "--sky-theme-color-classify-6-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-green"]
+                  "deprecatedCustomProperties": ["--sky-category-color-green"],
+                  "deprecatedScssVariables": ["$sky-category-color-light-blue"]
                 },
                 {
                   "name": "Classification background 7",
                   "customProperty": "--sky-theme-color-classify-7-soft",
-                  "deprecatedCustomProperties": ["--sky-category-color-red"]
+                  "deprecatedCustomProperties": ["--sky-category-color-red"],
+                  "deprecatedScssVariables": ["$sky-category-color-red"]
                 }
               ]
             },
@@ -610,42 +646,346 @@
               "name": "Primary action background",
               "deprecatedCustomProperties": [
                 "--sky-background-color-primary-dark"
+              ],
+              "deprecatedScssVariables": [
+                "$sky-background-color-primary-dark",
+                "$sky-theme-modern-background-color-primary-dark"
               ]
             },
             {
               "name": "Light background",
               "deprecatedCustomProperties": [
                 "--sky-background-color-neutral-light"
+              ],
+              "deprecatedScssVariables": [
+                "$sky-background-color-neutral-light",
+                "$sky-theme-modern-background-color-neutral-light"
               ]
             },
             {
               "name": "Selected element background",
               "deprecatedCustomProperties": [
                 "--sky-background-color-input-selected"
-              ]
+              ],
+              "deprecatedScssVariables": ["$sky-background-color-selected"]
             },
             {
               "name": "Info background light",
               "deprecatedCustomProperties": [
                 "--sky-background-color-info-light"
-              ]
+              ],
+              "deprecatedScssVariables": ["$sky-background-color-info-light"]
             },
             {
               "name": "Danger background dark",
               "deprecatedCustomProperties": [
                 "--sky-background-color-danger-dark"
-              ]
+              ],
+              "deprecatedScssVariables": ["$sky-background-color-danger-dark"]
             },
             {
               "name": "Neutral medium dark border",
               "deprecatedCustomProperties": [
                 "--sky-border-color-neutral-medium-dark"
+              ],
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-border-color-neutral-medium-dark"
               ]
             },
             {
               "name": "Selected item background",
               "deprecatedCustomProperties": [
                 "--sky-background-color-item-selected"
+              ]
+            },
+            {
+              "name": "White",
+              "deprecatedScssVariables": ["$sky-color-white"]
+            },
+            {
+              "name": "Black",
+              "deprecatedScssVariables": ["$sky-color-black"]
+            },
+            {
+              "name": "Gray 01",
+              "deprecatedScssVariables": ["$sky-color-gray-01"]
+            },
+            {
+              "name": "Gray 05",
+              "deprecatedScssVariables": ["$sky-color-gray-05"]
+            },
+            {
+              "name": "Gray 10",
+              "deprecatedScssVariables": ["$sky-color-gray-10"]
+            },
+            {
+              "name": "Gray 20",
+              "deprecatedScssVariables": ["$sky-color-gray-20"]
+            },
+            {
+              "name": "Gray 70",
+              "deprecatedScssVariables": ["$sky-color-gray-70"]
+            },
+            {
+              "name": "Gray 80",
+              "deprecatedScssVariables": ["$sky-color-gray-80"]
+            },
+            {
+              "name": "Gray 90",
+              "deprecatedScssVariables": ["$sky-color-gray-90"]
+            },
+            {
+              "name": "Gray 100",
+              "deprecatedScssVariables": ["$sky-color-gray-100"]
+            },
+            {
+              "name": "Gray 105",
+              "deprecatedScssVariables": ["$sky-color-gray-105"]
+            },
+            {
+              "name": "Blue 05",
+              "deprecatedScssVariables": ["$sky-color-blue-05"]
+            },
+            {
+              "name": "Blue 10",
+              "deprecatedScssVariables": ["$sky-color-blue-10"]
+            },
+            {
+              "name": "Blue 30",
+              "deprecatedScssVariables": ["$sky-color-blue-30"]
+            },
+            {
+              "name": "Blue 50",
+              "deprecatedScssVariables": ["$sky-color-blue-50"]
+            },
+            {
+              "name": "Blue 70",
+              "deprecatedScssVariables": ["$sky-color-blue-70"]
+            },
+            {
+              "name": "Blue 75",
+              "deprecatedScssVariables": ["$sky-color-blue-75"]
+            },
+            {
+              "name": "Green 30",
+              "deprecatedScssVariables": ["$sky-color-green-30"]
+            },
+            {
+              "name": "Green 50",
+              "deprecatedScssVariables": ["$sky-color-green-50"]
+            },
+            {
+              "name": "Yellow 30",
+              "deprecatedScssVariables": ["$sky-color-yellow-30"]
+            },
+            {
+              "name": "Yellow 50",
+              "deprecatedScssVariables": ["$sky-color-yellow-50"]
+            },
+            {
+              "name": "Red 30",
+              "deprecatedScssVariables": ["$sky-color-red-30"]
+            },
+            {
+              "name": "Red 50",
+              "deprecatedScssVariables": ["$sky-color-red-50"]
+            },
+            {
+              "name": "Red 70",
+              "deprecatedScssVariables": ["$sky-color-red-70"]
+            },
+            {
+              "name": "Purple 10",
+              "deprecatedScssVariables": ["$sky-color-purple-10"]
+            },
+            {
+              "name": "Purple 50",
+              "deprecatedScssVariables": ["$sky-color-purple-50"]
+            },
+            {
+              "name": "Teal 50",
+              "deprecatedScssVariables": ["$sky-color-teal-50"]
+            },
+            {
+              "name": "Teal 70",
+              "deprecatedScssVariables": ["$sky-color-teal-70"]
+            },
+            {
+              "name": "Blackbaud sky blue 20",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-sky-blue-20"]
+            },
+            {
+              "name": "Blackbaud sky blue 40",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-sky-blue-40"]
+            },
+            {
+              "name": "Blackbaud green 30",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-green-30"]
+            },
+            {
+              "name": "Blackbaud yellow 30",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-yellow-30"]
+            },
+            {
+              "name": "Blackbaud orange 30",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-orange-30"]
+            },
+            {
+              "name": "Blackbaud red 30",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-red-30"]
+            },
+            {
+              "name": "Blackbaud purple 30",
+              "deprecatedScssVariables": ["$sky-color-blackbaud-purple-30"]
+            },
+            {
+              "name": "Icon borderless text",
+              "deprecatedScssVariables": ["$sky-text-color-icon-borderless"]
+            },
+            {
+              "name": "Neutral light border",
+              "deprecatedScssVariables": ["$sky-border-color-neutral-light"]
+            },
+            {
+              "name": "Modern gray 003",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-003"]
+            },
+            {
+              "name": "Modern gray 005",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-005"]
+            },
+            {
+              "name": "Modern gray 07",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-07"]
+            },
+            {
+              "name": "Modern gray 15",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-15"]
+            },
+            {
+              "name": "Modern gray 30",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-30"]
+            },
+            {
+              "name": "Modern gray 50",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-50"]
+            },
+            {
+              "name": "Modern gray 70",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-70"]
+            },
+            {
+              "name": "Modern gray 102",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-102"]
+            },
+            {
+              "name": "Modern gray 103",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-103"]
+            },
+            {
+              "name": "Modern gray 110",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-110"]
+            },
+            {
+              "name": "Modern gray 115",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-gray-115"]
+            },
+            {
+              "name": "Modern blue 60",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-blue-60"]
+            },
+            {
+              "name": "Modern blue 74",
+              "deprecatedScssVariables": ["$sky-theme-modern-color-blue-74"]
+            },
+            {
+              "name": "Modern neutral light border",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-border-color-neutral-light"
+              ]
+            },
+            {
+              "name": "Modern primary dark border",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-border-color-primary-dark"
+              ]
+            },
+            {
+              "name": "Dark mode page background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-page-default"
+              ]
+            },
+            {
+              "name": "Dark mode primary dark background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-primary-dark"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 1 background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-elevation-1"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 3 background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-elevation-3"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 4 background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-elevation-4"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 8 background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-elevation-8"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 16 background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-elevation-16"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 24 background",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-background-color-elevation-24"
+              ]
+            },
+            {
+              "name": "Dark mode neutral medium border",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-border-color-neutral-medium"
+              ]
+            },
+            {
+              "name": "Dark mode action text",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-text-color-action-primary"
+              ]
+            },
+            {
+              "name": "Dark mode body text",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-font-body-default-color"
+              ]
+            },
+            {
+              "name": "Dark mode deemphasized text",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-font-deemphasized-color"
+              ]
+            },
+            {
+              "name": "Dark mode elevation 0 bordered border",
+              "deprecatedScssVariables": [
+                "$sky-theme-modern-mode-dark-elevation-0-bordered-border"
               ]
             }
           ]
