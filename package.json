@@ -17,7 +17,7 @@
     "publishToNPM": true
   },
   "devDependencies": {
-    "@blackbaud/skyux-branding-builder": "5.0.0",
+    "@blackbaud/skyux-branding-builder": "5.0.1",
     "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#12.0.0-alpha.21",
     "@tokens-studio/sd-transforms": "2.0.3",
     "@types/fs-extra": "11.0.4",
