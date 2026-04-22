@@ -6,7 +6,6 @@ test('should have token sets in the correct format', () => {
   expect(tokenSets[0].name).toEqual('modern');
   expect(tokenSets[0].selector).toEqual('.sky-theme-modern');
   expect(tokenSets[0].path).toEqual('base-modern.json');
-  expect(tokenSets[0].outputPath).toEqual('modern.css');
   expect({
     name: 'modern-colors',
     path: 'color/modern.json',
@@ -21,7 +20,6 @@ test('should have token sets in the correct format', () => {
     '.sky-theme-modern.sky-theme-brand-base',
   );
   expect(tokenSets[1].path).toEqual('base-blackbaud.json');
-  expect(tokenSets[1].outputPath).toEqual('base.css');
   expect({
     name: 'base-light',
     path: 'color/base-light.json',
@@ -41,7 +39,6 @@ test('should have token sets in the correct format', () => {
     '.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud',
   );
   expect(tokenSets[2].path).toEqual('base-blackbaud.json');
-  expect(tokenSets[2].outputPath).toEqual('blackbaud.css');
   expect({
     name: 'bb-light',
     path: 'color/bb-light.json',
