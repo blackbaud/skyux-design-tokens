@@ -5,6 +5,13 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.0.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.0...6.0.1) (2026-04-23)
+
+
+### Bug Fixes
+
+* correctly list deprecated elevation scss variables ([#353](https://github.com/blackbaud/skyux-design-tokens/issues/353)) ([6e97718](https://github.com/blackbaud/skyux-design-tokens/commit/6e97718abeaa2a0b9f9020cab11cf973db3fc8c7))
+
 ## [6.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.8.1...6.0.0) (2026-04-22)
 
 
