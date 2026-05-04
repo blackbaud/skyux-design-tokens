@@ -20,6 +20,10 @@ To create these result files locally, clone this repository, run `npm install` a
 
 If you see a test failure that indicates the test is "obsolete," it means that the outputted tokens have changed and the snapshot test failed. To update the snapshot, run `vitest run --update` and review the changes to the snapshot file to ensure they are all expected. If you do not have `vitest` installed, run `npm i -g vitest`.
 
-## Testing CSS with local preview
+## Testing with local preview
 
-To add CSS to any SPA you are locally previewing, create a file `src/dev/extra-styles.css`. `:ng-deep`, `:host`, and SCSS syntax will not work in this file.
+To view local tokens changes in production SPAs, ensure you have a `.env.local` file and run the command `npm run dev`. The local preview will apply to all SPAs at the same domain as the `VITE_LAUNCH_URL` specified in your `.env.local`. The preview will refresh when you edit and save a file.
+
+If you do not have an `.env.local` file, reach out to someone on the team for help setting it up.
+
+To add additional CSS to any SPA you are locally previewing, create a file `src/dev/extra-styles.css`. This stylesheet will be added to the SPA and can be used to override styles for testing purposes. It is a regular CSS file, so Angular selectors like `:ng-deep` and `:host` and SCSS nesting syntax will not work. `!important` will work, and will be helpful for testing.
