@@ -5,6 +5,13 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.0.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.1...6.0.2) (2026-05-12)
+
+
+### Bug Fixes
+
+* assign default custom property values in root ([#356](https://github.com/blackbaud/skyux-design-tokens/issues/356)) ([950f764](https://github.com/blackbaud/skyux-design-tokens/commit/950f7645419850447e13fe9a70546400be697713))
+
 ## [6.0.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.0...6.0.1) (2026-04-23)
 
 
