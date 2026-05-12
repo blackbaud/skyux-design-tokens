@@ -76,7 +76,7 @@ export const tokenConfig: TokenConfig = {
     },
     {
       name: 'default',
-      selector: '.sky-theme-default',
+      selector: ':root',
       publicTokens: [
         {
           name: 'public-spacing',

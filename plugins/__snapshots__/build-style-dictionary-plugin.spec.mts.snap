@@ -2482,7 +2482,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-width-divider-soft: var(--sky-border-width-separator-row);
   --sky-theme-border-width-emphasized: var(--sky-border-width-emphasized);
 }
-.sky-theme-default {
+:root {
   --sky-theme-space-conditional-input: 27px;
   --sky-theme-space-inline-l: 15px;
   --sky-theme-space-inline-m: 12px;
@@ -2502,7 +2502,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-space-stacked-xs: 5px;
   --sky-theme-space-stacked-xxl: 40px;
 }
-.sky-theme-default {
+:root {
   --sky-theme-font-family-body-deemphasized-m: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
   --sky-theme-font-family-body-deemphasized-s: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
   --sky-theme-font-family-body-emphasized-m: 'BLKB Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -2584,14 +2584,14 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-font-weight-heading-4: 600;
   --sky-theme-font-weight-heading-5: 400;
 }
-.sky-theme-default {
+:root {
   --sky-theme-elevation-overflow: 0 0 5px #0000004d;
   --sky-theme-elevation-overlay-100: 0 0 5px #0000004d;
   --sky-theme-elevation-overlay-200: none;
   --sky-theme-elevation-overlay-300: none;
   --sky-theme-elevation-raised-100: none;
 }
-.sky-theme-default {
+:root {
   --sky-theme-color-background-container-backdrop: #eeeeef;
   --sky-theme-color-background-container-danger: #f7a08f;
   --sky-theme-color-background-container-default: #ffffff;
@@ -2683,7 +2683,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-viz-sequence-8: #035755;
   --sky-theme-color-viz-sequence-9: #02413f;
 }
-.sky-theme-default {
+:root {
   --sky-theme-border-container-default: 1px solid #cdcfd2;
   --sky-theme-border-danger: 1px solid #ef4044;
   --sky-theme-border-divider-default: 1px solid #cdcfd2;
