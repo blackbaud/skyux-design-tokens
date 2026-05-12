@@ -61,7 +61,7 @@
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.sky.500}"
       },
       "inverse": {
         "$type": "color",
@@ -181,7 +181,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red.500}"
           },
           "active": {
             "$type": "color",
@@ -264,7 +264,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.800}"
+          "$value": "{bb.color.sky.900}"
         },
         "dimmed": {
           "$type": "color",
@@ -286,12 +286,12 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{bb.color.sky.500}"
         },
         "action": {
           "heavy": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{bb.color.sky.500}"
           },
           "soft": {
             "$type": "color",
@@ -302,7 +302,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.900}"
+          "$value": "{bb.color.slate.1000}"
         },
         "disabled": {
           "$type": "color",
@@ -316,15 +316,15 @@
         },
         "hover": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.slate.1100}"
         },
         "active": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.slate.1100}"
         },
         "focus": {
           "$type": "color",
-          "$value": "{bb.color.transparent}"
+          "$value": "{bb.color.slate.1100}"
         },
         "disabled": {
           "$type": "color",
@@ -451,7 +451,7 @@
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue.400}"
+        "$value": "{bb.color.sky.500}"
       },
       "disabled": {
         "$type": "color",
@@ -604,7 +604,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.slate.600}"
         },
         "hover": {
           "$type": "color",
