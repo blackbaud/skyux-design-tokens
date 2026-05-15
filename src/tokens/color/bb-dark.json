@@ -3,15 +3,15 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.gray.25}"
+        "$value": "{bb.color.slate.25}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.gray.300}"
+        "$value": "{bb.color.slate.300}"
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.sky.500}"
+        "$value": "{bb.color.blue.500}"
       },
       "danger": {
         "$type": "color",
@@ -27,7 +27,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.sky.50}"
+        "$value": "{bb.color.blue.200}"
       },
       "action_contrast": {
         "$type": "color",
@@ -598,7 +598,7 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.800}"
+          "$value": "{bb.color.slate.700}"
         }
       },
       "input": {
@@ -764,43 +764,43 @@
   "elevation": {
     "none": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.slate.0}"
+      "$value": "{bb.shadow.black-heavy.0}"
     },
     "focus": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.slate.200}"
+      "$value": "{bb.shadow.black-heavy.200}"
     },
     "overflow": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.slate.200}"
+      "$value": "{bb.shadow.black-heavy.200}"
     },
     "raised": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.slate.100}"
+        "$value": "{bb.shadow.black-heavy.100}"
       }
     },
     "overlay": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.slate.400}"
+        "$value": "{bb.shadow.black-heavy.400}"
       },
       "200": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.slate.800}"
+        "$value": "{bb.shadow.black-heavy.800}"
       },
       "300": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.slate.1600}"
+        "$value": "{bb.shadow.black-heavy.1600}"
       },
       "400": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.slate.2400}"
+        "$value": "{bb.shadow.black-heavy.2400}"
       },
       "simple": {
         "100": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.slate.simple.400}"
+          "$value": "{bb.shadow.black-heavy.simple.400}"
         }
       }
     }

@@ -1,0 +1,39 @@
+section {
+  border-color: transparent !important;
+  background:
+    linear-gradient(
+        var(--sky-color-background-container-base),
+        var(--sky-color-background-container-base)
+      )
+      padding-box,
+    linear-gradient(var(--bb-color-slate-900), var(--bb-color-slate-800))
+      border-box !important;
+}
+
+.sky-dropdown-menu {
+  border-color: transparent !important;
+  background:
+    linear-gradient(
+        var(--sky-color-background-container-menu),
+        var(--sky-color-background-container-menu)
+      )
+      padding-box,
+    linear-gradient(var(--bb-color-slate-900), var(--bb-color-slate-800))
+      border-box !important;
+}
+
+.sky-page-summary {
+  background-color: transparent !important;
+}
+
+.list-header {
+  background-color: transparent !important;
+}
+
+.list-title {
+  background-color: transparent !important;
+}
+
+.list-toolbar {
+  background-color: transparent !important;
+}

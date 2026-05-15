@@ -1074,6 +1074,10 @@
             "$type": "color",
             "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
           }
+        },
+        "slate": {
+          "$type": "color",
+          "$value": "linear-gradient( {bb.color.slate.900}, {bb.color.slate.200})"
         }
       },
       "brand": {
@@ -1555,6 +1559,242 @@
               "blur": "4",
               "spread": "0",
               "color": "rgba( {bb.color.gray.1100},0.5)",
+              "type": "dropShadow"
+            }
+          }
+        }
+      },
+      "black-heavy": {
+        "0": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "rgba(0, 0, 0, 0)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "25": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "1",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.1)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "50": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "1",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1.5",
+              "blur": "1",
+              "spread": "-1",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "100": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "3",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "2",
+              "blur": "1",
+              "spread": "-1",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "1",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "200": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "8",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "3",
+              "blur": "3",
+              "spread": "-2",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "3",
+              "blur": "4",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "400": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "2",
+              "blur": "4",
+              "spread": "-1",
+              "color": "rgba( {bb.color.black},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "10",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "4",
+              "blur": "5",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "800": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "5",
+              "blur": "5",
+              "spread": "-3",
+              "color": "rgba( {bb.color.black},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "3",
+              "blur": "14",
+              "spread": "2",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "8",
+              "blur": "10",
+              "spread": "1",
+              "color": "rgba( {bb.color.black},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "1600": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "8",
+              "blur": "10",
+              "spread": "-5",
+              "color": "rgba( {bb.color.black},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "6",
+              "blur": "30",
+              "spread": "5",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "16",
+              "blur": "24",
+              "spread": "2",
+              "color": "rgba( {bb.color.black},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "2400": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "11",
+              "blur": "15",
+              "spread": "-7",
+              "color": "rgba( {bb.color.black},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "9",
+              "blur": "46",
+              "spread": "8",
+              "color": "rgba( {bb.color.black},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "24",
+              "blur": "38",
+              "spread": "3",
+              "color": "rgba( {bb.color.black},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "simple": {
+          "400": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "1",
+              "y": "2",
+              "blur": "4",
+              "spread": "0",
+              "color": "rgba( {bb.color.black},0.9)",
               "type": "dropShadow"
             }
           }
