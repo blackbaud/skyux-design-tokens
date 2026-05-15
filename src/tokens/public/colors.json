@@ -9,7 +9,7 @@
         "container": {
           "default": {
             "$type": "color",
-            "$value": "{color.background.container.base}"
+            "$value": "{color.background.container.default}"
           },
           "dimmed": {
             "$type": "color",
@@ -69,7 +69,7 @@
         "container": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.container.base}"
+            "$value": "{color.border.container.default}"
           }
         },
         "disabled": {
@@ -79,11 +79,11 @@
         "divider": {
           "default": {
             "$type": "color",
-            "$value": "{color.border.divider}"
+            "$value": "{color.border.divider.default}"
           },
           "soft": {
             "$type": "color",
-            "$value": "{color.border.separator.row}"
+            "$value": "{color.border.divider.soft}"
           }
         },
         "danger": {

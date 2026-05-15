@@ -242,7 +242,7 @@
         }
       },
       "container": {
-        "base": {
+        "default": {
           "$type": "color",
           "$value": "{bb.color.gray.1000}"
         },
@@ -461,10 +461,6 @@
         "$type": "color",
         "$value": "{bb.color.gray.800}"
       },
-      "divider": {
-        "$type": "color",
-        "$value": "{bb.color.gray.800}"
-      },
       "column_divider": {
         "$type": "color",
         "$value": "{bb.color.blue.400}"
@@ -476,6 +472,16 @@
       "progress_step": {
         "$type": "color",
         "$value": "{bb.color.gray.600}"
+      },
+      "divider": {
+        "default": {
+          "$type": "color",
+          "$value": "{bb.color.gray.800}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.gray.800}"
+        }
       },
       "action": {
         "primary": {
@@ -596,7 +602,7 @@
         }
       },
       "container": {
-        "base": {
+        "default": {
           "$type": "color",
           "$value": "{bb.color.blue.900}"
         }
@@ -683,10 +689,6 @@
         "light": {
           "$type": "color",
           "$value": "{bb.color.gray.700}"
-        },
-        "row": {
-          "$type": "color",
-          "$value": "{bb.color.gray.800}"
         }
       },
       "tab": {

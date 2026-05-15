@@ -246,7 +246,7 @@
         }
       },
       "container": {
-        "base": {
+        "default": {
           "$type": "color",
           "$value": "{bb.color.white}"
         },
@@ -465,10 +465,6 @@
         "$type": "color",
         "$value": "{bb.color.blue.600}"
       },
-      "divider": {
-        "$type": "color",
-        "$value": "{bb.color.gray.300}"
-      },
       "elevation": {
         "$type": "color",
         "$value": "{bb.color.gray.200}"
@@ -488,6 +484,16 @@
       "progress_step": {
         "$type": "color",
         "$value": "{bb.color.gray.400}"
+      },
+      "divider": {
+        "default": {
+          "$type": "color",
+          "$value": "{bb.color.gray.300}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.gray.200}"
+        }
       },
       "action": {
         "primary": {
@@ -624,7 +630,7 @@
         }
       },
       "container": {
-        "base": {
+        "default": {
           "$type": "color",
           "$value": "{bb.color.gray.200}"
         }
@@ -705,10 +711,6 @@
       },
       "separator": {
         "light": {
-          "$type": "color",
-          "$value": "{bb.color.gray.200}"
-        },
-        "row": {
           "$type": "color",
           "$value": "{bb.color.gray.200}"
         }

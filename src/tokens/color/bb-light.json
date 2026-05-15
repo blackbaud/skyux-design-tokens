@@ -61,13 +61,19 @@
       }
     },
     "border": {
-      "divider": {
-        "$type": "color",
-        "$value": "{bb.color.slate.300}"
-      },
       "elevation": {
         "$type": "color",
         "$value": "{bb.color.slate.250}"
+      },
+      "divider": {
+        "default": {
+          "$type": "color",
+          "$value": "{bb.color.slate.300}"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.slate.250}"
+        }
       },
       "action": {
         "secondary": {
@@ -90,7 +96,7 @@
         }
       },
       "container": {
-        "base": {
+        "default": {
           "$type": "color",
           "$value": "{bb.color.slate.250}"
         }
@@ -109,10 +115,6 @@
       },
       "separator": {
         "light": {
-          "$type": "color",
-          "$value": "{bb.color.slate.250}"
-        },
-        "row": {
           "$type": "color",
           "$value": "{bb.color.slate.250}"
         }
