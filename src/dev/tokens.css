@@ -1,1 +1,138 @@
-/* Leave this file empty (or else) */
+* {
+	box-sizing: border-box;
+}
+
+.palette-preview-app {
+	padding: 24px;
+	min-height: 100vh;
+	background: var(--sky-color-background-page);
+	color: var(--sky-color-text-default);
+}
+
+.spa-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 20px;
+	margin-bottom: 16px;
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 8px;
+	background: var(--sky-color-background-container-base);
+}
+
+.spa-header h1 {
+	margin: 0 0 8px;
+	font-size: 24px;
+}
+
+.spa-header p {
+	margin: 0;
+	color: var(--sky-color-text-deemphasized);
+}
+
+.spa-nav {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.spa-nav-link {
+	padding: 8px 12px;
+	border-radius: 999px;
+	text-decoration: none;
+	color: var(--sky-color-text-default);
+	border: 1px solid var(--sky-color-border-divider);
+	background: var(--sky-color-background-page);
+}
+
+.spa-nav-link.is-active {
+	color: var(--sky-color-text-inverse);
+	background: var(--sky-color-background-action-primary-base);
+	border-color: var(--sky-color-border-action-primary-base);
+}
+
+.palette-preview {
+	display: grid;
+	gap: 16px;
+}
+
+.palette-card {
+	padding: 16px;
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 8px;
+	background: var(--sky-color-background-container-base);
+}
+
+.palette-card h2,
+.palette-card h3 {
+	margin: 0 0 8px;
+}
+
+.palette-card p {
+	margin: 0 0 12px;
+	color: var(--sky-color-text-deemphasized);
+}
+
+.demo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 12px;
+}
+
+.demo-card {
+	padding: 12px;
+	border: 1px solid var(--sky-color-border-elevation);
+	border-radius: 10px;
+	background: var(--sky-color-background-container-base);
+}
+
+.swatch-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 12px;
+}
+
+.swatch {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	border: 1px solid #30363d;
+	border-radius: 10px;
+	background: var(--sky-color-background-page);
+}
+
+.chip {
+	width: 36px;
+	height: 36px;
+	border-radius: 6px;
+	flex: none;
+	border: 1px solid rgb(255 255 255 / 16%);
+}
+
+.meta {
+	display: grid;
+	gap: 2px;
+	font-size: 12px;
+	color: var(--sky-color-text-deemphasized);
+}
+
+.page-surface {
+	background: var(--sky-color-background-page);
+	border-color: var(--sky-color-border-divider);
+}
+
+.sky-input-box {
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.sky-input-box input {
+	width: 100%;
+	padding: 8px 10px;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	color: var(--sky-color-text-default);
+}

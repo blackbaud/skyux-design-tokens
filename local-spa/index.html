@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKY UX SPA - Dark Mode Test</title>
+
+  <link rel="stylesheet" href="https://localhost:5176/dist/bundles/base.css">
+  <link rel="stylesheet" href="https://localhost:5176/dist/bundles/blackbaud.css">
+  <link rel="stylesheet" href="./extra-styles.css">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--bb-font-blkb_sans-family, system-ui, sans-serif);
+      background: var(--sky-color-background-page, #161a1f);
+      color: var(--sky-color-text-default, #fbfbfb);
+      min-height: 100vh;
+      padding: 0;
+    }
+    
+    header {
+      background: var(--sky-color-background-container-base);
+      border-bottom: 1px solid var(--sky-color-border-container-base);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.25rem;
+    }
+    .view-nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .view-nav a {
+      text-decoration: none;
+      color: var(--sky-color-text-default);
+      border: 1px solid var(--sky-color-border-divider);
+      border-radius: 999px;
+      padding: 6px 12px;
+      background: transparent;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .view-nav a:hover {
+      border-color: var(--sky-color-border-elevation);
+      background: var(--sky-color-background-page);
+    }
+    .view-nav a.is-active {
+      color: var(--sky-color-text-inverse);
+      background: var(--sky-color-background-action-primary-base);
+      border-color: var(--sky-color-border-action-primary-base);
+    }
+    
+    main {
+      padding: 2rem;
+    }
+    .view {
+      display: none;
+      animation: fadeIn 0.2s;
+    }
+    .view.is-active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .demo-section {
+      background: var(--sky-color-background-container-base);
+      border: 1px solid var(--sky-color-border-container-base);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .demo-section h2 {
+      margin: 0 0 1rem;
+      font-size: 1.125rem;
+    }
+    .demo-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .demo-box {
+      background: var(--sky-color-background-container-base);
+      border: 1px solid var(--sky-color-border-elevation);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .demo-box h3 {
+      margin: 0 0 0.75rem;
+      font-size: 0.95rem;
+    }
+    .demo-box p {
+      margin: 0 0 0.75rem;
+      font-size: 0.8rem;
+      color: var(--sky-color-text-deemphasized);
+    }
+    .demo-box.page-surface {
+      background: var(--sky-color-background-page);
+      border-color: var(--sky-color-border-divider);
+    }
+    
+    .palette-ramps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .ramp-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--sky-color-text-deemphasized);
+      margin: 0 0 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .swatch-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--sky-color-border-divider);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .swatch {
+      display: grid;
+      grid-template-columns: 40px 1fr auto auto;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid var(--sky-color-border-separator-light);
+    }
+    .swatch:last-child { border-bottom: none; }
+    .swatch-chip {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid rgb(255 255 255 / 10%);
+      flex: none;
+    }
+    .swatch-meta {
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+    .native-mark {
+      margin-left: 0.18rem;
+      color: var(--sky-color-text-deemphasized);
+      font-size: 0.75em;
+      vertical-align: text-top;
+    }
+    .ramp-footnote {
+      margin: 0.4rem 0 0;
+      font-size: 0.65rem;
+      color: var(--sky-color-text-deemphasized);
+      font-style: italic;
+    }
+    .swatch-meta strong {
+      font-size: 0.8rem;
+    }
+    .swatch-meta code {
+      font-family: monospace;
+      color: var(--sky-color-text-deemphasized);
+    }
+  </style>
+</head>
+<body class="sky-theme-modern sky-theme-brand-base sky-theme-brand-blackbaud sky-theme-mode-dark">
+  <div id="app"></div>
+
+  <!-- HEADER & NAV -->
+  <header>
+    <h1>SKY UX Dark Mode Preview</h1>
+    <nav class="view-nav" data-view="surfaces">
+      <a href="#/surfaces" data-route="surfaces" class="is-active">Surface Demo</a>
+      <a href="#/palette" data-route="palette">Palette (Embedded)</a>
+      <a href="#/layer-architecture" data-route="layer-architecture">Layer Architecture</a>
+      <a href="#/layers" data-route="layers">Layers</a>
+      <a href="./palette.html">Palette (Detailed)</a>
+      <a href="?local-preview=layers">Carbon Stress Test</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SURFACES VIEW -->
+    <section class="view is-active" data-view="surfaces">
+      <div class="demo-section">
+        <h2>Page and Container Surfaces</h2>
+        <div class="demo-grid">
+          <div class="demo-box page-surface">
+            <h3>Page Surface</h3>
+            <p>Base canvas background (L0).</p>
+            <div class="sky-input-box">
+              <input aria-label="Input on page" placeholder="Input on page" />
+            </div>
+          </div>
+          <div class="demo-box">
+            <h3>Container Base</h3>
+            <p>Base container for cards/tiles (L1).</p>
+            <div class="sky-input-box">
+              <input aria-label="Input on container" placeholder="Input on container" />
+            </div>
+          </div>
+          <div class="demo-box">
+            <h3>Container Dimmed</h3>
+            <p>Dimmed overlay surface (L2).</p>
+            <div class="sky-input-box">
+              <input aria-label="Input on dimmed" placeholder="Input on dimmed" />
+            </div>
+          </div>
+          <div class="demo-box">
+            <h3>Container Backdrop</h3>
+            <p>Modal backdrop surface (L3).</p>
+            <div class="sky-input-box">
+              <input aria-label="Input on backdrop" placeholder="Input on backdrop" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-section">
+        <h2>Layer Relationship Test</h2>
+        <p style="margin-bottom: 1rem; font-size: 0.875rem; color: var(--sky-color-text-deemphasized);">
+          Visual inspection: observe how each surface appears at the same page depth,
+          to understand relative luminance and contrast in the dark mode palette.
+        </p>
+        <div class="demo-grid">
+          <article class="swatch sky-box">
+            <div class="swatch-chip" style="background: #161a1f;"></div>
+            <div class="swatch-meta">
+              <strong>L0 Page</strong>
+              <code>#161a1f</code>
+              <code>L* 9.8</code>
+            </div>
+          </article>
+          <article class="swatch sky-box">
+            <div class="swatch-chip" style="background: #20242b;"></div>
+            <div class="swatch-meta">
+              <strong>L1 Container</strong>
+              <code>#20242b</code>
+              <code>L* 14.4</code>
+            </div>
+          </article>
+          <article class="swatch sky-box">
+            <div class="swatch-chip" style="background: #252b33;"></div>
+            <div class="swatch-meta">
+              <strong>L2 Overlay</strong>
+              <code>#252b33</code>
+              <code>L* 16.5</code>
+            </div>
+          </article>
+          <article class="swatch sky-box">
+            <div class="swatch-chip" style="background: #30363d;"></div>
+            <div class="swatch-meta">
+              <strong>L3 Modal</strong>
+              <code>#30363d</code>
+              <code>L* 21.3</code>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PALETTE VIEW -->
+    <section class="view" data-view="palette">
+      <div class="demo-section">
+        <h2>Palette Ramps</h2>
+        <div class="palette-ramps">
+          <div>
+            <p class="ramp-label">Gray</p>
+            <div class="swatch-row">
+              <article class="swatch"><div class="swatch-chip" style="background:#161a1f"></div><div class="swatch-meta"><strong>Gray.1100<span class="native-mark">&dagger;</span></strong><code>Page</code></div><code style="font-size:.7rem">#161a1f</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 9.8</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#1e2229"></div><div class="swatch-meta"><strong>Gray.1000<span class="native-mark">&dagger;</span></strong><code>Base / Dimmed</code></div><code style="font-size:.7rem">#1e2229</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 13.2</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#20242b"></div><div class="swatch-meta"><strong>Gray.975</strong><code>Experimental</code></div><code style="font-size:.7rem">#20242b</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 14.4</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#21262e"></div><div class="swatch-meta"><strong>Gray.950</strong><code>Experimental</code></div><code style="font-size:.7rem">#21262e</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 15.1</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#232930"></div><div class="swatch-meta"><strong>Gray.925</strong><code>Experimental</code></div><code style="font-size:.7rem">#232930</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 15.8</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#252b33"></div><div class="swatch-meta"><strong>Gray.900<span class="native-mark">&dagger;</span></strong><code>Backdrop / Menu</code></div><code style="font-size:.7rem">#252b33</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 16.5</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#30363d"></div><div class="swatch-meta"><strong>Gray.850<span class="native-mark">&dagger;</span></strong><code>L3 Modal</code></div><code style="font-size:.7rem">#30363d</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 21.3</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#3b4047"></div><div class="swatch-meta"><strong>Gray.800<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#3b4047</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 26.9</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#51555c"></div><div class="swatch-meta"><strong>Gray.700<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#51555c</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 36.0</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#666b70"></div><div class="swatch-meta"><strong>Gray.600<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#666b70</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 45.0</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#85888d"></div><div class="swatch-meta"><strong>Gray.500<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#85888d</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 56.6</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#a3a6a9"></div><div class="swatch-meta"><strong>Gray.400<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#a3a6a9</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 68.0</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#c2c4c6"></div><div class="swatch-meta"><strong>Gray.300<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#c2c4c6</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 79.1</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#d5d6d8"></div><div class="swatch-meta"><strong>Gray.250<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#d5d6d8</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 85.6</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#e0e1e2"></div><div class="swatch-meta"><strong>Gray.200<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#e0e1e2</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 89.5</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#eeeeef"></div><div class="swatch-meta"><strong>Gray.100<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#eeeeef</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 94.1</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#f4f4f5"></div><div class="swatch-meta"><strong>Gray.50<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#f4f4f5</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 96.2</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#fbfbfb"></div><div class="swatch-meta"><strong>Gray.25<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#fbfbfb</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 98.6</code></article>
+            </div>
+            <p class="ramp-footnote">&dagger; SKY UX native base token. Unmarked steps are local experimental additions.</p>
+          </div>
+          <div>
+            <p class="ramp-label">Slate</p>
+            <div class="swatch-row">
+              <article class="swatch"><div class="swatch-chip" style="background:#0f131a"></div><div class="swatch-meta"><strong>Slate.1175</strong></div><code style="font-size:.7rem">#0f131a</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 7.6</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#11161e"></div><div class="swatch-meta"><strong>Slate.1150</strong></div><code style="font-size:.7rem">#11161e</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 8.9</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#131822"></div><div class="swatch-meta"><strong>Slate.1125</strong></div><code style="font-size:.7rem">#131822</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 9.7</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#171e2b"></div><div class="swatch-meta"><strong>Slate.1050</strong><code>Experimental</code></div><code style="font-size:.7rem">#171e2b</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 11.8</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#1c2434"></div><div class="swatch-meta"><strong>Slate.975</strong></div><code style="font-size:.7rem">#1c2434</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 14.1</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#1d2738"></div><div class="swatch-meta"><strong>Slate.950</strong></div><code style="font-size:.7rem">#1d2738</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 14.9</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#1f293b"></div><div class="swatch-meta"><strong>Slate.925</strong></div><code style="font-size:.7rem">#1f293b</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 15.8</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#2a384f"></div><div class="swatch-meta"><strong>Slate.850<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#2a384f</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 21.2</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#32435e"></div><div class="swatch-meta"><strong>Slate.800<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#32435e</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 28.1</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#42597e"></div><div class="swatch-meta"><strong>Slate.700<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#42597e</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 37.5</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#536f9d"></div><div class="swatch-meta"><strong>Slate.600<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#536f9d</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 46.5</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#7289af"></div><div class="swatch-meta"><strong>Slate.500<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#7289af</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 56.6</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#98a9c4"></div><div class="swatch-meta"><strong>Slate.400<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#98a9c4</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 68.8</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#bac5d8"></div><div class="swatch-meta"><strong>Slate.300<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#bac5d8</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 79.2</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#cad2e1"></div><div class="swatch-meta"><strong>Slate.250<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#cad2e1</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 84.0</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#d9dfe9"></div><div class="swatch-meta"><strong>Slate.200<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#d9dfe9</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 88.6</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#f1f3f7"></div><div class="swatch-meta"><strong>Slate.100<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#f1f3f7</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 95.8</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#f6f8fa"></div><div class="swatch-meta"><strong>Slate.50<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#f6f8fa</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 97.5</code></article>
+              <article class="swatch"><div class="swatch-chip" style="background:#fcfdfd"></div><div class="swatch-meta"><strong>Slate.25<span class="native-mark">&dagger;</span></strong></div><code style="font-size:.7rem">#fcfdfd</code><code style="font-size:.7rem;color:var(--sky-color-text-deemphasized)">L* 99.2</code></article>
+            </div>
+            <p class="ramp-footnote">&dagger; SKY UX native base token. Unmarked steps are local experimental additions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; padding: 2rem 0; color: var(--sky-color-text-deemphasized); font-size: 0.875rem;">
+        <p>View full palette analysis with CIELAB variations: <a href="./palette.html" style="color: var(--sky-color-text-action-primary);">Detailed Palette Page</a></p>
+      </div>
+    </section>
+
+    <!-- LAYER ARCHITECTURE VIEW -->
+    <section class="view" data-view="layer-architecture">
+      <div class="demo-section poc-documentation">
+        <h2>Layer Token Sets</h2>
+        <p>Carbon-style layer tokens define four semantic sets for background, border, divider, and field at each depth:</p>
+        <pre><code>Layer 0 (Page):
+  --sky-layer-00-background
+  --sky-layer-00-border
+  --sky-layer-00-divider
+  --sky-layer-00-field
+
+Layer 1 (Container):
+  --sky-layer-01-background
+  --sky-layer-01-border
+  --sky-layer-01-divider
+  --sky-layer-01-field
+
+Layer 2 (Overlay):
+  --sky-layer-02-background
+  --sky-layer-02-border
+  --sky-layer-02-divider
+  --sky-layer-02-field
+
+Layer 3 (Modal):
+  --sky-layer-03-background
+  --sky-layer-03-border
+  --sky-layer-03-divider
+  --sky-layer-03-field</code></pre>
+      </div>
+
+      <div class="demo-section poc-visual">
+        <h2>Nested Layer POC</h2>
+        <div class="layer-poc" data-sky-layer="00">
+          <div class="layer-label">L0: Page</div>
+          <div class="layer-content">
+            <input aria-label="L0 input" placeholder="L0 page input" />
+            <div class="layer-divider"></div>
+            <div class="layer-poc" data-sky-layer="01">
+              <div class="layer-label">L1: Container</div>
+              <div class="layer-content">
+                <input aria-label="L1 input" placeholder="L1 container input" />
+                <div class="layer-divider"></div>
+                <div class="layer-poc" data-sky-layer="02">
+                  <div class="layer-label">L2: Overlay</div>
+                  <div class="layer-content">
+                    <input aria-label="L2 input" placeholder="L2 overlay input" />
+                    <div class="layer-divider"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer-poc layer-modal" data-sky-layer="03">
+          <div class="layer-label">L3: Modal</div>
+          <div class="layer-content">
+            <input aria-label="L3 input" placeholder="L3 modal input" />
+            <div class="layer-divider"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYERS VIEW -->
+    <section class="view" data-view="layers">
+      <div class="demo-section layers-exp-schema">
+        <h2>Layer Token Families</h2>
+        <p>Experimental parallel model where each layer owns a complete token family.</p>
+        <pre><code>L0 / data-sky-layer="00"
+  --sky-layer-00-background
+  --sky-layer-00-border
+  --sky-layer-00-divider
+  --sky-layer-00-field
+
+L1 / data-sky-layer="01"
+  --sky-layer-01-background
+  --sky-layer-01-border
+  --sky-layer-01-divider
+  --sky-layer-01-field
+
+L2 / data-sky-layer="02"
+  --sky-layer-02-background
+  --sky-layer-02-border
+  --sky-layer-02-divider
+  --sky-layer-02-field</code></pre>
+      </div>
+
+      <div class="demo-section layers-exp-visual">
+        <h2>Nested Layer POC</h2>
+        <div class="layers-exp-surface" data-sky-layer="00">
+          <div class="layers-exp-label">L0: Page</div>
+          <div class="layers-exp-divider"></div>
+          <div class="layers-exp-input" role="textbox" aria-label="L0 input">Input on L0 page</div>
+
+          <div class="layers-exp-surface" data-sky-layer="01">
+            <div class="layers-exp-label">L1: Container</div>
+            <div class="layers-exp-divider"></div>
+            <div class="layers-exp-input" role="textbox" aria-label="L1 input">Input on L1 container</div>
+
+            <div class="layers-exp-surface" data-sky-layer="02">
+              <div class="layers-exp-label">L2: Dropdown</div>
+              <div class="layers-exp-divider"></div>
+              <div class="layers-exp-input" role="textbox" aria-label="L2 input">Input in L2 dropdown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Phase B - Carbon layering PoC detection and routing
+    const urlParams = new URLSearchParams(location.search);
+    const localPreviewMode = urlParams.get('local-preview');
+
+    if (localPreviewMode === 'layers') {
+      // CARBON LAYERING MODE
+      document.body.classList.add('local-preview-layering');
+      document.body.innerHTML = '';
+
+      // Create header with nav
+      const header = document.createElement('header');
+      header.innerHTML = `
+        <h1>Phase B Layering Stress Test</h1>
+        <nav class="view-nav">
+          <a href="./index.html#/surfaces">Surface Demo</a>
+          <a href="./index.html#/palette">Palette (Embedded)</a>
+          <a href="./palette.html">Palette (Detailed)</a>
+          <a href="?local-preview=layers" class="is-active">Carbon Layering</a>
+        </nav>
+      `;
+      document.body.appendChild(header);
+
+      // Create Carbon layering PoC scaffold
+      const app = document.createElement('main');
+      app.className = 'phaseb-layering-poc';
+      app.innerHTML = `
+        <header class="poc-header" data-sky-layer="0">
+          <h1>Phase B Layering Stress Test</h1>
+          <p>L0 page, L1 container, L2 dropdown/menu overlays, L3 modal overlays.</p>
+        </header>
+
+        <section class="poc-surface poc-layer" data-sky-layer="0">
+          <h2>L0: Page Surface</h2>
+          <p>Base canvas with page-level input and L2 menu overlay.</p>
+          <div class="sky-input-box">
+            <input aria-label="L0 input" placeholder="Input on L0 page" />
+          </div>
+          <div class="poc-divider" role="separator"></div>
+          <div class="poc-dropdown-anchor">
+            <div class="poc-surface poc-dropdown" data-sky-layer="2">
+              <h3>L2 Dropdown over L0</h3>
+              <div class="poc-divider-soft" role="separator"></div>
+              <div class="sky-input-box">
+                <input aria-label="L2 input over L0" placeholder="Input in L2 over L0" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="poc-surface poc-layer" data-sky-layer="1">
+          <h2>L1: Container Surface</h2>
+          <p>Container with nested content, divider hierarchy, and overlay menu.</p>
+          <div class="sky-input-box">
+            <input aria-label="L1 input" placeholder="Input on L1 container" />
+          </div>
+          <div class="poc-divider" role="separator"></div>
+          <article class="poc-surface poc-nested" data-sky-layer="1">
+            <h3>L1 Nested Content</h3>
+            <div class="poc-divider-soft" role="separator"></div>
+            <p>Nested block on same layer to inspect intra-layer separator contrast.</p>
+          </article>
+          <div class="poc-dropdown-anchor">
+            <div class="poc-surface poc-dropdown" data-sky-layer="2">
+              <h3>L2 Dropdown over L1</h3>
+              <div class="poc-divider-soft" role="separator"></div>
+              <div class="sky-input-box">
+                <input aria-label="L2 input over L1" placeholder="Input in L2 over L1" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="poc-modal-stage" data-sky-layer="0">
+          <h2>L3: Modal Surface</h2>
+          <div class="poc-surface poc-modal" data-sky-layer="3">
+            <h3>Dialog on L3</h3>
+            <p>Top-most overlay treatment for the layering pressure test.</p>
+            <div class="poc-divider" role="separator"></div>
+            <div class="sky-input-box">
+              <input aria-label="L3 input" placeholder="Input on L3 modal" />
+            </div>
+          </div>
+        </section>
+      `;
+      document.body.appendChild(app);
+    } else {
+      // STANDARD SPA ROUTING
+      function updateView() {
+        const route = location.hash === '#/palette'
+          ? 'palette'
+          : location.hash === '#/layer-architecture'
+            ? 'layer-architecture'
+            : location.hash === '#/layers'
+              ? 'layers'
+            : 'surfaces';
+        document.querySelectorAll('[data-view]').forEach((el) => {
+          if (el.tagName === 'SECTION') {
+            el.classList.toggle('is-active', el.getAttribute('data-view') === route);
+          }
+        });
+        document.querySelectorAll('[data-route]').forEach((el) => {
+          el.classList.toggle('is-active', el.getAttribute('data-route') === route);
+        });
+      }
+      
+      if (!location.hash) location.hash = '#/surfaces';
+      window.addEventListener('hashchange', updateView);
+      updateView();
+    }
+  </script>
+</body>
+</html>

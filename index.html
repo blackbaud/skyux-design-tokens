@@ -9,43 +9,319 @@
     <div id="app"></div>
     <script type="module" src="/src/dev/main.ts"></script>
     <script type="module">
-      const launchParam = import.meta.env.VITE_LAUNCH_QSPARAM;
+      const urlParams = new URLSearchParams(location.search);
+      const localPreviewMode = urlParams.get('local-preview');
+      const localPreview =
+        localPreviewMode === 'palette' || localPreviewMode === 'layers';
 
-      let launchUrl = import.meta.env.VITE_LAUNCH_URL;
+      if (localPreview) {
+        const head = document.head;
+        document.body.dataset.localBuild = '5176-preview';
 
-      if (!launchUrl.endsWith('/')) {
-        launchUrl += '/';
+        [
+          'dist/bundles/base.css',
+          'dist/bundles/blackbaud.css',
+          'src/dev/tokens.css',
+          'src/dev/extra-styles.css',
+        ].forEach((href) => {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = `/${href}`;
+          head.appendChild(link);
+        });
+
+        if (localPreviewMode === 'layers') {
+          document.body.dataset.layering = 'current';
+          document.body.classList.add(
+            'sky-theme-modern',
+            'sky-theme-brand-base',
+            'sky-theme-brand-blackbaud',
+            'sky-theme-mode-dark',
+            'local-preview-layering',
+          );
+
+          const app = document.getElementById('app');
+
+          if (app) {
+            app.innerHTML = `
+              <main class="phaseb-layering-poc">
+                <header class="poc-header" data-sky-layer="0">
+                  <h1>Phase B Layering Stress Test</h1>
+                  <p>L0 page, L1 container, L2 dropdown/menu overlays, L3 modal overlays.</p>
+                  <div class="poc-layering-tabs" role="tablist" aria-label="Demo page">
+                    <button type="button" class="poc-layering-tab is-active" data-demo-page="stress-test" aria-pressed="true">Stress Test</button>
+                    <button type="button" class="poc-layering-tab" data-demo-page="layer-arch" aria-pressed="false">Layer Architecture</button>
+                    <button type="button" class="poc-layering-tab" data-demo-page="layers" aria-pressed="false">Layers</button>
+                  </div>
+                  <div class="poc-layering-tabs" role="tablist" aria-label="Layering mode" id="layering-mode-tabs">
+                    <button type="button" class="poc-layering-tab is-active" data-layering-mode="current" aria-pressed="true">Current Layering</button>
+                    <button type="button" class="poc-layering-tab" data-layering-mode="carbon" aria-pressed="false">Carbon Optimized</button>
+                  </div>
+                </header>
+
+                <section class="poc-surface poc-layer" data-sky-layer="0">
+                  <h2>L0: Page Surface</h2>
+                  <p>Base canvas with page-level input and L2 menu overlay.</p>
+                  <div class="sky-input-box">
+                    <input aria-label="L0 input" placeholder="Input on L0 page" />
+                  </div>
+                  <div class="poc-divider" role="separator"></div>
+                  <div class="poc-dropdown-anchor">
+                    <div class="poc-surface poc-dropdown" data-sky-layer="2">
+                      <h3>L2 Dropdown over L0</h3>
+                      <div class="poc-divider-soft" role="separator"></div>
+                      <div class="sky-input-box">
+                        <input aria-label="L2 input over L0" placeholder="Input in L2 over L0" />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="poc-surface poc-layer" data-sky-layer="1">
+                  <h2>L1: Container Surface</h2>
+                  <p>Container with nested content, divider hierarchy, and overlay menu.</p>
+                  <div class="sky-input-box">
+                    <input aria-label="L1 input" placeholder="Input on L1 container" />
+                  </div>
+                  <div class="poc-divider" role="separator"></div>
+                  <article class="poc-surface poc-nested" data-sky-layer="1">
+                    <h3>L1 Nested Content</h3>
+                    <div class="poc-divider-soft" role="separator"></div>
+                    <p>Nested block on same layer to inspect intra-layer separator contrast.</p>
+                  </article>
+                  <div class="poc-dropdown-anchor">
+                    <div class="poc-surface poc-dropdown" data-sky-layer="2">
+                      <h3>L2 Dropdown over L1</h3>
+                      <div class="poc-divider-soft" role="separator"></div>
+                      <div class="sky-input-box">
+                        <input aria-label="L2 input over L1" placeholder="Input in L2 over L1" />
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="poc-modal-stage" data-sky-layer="0">
+                  <h2>L3: Modal Surface</h2>
+                  <div class="poc-surface poc-modal" data-sky-layer="3">
+                    <h3>Dialog on L3</h3>
+                    <p>Top-most overlay treatment for the layering pressure test.</p>
+                    <div class="poc-divider" role="separator"></div>
+                    <div class="sky-input-box">
+                      <input aria-label="L3 input" placeholder="Input on L3 modal" />
+                    </div>
+                  </div>
+                </section>
+              </main>
+
+              <main class="phaseb-layer-architecture" style="display: none;">
+                <header class="poc-header">
+                  <h1>Layer Token Architecture</h1>
+                  <p>Phase B experimental layer token sets and nested visual proof-of-concept.</p>
+                </header>
+                <section class="poc-documentation">
+                  <h2>Layer Token Sets</h2>
+                  <p>Carbon-style layer tokens define surfaces at each depth level:</p>
+                  <pre><code>Layer 0 (Page):
+  --sky-layer-00-background
+  --sky-layer-00-border
+  --sky-layer-00-divider
+  --sky-layer-00-field
+
+Layer 1 (Container):
+  --sky-layer-01-background
+  --sky-layer-01-border
+  --sky-layer-01-divider
+  --sky-layer-01-field
+
+Layer 2 (Overlay):
+  --sky-layer-02-background
+  --sky-layer-02-border
+  --sky-layer-02-divider
+  --sky-layer-02-field
+
+Layer 3 (Modal):
+  --sky-layer-03-background
+  --sky-layer-03-border
+  --sky-layer-03-divider
+  --sky-layer-03-field</code></pre>
+                </section>
+                <section class="poc-visual">
+                  <h2>Nested Layer POC</h2>
+                  <div class="layer-poc" data-sky-layer="00">
+                    <div class="layer-label">L0: Page</div>
+                    <div class="layer-content">
+                      <input aria-label="L0 input" placeholder="L0 page input" />
+                      <div class="layer-divider"></div>
+                      <div class="layer-poc" data-sky-layer="01">
+                        <div class="layer-label">L1: Container</div>
+                        <div class="layer-content">
+                          <input aria-label="L1 input" placeholder="L1 container input" />
+                          <div class="layer-divider"></div>
+                          <div class="layer-poc" data-sky-layer="02">
+                            <div class="layer-label">L2: Overlay</div>
+                            <div class="layer-content">
+                              <input aria-label="L2 input" placeholder="L2 overlay input" />
+                              <div class="layer-divider"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="layer-poc layer-modal" data-sky-layer="03">
+                    <div class="layer-label">L3: Modal</div>
+                    <div class="layer-content">
+                      <input aria-label="L3 input" placeholder="L3 modal input" />
+                      <div class="layer-divider"></div>
+                    </div>
+                  </div>
+                </section>
+              </main>
+
+              <main class="phaseb-layers-experiment" style="display: none;">
+                <header class="poc-header">
+                  <h1>Layers</h1>
+                  <p>Phase B parallel experiment: Carbon-style layer token families mapped per layer.</p>
+                </header>
+
+                <section class="layers-exp-schema">
+                  <h2>Layer Token Families</h2>
+                  <pre><code>L0 / data-sky-layer="00"
+  --sky-layer-00-background
+  --sky-layer-00-border
+  --sky-layer-00-divider
+  --sky-layer-00-field
+
+L1 / data-sky-layer="01"
+  --sky-layer-01-background
+  --sky-layer-01-border
+  --sky-layer-01-divider
+  --sky-layer-01-field
+
+L2 / data-sky-layer="02"
+  --sky-layer-02-background
+  --sky-layer-02-border
+  --sky-layer-02-divider
+  --sky-layer-02-field</code></pre>
+                </section>
+
+                <section class="layers-exp-visual">
+                  <h2>Nested Layer POC</h2>
+                  <div class="layers-exp-surface" data-sky-layer="00">
+                    <div class="layers-exp-label">L0: Page</div>
+                    <div class="layers-exp-divider"></div>
+                    <div class="layers-exp-input">Input on L0 page</div>
+
+                    <div class="layers-exp-surface" data-sky-layer="01">
+                      <div class="layers-exp-label">L1: Container</div>
+                      <div class="layers-exp-divider"></div>
+                      <div class="layers-exp-input">Input on L1 container</div>
+
+                      <div class="layers-exp-surface" data-sky-layer="02">
+                        <div class="layers-exp-label">L2: Dropdown</div>
+                        <div class="layers-exp-divider"></div>
+                        <div class="layers-exp-input">Input in L2 dropdown</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </main>`;
+
+            const setLayeringMode = (mode) => {
+              document.body.dataset.layering = mode === 'carbon' ? 'carbon' : 'current';
+              app.querySelectorAll('[data-layering-mode]').forEach((button) => {
+                const isActive = button.dataset.layeringMode === document.body.dataset.layering;
+                button.classList.toggle('is-active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+              });
+            };
+
+            const setDemoPage = (page) => {
+              const stressTest = app.querySelector('.phaseb-layering-poc');
+              const layerArch = app.querySelector('.phaseb-layer-architecture');
+              const layersExp = app.querySelector('.phaseb-layers-experiment');
+              const layeringModeTabs = document.getElementById('layering-mode-tabs');
+
+              if (page === 'stress-test') {
+                stressTest.style.display = 'block';
+                layerArch.style.display = 'none';
+                layersExp.style.display = 'none';
+                layeringModeTabs.style.display = 'flex';
+              } else if (page === 'layer-arch') {
+                stressTest.style.display = 'none';
+                layerArch.style.display = 'block';
+                layersExp.style.display = 'none';
+                layeringModeTabs.style.display = 'none';
+              } else {
+                stressTest.style.display = 'none';
+                layerArch.style.display = 'none';
+                layersExp.style.display = 'block';
+                layeringModeTabs.style.display = 'none';
+              }
+
+              app.querySelectorAll('[data-demo-page]').forEach((button) => {
+                const isActive = button.dataset.demoPage === page;
+                button.classList.toggle('is-active', isActive);
+                button.setAttribute('aria-pressed', String(isActive));
+              });
+            };
+
+            app.querySelector('.poc-layering-tabs[aria-label="Demo page"]')?.addEventListener('click', (event) => {
+              const button = event.target.closest('[data-demo-page]');
+              if (button instanceof HTMLButtonElement) {
+                setDemoPage(button.dataset.demoPage);
+              }
+            });
+
+            document.getElementById('layering-mode-tabs')?.addEventListener('click', (event) => {
+              const button = event.target.closest('[data-layering-mode]');
+              if (button instanceof HTMLButtonElement) {
+                setLayeringMode(button.dataset.layeringMode);
+              }
+            });
+
+            setLayeringMode(document.body.dataset.layering);
+            setDemoPage('stress-test');
+          }
+        }
+      } else {
+        const launchParam = import.meta.env.VITE_LAUNCH_QSPARAM;
+        let launchUrl = import.meta.env.VITE_LAUNCH_URL;
+
+        if (!launchUrl.endsWith('/')) {
+          launchUrl += '/';
+        }
+
+        const localUrl = new URL(import.meta.url);
+
+        const configEncoded = btoa(
+          JSON.stringify({
+            localUrl: localUrl.origin,
+            scripts: [
+              {
+                name: '@vite/client',
+                scriptType: 'module',
+              },
+              {
+                name: 'src/dev/main.ts',
+                scriptType: 'module',
+              },
+            ],
+            stylesheets: [
+              {
+                name: 'src/dev/tokens.css',
+              },
+              {
+                name: 'src/dev/extra-styles.css',
+              },
+            ],
+          }),
+        );
+
+        location.replace(
+          `${launchUrl}?${launchParam}=${encodeURIComponent(configEncoded)}`,
+        );
       }
-
-      const localUrl = new URL(import.meta.url);
-
-      let configEncoded = btoa(
-        JSON.stringify({
-          localUrl: localUrl.origin,
-          scripts: [
-            {
-              name: '@vite/client',
-              scriptType: 'module',
-            },
-            {
-              name: 'src/dev/main.ts',
-              scriptType: 'module',
-            },
-          ],
-          stylesheets: [
-            {
-              name: 'src/dev/tokens.css',
-            },
-            {
-              name: 'src/dev/extra-styles.css',
-            },
-          ],
-        }),
-      );
-
-      location.replace(
-        `${launchUrl}?${launchParam}=${encodeURIComponent(configEncoded)}`,
-      );
     </script>
   </body>
 </html>

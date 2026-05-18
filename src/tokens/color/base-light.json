@@ -31,7 +31,7 @@
       },
       "action_contrast": {
         "$type": "color",
-        "$value": "{bb.color.blue.700}"
+        "$value": "{bb.color.blue.400}"
       }
     },
     "icon": {
@@ -256,19 +256,19 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.200}"
+          "$value": "{bb.color.red.600}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.200}"
+          "$value": "{bb.color.yellow.600}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.200}"
+          "$value": "{bb.color.green.600}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.200}"
+          "$value": "{bb.color.blue.600}"
         },
         "dimmed": {
           "$type": "color",
@@ -783,7 +783,7 @@
       },
       "blue": {
         "$type": "color",
-        "$value": "{bb.color.sky.200}"
+        "$value": "{bb.color.blue.200}"
       },
       "yellow": {
         "$type": "color",
@@ -842,7 +842,7 @@
         },
         "4": {
           "$type": "color",
-          "$value": "{bb.color.sky.900}"
+          "$value": "{bb.color.blue.900}"
         },
         "5": {
           "$type": "color",
@@ -1018,7 +1018,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.sky.200}"
+          "$value": "{bb.color.blue.200}"
         }
       },
       "4": {
