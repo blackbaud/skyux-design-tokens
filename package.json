@@ -42,5 +42,10 @@
   "engines": {
     "node": ">= 4.2.1",
     "npm": ">= 3"
+  },
+  "dependencies": {
+    "@angular/common": "^21.2.13",
+    "@angular/core": "^21.2.13",
+    "@skyux/theme": "^14.3.3"
   }
 }

@@ -1,10 +1,6 @@
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
-	/* Experimental neutral steps from Phase A (gray + slate lanes). */
-	--local-exp-gray-1050: #1a1e24;
-	--local-exp-gray-1000: #1e2229;
-	--local-exp-gray-925: #232930;
-	--local-exp-gray-975: #20242b;
-	--local-exp-gray-950: #21262e;
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	/* Experimental neutral steps from Phase A (slate lane). */
+	--local-exp-slate-1000: #1a2231;
 
 	--local-exp-slate-1050: #171e2b;
 	--local-exp-slate-1125: #131822;
@@ -30,45 +26,147 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--sky-color-border-action-primary-focus: var(--bb-color-blue-500) !important;
 }
 
-/* Default override lane: gray neutrals. */
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
-	--sky-color-background-page: var(--local-exp-gray-1050) !important;
-	--sky-color-background-container-base: var(--local-exp-gray-975) !important;
-	--sky-color-background-container-dimmed: var(--local-exp-gray-950) !important;
-	--sky-color-background-container-backdrop: var(--local-exp-gray-925) !important;
-	--sky-color-background-disabled: var(--local-exp-gray-950) !important;
-	--local-exp-input-border-base: var(--local-exp-gray-950) !important;
-	--sky-color-border-container-border: var(--local-exp-gray-1000) !important;
+body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	--sky-color-background-page: var(--bb-color-gray-1100) !important;
+	--sky-color-text-inverse: var(--bb-color-gray-1100) !important;
+	--sky-color-text-action: var(--bb-color-sky-600) !important;
+	--sky-theme-color-text-action: var(--bb-color-sky-600) !important;
+}
 
-	/* Structural border hierarchy (gray lane):
+/* Default override lane: slate neutrals. */
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	--sky-color-background-page: var(--local-exp-slate-1050) !important;
+	--sky-color-background-container-base: var(--local-exp-slate-975) !important;
+	--sky-color-background-container-dimmed: var(--local-exp-slate-950) !important;
+	--sky-color-background-container-backdrop: var(--local-exp-slate-925) !important;
+	--sky-color-background-container-menu: var(--local-exp-slate-850) !important;
+	--sky-color-background-disabled: var(--local-exp-slate-950) !important;
+	--local-exp-input-border-base: var(--local-exp-slate-950) !important;
+	--sky-color-border-container-border: var(--local-exp-slate-1000) !important;
+
+	/* Structural border hierarchy (slate lane):
 	   page divider > elevation outline > container/soft separators > disabled */
-	--sky-color-border-divider: var(--local-exp-gray-925) !important;
-	--sky-color-border-elevation: var(--local-exp-gray-925) !important;
-	--sky-color-border-container-base: var(--local-exp-gray-1000) !important;
-	--sky-color-border-separator-row: var(--local-exp-gray-950) !important;
-	--sky-color-border-separator-dark: var(--local-exp-gray-950) !important;
-	--sky-color-border-separator-light: var(--local-exp-gray-975) !important;
-	--sky-color-border-disabled: var(--local-exp-gray-975) !important;
+	--sky-color-border-divider: var(--local-exp-slate-925) !important;
+	--sky-color-border-elevation: var(--local-exp-slate-925) !important;
+	--sky-color-border-container-base: var(--local-exp-slate-1000) !important;
+	--sky-color-border-separator-row: var(--local-exp-slate-950) !important;
+	--sky-color-border-separator-dark: var(--local-exp-slate-950) !important;
+	--sky-color-border-separator-light: var(--local-exp-slate-975) !important;
+	--sky-color-border-disabled: var(--local-exp-slate-975) !important;
+}
+
+/* Strict OKLCH Slate lane: all overrides source from slate-only steps. */
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	--local-oklch-slate-1200: oklch(0.16 0.018 255);
+	--local-oklch-slate-1150: oklch(0.18 0.020 255);
+	--local-oklch-slate-1100: oklch(0.20 0.023 255);
+	--local-oklch-slate-1050: oklch(0.22 0.026 255);
+	--local-oklch-slate-1000: oklch(0.24 0.029 255);
+	--local-oklch-slate-950: oklch(0.27 0.033 255);
+	--local-oklch-slate-900: oklch(0.30 0.037 255);
+	--local-oklch-slate-850: oklch(0.34 0.041 255);
+	--local-oklch-slate-800: oklch(0.38 0.045 255);
+
+	/* OKLCH blue palette — perceptually uniform, hue ~265 (matches SKY UX bb blue hue). */
+	--local-oklch-blue-300: oklch(0.78 0.090 265);
+	--local-oklch-blue-350: oklch(0.74 0.105 265);
+	--local-oklch-blue-400: oklch(0.69 0.120 265);
+	--local-oklch-blue-500: oklch(0.60 0.145 265);
+	--local-oklch-blue-600: oklch(0.51 0.165 265);
+
+	--sky-color-background-page: var(--local-oklch-slate-1100) !important;
+	--sky-color-background-container-base: var(--local-oklch-slate-1000) !important;
+	--sky-color-background-container-dimmed: var(--local-oklch-slate-950) !important;
+	--sky-color-background-container-backdrop: var(--local-oklch-slate-900) !important;
+	--sky-color-background-container-menu: var(--local-oklch-slate-850) !important;
+	--sky-color-background-disabled: var(--local-oklch-slate-950) !important;
+
+	--sky-color-border-divider: color-mix(in oklab, var(--local-oklch-slate-900) 76%, white 24%) !important;
+	--sky-color-border-separator-row: color-mix(in oklab, var(--local-oklch-slate-950) 78%, white 22%) !important;
+	--sky-color-border-container-base: color-mix(in oklab, var(--local-oklch-slate-1000) 74%, white 26%) !important;
+	--sky-color-border-elevation: color-mix(in oklab, var(--local-oklch-slate-900) 74%, white 26%) !important;
+	--sky-color-border-input-base: color-mix(in oklab, var(--local-oklch-slate-950) 72%, white 28%) !important;
+	--sky-color-border-container-border: var(--sky-color-border-container-base) !important;
+
+	--sky-color-text-action: var(--local-oklch-slate-800) !important;
+	--sky-theme-color-text-action: var(--local-oklch-slate-800) !important;
+	--sky-color-icon-action: var(--local-oklch-slate-800) !important;
+	--sky-theme-color-icon-action: var(--local-oklch-slate-800) !important;
+	--sky-color-background-action-primary-base: var(--local-oklch-slate-800) !important;
+	--sky-color-background-action-primary-hover: var(--local-oklch-slate-800) !important;
+	--sky-color-background-action-primary-active: var(--local-oklch-slate-850) !important;
+	--sky-color-background-action-primary-focus: var(--local-oklch-slate-850) !important;
+	--sky-color-border-action-primary-base: var(--local-oklch-slate-800) !important;
+	--sky-color-border-action-primary-hover: var(--local-oklch-slate-800) !important;
+	--sky-color-border-action-primary-active: var(--local-oklch-slate-850) !important;
+	--sky-color-border-action-primary-focus: var(--local-oklch-slate-850) !important;
+}
+
+/* Strict CIELAB Slate lane: all overrides source from slate-only steps. */
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	--local-cielab-slate-1200: #0d1118;
+	--local-cielab-slate-1150: #11161e;
+	--local-cielab-slate-1100: #141b26;
+	--local-cielab-slate-1050: #171e2b;
+	--local-cielab-slate-1000: #1a2231;
+	--local-cielab-slate-950: #1d2738;
+	--local-cielab-slate-900: #212c3f;
+	--local-cielab-slate-850: #2a384f;
+	--local-cielab-slate-800: #32435e;
+
+	/* CIELAB blue palette — native CIELAB-space LCH syntax. */
+	--local-cielab-blue-300: lch(78.58% 23.67 271.49);
+	--local-cielab-blue-350: lch(73.20% 29.92 274.13);
+	--local-cielab-blue-400: lch(67.70% 36.46 275.80);
+	--local-cielab-blue-500: lch(57.12% 48.79 279.83);
+	--local-cielab-blue-600: lch(46.75% 62.88 286.66);
+
+	--sky-color-background-page: var(--local-cielab-slate-1100) !important;
+	--sky-color-background-container-base: var(--local-cielab-slate-1000) !important;
+	--sky-color-background-container-dimmed: var(--local-cielab-slate-950) !important;
+	--sky-color-background-container-backdrop: var(--local-cielab-slate-900) !important;
+	--sky-color-background-container-menu: var(--local-cielab-slate-850) !important;
+	--sky-color-background-disabled: var(--local-cielab-slate-950) !important;
+
+	--sky-color-border-divider: color-mix(in oklab, var(--local-cielab-slate-900) 76%, white 24%) !important;
+	--sky-color-border-separator-row: color-mix(in oklab, var(--local-cielab-slate-950) 78%, white 22%) !important;
+	--sky-color-border-container-base: color-mix(in oklab, var(--local-cielab-slate-1000) 74%, white 26%) !important;
+	--sky-color-border-elevation: color-mix(in oklab, var(--local-cielab-slate-900) 74%, white 26%) !important;
+	--sky-color-border-input-base: color-mix(in oklab, var(--local-cielab-slate-950) 72%, white 28%) !important;
+	--sky-color-border-container-border: var(--sky-color-border-container-base) !important;
+
+	--sky-color-text-action: var(--local-cielab-slate-800) !important;
+	--sky-theme-color-text-action: var(--local-cielab-slate-800) !important;
+	--sky-color-icon-action: var(--local-cielab-slate-800) !important;
+	--sky-theme-color-icon-action: var(--local-cielab-slate-800) !important;
+	--sky-color-background-action-primary-base: var(--local-cielab-slate-800) !important;
+	--sky-color-background-action-primary-hover: var(--local-cielab-slate-800) !important;
+	--sky-color-background-action-primary-active: var(--local-cielab-slate-850) !important;
+	--sky-color-background-action-primary-focus: var(--local-cielab-slate-850) !important;
+	--sky-color-border-action-primary-base: var(--local-cielab-slate-800) !important;
+	--sky-color-border-action-primary-hover: var(--local-cielab-slate-800) !important;
+	--sky-color-border-action-primary-active: var(--local-cielab-slate-850) !important;
+	--sky-color-border-action-primary-focus: var(--local-cielab-slate-850) !important;
 }
 
 /* Optional lane switch for testing: add `local-exp-neutral-slate` on body. */
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-exp-neutral-slate {
-	--sky-color-background-page: var(--local-exp-gray-1050) !important;
-	--sky-color-background-container-base: var(--local-exp-gray-975) !important;
-	--sky-color-background-container-dimmed: var(--local-exp-gray-950) !important;
-	--sky-color-background-container-backdrop: var(--local-exp-gray-925) !important;
+	--sky-color-background-page: var(--local-exp-slate-1050) !important;
+	--sky-color-background-container-base: var(--local-exp-slate-975) !important;
+	--sky-color-background-container-dimmed: var(--local-exp-slate-950) !important;
+	--sky-color-background-container-backdrop: var(--local-exp-slate-925) !important;
 	--sky-color-background-disabled: var(--local-exp-slate-950) !important;
 	--local-exp-input-border-base: var(--local-exp-slate-950) !important;
-	--sky-color-border-container-border: var(--local-exp-gray-1000) !important;
+	--sky-color-border-container-border: var(--local-exp-slate-1000) !important;
 
-	/* Structural border hierarchy (gray lane). */
-	--sky-color-border-divider: var(--local-exp-gray-925) !important;
-	--sky-color-border-elevation: var(--local-exp-gray-925) !important;
-	--sky-color-border-container-base: var(--local-exp-gray-1000) !important;
-	--sky-color-border-separator-row: var(--local-exp-gray-950) !important;
-	--sky-color-border-separator-dark: var(--local-exp-gray-950) !important;
-	--sky-color-border-separator-light: var(--local-exp-gray-975) !important;
-	--sky-color-border-disabled: var(--local-exp-gray-975) !important;
+	/* Structural border hierarchy (slate lane). */
+	--sky-color-border-divider: var(--local-exp-slate-925) !important;
+	--sky-color-border-elevation: var(--local-exp-slate-925) !important;
+	--sky-color-border-container-base: var(--local-exp-slate-1000) !important;
+	--sky-color-border-separator-row: var(--local-exp-slate-950) !important;
+	--sky-color-border-separator-dark: var(--local-exp-slate-950) !important;
+	--sky-color-border-separator-light: var(--local-exp-slate-975) !important;
+	--sky-color-border-disabled: var(--local-exp-slate-975) !important;
 }
 
 /* Force visibility on host-provided legacy classes used by the demo app. */
@@ -111,8 +209,8 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .swatch::before {
 	padding: 1px;
 	background: linear-gradient(
 		to top,
-		var(--bb-color-gray-800),
-		var(--bb-color-gray-850)
+		var(--bb-color-slate-800),
+		var(--bb-color-slate-850)
 	);
 	-webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
 	-webkit-mask-composite: xor;
@@ -124,14 +222,14 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .swatch::before {
 /* Phase B – surface-relative experiment (do not ship)
    Mechanical model only: one fixed lift delta applied from immediate surface.
    No per-surface or per-component tuning. */
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--local-exp-current-surface: var(--sky-color-background-page);
 	--local-exp-input-lift-surface-weight: 84%;
 	--local-exp-input-lift-white-weight: 16%;
 }
 
 /* Detect surface context from existing SKY UX structure/classes. */
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	.sky-box,
 	.sky-theme-color-background-container-default,
 	.sky-theme-background-container-default,
@@ -140,7 +238,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	--local-exp-current-surface: var(--sky-color-background-container-base);
 }
 
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	.sky-theme-color-background-container-dimmed,
 	.sky-theme-background-container-dimmed,
 	.sky-background-container-dimmed,
@@ -149,7 +247,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	--local-exp-current-surface: var(--sky-color-background-container-dimmed);
 }
 
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	.sky-theme-color-background-container-backdrop,
 	.sky-theme-background-container-backdrop,
 	.sky-background-container-backdrop,
@@ -161,7 +259,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 /* Phase B – borders/dividers layered with the same surface model.
    Dividers are computed from each container's immediate surface.
    Soft divider remains one fixed step weaker than divider in the same layer. */
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--local-exp-border-surface: var(--sky-color-background-page);
 	--local-exp-divider-white-strength: 24%;
 	--local-exp-divider-soft-step: 4%;
@@ -196,7 +294,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--local-exp-input-border-base: var(--sky-color-border-input-base) !important;
 }
 
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	.sky-box,
 	.sky-theme-color-background-container-default,
 	.sky-theme-background-container-default,
@@ -206,7 +304,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	--local-exp-divider-white-strength: 26%;
 }
 
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	.sky-theme-color-background-container-dimmed,
 	.sky-theme-background-container-dimmed,
 	.sky-background-container-dimmed,
@@ -216,7 +314,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	--local-exp-divider-white-strength: 28%;
 }
 
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	.sky-theme-color-background-container-backdrop,
 	.sky-theme-background-container-backdrop,
 	.sky-background-container-backdrop,
@@ -226,9 +324,9 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark :where(
 	--local-exp-divider-white-strength: 30%;
 }
 
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-input-box:not(:hover):not(:focus-within):not(:active),
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark app-omnibar .sky-input-box:not(:hover):not(:focus-within):not(:active),
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark omnibar-search .sky-input-box:not(:hover):not(:focus-within):not(:active) {
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-input-box:not(:hover):not(:focus-within):not(:active),
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark app-omnibar .sky-input-box:not(:hover):not(:focus-within):not(:active),
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark omnibar-search .sky-input-box:not(:hover):not(:focus-within):not(:active) {
 	background-color: color-mix(
 		in oklab,
 		var(--local-exp-current-surface) var(--local-exp-input-lift-surface-weight),
@@ -240,8 +338,8 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark omnibar-search .s
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-layering {
 	--_layer-0-bg: var(--sky-color-background-page);
 	--_layer-1-bg: var(--sky-color-background-container-base);
-	--_layer-2-bg: var(--sky-color-background-container-backdrop, var(--bb-color-gray-900));
-	--_layer-3-bg: var(--sky-color-background-container-menu, var(--bb-color-gray-850));
+	--_layer-2-bg: var(--sky-color-background-container-backdrop, var(--bb-color-slate-900));
+	--_layer-3-bg: var(--sky-color-background-container-menu, var(--bb-color-slate-850));
 	min-height: 100vh;
 	padding: 2rem;
 	background-color: var(--_layer-0-bg);
@@ -255,6 +353,1362 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-lay
 	max-width: 1200px;
 	margin: 0 auto;
 	color: var(--sky-color-text-default);
+}
+
+/* Local sandbox - static layered surface demo for dark mode token experiments. */
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-compare {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+	padding: 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-nav {
+	background-color: var(--sky-color-background-container-base);
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 12px;
+	grid-column: 1 / -1;
+	padding: 0.9rem 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-primary-tabs {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-primary-tab {
+	background: transparent;
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 999px;
+	color: var(--sky-color-text-default);
+	cursor: pointer;
+	padding: 0.4rem 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-primary-tab.is-active {
+	background-color: var(--sky-color-background-container-dimmed);
+	border-color: var(--sky-color-text-action);
+	color: var(--sky-color-text-action);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-subpage {
+	display: block;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-mode-toggle {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 0.75rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-main-tabs {
+	background-color: var(--sky-color-background-container-base);
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 12px;
+	grid-column: 1 / -1;
+	padding: 0.9rem 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-tab-content {
+	grid-column: 1 / -1;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-mode-tabs {
+	display: inline-flex;
+	gap: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-mode-tab {
+	min-width: 10.5rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-mode-tab.is-active {
+	background-color: var(--sky-color-text-action);
+	border-color: var(--sky-color-text-action);
+	color: var(--bb-color-white, #ffffff);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	--eval-bg-page: #141b26;
+	--eval-bg-surface-1: #1a2231;
+	--eval-bg-surface-2: #212c3f;
+	--eval-bg-surface-3: #2a384f;
+	--eval-border: color-mix(in oklab, var(--eval-bg-surface-1) 74%, white 26%);
+	--eval-divider: color-mix(in oklab, var(--eval-bg-surface-2) 78%, white 22%);
+	--eval-text-primary: #e7ebf1;
+	--eval-text-secondary: #c6cfda;
+	--eval-heading: var(--eval-text-primary);
+	--eval-body-copy: var(--eval-text-secondary);
+	--eval-link: #7caeff;
+	--eval-action: #7caeff;
+	--eval-input-bg: color-mix(in oklab, var(--eval-bg-surface-1) 84%, white 16%);
+	--eval-disabled-bg: color-mix(in oklab, var(--eval-bg-surface-1) 88%, black 12%);
+	--eval-disabled-text: color-mix(in oklab, var(--eval-text-primary) 50%, transparent);
+
+	background-color: var(--eval-bg-page);
+	border: 1px solid var(--eval-border);
+	border-radius: 12px;
+	color: var(--eval-text-primary);
+	padding: 1rem;
+}
+
+body[data-eval-theme='dark'][data-eval-model='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	/* Current SKY UX model sourced directly from slate palette tokens. */
+	--eval-bg-page: var(--bb-color-slate-1100, #141b26);
+	--eval-bg-surface-1: var(--bb-color-slate-1000, #1a2231);
+	--eval-bg-surface-2: var(--bb-color-slate-900, #212c3f);
+	--eval-bg-surface-3: var(--bb-color-slate-850, #2a384f);
+	--eval-border: var(--sky-color-border-container-base, color-mix(in oklab, var(--eval-bg-surface-1) 74%, white 26%));
+	--eval-divider: var(--sky-color-border-divider, color-mix(in oklab, var(--eval-bg-surface-2) 78%, white 22%));
+	--eval-text-primary: var(--sky-color-text-default, #e7ebf1);
+	--eval-text-secondary: var(--sky-color-text-deemphasized, #c6cfda);
+	--eval-heading: var(--bb-color-slate-50, #d7e1ee);
+	--eval-body-copy: var(--bb-color-slate-200, #b0c1d6);
+	--eval-link: var(--sky-color-text-action, var(--sky-theme-color-text-action));
+	--eval-action: var(--sky-color-text-action, var(--sky-theme-color-text-action));
+	--eval-input-bg: color-mix(in oklab, var(--eval-bg-surface-1) 84%, white 16%);
+	--eval-disabled-bg: var(--sky-color-background-disabled, color-mix(in oklab, var(--eval-bg-surface-1) 88%, black 12%));
+	--eval-disabled-text: var(--sky-color-text-deemphasized, color-mix(in oklab, var(--eval-text-primary) 50%, transparent));
+}
+
+body[data-eval-theme='dark'][data-eval-model='cielab'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	--eval-bg-page: #141b26;
+	--eval-bg-surface-1: #1a2231;
+	--eval-bg-surface-2: #212c3f;
+	--eval-bg-surface-3: #2a384f;
+	--eval-heading: #d7e1ee;
+	--eval-body-copy: #b0c1d6;
+	--eval-link: #7caeff;
+	--eval-action: #7caeff;
+}
+
+body[data-eval-theme='dark'][data-eval-model='oklch'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	--eval-bg-page: oklch(0.20 0.023 255);
+	--eval-bg-surface-1: oklch(0.24 0.029 255);
+	--eval-bg-surface-2: oklch(0.30 0.037 255);
+	--eval-bg-surface-3: oklch(0.34 0.041 255);
+	--eval-heading: oklch(0.93 0.02 255);
+	--eval-body-copy: oklch(0.82 0.03 255);
+	--eval-link: oklch(0.74 0.11 250);
+	--eval-action: oklch(0.74 0.11 250);
+}
+
+body[data-eval-theme='light'][data-eval-model='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	--eval-bg-page: #f7f9fc;
+	--eval-bg-surface-1: #ffffff;
+	--eval-bg-surface-2: #f0f4f9;
+	--eval-bg-surface-3: #e7edf5;
+	--eval-border: color-mix(in oklab, var(--eval-bg-surface-3) 60%, #8a96a8 40%);
+	--eval-divider: color-mix(in oklab, var(--eval-bg-surface-2) 72%, #8a96a8 28%);
+	/* Use SKY UX light-equivalent ref values independent of the page dark-mode class. */
+	--eval-text-primary: var(--bb-color-gray-1000, #1d2736);
+	--eval-text-secondary: var(--bb-color-gray-600, #4f5e73);
+	--eval-heading: var(--bb-color-gray-1100, #161a1f);
+	--eval-body-copy: var(--bb-color-gray-600, #4f5e73);
+	--eval-link: #1859d1;
+	--eval-action: #1859d1;
+	--eval-input-bg: #ffffff;
+	--eval-disabled-bg: #eef2f7;
+	--eval-disabled-text: #7f8ea3;
+}
+
+body[data-eval-theme='light'][data-eval-model='cielab'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	--eval-bg-page: #f8f9fb;
+	--eval-bg-surface-1: #ffffff;
+	--eval-bg-surface-2: #f1f4f8;
+	--eval-bg-surface-3: #e8edf3;
+	--eval-border: color-mix(in oklab, var(--eval-bg-surface-3) 58%, #8e9aae 42%);
+	--eval-divider: color-mix(in oklab, var(--eval-bg-surface-2) 70%, #8e9aae 30%);
+	--eval-text-primary: #1c2738;
+	--eval-text-secondary: #4d5d75;
+	--eval-heading: #1c2738;
+	--eval-body-copy: #4d5d75;
+	--eval-link: #1f5fd4;
+	--eval-action: #1f5fd4;
+	--eval-input-bg: #ffffff;
+	--eval-disabled-bg: #edf2f8;
+	--eval-disabled-text: #7c8ba1;
+}
+
+body[data-eval-theme='light'][data-eval-model='oklch'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab {
+	--eval-bg-page: oklch(0.97 0.01 255);
+	--eval-bg-surface-1: oklch(0.99 0.005 255);
+	--eval-bg-surface-2: oklch(0.95 0.012 255);
+	--eval-bg-surface-3: oklch(0.92 0.015 255);
+	--eval-border: color-mix(in oklab, var(--eval-bg-surface-3) 58%, oklch(0.65 0.03 250) 42%);
+	--eval-divider: color-mix(in oklab, var(--eval-bg-surface-2) 70%, oklch(0.65 0.03 250) 30%);
+	--eval-text-primary: oklch(0.28 0.025 255);
+	--eval-text-secondary: oklch(0.45 0.02 255);
+	--eval-heading: oklch(0.28 0.025 255);
+	--eval-body-copy: oklch(0.45 0.02 255);
+	--eval-link: oklch(0.50 0.16 255);
+	--eval-action: oklch(0.50 0.16 255);
+	--eval-input-bg: oklch(0.99 0.005 255);
+	--eval-disabled-bg: oklch(0.94 0.01 255);
+	--eval-disabled-text: oklch(0.62 0.015 255);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-controls {
+	border-bottom: 1px solid var(--eval-divider);
+	display: grid;
+	gap: 0.65rem;
+	margin-bottom: 0.9rem;
+	padding-bottom: 0.9rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-groups {
+	display: grid;
+	gap: 0.65rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-group h3 {
+	color: var(--eval-heading);
+	font-size: 0.82rem;
+	margin: 0 0 0.45rem;
+	text-transform: uppercase;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab .local-layer-model-title {
+	color: var(--eval-heading);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-lab .local-layer-model-copy {
+	color: var(--eval-body-copy);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-buttons {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-btn {
+	background: transparent;
+	border: 1px solid var(--eval-border);
+	border-radius: 999px;
+	color: var(--eval-text-primary);
+	cursor: pointer;
+	padding: 0.42rem 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-btn.is-active {
+	background-color: var(--eval-action);
+	border-color: var(--eval-action);
+	color: #ffffff;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-fixture {
+	display: grid;
+	gap: 0.85rem;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface {
+	background-color: var(--eval-bg-surface-1);
+	border: 1px solid var(--eval-border);
+	border-radius: 10px;
+	color: var(--eval-text-primary);
+	padding: 0.9rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface p,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface small,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface label {
+	color: var(--eval-body-copy);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface a {
+	color: var(--eval-link);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface h1,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface h2,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface h3,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface h4 {
+	color: var(--eval-heading);
+	margin: 0 0 0.45rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface-level-2 {
+	background-color: var(--eval-bg-surface-2);
+	margin-top: 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-surface-level-3 {
+	background-color: var(--eval-bg-surface-3);
+	margin-top: 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-interaction-row {
+	display: grid;
+	gap: 0.35rem;
+	margin-bottom: 0.6rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-btn {
+	background-color: var(--eval-action);
+	border: 1px solid var(--eval-action);
+	border-radius: 8px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 0.5rem 0.75rem;
+}
+
+body[data-eval-theme='dark'][data-eval-model='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-btn {
+	color: var(--sky-color-text-inverse);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-btn:disabled {
+	background-color: var(--eval-disabled-bg);
+	border-color: var(--eval-border);
+	color: var(--eval-disabled-text);
+	cursor: not-allowed;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-input {
+	background-color: var(--eval-input-bg);
+	border: 1px solid var(--eval-border);
+	border-radius: 7px;
+	color: var(--eval-text-primary);
+	padding: 0.5rem 0.6rem;
+	width: 100%;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-input:disabled {
+	background-color: var(--eval-disabled-bg);
+	color: var(--eval-disabled-text);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox {
+	--local-layer-l0-bg: var(--sky-color-background-page);
+	--local-layer-l1-bg: var(--sky-color-background-container-base);
+	--local-layer-l1-nested-bg: color-mix(
+		in oklab,
+		var(--local-layer-l1-bg) 86%,
+		white 14%
+	);
+	--local-layer-l2-bg: color-mix(
+		in oklab,
+		var(--sky-color-background-container-menu, var(--bb-color-slate-900)) 82%,
+		white 18%
+	);
+	--local-layer-l3-bg: color-mix(
+		in oklab,
+		var(--sky-color-background-container-menu, var(--bb-color-slate-850)) 80%,
+		white 20%
+	);
+	--local-layer-border: var(--sky-color-border-container-base);
+	--local-layer-divider: var(--sky-color-border-divider);
+	--local-layer-link: var(--sky-color-text-action);
+	--local-layer-input-bg: color-mix(
+		in oklab,
+		var(--local-layer-l0-bg) 84%,
+		white 16%
+	);
+	--local-layer-text: var(--sky-color-text-default);
+	--local-layer-text-muted: color-mix(in oklab, var(--local-layer-text) 72%, transparent);
+
+	background: none;
+	background-color: transparent;
+	border: 0;
+	border-radius: 12px;
+	color: var(--local-layer-text);
+	display: block;
+	padding: 1rem;
+}
+
+body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-standard {
+	--local-layer-l0-bg: var(--sky-color-background-page);
+	--local-layer-l1-bg: var(--sky-color-background-container-base);
+	--local-layer-l1-nested-bg: var(--sky-color-background-container-dimmed);
+	--local-layer-l2-bg: var(--sky-color-background-container-menu);
+	--local-layer-l3-bg: var(--sky-color-background-container-menu);
+	--local-layer-border: var(--sky-color-border-container-base);
+	--local-layer-divider: var(--sky-color-border-divider);
+	--local-layer-link: var(--sky-color-text-action, var(--sky-theme-color-text-action));
+	--local-layer-input-bg: var(--sky-color-background-input-base);
+}
+
+body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox {
+	--local-layer-link: var(--sky-color-text-action, var(--sky-theme-color-text-action, var(--bb-color-blue-500, #7caeff)));
+}
+
+body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox a {
+	color: var(--local-layer-link);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-standard {
+	--local-layer-l0-bg: var(--sky-color-background-page);
+	--local-layer-l1-bg: var(--sky-color-background-container-dimmed);
+	--local-layer-l1-nested-bg: var(--sky-color-background-container-base);
+	--local-layer-l2-bg: var(--sky-color-background-container-menu);
+	--local-layer-l3-bg: var(--sky-color-background-container-menu);
+	--local-layer-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--local-layer-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--local-layer-input-bg: var(--local-exp-slate-925);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-standard {
+	--local-layer-l0-bg: var(--local-oklch-slate-1100);
+	--local-layer-l1-bg: var(--local-oklch-slate-1000);
+	--local-layer-l1-nested-bg: var(--local-oklch-slate-950);
+	--local-layer-l2-bg: var(--local-oklch-slate-900);
+	--local-layer-l3-bg: var(--local-oklch-slate-850);
+	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
+	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
+	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
+	--local-layer-link: var(--local-oklch-blue-500);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-standard {
+	--local-layer-l0-bg: var(--local-cielab-slate-1100);
+	--local-layer-l1-bg: var(--local-cielab-slate-1000);
+	--local-layer-l1-nested-bg: var(--local-cielab-slate-950);
+	--local-layer-l2-bg: var(--local-cielab-slate-900);
+	--local-layer-l3-bg: var(--local-cielab-slate-850);
+	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
+	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
+	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
+	--local-layer-link: var(--local-cielab-blue-500);
+}
+
+/* Phase B - Carbon-style layer token families (dev-only). */
+body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare {
+	--sky-layer-00-background: var(--sky-color-background-page);
+	--sky-layer-00-border: var(--sky-color-border-container-base);
+	--sky-layer-00-divider: var(--sky-color-border-divider);
+	--sky-layer-00-field: var(--sky-color-background-input-base);
+
+	--sky-layer-01-background: var(--sky-color-background-container-base);
+	--sky-layer-01-border: var(--sky-color-border-container-base);
+	--sky-layer-01-divider: var(--sky-color-border-divider);
+	--sky-layer-01-field: var(--sky-color-background-input-base);
+
+	--sky-layer-02-background: var(--sky-color-background-container-menu);
+	--sky-layer-02-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--sky-layer-02-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--sky-layer-02-field: var(--sky-color-background-input-base);
+
+	--sky-layer-03-background: var(--sky-color-background-container-menu);
+	--sky-layer-03-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--sky-layer-03-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--sky-layer-03-field: var(--sky-color-background-input-base);
+}
+
+/* Phase B - Experimental Carbon-style token families (dev-only). */
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare {
+	--sky-layer-00-background: var(--sky-color-background-page);
+	--sky-layer-00-border: var(--sky-color-border-container-base);
+	--sky-layer-00-divider: var(--sky-color-border-divider);
+	--sky-layer-00-field: var(--local-exp-slate-1000);
+
+	--sky-layer-01-background: var(--sky-color-background-container-dimmed);
+	--sky-layer-01-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--sky-layer-01-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--sky-layer-01-field: var(--local-exp-slate-950);
+
+	--sky-layer-02-background: var(--sky-color-background-container-menu);
+	--sky-layer-02-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--sky-layer-02-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--sky-layer-02-field: var(--local-exp-slate-925);
+
+	--sky-layer-03-background: var(--sky-color-background-container-menu);
+	--sky-layer-03-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--sky-layer-03-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--sky-layer-03-field: var(--local-exp-slate-850);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare {
+	--sky-layer-00-background: var(--local-oklch-slate-1100);
+	--sky-layer-00-border: color-mix(in oklab, var(--sky-layer-00-background) 74%, white 26%);
+	--sky-layer-00-divider: color-mix(in oklab, var(--sky-layer-00-background) 76%, white 24%);
+	--sky-layer-00-field: color-mix(in oklab, var(--sky-layer-00-background) 84%, white 16%);
+
+	--sky-layer-01-background: var(--local-oklch-slate-1000);
+	--sky-layer-01-border: color-mix(in oklab, var(--sky-layer-01-background) 74%, white 26%);
+	--sky-layer-01-divider: color-mix(in oklab, var(--sky-layer-01-background) 78%, white 22%);
+	--sky-layer-01-field: color-mix(in oklab, var(--sky-layer-01-background) 84%, white 16%);
+
+	--sky-layer-02-background: var(--local-oklch-slate-900);
+	--sky-layer-02-border: color-mix(in oklab, var(--sky-layer-02-background) 76%, white 24%);
+	--sky-layer-02-divider: color-mix(in oklab, var(--sky-layer-02-background) 80%, white 20%);
+	--sky-layer-02-field: color-mix(in oklab, var(--sky-layer-02-background) 84%, white 16%);
+
+	--sky-layer-03-background: var(--local-oklch-slate-850);
+	--sky-layer-03-border: color-mix(in oklab, var(--sky-layer-03-background) 76%, white 24%);
+	--sky-layer-03-divider: color-mix(in oklab, var(--sky-layer-03-background) 80%, white 20%);
+	--sky-layer-03-field: color-mix(in oklab, var(--sky-layer-03-background) 84%, white 16%);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare {
+	--sky-layer-00-background: var(--local-cielab-slate-1100);
+	--sky-layer-00-border: color-mix(in oklab, var(--sky-layer-00-background) 74%, white 26%);
+	--sky-layer-00-divider: color-mix(in oklab, var(--sky-layer-00-background) 76%, white 24%);
+	--sky-layer-00-field: color-mix(in oklab, var(--sky-layer-00-background) 84%, white 16%);
+
+	--sky-layer-01-background: var(--local-cielab-slate-1000);
+	--sky-layer-01-border: color-mix(in oklab, var(--sky-layer-01-background) 74%, white 26%);
+	--sky-layer-01-divider: color-mix(in oklab, var(--sky-layer-01-background) 78%, white 22%);
+	--sky-layer-01-field: color-mix(in oklab, var(--sky-layer-01-background) 84%, white 16%);
+
+	--sky-layer-02-background: var(--local-cielab-slate-900);
+	--sky-layer-02-border: color-mix(in oklab, var(--sky-layer-02-background) 76%, white 24%);
+	--sky-layer-02-divider: color-mix(in oklab, var(--sky-layer-02-background) 80%, white 20%);
+	--sky-layer-02-field: color-mix(in oklab, var(--sky-layer-02-background) 84%, white 16%);
+
+	--sky-layer-03-background: var(--local-cielab-slate-850);
+	--sky-layer-03-border: color-mix(in oklab, var(--sky-layer-03-background) 76%, white 24%);
+	--sky-layer-03-divider: color-mix(in oklab, var(--sky-layer-03-background) 80%, white 20%);
+	--sky-layer-03-field: color-mix(in oklab, var(--sky-layer-03-background) 84%, white 16%);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='00'] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='01'] {
+	--_layer-bg: var(--sky-layer-01-background);
+	--_layer-border: var(--sky-layer-01-border);
+	--_layer-divider: var(--sky-layer-01-divider);
+	--_layer-field: var(--sky-layer-01-field);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='02'] {
+	--_layer-bg: var(--sky-layer-02-background);
+	--_layer-border: var(--sky-layer-02-border);
+	--_layer-divider: var(--sky-layer-02-divider);
+	--_layer-field: var(--sky-layer-02-field);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='03'] {
+	--_layer-bg: var(--sky-layer-03-background);
+	--_layer-border: var(--sky-layer-03-border);
+	--_layer-divider: var(--sky-layer-03-divider);
+	--_layer-field: var(--sky-layer-03-field);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='00'] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='01'] {
+	--_layer-bg: var(--sky-layer-01-background);
+	--_layer-border: var(--sky-layer-01-border);
+	--_layer-divider: var(--sky-layer-01-divider);
+	--_layer-field: var(--sky-layer-01-field);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='02'] {
+	--_layer-bg: var(--sky-layer-02-background);
+	--_layer-border: var(--sky-layer-02-border);
+	--_layer-divider: var(--sky-layer-02-divider);
+	--_layer-field: var(--sky-layer-02-field);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='03'] {
+	--_layer-bg: var(--sky-layer-03-background);
+	--_layer-border: var(--sky-layer-03-border);
+	--_layer-divider: var(--sky-layer-03-divider);
+	--_layer-field: var(--sky-layer-03-field);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='00'] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='01'] {
+	--_layer-bg: var(--sky-layer-01-background);
+	--_layer-border: var(--sky-layer-01-border);
+	--_layer-divider: var(--sky-layer-01-divider);
+	--_layer-field: var(--sky-layer-01-field);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='02'] {
+	--_layer-bg: var(--sky-layer-02-background);
+	--_layer-border: var(--sky-layer-02-border);
+	--_layer-divider: var(--sky-layer-02-divider);
+	--_layer-field: var(--sky-layer-02-field);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare [data-sky-layer='03'] {
+	--_layer-bg: var(--sky-layer-03-background);
+	--_layer-border: var(--sky-layer-03-border);
+	--_layer-divider: var(--sky-layer-03-divider);
+	--_layer-field: var(--sky-layer-03-field);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] {
+	background-color: var(--_layer-bg);
+	border-color: var(--_layer-border);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-chip {
+	border-color: var(--_layer-divider);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-divider {
+	border-top-color: var(--_layer-divider);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] input {
+	background-color: var(--_layer-field);
+	border-color: var(--_layer-border);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] {
+	background-color: var(--_layer-bg);
+	border-color: var(--_layer-border);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-chip {
+	border-color: var(--_layer-divider);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-divider {
+	border-top-color: var(--_layer-divider);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] input {
+	background-color: var(--_layer-field);
+	border-color: var(--_layer-border);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] {
+	background-color: var(--_layer-bg);
+	border-color: var(--_layer-border);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-chip {
+	border-color: var(--_layer-divider);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-divider {
+	border-top-color: var(--_layer-divider);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-compare .local-layer-surface[data-sky-layer] input {
+	background-color: var(--_layer-field);
+	border-color: var(--_layer-border);
+}
+
+/* Phase B - Experimental layer token sets */
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract {
+	background: transparent;
+	border: 0;
+	padding: 0;
+
+	--sky-layer-00-background: var(--sky-color-background-page);
+	--sky-layer-00-border: color-mix(
+		in oklab,
+		var(--sky-layer-00-background) 72%,
+		white 28%
+	);
+	--sky-layer-00-divider: color-mix(
+		in oklab,
+		var(--sky-layer-00-background) 76%,
+		white 24%
+	);
+	--sky-layer-00-field: color-mix(
+		in oklab,
+		var(--sky-layer-00-background) 84%,
+		white 16%
+	);
+
+	--sky-layer-01-background: color-mix(
+		in oklab,
+		var(--sky-color-background-container-base) 90%,
+		white 10%
+	);
+	--sky-layer-01-border: color-mix(
+		in oklab,
+		var(--sky-layer-01-background) 74%,
+		white 26%
+	);
+	--sky-layer-01-divider: color-mix(
+		in oklab,
+		var(--sky-layer-01-background) 78%,
+		white 22%
+	);
+	--sky-layer-01-field: color-mix(
+		in oklab,
+		var(--sky-layer-01-background) 82%,
+		white 18%
+	);
+
+	/* L2 is intentionally lighter than L1 so hierarchy survives without shadow. */
+	--sky-layer-02-background: color-mix(
+		in oklab,
+		var(--sky-color-background-container-backdrop, var(--sky-layer-01-background)) 66%,
+		white 34%
+	);
+	--sky-layer-02-border: color-mix(
+		in oklab,
+		var(--sky-layer-02-background) 76%,
+		white 24%
+	);
+	--sky-layer-02-divider: color-mix(
+		in oklab,
+		var(--sky-layer-02-background) 80%,
+		white 20%
+	);
+	--sky-layer-02-field: color-mix(
+		in oklab,
+		var(--sky-layer-02-background) 78%,
+		white 22%
+	);
+
+	--sky-layer-03-background: color-mix(
+		in oklab,
+		var(--sky-color-background-container-menu, var(--sky-layer-02-background)) 72%,
+		white 28%
+	);
+	--sky-layer-03-border: color-mix(
+		in oklab,
+		var(--sky-layer-03-background) 76%,
+		white 24%
+	);
+	--sky-layer-03-divider: color-mix(
+		in oklab,
+		var(--sky-layer-03-background) 80%,
+		white 20%
+	);
+	--sky-layer-03-field: color-mix(
+		in oklab,
+		var(--sky-layer-03-background) 78%,
+		white 22%
+	);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture {
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-schema {
+	background-color: var(--sky-color-background-container-base);
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-schema pre {
+	background-color: var(--sky-color-background-page);
+	border: 1px solid var(--sky-color-border-divider);
+	border-radius: 8px;
+	margin: 0;
+	overflow: auto;
+	padding: 0.75rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-poc {
+	position: relative;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-surface {
+	background-color: var(--_layer-bg);
+	border: 1px solid var(--_layer-border);
+	border-radius: 10px;
+	padding: 1rem;
+	position: relative;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-overlay {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	width: min(340px, calc(100% - 2rem));
+	z-index: 12;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-modal {
+	margin-left: auto;
+	margin-top: 1rem;
+	max-width: 620px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture [data-sky-layer] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture [data-sky-layer='00'] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+	min-height: 420px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture [data-sky-layer='01'] {
+	--_layer-bg: var(--sky-layer-01-background);
+	--_layer-border: var(--sky-layer-01-border);
+	--_layer-divider: var(--sky-layer-01-divider);
+	--_layer-field: var(--sky-layer-01-field);
+	margin-top: 1rem;
+	min-height: 250px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture [data-sky-layer='02'] {
+	--_layer-bg: var(--sky-layer-02-background);
+	--_layer-border: var(--sky-layer-02-border);
+	--_layer-divider: var(--sky-layer-02-divider);
+	--_layer-field: var(--sky-layer-02-field);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture [data-sky-layer='03'] {
+	--_layer-bg: var(--sky-layer-03-background);
+	--_layer-border: var(--sky-layer-03-border);
+	--_layer-divider: var(--sky-layer-03-divider);
+	--_layer-field: var(--sky-layer-03-field);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture .local-layer-divider {
+	border-top-color: var(--_layer-divider);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture input {
+	background-color: var(--_layer-field);
+	border: 1px solid var(--_layer-border);
+	border-radius: 6px;
+	color: var(--sky-color-text-default);
+	padding: 0.6rem 0.7rem;
+	width: 100%;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette {
+	background: transparent;
+	border: 0;
+	padding: 0;
+
+	--palette-current-l0-bg: var(--sky-color-background-page);
+	--palette-current-l1-bg: var(--sky-color-background-container-base);
+	--palette-current-l2-bg: var(--sky-color-background-container-backdrop, var(--bb-color-gray-900));
+	--palette-current-l3-bg: var(--sky-color-background-container-menu, var(--bb-color-gray-850));
+	--palette-current-l0-divider: color-mix(in oklab, var(--palette-current-l0-bg) 74%, white 26%);
+	--palette-current-l1-divider: color-mix(in oklab, var(--palette-current-l1-bg) 74%, white 26%);
+	--palette-current-l2-divider: color-mix(in oklab, var(--palette-current-l2-bg) 74%, white 26%);
+	--palette-current-l3-divider: color-mix(in oklab, var(--palette-current-l3-bg) 74%, white 26%);
+	--palette-current-l0-input-bg: color-mix(in oklab, var(--palette-current-l0-bg) 84%, white 16%);
+	--palette-current-l1-input-bg: color-mix(in oklab, var(--palette-current-l1-bg) 84%, white 16%);
+	--palette-current-l2-input-bg: color-mix(in oklab, var(--palette-current-l2-bg) 84%, white 16%);
+	--palette-current-l3-input-bg: color-mix(in oklab, var(--palette-current-l3-bg) 84%, white 16%);
+	--palette-current-l0-input-border: color-mix(in oklab, var(--palette-current-l0-bg) 68%, white 32%);
+	--palette-current-l1-input-border: color-mix(in oklab, var(--palette-current-l1-bg) 68%, white 32%);
+	--palette-current-l2-input-border: color-mix(in oklab, var(--palette-current-l2-bg) 68%, white 32%);
+	--palette-current-l3-input-border: color-mix(in oklab, var(--palette-current-l3-bg) 68%, white 32%);
+
+	--palette-exp-l0-bg: var(--sky-color-background-page);
+	--palette-exp-l1-bg: color-mix(in oklab, var(--sky-color-background-container-base) 90%, white 10%);
+	--palette-exp-l2-bg: color-mix(in oklab, var(--sky-color-background-container-backdrop) 72%, white 28%);
+	--palette-exp-l3-bg: var(--sky-color-background-container-menu, var(--palette-exp-l2-bg));
+	--palette-exp-l0-divider: color-mix(in oklab, var(--palette-exp-l0-bg) 74%, white 26%);
+	--palette-exp-l1-divider: color-mix(in oklab, var(--palette-exp-l1-bg) 74%, white 26%);
+	--palette-exp-l2-divider: color-mix(in oklab, var(--palette-exp-l2-bg) 72%, white 28%);
+	--palette-exp-l3-divider: color-mix(in oklab, var(--palette-exp-l3-bg) 72%, white 28%);
+	--palette-exp-l0-input-bg: color-mix(in oklab, var(--palette-exp-l0-bg) 84%, white 16%);
+	--palette-exp-l1-input-bg: color-mix(in oklab, var(--palette-exp-l1-bg) 84%, white 16%);
+	--palette-exp-l2-input-bg: color-mix(in oklab, var(--palette-exp-l2-bg) 82%, white 18%);
+	--palette-exp-l3-input-bg: color-mix(in oklab, var(--palette-exp-l3-bg) 82%, white 18%);
+	--palette-exp-l0-input-border: color-mix(in oklab, var(--palette-exp-l0-bg) 68%, white 32%);
+	--palette-exp-l1-input-border: color-mix(in oklab, var(--palette-exp-l1-bg) 68%, white 32%);
+	--palette-exp-l2-input-border: color-mix(in oklab, var(--palette-exp-l2-bg) 68%, white 32%);
+	--palette-exp-l3-input-border: color-mix(in oklab, var(--palette-exp-l3-bg) 68%, white 32%);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-grid {
+	display: grid;
+	gap: 0.65rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-compare-grid {
+	display: grid;
+	gap: 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-family {
+	background-color: var(--sky-color-background-container-base);
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-family h3 {
+	margin: 0 0 0.65rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-columns {
+	display: grid;
+	gap: 0.8rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-column {
+	background-color: var(--sky-color-background-page);
+	border: 1px solid var(--sky-color-border-divider);
+	border-radius: 8px;
+	padding: 0.75rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-column h4 {
+	margin: 0 0 0.5rem;
+	font-size: 0.82rem;
+	text-transform: uppercase;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-stack {
+	display: grid;
+	gap: 0.45rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-stack-row {
+	align-items: center;
+	display: flex;
+	gap: 0.5rem;
+	font-size: 0.82rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-chip {
+	border: 1px solid rgb(255 255 255 / 16%);
+	border-radius: 5px;
+	height: 24px;
+	width: 60px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-row {
+	align-items: center;
+	background-color: var(--sky-color-background-container-base);
+	border: 1px solid var(--sky-color-border-container-base);
+	border-radius: 8px;
+	display: grid;
+	gap: 0.7rem;
+	grid-template-columns: minmax(220px, 1fr) 170px 170px;
+	padding: 0.65rem 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-row h3 {
+	font-size: 0.88rem;
+	margin: 0;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch {
+	border: 1px solid var(--sky-color-border-container-base);
+	height: 34px;
+	position: relative;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch::after {
+	content: '';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	border-top: 2px solid transparent;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input {
+	border-radius: 6px;
+	font-size: 0.8rem;
+	padding: 0.45rem 0.55rem;
+	text-align: left;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input span {
+	display: inline-block;
+	opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+	body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-row {
+		grid-template-columns: 1fr;
+	}
+
+	body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-columns {
+		grid-template-columns: 1fr;
+	}
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l0-bg'] { background: var(--palette-current-l0-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l1-bg'] { background: var(--palette-current-l1-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l2-bg'] { background: var(--palette-current-l2-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l3-bg'] { background: var(--palette-current-l3-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l0-bg'] { background: var(--palette-exp-l0-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l1-bg'] { background: var(--palette-exp-l1-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l2-bg'] { background: var(--palette-exp-l2-bg); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l3-bg'] { background: var(--palette-exp-l3-bg); }
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l0-divider']::after { border-top-color: var(--palette-current-l0-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l1-divider']::after { border-top-color: var(--palette-current-l1-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l2-divider']::after { border-top-color: var(--palette-current-l2-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-current[data-token='l3-divider']::after { border-top-color: var(--palette-current-l3-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l0-divider']::after { border-top-color: var(--palette-exp-l0-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l1-divider']::after { border-top-color: var(--palette-exp-l1-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l2-divider']::after { border-top-color: var(--palette-exp-l2-divider); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-swatch.is-experimental[data-token='l3-divider']::after { border-top-color: var(--palette-exp-l3-divider); }
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-current[data-token='l0-input'] { background: var(--palette-current-l0-input-bg); border: 1px solid var(--palette-current-l0-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-current[data-token='l1-input'] { background: var(--palette-current-l1-input-bg); border: 1px solid var(--palette-current-l1-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-current[data-token='l2-input'] { background: var(--palette-current-l2-input-bg); border: 1px solid var(--palette-current-l2-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-current[data-token='l3-input'] { background: var(--palette-current-l3-input-bg); border: 1px solid var(--palette-current-l3-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-experimental[data-token='l0-input'] { background: var(--palette-exp-l0-input-bg); border: 1px solid var(--palette-exp-l0-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-experimental[data-token='l1-input'] { background: var(--palette-exp-l1-input-bg); border: 1px solid var(--palette-exp-l1-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-experimental[data-token='l2-input'] { background: var(--palette-exp-l2-input-bg); border: 1px solid var(--palette-exp-l2-input-border); }
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-input.is-experimental[data-token='l3-input'] { background: var(--palette-exp-l3-input-bg); border: 1px solid var(--palette-exp-l3-input-border); }
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract-surface {
+	background-color: var(--_layer-bg);
+	border: 1px solid var(--_layer-border);
+	border-radius: 10px;
+	padding: 1rem;
+	position: relative;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract-overlay {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	width: min(340px, calc(100% - 2rem));
+	z-index: 10;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract [data-sky-layer] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract [data-sky-layer='00'] {
+	--_layer-bg: var(--sky-layer-00-background);
+	--_layer-border: var(--sky-layer-00-border);
+	--_layer-divider: var(--sky-layer-00-divider);
+	--_layer-field: var(--sky-layer-00-field);
+	min-height: 420px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract [data-sky-layer='01'] {
+	--_layer-bg: var(--sky-layer-01-background);
+	--_layer-border: var(--sky-layer-01-border);
+	--_layer-divider: var(--sky-layer-01-divider);
+	--_layer-field: var(--sky-layer-01-field);
+	margin-top: 1rem;
+	min-height: 250px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract [data-sky-layer='02'] {
+	--_layer-bg: var(--sky-layer-02-background);
+	--_layer-border: var(--sky-layer-02-border);
+	--_layer-divider: var(--sky-layer-02-divider);
+	--_layer-field: var(--sky-layer-02-field);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract [data-sky-layer='03'] {
+	--_layer-bg: var(--sky-layer-03-background);
+	--_layer-border: var(--sky-layer-03-border);
+	--_layer-divider: var(--sky-layer-03-divider);
+	--_layer-field: var(--sky-layer-03-field);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract .local-layer-divider {
+	border-top-color: var(--_layer-divider);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract input {
+	background-color: var(--_layer-field);
+	border: 1px solid var(--_layer-border);
+	border-radius: 6px;
+	color: var(--sky-color-text-default);
+	padding: 0.6rem 0.7rem;
+	width: 100%;
+}
+
+@media (max-width: 900px) {
+	body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-contract-overlay {
+		margin-top: 1rem;
+		position: static;
+		width: 100%;
+	}
+
+	body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-architecture-overlay {
+		margin-top: 1rem;
+		position: static;
+		width: 100%;
+	}
+}
+
+body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-strict {
+	--local-layer-l0-bg: var(--sky-color-background-page);
+	--local-layer-l1-bg: var(--sky-color-background-container-base);
+	--local-layer-l1-nested-bg: var(--sky-color-background-container-dimmed);
+	--local-layer-l2-bg: var(--sky-color-background-container-menu);
+	--local-layer-l3-bg: var(--sky-color-background-container-menu);
+	--local-layer-border: var(--sky-color-border-container-base);
+	--local-layer-divider: var(--sky-color-border-divider);
+	--local-layer-link: var(--sky-color-text-action, var(--sky-theme-color-text-action));
+	--local-layer-input-bg: var(--sky-color-background-input-base);
+}
+
+body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-strict {
+	--local-layer-l0-bg: var(--sky-color-background-page);
+	--local-layer-l1-bg: var(--sky-color-background-container-dimmed);
+	--local-layer-l1-nested-bg: var(--sky-color-background-container-backdrop);
+	--local-layer-l2-bg: var(--sky-color-background-container-menu, var(--sky-color-background-container-backdrop));
+	--local-layer-l3-bg: var(--sky-color-background-container-menu, var(--sky-color-background-container-backdrop));
+	--local-layer-border: var(--sky-color-border-elevation, var(--sky-color-border-container-base));
+	--local-layer-divider: var(--sky-color-border-separator-row, var(--sky-color-border-divider));
+	--local-layer-link: var(--sky-color-text-action);
+	--local-layer-input-bg: var(--local-exp-slate-925);
+}
+
+body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-strict {
+	--local-layer-l0-bg: var(--local-oklch-slate-1100);
+	--local-layer-l1-bg: var(--local-oklch-slate-1000);
+	--local-layer-l1-nested-bg: var(--local-oklch-slate-950);
+	--local-layer-l2-bg: var(--local-oklch-slate-900);
+	--local-layer-l3-bg: var(--local-oklch-slate-850);
+	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
+	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
+	--local-layer-link: var(--local-oklch-blue-500);
+	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
+}
+
+body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-strict {
+	--local-layer-l0-bg: var(--local-cielab-slate-1100);
+	--local-layer-l1-bg: var(--local-cielab-slate-1000);
+	--local-layer-l1-nested-bg: var(--local-cielab-slate-950);
+	--local-layer-l2-bg: var(--local-cielab-slate-900);
+	--local-layer-l3-bg: var(--local-cielab-slate-850);
+	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
+	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
+	--local-layer-link: var(--local-cielab-blue-500);
+	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox-strict {
+	--local-layer-l0-bg: var(--sky-color-background-page);
+	--local-layer-l1-bg: var(--sky-color-background-container-base);
+	--local-layer-l1-nested-bg: var(--sky-color-background-container-dimmed);
+	--local-layer-l2-bg: var(--sky-color-background-container-menu);
+	--local-layer-l3-bg: var(--sky-color-background-container-menu);
+	--local-layer-border: var(--sky-color-border-container-base);
+	--local-layer-divider: var(--sky-color-border-divider);
+	--local-layer-link: var(--sky-color-text-action);
+	--local-layer-input-bg: var(--sky-color-background-container-dimmed);
+}
+
+/* Local layering demo override hooks. Update these in DevTools to test alternate layer behavior. */
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-demo {
+	--local-layer-l0-bg: var(--local-demo-l0-bg, var(--sky-color-background-page));
+	--local-layer-l1-bg: var(--local-demo-l1-bg, var(--sky-color-background-container-base));
+	--local-layer-l1-nested-bg: var(--local-demo-l1-nested-bg, var(--sky-color-background-container-dimmed));
+	--local-layer-l2-bg: var(--local-demo-l2-bg, var(--sky-color-background-container-menu));
+	--local-layer-l3-bg: var(--local-demo-l3-bg, var(--sky-color-background-container-menu, var(--sky-color-background-container-backdrop)));
+	--local-layer-border: var(--local-demo-border, var(--sky-color-border-container-base));
+	--local-layer-divider: var(--local-demo-divider, var(--sky-color-border-divider));
+	--local-layer-input-bg: var(--local-demo-input-bg, var(--sky-color-background-container-dimmed));
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-model-title {
+	margin-bottom: 0.35rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-model-copy {
+	margin-bottom: 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-controls {
+	background-color: color-mix(in oklab, var(--local-layer-l0-bg) 82%, white 18%);
+	border: 1px solid var(--local-layer-border);
+	border-radius: 12px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-controls-grid {
+	display: grid;
+	gap: 0.75rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	margin: 0.75rem 0;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-controls-grid label {
+	display: block;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-controls-grid span {
+	display: block;
+	font-size: 0.75rem;
+	margin-bottom: 0.35rem;
+	text-transform: uppercase;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-controls input,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-surface input {
+	background-color: var(--local-layer-input-bg);
+	border: 1px solid var(--local-layer-border);
+	border-radius: 6px;
+	color: var(--local-layer-text);
+	display: block;
+	padding: 0.6rem 0.7rem;
+	width: 100%;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-reset {
+	background: transparent;
+	border: 1px solid var(--local-layer-divider);
+	border-radius: 8px;
+	color: var(--local-layer-text);
+	cursor: pointer;
+	padding: 0.5rem 0.8rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-surface {
+	border: 1px solid var(--local-layer-border);
+	border-radius: 12px;
+	padding: 1rem;
+	position: relative;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-l0 {
+	background-color: var(--local-layer-l0-bg);
+	max-width: 1050px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-l1 {
+	background-color: var(--local-layer-l1-bg);
+	margin-top: 1rem;
+	max-width: 920px;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-l1-nested {
+	background-color: var(--local-layer-l1-nested-bg);
+	margin-top: 1rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-l2 {
+	background-color: var(--local-layer-l2-bg);
+	box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+	position: absolute;
+	right: 1rem;
+	top: 1.25rem;
+	width: min(360px, calc(100% - 2rem));
+	z-index: 20;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-l3 {
+	background-color: var(--local-layer-l3-bg);
+	box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+	margin-left: auto;
+	margin-top: 1.4rem;
+	max-width: 620px;
+	z-index: 40;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-chip {
+	border: 1px solid var(--local-layer-divider);
+	border-radius: 999px;
+	display: inline-block;
+	font-size: 0.72rem;
+	letter-spacing: 0.02em;
+	margin-bottom: 0.75rem;
+	padding: 0.2rem 0.55rem;
+	text-transform: uppercase;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox h1,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox h2,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox h3,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox h4 {
+	margin: 0 0 0.55rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox p {
+	color: var(--local-layer-text-muted);
+	margin: 0 0 0.75rem;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-divider {
+	border-top: 1px solid var(--local-layer-divider);
+	height: 1px;
+	margin: 0.9rem 0;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox a {
+	color: var(--local-layer-link);
+	text-decoration: underline;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-demo .sky-input-box {
+	background-color: var(--local-layer-input-bg);
+	border: 1px solid var(--local-layer-border);
+	border-radius: 6px;
+	padding: 0;
+}
+
+@media (max-width: 900px) {
+	body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox {
+		padding: 1rem;
+	}
+
+	body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-l2 {
+		margin-top: 1rem;
+		position: static;
+		width: 100%;
+	}
 }
 
 /* Phase B - Carbon layering PoC */
