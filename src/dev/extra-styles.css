@@ -686,7 +686,19 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-contr
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-btn.is-active {
 	background-color: var(--eval-action);
 	border-color: var(--eval-action);
-	color: #ffffff;
+	color: var(--sky-color-text-inverse);
+}
+
+body[data-eval-theme='light'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-btn.is-active {
+        color: var(--sky-color-text-inverse);
+}
+
+body[data-poc-view='light'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-btn.is-active {
+        color: var(--sky-color-text-inverse);
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-control-btn[data-poc-view-target="light"].is-active {
+        color: var(--sky-color-text-inverse);
 }
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-eval-fixture {
@@ -950,7 +962,12 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-contro
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-controls .local-eval-control-btn.is-active {
 	background-color: var(--local-layer-link);
 	border-color: var(--local-layer-link);
-	color: #ffffff;
+	color: var(--sky-color-text-inverse);
+}
+
+body[data-poc-view='light'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-controls .local-eval-control-btn.is-active {
+	color: var(--sky-color-text-inverse) !important;
+	-webkit-text-fill-color: var(--sky-color-text-inverse) !important;
 }
 
 body[data-poc-view='light'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [data-poc-mode='dark'] {

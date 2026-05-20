@@ -64,186 +64,161 @@ if (showLayerSandbox) {
       | 'dark-poc-report';
     type PocView = 'light' | 'dark' | 'side-by-side';
 
+    type PocColorStop = {
+      hex: string;
+      oklch: string;
+      lch: string;
+    };
+
     const pocLightBaseline = {
-      slate1100: '#f7f9fc',
-      slate1000: '#ffffff',
-      slate900: '#f0f4f9',
-      slate200: '#4f5e73',
-      slate50: '#1d2736',
-      textDefault: '#1d2736',
-      textDeemphasized: '#4f5e73',
-      textHeading: '#161a1f',
-      divider: '#c2cfde',
-      elevationBorder: '#b2c0d3',
-      linkDefault: '#1859d1',
-      linkHover: '#1f67e3',
-      linkActive: '#154daf',
-      linkFocus: '#1859d1',
-      linkVisited: '#6d43c8',
-    } as const;
+      slate1100: { hex: '#f7f9fc', oklch: 'oklch(0.98 0.01 255)', lch: 'lch(98% 1 255)' },
+      slate1000: { hex: '#ffffff', oklch: 'oklch(1.00 0 0)', lch: 'lch(100% 0 0)' },
+      slate900: { hex: '#f0f4f9', oklch: 'oklch(0.96 0.01 255)', lch: 'lch(96% 1 255)' },
+      slate200: { hex: '#4f5e73', oklch: 'oklch(0.46 0.04 255)', lch: 'lch(46% 4 255)' },
+      slate50: { hex: '#1d2736', oklch: 'oklch(0.25 0.03 255)', lch: 'lch(25% 3 255)' },
+      textDefault: { hex: '#1d2736', oklch: 'oklch(0.25 0.03 255)', lch: 'lch(25% 3 255)' },
+      textDeemphasized: { hex: '#4f5e73', oklch: 'oklch(0.46 0.04 255)', lch: 'lch(46% 4 255)' },
+      textHeading: { hex: '#161a1f', oklch: 'oklch(0.21 0.02 255)', lch: 'lch(21% 2 255)' },
+      divider: { hex: '#c2cfde', oklch: 'oklch(0.83 0.02 255)', lch: 'lch(83% 2 255)' },
+      elevationBorder: { hex: '#b2c0d3', oklch: 'oklch(0.78 0.02 255)', lch: 'lch(78% 2 255)' },
+      linkDefault: { hex: '#1859d1', oklch: 'oklch(0.50 0.16 255)', lch: 'lch(50% 16 255)' },
+      linkHover: { hex: '#1f67e3', oklch: 'oklch(0.55 0.18 255)', lch: 'lch(55% 18 255)' },
+      linkActive: { hex: '#154daf', oklch: 'oklch(0.44 0.15 255)', lch: 'lch(44% 15 255)' },
+      linkFocus: { hex: '#1859d1', oklch: 'oklch(0.50 0.16 255)', lch: 'lch(50% 16 255)' },
+      linkVisited: { hex: '#6d43c8', oklch: 'oklch(0.53 0.15 292)', lch: 'lch(53% 15 292)' },
+    } as const satisfies Record<string, PocColorStop>;
 
     const pocAnchors = {
-      slate1100: '#121824',
-      slate1000: '#1b2433',
-      slate900: '#27354a',
-      slate200: '#b8c7da',
-      slate50: '#e8eef7',
-      textDefault: '#e8eef7',
-      textDeemphasized: '#b8c7da',
-      textHeading: '#f3f7fd',
-      divider: '#4f607b',
-      elevationBorder: '#5d7291',
-      linkDefault: '#8bb8ff',
-      linkHover: '#a2c6ff',
-      linkActive: '#73a8ff',
-      linkFocus: '#8bb8ff',
-      linkVisited: '#baa5ff',
-    } as const;
+      slate1100: { hex: '#121824', oklch: 'oklch(0.20 0.02 255)', lch: 'lch(20% 2 255)' },
+      slate1000: { hex: '#1b2433', oklch: 'oklch(0.24 0.02 255)', lch: 'lch(24% 2 255)' },
+      slate900: { hex: '#27354a', oklch: 'oklch(0.30 0.03 255)', lch: 'lch(30% 3 255)' },
+      slate200: { hex: '#b8c7da', oklch: 'oklch(0.82 0.03 255)', lch: 'lch(82% 3 255)' },
+      slate50: { hex: '#e8eef7', oklch: 'oklch(0.95 0.01 255)', lch: 'lch(95% 1 255)' },
+      textDefault: { hex: '#e8eef7', oklch: 'oklch(0.95 0.01 255)', lch: 'lch(95% 1 255)' },
+      textDeemphasized: { hex: '#b8c7da', oklch: 'oklch(0.82 0.03 255)', lch: 'lch(82% 3 255)' },
+      textHeading: { hex: '#f3f7fd', oklch: 'oklch(0.98 0.01 255)', lch: 'lch(98% 1 255)' },
+      divider: { hex: '#4f607b', oklch: 'oklch(0.46 0.04 255)', lch: 'lch(46% 4 255)' },
+      elevationBorder: { hex: '#5d7291', oklch: 'oklch(0.54 0.04 255)', lch: 'lch(54% 4 255)' },
+      linkDefault: { hex: '#8bb8ff', oklch: 'oklch(0.74 0.11 250)', lch: 'lch(74% 11 250)' },
+      linkHover: { hex: '#a2c6ff', oklch: 'oklch(0.81 0.09 250)', lch: 'lch(81% 9 250)' },
+      linkActive: { hex: '#73a8ff', oklch: 'oklch(0.69 0.12 250)', lch: 'lch(69% 12 250)' },
+      linkFocus: { hex: '#8bb8ff', oklch: 'oklch(0.74 0.11 250)', lch: 'lch(74% 11 250)' },
+      linkVisited: { hex: '#baa5ff', oklch: 'oklch(0.77 0.09 290)', lch: 'lch(77% 9 290)' },
+    } as const satisfies Record<string, PocColorStop>;
 
     const matrixRows = [
       {
         role: 'Page',
-        light: '{bb.color.slate.100}',
-        currentDark: '{bb.color.gray.1100}',
-        lightHex: pocLightBaseline.slate1100,
-        darkHex: pocAnchors.slate1100,
+        lightHex: pocLightBaseline.slate1100.hex,
+        darkHex: pocAnchors.slate1100.hex,
+        lightLch: pocLightBaseline.slate1100.lch,
+        darkLch: pocAnchors.slate1100.lch,
+        lightOklch: pocLightBaseline.slate1100.oklch,
+        darkOklch: pocAnchors.slate1100.oklch,
         candidateDark: 'poc.slate.1100',
         rationale:
           'Base layer anchored darker to maintain clear separation from containers.',
       },
       {
         role: 'Container base',
-        light: '{color.background.container.dimmed}',
-        currentDark: '{bb.color.gray.1000}',
-        lightHex: pocLightBaseline.slate1000,
-        darkHex: pocAnchors.slate1000,
+        lightHex: pocLightBaseline.slate1000.hex,
+        darkHex: pocAnchors.slate1000.hex,
+        lightLch: pocLightBaseline.slate1000.lch,
+        darkLch: pocAnchors.slate1000.lch,
+        lightOklch: pocLightBaseline.slate1000.oklch,
+        darkOklch: pocAnchors.slate1000.oklch,
         candidateDark: 'poc.slate.1000',
         rationale: 'Primary content surface lifted one step above page.',
       },
       {
         role: 'Menu',
-        light: '{color.background.container.backdrop}',
-        currentDark: '{bb.color.gray.900}',
-        lightHex: pocLightBaseline.slate900,
-        darkHex: pocAnchors.slate900,
+        lightHex: pocLightBaseline.slate900.hex,
+        darkHex: pocAnchors.slate900.hex,
+        lightLch: pocLightBaseline.slate900.lch,
+        darkLch: pocAnchors.slate900.lch,
+        lightOklch: pocLightBaseline.slate900.oklch,
+        darkOklch: pocAnchors.slate900.oklch,
         candidateDark: 'poc.slate.900',
         rationale: 'Floating layer uses stronger lift while avoiding card-like detachment.',
       },
       {
         role: 'Text default',
-        light: '{bb.color.gray.1000}',
-        currentDark: '{bb.color.gray.25}',
-        lightHex: pocLightBaseline.textDefault,
-        darkHex: pocAnchors.textDefault,
+        lightHex: pocLightBaseline.textDefault.hex,
+        darkHex: pocAnchors.textDefault.hex,
+        lightLch: pocLightBaseline.textDefault.lch,
+        darkLch: pocAnchors.textDefault.lch,
+        lightOklch: pocLightBaseline.textDefault.oklch,
+        darkOklch: pocAnchors.textDefault.oklch,
         candidateDark: 'poc.textDefault',
         rationale: 'Optimized for long-form readability on 1100/1000 surfaces.',
       },
       {
         role: 'Text deemphasized',
-        light: '{bb.color.gray.600}',
-        currentDark: '{bb.color.gray.300}',
-        lightHex: pocLightBaseline.textDeemphasized,
-        darkHex: pocAnchors.textDeemphasized,
+        lightHex: pocLightBaseline.textDeemphasized.hex,
+        darkHex: pocAnchors.textDeemphasized.hex,
+        lightLch: pocLightBaseline.textDeemphasized.lch,
+        darkLch: pocAnchors.textDeemphasized.lch,
+        lightOklch: pocLightBaseline.textDeemphasized.oklch,
+        darkOklch: pocAnchors.textDeemphasized.oklch,
         candidateDark: 'poc.textDeemphasized',
         rationale: 'Secondary tier stays distinct but not low-contrast.',
       },
       {
         role: 'Heading',
-        light: '{bb.color.blue.900}',
-        currentDark: '{bb.color.gray.50}',
-        lightHex: pocLightBaseline.textHeading,
-        darkHex: pocAnchors.textHeading,
+        lightHex: pocLightBaseline.textHeading.hex,
+        darkHex: pocAnchors.textHeading.hex,
+        lightLch: pocLightBaseline.textHeading.lch,
+        darkLch: pocAnchors.textHeading.lch,
+        lightOklch: pocLightBaseline.textHeading.oklch,
+        darkOklch: pocAnchors.textHeading.oklch,
         candidateDark: 'poc.textHeading',
         rationale: 'Heading tier remains visually authoritative over body copy.',
       },
       {
         role: 'Divider',
-        light: '{bb.color.slate.300}',
-        currentDark: '{bb.color.gray.800}',
-        lightHex: pocLightBaseline.divider,
-        darkHex: pocAnchors.divider,
+        lightHex: pocLightBaseline.divider.hex,
+        darkHex: pocAnchors.divider.hex,
+        lightLch: pocLightBaseline.divider.lch,
+        darkLch: pocAnchors.divider.lch,
+        lightOklch: pocLightBaseline.divider.oklch,
+        darkOklch: pocAnchors.divider.oklch,
         candidateDark: 'poc.divider',
         rationale: 'Structural separators visible without introducing noise.',
       },
       {
         role: 'Elevation border',
-        light: '{bb.color.slate.250}',
-        currentDark: '{bb.color.gray.800}',
-        lightHex: pocLightBaseline.elevationBorder,
-        darkHex: pocAnchors.elevationBorder,
+        lightHex: pocLightBaseline.elevationBorder.hex,
+        darkHex: pocAnchors.elevationBorder.hex,
+        lightLch: pocLightBaseline.elevationBorder.lch,
+        darkLch: pocAnchors.elevationBorder.lch,
+        lightOklch: pocLightBaseline.elevationBorder.oklch,
+        darkOklch: pocAnchors.elevationBorder.oklch,
         candidateDark: 'poc.elevationBorder',
         rationale: 'Overlay boundaries read cleanly on page and containers.',
       },
       {
         role: 'Interactive text',
-        light: '{bb.color.blue.600}',
-        currentDark: '{bb.color.blue.500}',
-        lightHex: pocLightBaseline.linkDefault,
-        darkHex: pocAnchors.linkDefault,
+        lightHex: pocLightBaseline.linkDefault.hex,
+        darkHex: pocAnchors.linkDefault.hex,
+        lightLch: pocLightBaseline.linkDefault.lch,
+        darkLch: pocAnchors.linkDefault.lch,
+        lightOklch: pocLightBaseline.linkDefault.oklch,
+        darkOklch: pocAnchors.linkDefault.oklch,
         candidateDark: 'poc.linkDefault',
         rationale: 'Interactive affordance remains explicit with underline support.',
       },
       {
         role: 'Link states',
-        light: 'blue state ramp',
-        currentDark: 'blue.500 / blue.400 mix',
-        lightHex: `${pocLightBaseline.linkDefault} -> ${pocLightBaseline.linkVisited}`,
-        darkHex: `${pocAnchors.linkDefault} -> ${pocAnchors.linkVisited}`,
+        lightHex: `${pocLightBaseline.linkDefault.hex} -> ${pocLightBaseline.linkVisited.hex}`,
+        darkHex: `${pocAnchors.linkDefault.hex} -> ${pocAnchors.linkVisited.hex}`,
+        lightLch: `${pocLightBaseline.linkDefault.lch} -> ${pocLightBaseline.linkVisited.lch}`,
+        darkLch: `${pocAnchors.linkDefault.lch} -> ${pocAnchors.linkVisited.lch}`,
+        lightOklch: `${pocLightBaseline.linkDefault.oklch} -> ${pocLightBaseline.linkVisited.oklch}`,
+        darkOklch: `${pocAnchors.linkDefault.oklch} -> ${pocAnchors.linkVisited.oklch}`,
         candidateDark: 'poc.link* state set',
         rationale: 'Default/hover/active/focus/visited are all distinguishable.',
       },
-    ] as const;
-
-    const wcagChecks = [
-      {
-        label: 'Body text on page',
-        light: { fg: pocLightBaseline.textDefault, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.textDefault, bg: pocAnchors.slate1100 },
-        min: 4.5,
-      },
-      {
-        label: 'Body text on container',
-        light: { fg: pocLightBaseline.textDefault, bg: pocLightBaseline.slate1000 },
-        dark: { fg: pocAnchors.textDefault, bg: pocAnchors.slate1000 },
-        min: 4.5,
-      },
-      {
-        label: 'Deemphasized text on page',
-        light: { fg: pocLightBaseline.textDeemphasized, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.textDeemphasized, bg: pocAnchors.slate1100 },
-        min: 4.5,
-      },
-      {
-        label: 'Heading on page',
-        light: { fg: pocLightBaseline.textHeading, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.textHeading, bg: pocAnchors.slate1100 },
-        min: 3,
-      },
-      {
-        label: 'Link default on page',
-        light: { fg: pocLightBaseline.linkDefault, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.linkDefault, bg: pocAnchors.slate1100 },
-        min: 4.5,
-      },
-      {
-        label: 'Link visited on page',
-        light: { fg: pocLightBaseline.linkVisited, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.linkVisited, bg: pocAnchors.slate1100 },
-        min: 4.5,
-      },
-      {
-        label: 'Divider on page (non-text)',
-        light: { fg: pocLightBaseline.divider, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.divider, bg: pocAnchors.slate1100 },
-        min: 3,
-      },
-      {
-        label: 'Elevation border on page (non-text)',
-        light: { fg: pocLightBaseline.elevationBorder, bg: pocLightBaseline.slate1100 },
-        dark: { fg: pocAnchors.elevationBorder, bg: pocAnchors.slate1100 },
-        min: 3,
-      },
-    ] as const;
+    ];
 
     const parseHex = (
       color: string,
@@ -309,10 +284,12 @@ if (showLayerSandbox) {
           (row) => `
             <tr>
               <td>${row.role}</td>
-              <td>${row.light}</td>
-              <td>${row.currentDark}</td>
               <td><span class="local-poc-chip" style="background:${row.lightHex}"></span>${row.lightHex}</td>
               <td><span class="local-poc-chip" style="background:${row.darkHex}"></span>${row.darkHex}</td>
+              <td><span class="local-poc-chip" style="background:${row.lightHex}"></span>${row.lightLch}</td>
+              <td><span class="local-poc-chip" style="background:${row.darkHex}"></span>${row.darkLch}</td>
+              <td><span class="local-poc-chip" style="background:${row.lightHex}"></span>${row.lightOklch}</td>
+              <td><span class="local-poc-chip" style="background:${row.darkHex}"></span>${row.darkOklch}</td>
               <td>${row.candidateDark}</td>
               <td>${row.rationale}</td>
             </tr>`,
@@ -336,16 +313,16 @@ if (showLayerSandbox) {
           <section class="local-poc-card" aria-label="Candidate anchors">
             <h3>Candidate anchors</h3>
             <ul class="local-poc-anchor-list">
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1100}"></span>1100 (page): ${pocLightBaseline.slate1100}</li>
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1000}"></span>1000 (container): ${pocLightBaseline.slate1000}</li>
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate900}"></span>900 (menu/overlay): ${pocLightBaseline.slate900}</li>
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate200}"></span>200 (deemphasized text intent): ${pocLightBaseline.slate200}</li>
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate50}"></span>50 (default text intent): ${pocLightBaseline.slate50}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate1100}"></span>1100 (page): ${pocAnchors.slate1100}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate1000}"></span>1000 (container): ${pocAnchors.slate1000}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate900}"></span>900 (menu/overlay): ${pocAnchors.slate900}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate200}"></span>200 (deemphasized text intent): ${pocAnchors.slate200}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate50}"></span>50 (default text intent): ${pocAnchors.slate50}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1100.hex}"></span>1100 (page): ${pocLightBaseline.slate1100.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1000.hex}"></span>1000 (container): ${pocLightBaseline.slate1000.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate900.hex}"></span>900 (menu/overlay): ${pocLightBaseline.slate900.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate200.hex}"></span>200 (deemphasized text intent): ${pocLightBaseline.slate200.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate50.hex}"></span>50 (default text intent): ${pocLightBaseline.slate50.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate1100.hex}"></span>1100 (page): ${pocAnchors.slate1100.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate1000.hex}"></span>1000 (container): ${pocAnchors.slate1000.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate900.hex}"></span>900 (menu/overlay): ${pocAnchors.slate900.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate200.hex}"></span>200 (deemphasized text intent): ${pocAnchors.slate200.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate50.hex}"></span>50 (default text intent): ${pocAnchors.slate50.oklch}</li>
             </ul>
           </section>
 
@@ -356,10 +333,12 @@ if (showLayerSandbox) {
                 <thead>
                   <tr>
                     <th>Role</th>
-                    <th>Light semantic</th>
-                    <th>Current dark</th>
-                    <th>Light baseline</th>
-                    <th>Dark translation</th>
+                    <th>Current SKY UX (light)</th>
+                    <th>Current SKY UX (dark)</th>
+                    <th>CIELAB (light)</th>
+                    <th>CIELAB (dark)</th>
+                    <th>OKLCH (light)</th>
+                    <th>OKLCH (dark)</th>
                     <th>Candidate dark</th>
                     <th>Rationale</th>
                   </tr>
@@ -393,14 +372,14 @@ if (showLayerSandbox) {
           <section class="local-poc-card" aria-label="Interactive and link states">
             <h3>Interactive and link text states</h3>
             <p>Affordance rule: links are underlined by default, and state changes must remain distinguishable on page, container, and menu surfaces.</p>
-            <div class="local-poc-link-row" data-poc-mode="light" style="background:${pocLightBaseline.slate1100}">
+            <div class="local-poc-link-row" data-poc-mode="light" style="background:${pocLightBaseline.slate1100.hex}">
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="default">Default link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="hover">Hover link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="active">Active link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="focus">Focus link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="visited">Visited link</a>
             </div>
-            <div class="local-poc-link-row" data-poc-mode="dark" style="background:${pocAnchors.slate1100}">
+            <div class="local-poc-link-row" data-poc-mode="dark" style="background:${pocAnchors.slate1100.hex}">
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-dark" data-link-state="default">Default link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-dark" data-link-state="hover">Hover link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-dark" data-link-state="active">Active link</a>
@@ -784,41 +763,41 @@ if (showLayerSandbox) {
                   <section class="local-palette-column" aria-label="Current SKY UX slate palette">
                     <h4>Current SKY UX Slate</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-1100, #141b26);"></span><span>1100</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-1000, #1a2231);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-900, #212c3f);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-850, #2a384f);"></span><span>850</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-800, #32435e);"></span><span>800</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-1100, #141b26);"></span><span>#141b26</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-1000, #1a2231);"></span><span>#1a2231</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-900, #212c3f);"></span><span>#212c3f</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-850, #2a384f);"></span><span>#2a384f</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-slate-800, #32435e);"></span><span>#32435e</span></div>
                     </div>
                   </section>
 
                   <section class="local-palette-column" aria-label="CIELAB slate palette">
                     <h4>CIELAB Slate</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(10.0% 5.0 279);"></span><span>1200</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(12.5% 6.0 279);"></span><span>1150</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(15.5% 7.0 279);"></span><span>1100</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(18.5% 8.0 279);"></span><span>1050</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(22.0% 9.0 279);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(25.5% 10.5 279);"></span><span>950</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(29.5% 12.0 279);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(34.0% 13.5 279);"></span><span>850</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(39.0% 15.0 279);"></span><span>800</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(10.0% 5.0 279);"></span><span>lch(10.0% 5.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(12.5% 6.0 279);"></span><span>lch(12.5% 6.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(15.5% 7.0 279);"></span><span>lch(15.5% 7.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(18.5% 8.0 279);"></span><span>lch(18.5% 8.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(22.0% 9.0 279);"></span><span>lch(22.0% 9.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(25.5% 10.5 279);"></span><span>lch(25.5% 10.5 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(29.5% 12.0 279);"></span><span>lch(29.5% 12.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(34.0% 13.5 279);"></span><span>lch(34.0% 13.5 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(39.0% 15.0 279);"></span><span>lch(39.0% 15.0 279)</span></div>
                     </div>
                   </section>
 
                   <section class="local-palette-column" aria-label="OKLCH slate palette">
                     <h4>OKLCH Slate</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.018 255);"></span><span>1200</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.020 255);"></span><span>1150</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.023 255);"></span><span>1100</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.22 0.026 255);"></span><span>1050</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.24 0.029 255);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.27 0.033 255);"></span><span>950</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.30 0.037 255);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.34 0.041 255);"></span><span>850</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.38 0.045 255);"></span><span>800</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.018 255);"></span><span>oklch(0.16 0.018 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.020 255);"></span><span>oklch(0.18 0.020 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.023 255);"></span><span>oklch(0.20 0.023 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.22 0.026 255);"></span><span>oklch(0.22 0.026 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.24 0.029 255);"></span><span>oklch(0.24 0.029 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.27 0.033 255);"></span><span>oklch(0.27 0.033 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.30 0.037 255);"></span><span>oklch(0.30 0.037 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.34 0.041 255);"></span><span>oklch(0.34 0.041 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.38 0.045 255);"></span><span>oklch(0.38 0.045 255)</span></div>
                     </div>
                   </section>
                 </div>
@@ -830,41 +809,41 @@ if (showLayerSandbox) {
                   <section class="local-palette-column" aria-label="Current SKY UX gray palette">
                     <h4>Current SKY UX Gray</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-1100, #161a1f);"></span><span>1100</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-1000, #1e2229);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-900, #252b33);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-850, #30363d);"></span><span>850</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-800, #3b4047);"></span><span>800</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-1100, #161a1f);"></span><span>#161a1f</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-1000, #1e2229);"></span><span>#1e2229</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-900, #252b33);"></span><span>#252b33</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-850, #30363d);"></span><span>#30363d</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-gray-800, #3b4047);"></span><span>#3b4047</span></div>
                     </div>
                   </section>
 
                   <section class="local-palette-column" aria-label="CIELAB gray palette">
                     <h4>CIELAB Gray</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(8.5% 0.8 276);"></span><span>1200</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(11.5% 0.9 276);"></span><span>1150</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(15.0% 1.0 276);"></span><span>1100</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(18.5% 1.1 276);"></span><span>1050</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(22.5% 1.2 276);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(26.5% 1.4 276);"></span><span>950</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(31.0% 1.6 276);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(36.0% 1.9 276);"></span><span>850</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(41.0% 2.2 276);"></span><span>800</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(8.5% 0.8 276);"></span><span>lch(8.5% 0.8 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(11.5% 0.9 276);"></span><span>lch(11.5% 0.9 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(15.0% 1.0 276);"></span><span>lch(15.0% 1.0 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(18.5% 1.1 276);"></span><span>lch(18.5% 1.1 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(22.5% 1.2 276);"></span><span>lch(22.5% 1.2 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(26.5% 1.4 276);"></span><span>lch(26.5% 1.4 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(31.0% 1.6 276);"></span><span>lch(31.0% 1.6 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(36.0% 1.9 276);"></span><span>lch(36.0% 1.9 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(41.0% 2.2 276);"></span><span>lch(41.0% 2.2 276)</span></div>
                     </div>
                   </section>
 
                   <section class="local-palette-column" aria-label="OKLCH gray palette">
                     <h4>OKLCH Gray</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.004 255);"></span><span>1200</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.004 255);"></span><span>1150</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.005 255);"></span><span>1100</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.23 0.005 255);"></span><span>1050</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.26 0.006 255);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.29 0.006 255);"></span><span>950</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.32 0.007 255);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.35 0.007 255);"></span><span>850</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.39 0.008 255);"></span><span>800</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.004 255);"></span><span>oklch(0.16 0.004 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.004 255);"></span><span>oklch(0.18 0.004 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.005 255);"></span><span>oklch(0.20 0.005 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.23 0.005 255);"></span><span>oklch(0.23 0.005 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.26 0.006 255);"></span><span>oklch(0.26 0.006 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.29 0.006 255);"></span><span>oklch(0.29 0.006 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.32 0.007 255);"></span><span>oklch(0.32 0.007 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.35 0.007 255);"></span><span>oklch(0.35 0.007 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.39 0.008 255);"></span><span>oklch(0.39 0.008 255)</span></div>
                     </div>
                   </section>
                 </div>
@@ -876,45 +855,45 @@ if (showLayerSandbox) {
                   <section class="local-palette-column" aria-label="Current SKY UX blue palette">
                     <h4>Current SKY UX Blue</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-1000, #0D2040);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-900, #112B55);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-800, #1A4080);"></span><span>800</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-700, #2256AA);"></span><span>700</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-600, #2B6BD5);"></span><span>600</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-500, #5589DD);"></span><span>500</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-400, #80A6E6);"></span><span>400</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-350, #96B5EA);"></span><span>350</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-300, #AAC4EE);"></span><span>300</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-1000, #0D2040);"></span><span>#0D2040</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-900, #112B55);"></span><span>#112B55</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-800, #1A4080);"></span><span>#1A4080</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-700, #2256AA);"></span><span>#2256AA</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-600, #2B6BD5);"></span><span>#2B6BD5</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-500, #5589DD);"></span><span>#5589DD</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-400, #80A6E6);"></span><span>#80A6E6</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-350, #96B5EA);"></span><span>#96B5EA</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background: var(--bb-color-blue-300, #AAC4EE);"></span><span>#AAC4EE</span></div>
                     </div>
                   </section>
 
                   <section class="local-palette-column" aria-label="CIELAB blue palette">
                     <h4>CIELAB Blue</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(14.0% 20.0 284);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(19.0% 27.0 284);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(28.0% 39.0 285);"></span><span>800</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(37.0% 50.0 286);"></span><span>700</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(47.0% 58.0 286);"></span><span>600</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(57.0% 50.0 282);"></span><span>500</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(67.0% 38.0 278);"></span><span>400</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(73.0% 31.0 276);"></span><span>350</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(79.0% 25.0 274);"></span><span>300</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(14.0% 20.0 284);"></span><span>lch(14.0% 20.0 284)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(19.0% 27.0 284);"></span><span>lch(19.0% 27.0 284)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(28.0% 39.0 285);"></span><span>lch(28.0% 39.0 285)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(37.0% 50.0 286);"></span><span>lch(37.0% 50.0 286)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(47.0% 58.0 286);"></span><span>lch(47.0% 58.0 286)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(57.0% 50.0 282);"></span><span>lch(57.0% 50.0 282)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(67.0% 38.0 278);"></span><span>lch(67.0% 38.0 278)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(73.0% 31.0 276);"></span><span>lch(73.0% 31.0 276)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(79.0% 25.0 274);"></span><span>lch(79.0% 25.0 274)</span></div>
                     </div>
                   </section>
 
                   <section class="local-palette-column" aria-label="OKLCH blue palette">
                     <h4>OKLCH Blue</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.248 0.066 260.18);"></span><span>1000</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.295 0.083 259.60);"></span><span>900</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.383 0.117 260.21);"></span><span>800</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.467 0.146 259.72);"></span><span>700</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.51 0.165 265);"></span><span>600</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.60 0.145 265);"></span><span>500</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.69 0.120 265);"></span><span>400</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.74 0.105 265);"></span><span>350</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.78 0.090 265);"></span><span>300</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.248 0.066 260.18);"></span><span>oklch(0.248 0.066 260.18)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.295 0.083 259.60);"></span><span>oklch(0.295 0.083 259.60)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.383 0.117 260.21);"></span><span>oklch(0.383 0.117 260.21)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.467 0.146 259.72);"></span><span>oklch(0.467 0.146 259.72)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.51 0.165 265);"></span><span>oklch(0.51 0.165 265)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.60 0.145 265);"></span><span>oklch(0.60 0.145 265)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.69 0.120 265);"></span><span>oklch(0.69 0.120 265)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.74 0.105 265);"></span><span>oklch(0.74 0.105 265)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.78 0.090 265);"></span><span>oklch(0.78 0.090 265)</span></div>
                     </div>
                   </section>
                 </div>
