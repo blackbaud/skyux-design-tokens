@@ -9,6 +9,8 @@ document.body.classList.add(
   'sky-theme-mode-dark',
 );
 
+document.body.classList.remove('sky-theme-mode-light');
+
 document.body.classList.remove('sky-theme-default');
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -70,6 +72,30 @@ if (showLayerSandbox) {
       lch: string;
     };
 
+    const pocLightInteractiveText: PocColorStop = {
+      hex: '#1859d1',
+      oklch: 'oklch(0.50 0.16 255)',
+      lch: 'lch(50% 16 255)',
+    };
+
+    const pocDarkInteractiveText: PocColorStop = {
+      hex: '#8bb8ff',
+      oklch: 'oklch(0.74 0.11 250)',
+      lch: 'lch(74% 11 250)',
+    };
+
+    const pocLightInlineLink: PocColorStop = {
+      hex: '#2c6ce3',
+      oklch: 'oklch(0.56 0.16 257)',
+      lch: 'lch(56% 16 257)',
+    };
+
+    const pocDarkInlineLink: PocColorStop = {
+      hex: '#3d82fb',
+      oklch: 'oklch(0.64 0.16 258)',
+      lch: 'lch(64% 16 258)',
+    };
+
     const pocLightBaseline = {
       slate1100: { hex: '#f7f9fc', oklch: 'oklch(0.98 0.01 255)', lch: 'lch(98% 1 255)' },
       slate1000: { hex: '#ffffff', oklch: 'oklch(1.00 0 0)', lch: 'lch(100% 0 0)' },
@@ -81,11 +107,13 @@ if (showLayerSandbox) {
       textHeading: { hex: '#161a1f', oklch: 'oklch(0.21 0.02 255)', lch: 'lch(21% 2 255)' },
       divider: { hex: '#c2cfde', oklch: 'oklch(0.83 0.02 255)', lch: 'lch(83% 2 255)' },
       elevationBorder: { hex: '#b2c0d3', oklch: 'oklch(0.78 0.02 255)', lch: 'lch(78% 2 255)' },
-      linkDefault: { hex: '#1859d1', oklch: 'oklch(0.50 0.16 255)', lch: 'lch(50% 16 255)' },
+      interactiveText: pocLightInteractiveText,
+      inlineLink: pocLightInlineLink,
+      linkDefault: pocLightInteractiveText,
       linkHover: { hex: '#1f67e3', oklch: 'oklch(0.55 0.18 255)', lch: 'lch(55% 18 255)' },
       linkActive: { hex: '#154daf', oklch: 'oklch(0.44 0.15 255)', lch: 'lch(44% 15 255)' },
-      linkFocus: { hex: '#1859d1', oklch: 'oklch(0.50 0.16 255)', lch: 'lch(50% 16 255)' },
-      linkVisited: { hex: '#6d43c8', oklch: 'oklch(0.53 0.15 292)', lch: 'lch(53% 15 292)' },
+      linkFocus: pocLightInteractiveText,
+      linkVisited: pocLightInteractiveText,
     } as const satisfies Record<string, PocColorStop>;
 
     const pocAnchors = {
@@ -99,126 +127,272 @@ if (showLayerSandbox) {
       textHeading: { hex: '#f3f7fd', oklch: 'oklch(0.98 0.01 255)', lch: 'lch(98% 1 255)' },
       divider: { hex: '#4f607b', oklch: 'oklch(0.46 0.04 255)', lch: 'lch(46% 4 255)' },
       elevationBorder: { hex: '#5d7291', oklch: 'oklch(0.54 0.04 255)', lch: 'lch(54% 4 255)' },
-      linkDefault: { hex: '#8bb8ff', oklch: 'oklch(0.74 0.11 250)', lch: 'lch(74% 11 250)' },
+      interactiveText: pocDarkInteractiveText,
+      inlineLink: pocDarkInlineLink,
+      linkDefault: pocDarkInteractiveText,
       linkHover: { hex: '#a2c6ff', oklch: 'oklch(0.81 0.09 250)', lch: 'lch(81% 9 250)' },
       linkActive: { hex: '#73a8ff', oklch: 'oklch(0.69 0.12 250)', lch: 'lch(69% 12 250)' },
-      linkFocus: { hex: '#8bb8ff', oklch: 'oklch(0.74 0.11 250)', lch: 'lch(74% 11 250)' },
-      linkVisited: { hex: '#baa5ff', oklch: 'oklch(0.77 0.09 290)', lch: 'lch(77% 9 290)' },
+      linkFocus: pocDarkInteractiveText,
+      linkVisited: pocDarkInteractiveText,
     } as const satisfies Record<string, PocColorStop>;
 
-    const matrixRows = [
-      {
-        role: 'Page',
-        lightHex: pocLightBaseline.slate1100.hex,
-        darkHex: pocAnchors.slate1100.hex,
-        lightLch: pocLightBaseline.slate1100.lch,
-        darkLch: pocAnchors.slate1100.lch,
-        lightOklch: pocLightBaseline.slate1100.oklch,
-        darkOklch: pocAnchors.slate1100.oklch,
-        candidateDark: 'poc.slate.1100',
-        rationale:
-          'Base layer anchored darker to maintain clear separation from containers.',
-      },
-      {
-        role: 'Container base',
-        lightHex: pocLightBaseline.slate1000.hex,
-        darkHex: pocAnchors.slate1000.hex,
-        lightLch: pocLightBaseline.slate1000.lch,
-        darkLch: pocAnchors.slate1000.lch,
-        lightOklch: pocLightBaseline.slate1000.oklch,
-        darkOklch: pocAnchors.slate1000.oklch,
-        candidateDark: 'poc.slate.1000',
-        rationale: 'Primary content surface lifted one step above page.',
-      },
-      {
-        role: 'Menu',
-        lightHex: pocLightBaseline.slate900.hex,
-        darkHex: pocAnchors.slate900.hex,
-        lightLch: pocLightBaseline.slate900.lch,
-        darkLch: pocAnchors.slate900.lch,
-        lightOklch: pocLightBaseline.slate900.oklch,
-        darkOklch: pocAnchors.slate900.oklch,
-        candidateDark: 'poc.slate.900',
-        rationale: 'Floating layer uses stronger lift while avoiding card-like detachment.',
-      },
-      {
-        role: 'Text default',
-        lightHex: pocLightBaseline.textDefault.hex,
-        darkHex: pocAnchors.textDefault.hex,
-        lightLch: pocLightBaseline.textDefault.lch,
-        darkLch: pocAnchors.textDefault.lch,
-        lightOklch: pocLightBaseline.textDefault.oklch,
-        darkOklch: pocAnchors.textDefault.oklch,
-        candidateDark: 'poc.textDefault',
-        rationale: 'Optimized for long-form readability on 1100/1000 surfaces.',
-      },
-      {
-        role: 'Text deemphasized',
-        lightHex: pocLightBaseline.textDeemphasized.hex,
-        darkHex: pocAnchors.textDeemphasized.hex,
-        lightLch: pocLightBaseline.textDeemphasized.lch,
-        darkLch: pocAnchors.textDeemphasized.lch,
-        lightOklch: pocLightBaseline.textDeemphasized.oklch,
-        darkOklch: pocAnchors.textDeemphasized.oklch,
-        candidateDark: 'poc.textDeemphasized',
-        rationale: 'Secondary tier stays distinct but not low-contrast.',
-      },
-      {
-        role: 'Heading',
-        lightHex: pocLightBaseline.textHeading.hex,
-        darkHex: pocAnchors.textHeading.hex,
-        lightLch: pocLightBaseline.textHeading.lch,
-        darkLch: pocAnchors.textHeading.lch,
-        lightOklch: pocLightBaseline.textHeading.oklch,
-        darkOklch: pocAnchors.textHeading.oklch,
-        candidateDark: 'poc.textHeading',
-        rationale: 'Heading tier remains visually authoritative over body copy.',
-      },
-      {
-        role: 'Divider',
-        lightHex: pocLightBaseline.divider.hex,
-        darkHex: pocAnchors.divider.hex,
-        lightLch: pocLightBaseline.divider.lch,
-        darkLch: pocAnchors.divider.lch,
-        lightOklch: pocLightBaseline.divider.oklch,
-        darkOklch: pocAnchors.divider.oklch,
-        candidateDark: 'poc.divider',
-        rationale: 'Structural separators visible without introducing noise.',
-      },
-      {
-        role: 'Elevation border',
-        lightHex: pocLightBaseline.elevationBorder.hex,
-        darkHex: pocAnchors.elevationBorder.hex,
-        lightLch: pocLightBaseline.elevationBorder.lch,
-        darkLch: pocAnchors.elevationBorder.lch,
-        lightOklch: pocLightBaseline.elevationBorder.oklch,
-        darkOklch: pocAnchors.elevationBorder.oklch,
-        candidateDark: 'poc.elevationBorder',
-        rationale: 'Overlay boundaries read cleanly on page and containers.',
-      },
-      {
-        role: 'Interactive text',
-        lightHex: pocLightBaseline.linkDefault.hex,
-        darkHex: pocAnchors.linkDefault.hex,
-        lightLch: pocLightBaseline.linkDefault.lch,
-        darkLch: pocAnchors.linkDefault.lch,
-        lightOklch: pocLightBaseline.linkDefault.oklch,
-        darkOklch: pocAnchors.linkDefault.oklch,
-        candidateDark: 'poc.linkDefault',
-        rationale: 'Interactive affordance remains explicit with underline support.',
-      },
-      {
-        role: 'Link states',
-        lightHex: `${pocLightBaseline.linkDefault.hex} -> ${pocLightBaseline.linkVisited.hex}`,
-        darkHex: `${pocAnchors.linkDefault.hex} -> ${pocAnchors.linkVisited.hex}`,
-        lightLch: `${pocLightBaseline.linkDefault.lch} -> ${pocLightBaseline.linkVisited.lch}`,
-        darkLch: `${pocAnchors.linkDefault.lch} -> ${pocAnchors.linkVisited.lch}`,
-        lightOklch: `${pocLightBaseline.linkDefault.oklch} -> ${pocLightBaseline.linkVisited.oklch}`,
-        darkOklch: `${pocAnchors.linkDefault.oklch} -> ${pocAnchors.linkVisited.oklch}`,
-        candidateDark: 'poc.link* state set',
-        rationale: 'Default/hover/active/focus/visited are all distinguishable.',
-      },
-    ];
+    type MatrixRow = {
+      role: string;
+      lightHex: string;
+      darkHex: string;
+      lightLch: string;
+      darkLch: string;
+      lightOklch: string;
+      darkOklch: string;
+      candidateDark: string;
+      rationale: string;
+    };
+
+    const deriveStatusLightLch = (
+      darkL: number,
+      darkC: number,
+      hue: number,
+    ): string => {
+      const lightL = Math.min(98, darkL + 42);
+      const lightC = Math.max(0, darkC + 2);
+
+      return `lch(${lightL}% ${lightC} ${hue})`;
+    };
+
+    const deriveStatusLightOklch = (
+      darkL: number,
+      darkC: number,
+      hue: number,
+    ): string => {
+      const lightL = Math.min(0.98, darkL + 0.42);
+      const lightC = Math.max(0, darkC + 0.02);
+
+      return `oklch(${lightL.toFixed(2)} ${lightC.toFixed(2)} ${hue})`;
+    };
+
+    const matrixRowsByCategory: Record<string, MatrixRow[]> = {
+      surfaces: [
+        {
+          role: 'Page',
+          lightHex: pocLightBaseline.slate1100.hex,
+          darkHex: pocAnchors.slate1100.hex,
+          lightLch: pocLightBaseline.slate1100.lch,
+          darkLch: pocAnchors.slate1100.lch,
+          lightOklch: pocLightBaseline.slate1100.oklch,
+          darkOklch: pocAnchors.slate1100.oklch,
+          candidateDark: 'poc.slate.1100',
+          rationale: 'Base layer anchored darker to maintain clear separation from containers.',
+        },
+        {
+          role: 'Container base',
+          lightHex: pocLightBaseline.slate1000.hex,
+          darkHex: pocAnchors.slate1000.hex,
+          lightLch: pocLightBaseline.slate1000.lch,
+          darkLch: pocAnchors.slate1000.lch,
+          lightOklch: pocLightBaseline.slate1000.oklch,
+          darkOklch: pocAnchors.slate1000.oklch,
+          candidateDark: 'poc.slate.1000',
+          rationale: 'Primary content surface lifted one step above page.',
+        },
+        {
+          role: 'Menu',
+          lightHex: pocLightBaseline.slate900.hex,
+          darkHex: pocAnchors.slate900.hex,
+          lightLch: pocLightBaseline.slate900.lch,
+          darkLch: pocAnchors.slate900.lch,
+          lightOklch: pocLightBaseline.slate900.oklch,
+          darkOklch: pocAnchors.slate900.oklch,
+          candidateDark: 'poc.slate.900',
+          rationale: 'Floating layer uses stronger lift while avoiding card-like detachment.',
+        },
+        {
+          role: 'Divider',
+          lightHex: pocLightBaseline.divider.hex,
+          darkHex: pocAnchors.divider.hex,
+          lightLch: pocLightBaseline.divider.lch,
+          darkLch: pocAnchors.divider.lch,
+          lightOklch: pocLightBaseline.divider.oklch,
+          darkOklch: pocAnchors.divider.oklch,
+          candidateDark: 'poc.divider',
+          rationale: 'Structural separators visible without introducing noise.',
+        },
+        {
+          role: 'Elevation border',
+          lightHex: pocLightBaseline.elevationBorder.hex,
+          darkHex: pocAnchors.elevationBorder.hex,
+          lightLch: pocLightBaseline.elevationBorder.lch,
+          darkLch: pocAnchors.elevationBorder.lch,
+          lightOklch: pocLightBaseline.elevationBorder.oklch,
+          darkOklch: pocAnchors.elevationBorder.oklch,
+          candidateDark: 'poc.elevationBorder',
+          rationale: 'Overlay boundaries read cleanly on page and containers.',
+        },
+        {
+          role: 'Container dimmed',
+          lightHex: '#f0f4f9',
+          darkHex: '#252b33',
+          lightLch: 'lch(96% 12 225)',
+          darkLch: 'lch(17% 8 250)',
+          lightOklch: 'oklch(0.96 0.08 225)',
+          darkOklch: 'oklch(0.17 0.06 250)',
+          candidateDark: 'color.background.container.dimmed',
+          rationale: 'Muted container surfaces for secondary content. Dark from bb.color.gray.900.',
+        },
+      ],
+      text: [
+        {
+          role: 'Text default',
+          lightHex: pocLightBaseline.textDefault.hex,
+          darkHex: pocAnchors.textDefault.hex,
+          lightLch: pocLightBaseline.textDefault.lch,
+          darkLch: pocAnchors.textDefault.lch,
+          lightOklch: pocLightBaseline.textDefault.oklch,
+          darkOklch: pocAnchors.textDefault.oklch,
+          candidateDark: 'poc.textDefault',
+          rationale: 'Optimized for long-form readability on 1100/1000 surfaces.',
+        },
+        {
+          role: 'Text deemphasized',
+          lightHex: pocLightBaseline.textDeemphasized.hex,
+          darkHex: pocAnchors.textDeemphasized.hex,
+          lightLch: pocLightBaseline.textDeemphasized.lch,
+          darkLch: pocAnchors.textDeemphasized.lch,
+          lightOklch: pocLightBaseline.textDeemphasized.oklch,
+          darkOklch: pocAnchors.textDeemphasized.oklch,
+          candidateDark: 'poc.textDeemphasized',
+          rationale: 'Secondary tier stays distinct but not low-contrast.',
+        },
+        {
+          role: 'Heading',
+          lightHex: pocLightBaseline.textHeading.hex,
+          darkHex: pocAnchors.textHeading.hex,
+          lightLch: pocLightBaseline.textHeading.lch,
+          darkLch: pocAnchors.textHeading.lch,
+          lightOklch: pocLightBaseline.textHeading.oklch,
+          darkOklch: pocAnchors.textHeading.oklch,
+          candidateDark: 'poc.textHeading',
+          rationale: 'Heading tier remains visually authoritative over body copy.',
+        },
+        {
+          role: 'Interactive text',
+          lightHex: pocLightBaseline.linkDefault.hex,
+          darkHex: pocAnchors.linkDefault.hex,
+          lightLch: pocLightBaseline.linkDefault.lch,
+          darkLch: pocAnchors.linkDefault.lch,
+          lightOklch: pocLightBaseline.linkDefault.oklch,
+          darkOklch: pocAnchors.linkDefault.oklch,
+          candidateDark: 'poc.interactiveText',
+          rationale: 'Interactive affordance remains explicit through color and state treatment.',
+        },
+        {
+          role: 'Link states',
+          lightHex: `${pocLightBaseline.linkDefault.hex} -> ${pocLightBaseline.linkVisited.hex}`,
+          darkHex: `${pocAnchors.linkDefault.hex} -> ${pocAnchors.linkVisited.hex}`,
+          lightLch: `${pocLightBaseline.linkDefault.lch} -> ${pocLightBaseline.linkVisited.lch}`,
+          darkLch: `${pocAnchors.linkDefault.lch} -> ${pocAnchors.linkVisited.lch}`,
+          lightOklch: `${pocLightBaseline.linkDefault.oklch} -> ${pocLightBaseline.linkVisited.oklch}`,
+          darkOklch: `${pocAnchors.linkDefault.oklch} -> ${pocAnchors.linkVisited.oklch}`,
+          candidateDark: 'poc.link* state set',
+          rationale: 'Default/hover/active/focus/visited are all distinguishable.',
+        },
+      ],
+      buttons: [
+        {
+          role: 'Action primary',
+          lightHex: '#0d47a1',
+          darkHex: '#96B5EA',
+          lightLch: 'lch(32% 59 285)',
+          darkLch: 'lch(73% 35 263)',
+          lightOklch: 'oklch(0.32 0.40 285)',
+          darkOklch: 'oklch(0.73 0.24 263)',
+          candidateDark: 'color.background.action.primary.base',
+          rationale: 'Action button background for primary affordance. Dark anchored to bb.color.blue.350.',
+        },
+        {
+          role: 'Input',
+          lightHex: '#ffffff',
+          darkHex: '#1b2433',
+          lightLch: 'lch(100% 10 214)',
+          darkLch: 'lch(14% 13 264)',
+          lightOklch: 'oklch(1.00 0.07 214)',
+          darkOklch: 'oklch(0.14 0.09 264)',
+          candidateDark: 'color.background.action.secondary.base (or input-specific token)',
+          rationale: 'Input field backgrounds. Dark value from bb.color.gray.1000.',
+        },
+      ],
+      states: [
+        {
+          role: 'Disabled',
+          lightHex: '#e8eef7',
+          darkHex: '#3b4047',
+          lightLch: 'lch(94% 13 232)',
+          darkLch: 'lch(27% 8 245)',
+          lightOklch: 'oklch(0.94 0.09 232)',
+          darkOklch: 'oklch(0.27 0.05 245)',
+          candidateDark: 'color.background.disabled',
+          rationale: 'Disabled component surfaces reduce visual weight. Dark from bb.color.gray.800.',
+        },
+        {
+          role: 'Row hover/selected',
+          lightHex: '#e3f2fd',
+          darkHex: '#1e2229',
+          lightLch: 'lch(95% 17 230)',
+          darkLch: 'lch(13% 7 254)',
+          lightOklch: 'oklch(0.95 0.11 230)',
+          darkOklch: 'oklch(0.13 0.05 254)',
+          candidateDark: 'color.background.container.base (or row-specific token)',
+          rationale: 'Row highlight states provide clear selection feedback. Dark from bb.color.gray.1000.',
+        },
+      ],
+      statusBackgrounds: [
+        {
+          role: 'Container danger',
+          lightHex: '#f7a08f',
+          darkHex: '#d93a3d',
+          lightLch: deriveStatusLightLch(42, 20, 28),
+          darkLch: 'lch(42% 20 28)',
+          lightOklch: deriveStatusLightOklch(0.42, 0.07, 28),
+          darkOklch: 'oklch(0.42 0.07 28)',
+          candidateDark: 'color.background.container.danger',
+          rationale: 'Constructed PoC surface translation: darker and chroma-compressed while preserving red hue intent.',
+        },
+        {
+          role: 'Container warning',
+          lightHex: '#ffd597',
+          darkHex: '#b57f25',
+          lightLch: deriveStatusLightLch(50, 18, 95),
+          darkLch: 'lch(50% 18 95)',
+          lightOklch: deriveStatusLightOklch(0.50, 0.07, 95),
+          darkOklch: 'oklch(0.50 0.07 95)',
+          candidateDark: 'color.background.container.warning',
+          rationale: 'Constructed PoC surface translation: darker and chroma-compressed while preserving warning hue intent.',
+        },
+        {
+          role: 'Container success',
+          lightHex: '#b7da9b',
+          darkHex: '#099c53',
+          lightLch: deriveStatusLightLch(44, 18, 150),
+          darkLch: 'lch(44% 18 150)',
+          lightOklch: deriveStatusLightOklch(0.44, 0.07, 150),
+          darkOklch: 'oklch(0.44 0.07 150)',
+          candidateDark: 'color.background.container.success',
+          rationale: 'Constructed PoC surface translation: darker and chroma-compressed while preserving success hue intent.',
+        },
+        {
+          role: 'Container info',
+          lightHex: '#81d4f7',
+          darkHex: '#2B6BD5',
+          lightLch: deriveStatusLightLch(41, 18, 250),
+          darkLch: 'lch(41% 18 250)',
+          lightOklch: deriveStatusLightOklch(0.41, 0.07, 250),
+          darkOklch: 'oklch(0.41 0.07 250)',
+          candidateDark: 'color.background.container.info',
+          rationale: 'Constructed PoC surface translation: darker and chroma-compressed while preserving informational blue intent.',
+        },
+      ],
+    };
+
+    const matrixRows = Object.values(matrixRowsByCategory).flat();
 
     const parseHex = (
       color: string,
@@ -279,9 +453,26 @@ if (showLayerSandbox) {
     };
 
     const buildDarkPocReport = (): string => {
-      const matrixHtml = matrixRows
+      const categoryLabels: Record<string, string> = {
+        surfaces: 'Surface Backgrounds',
+        text: 'Text Colors & Links',
+        buttons: 'Button Backgrounds',
+        states: 'State Backgrounds',
+        statusBackgrounds: 'Status Backgrounds',
+      };
+
+      const tabButtonsHtml = Object.keys(matrixRowsByCategory)
         .map(
-          (row) => `
+          (cat) =>
+            `<button type="button" class="local-poc-matrix-tab-btn" data-matrix-tab="${cat}" aria-pressed="${cat === 'surfaces' ? 'true' : 'false'}">${categoryLabels[cat]}</button>`,
+        )
+        .join('');
+
+      const matrixTabsHtml = Object.entries(matrixRowsByCategory)
+        .map(([category, rows]) => {
+          const tableHtml = rows
+            .map(
+              (row) => `
             <tr>
               <td>${row.role}</td>
               <td><span class="local-poc-chip" style="background:${row.lightHex}"></span>${row.lightHex}</td>
@@ -293,7 +484,31 @@ if (showLayerSandbox) {
               <td>${row.candidateDark}</td>
               <td>${row.rationale}</td>
             </tr>`,
-        )
+            )
+            .join('');
+
+          return `
+          <div class="local-poc-matrix-tab" data-matrix-tab="${category}" style="display: ${category === 'surfaces' ? 'block' : 'none'}">
+            <div class="local-poc-table-wrap">
+              <table class="local-poc-table">
+                <thead>
+                  <tr>
+                    <th>Role</th>
+                    <th>Current SKY UX (light)</th>
+                    <th>Current SKY UX (dark)</th>
+                    <th>CIELAB (light)</th>
+                    <th>CIELAB (dark)</th>
+                    <th>OKLCH (light)</th>
+                    <th>OKLCH (dark)</th>
+                    <th>Candidate dark</th>
+                    <th>Rationale</th>
+                  </tr>
+                </thead>
+                <tbody>${tableHtml}</tbody>
+              </table>
+            </div>
+          </div>`;
+        })
         .join('');
 
       return `
@@ -328,24 +543,10 @@ if (showLayerSandbox) {
 
           <section class="local-poc-card" aria-label="Role mapping matrix">
             <h3>Role mapping matrix</h3>
-            <div class="local-poc-table-wrap">
-              <table class="local-poc-table">
-                <thead>
-                  <tr>
-                    <th>Role</th>
-                    <th>Current SKY UX (light)</th>
-                    <th>Current SKY UX (dark)</th>
-                    <th>CIELAB (light)</th>
-                    <th>CIELAB (dark)</th>
-                    <th>OKLCH (light)</th>
-                    <th>OKLCH (dark)</th>
-                    <th>Candidate dark</th>
-                    <th>Rationale</th>
-                  </tr>
-                </thead>
-                <tbody>${matrixHtml}</tbody>
-              </table>
+            <div class="local-poc-matrix-tabs" role="tablist" aria-label="Token categories">
+              ${tabButtonsHtml}
             </div>
+            ${matrixTabsHtml}
           </section>
 
           <section class="local-poc-card" aria-label="Validation report">
@@ -371,7 +572,7 @@ if (showLayerSandbox) {
 
           <section class="local-poc-card" aria-label="Interactive and link states">
             <h3>Interactive and link text states</h3>
-            <p>Affordance rule: links are underlined by default, and state changes must remain distinguishable on page, container, and menu surfaces.</p>
+            <p>Affordance rule: links are not underlined at rest, and state changes must remain distinguishable on page, container, and menu surfaces.</p>
             <div class="local-poc-link-row" data-poc-mode="light" style="background:${pocLightBaseline.slate1100.hex}">
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="default">Default link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="hover">Hover link</a>
@@ -393,13 +594,13 @@ if (showLayerSandbox) {
             <ul>
               <li>Blue-state link differentiation on dense overlays may need additional hue spread.</li>
               <li>Divider and elevation borders pass non-text AA now, but may require tuning in real data-heavy screens.</li>
-              <li>Status and data-viz families are explicitly deferred to Phase 2.</li>
+              <li>Data-viz families are explicitly deferred to Phase 2.</li>
             </ul>
             <h4>Recommended next iteration steps</h4>
             <ol>
               <li>Run this matrix against additional long-form content fixtures and controls.</li>
               <li>Promote passed values into provisional dark reference tokens only after design review.</li>
-              <li>Extend the same validation method to status and data-viz families.</li>
+              <li>Extend the same validation method to data-viz families.</li>
             </ol>
           </section>
         </section>`;
@@ -520,12 +721,31 @@ if (showLayerSandbox) {
         return;
       }
 
-      const light = readThemeSnapshot('light');
-      const dark = readThemeSnapshot('dark');
+      const light = {
+        pageBg: pocLightBaseline.slate1100.hex,
+        containerBg: pocLightBaseline.slate1000.hex,
+        textDefault: pocLightBaseline.textDefault.hex,
+        textDeemphasized: pocLightBaseline.textDeemphasized.hex,
+        heading: pocLightBaseline.textHeading.hex,
+        divider: pocLightBaseline.divider.hex,
+        elevationBorder: pocLightBaseline.elevationBorder.hex,
+        linkDefault: pocLightBaseline.linkDefault.hex,
+        linkVisited: pocLightBaseline.linkVisited.hex,
+        inlineLink: pocLightBaseline.inlineLink.hex,
+      };
 
-      if (!light || !dark) {
-        return;
-      }
+      const dark = {
+        pageBg: pocAnchors.slate1100.hex,
+        containerBg: pocAnchors.slate1000.hex,
+        textDefault: pocAnchors.textDefault.hex,
+        textDeemphasized: pocAnchors.textDeemphasized.hex,
+        heading: pocAnchors.textHeading.hex,
+        divider: pocAnchors.divider.hex,
+        elevationBorder: pocAnchors.elevationBorder.hex,
+        linkDefault: pocAnchors.linkDefault.hex,
+        linkVisited: pocAnchors.linkVisited.hex,
+        inlineLink: pocAnchors.inlineLink.hex,
+      };
 
       const checks = [
         {
@@ -565,6 +785,18 @@ if (showLayerSandbox) {
           min: 4.5,
         },
         {
+          label: 'Inline link default vs body text',
+          light: { fg: light.inlineLink, bg: light.textDefault },
+          dark: { fg: dark.inlineLink, bg: dark.textDefault },
+          min: 3,
+        },
+        {
+          label: 'Inline link visited vs body text',
+          light: { fg: light.inlineLink, bg: light.textDefault },
+          dark: { fg: dark.inlineLink, bg: dark.textDefault },
+          min: 3,
+        },
+        {
           label: 'Divider on page (non-text)',
           light: { fg: light.divider, bg: light.pageBg },
           dark: { fg: dark.divider, bg: dark.pageBg },
@@ -575,6 +807,60 @@ if (showLayerSandbox) {
           light: { fg: light.elevationBorder, bg: light.pageBg },
           dark: { fg: dark.elevationBorder, bg: dark.pageBg },
           min: 3,
+        },
+        {
+          label: 'Text on action primary background',
+          light: { fg: light.textDefault, bg: '#0d47a1' },
+          dark: { fg: dark.textDefault, bg: '#42a5f5' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on input background',
+          light: { fg: light.textDefault, bg: light.containerBg },
+          dark: { fg: dark.textDefault, bg: dark.containerBg },
+          min: 4.5,
+        },
+        {
+          label: 'Text on disabled background',
+          light: { fg: light.textDefault, bg: '#e8eef7' },
+          dark: { fg: dark.textDefault, bg: '#3b4047' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on container dimmed',
+          light: { fg: light.textDefault, bg: light.pageBg },
+          dark: { fg: dark.textDefault, bg: '#27354a' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on row hover/selected',
+          light: { fg: light.textDefault, bg: '#e3f2fd' },
+          dark: { fg: dark.textDefault, bg: '#1e293b' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on container danger',
+          light: { fg: light.textDefault, bg: '#f7a08f' },
+          dark: { fg: dark.textDefault, bg: '#d93a3d' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on container warning',
+          light: { fg: light.textDefault, bg: '#ffd597' },
+          dark: { fg: dark.textDefault, bg: '#b57f25' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on container success',
+          light: { fg: light.textDefault, bg: '#b7da9b' },
+          dark: { fg: dark.textDefault, bg: '#099c53' },
+          min: 4.5,
+        },
+        {
+          label: 'Text on container info',
+          light: { fg: light.textDefault, bg: '#81d4f7' },
+          dark: { fg: dark.textDefault, bg: '#2B6BD5' },
+          min: 4.5,
         },
       ] as const;
 
@@ -1097,6 +1383,24 @@ if (showLayerSandbox) {
       updatePocLiveStatus();
     };
 
+    const setMatrixTab = (tab: string): void => {
+      const tabButtons = app.querySelectorAll<HTMLButtonElement>('.local-poc-matrix-tab-btn');
+      const tabPanels = app.querySelectorAll<HTMLElement>('.local-poc-matrix-tab');
+
+      tabButtons.forEach((button) => {
+        const isActive = button.dataset.matrixTab === tab;
+
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+
+      tabPanels.forEach((panel) => {
+        const isActive = panel.dataset.matrixTab === tab;
+
+        panel.style.display = isActive ? 'block' : 'none';
+      });
+    };
+
     navPageButtons.forEach((button) => {
       button.addEventListener('click', () => {
         const target = button.dataset.navPageTarget;
@@ -1169,6 +1473,16 @@ if (showLayerSandbox) {
               : 'side-by-side';
 
         setPocView(view);
+      });
+    });
+
+    const matrixTabButtons = app.querySelectorAll<HTMLButtonElement>('.local-poc-matrix-tab-btn');
+
+    matrixTabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const tab = button.dataset.matrixTab || 'surfaces';
+
+        setMatrixTab(tab);
       });
     });
 

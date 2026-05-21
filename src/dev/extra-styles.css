@@ -384,7 +384,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-lay
 	gap: 1.25rem;
 	max-width: 1200px;
 	margin: 0 auto;
-	color: var(--sky-color-text-default);
+	color: var(--local-layer-text);
 }
 
 /* Local sandbox - static layered surface demo for dark mode token experiments. */
@@ -421,7 +421,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-prim
 	background: transparent;
 	border: 1px solid var(--sky-color-border-container-base);
 	border-radius: 999px;
-	color: var(--sky-color-text-default);
+	color: var(--local-layer-text);
 	cursor: pointer;
 	font-size: 0.9375rem;
 	font-weight: 600;
@@ -433,8 +433,8 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-prim
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-primary-tab.is-active {
 	background-color: var(--sky-color-background-container-dimmed);
-	border-color: var(--sky-color-text-action);
-	color: var(--sky-color-text-action);
+	border-color: var(--local-layer-link);
+	color: var(--local-layer-link);
 }
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-subpage {
@@ -462,8 +462,8 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-main
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-main-tabs .local-layer-primary-tab.is-active,
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-main-tabs .local-layer-primary-tab[aria-current='page'] {
-	background-color: var(--sky-color-text-action);
-	border-color: var(--sky-color-text-action);
+	background-color: var(--local-layer-link);
+	border-color: var(--local-layer-link);
 	color: var(--bb-color-white, #ffffff);
 	font-weight: 700;
 }
@@ -487,8 +487,8 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-mode
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-mode-tab.is-active {
 	background-color: color-mix(in oklab, var(--sky-color-text-action) 22%, transparent);
-	border-color: var(--sky-color-text-action);
-	color: var(--sky-color-text-action);
+	border-color: var(--local-layer-link);
+	color: var(--local-layer-link);
 }
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-tertiary-tabs {
@@ -505,7 +505,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-tert
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-tertiary-tabs .local-layer-primary-tab.is-active {
 	background-color: color-mix(in oklab, var(--sky-color-text-action) 15%, transparent);
 	border-color: color-mix(in oklab, var(--sky-color-text-action) 55%, var(--sky-color-border-container-base));
-	color: var(--sky-color-text-default);
+	color: var(--local-layer-text);
 }
 
 @media (max-width: 900px) {
@@ -1045,7 +1045,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-table 
 }
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-table th {
-	background: color-mix(in oklab, var(--local-layer-l1-bg) 72%, white 28%);
+	background-color: var(--sky-theme-color-background-container-dimmed);
 	font-weight: 700;
 }
 
@@ -1101,6 +1101,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-link-l
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-link-dark[data-link-state='default'] {
 	color: #8bb8ff;
+	text-decoration: none;
 }
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-poc-link-dark[data-link-state='hover'] {
@@ -1569,7 +1570,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-arch
 	background-color: var(--_layer-field);
 	border: 1px solid var(--_layer-border);
 	border-radius: 6px;
-	color: var(--sky-color-text-default);
+	color: var(--local-layer-text);
 	padding: 0.6rem 0.7rem;
 	width: 100%;
 }
@@ -1815,7 +1816,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-cont
 	background-color: var(--_layer-field);
 	border: 1px solid var(--_layer-border);
 	border-radius: 6px;
-	color: var(--sky-color-text-default);
+	color: var(--local-layer-text);
 	padding: 0.6rem 0.7rem;
 	width: 100%;
 }
@@ -2121,7 +2122,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-lay
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-layering .poc-modal p {
 	margin: 0 0 0.75rem;
 	font-size: 0.875rem;
-	color: var(--sky-color-text-deemphasized);
+	color: var(--local-layer-text-muted);
 }
 
 /* Phase B - Carbon layering PoC */
@@ -2181,6 +2182,55 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-lay
 	padding: 0.5rem 0.75rem;
 	background: transparent;
 	border: 0;
-	color: var(--sky-color-text-default);
+	color: var(--local-layer-text);
 	font: inherit;
+}
+
+/* OKLCH PoC Matrix Tabs */
+.local-poc-matrix-tabs {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid var(--local-layer-divider);
+}
+
+.local-poc-matrix-tab-btn {
+	padding: 12px 16px;
+	background: transparent;
+	border: 1px solid transparent;
+	border-bottom: 2px solid transparent;
+	color: var(--local-layer-text-muted);
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.local-poc-matrix-tab-btn:hover {
+	color: var(--local-layer-text);
+	background: color-mix(in oklab, var(--local-layer-l1-bg) 92%, var(--local-layer-text) 8%);
+}
+
+.local-poc-matrix-tab-btn[aria-pressed="true"] {
+	color: var(--local-layer-link);
+	border-bottom-color: var(--local-layer-link);
+}
+
+.local-poc-matrix-tabs[role="tablist"] {
+	display: flex;
+	gap: 0;
+	margin: 0;
+	border: none;
+}
+
+.local-poc-matrix-tab {
+	animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
