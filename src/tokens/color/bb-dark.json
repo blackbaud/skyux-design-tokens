@@ -221,7 +221,7 @@
         "accent": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.900}"
+            "$value": "{bb.color.slate.1050}"
           },
           "hover": {
             "$type": "color",

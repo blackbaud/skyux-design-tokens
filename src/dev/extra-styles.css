@@ -12,6 +12,8 @@ section {
 
 .sky-dropdown-menu {
   border-color: transparent !important;
+  border-width: 1px !important;
+  border-style: solid !important;
   background:
     linear-gradient(
         var(--sky-color-background-container-menu),
