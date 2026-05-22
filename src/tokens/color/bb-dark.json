@@ -3,15 +3,15 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.slate.150}"
+        "$value": "{bb.color.gray.100}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.slate.400}"
+        "$value": "{bb.color.gray.400}"
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.525}"
+        "$value": "{bb.color.sky.600}"
       },
       "danger": {
         "$type": "color",
@@ -81,7 +81,7 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.slate.1200}"
+        "$value": "{bb.color.gray.1200}"
       },
       "scrim": {
         "$type": "color",
@@ -244,11 +244,11 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.1150}"
+          "$value": "{bb.color.gray.1150}"
         },
         "menu": {
           "$type": "color",
-          "$value": "{bb.color.slate.1100}"
+          "$value": "{bb.color.gray.1100}"
         },
         "danger": {
           "$type": "color",
@@ -503,7 +503,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.slate.800}"
+            "$value": "{bb.color.gray.800}"
           },
           "hover": {
             "$type": "color",
