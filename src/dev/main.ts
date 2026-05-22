@@ -47,11 +47,14 @@ if (showLayerSandbox) {
         : document.body.dataset.pocView === 'dark'
           ? 'dark'
           : initialEvalTheme;
+    const initialDemoMode =
+      document.body.dataset.demoMode === 'gray' ? 'gray' : 'slate';
 
     document.body.dataset.layering = initialLayeringMode;
     document.body.dataset.evalTheme = initialEvalTheme;
     document.body.dataset.evalModel = initialEvalModel;
     document.body.dataset.pocView = initialPocView;
+    document.body.dataset.demoMode = initialDemoMode;
 
     type LayeringMode =
       | 'current'
@@ -59,6 +62,7 @@ if (showLayerSandbox) {
       | 'oklch-slate'
       | 'cielab-slate'
       | 'dark-poc';
+    type DemoMode = 'slate' | 'gray';
     type HomePage =
       | 'layering-mode'
       | 'layer-structure'
@@ -90,10 +94,34 @@ if (showLayerSandbox) {
       lch: 'lch(56% 16 257)',
     };
 
+    const pocLightLinkFocus: PocColorStop = {
+      hex: '#0f4fc2',
+      oklch: 'oklch(0.46 0.17 257)',
+      lch: 'lch(46% 17 257)',
+    };
+
+    const pocLightLinkVisited: PocColorStop = {
+      hex: '#6b4db8',
+      oklch: 'oklch(0.51 0.12 300)',
+      lch: 'lch(51% 12 300)',
+    };
+
     const pocDarkInlineLink: PocColorStop = {
-      hex: '#3d82fb',
-      oklch: 'oklch(0.64 0.16 258)',
-      lch: 'lch(64% 16 258)',
+      hex: '#2f6fdc',
+      oklch: 'oklch(0.58 0.14 258)',
+      lch: 'lch(58% 14 258)',
+    };
+
+    const pocDarkLinkFocus: PocColorStop = {
+      hex: '#cde1ff',
+      oklch: 'oklch(0.90 0.04 255)',
+      lch: 'lch(90% 4 255)',
+    };
+
+    const pocDarkLinkVisited: PocColorStop = {
+      hex: '#baa8f8',
+      oklch: 'oklch(0.78 0.08 300)',
+      lch: 'lch(78% 8 300)',
     };
 
     const pocLightBaseline = {
@@ -112,19 +140,240 @@ if (showLayerSandbox) {
       linkDefault: pocLightInteractiveText,
       linkHover: { hex: '#1f67e3', oklch: 'oklch(0.55 0.18 255)', lch: 'lch(55% 18 255)' },
       linkActive: { hex: '#154daf', oklch: 'oklch(0.44 0.15 255)', lch: 'lch(44% 15 255)' },
-      linkFocus: pocLightInteractiveText,
-      linkVisited: pocLightInteractiveText,
+      linkFocus: pocLightLinkFocus,
+      linkVisited: pocLightLinkVisited,
     } as const satisfies Record<string, PocColorStop>;
+
+    type OklchChannels = {
+      l: number;
+      c: number;
+      h: number;
+    };
+
+    const roundTo = (value: number, decimals: number): number => {
+      const scale = 10 ** decimals;
+
+      return Math.round(value * scale) / scale;
+    };
+
+    const clamp = (value: number, min: number, max: number): number =>
+      Math.max(min, Math.min(max, value));
+
+    const normalizeHue = (hue: number): number => {
+      const normalized = hue % 360;
+
+      return normalized < 0 ? normalized + 360 : normalized;
+    };
+
+    const rgbToHex = (value: string): string | null => {
+      const rgbMatch = value
+        .trim()
+        .toLowerCase()
+        .match(/rgba?\(([^)]+)\)/);
+
+      if (!rgbMatch) {
+        return null;
+      }
+
+      const channels = rgbMatch[1]
+        .split(',')
+        .slice(0, 3)
+        .map((part) => Number.parseFloat(part.trim()));
+
+      if (channels.length < 3 || channels.some((channel) => Number.isNaN(channel))) {
+        return null;
+      }
+
+      const toHex = (channel: number): string =>
+        Math.max(0, Math.min(255, Math.round(channel))).toString(16).padStart(2, '0');
+
+      return `#${toHex(channels[0])}${toHex(channels[1])}${toHex(channels[2])}`;
+    };
+
+    const toLinearChannel = (channel: number): number => {
+      const value = channel / 255;
+
+      return value <= 0.03928
+        ? value / 12.92
+        : ((value + 0.055) / 1.055) ** 2.4;
+    };
+
+    const hexToRgb = (
+      color: string,
+    ): { r: number; g: number; b: number } | null => {
+      const value = color.trim().replace('#', '');
+
+      if (value.length !== 6) {
+        return null;
+      }
+
+      return {
+        r: Number.parseInt(value.slice(0, 2), 16),
+        g: Number.parseInt(value.slice(2, 4), 16),
+        b: Number.parseInt(value.slice(4, 6), 16),
+      };
+    };
+
+    const wcagContrastHex = (foreground: string, background: string): number => {
+      const fg = hexToRgb(foreground);
+      const bg = hexToRgb(background);
+
+      if (!fg || !bg) {
+        return 0;
+      }
+
+      const fgLum = 0.2126 * toLinearChannel(fg.r) + 0.7152 * toLinearChannel(fg.g) + 0.0722 * toLinearChannel(fg.b);
+      const bgLum = 0.2126 * toLinearChannel(bg.r) + 0.7152 * toLinearChannel(bg.g) + 0.0722 * toLinearChannel(bg.b);
+      const lighter = Math.max(fgLum, bgLum);
+      const darker = Math.min(fgLum, bgLum);
+
+      return (lighter + 0.05) / (darker + 0.05);
+    };
+
+    const toOklchString = (value: OklchChannels): string => {
+      const l = roundTo(clamp(value.l, 0, 1), 3).toFixed(3);
+      const c = roundTo(clamp(value.c, 0, 0.37), 3).toFixed(3);
+      const h = roundTo(normalizeHue(value.h), 1).toFixed(1);
+
+      return `oklch(${l} ${c} ${h})`;
+    };
+
+    const toLchString = (value: OklchChannels): string => {
+      const l = roundTo(clamp(value.l, 0, 1) * 100, 1).toFixed(1);
+      const c = roundTo(clamp(value.c, 0, 0.37) * 100, 1).toFixed(1);
+      const h = roundTo(normalizeHue(value.h), 1).toFixed(1);
+
+      return `lch(${l}% ${c} ${h})`;
+    };
+
+    const toHexFromOklch = (value: OklchChannels, fallback: string): string => {
+      const previousBodyColor = document.body.style.color;
+
+      document.body.style.color = toOklchString(value);
+
+      const computed = getComputedStyle(document.body).color;
+      const hex = rgbToHex(computed) ?? fallback;
+
+      document.body.style.color = previousBodyColor;
+
+      return hex;
+    };
+
+    const toPocStop = (value: OklchChannels, fallbackHex: string): PocColorStop => ({
+      hex: toHexFromOklch(value, fallbackHex),
+      oklch: toOklchString(value),
+      lch: toLchString(value),
+    });
+
+    const shiftOklch = (
+      base: OklchChannels,
+      deltaL: number,
+      deltaC: number,
+      deltaH = 0,
+    ): OklchChannels => ({
+      l: roundTo(clamp(base.l + deltaL, 0, 1), 3),
+      c: roundTo(clamp(base.c + deltaC, 0, 0.37), 3),
+      h: roundTo(normalizeHue(base.h + deltaH), 1),
+    });
+
+    const darkPageAnchor: OklchChannels = {
+      l: 0.20,
+      c: 0.02,
+      h: 255,
+    };
+
+    const darkL1ContainerAnchor: OklchChannels = {
+      l: 0.23,
+      c: 0.02,
+      h: 255,
+    };
+
+    const darkL2OverlayAnchor: OklchChannels = {
+      l: 0.35,
+      c: 0.03,
+      h: 255,
+    };
+
+    const darkDerivation = {
+      insetDeltaL: 0.015,
+      depthDeltaL: 0.015,
+      minTextContrast: 4.5,
+      minRequiredOverlayDeltaL: 0.10,
+      minRequiredInsetOverlayDeltaL: 0.11,
+    } as const;
+
+    const deriveSurface = (depth: number): OklchChannels => {
+      if (depth <= 0) {
+        return darkL1ContainerAnchor;
+      }
+
+      if (depth === 1) {
+        return shiftOklch(darkL1ContainerAnchor, -darkDerivation.insetDeltaL, 0);
+      }
+
+      if (depth === 2) {
+        return darkL2OverlayAnchor;
+      }
+
+      const defaultTextCandidate = shiftOklch(darkPageAnchor, 0.75, -0.01);
+      const defaultTextHex = toHexFromOklch(defaultTextCandidate, '#e8eef7');
+      let candidate = darkL2OverlayAnchor;
+
+      for (let index = 3; index <= depth; index += 1) {
+        const next = shiftOklch(candidate, darkDerivation.depthDeltaL, 0);
+        const nextHex = toHexFromOklch(next, '#445a77');
+
+        if (wcagContrastHex(defaultTextHex, nextHex) < darkDerivation.minTextContrast) {
+          break;
+        }
+
+        candidate = next;
+      }
+
+      return candidate;
+    };
+
+    const darkSurfaceDepth0 = deriveSurface(0);
+    const darkSurfaceDepth1 = deriveSurface(1);
+    const darkSurfaceDepth2 = deriveSurface(2);
+    const darkSurfaceDepth3 = deriveSurface(3);
+    const darkTextDefault = shiftOklch(darkPageAnchor, 0.75, -0.01);
+    const darkTextDeemphasized = shiftOklch(darkTextDefault, -0.13, 0.02);
+    const darkTextHeading = shiftOklch(darkTextDefault, -0.03, 0.01);
+    const darkDivider = shiftOklch(darkSurfaceDepth0, 0.23, 0.02);
+    const darkElevationBorder = shiftOklch(darkSurfaceDepth0, 0.31, 0.02);
+    const darkLinkDefault = {
+      l: roundTo(clamp(darkTextDefault.l - 0.21, 0, 1), 3),
+      c: 0.11,
+      h: 250,
+    };
+    const darkLinkHover = shiftOklch(darkLinkDefault, 0.07, -0.02);
+    const darkLinkActive = shiftOklch(darkLinkDefault, -0.05, 0.01);
+    const darkLinkFocus = shiftOklch(darkLinkDefault, 0.16, -0.07, 5);
+    const darkLinkVisited = {
+      l: roundTo(clamp(darkLinkDefault.l + 0.04, 0, 1), 3),
+      c: 0.08,
+      h: 300,
+    };
+
+    const darkOverlayDeltaObserved = roundTo(
+      darkL2OverlayAnchor.l - darkL1ContainerAnchor.l,
+      3,
+    );
+    const darkInsetOverlayDeltaObserved = roundTo(
+      darkL2OverlayAnchor.l - darkSurfaceDepth1.l,
+      3,
+    );
 
     const pocAnchors = {
       slate1100: { hex: '#121824', oklch: 'oklch(0.20 0.02 255)', lch: 'lch(20% 2 255)' },
-      slate1000: { hex: '#1b2433', oklch: 'oklch(0.24 0.02 255)', lch: 'lch(24% 2 255)' },
-      slate900: { hex: '#27354a', oklch: 'oklch(0.30 0.03 255)', lch: 'lch(30% 3 255)' },
+      slate1000: { hex: '#192230', oklch: 'oklch(0.23 0.02 255)', lch: 'lch(23% 2 255)' },
+      slate900: { hex: '#35475e', oklch: 'oklch(0.35 0.03 255)', lch: 'lch(35% 3 255)' },
       slate200: { hex: '#b8c7da', oklch: 'oklch(0.82 0.03 255)', lch: 'lch(82% 3 255)' },
       slate50: { hex: '#e8eef7', oklch: 'oklch(0.95 0.01 255)', lch: 'lch(95% 1 255)' },
       textDefault: { hex: '#e8eef7', oklch: 'oklch(0.95 0.01 255)', lch: 'lch(95% 1 255)' },
       textDeemphasized: { hex: '#b8c7da', oklch: 'oklch(0.82 0.03 255)', lch: 'lch(82% 3 255)' },
-      textHeading: { hex: '#f3f7fd', oklch: 'oklch(0.98 0.01 255)', lch: 'lch(98% 1 255)' },
+      textHeading: { hex: '#dbe6f4', oklch: 'oklch(0.92 0.02 255)', lch: 'lch(92% 2 255)' },
       divider: { hex: '#4f607b', oklch: 'oklch(0.46 0.04 255)', lch: 'lch(46% 4 255)' },
       elevationBorder: { hex: '#5d7291', oklch: 'oklch(0.54 0.04 255)', lch: 'lch(54% 4 255)' },
       interactiveText: pocDarkInteractiveText,
@@ -132,8 +381,17 @@ if (showLayerSandbox) {
       linkDefault: pocDarkInteractiveText,
       linkHover: { hex: '#a2c6ff', oklch: 'oklch(0.81 0.09 250)', lch: 'lch(81% 9 250)' },
       linkActive: { hex: '#73a8ff', oklch: 'oklch(0.69 0.12 250)', lch: 'lch(69% 12 250)' },
-      linkFocus: pocDarkInteractiveText,
-      linkVisited: pocDarkInteractiveText,
+      linkFocus: pocDarkLinkFocus,
+      linkVisited: pocDarkLinkVisited,
+    } as const satisfies Record<string, PocColorStop>;
+
+    const pocGrayAnchors = {
+      ...pocAnchors,
+      slate1100: { hex: '#161a1f', oklch: 'oklch(0.21 0.01 255)', lch: 'lch(21% 1 255)' },
+      slate1000: { hex: '#1e2229', oklch: 'oklch(0.25 0.01 255)', lch: 'lch(25% 1 255)' },
+      slate900: { hex: '#252b33', oklch: 'oklch(0.29 0.01 255)', lch: 'lch(29% 1 255)' },
+      divider: { hex: '#525a66', oklch: 'oklch(0.48 0.01 255)', lch: 'lch(48% 1 255)' },
+      elevationBorder: { hex: '#606a78', oklch: 'oklch(0.55 0.01 255)', lch: 'lch(55% 1 255)' },
     } as const satisfies Record<string, PocColorStop>;
 
     type MatrixRow = {
@@ -170,60 +428,70 @@ if (showLayerSandbox) {
       return `oklch(${lightL.toFixed(2)} ${lightC.toFixed(2)} ${hue})`;
     };
 
-    const matrixRowsByCategory: Record<string, MatrixRow[]> = {
+    const getActiveDarkAnchors = (): typeof pocAnchors => {
+      const isGrayPoc =
+        document.body.dataset.demoMode === 'gray' &&
+        document.body.dataset.layering === 'dark-poc';
+
+      return isGrayPoc ? pocGrayAnchors : pocAnchors;
+    };
+
+    const buildMatrixRowsByCategory = (
+      darkAnchors: typeof pocAnchors,
+    ): Record<string, MatrixRow[]> => ({
       surfaces: [
         {
           role: 'Page',
           lightHex: pocLightBaseline.slate1100.hex,
-          darkHex: pocAnchors.slate1100.hex,
+          darkHex: darkAnchors.slate1100.hex,
           lightLch: pocLightBaseline.slate1100.lch,
-          darkLch: pocAnchors.slate1100.lch,
+          darkLch: darkAnchors.slate1100.lch,
           lightOklch: pocLightBaseline.slate1100.oklch,
-          darkOklch: pocAnchors.slate1100.oklch,
+          darkOklch: darkAnchors.slate1100.oklch,
           candidateDark: 'poc.slate.1100',
           rationale: 'Base layer anchored darker to maintain clear separation from containers.',
         },
         {
           role: 'Container base',
           lightHex: pocLightBaseline.slate1000.hex,
-          darkHex: pocAnchors.slate1000.hex,
+          darkHex: darkAnchors.slate1000.hex,
           lightLch: pocLightBaseline.slate1000.lch,
-          darkLch: pocAnchors.slate1000.lch,
+          darkLch: darkAnchors.slate1000.lch,
           lightOklch: pocLightBaseline.slate1000.oklch,
-          darkOklch: pocAnchors.slate1000.oklch,
+          darkOklch: darkAnchors.slate1000.oklch,
           candidateDark: 'poc.slate.1000',
           rationale: 'Primary content surface lifted one step above page.',
         },
         {
           role: 'Menu',
           lightHex: pocLightBaseline.slate900.hex,
-          darkHex: pocAnchors.slate900.hex,
+          darkHex: darkAnchors.slate900.hex,
           lightLch: pocLightBaseline.slate900.lch,
-          darkLch: pocAnchors.slate900.lch,
+          darkLch: darkAnchors.slate900.lch,
           lightOklch: pocLightBaseline.slate900.oklch,
-          darkOklch: pocAnchors.slate900.oklch,
+          darkOklch: darkAnchors.slate900.oklch,
           candidateDark: 'poc.slate.900',
           rationale: 'Floating layer uses stronger lift while avoiding card-like detachment.',
         },
         {
           role: 'Divider',
           lightHex: pocLightBaseline.divider.hex,
-          darkHex: pocAnchors.divider.hex,
+          darkHex: darkAnchors.divider.hex,
           lightLch: pocLightBaseline.divider.lch,
-          darkLch: pocAnchors.divider.lch,
+          darkLch: darkAnchors.divider.lch,
           lightOklch: pocLightBaseline.divider.oklch,
-          darkOklch: pocAnchors.divider.oklch,
+          darkOklch: darkAnchors.divider.oklch,
           candidateDark: 'poc.divider',
           rationale: 'Structural separators visible without introducing noise.',
         },
         {
           role: 'Elevation border',
           lightHex: pocLightBaseline.elevationBorder.hex,
-          darkHex: pocAnchors.elevationBorder.hex,
+          darkHex: darkAnchors.elevationBorder.hex,
           lightLch: pocLightBaseline.elevationBorder.lch,
-          darkLch: pocAnchors.elevationBorder.lch,
+          darkLch: darkAnchors.elevationBorder.lch,
           lightOklch: pocLightBaseline.elevationBorder.oklch,
-          darkOklch: pocAnchors.elevationBorder.oklch,
+          darkOklch: darkAnchors.elevationBorder.oklch,
           candidateDark: 'poc.elevationBorder',
           rationale: 'Overlay boundaries read cleanly on page and containers.',
         },
@@ -243,55 +511,55 @@ if (showLayerSandbox) {
         {
           role: 'Text default',
           lightHex: pocLightBaseline.textDefault.hex,
-          darkHex: pocAnchors.textDefault.hex,
+          darkHex: darkAnchors.textDefault.hex,
           lightLch: pocLightBaseline.textDefault.lch,
-          darkLch: pocAnchors.textDefault.lch,
+          darkLch: darkAnchors.textDefault.lch,
           lightOklch: pocLightBaseline.textDefault.oklch,
-          darkOklch: pocAnchors.textDefault.oklch,
+          darkOklch: darkAnchors.textDefault.oklch,
           candidateDark: 'poc.textDefault',
           rationale: 'Optimized for long-form readability on 1100/1000 surfaces.',
         },
         {
           role: 'Text deemphasized',
           lightHex: pocLightBaseline.textDeemphasized.hex,
-          darkHex: pocAnchors.textDeemphasized.hex,
+          darkHex: darkAnchors.textDeemphasized.hex,
           lightLch: pocLightBaseline.textDeemphasized.lch,
-          darkLch: pocAnchors.textDeemphasized.lch,
+          darkLch: darkAnchors.textDeemphasized.lch,
           lightOklch: pocLightBaseline.textDeemphasized.oklch,
-          darkOklch: pocAnchors.textDeemphasized.oklch,
+          darkOklch: darkAnchors.textDeemphasized.oklch,
           candidateDark: 'poc.textDeemphasized',
           rationale: 'Secondary tier stays distinct but not low-contrast.',
         },
         {
           role: 'Heading',
           lightHex: pocLightBaseline.textHeading.hex,
-          darkHex: pocAnchors.textHeading.hex,
+          darkHex: darkAnchors.textHeading.hex,
           lightLch: pocLightBaseline.textHeading.lch,
-          darkLch: pocAnchors.textHeading.lch,
+          darkLch: darkAnchors.textHeading.lch,
           lightOklch: pocLightBaseline.textHeading.oklch,
-          darkOklch: pocAnchors.textHeading.oklch,
+          darkOklch: darkAnchors.textHeading.oklch,
           candidateDark: 'poc.textHeading',
           rationale: 'Heading tier remains visually authoritative over body copy.',
         },
         {
           role: 'Interactive text',
           lightHex: pocLightBaseline.linkDefault.hex,
-          darkHex: pocAnchors.linkDefault.hex,
+          darkHex: darkAnchors.linkDefault.hex,
           lightLch: pocLightBaseline.linkDefault.lch,
-          darkLch: pocAnchors.linkDefault.lch,
+          darkLch: darkAnchors.linkDefault.lch,
           lightOklch: pocLightBaseline.linkDefault.oklch,
-          darkOklch: pocAnchors.linkDefault.oklch,
+          darkOklch: darkAnchors.linkDefault.oklch,
           candidateDark: 'poc.interactiveText',
           rationale: 'Interactive affordance remains explicit through color and state treatment.',
         },
         {
           role: 'Link states',
           lightHex: `${pocLightBaseline.linkDefault.hex} -> ${pocLightBaseline.linkVisited.hex}`,
-          darkHex: `${pocAnchors.linkDefault.hex} -> ${pocAnchors.linkVisited.hex}`,
+          darkHex: `${darkAnchors.linkDefault.hex} -> ${darkAnchors.linkVisited.hex}`,
           lightLch: `${pocLightBaseline.linkDefault.lch} -> ${pocLightBaseline.linkVisited.lch}`,
-          darkLch: `${pocAnchors.linkDefault.lch} -> ${pocAnchors.linkVisited.lch}`,
+          darkLch: `${darkAnchors.linkDefault.lch} -> ${darkAnchors.linkVisited.lch}`,
           lightOklch: `${pocLightBaseline.linkDefault.oklch} -> ${pocLightBaseline.linkVisited.oklch}`,
-          darkOklch: `${pocAnchors.linkDefault.oklch} -> ${pocAnchors.linkVisited.oklch}`,
+          darkOklch: `${darkAnchors.linkDefault.oklch} -> ${darkAnchors.linkVisited.oklch}`,
           candidateDark: 'poc.link* state set',
           rationale: 'Default/hover/active/focus/visited are all distinguishable.',
         },
@@ -390,9 +658,7 @@ if (showLayerSandbox) {
           rationale: 'Constructed PoC surface translation: darker and chroma-compressed while preserving informational blue intent.',
         },
       ],
-    };
-
-    const matrixRows = Object.values(matrixRowsByCategory).flat();
+    });
 
     const parseHex = (
       color: string,
@@ -453,6 +719,8 @@ if (showLayerSandbox) {
     };
 
     const buildDarkPocReport = (): string => {
+      const activeDarkAnchors = getActiveDarkAnchors();
+      const matrixRowsByCategory = buildMatrixRowsByCategory(activeDarkAnchors);
       const categoryLabels: Record<string, string> = {
         surfaces: 'Surface Backgrounds',
         text: 'Text Colors & Links',
@@ -523,6 +791,8 @@ if (showLayerSandbox) {
             <p class="local-poc-status" data-poc-status="both">WCAG AA gate (both modes): --</p>
             <p class="local-poc-status" data-poc-status="light">Light baseline AA: --</p>
             <p class="local-poc-status" data-poc-status="dark">Dark translation AA: --</p>
+            <p class="local-poc-status">Observed ΔL(L2-L1): ${darkOverlayDeltaObserved.toFixed(3)} (target >= ${darkDerivation.minRequiredOverlayDeltaL.toFixed(2)})</p>
+            <p class="local-poc-status">Observed ΔL(L2-inset): ${darkInsetOverlayDeltaObserved.toFixed(3)} (target >= ${darkDerivation.minRequiredInsetOverlayDeltaL.toFixed(2)})</p>
           </header>
 
           <section class="local-poc-card" aria-label="Candidate anchors">
@@ -533,11 +803,11 @@ if (showLayerSandbox) {
               <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate900.hex}"></span>900 (menu/overlay): ${pocLightBaseline.slate900.oklch}</li>
               <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate200.hex}"></span>200 (deemphasized text intent): ${pocLightBaseline.slate200.oklch}</li>
               <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate50.hex}"></span>50 (default text intent): ${pocLightBaseline.slate50.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate1100.hex}"></span>1100 (page): ${pocAnchors.slate1100.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate1000.hex}"></span>1000 (container): ${pocAnchors.slate1000.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate900.hex}"></span>900 (menu/overlay): ${pocAnchors.slate900.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate200.hex}"></span>200 (deemphasized text intent): ${pocAnchors.slate200.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${pocAnchors.slate50.hex}"></span>50 (default text intent): ${pocAnchors.slate50.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1100.hex}"></span>1100 (page): ${activeDarkAnchors.slate1100.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1000.hex}"></span>1000 (container): ${activeDarkAnchors.slate1000.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate900.hex}"></span>900 (menu/overlay): ${activeDarkAnchors.slate900.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate200.hex}"></span>200 (deemphasized text intent): ${activeDarkAnchors.slate200.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate50.hex}"></span>50 (default text intent): ${activeDarkAnchors.slate50.oklch}</li>
             </ul>
           </section>
 
@@ -580,7 +850,7 @@ if (showLayerSandbox) {
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="focus">Focus link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-light" data-link-state="visited">Visited link</a>
             </div>
-            <div class="local-poc-link-row" data-poc-mode="dark" style="background:${pocAnchors.slate1100.hex}">
+            <div class="local-poc-link-row" data-poc-mode="dark" style="background:${activeDarkAnchors.slate1100.hex}">
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-dark" data-link-state="default">Default link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-dark" data-link-state="hover">Hover link</a>
               <a href="javascript:void(0)" class="local-poc-link local-poc-link-dark" data-link-state="active">Active link</a>
@@ -681,24 +951,49 @@ if (showLayerSandbox) {
 
       const readColor = (raw: string, fallbackValue: string): string =>
         normalizeCssColor(raw) ?? fallbackValue;
+      const readTokenColor = (
+        primaryToken: string,
+        fallbackToken: string,
+        fallbackValue: string,
+      ): string =>
+        readColor(
+          styles.getPropertyValue(primaryToken) || styles.getPropertyValue(fallbackToken),
+          fallbackValue,
+        );
 
       const snapshot = {
-        pageBg: readColor(styles.getPropertyValue('--local-layer-l0-bg'), '#141b26'),
-        containerBg: readColor(styles.getPropertyValue('--local-layer-l1-bg'), '#1a2231'),
+        pageBg: readTokenColor(
+          '--sky-theme-color-background-page',
+          '--sky-color-background-page',
+          '#141b26',
+        ),
+        containerBg: readTokenColor(
+          '--sky-theme-color-background-container-base',
+          '--sky-color-background-container-base',
+          '#1a2231',
+        ),
         textDefault: readColor(
           styles.getPropertyValue('--sky-theme-color-text-default'),
           fallback,
         ),
         textDeemphasized: readColor(
-          styles.getPropertyValue('--local-layer-text-muted'),
+          styles.getPropertyValue('--sky-theme-color-text-deemphasized'),
           fallback,
         ),
         heading: readColor(
           styles.getPropertyValue('--sky-theme-color-text-heading'),
           fallback,
         ),
-        divider: readColor(styles.getPropertyValue('--local-layer-divider'), fallback),
-        elevationBorder: readColor(styles.getPropertyValue('--local-layer-border'), fallback),
+        divider: readTokenColor(
+          '--sky-theme-color-border-divider',
+          '--sky-color-border-divider',
+          fallback,
+        ),
+        elevationBorder: readTokenColor(
+          '--sky-theme-color-border-elevation',
+          '--sky-color-border-elevation',
+          fallback,
+        ),
         linkDefault: readColor(
           linkDefaultEl ? getComputedStyle(linkDefaultEl).color : '',
           fallback,
@@ -721,6 +1016,8 @@ if (showLayerSandbox) {
         return;
       }
 
+      const activeDarkAnchors = getActiveDarkAnchors();
+
       const light = {
         pageBg: pocLightBaseline.slate1100.hex,
         containerBg: pocLightBaseline.slate1000.hex,
@@ -735,16 +1032,16 @@ if (showLayerSandbox) {
       };
 
       const dark = {
-        pageBg: pocAnchors.slate1100.hex,
-        containerBg: pocAnchors.slate1000.hex,
-        textDefault: pocAnchors.textDefault.hex,
-        textDeemphasized: pocAnchors.textDeemphasized.hex,
-        heading: pocAnchors.textHeading.hex,
-        divider: pocAnchors.divider.hex,
-        elevationBorder: pocAnchors.elevationBorder.hex,
-        linkDefault: pocAnchors.linkDefault.hex,
-        linkVisited: pocAnchors.linkVisited.hex,
-        inlineLink: pocAnchors.inlineLink.hex,
+        pageBg: activeDarkAnchors.slate1100.hex,
+        containerBg: activeDarkAnchors.slate1000.hex,
+        textDefault: activeDarkAnchors.textDefault.hex,
+        textDeemphasized: activeDarkAnchors.textDeemphasized.hex,
+        heading: activeDarkAnchors.textHeading.hex,
+        divider: activeDarkAnchors.divider.hex,
+        elevationBorder: activeDarkAnchors.elevationBorder.hex,
+        linkDefault: activeDarkAnchors.linkDefault.hex,
+        linkVisited: activeDarkAnchors.linkVisited.hex,
+        inlineLink: activeDarkAnchors.inlineLink.hex,
       };
 
       const checks = [
@@ -918,7 +1215,7 @@ if (showLayerSandbox) {
     };
 
     const buildLayerStack = (idPrefix: string): string => `
-      <section class="local-layer-surface local-layer-l0" data-sky-layer="00" aria-label="Layer 0 page surface">
+      <section class="local-layer-surface local-layer-l0" data-sky-layer="00" aria-label="Layer 0 page surface" style="background: var(--local-poc-surface-page, var(--sky-theme-color-background-page, var(--sky-color-background-page))); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
         <span class="local-layer-chip">L0 Page Surface</span>
         <h1>L0 Dark Mode Surface Layering Sandbox</h1>
         <p>Baseline page layer for testing hierarchy, border treatment, and token behavior.</p>
@@ -927,7 +1224,7 @@ if (showLayerSandbox) {
         <input id="${idPrefix}-l0-input" type="text" value="L0 input on page background" />
         <a href="javascript:void(0)">L0 link for baseline contrast</a>
 
-        <section class="local-layer-surface local-layer-l1" data-sky-layer="01" aria-label="Layer 1 container surface">
+        <section class="local-layer-surface local-layer-l1" data-sky-layer="01" aria-label="Layer 1 container surface" style="background: var(--local-poc-surface-depth-0, var(--sky-theme-color-background-container-base, var(--sky-color-background-container-base))); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
           <span class="local-layer-chip">L1 Container Surface</span>
           <h2>L1 Primary Container</h2>
           <p>Container layer for core content, with nested content to inspect intra-layer contrast.</p>
@@ -936,7 +1233,7 @@ if (showLayerSandbox) {
           <input id="${idPrefix}-l1-input" type="text" value="L1 container input" />
           <a href="javascript:void(0)">L1 link inside container</a>
 
-          <section class="local-layer-surface local-layer-l1-nested" data-sky-layer="01" aria-label="Nested content inside layer 1">
+          <section class="local-layer-surface local-layer-l1-nested" data-sky-layer="01" aria-label="Nested content inside layer 1" style="background: color-mix(in oklab, var(--local-poc-surface-depth-0, var(--sky-theme-color-background-container-base, var(--sky-color-background-container-base))) 94%, black 6%); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
             <span class="local-layer-chip">Nested In L1</span>
             <h3>L1 Nested Content Block</h3>
             <p>Use this block to inspect separators and text contrast within the same surface level.</p>
@@ -946,7 +1243,7 @@ if (showLayerSandbox) {
             <a href="javascript:void(0)">L1 nested link</a>
           </section>
 
-          <aside class="local-layer-surface local-layer-l2" data-sky-layer="02" aria-label="Layer 2 floating overlay">
+          <aside class="local-layer-surface local-layer-l2" data-sky-layer="02" aria-label="Layer 2 floating overlay" style="background: var(--local-poc-surface-depth-2, var(--sky-theme-color-background-container-backdrop, var(--sky-color-background-container-backdrop))); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
             <span class="local-layer-chip">L2 Floating Overlay</span>
             <h3>L2 Dropdown Overlay</h3>
             <p>Overlay layer for edge contrast and border readability over lower layers.</p>
@@ -957,7 +1254,7 @@ if (showLayerSandbox) {
           </aside>
         </section>
 
-        <section class="local-layer-surface local-layer-l3" data-sky-layer="03" aria-label="Layer 3 modal surface">
+        <section class="local-layer-surface local-layer-l3" data-sky-layer="03" aria-label="Layer 3 modal surface" style="background: var(--local-poc-surface-depth-3, var(--sky-theme-color-background-container-menu, var(--sky-color-background-container-menu))); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
           <span class="local-layer-chip">L3 Modal Surface</span>
           <h2>L3 Modal-Level Surface</h2>
           <p>Highest layer for modal hierarchy testing and strongest depth separation.</p>
@@ -972,6 +1269,10 @@ if (showLayerSandbox) {
       <main class="local-layer-compare" aria-label="Dark surface layering model comparison">
         <section class="local-layer-nav" aria-label="Sandbox navigation">
           <h2>Layering Sandbox</h2>
+          <div class="local-layer-primary-tabs local-layer-main-tabs" role="tablist" aria-label="Demo mode switch">
+            <button type="button" class="local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
+            <button type="button" class="local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
+          </div>
           <div class="local-layer-primary-tabs local-layer-main-tabs" role="navigation" aria-label="Primary navigation">
             <a class="local-layer-primary-tab" href="https://localhost:5176/?local-preview=sandbox" data-primary-page-target="home">Home</a>
             <button type="button" class="local-layer-primary-tab" data-primary-page-target="palettes" aria-pressed="false">Palettes</button>
@@ -1075,15 +1376,15 @@ if (showLayerSandbox) {
                   <section class="local-palette-column" aria-label="OKLCH slate palette">
                     <h4>OKLCH Slate</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.018 255);"></span><span>oklch(0.16 0.018 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.020 255);"></span><span>oklch(0.18 0.020 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.023 255);"></span><span>oklch(0.20 0.023 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.22 0.026 255);"></span><span>oklch(0.22 0.026 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.24 0.029 255);"></span><span>oklch(0.24 0.029 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.27 0.033 255);"></span><span>oklch(0.27 0.033 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.30 0.037 255);"></span><span>oklch(0.30 0.037 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.34 0.041 255);"></span><span>oklch(0.34 0.041 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.38 0.045 255);"></span><span>oklch(0.38 0.045 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.018 255);"></span><span class="local-palette-value-group"><span>oklch(0.16 0.018 255)</span><span class="local-palette-hex">#080e15</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.020 255);"></span><span class="local-palette-value-group"><span>oklch(0.18 0.020 255)</span><span class="local-palette-hex">#0c121a</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.023 255);"></span><span class="local-palette-value-group"><span>oklch(0.20 0.023 255)</span><span class="local-palette-hex">#0f1720</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.22 0.026 255);"></span><span class="local-palette-value-group"><span>oklch(0.22 0.026 255)</span><span class="local-palette-hex">#121b27</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.24 0.029 255);"></span><span class="local-palette-value-group"><span>oklch(0.24 0.029 255)</span><span class="local-palette-hex">#16202d</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.27 0.033 255);"></span><span class="local-palette-value-group"><span>oklch(0.27 0.033 255)</span><span class="local-palette-hex">#1b2736</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.30 0.037 255);"></span><span class="local-palette-value-group"><span>oklch(0.30 0.037 255)</span><span class="local-palette-hex">#212f40</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.34 0.041 255);"></span><span class="local-palette-value-group"><span>oklch(0.34 0.041 255)</span><span class="local-palette-hex">#29394d</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.38 0.045 255);"></span><span class="local-palette-value-group"><span>oklch(0.38 0.045 255)</span><span class="local-palette-hex">#32445a</span></span></div>
                     </div>
                   </section>
                 </div>
@@ -1121,15 +1422,15 @@ if (showLayerSandbox) {
                   <section class="local-palette-column" aria-label="OKLCH gray palette">
                     <h4>OKLCH Gray</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.004 255);"></span><span>oklch(0.16 0.004 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.004 255);"></span><span>oklch(0.18 0.004 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.005 255);"></span><span>oklch(0.20 0.005 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.23 0.005 255);"></span><span>oklch(0.23 0.005 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.26 0.006 255);"></span><span>oklch(0.26 0.006 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.29 0.006 255);"></span><span>oklch(0.29 0.006 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.32 0.007 255);"></span><span>oklch(0.32 0.007 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.35 0.007 255);"></span><span>oklch(0.35 0.007 255)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.39 0.008 255);"></span><span>oklch(0.39 0.008 255)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.004 255);"></span><span class="local-palette-value-group"><span>oklch(0.16 0.004 255)</span><span class="local-palette-hex">#0c0d0f</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.004 255);"></span><span class="local-palette-value-group"><span>oklch(0.18 0.004 255)</span><span class="local-palette-hex">#101213</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.005 255);"></span><span class="local-palette-value-group"><span>oklch(0.20 0.005 255)</span><span class="local-palette-hex">#151618</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.23 0.005 255);"></span><span class="local-palette-value-group"><span>oklch(0.23 0.005 255)</span><span class="local-palette-hex">#1b1d1f</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.26 0.006 255);"></span><span class="local-palette-value-group"><span>oklch(0.26 0.006 255)</span><span class="local-palette-hex">#222427</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.29 0.006 255);"></span><span class="local-palette-value-group"><span>oklch(0.29 0.006 255)</span><span class="local-palette-hex">#292c2e</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.32 0.007 255);"></span><span class="local-palette-value-group"><span>oklch(0.32 0.007 255)</span><span class="local-palette-hex">#303336</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.35 0.007 255);"></span><span class="local-palette-value-group"><span>oklch(0.35 0.007 255)</span><span class="local-palette-hex">#383b3e</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.39 0.008 255);"></span><span class="local-palette-value-group"><span>oklch(0.39 0.008 255)</span><span class="local-palette-hex">#424549</span></span></div>
                     </div>
                   </section>
                 </div>
@@ -1171,15 +1472,15 @@ if (showLayerSandbox) {
                   <section class="local-palette-column" aria-label="OKLCH blue palette">
                     <h4>OKLCH Blue</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.248 0.066 260.18);"></span><span>oklch(0.248 0.066 260.18)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.295 0.083 259.60);"></span><span>oklch(0.295 0.083 259.60)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.383 0.117 260.21);"></span><span>oklch(0.383 0.117 260.21)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.467 0.146 259.72);"></span><span>oklch(0.467 0.146 259.72)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.51 0.165 265);"></span><span>oklch(0.51 0.165 265)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.60 0.145 265);"></span><span>oklch(0.60 0.145 265)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.69 0.120 265);"></span><span>oklch(0.69 0.120 265)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.74 0.105 265);"></span><span>oklch(0.74 0.105 265)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.78 0.090 265);"></span><span>oklch(0.78 0.090 265)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.248 0.066 260.18);"></span><span class="local-palette-value-group"><span>oklch(0.248 0.066 260.18)</span><span class="local-palette-hex">#0d2040</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.295 0.083 259.60);"></span><span class="local-palette-value-group"><span>oklch(0.295 0.083 259.60)</span><span class="local-palette-hex">#112b55</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.383 0.117 260.21);"></span><span class="local-palette-value-group"><span>oklch(0.383 0.117 260.21)</span><span class="local-palette-hex">#1a4080</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.467 0.146 259.72);"></span><span class="local-palette-value-group"><span>oklch(0.467 0.146 259.72)</span><span class="local-palette-hex">#2256aa</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.51 0.165 265);"></span><span class="local-palette-value-group"><span>oklch(0.51 0.165 265)</span><span class="local-palette-hex">#365ec3</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.60 0.145 265);"></span><span class="local-palette-value-group"><span>oklch(0.60 0.145 265)</span><span class="local-palette-hex">#557cd6</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.69 0.120 265);"></span><span class="local-palette-value-group"><span>oklch(0.69 0.120 265)</span><span class="local-palette-hex">#7799e6</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.74 0.105 265);"></span><span class="local-palette-value-group"><span>oklch(0.74 0.105 265)</span><span class="local-palette-hex">#8aaaee</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.78 0.090 265);"></span><span class="local-palette-value-group"><span>oklch(0.78 0.090 265)</span><span class="local-palette-hex">#9bb7f2</span></span></div>
                     </div>
                   </section>
                 </div>
@@ -1275,12 +1576,159 @@ if (showLayerSandbox) {
     const navPagePanels = app.querySelectorAll<HTMLElement>('[data-primary-page="home"][data-nav-page]');
     const tertiaryTabs = app.querySelector<HTMLElement>('.local-layer-tertiary-tabs');
     const layeringChildButtons = app.querySelectorAll<HTMLButtonElement>('[data-layering-child-target]');
+    const demoModeButtons = app.querySelectorAll<HTMLButtonElement>('[data-demo-target]');
     const evalThemeButtons = app.querySelectorAll<HTMLButtonElement>('[data-eval-theme-target]');
     const evalModelButtons = app.querySelectorAll<HTMLButtonElement>('[data-eval-model-target]');
     const pocViewButtons = app.querySelectorAll<HTMLButtonElement>('[data-poc-view-target]');
 
+    const applyPocSurfaceOverrides = (mode: LayeringMode): void => {
+      const demoMode: DemoMode =
+        document.body.dataset.demoMode === 'gray' ? 'gray' : 'slate';
+
+      if (mode === 'dark-poc') {
+        // Explicit PoC overrides only in dark-poc mode.
+        // L2/L3 are intentionally swapped here for PoC testing.
+        const anchors = getActiveDarkAnchors();
+        const styles = getComputedStyle(app);
+        const menuSurface =
+          demoMode === 'gray'
+            ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-850')) ?? anchors.slate900.hex
+            : normalizeCssColor(
+                styles.getPropertyValue('--sky-theme-color-background-container-menu') ||
+                  styles.getPropertyValue('--sky-color-background-container-menu'),
+              ) ?? '#212c3f';
+
+        app.style.setProperty('--local-poc-surface-page', anchors.slate1100.hex);
+        app.style.setProperty('--local-poc-surface-depth-0', anchors.slate1000.hex);
+        app.style.setProperty('--local-poc-surface-depth-2', menuSurface);
+        app.style.setProperty('--local-poc-surface-depth-3', anchors.slate900.hex);
+        app.style.setProperty('--local-layer-border', anchors.elevationBorder.oklch);
+        app.style.setProperty('--local-poc-border-elevation', anchors.elevationBorder.oklch);
+
+        return;
+      }
+
+      // For all non-PoC modes, mirror active SKY UX tokens to avoid PoC bleed and white fallbacks.
+      const styles = getComputedStyle(app);
+      const pageSurface =
+        demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-1100')) ?? '#161a1f'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-background-page') ||
+                styles.getPropertyValue('--sky-color-background-page'),
+            ) ?? '#141b26';
+      const containerSurface =
+        demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-1000')) ?? '#1e2229'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-background-container-base') ||
+                styles.getPropertyValue('--sky-color-background-container-base'),
+            ) ?? '#1a2231';
+      const overlaySurface =
+        demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-900')) ?? '#252b33'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-background-container-backdrop') ||
+                styles.getPropertyValue('--sky-color-background-container-backdrop'),
+            ) ?? '#212c3f';
+      const currentDarkOverlaySurface =
+        demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-900')) ?? '#252b33'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-background-container-menu') ||
+                styles.getPropertyValue('--sky-color-background-container-menu'),
+            ) ?? '#2a3950';
+      const modalSurface =
+        demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-850')) ?? '#30363d'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-background-container-menu') ||
+                styles.getPropertyValue('--sky-color-background-container-menu'),
+            ) ?? '#2a3950';
+      const layerBorder =
+        demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-800')) ?? '#3b4047'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-border-elevation') ||
+                styles.getPropertyValue('--sky-color-border-elevation'),
+            ) ?? '#5d7291';
+      const isCurrentDarkMode =
+        mode === 'current' && document.body.classList.contains('sky-theme-mode-dark');
+
+      app.style.setProperty('--local-poc-surface-page', pageSurface);
+      app.style.setProperty('--local-poc-surface-depth-0', containerSurface);
+      app.style.setProperty(
+        '--local-poc-surface-depth-2',
+        isCurrentDarkMode ? currentDarkOverlaySurface : overlaySurface,
+      );
+      app.style.setProperty('--local-poc-surface-depth-3', modalSurface);
+      app.style.setProperty('--local-layer-border', layerBorder);
+      app.style.setProperty('--local-poc-border-elevation', layerBorder);
+    };
+
+    const applyPageBackgroundColor = (mode: LayeringMode): void => {
+      const demoMode: DemoMode =
+        document.body.dataset.demoMode === 'gray' ? 'gray' : 'slate';
+      const root = app.querySelector<HTMLElement>('.local-layer-compare');
+
+      if (!root) {
+        return;
+      }
+
+      const styles = getComputedStyle(app);
+      const isGrayPoc = demoMode === 'gray' && mode === 'dark-poc';
+      const pageBackground = isGrayPoc
+        ? getActiveDarkAnchors().slate1100.hex
+        : demoMode === 'gray'
+          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-1100')) ?? '#161a1f'
+          : normalizeCssColor(
+              styles.getPropertyValue('--sky-theme-color-background-page') ||
+                styles.getPropertyValue('--sky-color-background-page'),
+            ) ?? '#141b26';
+
+      root.style.backgroundColor = pageBackground;
+    };
+
+    const setDemoMode = (mode: DemoMode): void => {
+      document.body.dataset.demoMode = mode;
+
+      demoModeButtons.forEach((button) => {
+        const isActive = button.dataset.demoTarget === mode;
+
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+
+      layeringChildButtons.forEach((button) => {
+        if (button.dataset.layeringChildTarget === 'oklch-slate') {
+          button.textContent = mode === 'gray' ? 'OKLCH / Gray' : 'OKLCH Slate';
+        }
+
+        if (button.dataset.layeringChildTarget === 'cielab-slate') {
+          button.textContent = mode === 'gray' ? 'CIELAB / Gray' : 'CIELAB Slate';
+        }
+      });
+
+      const currentLayeringMode: LayeringMode =
+        document.body.dataset.layering === 'experimental'
+          ? 'experimental'
+          : document.body.dataset.layering === 'oklch-slate'
+            ? 'oklch-slate'
+            : document.body.dataset.layering === 'cielab-slate'
+              ? 'cielab-slate'
+              : document.body.dataset.layering === 'dark-poc'
+                ? 'dark-poc'
+                : 'current';
+
+      applyPocSurfaceOverrides(currentLayeringMode);
+      applyPageBackgroundColor(currentLayeringMode);
+      updatePocLiveStatus();
+    };
+
     const setLayeringMode = (mode: LayeringMode): void => {
       document.body.dataset.layering = mode;
+      applyPocSurfaceOverrides(mode);
+      applyPageBackgroundColor(mode);
 
       layeringChildButtons.forEach((button) => {
         const isActive = button.dataset.layeringChildTarget === mode;
@@ -1288,6 +1736,8 @@ if (showLayerSandbox) {
         button.classList.toggle('is-active', isActive);
         button.setAttribute('aria-pressed', String(isActive));
       });
+
+      updatePocLiveStatus();
     };
 
     const setNavPage = (page: HomePage): void => {
@@ -1486,8 +1936,17 @@ if (showLayerSandbox) {
       });
     });
 
+    demoModeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const mode: DemoMode = button.dataset.demoTarget === 'gray' ? 'gray' : 'slate';
+
+        setDemoMode(mode);
+      });
+    });
+
     setPrimaryPage('home');
     setNavPage('layering-mode');
+    setDemoMode(initialDemoMode);
     setLayeringChild(initialLayeringMode);
     setEvalTheme(initialEvalTheme);
     setEvalModel(initialEvalModel);

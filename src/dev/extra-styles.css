@@ -1674,6 +1674,18 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-ch
 	width: 60px;
 }
 
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-value-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+	line-height: 1.15;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-palette-hex {
+	color: var(--sky-color-text-deemphasized);
+	font-size: 0.74rem;
+}
+
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-palette-row {
 	align-items: center;
 	background-color: var(--sky-color-background-container-base);
