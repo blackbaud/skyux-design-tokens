@@ -7,7 +7,7 @@
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.slate.400}"
+        "$value": "{bb.color.gray.400}"
       },
       "action": {
         "$type": "color",
@@ -27,7 +27,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.slate.50}"
+        "$value": "{bb.color.blue.50}"
       },
       "action_contrast": {
         "$type": "color",
