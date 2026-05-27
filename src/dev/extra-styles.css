@@ -20,7 +20,7 @@ section {
         var(--sky-color-background-container-menu)
       )
       padding-box,
-    linear-gradient(var(--bb-color-slate-900), var(--bb-color-slate-800))
+    linear-gradient(var(--bb-color-slate-800), var(--bb-color-slate-700))
       border-box !important;
 }
 
