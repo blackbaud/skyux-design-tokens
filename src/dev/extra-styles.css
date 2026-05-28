@@ -6,7 +6,7 @@ section {
         var(--sky-color-background-container-base)
       )
       padding-box,
-    linear-gradient(var(--bb-color-slate-900), var(--bb-color-slate-800))
+    linear-gradient(var(--bb-color-slate-900), var(--bb-color-slate-700))
       border-box !important;
 }
 
@@ -20,8 +20,16 @@ section {
         var(--sky-color-background-container-menu)
       )
       padding-box,
-    linear-gradient(var(--bb-color-slate-800), var(--bb-color-slate-700))
+    linear-gradient(var(--bb-color-slate-700), var(--bb-color-slate-700))
       border-box !important;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.list-tabset-list-display-container {
+  background-color: transparent !important;
 }
 
 .sky-page-summary {
