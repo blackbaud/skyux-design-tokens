@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 1 Dark Mode PoC Standalone</title>
+  <style>
+    :root {
+      --bg-page: #161a1f;
+      --bg-container: #1e2229;
+      --bg-overlay: #252b33;
+      --bg-modal: #30363d;
+
+      --text-default: #e0e1e2;
+      --text-deemphasized: #c2c4c6;
+      --text-heading: #f4f4f5;
+      --text-action-current: #5589dd;
+      --text-action-proposed: #5fa3e8;
+
+      --status-info: #2b6bd5;
+      --status-success: #077e43;
+      --status-warning: #b57f25;
+      --status-danger: #ea9596;
+
+      --border-divider: #3b4047;
+      --border-elevation: #3b4047;
+
+      --panel: #0f141a;
+      --panel-2: #101722;
+      --line: #2a3542;
+      --pass: #85d39f;
+      --warn: #f1cd7a;
+      --fail: #eb8f8f;
+      --muted: #9ba7b7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(90% 50% at 10% 0%, rgb(66 110 173 / 16%), transparent 60%),
+        radial-gradient(100% 70% at 100% 100%, rgb(87 71 135 / 10%), transparent 65%),
+        linear-gradient(180deg, #0c1118 0%, #0f141a 50%, #0c1118 100%);
+      color: var(--text-default);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgb(25 35 52 / 65%), rgb(18 24 34 / 65%));
+      border-radius: 14px;
+      padding: 1.2rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.45rem;
+      letter-spacing: 0.02em;
+    }
+
+    .subtitle {
+      margin: 0.4rem 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .chips {
+      margin-top: 0.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .chip {
+      font-size: 0.78rem;
+      border: 1px solid #3a495c;
+      color: #d5dfec;
+      background: #1a2433;
+      border-radius: 999px;
+      padding: 0.25rem 0.6rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgb(16 23 34 / 88%);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .card h2 {
+      margin: 0;
+      padding: 0.8rem 1rem;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--line);
+      background: rgb(11 18 29 / 65%);
+    }
+
+    .card .content {
+      padding: 0.9rem 1rem 1rem;
+    }
+
+    .surface-stack {
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .surface {
+      border-radius: 10px;
+      border: 1px solid rgb(255 255 255 / 8%);
+      padding: 0.75rem;
+    }
+
+    .surface h3 {
+      margin: 0;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      border: 1px solid rgb(255 255 255 / 20%);
+      flex: none;
+    }
+
+    .meta {
+      margin-top: 0.45rem;
+      color: var(--muted);
+      font-size: 0.76rem;
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .demo-text {
+      margin-top: 0.55rem;
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    .demo-text .heading {
+      color: var(--text-heading);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .demo-text .body {
+      color: var(--text-default);
+      font-size: 0.79rem;
+    }
+
+    .demo-text .deemp {
+      color: var(--text-deemphasized);
+      font-size: 0.77rem;
+    }
+
+    .demo-text .link {
+      color: var(--text-action-current);
+      font-size: 0.77rem;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .demo-text .annotated {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .demo-text .annotated .token-sub {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid rgb(255 255 255 / 7%);
+      padding: 0.5rem 0.35rem;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    th {
+      color: #cad5e2;
+      font-weight: 600;
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.13rem 0.5rem;
+      font-size: 0.69rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      border: 1px solid;
+    }
+
+    .pass { color: #08210f; background: var(--pass); border-color: #93e2aa; }
+    .warn { color: #2a1e00; background: var(--warn); border-color: #f8d98f; }
+    .fail { color: #2e0a0a; background: var(--fail); border-color: #f2a1a1; }
+
+    .token {
+      font-family: Menlo, Consolas, Monaco, monospace;
+      color: #d3deeb;
+      font-size: 0.72rem;
+    }
+
+    .token-sub {
+      display: block;
+      margin-top: 0.15rem;
+      color: #9fb0c4;
+      font-size: 0.69rem;
+      font-family: Menlo, Consolas, Monaco, monospace;
+    }
+
+    .contrast-note {
+      color: var(--muted);
+      font-size: 0.74rem;
+      margin-top: 0.45rem;
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-align: right;
+      padding: 0.5rem 0.1rem;
+    }
+
+    @media (max-width: 720px) {
+      body { padding: 1rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Phase 1 Dark Mode PoC (Standalone Preview)</h1>
+      <p class="subtitle">Self-contained visual: surface layering, interaction contrast, WCAG checks, and APCA observations.</p>
+      <div class="chips">
+        <span class="chip">WCAG AA mandatory</span>
+        <span class="chip">APCA preferred</span>
+        <span class="chip">Dark-only scope</span>
+        <span class="chip">Underline links</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Surface Layering (L0-L3)</h2>
+        <div class="content surface-stack" id="surface-stack"></div>
+      </article>
+
+      <article class="card">
+        <h2>Interaction Colors by Surface</h2>
+        <div class="content">
+          <table id="interaction-matrix"></table>
+          <p class="contrast-note">Links are underlined by design to strengthen affordance where color delta is tighter.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Text and Border Contrast Matrix</h2>
+        <div class="content">
+          <table id="contrast-matrix"></table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Link Color A/B (Current vs Proposed)</h2>
+        <div class="content" id="link-ab"></div>
+      </article>
+    </section>
+
+    <div class="footer">Data source: Phase 1 compliance report snapshot (May 22, 2026)</div>
+  </div>
+
+  <script>
+    const surfaces = [
+      { id: "l0", label: "L0 Page", token: "bb.color.gray.1100", hex: "#161a1f", oklch: "oklch(0.21 0.01 255)" },
+      { id: "l1", label: "L1 Container", token: "bb.color.gray.1000", hex: "#1e2229", oklch: "oklch(0.25 0.01 255)" },
+      { id: "l2", label: "L2 Overlay", token: "bb.color.gray.900", hex: "#252b33", oklch: "oklch(0.29 0.01 255)" },
+      { id: "l3", label: "L3 Modal", token: "bb.color.gray.850", hex: "#30363d", oklch: "oklch(0.32 0.01 255)", status: "tbd" }
+    ];
+
+    const textRoles = [
+      { label: "Body text", color: "#e0e1e2", token: "bb.color.gray.200", req: 4.5 },
+      { label: "Deemphasized", color: "#c2c4c6", token: "bb.color.gray.300", req: 4.5 },
+      { label: "Heading", color: "#f4f4f5", token: "bb.color.gray.50", req: 3 },
+      { label: "Link", color: "#5589dd", token: "bb.color.blue.500", req: 4.5 },
+      { label: "Divider border", color: "#3b4047", token: "bb.color.gray.800", req: 3 },
+      { label: "Elevation border", color: "#3b4047", token: "bb.color.gray.800", req: 3 }
+    ];
+
+    const interactionColors = [
+      { label: "Link", color: "#5589dd", token: "bb.color.blue.500" },
+      { label: "Info", color: "#2b6bd5", token: "bb.color.blue.600" },
+      { label: "Success", color: "#077e43", token: "bb.color.green.700" },
+      { label: "Warning", color: "#b57f25", token: "bb.color.yellow.600" },
+      { label: "Danger", color: "#ea9596", token: "bb.color.red.400" }
+    ];
+
+    function hexToRgb(hex) {
+      const clean = hex.replace("#", "");
+      const normalized = clean.length === 3
+        ? clean.split("").map(c => c + c).join("")
+        : clean;
+      const n = parseInt(normalized, 16);
+      return {
+        r: (n >> 16) & 255,
+        g: (n >> 8) & 255,
+        b: n & 255
+      };
+    }
+
+    function toLinear(channel) {
+      const c = channel / 255;
+      return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+    }
+
+    function luminance(hex) {
+      const { r, g, b } = hexToRgb(hex);
+      return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+    }
+
+    function contrastRatio(fg, bg) {
+      const l1 = luminance(fg);
+      const l2 = luminance(bg);
+      const light = Math.max(l1, l2);
+      const dark = Math.min(l1, l2);
+      return (light + 0.05) / (dark + 0.05);
+    }
+
+    function apcaEstimate(ratio) {
+      if (ratio >= 15) return 90;
+      if (ratio >= 10) return 80;
+      if (ratio >= 7) return 72;
+      if (ratio >= 4.5) return 65;
+      if (ratio >= 3) return 52;
+      return 35;
+    }
+
+    function badgeFor(ratio, req) {
+      if (ratio >= req + 0.3) return '<span class="badge pass">PASS</span>';
+      if (ratio >= req) return '<span class="badge warn">MARGINAL</span>';
+      return '<span class="badge fail">FAIL</span>';
+    }
+
+    function renderSurfaceStack() {
+      const host = document.getElementById("surface-stack");
+      host.innerHTML = surfaces.map((s) => {
+        const linkRatio = contrastRatio("#5589dd", s.hex);
+        const linkPass = linkRatio >= 4.5 ? "PASS" : "FAIL";
+
+        return `
+        <div class="surface" style="background:${s.hex};">
+          <h3>
+            <span class="swatch" style="background:${s.hex};"></span>
+            ${s.label}
+          </h3>
+          <div class="meta">
+            <div class="token">${s.token} | ${s.hex}</div>
+            <div>${s.oklch}${s.status ? ` | status: ${s.status}` : ""}</div>
+          </div>
+          <div class="demo-text">
+            <span class="annotated heading">
+              Heading text sample
+              <span class="token-sub">color.text.heading -> bb.color.gray.50</span>
+            </span>
+            <span class="annotated body">
+              Body text sample on ${s.label.toLowerCase()}.
+              <span class="token-sub">color.text.default -> bb.color.gray.200</span>
+            </span>
+            <span class="annotated deemp">
+              Deemphasized helper copy
+              <span class="token-sub">color.text.deemphasized -> bb.color.gray.300</span>
+            </span>
+            <span class="annotated link">
+              Underlined inline link
+              <span class="token-sub">color.text.action -> bb.color.blue.500</span>
+              <span class="token-sub">WCAG contrast on ${s.label}: ${linkRatio.toFixed(2)}:1 -> ${linkPass}</span>
+            </span>
+          </div>
+        </div>
+      `;
+      }).join("");
+    }
+
+    function renderContrastMatrix() {
+      const table = document.getElementById("contrast-matrix");
+      const head = `
+        <thead>
+          <tr>
+            <th>Pair</th>
+            <th>Base Token</th>
+            <th>Surface</th>
+            <th>Ratio</th>
+            <th>Req</th>
+            <th>WCAG</th>
+            <th>APCA est.</th>
+          </tr>
+        </thead>
+      `;
+
+      const rows = [];
+      for (const role of textRoles) {
+        for (const surface of surfaces) {
+          const ratio = contrastRatio(role.color, surface.hex);
+          const apca = apcaEstimate(ratio);
+          rows.push(`
+            <tr>
+              <td>${role.label}</td>
+              <td><span class="token">${role.token}</span></td>
+              <td><span class="token">${surface.label}</span></td>
+              <td>${ratio.toFixed(2)}:1</td>
+              <td>${role.req}:1</td>
+              <td>${badgeFor(ratio, role.req)}</td>
+              <td>L${apca}</td>
+            </tr>
+          `);
+        }
+      }
+
+      table.innerHTML = head + `<tbody>${rows.join("")}</tbody>`;
+    }
+
+    function renderInteractionMatrix() {
+      const table = document.getElementById("interaction-matrix");
+      const head = `
+        <thead>
+          <tr>
+            <th>Color</th>
+            <th>Base Token + Hex</th>
+            <th>Best Surface Ratio</th>
+            <th>Worst Surface Ratio</th>
+            <th>WCAG 4.5</th>
+          </tr>
+        </thead>
+      `;
+
+      const rows = interactionColors.map((entry) => {
+        const ratios = surfaces.map((s) => contrastRatio(entry.color, s.hex));
+        const best = Math.max(...ratios);
+        const worst = Math.min(...ratios);
+        return `
+          <tr>
+            <td>${entry.label}</td>
+            <td>
+              <span class="token-sub">${entry.token}</span>
+              <span class="token" style="color:${entry.color}">${entry.color}</span>
+            </td>
+            <td>${best.toFixed(2)}:1</td>
+            <td>${worst.toFixed(2)}:1</td>
+            <td>${badgeFor(worst, 4.5)}</td>
+          </tr>
+        `;
+      });
+
+      table.innerHTML = head + `<tbody>${rows.join("")}</tbody>`;
+    }
+
+    function renderLinkAB() {
+      const host = document.getElementById("link-ab");
+      const pageSurface = "#161a1f";
+      const current = contrastRatio("#5589dd", pageSurface);
+      const proposed = contrastRatio("#5fa3e8", pageSurface);
+
+      host.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>Variant</th>
+              <th>Hex</th>
+              <th>Contrast on L0</th>
+              <th>APCA est.</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Current</td>
+              <td>
+                <span class="token-sub">bb.color.blue.500</span>
+                <span class="token" style="color:#5589dd">#5589DD</span>
+              </td>
+              <td>${current.toFixed(2)}:1</td>
+              <td>L${apcaEstimate(current)}</td>
+              <td>${badgeFor(current, 4.5)}</td>
+            </tr>
+            <tr>
+              <td>Proposed</td>
+              <td>
+                <span class="token-sub">proposed candidate (blue family)</span>
+                <span class="token" style="color:#5fa3e8">#5FA3E8</span>
+              </td>
+              <td>${proposed.toFixed(2)}:1</td>
+              <td>L${apcaEstimate(proposed)}</td>
+              <td>${badgeFor(proposed, 4.5)}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="contrast-note">Proposed value nudges lightness upward for better perceptual clarity while preserving the blue family.</p>
+      `;
+    }
+
+    renderSurfaceStack();
+    renderContrastMatrix();
+    renderInteractionMatrix();
+    renderLinkAB();
+  </script>
+</body>
+</html>

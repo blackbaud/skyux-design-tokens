@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 1 Dark Mode PoC - Slate Ramp</title>
+  <style>
+    :root {
+      --text-heading: #f4f4f5;
+      --text-default: #e0e1e2;
+      --text-deemphasized: #c2c4c6;
+      --text-link: #5589dd;
+
+      --line: #33445b;
+      --panel: #0f1622;
+      --panel-2: #111b2a;
+      --ink-soft: #9fb0c5;
+
+      --pass-bg: #8fdca7;
+      --pass-fg: #06210f;
+      --fail-bg: #f0a0a0;
+      --fail-fg: #2b0a0a;
+      --warn-bg: #f2d483;
+      --warn-fg: #2a2106;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 1.25rem;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      color: var(--text-default);
+      background:
+        radial-gradient(1200px 500px at -10% -20%, rgb(74 108 162 / 24%), transparent 60%),
+        radial-gradient(900px 400px at 110% 110%, rgb(63 93 144 / 18%), transparent 60%),
+        linear-gradient(180deg, #0c121c 0%, #0f1522 50%, #0c121c 100%);
+    }
+
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgb(25 42 68 / 70%), rgb(16 28 44 / 70%));
+      padding: 1rem 1.1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      color: #f2f6fc;
+    }
+
+    .sub {
+      margin: 0.4rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+    }
+
+    .chips {
+      margin-top: 0.7rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .chip {
+      border: 1px solid #4a6185;
+      border-radius: 999px;
+      background: #1a2940;
+      color: #d5e2f7;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.55rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgb(18 29 46 / 92%), rgb(14 24 39 / 92%));
+      overflow: hidden;
+    }
+
+    .card h2 {
+      margin: 0;
+      padding: 0.75rem 0.95rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.92rem;
+      color: #dce8fa;
+      background: rgb(10 18 30 / 70%);
+    }
+
+    .content {
+      padding: 0.85rem 0.95rem;
+    }
+
+    .stack {
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .surface {
+      border-radius: 10px;
+      border: 1px solid rgb(255 255 255 / 12%);
+      padding: 0.7rem;
+    }
+
+    .surface h3 {
+      margin: 0;
+      font-size: 0.82rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .swatch {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      border: 1px solid rgb(255 255 255 / 25%);
+      flex: none;
+    }
+
+    .token {
+      margin-top: 0.4rem;
+      font-family: Menlo, Consolas, Monaco, monospace;
+      color: #cfddf0;
+      font-size: 0.72rem;
+      line-height: 1.45;
+    }
+
+    .sample {
+      margin-top: 0.5rem;
+      display: grid;
+      gap: 0.16rem;
+      font-size: 0.78rem;
+    }
+
+    .sample .heading {
+      color: var(--text-heading);
+      font-weight: 700;
+    }
+
+    .sample .body {
+      color: var(--text-default);
+    }
+
+    .sample .deemph {
+      color: var(--text-deemphasized);
+    }
+
+    .sample .link {
+      color: var(--text-link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .mini {
+      font-family: Menlo, Consolas, Monaco, monospace;
+      color: #a5b6cd;
+      font-size: 0.68rem;
+      line-height: 1.4;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.76rem;
+    }
+
+    th, td {
+      padding: 0.46rem 0.35rem;
+      border-bottom: 1px solid rgb(255 255 255 / 9%);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #cedcf0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.68rem;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.12rem 0.42rem;
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      border: 1px solid;
+    }
+
+    .pass {
+      background: var(--pass-bg);
+      color: var(--pass-fg);
+      border-color: #a7e8bb;
+    }
+
+    .warn {
+      background: var(--warn-bg);
+      color: var(--warn-fg);
+      border-color: #f8e1a3;
+    }
+
+    .fail {
+      background: var(--fail-bg);
+      color: var(--fail-fg);
+      border-color: #f5b8b8;
+    }
+
+    .footer {
+      color: var(--ink-soft);
+      text-align: right;
+      font-size: 0.74rem;
+      padding: 0 0.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Slate Standalone PoC (Dark Values Remap)</h1>
+      <p class="sub">Uses Slate base tokens and compares two remap variants: Proposal A for tonal layering exploration and Proposal B for stronger WCAG link pass rates on L2/L3.</p>
+      <div class="chips">
+        <span class="chip">Palette: bb.color.slate.*</span>
+        <span class="chip">Focus: 800+ remapping and link contrast</span>
+        <span class="chip">Links underlined</span>
+        <span class="chip">WCAG checks in-view</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Current Slate Mapping</h2>
+        <div class="content stack" id="current-stack"></div>
+      </article>
+
+      <article class="card">
+        <h2>Proposal A: Tonal Layering</h2>
+        <div class="content stack" id="proposal-a-stack"></div>
+      </article>
+
+      <article class="card">
+        <h2>Proposal B: WCAG Priority (L2/L3 Links)</h2>
+        <div class="content stack" id="proposal-b-stack"></div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Remap Matrix</h2>
+        <div class="content">
+          <table id="remap-matrix"></table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Link WCAG on Surfaces</h2>
+        <div class="content">
+          <table id="link-matrix"></table>
+        </div>
+      </article>
+    </section>
+
+    <div class="footer">Standalone PoC for review. No token files modified.</div>
+  </div>
+
+  <script>
+    const slate = {
+      800: { hex: "#32435e", oklch: "oklch(0.36 0.04 257)" },
+      850: { hex: "#2a384f", oklch: "oklch(0.32 0.03 257)" },
+      900: { hex: "#212c3f", oklch: "oklch(0.29 0.03 257)" },
+      1000: { hex: "#1a2231", oklch: "oklch(0.25 0.02 257)" },
+      1100: { hex: "#141b26", oklch: "oklch(0.21 0.02 257)" }
+    };
+
+    const currentSurfaces = [
+      { level: "L0 Page", token: "bb.color.slate.1100", step: 1100 },
+      { level: "L1 Container", token: "bb.color.slate.1000", step: 1000 },
+      { level: "L2 Overlay", token: "bb.color.slate.900", step: 900 },
+      { level: "L3 Modal", token: "bb.color.slate.850", step: 850 }
+    ];
+
+    const linkPalette = {
+      base: { token: "bb.color.blue.500", hex: "#5589dd" },
+      elevated: { token: "bb.color.blue.400", hex: "#7ea6e4" }
+    };
+
+    // Proposal A: keep L0/L1 stable, lift L2/L3 one step lighter to explore stronger tonal separation.
+    const proposalASurfaces = [
+      { level: "L0 Page", token: "bb.color.slate.1100", step: 1100, note: "unchanged" },
+      { level: "L1 Container", token: "bb.color.slate.1000", step: 1000, note: "unchanged" },
+      { level: "L2 Overlay", token: "bb.color.slate.850", step: 850, note: "was slate.900" },
+      { level: "L3 Modal", token: "bb.color.slate.800", step: 800, note: "was slate.850" }
+    ];
+
+    // Proposal B: keep darker L2/L3 surfaces and use a brighter link token on elevated layers to maximize WCAG pass rates.
+    const proposalBSurfaces = [
+      { level: "L0 Page", token: "bb.color.slate.1100", step: 1100, note: "unchanged" },
+      { level: "L1 Container", token: "bb.color.slate.1000", step: 1000, note: "unchanged" },
+      { level: "L2 Overlay", token: "bb.color.slate.900", step: 900, note: "keep darker for link contrast" },
+      { level: "L3 Modal", token: "bb.color.slate.850", step: 850, note: "keep darker for link contrast" }
+    ];
+
+    function hexToRgb(hex) {
+      const n = parseInt(hex.replace("#", ""), 16);
+      return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+    }
+
+    function lin(c) {
+      const v = c / 255;
+      return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    }
+
+    function lum(hex) {
+      const { r, g, b } = hexToRgb(hex);
+      return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+    }
+
+    function ratio(fg, bg) {
+      const a = lum(fg);
+      const b = lum(bg);
+      const light = Math.max(a, b);
+      const dark = Math.min(a, b);
+      return (light + 0.05) / (dark + 0.05);
+    }
+
+    function badge(value, req) {
+      if (value >= req + 0.3) return '<span class="badge pass">PASS</span>';
+      if (value >= req) return '<span class="badge warn">MARGINAL</span>';
+      return '<span class="badge fail">FAIL</span>';
+    }
+
+    function statusLabel(value, req) {
+      return value >= req ? "PASS" : "FAIL";
+    }
+
+    function renderStack(id, data, getLink) {
+      const host = document.getElementById(id);
+      host.innerHTML = data.map((row) => {
+        const bg = slate[row.step];
+        const link = getLink(row);
+        const linkRatio = ratio(link.hex, bg.hex);
+        return `
+          <div class="surface" style="background:${bg.hex};">
+            <h3>
+              <span class="swatch" style="background:${bg.hex};"></span>
+              ${row.level}
+            </h3>
+            <div class="token">
+              ${row.token} | ${bg.hex}<br>
+              ${bg.oklch}${row.note ? ` | ${row.note}` : ""}
+            </div>
+            <div class="sample">
+              <span class="heading">Heading text sample</span>
+              <span class="mini">color.text.heading -> bb.color.gray.50</span>
+              <span class="body">Body text sample</span>
+              <span class="mini">color.text.default -> bb.color.gray.200</span>
+              <span class="deemph">Deemphasized helper text</span>
+              <span class="mini">color.text.deemphasized -> bb.color.gray.300</span>
+              <span class="link">Underlined link sample</span>
+              <span class="mini">color.text.action -> ${link.token} (${link.hex}) | WCAG: ${linkRatio.toFixed(2)}:1 ${statusLabel(linkRatio, 4.5)}</span>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderRemapMatrix() {
+      const host = document.getElementById("remap-matrix");
+      const rows = currentSurfaces.map((c, i) => {
+        const pA = proposalASurfaces[i];
+        const pB = proposalBSurfaces[i];
+        const before = slate[c.step];
+        const afterA = slate[pA.step];
+        const afterB = slate[pB.step];
+        const changedA = c.step !== pA.step;
+        const changedB = c.step !== pB.step;
+        return `
+          <tr>
+            <td>${c.level}</td>
+            <td>bb.color.slate.${c.step}<br><span class="mini">${before.hex}</span></td>
+            <td>bb.color.slate.${pA.step}<br><span class="mini">${afterA.hex}</span></td>
+            <td>${changedA ? '<span class="badge warn">SHIFT</span>' : '<span class="badge pass">KEEP</span>'}</td>
+            <td>bb.color.slate.${pB.step}<br><span class="mini">${afterB.hex}</span></td>
+            <td>${changedB ? '<span class="badge warn">SHIFT</span>' : '<span class="badge pass">KEEP</span>'}</td>
+            <td>${changedA ? pA.note : "no change"}<br><span class="mini">B: ${changedB ? pB.note : "no change"}</span></td>
+          </tr>
+        `;
+      }).join("");
+
+      host.innerHTML = `
+        <thead>
+          <tr>
+            <th>Surface</th>
+            <th>Current</th>
+            <th>Proposal A</th>
+            <th>A Action</th>
+            <th>Proposal B</th>
+            <th>B Action</th>
+            <th>Why</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      `;
+    }
+
+    function renderLinkMatrix() {
+      const host = document.getElementById("link-matrix");
+      const rows = currentSurfaces.map((c, i) => {
+        const pA = proposalASurfaces[i];
+        const pB = proposalBSurfaces[i];
+        const currentLink = linkPalette.base;
+        const proposalALink = linkPalette.base;
+        const proposalBLink = c.level.startsWith("L2") || c.level.startsWith("L3") ? linkPalette.elevated : linkPalette.base;
+
+        const currentRatio = ratio(currentLink.hex, slate[c.step].hex);
+        const proposalARatio = ratio(proposalALink.hex, slate[pA.step].hex);
+        const proposalBRatio = ratio(proposalBLink.hex, slate[pB.step].hex);
+        return `
+          <tr>
+            <td>${c.level}</td>
+            <td>${currentRatio.toFixed(2)}:1 ${badge(currentRatio, 4.5)}</td>
+            <td>${proposalARatio.toFixed(2)}:1 ${badge(proposalARatio, 4.5)}</td>
+            <td>${proposalBRatio.toFixed(2)}:1 ${badge(proposalBRatio, 4.5)}<br><span class="mini">${proposalBLink.token}</span></td>
+            <td>${(proposalARatio - currentRatio).toFixed(2)} (A)<br><span class="mini">${(proposalBRatio - currentRatio).toFixed(2)} (B)</span></td>
+          </tr>
+        `;
+      }).join("");
+
+      host.innerHTML = `
+        <thead>
+          <tr>
+            <th>Surface</th>
+            <th>Current Link Contrast</th>
+            <th>Proposal A Link Contrast</th>
+            <th>Proposal B Link Contrast</th>
+            <th>Delta vs Current</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      `;
+    }
+
+    renderStack("current-stack", currentSurfaces, () => linkPalette.base);
+    renderStack("proposal-a-stack", proposalASurfaces, () => linkPalette.base);
+    renderStack("proposal-b-stack", proposalBSurfaces, (row) => {
+      return row.level.startsWith("L2") || row.level.startsWith("L3") ? linkPalette.elevated : linkPalette.base;
+    });
+    renderRemapMatrix();
+    renderLinkMatrix();
+  </script>
+</body>
+</html>
