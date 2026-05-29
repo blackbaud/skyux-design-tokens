@@ -24,10 +24,6 @@ section {
       border-box !important;
 }
 
-a {
-  text-decoration: underline;
-}
-
 .list-tabset-list-display-container {
   background-color: transparent !important;
 }

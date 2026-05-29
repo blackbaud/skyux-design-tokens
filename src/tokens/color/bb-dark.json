@@ -3,15 +3,15 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.slate.150}"
+        "$value": "{bb.color.rgba.slate.25.94}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.gray.400}"
+        "$value": "{bb.color.rgba.slate.300.80}"
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.525}"
+        "$value": "{bb.color.blue.500}"
       },
       "danger": {
         "$type": "color",
@@ -37,11 +37,11 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.gray.25}"
+        "$value": "{bb.color.rgba.slate.25.94}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.gray.300}"
+        "$value": "{bb.color.rgba.slate.300.80}"
       },
       "action": {
         "$type": "color",
@@ -133,7 +133,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gray.1100}"
+            "$value": "{bb.color.rgba.slate.600.10}"
           },
           "hover": {
             "$type": "color",
@@ -244,11 +244,11 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.1150}"
+          "$value": "{bb.color.slate.1100}"
         },
         "menu": {
           "$type": "color",
-          "$value": "{bb.color.slate.1100}"
+          "$value": "{bb.color.slate.1000}"
         },
         "danger": {
           "$type": "color",
@@ -268,7 +268,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.slate.1175}"
+          "$value": "{bb.color.slate.1150}"
         }
       },
       "icon_matte": {
@@ -312,7 +312,7 @@
       "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.1150}"
+          "$value": "{bb.color.slate.1100}"
         },
         "hover": {
           "$type": "color",
@@ -463,7 +463,7 @@
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.gray.800}"
+        "$value": "{bb.color.slate.800}"
       },
       "column_divider": {
         "$type": "color",
@@ -475,7 +475,7 @@
       },
       "progress_step": {
         "$type": "color",
-        "$value": "{bb.color.gray.600}"
+        "$value": "{bb.color.slate.600}"
       },
       "action": {
         "primary": {
@@ -598,7 +598,7 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.700}"
+          "$value": "{bb.color.slate.800}"
         }
       },
       "input": {
