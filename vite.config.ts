@@ -44,6 +44,8 @@ export default ({ mode }) => {
       environment: 'node',
       root: path.resolve(__dirname),
       mockReset: true,
+      include: ['src/**/*.spec.{ts,mts}', 'plugins/**/*.spec.{ts,mts}'],
+      exclude: ['skyux-box-preview/**'],
     },
     plugins: [
       buildStylesPlugin(),
