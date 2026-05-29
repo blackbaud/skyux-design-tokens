@@ -3,5 +3,11 @@
   "editor.formatOnSave": true,
   "prettier.requireConfig": true,
   "editor.rulers": [120],
-  "cSpell.words": ["blackbaud", "skyux"]
+  "cSpell.words": [
+    "blackbaud",
+    "skyux"
+  ],
+  "chat.tools.terminal.autoApprove": {
+    "mv": true
+  }
 }
