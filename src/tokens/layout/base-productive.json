@@ -1290,7 +1290,7 @@
           "inset": {
             "top": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.75}"
+              "$value": "{bb.size.fluid.25}"
             },
             "right": {
               "$type": "spacing",
@@ -1298,7 +1298,7 @@
             },
             "bottom": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.75}"
+              "$value": "{bb.size.fluid.25}"
             },
             "left": {
               "$type": "spacing",
@@ -2887,7 +2887,7 @@
         "inset": {
           "top": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.75}"
+            "$value": "{bb.size.fluid.25}"
           },
           "right": {
             "$type": "spacing",
@@ -2895,7 +2895,7 @@
           },
           "bottom": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.75}"
+            "$value": "{bb.size.fluid.25}"
           },
           "left": {
             "$type": "spacing",
