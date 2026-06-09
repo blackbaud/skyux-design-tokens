@@ -896,13 +896,15 @@ body[data-demo-mode='gray-steel'].sky-theme-modern.sky-theme-brand-base.sky-them
 }
 
 body[data-demo-mode='steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox {
-	--local-layer-border-top: #545c68;
-	--local-layer-border-bottom: #666b70;
+	--local-layer-border-top: #353d49;
+	--local-layer-border-bottom: #545c68;
+	--local-layer-input-bg: #242b36;
 }
 
 body[data-demo-mode='steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sandbox {
 	--local-layer-border-top: #424952;
 	--local-layer-border-bottom: #6d7781;
+	--local-layer-input-bg: #191d21;
 }
 
 body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
@@ -978,6 +980,25 @@ body[data-layering='dark-poc'].sky-theme-modern.sky-theme-brand-base.sky-theme-m
 	--local-layer-divider: #4f607b;
 	--local-layer-input-bg: color-mix(in oklab, #1b2433 84%, white 16%);
 	--local-layer-link: #8bb8ff;
+}
+
+body[data-layering='dark-poc'][data-demo-mode='steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-standard,
+body[data-layering='dark-poc'][data-demo-mode='steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-dark-poc {
+	--local-layer-border: #6d7781;
+	--local-layer-input-border: #5d6771;
+	--local-layer-divider: #424952;
+	--local-layer-input-bg: #191d21;
+}
+
+body[data-layering='dark-poc'][data-demo-mode='steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-sandbox-standard,
+body[data-layering='dark-poc'][data-demo-mode='steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+	.local-layer-dark-poc {
+	--local-layer-border: #545c68;
+	--local-layer-divider: #353d49;
+	--local-layer-input-bg: #242b36;
 }
 
 body[data-layering='dark-poc'][data-eval-theme='light'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
@@ -2041,7 +2062,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-cont
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-controls input,
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-surface input {
 	background-color: var(--local-layer-input-bg);
-	border: 1px solid var(--local-layer-border);
+	border: 1px solid var(--local-layer-input-border, var(--local-layer-border));
 	border-radius: 6px;
 	color: var(--local-layer-text);
 	display: block;
@@ -2153,7 +2174,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-sand
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .local-layer-demo .sky-input-box {
 	background-color: var(--local-layer-input-bg);
-	border: 1px solid var(--local-layer-border);
+	border: 1px solid var(--local-layer-input-border, var(--local-layer-border));
 	border-radius: 6px;
 	padding: 0;
 }

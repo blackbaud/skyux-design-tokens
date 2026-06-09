@@ -414,9 +414,9 @@ if (showLayerSandbox) {
 
     const pocSteelAnchors = {
       ...pocAnchors,
-      slate1200: { hex: '#131A24', oklch: 'oklch(0.20 0.03 252)', lch: 'lch(20% 3 252)' },
-      slate1100: { hex: '#1D242F', oklch: 'oklch(0.27 0.03 252)', lch: 'lch(27% 3 252)' },
-      slate1000: { hex: '#2A313C', oklch: 'oklch(0.34 0.03 252)', lch: 'lch(34% 3 252)' },
+      slate1200: { hex: '#0D131A', oklch: 'oklch(0.16 0.02 252)', lch: 'lch(16% 2 252)' },
+      slate1100: { hex: '#171E28', oklch: 'oklch(0.23 0.02 252)', lch: 'lch(23% 2 252)' },
+      slate1000: { hex: '#252D39', oklch: 'oklch(0.32 0.02 252)', lch: 'lch(32% 2 252)' },
       slate900: { hex: '#353D49', oklch: 'oklch(0.41 0.03 252)', lch: 'lch(41% 3 252)' },
       slate200: { hex: '#DDE2E9', oklch: 'oklch(0.91 0.01 252)', lch: 'lch(91% 1 252)' },
       slate50: { hex: '#F3F6FA', oklch: 'oklch(0.97 0.01 252)', lch: 'lch(97% 1 252)' },
@@ -1821,7 +1821,7 @@ if (showLayerSandbox) {
           : demoMode === 'steel-fusion'
 	            ? '#0D1014'
           : demoMode === 'steel'
-            ? '#131A24'
+            ? '#0D131A'
             : '#0c1016';
       const containerSurface =
         demoMode === 'gray'
@@ -1831,7 +1831,7 @@ if (showLayerSandbox) {
           : demoMode === 'steel-fusion'
             ? '#14181C'
           : demoMode === 'steel'
-            ? '#1D242F'
+            ? '#171E28'
             : '#141b26';
       const overlaySurface =
         demoMode === 'gray'
@@ -1841,7 +1841,7 @@ if (showLayerSandbox) {
           : demoMode === 'steel-fusion'
             ? '#1E2226'
           : demoMode === 'steel'
-            ? '#2A313C'
+            ? '#252D39'
             : '#1a2231';
       const currentDarkOverlaySurface =
         demoMode === 'gray'
@@ -1851,7 +1851,7 @@ if (showLayerSandbox) {
           : demoMode === 'steel-fusion'
             ? '#1E2226'
           : demoMode === 'steel'
-            ? '#2A313C'
+            ? '#252D39'
             : '#1a2231';
       const modalSurface =
         demoMode === 'gray'
@@ -1916,7 +1916,7 @@ if (showLayerSandbox) {
         : demoMode === 'steel-fusion'
 	          ? '#0D1014'
         : demoMode === 'steel'
-          ? '#131A24'
+          ? '#0D131A'
         : demoMode === 'gray'
           ? '#171B20'
           : '#0c1016';
