@@ -1,3 +1,19 @@
+:root {
+	--poc-bg-page: #151e2a;
+	--poc-bg-l1: #1e2834;
+	--poc-bg-l2: #2b3542;
+	--poc-bg-l3: #35404d;
+	--poc-border: #555f6b;
+}
+
+:root[data-palette='steel'] {
+	--poc-bg-page: #131a24;
+	--poc-bg-l1: #1d242f;
+	--poc-bg-l2: #2a313c;
+	--poc-bg-l3: #353d49;
+	--poc-border: #545c68;
+}
+
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	/* Experimental neutral steps from Phase A (gray + slate lanes). */
 	--local-exp-gray-1050: #1a1e24;
@@ -381,4 +397,22 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-lay
 	border: 0;
 	color: var(--sky-color-text-default);
 	font: inherit;
+}
+
+/* A/B palette toggle via query param hook setting :root[data-palette]. */
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	--sky-color-background-page: var(--poc-bg-page) !important;
+	--sky-color-background-container-base: var(--poc-bg-l1) !important;
+	--sky-color-background-container-dimmed: var(--poc-bg-l2) !important;
+	--sky-color-background-container-backdrop: var(--poc-bg-l3) !important;
+	--sky-color-background-disabled: var(--poc-bg-l2) !important;
+	--sky-color-border-container-border: var(--poc-border) !important;
+	--sky-color-border-container-base: var(--poc-border) !important;
+	--sky-color-border-elevation: var(--poc-border) !important;
+	--sky-color-border-divider: var(--poc-border) !important;
+	--sky-color-border-separator-row: var(--poc-border) !important;
+	--sky-color-border-separator-dark: var(--poc-border) !important;
+	--sky-color-border-separator-light: var(--poc-border) !important;
+	--sky-color-border-disabled: var(--poc-border) !important;
+	--local-exp-input-border-base: var(--poc-border) !important;
 }

@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SKY UX SPA - Dark Mode Test</title>
+  <script>
+    (function () {
+      var palette = new URLSearchParams(window.location.search).get('palette');
+      document.documentElement.setAttribute('data-palette', palette === 'steel' ? 'steel' : 'gray');
+    })();
+  </script>
 
   <link rel="stylesheet" href="https://localhost:5176/dist/bundles/base.css">
   <link rel="stylesheet" href="https://localhost:5176/dist/bundles/blackbaud.css">

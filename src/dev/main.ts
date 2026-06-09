@@ -26,13 +26,9 @@ if (showLayerSandbox) {
     const initialLayeringMode =
       document.body.dataset.layering === 'experimental'
         ? 'experimental'
-        : document.body.dataset.layering === 'oklch-slate'
-          ? 'oklch-slate'
-          : document.body.dataset.layering === 'cielab-slate'
-            ? 'cielab-slate'
-            : document.body.dataset.layering === 'dark-poc'
-              ? 'dark-poc'
-        : 'current';
+        : document.body.dataset.layering === 'dark-poc'
+          ? 'dark-poc'
+          : 'current';
     const initialEvalTheme =
       document.body.dataset.evalTheme === 'light' ? 'light' : 'dark';
     const initialEvalModel =
@@ -48,7 +44,15 @@ if (showLayerSandbox) {
           ? 'dark'
           : initialEvalTheme;
     const initialDemoMode =
-      document.body.dataset.demoMode === 'gray' ? 'gray' : 'slate';
+      document.body.dataset.demoMode === 'gray'
+        ? 'gray'
+        : document.body.dataset.demoMode === 'gray-steel'
+          ? 'gray-steel'
+        : document.body.dataset.demoMode === 'steel-fusion'
+          ? 'steel-fusion'
+        : document.body.dataset.demoMode === 'steel'
+          ? 'steel'
+          : 'slate';
 
     document.body.dataset.layering = initialLayeringMode;
     document.body.dataset.evalTheme = initialEvalTheme;
@@ -56,19 +60,15 @@ if (showLayerSandbox) {
     document.body.dataset.pocView = initialPocView;
     document.body.dataset.demoMode = initialDemoMode;
 
-    type LayeringMode =
-      | 'current'
-      | 'experimental'
-      | 'oklch-slate'
-      | 'cielab-slate'
-      | 'dark-poc';
-    type DemoMode = 'slate' | 'gray';
+    type LayeringMode = 'current' | 'experimental' | 'dark-poc';
+    type DemoMode = 'slate' | 'gray' | 'gray-steel' | 'steel' | 'steel-fusion';
     type HomePage =
       | 'layering-mode'
       | 'layer-structure'
       | 'evaluation-lab'
       | 'dark-poc-report';
     type PocView = 'light' | 'dark' | 'side-by-side';
+    type PocPage = 'current' | 'experimental' | 'dark-poc';
 
     type PocColorStop = {
       hex: string;
@@ -125,6 +125,7 @@ if (showLayerSandbox) {
     };
 
     const pocLightBaseline = {
+      slate1200: { hex: '#f0f4f9', oklch: 'oklch(0.96 0.01 255)', lch: 'lch(96% 1 255)' },
       slate1100: { hex: '#f7f9fc', oklch: 'oklch(0.98 0.01 255)', lch: 'lch(98% 1 255)' },
       slate1000: { hex: '#ffffff', oklch: 'oklch(1.00 0 0)', lch: 'lch(100% 0 0)' },
       slate900: { hex: '#f0f4f9', oklch: 'oklch(0.96 0.01 255)', lch: 'lch(96% 1 255)' },
@@ -366,9 +367,10 @@ if (showLayerSandbox) {
     );
 
     const pocAnchors = {
-      slate1100: { hex: '#121824', oklch: 'oklch(0.20 0.02 255)', lch: 'lch(20% 2 255)' },
-      slate1000: { hex: '#192230', oklch: 'oklch(0.23 0.02 255)', lch: 'lch(23% 2 255)' },
-      slate900: { hex: '#35475e', oklch: 'oklch(0.35 0.03 255)', lch: 'lch(35% 3 255)' },
+      slate1200: { hex: '#0c1016', oklch: 'oklch(0.16 0.01 255)', lch: 'lch(16% 1 255)' },
+      slate1100: { hex: '#141b26', oklch: 'oklch(0.20 0.02 255)', lch: 'lch(20% 2 255)' },
+      slate1000: { hex: '#1a2231', oklch: 'oklch(0.25 0.02 255)', lch: 'lch(25% 2 255)' },
+      slate900: { hex: '#212c3f', oklch: 'oklch(0.31 0.03 255)', lch: 'lch(31% 3 255)' },
       slate200: { hex: '#b8c7da', oklch: 'oklch(0.82 0.03 255)', lch: 'lch(82% 3 255)' },
       slate50: { hex: '#e8eef7', oklch: 'oklch(0.95 0.01 255)', lch: 'lch(95% 1 255)' },
       textDefault: { hex: '#e8eef7', oklch: 'oklch(0.95 0.01 255)', lch: 'lch(95% 1 255)' },
@@ -387,11 +389,57 @@ if (showLayerSandbox) {
 
     const pocGrayAnchors = {
       ...pocAnchors,
+      slate1200: { hex: '#171B20', oklch: 'oklch(0.22 0 0)', lch: 'lch(22% 0 0)' },
+      slate1100: { hex: '#20242A', oklch: 'oklch(0.28 0 0)', lch: 'lch(28% 0 0)' },
+      slate1000: { hex: '#2E3239', oklch: 'oklch(0.36 0 0)', lch: 'lch(36% 0 0)' },
+      slate900: { hex: '#383C42', oklch: 'oklch(0.43 0 0)', lch: 'lch(43% 0 0)' },
+      slate200: { hex: '#DDDEDF', oklch: 'oklch(0.90 0 0)', lch: 'lch(90% 0 0)' },
+      slate50: { hex: '#F6F6F7', oklch: 'oklch(0.98 0 0)', lch: 'lch(98% 0 0)' },
+      textDefault: { hex: '#F6F6F7', oklch: 'oklch(0.98 0 0)', lch: 'lch(98% 0 0)' },
+      textDeemphasized: { hex: '#DDDEDF', oklch: 'oklch(0.90 0 0)', lch: 'lch(90% 0 0)' },
+      textHeading: { hex: '#EEEFF0', oklch: 'oklch(0.95 0 0)', lch: 'lch(95% 0 0)' },
+      divider: { hex: '#474B50', oklch: 'oklch(0.49 0 0)', lch: 'lch(49% 0 0)' },
+      elevationBorder: { hex: '#565A5E', oklch: 'oklch(0.57 0 0)', lch: 'lch(57% 0 0)' },
+    } as const satisfies Record<string, PocColorStop>;
+
+    const pocGraySteelAnchors = {
+      ...pocAnchors,
+      slate1200: { hex: '#0f1114', oklch: 'oklch(0.16 0.01 255)', lch: 'lch(16% 1 255)' },
       slate1100: { hex: '#161a1f', oklch: 'oklch(0.21 0.01 255)', lch: 'lch(21% 1 255)' },
       slate1000: { hex: '#1e2229', oklch: 'oklch(0.25 0.01 255)', lch: 'lch(25% 1 255)' },
       slate900: { hex: '#252b33', oklch: 'oklch(0.29 0.01 255)', lch: 'lch(29% 1 255)' },
       divider: { hex: '#525a66', oklch: 'oklch(0.48 0.01 255)', lch: 'lch(48% 1 255)' },
       elevationBorder: { hex: '#606a78', oklch: 'oklch(0.55 0.01 255)', lch: 'lch(55% 1 255)' },
+    } as const satisfies Record<string, PocColorStop>;
+
+    const pocSteelAnchors = {
+      ...pocAnchors,
+      slate1200: { hex: '#131A24', oklch: 'oklch(0.20 0.03 252)', lch: 'lch(20% 3 252)' },
+      slate1100: { hex: '#1D242F', oklch: 'oklch(0.27 0.03 252)', lch: 'lch(27% 3 252)' },
+      slate1000: { hex: '#2A313C', oklch: 'oklch(0.34 0.03 252)', lch: 'lch(34% 3 252)' },
+      slate900: { hex: '#353D49', oklch: 'oklch(0.41 0.03 252)', lch: 'lch(41% 3 252)' },
+      slate200: { hex: '#DDE2E9', oklch: 'oklch(0.91 0.01 252)', lch: 'lch(91% 1 252)' },
+      slate50: { hex: '#F3F6FA', oklch: 'oklch(0.97 0.01 252)', lch: 'lch(97% 1 252)' },
+      textDefault: { hex: '#F3F6FA', oklch: 'oklch(0.97 0.01 252)', lch: 'lch(97% 1 252)' },
+      textDeemphasized: { hex: '#DDE2E9', oklch: 'oklch(0.91 0.01 252)', lch: 'lch(91% 1 252)' },
+      textHeading: { hex: '#ECEFF4', oklch: 'oklch(0.95 0.01 252)', lch: 'lch(95% 1 252)' },
+      divider: { hex: '#454D59', oklch: 'oklch(0.48 0.03 252)', lch: 'lch(48% 3 252)' },
+      elevationBorder: { hex: '#545C68', oklch: 'oklch(0.56 0.03 252)', lch: 'lch(56% 3 252)' },
+    } as const satisfies Record<string, PocColorStop>;
+
+    const pocSteelFusionAnchors = {
+      ...pocAnchors,
+        slate1200: { hex: '#0D1014', oklch: 'oklch(0.16 0.010 252)', lch: 'lch(16% 1.0 252)' },
+      slate1100: { hex: '#14181C', oklch: 'oklch(0.205 0.010 252)', lch: 'lch(20.5% 1.0 252)' },
+      slate1000: { hex: '#1E2226', oklch: 'oklch(0.250 0.010 252)', lch: 'lch(25% 1.0 252)' },
+      slate900: { hex: '#424952', oklch: 'oklch(0.403 0.017 252)', lch: 'lch(40.3% 1.7 252)' },
+      slate200: { hex: '#D2D7DD', oklch: 'oklch(0.877 0.010 252)', lch: 'lch(87.7% 1.0 252)' },
+      slate50: { hex: '#F3F7FB', oklch: 'oklch(0.974 0.007 252)', lch: 'lch(97.4% 0.7 252)' },
+      textDefault: { hex: '#F3F7FB', oklch: 'oklch(0.974 0.007 252)', lch: 'lch(97.4% 0.7 252)' },
+      textDeemphasized: { hex: '#D2D7DD', oklch: 'oklch(0.877 0.010 252)', lch: 'lch(87.7% 1.0 252)' },
+      textHeading: { hex: '#E8ECF1', oklch: 'oklch(0.942 0.008 252)', lch: 'lch(94.2% 0.8 252)' },
+      divider: { hex: '#5D6771', oklch: 'oklch(0.508 0.020 252)', lch: 'lch(50.8% 2.0 252)' },
+      elevationBorder: { hex: '#6D7781', oklch: 'oklch(0.564 0.020 252)', lch: 'lch(56.4% 2.0 252)' },
     } as const satisfies Record<string, PocColorStop>;
 
     type MatrixRow = {
@@ -429,11 +477,36 @@ if (showLayerSandbox) {
     };
 
     const getActiveDarkAnchors = (): typeof pocAnchors => {
+      const isSteelPoc =
+        document.body.dataset.demoMode === 'steel' &&
+        document.body.dataset.layering === 'dark-poc';
+      const isSteelFusionPoc =
+        document.body.dataset.demoMode === 'steel-fusion' &&
+        document.body.dataset.layering === 'dark-poc';
+      const isGraySteelPoc =
+        document.body.dataset.demoMode === 'gray-steel' &&
+        document.body.dataset.layering === 'dark-poc';
       const isGrayPoc =
         document.body.dataset.demoMode === 'gray' &&
         document.body.dataset.layering === 'dark-poc';
 
-      return isGrayPoc ? pocGrayAnchors : pocAnchors;
+      if (isGrayPoc) {
+        return pocGrayAnchors;
+      }
+
+      if (isGraySteelPoc) {
+        return pocGraySteelAnchors;
+      }
+
+      if (isSteelPoc) {
+        return pocSteelAnchors;
+      }
+
+      if (isSteelFusionPoc) {
+        return pocSteelFusionAnchors;
+      }
+
+      return pocAnchors;
     };
 
     const buildMatrixRowsByCategory = (
@@ -442,6 +515,17 @@ if (showLayerSandbox) {
       surfaces: [
         {
           role: 'Page',
+          lightHex: pocLightBaseline.slate1200.hex,
+          darkHex: darkAnchors.slate1200.hex,
+          lightLch: pocLightBaseline.slate1200.lch,
+          darkLch: darkAnchors.slate1200.lch,
+          lightOklch: pocLightBaseline.slate1200.oklch,
+          darkOklch: darkAnchors.slate1200.oklch,
+          candidateDark: 'poc.slate.1200',
+          rationale: 'Base layer anchored darker to maintain clear separation from containers.',
+        },
+        {
+          role: 'Container base',
           lightHex: pocLightBaseline.slate1100.hex,
           darkHex: darkAnchors.slate1100.hex,
           lightLch: pocLightBaseline.slate1100.lch,
@@ -449,10 +533,10 @@ if (showLayerSandbox) {
           lightOklch: pocLightBaseline.slate1100.oklch,
           darkOklch: darkAnchors.slate1100.oklch,
           candidateDark: 'poc.slate.1100',
-          rationale: 'Base layer anchored darker to maintain clear separation from containers.',
+          rationale: 'Primary content surface lifted one step above page.',
         },
         {
-          role: 'Container base',
+          role: 'Menu',
           lightHex: pocLightBaseline.slate1000.hex,
           darkHex: darkAnchors.slate1000.hex,
           lightLch: pocLightBaseline.slate1000.lch,
@@ -460,17 +544,6 @@ if (showLayerSandbox) {
           lightOklch: pocLightBaseline.slate1000.oklch,
           darkOklch: darkAnchors.slate1000.oklch,
           candidateDark: 'poc.slate.1000',
-          rationale: 'Primary content surface lifted one step above page.',
-        },
-        {
-          role: 'Menu',
-          lightHex: pocLightBaseline.slate900.hex,
-          darkHex: darkAnchors.slate900.hex,
-          lightLch: pocLightBaseline.slate900.lch,
-          darkLch: darkAnchors.slate900.lch,
-          lightOklch: pocLightBaseline.slate900.oklch,
-          darkOklch: darkAnchors.slate900.oklch,
-          candidateDark: 'poc.slate.900',
           rationale: 'Floating layer uses stronger lift while avoiding card-like detachment.',
         },
         {
@@ -798,14 +871,16 @@ if (showLayerSandbox) {
           <section class="local-poc-card" aria-label="Candidate anchors">
             <h3>Candidate anchors</h3>
             <ul class="local-poc-anchor-list">
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1100.hex}"></span>1100 (page): ${pocLightBaseline.slate1100.oklch}</li>
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1000.hex}"></span>1000 (container): ${pocLightBaseline.slate1000.oklch}</li>
-              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate900.hex}"></span>900 (menu/overlay): ${pocLightBaseline.slate900.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1200.hex}"></span>1200 (page / L0): ${pocLightBaseline.slate1200.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1100.hex}"></span>1100 (container / L1): ${pocLightBaseline.slate1100.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate1000.hex}"></span>1000 (overlay / L2): ${pocLightBaseline.slate1000.oklch}</li>
+              <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate900.hex}"></span>900 (modal / L3): ${pocLightBaseline.slate900.oklch}</li>
               <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate200.hex}"></span>200 (deemphasized text intent): ${pocLightBaseline.slate200.oklch}</li>
               <li data-poc-mode="light"><span class="local-poc-chip" style="background:${pocLightBaseline.slate50.hex}"></span>50 (default text intent): ${pocLightBaseline.slate50.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1100.hex}"></span>1100 (page): ${activeDarkAnchors.slate1100.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1000.hex}"></span>1000 (container): ${activeDarkAnchors.slate1000.oklch}</li>
-              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate900.hex}"></span>900 (menu/overlay): ${activeDarkAnchors.slate900.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1200.hex}"></span>1200 (page / L0): ${activeDarkAnchors.slate1200.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1100.hex}"></span>1100 (container / L1): ${activeDarkAnchors.slate1100.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate1000.hex}"></span>1000 (overlay / L2): ${activeDarkAnchors.slate1000.oklch}</li>
+              <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate900.hex}"></span>900 (modal / L3): ${activeDarkAnchors.slate900.oklch}</li>
               <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate200.hex}"></span>200 (deemphasized text intent): ${activeDarkAnchors.slate200.oklch}</li>
               <li data-poc-mode="dark"><span class="local-poc-chip" style="background:${activeDarkAnchors.slate50.hex}"></span>50 (default text intent): ${activeDarkAnchors.slate50.oklch}</li>
             </ul>
@@ -1019,8 +1094,8 @@ if (showLayerSandbox) {
       const activeDarkAnchors = getActiveDarkAnchors();
 
       const light = {
-        pageBg: pocLightBaseline.slate1100.hex,
-        containerBg: pocLightBaseline.slate1000.hex,
+        pageBg: pocLightBaseline.slate1200.hex,
+        containerBg: pocLightBaseline.slate1100.hex,
         textDefault: pocLightBaseline.textDefault.hex,
         textDeemphasized: pocLightBaseline.textDeemphasized.hex,
         heading: pocLightBaseline.textHeading.hex,
@@ -1032,8 +1107,8 @@ if (showLayerSandbox) {
       };
 
       const dark = {
-        pageBg: activeDarkAnchors.slate1100.hex,
-        containerBg: activeDarkAnchors.slate1000.hex,
+        pageBg: activeDarkAnchors.slate1200.hex,
+        containerBg: activeDarkAnchors.slate1100.hex,
         textDefault: activeDarkAnchors.textDefault.hex,
         textDeemphasized: activeDarkAnchors.textDeemphasized.hex,
         heading: activeDarkAnchors.textHeading.hex,
@@ -1269,40 +1344,80 @@ if (showLayerSandbox) {
       <main class="local-layer-compare" aria-label="Dark surface layering model comparison">
         <section class="local-layer-nav" aria-label="Sandbox navigation">
           <h2>Layering Sandbox</h2>
-          <div class="local-layer-primary-tabs local-layer-main-tabs" role="tablist" aria-label="Demo mode switch">
-            <button type="button" class="local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
-            <button type="button" class="local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
-          </div>
           <div class="local-layer-primary-tabs local-layer-main-tabs" role="navigation" aria-label="Primary navigation">
-            <a class="local-layer-primary-tab" href="https://localhost:5176/?local-preview=sandbox" data-primary-page-target="home">Home</a>
+            <button type="button" class="local-layer-primary-tab" data-primary-page-target="home" aria-pressed="false">Home</button>
             <button type="button" class="local-layer-primary-tab" data-primary-page-target="palettes" aria-pressed="false">Palettes</button>
-          </div>
-          <section class="local-layer-mode-toggle" aria-label="Layering token mode control">
-            <div class="local-layer-mode-tabs" role="tablist" aria-label="Layering token mode">
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="current" aria-pressed="false">Current SKY UX</button>
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="experimental" aria-pressed="false">Experimental</button>
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="oklch-slate" aria-pressed="false">OKLCH Slate</button>
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="cielab-slate" aria-pressed="false">CIELAB Slate</button>
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="dark-poc" aria-pressed="false">OKLCH PoC</button>
-            </div>
-          </section>
-          <div class="local-layer-primary-tabs local-layer-tertiary-tabs" role="tablist" aria-label="Home sections">
-            <button type="button" class="local-layer-primary-tab" data-nav-page-target="layering-mode" aria-pressed="false">Layering mode</button>
-            <button type="button" class="local-layer-primary-tab" data-nav-page-target="layer-structure" aria-pressed="false">Layer structure</button>
-            <button type="button" class="local-layer-primary-tab" data-nav-page-target="evaluation-lab" aria-pressed="false">Evaluation Lab</button>
-            <button type="button" class="local-layer-primary-tab" data-nav-page-target="dark-poc-report" aria-pressed="false">OKLCH PoC</button>
+            <button type="button" class="local-layer-primary-tab" data-primary-page-target="pocs" aria-pressed="false">PoC's</button>
+            <button type="button" class="local-layer-primary-tab" data-primary-page-target="oklch-poc-2" aria-pressed="false">OKLCH PoC 2</button>
           </div>
         </section>
 
-        <section class="local-layer-tab-content" data-primary-page="home" data-nav-page="layering-mode">
+        <section class="local-layer-tab-content" data-primary-page="home">
+          <section class="local-layer-sandbox local-layer-sandbox-standard" aria-label="Home page">
+            <h2 class="local-layer-model-title">Home</h2>
+            <p class="local-layer-model-copy">Use Palettes to inspect ramps and PoC's to compare Current SKY UX, SKY UX updated, and OKLCH PoC with shared evaluation views.</p>
+          </section>
+        </section>
+
+        <section class="local-layer-tab-content" data-primary-page="pocs" data-nav-page="layering-mode">
+          <section class="local-layer-mode-toggle" aria-label="PoC mode control">
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="PoC pages">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="current" aria-pressed="false">Current SKY UX</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="experimental" aria-pressed="false">SKY UX updated</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="dark-poc" aria-pressed="false">OKLCH PoC</button>
+            </div>
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="Demo mode switch">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray-steel" aria-pressed="false">Gray/Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel" aria-pressed="false">Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel-fusion" aria-pressed="false">Steel Fusion Demo</button>
+            </div>
+            <div class="local-layer-filter" aria-label="PoC section filter">
+              <label class="local-layer-filter-label">
+                View
+                <select class="local-layer-filter-select" data-nav-page-select>
+                  <option value="layering-mode">Layering mode</option>
+                  <option value="layer-structure">Layer structure</option>
+                  <option value="evaluation-lab">Evaluation Lab</option>
+                  <option value="dark-poc-report">Accessibility</option>
+                </select>
+              </label>
+            </div>
+          </section>
           <section class="local-layer-sandbox local-layer-sandbox-standard" aria-label="Layering mode page">
             <h2 class="local-layer-model-title">Layering mode</h2>
-            <p class="local-layer-model-copy">Single container view that updates between current SKY UX, experimental, and strict slate-only OKLCH and CIELAB behavior.</p>
+            <p class="local-layer-model-copy">Single container view that updates between Current SKY UX, SKY UX updated, and OKLCH PoC behavior.</p>
             ${buildLayerStack('layering')}
           </section>
         </section>
 
-        <section class="local-layer-tab-content" data-primary-page="home" data-nav-page="layer-structure" hidden>
+        <section class="local-layer-tab-content" data-primary-page="pocs" data-nav-page="layer-structure" hidden>
+          <section class="local-layer-mode-toggle" aria-label="PoC mode control">
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="PoC pages">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="current" aria-pressed="false">Current SKY UX</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="experimental" aria-pressed="false">SKY UX updated</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="dark-poc" aria-pressed="false">OKLCH PoC</button>
+            </div>
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="Demo mode switch">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray-steel" aria-pressed="false">Gray/Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel" aria-pressed="false">Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel-fusion" aria-pressed="false">Steel Fusion Demo</button>
+            </div>
+            <div class="local-layer-filter" aria-label="PoC section filter">
+              <label class="local-layer-filter-label">
+                View
+                <select class="local-layer-filter-select" data-nav-page-select>
+                  <option value="layering-mode">Layering mode</option>
+                  <option value="layer-structure">Layer structure</option>
+                  <option value="evaluation-lab">Evaluation Lab</option>
+                  <option value="dark-poc-report">Accessibility</option>
+                </select>
+              </label>
+            </div>
+          </section>
           <section class="local-layer-sandbox local-layer-architecture" aria-label="Layer structure and nesting behavior">
             <h2 class="local-layer-model-title">Layer structure markup and nesting behavior</h2>
             <p class="local-layer-model-copy">Reference markup and nested behavior for L0 page, L1 container, and L2 overlay.</p>
@@ -1433,6 +1548,30 @@ if (showLayerSandbox) {
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.39 0.008 255);"></span><span class="local-palette-value-group"><span>oklch(0.39 0.008 255)</span><span class="local-palette-hex">#424549</span></span></div>
                     </div>
                   </section>
+
+                  <section class="local-palette-column" aria-label="Steel Fusion palette">
+                    <h4>Steel Fusion</h4>
+                    <div class="local-palette-stack">
+                        <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#0D1014;"></span><span class="local-palette-value-group"><span>steel_fusion.1170</span><span class="local-palette-hex">#0D1014</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#14181C;"></span><span class="local-palette-value-group"><span>steel_fusion.1100</span><span class="local-palette-hex">#14181C</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#171A1E;"></span><span class="local-palette-value-group"><span>steel_fusion.1075</span><span class="local-palette-hex">#171A1E</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#191D21;"></span><span class="local-palette-value-group"><span>steel_fusion.1050</span><span class="local-palette-hex">#191D21</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1C1F24;"></span><span class="local-palette-value-group"><span>steel_fusion.1025</span><span class="local-palette-hex">#1C1F24</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1E2226;"></span><span class="local-palette-value-group"><span>steel_fusion.1000</span><span class="local-palette-hex">#1E2226</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#424952;"></span><span class="local-palette-value-group"><span>steel_fusion.900</span><span class="local-palette-hex">#424952</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#5D6771;"></span><span class="local-palette-value-group"><span>steel_fusion.800</span><span class="local-palette-hex">#5D6771</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#6D7781;"></span><span class="local-palette-value-group"><span>steel_fusion.700</span><span class="local-palette-hex">#6D7781</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#7E8792;"></span><span class="local-palette-value-group"><span>steel_fusion.600</span><span class="local-palette-hex">#7E8792</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#929BA4;"></span><span class="local-palette-value-group"><span>steel_fusion.500</span><span class="local-palette-hex">#929BA4</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#A7AEB7;"></span><span class="local-palette-value-group"><span>steel_fusion.400</span><span class="local-palette-hex">#A7AEB7</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#BCC3CA;"></span><span class="local-palette-value-group"><span>steel_fusion.300</span><span class="local-palette-hex">#BCC3CA</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#C7CDD4;"></span><span class="local-palette-value-group"><span>steel_fusion.250</span><span class="local-palette-hex">#C7CDD4</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#D2D7DD;"></span><span class="local-palette-value-group"><span>steel_fusion.200</span><span class="local-palette-hex">#D2D7DD</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#E8ECF1;"></span><span class="local-palette-value-group"><span>steel_fusion.100</span><span class="local-palette-hex">#E8ECF1</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#F3F7FB;"></span><span class="local-palette-value-group"><span>steel_fusion.50</span><span class="local-palette-hex">#F3F7FB</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#F9FCFF;"></span><span class="local-palette-value-group"><span>steel_fusion.25</span><span class="local-palette-hex">#F9FCFF</span></span></div>
+                    </div>
+                  </section>
                 </div>
               </article>
 
@@ -1489,7 +1628,32 @@ if (showLayerSandbox) {
           </section>
         </section>
 
-        <section class="local-layer-tab-content" data-primary-page="home" data-nav-page="evaluation-lab" hidden>
+        <section class="local-layer-tab-content" data-primary-page="pocs" data-nav-page="evaluation-lab" hidden>
+          <section class="local-layer-mode-toggle" aria-label="PoC mode control">
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="PoC pages">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="current" aria-pressed="false">Current SKY UX</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="experimental" aria-pressed="false">SKY UX updated</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="dark-poc" aria-pressed="false">OKLCH PoC</button>
+            </div>
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="Demo mode switch">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray-steel" aria-pressed="false">Gray/Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel" aria-pressed="false">Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel-fusion" aria-pressed="false">Steel Fusion Demo</button>
+            </div>
+            <div class="local-layer-filter" aria-label="PoC section filter">
+              <label class="local-layer-filter-label">
+                View
+                <select class="local-layer-filter-select" data-nav-page-select>
+                  <option value="layering-mode">Layering mode</option>
+                  <option value="layer-structure">Layer structure</option>
+                  <option value="evaluation-lab">Evaluation Lab</option>
+                  <option value="dark-poc-report">Accessibility</option>
+                </select>
+              </label>
+            </div>
+          </section>
           <section class="local-layer-sandbox local-eval-lab" aria-label="Evaluation lab page">
             <header class="local-eval-controls" aria-label="Evaluation controls">
               <h2 class="local-layer-model-title">Evaluation Lab</h2>
@@ -1563,19 +1727,60 @@ if (showLayerSandbox) {
           </section>
         </section>
 
-        <section class="local-layer-tab-content" data-primary-page="home" data-nav-page="dark-poc-report" hidden>
+        <section class="local-layer-tab-content" data-primary-page="pocs" data-nav-page="dark-poc-report" hidden>
+          <section class="local-layer-mode-toggle" aria-label="PoC mode control">
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="PoC pages">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="current" aria-pressed="false">Current SKY UX</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="experimental" aria-pressed="false">SKY UX updated</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-poc-page-target="dark-poc" aria-pressed="false">OKLCH PoC</button>
+            </div>
+            <div class="local-layer-mode-tabs" role="tablist" aria-label="Demo mode switch">
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray-steel" aria-pressed="false">Gray/Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel" aria-pressed="false">Steel Demo</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel-fusion" aria-pressed="false">Steel Fusion Demo</button>
+            </div>
+            <div class="local-layer-filter" aria-label="PoC section filter">
+              <label class="local-layer-filter-label">
+                View
+                <select class="local-layer-filter-select" data-nav-page-select>
+                  <option value="layering-mode">Layering mode</option>
+                  <option value="layer-structure">Layer structure</option>
+                  <option value="evaluation-lab">Evaluation Lab</option>
+                  <option value="dark-poc-report">Accessibility</option>
+                </select>
+              </label>
+            </div>
+          </section>
           <section class="local-layer-sandbox local-layer-dark-poc" aria-label="OKLCH PoC page">
             ${buildDarkPocReport()}
+          </section>
+        </section>
+
+        <section class="local-layer-tab-content" data-primary-page="oklch-poc-2" hidden>
+          <section class="local-layer-sandbox local-layer-dark-poc" aria-label="OKLCH PoC 2 page">
+            <section class="local-layer-mode-toggle" aria-label="OKLCH PoC 2 demo mode control">
+              <div class="local-layer-mode-tabs" role="tablist" aria-label="Demo mode switch">
+                <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="slate" aria-pressed="false">Slate Demo</button>
+                <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
+                <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="gray-steel" aria-pressed="false">Gray/Steel Demo</button>
+                <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel" aria-pressed="false">Steel Demo</button>
+                <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-demo-target="steel-fusion" aria-pressed="false">Steel Fusion Demo</button>
+              </div>
+            </section>
+            <h2 class="local-layer-model-title">OKLCH PoC 2</h2>
+            <p class="local-layer-model-copy">Top-level demo using the new gray, slate, and steel palette directions. Use the demo toggle to swap surface behavior.</p>
+            ${buildLayerStack('oklch-poc-2')}
           </section>
         </section>
       </main>`;
 
     const primaryPageControls = app.querySelectorAll<HTMLElement>('[data-primary-page-target]');
     const primaryPagePanels = app.querySelectorAll<HTMLElement>('[data-primary-page]');
-    const navPageButtons = app.querySelectorAll<HTMLButtonElement>('[data-nav-page-target]');
-    const navPagePanels = app.querySelectorAll<HTMLElement>('[data-primary-page="home"][data-nav-page]');
-    const tertiaryTabs = app.querySelector<HTMLElement>('.local-layer-tertiary-tabs');
-    const layeringChildButtons = app.querySelectorAll<HTMLButtonElement>('[data-layering-child-target]');
+    const navPageSelects = app.querySelectorAll<HTMLSelectElement>('[data-nav-page-select]');
+    const navPagePanels = app.querySelectorAll<HTMLElement>('[data-primary-page="pocs"][data-nav-page]');
+    const pocPageButtons = app.querySelectorAll<HTMLButtonElement>('[data-poc-page-target]');
     const demoModeButtons = app.querySelectorAll<HTMLButtonElement>('[data-demo-target]');
     const evalThemeButtons = app.querySelectorAll<HTMLButtonElement>('[data-eval-theme-target]');
     const evalModelButtons = app.querySelectorAll<HTMLButtonElement>('[data-eval-model-target]');
@@ -1583,24 +1788,22 @@ if (showLayerSandbox) {
 
     const applyPocSurfaceOverrides = (mode: LayeringMode): void => {
       const demoMode: DemoMode =
-        document.body.dataset.demoMode === 'gray' ? 'gray' : 'slate';
+        document.body.dataset.demoMode === 'gray'
+          ? 'gray'
+          : document.body.dataset.demoMode === 'gray-steel'
+            ? 'gray-steel'
+          : document.body.dataset.demoMode === 'steel-fusion'
+            ? 'steel-fusion'
+          : document.body.dataset.demoMode === 'steel'
+            ? 'steel'
+            : 'slate';
 
       if (mode === 'dark-poc') {
         // Explicit PoC overrides only in dark-poc mode.
-        // L2/L3 are intentionally swapped here for PoC testing.
         const anchors = getActiveDarkAnchors();
-        const styles = getComputedStyle(app);
-        const menuSurface =
-          demoMode === 'gray'
-            ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-850')) ?? anchors.slate900.hex
-            : normalizeCssColor(
-                styles.getPropertyValue('--sky-theme-color-background-container-menu') ||
-                  styles.getPropertyValue('--sky-color-background-container-menu'),
-              ) ?? '#212c3f';
-
-        app.style.setProperty('--local-poc-surface-page', anchors.slate1100.hex);
-        app.style.setProperty('--local-poc-surface-depth-0', anchors.slate1000.hex);
-        app.style.setProperty('--local-poc-surface-depth-2', menuSurface);
+        app.style.setProperty('--local-poc-surface-page', anchors.slate1200.hex);
+        app.style.setProperty('--local-poc-surface-depth-0', anchors.slate1100.hex);
+        app.style.setProperty('--local-poc-surface-depth-2', anchors.slate1000.hex);
         app.style.setProperty('--local-poc-surface-depth-3', anchors.slate900.hex);
         app.style.setProperty('--local-layer-border', anchors.elevationBorder.oklch);
         app.style.setProperty('--local-poc-border-elevation', anchors.elevationBorder.oklch);
@@ -1612,42 +1815,63 @@ if (showLayerSandbox) {
       const styles = getComputedStyle(app);
       const pageSurface =
         demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-1100')) ?? '#161a1f'
-          : normalizeCssColor(
-              styles.getPropertyValue('--sky-theme-color-background-page') ||
-                styles.getPropertyValue('--sky-color-background-page'),
-            ) ?? '#141b26';
+          ? '#171B20'
+          : demoMode === 'gray-steel'
+            ? '#0f1114'
+          : demoMode === 'steel-fusion'
+	            ? '#0D1014'
+          : demoMode === 'steel'
+            ? '#131A24'
+            : '#0c1016';
       const containerSurface =
         demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-1000')) ?? '#1e2229'
-          : normalizeCssColor(
-              styles.getPropertyValue('--sky-theme-color-background-container-base') ||
-                styles.getPropertyValue('--sky-color-background-container-base'),
-            ) ?? '#1a2231';
+          ? '#20242A'
+          : demoMode === 'gray-steel'
+            ? '#161a1f'
+          : demoMode === 'steel-fusion'
+            ? '#14181C'
+          : demoMode === 'steel'
+            ? '#1D242F'
+            : '#141b26';
       const overlaySurface =
         demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-900')) ?? '#252b33'
-          : normalizeCssColor(
-              styles.getPropertyValue('--sky-theme-color-background-container-backdrop') ||
-                styles.getPropertyValue('--sky-color-background-container-backdrop'),
-            ) ?? '#212c3f';
+          ? '#2E3239'
+          : demoMode === 'gray-steel'
+            ? '#1e2229'
+          : demoMode === 'steel-fusion'
+            ? '#1E2226'
+          : demoMode === 'steel'
+            ? '#2A313C'
+            : '#1a2231';
       const currentDarkOverlaySurface =
         demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-900')) ?? '#252b33'
-          : normalizeCssColor(
-              styles.getPropertyValue('--sky-theme-color-background-container-menu') ||
-                styles.getPropertyValue('--sky-color-background-container-menu'),
-            ) ?? '#2a3950';
+          ? '#2E3239'
+          : demoMode === 'gray-steel'
+            ? '#1e2229'
+          : demoMode === 'steel-fusion'
+            ? '#1E2226'
+          : demoMode === 'steel'
+            ? '#2A313C'
+            : '#1a2231';
       const modalSurface =
         demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-850')) ?? '#30363d'
-          : normalizeCssColor(
-              styles.getPropertyValue('--sky-theme-color-background-container-menu') ||
-                styles.getPropertyValue('--sky-color-background-container-menu'),
-            ) ?? '#2a3950';
+          ? '#383C42'
+          : demoMode === 'gray-steel'
+            ? '#252b33'
+          : demoMode === 'steel-fusion'
+            ? '#424952'
+          : demoMode === 'steel'
+            ? '#353D49'
+            : '#212c3f';
       const layerBorder =
         demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-800')) ?? '#3b4047'
+          ? '#565A5E'
+          : demoMode === 'gray-steel'
+            ? '#3b4047'
+          : demoMode === 'steel-fusion'
+            ? '#5D6771'
+          : demoMode === 'steel'
+            ? '#545C68'
           : normalizeCssColor(
               styles.getPropertyValue('--sky-theme-color-border-elevation') ||
                 styles.getPropertyValue('--sky-color-border-elevation'),
@@ -1668,7 +1892,15 @@ if (showLayerSandbox) {
 
     const applyPageBackgroundColor = (mode: LayeringMode): void => {
       const demoMode: DemoMode =
-        document.body.dataset.demoMode === 'gray' ? 'gray' : 'slate';
+        document.body.dataset.demoMode === 'gray'
+          ? 'gray'
+          : document.body.dataset.demoMode === 'gray-steel'
+            ? 'gray-steel'
+          : document.body.dataset.demoMode === 'steel-fusion'
+            ? 'steel-fusion'
+          : document.body.dataset.demoMode === 'steel'
+            ? 'steel'
+            : 'slate';
       const root = app.querySelector<HTMLElement>('.local-layer-compare');
 
       if (!root) {
@@ -1676,15 +1908,18 @@ if (showLayerSandbox) {
       }
 
       const styles = getComputedStyle(app);
-      const isGrayPoc = demoMode === 'gray' && mode === 'dark-poc';
-      const pageBackground = isGrayPoc
-        ? getActiveDarkAnchors().slate1100.hex
+      const isDarkPoc = mode === 'dark-poc';
+      const pageBackground = isDarkPoc
+        ? getActiveDarkAnchors().slate1200.hex
+        : demoMode === 'gray-steel'
+          ? '#0f1114'
+        : demoMode === 'steel-fusion'
+	          ? '#0D1014'
+        : demoMode === 'steel'
+          ? '#131A24'
         : demoMode === 'gray'
-          ? normalizeCssColor(styles.getPropertyValue('--bb-color-gray-1100')) ?? '#161a1f'
-          : normalizeCssColor(
-              styles.getPropertyValue('--sky-theme-color-background-page') ||
-                styles.getPropertyValue('--sky-color-background-page'),
-            ) ?? '#141b26';
+          ? '#171B20'
+          : '#0c1016';
 
       root.style.backgroundColor = pageBackground;
     };
@@ -1699,26 +1934,12 @@ if (showLayerSandbox) {
         button.setAttribute('aria-pressed', String(isActive));
       });
 
-      layeringChildButtons.forEach((button) => {
-        if (button.dataset.layeringChildTarget === 'oklch-slate') {
-          button.textContent = mode === 'gray' ? 'OKLCH / Gray' : 'OKLCH Slate';
-        }
-
-        if (button.dataset.layeringChildTarget === 'cielab-slate') {
-          button.textContent = mode === 'gray' ? 'CIELAB / Gray' : 'CIELAB Slate';
-        }
-      });
-
       const currentLayeringMode: LayeringMode =
         document.body.dataset.layering === 'experimental'
           ? 'experimental'
-          : document.body.dataset.layering === 'oklch-slate'
-            ? 'oklch-slate'
-            : document.body.dataset.layering === 'cielab-slate'
-              ? 'cielab-slate'
-              : document.body.dataset.layering === 'dark-poc'
-                ? 'dark-poc'
-                : 'current';
+          : document.body.dataset.layering === 'dark-poc'
+            ? 'dark-poc'
+            : 'current';
 
       applyPocSurfaceOverrides(currentLayeringMode);
       applyPageBackgroundColor(currentLayeringMode);
@@ -1730,8 +1951,8 @@ if (showLayerSandbox) {
       applyPocSurfaceOverrides(mode);
       applyPageBackgroundColor(mode);
 
-      layeringChildButtons.forEach((button) => {
-        const isActive = button.dataset.layeringChildTarget === mode;
+      pocPageButtons.forEach((button) => {
+        const isActive = button.dataset.pocPageTarget === mode;
 
         button.classList.toggle('is-active', isActive);
         button.setAttribute('aria-pressed', String(isActive));
@@ -1745,15 +1966,12 @@ if (showLayerSandbox) {
         panel.hidden = panel.dataset.navPage !== page;
       });
 
-      navPageButtons.forEach((button) => {
-        const isActive = button.dataset.navPageTarget === page;
-
-        button.classList.toggle('is-active', isActive);
-        button.setAttribute('aria-pressed', String(isActive));
+      navPageSelects.forEach((select) => {
+        select.value = page;
       });
     };
 
-    const setPrimaryPage = (page: 'home' | 'palettes'): void => {
+    const setPrimaryPage = (page: 'home' | 'palettes' | 'pocs' | 'oklch-poc-2'): void => {
       primaryPagePanels.forEach((panel) => {
         panel.hidden = panel.dataset.primaryPage !== page;
       });
@@ -1776,14 +1994,11 @@ if (showLayerSandbox) {
         }
       });
 
-      if (tertiaryTabs) {
-        tertiaryTabs.hidden = page !== 'home';
-      }
     };
 
-    const setLayeringChild = (child: LayeringMode): void => {
-      layeringChildButtons.forEach((button) => {
-        const isActive = button.dataset.layeringChildTarget === child;
+    const setPocPage = (child: PocPage): void => {
+      pocPageButtons.forEach((button) => {
+        const isActive = button.dataset.pocPageTarget === child;
 
         button.classList.toggle('is-active', isActive);
         button.setAttribute('aria-pressed', String(isActive));
@@ -1851,17 +2066,17 @@ if (showLayerSandbox) {
       });
     };
 
-    navPageButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const target = button.dataset.navPageTarget;
+    navPageSelects.forEach((select) => {
+      select.addEventListener('change', () => {
+        const target = select.value;
         const page =
           target === 'layer-structure'
             ? 'layer-structure'
             : target === 'evaluation-lab'
-                ? 'evaluation-lab'
+              ? 'evaluation-lab'
               : target === 'dark-poc-report'
                 ? 'dark-poc-report'
-              : 'layering-mode';
+                : 'layering-mode';
 
         setNavPage(page);
       });
@@ -1869,26 +2084,29 @@ if (showLayerSandbox) {
 
     primaryPageControls.forEach((control) => {
       control.addEventListener('click', () => {
-        const page = control.dataset.primaryPageTarget === 'palettes' ? 'palettes' : 'home';
+        const page =
+          control.dataset.primaryPageTarget === 'palettes'
+            ? 'palettes'
+            : control.dataset.primaryPageTarget === 'pocs'
+              ? 'pocs'
+              : control.dataset.primaryPageTarget === 'oklch-poc-2'
+                ? 'oklch-poc-2'
+              : 'home';
 
         setPrimaryPage(page);
       });
     });
 
-    layeringChildButtons.forEach((button) => {
+    pocPageButtons.forEach((button) => {
       button.addEventListener('click', () => {
         const child =
-          button.dataset.layeringChildTarget === 'experimental'
+          button.dataset.pocPageTarget === 'experimental'
             ? 'experimental'
-            : button.dataset.layeringChildTarget === 'oklch-slate'
-              ? 'oklch-slate'
-              : button.dataset.layeringChildTarget === 'cielab-slate'
-                ? 'cielab-slate'
-                : button.dataset.layeringChildTarget === 'dark-poc'
-                  ? 'dark-poc'
+            : button.dataset.pocPageTarget === 'dark-poc'
+              ? 'dark-poc'
             : 'current';
 
-        setLayeringChild(child);
+        setPocPage(child);
       });
     });
 
@@ -1938,7 +2156,16 @@ if (showLayerSandbox) {
 
     demoModeButtons.forEach((button) => {
       button.addEventListener('click', () => {
-        const mode: DemoMode = button.dataset.demoTarget === 'gray' ? 'gray' : 'slate';
+        const mode: DemoMode =
+          button.dataset.demoTarget === 'gray'
+            ? 'gray'
+            : button.dataset.demoTarget === 'gray-steel'
+              ? 'gray-steel'
+            : button.dataset.demoTarget === 'steel-fusion'
+              ? 'steel-fusion'
+            : button.dataset.demoTarget === 'steel'
+              ? 'steel'
+              : 'slate';
 
         setDemoMode(mode);
       });
@@ -1947,7 +2174,7 @@ if (showLayerSandbox) {
     setPrimaryPage('home');
     setNavPage('layering-mode');
     setDemoMode(initialDemoMode);
-    setLayeringChild(initialLayeringMode);
+    setPocPage(initialLayeringMode);
     setEvalTheme(initialEvalTheme);
     setEvalModel(initialEvalModel);
     setPocView(initialPocView);
