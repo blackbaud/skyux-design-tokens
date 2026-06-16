@@ -6,8 +6,7 @@ section {
         var(--sky-color-background-container-base)
       )
       padding-box,
-    linear-gradient(var(--bb-color-slate-900), var(--bb-color-slate-700))
-      border-box !important;
+    linear-gradient(#424952, #5d6771) border-box !important;
 }
 
 .sky-dropdown-menu {
@@ -20,8 +19,7 @@ section {
         var(--sky-color-background-container-menu)
       )
       padding-box,
-    linear-gradient(var(--bb-color-slate-700), var(--bb-color-slate-700))
-      border-box !important;
+    linear-gradient(#424952, #5d6771) border-box !important;
 }
 
 .list-tabset-list-display-container {

@@ -11,7 +11,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.500}"
+        "$value": "#6493E0"
       },
       "danger": {
         "$type": "color",
@@ -81,7 +81,7 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.slate.1200}"
+        "$value": "#0D1014"
       },
       "scrim": {
         "$type": "color",
@@ -111,7 +111,7 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.500}"
+            "$value": "#6493E0"
           },
           "hover": {
             "$type": "color",
@@ -244,11 +244,11 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.1100}"
+          "$value": "#1C1F24"
         },
         "menu": {
           "$type": "color",
-          "$value": "{bb.color.slate.1000}"
+          "$value": "#252A2E"
         },
         "danger": {
           "$type": "color",
@@ -312,7 +312,7 @@
       "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.slate.1100}"
+          "$value": "#1C1F24"
         },
         "hover": {
           "$type": "color",
