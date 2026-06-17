@@ -406,6 +406,10 @@
             "80": {
               "$type": "color",
               "$value": "rgba(#BAC5d8, 0.80)"
+            },
+            "90": {
+              "$type": "color",
+              "$value": "rgba(#BAC5d8, 0.90)"
             }
           },
           "600": {

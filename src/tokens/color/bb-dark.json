@@ -27,7 +27,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.blue.50}"
+        "$value": "{bb.color.slate.200}"
       },
       "action_contrast": {
         "$type": "color",
