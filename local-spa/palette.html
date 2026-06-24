@@ -81,26 +81,6 @@
       overflow: auto;
     }
     .palette-section h2 { margin: 0 0 1rem; font-size: 1.125rem; }
-    .palette-section.is-wide {
-      grid-column: 1 / -1;
-    }
-    .blue-palette-grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-    .blue-palette-card {
-      border: 1px solid var(--sky-color-border-divider);
-      border-radius: 8px;
-      padding: 0.75rem;
-      background: color-mix(in oklab, var(--sky-color-background-container-base) 86%, black 14%);
-    }
-    .blue-palette-card h3 {
-      margin: 0 0 0.6rem;
-      font-size: 0.85rem;
-      color: var(--sky-color-text-heading);
-      letter-spacing: 0.01em;
-    }
     /* Vertical ramp: each entry is a single row */
     .color-ramp {
       display: flex;
@@ -111,7 +91,7 @@
     }
     .color-row {
       display: grid;
-      grid-template-columns: 48px 1fr auto auto auto auto;
+      grid-template-columns: 48px 1fr auto auto auto;
       align-items: center;
       gap: 0.75rem;
       padding: 0.5rem 0.75rem;
@@ -139,12 +119,6 @@
       white-space: nowrap;
     }
     .color-lab {
-      font-family: monospace;
-      font-size: 0.7rem;
-      color: var(--sky-color-text-deemphasized);
-      white-space: nowrap;
-    }
-    .color-oklch {
       font-family: monospace;
       font-size: 0.7rem;
       color: var(--sky-color-text-deemphasized);
@@ -183,21 +157,6 @@
       border: 1px solid rgb(255 255 255 / 8%);
       flex: none;
     }
-    @media (max-width: 900px) {
-      .color-row {
-        grid-template-columns: 48px 1fr;
-        align-items: start;
-      }
-      .color-hex,
-      .color-lab,
-      .color-oklch,
-      .color-variations {
-        grid-column: 2;
-      }
-      .blue-palette-grid {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
 <body class="sky-theme-modern sky-theme-brand-base sky-theme-brand-blackbaud sky-theme-mode-dark">
@@ -224,7 +183,6 @@
             <div class="color-name"><strong>Gray.1100<span class="native-mark">&dagger;</span></strong><span>Page</span></div>
             <span class="color-hex">#161a1f</span>
             <span class="color-lab">L* 9.8, a* -1.2, b* -3.1</span>
-            <span class="color-oklch"></span>
             <div class="color-variations"></div>
           </div>
           <div class="color-row">
@@ -232,7 +190,6 @@
             <div class="color-name"><strong>Gray.1000<span class="native-mark">&dagger;</span></strong><span>Base / Dimmed token</span></div>
             <span class="color-hex">#1e2229</span>
             <span class="color-lab">L* 13.2, a* -1.1, b* -2.8</span>
-            <span class="color-oklch"></span>
             <div class="color-variations">
               <div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(225,10%,12%)"></div>L 11 a*b* neutral</div>
               <div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(225,8%,14%)"></div>L 14 slightly cooler</div>
@@ -243,7 +200,6 @@
             <div class="color-name"><strong>Gray.975</strong><span>Experimental container</span></div>
             <span class="color-hex">#20242b</span>
             <span class="color-lab">L* 14.4, a* -1.2, b* -2.9</span>
-            <span class="color-oklch"></span>
             <div class="color-variations">
               <div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(225,12%,13%)"></div>L 13 reduced</div>
               <div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(225,10%,15%)"></div>L 15 increased</div>
@@ -254,7 +210,6 @@
             <div class="color-name"><strong>Gray.950</strong><span>Experimental dimmed</span></div>
             <span class="color-hex">#21262e</span>
             <span class="color-lab">L* 15.1, a* -1.3, b* -2.8</span>
-            <span class="color-oklch"></span>
             <div class="color-variations"></div>
           </div>
           <div class="color-row">
@@ -262,7 +217,6 @@
             <div class="color-name"><strong>Gray.925</strong><span>Experimental backdrop</span></div>
             <span class="color-hex">#232930</span>
             <span class="color-lab">L* 15.8, a* -1.3, b* -2.7</span>
-            <span class="color-oklch"></span>
             <div class="color-variations"></div>
           </div>
           <div class="color-row">
@@ -270,7 +224,6 @@
             <div class="color-name"><strong>Gray.900<span class="native-mark">&dagger;</span></strong><span>Backdrop / Menu token</span></div>
             <span class="color-hex">#252b33</span>
             <span class="color-lab">L* 16.5, a* -1.3, b* -2.6</span>
-            <span class="color-oklch"></span>
             <div class="color-variations"></div>
           </div>
           <div class="color-row">
@@ -278,7 +231,6 @@
             <div class="color-name"><strong>Gray.850<span class="native-mark">&dagger;</span></strong><span>L3 modal</span></div>
             <span class="color-hex">#30363d</span>
             <span class="color-lab">L* 21.3, a* -1.4, b* -2.3</span>
-            <span class="color-oklch"></span>
             <div class="color-variations">
               <div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(225,8%,19%)"></div>L 19 darker</div>
               <div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(225,8%,23%)"></div>L 23 lighter</div>
@@ -289,202 +241,77 @@
             <div class="color-name"><strong>Gray.800<span class="native-mark">&dagger;</span></strong></div>
             <span class="color-hex">#3b4047</span>
             <span class="color-lab">L* 26.9, a* -0.3, b* -5.0</span>
-            <span class="color-oklch"></span>
             <div class="color-variations"></div>
           </div>
-          <div class="color-row"><div class="color-chip" style="background:#51555c"></div><div class="color-name"><strong>Gray.700<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#51555c</span><span class="color-lab">L* 36.0, a* 0.0, b* -4.6</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#666b70"></div><div class="color-name"><strong>Gray.600<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#666b70</span><span class="color-lab">L* 45.0, a* -0.8, b* -3.5</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#85888d"></div><div class="color-name"><strong>Gray.500<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#85888d</span><span class="color-lab">L* 56.6, a* -0.1, b* -3.1</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#a3a6a9"></div><div class="color-name"><strong>Gray.400<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#a3a6a9</span><span class="color-lab">L* 68.0, a* -0.5, b* -1.9</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#c2c4c6"></div><div class="color-name"><strong>Gray.300<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#c2c4c6</span><span class="color-lab">L* 79.1, a* -0.3, b* -1.2</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#d5d6d8"></div><div class="color-name"><strong>Gray.250<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#d5d6d8</span><span class="color-lab">L* 85.6, a* 0.0, b* -1.1</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#e0e1e2"></div><div class="color-name"><strong>Gray.200<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#e0e1e2</span><span class="color-lab">L* 89.5, a* -0.2, b* -0.6</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#eeeeef"></div><div class="color-name"><strong>Gray.100<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#eeeeef</span><span class="color-lab">L* 94.1, a* 0.2, b* -0.5</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#f4f4f5"></div><div class="color-name"><strong>Gray.50<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#f4f4f5</span><span class="color-lab">L* 96.2, a* 0.2, b* -0.5</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#fbfbfb"></div><div class="color-name"><strong>Gray.25<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#fbfbfb</span><span class="color-lab">L* 98.6, a* -0.0, b* 0.0</span><span class="color-oklch"></span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#51555c"></div><div class="color-name"><strong>Gray.700<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#51555c</span><span class="color-lab">L* 36.0, a* 0.0, b* -4.6</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#666b70"></div><div class="color-name"><strong>Gray.600<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#666b70</span><span class="color-lab">L* 45.0, a* -0.8, b* -3.5</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#85888d"></div><div class="color-name"><strong>Gray.500<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#85888d</span><span class="color-lab">L* 56.6, a* -0.1, b* -3.1</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#a3a6a9"></div><div class="color-name"><strong>Gray.400<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#a3a6a9</span><span class="color-lab">L* 68.0, a* -0.5, b* -1.9</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#c2c4c6"></div><div class="color-name"><strong>Gray.300<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#c2c4c6</span><span class="color-lab">L* 79.1, a* -0.3, b* -1.2</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#d5d6d8"></div><div class="color-name"><strong>Gray.250<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#d5d6d8</span><span class="color-lab">L* 85.6, a* 0.0, b* -1.1</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#e0e1e2"></div><div class="color-name"><strong>Gray.200<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#e0e1e2</span><span class="color-lab">L* 89.5, a* -0.2, b* -0.6</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#eeeeef"></div><div class="color-name"><strong>Gray.100<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#eeeeef</span><span class="color-lab">L* 94.1, a* 0.2, b* -0.5</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#f4f4f5"></div><div class="color-name"><strong>Gray.50<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#f4f4f5</span><span class="color-lab">L* 96.2, a* 0.2, b* -0.5</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#fbfbfb"></div><div class="color-name"><strong>Gray.25<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#fbfbfb</span><span class="color-lab">L* 98.6, a* -0.0, b* 0.0</span><div class="color-variations"></div></div>
         </div>
         <p class="token-footnote">&dagger; SKY UX native base token. Unmarked steps are local experimental additions.</p>
       </section>
 
       <section class="palette-section sky-box">
-        <h2>Slate Ramp</h2>
+        <h2>Steel Ramp</h2>
         <div class="color-ramp">
-          <div class="color-row"><div class="color-chip" style="background:#0f131a"></div><div class="color-name"><strong>Slate.1175</strong></div><span class="color-hex">#0f131a</span><span class="color-lab">L* 7.6, a* -2.8, b* -5.3</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#11161e"></div><div class="color-name"><strong>Slate.1150</strong></div><span class="color-hex">#11161e</span><span class="color-lab">L* 8.9, a* -2.6, b* -5.1</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#131822"></div><div class="color-name"><strong>Slate.1125</strong></div><span class="color-hex">#131822</span><span class="color-lab">L* 9.7, a* -2.4, b* -4.9</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#171e2b"></div><div class="color-name"><strong>Slate.1050</strong><span>Experimental</span></div><span class="color-hex">#171e2b</span><span class="color-lab">L* 11.8, a* -2.1, b* -4.5</span><span class="color-oklch"></span><div class="color-variations"><div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(210,20%,10%)"></div>L 10 darker</div><div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(210,18%,13%)"></div>L 13 lighter</div></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#1c2434"></div><div class="color-name"><strong>Slate.975</strong></div><span class="color-hex">#1c2434</span><span class="color-lab">L* 14.1, a* -2.2, b* -3.9</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#1d2738"></div><div class="color-name"><strong>Slate.950</strong></div><span class="color-hex">#1d2738</span><span class="color-lab">L* 14.9, a* -2.3, b* -3.8</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#1f293b"></div><div class="color-name"><strong>Slate.925</strong></div><span class="color-hex">#1f293b</span><span class="color-lab">L* 15.8, a* -2.4, b* -3.7</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#2a384f"></div><div class="color-name"><strong>Slate.850<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#2a384f</span><span class="color-lab">L* 21.2, a* -2.9, b* -4.8</span><span class="color-oklch"></span><div class="color-variations"><div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(210,28%,19%)"></div>L 19 darker</div><div class="lab-variation"><div class="lab-variation-chip" style="background:hsl(210,26%,23%)"></div>L 23 lighter</div></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#32435e"></div><div class="color-name"><strong>Slate.800<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#32435e</span><span class="color-lab">L* 28.1, a* 1.4, b* -18.1</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#42597e"></div><div class="color-name"><strong>Slate.700<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#42597e</span><span class="color-lab">L* 37.5, a* 2.1, b* -23.5</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#536f9d"></div><div class="color-name"><strong>Slate.600<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#536f9d</span><span class="color-lab">L* 46.5, a* 2.8, b* -28.1</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#7289af"></div><div class="color-name"><strong>Slate.500<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#7289af</span><span class="color-lab">L* 56.6, a* 1.2, b* -22.7</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#98a9c4"></div><div class="color-name"><strong>Slate.400<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#98a9c4</span><span class="color-lab">L* 68.8, a* -0.0, b* -15.8</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#bac5d8"></div><div class="color-name"><strong>Slate.300<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#bac5d8</span><span class="color-lab">L* 79.2, a* 0.1, b* -10.7</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#cad2e1"></div><div class="color-name"><strong>Slate.250<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#cad2e1</span><span class="color-lab">L* 84.0, a* 0.2, b* -8.3</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#d9dfe9"></div><div class="color-name"><strong>Slate.200<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#d9dfe9</span><span class="color-lab">L* 88.6, a* -0.1, b* -5.6</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#f1f3f7"></div><div class="color-name"><strong>Slate.100<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#f1f3f7</span><span class="color-lab">L* 95.8, a* 0.1, b* -2.2</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#f6f8fa"></div><div class="color-name"><strong>Slate.50<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#f6f8fa</span><span class="color-lab">L* 97.5, a* -0.3, b* -1.2</span><span class="color-oklch"></span><div class="color-variations"></div></div>
-          <div class="color-row"><div class="color-chip" style="background:#fcfdfd"></div><div class="color-name"><strong>Slate.25<span class="native-mark">&dagger;</span></strong></div><span class="color-hex">#fcfdfd</span><span class="color-lab">L* 99.2, a* -0.3, b* -0.1</span><span class="color-oklch"></span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#131A24"></div><div class="color-name"><strong>Steel.1200</strong></div><span class="color-hex">#131A24</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#1D242F"></div><div class="color-name"><strong>Steel.1100</strong></div><span class="color-hex">#1D242F</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#212834"></div><div class="color-name"><strong>Steel.1075</strong></div><span class="color-hex">#212834</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#242B36"></div><div class="color-name"><strong>Steel.1050</strong></div><span class="color-hex">#242B36</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#272E39"></div><div class="color-name"><strong>Steel.1025</strong></div><span class="color-hex">#272E39</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#2A313C"></div><div class="color-name"><strong>Steel.1000</strong></div><span class="color-hex">#2A313C</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#353D49"></div><div class="color-name"><strong>Steel.900</strong></div><span class="color-hex">#353D49</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#3C4450"></div><div class="color-name"><strong>Steel.850</strong></div><span class="color-hex">#3C4450</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#454D59"></div><div class="color-name"><strong>Steel.800</strong></div><span class="color-hex">#454D59</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#545C68"></div><div class="color-name"><strong>Steel.700</strong></div><span class="color-hex">#545C68</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#666B70"></div><div class="color-name"><strong>Steel.600</strong></div><span class="color-hex">#666B70</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#828C9A"></div><div class="color-name"><strong>Steel.500</strong></div><span class="color-hex">#828C9A</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row" style="outline:2px solid #A2ABB7"><div class="color-chip" style="background:#A2ABB7"></div><div class="color-name"><strong>Steel.400</strong><span>Deemphasized text</span></div><span class="color-hex">#A2ABB7</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#B4BCC6"></div><div class="color-name"><strong>Steel.350</strong></div><span class="color-hex">#B4BCC6</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#C4CBD4"></div><div class="color-name"><strong>Steel.300</strong></div><span class="color-hex">#C4CBD4</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#D2D8E0"></div><div class="color-name"><strong>Steel.250</strong></div><span class="color-hex">#D2D8E0</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row" style="outline:2px solid #DDE2E9"><div class="color-chip" style="background:#DDE2E9"></div><div class="color-name"><strong>Steel.200</strong><span>Default / Body text</span></div><span class="color-hex">#DDE2E9</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#ECEFF4"></div><div class="color-name"><strong>Steel.100</strong></div><span class="color-hex">#ECEFF4</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row" style="outline:2px solid #F3F6FA"><div class="color-chip" style="background:#F3F6FA"></div><div class="color-name"><strong>Steel.50</strong><span>Heading text</span></div><span class="color-hex">#F3F6FA</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#FAFCFE"></div><div class="color-name"><strong>Steel.25</strong></div><span class="color-hex">#FAFCFE</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
         </div>
-        <p class="token-footnote">&dagger; SKY UX native base token. Unmarked steps are local experimental additions.</p>
+        <p class="token-footnote">OKLCH Steel palette. Annotated steps indicate semantic text role assignments.</p>
       </section>
 
-      <section class="palette-section sky-box is-wide">
-        <h2>Blue Palettes</h2>
-        <div class="blue-palette-grid">
-          <article class="blue-palette-card">
-            <h3>SKY UX (Native Hex)</h3>
-            <div class="color-ramp">
-              <div class="color-row"><div class="color-chip" style="background:#0D2040"></div><div class="color-name"><strong>Blue.1000</strong><span>Native token ramp</span></div><span class="color-hex">#0D2040</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#112B55"></div><div class="color-name"><strong>Blue.900</strong><span>Native token ramp</span></div><span class="color-hex">#112B55</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#1A4080"></div><div class="color-name"><strong>Blue.800</strong><span>Native token ramp</span></div><span class="color-hex">#1A4080</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#2256AA"></div><div class="color-name"><strong>Blue.700</strong><span>Native token ramp</span></div><span class="color-hex">#2256AA</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#2B6BD5"></div><div class="color-name"><strong>Blue.600</strong><span>Native token ramp</span></div><span class="color-hex">#2B6BD5</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#5589DD"></div><div class="color-name"><strong>Blue.500</strong><span>Native token ramp</span></div><span class="color-hex">#5589DD</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#80A6E6"></div><div class="color-name"><strong>Blue.400</strong><span>Native token ramp</span></div><span class="color-hex">#80A6E6</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#96B5EA"></div><div class="color-name"><strong>Blue.350</strong><span>Native token ramp</span></div><span class="color-hex">#96B5EA</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:#AAC4EE"></div><div class="color-name"><strong>Blue.300</strong><span>Native token ramp</span></div><span class="color-hex">#AAC4EE</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-            </div>
-          </article>
-
-          <article class="blue-palette-card">
-            <h3>CIELAB (lch)</h3>
-            <div class="color-ramp">
-              <div class="color-row"><div class="color-chip" style="background:lch(14.0% 20.0 284)"></div><div class="color-name"><strong>Blue.1000</strong><span>lch(14.0% 20.0 284)</span></div><span class="color-hex">#0D2040</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(19.0% 27.0 284)"></div><div class="color-name"><strong>Blue.900</strong><span>lch(19.0% 27.0 284)</span></div><span class="color-hex">#112B55</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(28.0% 39.0 285)"></div><div class="color-name"><strong>Blue.800</strong><span>lch(28.0% 39.0 285)</span></div><span class="color-hex">#1A4080</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(37.0% 50.0 286)"></div><div class="color-name"><strong>Blue.700</strong><span>lch(37.0% 50.0 286)</span></div><span class="color-hex">#2256AA</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(47.0% 58.0 286)"></div><div class="color-name"><strong>Blue.600</strong><span>lch(47.0% 58.0 286)</span></div><span class="color-hex">#2B6BD5</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(57.0% 50.0 282)"></div><div class="color-name"><strong>Blue.500</strong><span>lch(57.0% 50.0 282)</span></div><span class="color-hex">#5589DD</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(67.0% 38.0 278)"></div><div class="color-name"><strong>Blue.400</strong><span>lch(67.0% 38.0 278)</span></div><span class="color-hex">#80A6E6</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(73.0% 31.0 276)"></div><div class="color-name"><strong>Blue.350</strong><span>lch(73.0% 31.0 276)</span></div><span class="color-hex">#96B5EA</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:lch(79.0% 25.0 274)"></div><div class="color-name"><strong>Blue.300</strong><span>lch(79.0% 25.0 274)</span></div><span class="color-hex">#AAC4EE</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-            </div>
-          </article>
-
-          <article class="blue-palette-card">
-            <h3>OKLCH</h3>
-            <div class="color-ramp">
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.248 0.066 260.18)"></div><div class="color-name"><strong>Blue.1000</strong><span>oklch(0.248 0.066 260.18)</span></div><span class="color-hex">#0D2040</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.295 0.083 259.60)"></div><div class="color-name"><strong>Blue.900</strong><span>oklch(0.295 0.083 259.60)</span></div><span class="color-hex">#112B55</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.383 0.117 260.21)"></div><div class="color-name"><strong>Blue.800</strong><span>oklch(0.383 0.117 260.21)</span></div><span class="color-hex">#1A4080</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.467 0.146 259.72)"></div><div class="color-name"><strong>Blue.700</strong><span>oklch(0.467 0.146 259.72)</span></div><span class="color-hex">#2256AA</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.51 0.165 265)"></div><div class="color-name"><strong>Blue.600</strong><span>oklch(0.51 0.165 265)</span></div><span class="color-hex">#2B6BD5</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.60 0.145 265)"></div><div class="color-name"><strong>Blue.500</strong><span>oklch(0.60 0.145 265)</span></div><span class="color-hex">#5589DD</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.69 0.120 265)"></div><div class="color-name"><strong>Blue.400</strong><span>oklch(0.69 0.120 265)</span></div><span class="color-hex">#80A6E6</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.74 0.105 265)"></div><div class="color-name"><strong>Blue.350</strong><span>oklch(0.74 0.105 265)</span></div><span class="color-hex">#96B5EA</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-              <div class="color-row"><div class="color-chip" style="background:oklch(0.78 0.090 265)"></div><div class="color-name"><strong>Blue.300</strong><span>oklch(0.78 0.090 265)</span></div><span class="color-hex">#AAC4EE</span><span class="color-lab"></span><span class="color-oklch"></span><div class="color-variations"></div></div>
-            </div>
-          </article>
+      <section class="palette-section sky-box">
+        <h2>Steel Fusion Ramp</h2>
+        <div class="color-ramp">
+          <div class="color-row"><div class="color-chip" style="background:#0A0E12"></div><div class="color-name"><strong>SteelFusion.1200</strong></div><span class="color-hex">#0A0E12</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#0D1014"></div><div class="color-name"><strong>SteelFusion.1175</strong></div><span class="color-hex">#0D1014</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#1C1F24"></div><div class="color-name"><strong>SteelFusion.1100</strong></div><span class="color-hex">#1C1F24</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#171A1E"></div><div class="color-name"><strong>SteelFusion.1075</strong></div><span class="color-hex">#171A1E</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#191D21"></div><div class="color-name"><strong>SteelFusion.1050</strong></div><span class="color-hex">#191D21</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#1C1F24"></div><div class="color-name"><strong>SteelFusion.1025</strong></div><span class="color-hex">#1C1F24</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#1E2226"></div><div class="color-name"><strong>SteelFusion.1000</strong></div><span class="color-hex">#1E2226</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#252A2E"></div><div class="color-name"><strong>SteelFusion.970</strong></div><span class="color-hex">#252A2E</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#424952"></div><div class="color-name"><strong>SteelFusion.900</strong></div><span class="color-hex">#424952</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#5D6771"></div><div class="color-name"><strong>SteelFusion.800</strong></div><span class="color-hex">#5D6771</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#6D7781"></div><div class="color-name"><strong>SteelFusion.700</strong></div><span class="color-hex">#6D7781</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#7E8792"></div><div class="color-name"><strong>SteelFusion.600</strong></div><span class="color-hex">#7E8792</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row" style="outline:2px solid #9CA4AE"><div class="color-chip" style="background:#9CA4AE"></div><div class="color-name"><strong>SteelFusion.550</strong><span>Deemphasized text</span></div><span class="color-hex">#9CA4AE</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#929BA4"></div><div class="color-name"><strong>SteelFusion.500</strong></div><span class="color-hex">#929BA4</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#A7AEB7"></div><div class="color-name"><strong>SteelFusion.400</strong></div><span class="color-hex">#A7AEB7</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#BCC3CA"></div><div class="color-name"><strong>SteelFusion.300</strong></div><span class="color-hex">#BCC3CA</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row" style="outline:2px solid #C7CDD4"><div class="color-chip" style="background:#C7CDD4"></div><div class="color-name"><strong>SteelFusion.250</strong><span>Default / Body text</span></div><span class="color-hex">#C7CDD4</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#D2D7DD"></div><div class="color-name"><strong>SteelFusion.200</strong></div><span class="color-hex">#D2D7DD</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#E8ECF1"></div><div class="color-name"><strong>SteelFusion.100</strong></div><span class="color-hex">#E8ECF1</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row" style="outline:2px solid #F3F7FB"><div class="color-chip" style="background:#F3F7FB"></div><div class="color-name"><strong>SteelFusion.50</strong><span>Heading text</span></div><span class="color-hex">#F3F7FB</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
+          <div class="color-row"><div class="color-chip" style="background:#F9FCFF"></div><div class="color-name"><strong>SteelFusion.25</strong></div><span class="color-hex">#F9FCFF</span><span class="color-lab">&mdash;</span><div class="color-variations"></div></div>
         </div>
-        <p class="token-footnote">CIELAB values now use explicit lch() syntax; SKY UX and OKLCH are shown side-by-side for direct visual comparison.</p>
+        <p class="token-footnote">Steel Fusion palette. Annotated steps indicate semantic text role assignments.</p>
       </section>
     </div>
   </main>
-
-  <script>
-    function toLinearSrgb(channel) {
-      const c = channel / 255;
-      return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
-    }
-
-    function hexToRgb(hex) {
-      const value = hex.replace('#', '').trim();
-      if (value.length !== 6) {
-        return null;
-      }
-      return {
-        r: parseInt(value.slice(0, 2), 16),
-        g: parseInt(value.slice(2, 4), 16),
-        b: parseInt(value.slice(4, 6), 16)
-      };
-    }
-
-    function rgbToLab(rgb) {
-      const r = toLinearSrgb(rgb.r);
-      const g = toLinearSrgb(rgb.g);
-      const b = toLinearSrgb(rgb.b);
-
-      const x = (0.4124564 * r + 0.3575761 * g + 0.1804375 * b) * 100;
-      const y = (0.2126729 * r + 0.7151522 * g + 0.072175 * b) * 100;
-      const z = (0.0193339 * r + 0.119192 * g + 0.9503041 * b) * 100;
-
-      const xn = 95.047;
-      const yn = 100.0;
-      const zn = 108.883;
-
-      const fx = x / xn > 0.008856 ? Math.cbrt(x / xn) : (7.787 * (x / xn)) + 16 / 116;
-      const fy = y / yn > 0.008856 ? Math.cbrt(y / yn) : (7.787 * (y / yn)) + 16 / 116;
-      const fz = z / zn > 0.008856 ? Math.cbrt(z / zn) : (7.787 * (z / zn)) + 16 / 116;
-
-      return {
-        l: (116 * fy) - 16,
-        a: 500 * (fx - fy),
-        b: 200 * (fy - fz)
-      };
-    }
-
-    function rgbToOklch(rgb) {
-      const r = toLinearSrgb(rgb.r);
-      const g = toLinearSrgb(rgb.g);
-      const b = toLinearSrgb(rgb.b);
-
-      const l = 0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b;
-      const m = 0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b;
-      const s = 0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b;
-
-      const lRoot = Math.cbrt(l);
-      const mRoot = Math.cbrt(m);
-      const sRoot = Math.cbrt(s);
-
-      const okl = 0.2104542553 * lRoot + 0.793617785 * mRoot - 0.0040720468 * sRoot;
-      const oka = 1.9779984951 * lRoot - 2.428592205 * mRoot + 0.4505937099 * sRoot;
-      const okb = 0.0259040371 * lRoot + 0.7827717662 * mRoot - 0.808675766 * sRoot;
-
-      const c = Math.sqrt((oka * oka) + (okb * okb));
-      let h = Math.atan2(okb, oka) * (180 / Math.PI);
-      if (h < 0) {
-        h += 360;
-      }
-
-      return { l: okl, c, h };
-    }
-
-    function normalizeHex(hex) {
-      return `#${hex.replace('#', '').trim().toUpperCase()}`;
-    }
-
-    document.querySelectorAll('.color-row').forEach((row) => {
-      const hexNode = row.querySelector('.color-hex');
-      if (!hexNode) {
-        return;
-      }
-
-      const hexRaw = hexNode.textContent.trim();
-      const rgb = hexToRgb(hexRaw);
-      if (!rgb) {
-        return;
-      }
-
-      const labNode = row.querySelector('.color-lab');
-      const oklchNode = row.querySelector('.color-oklch');
-
-      const normalizedHex = normalizeHex(hexRaw);
-      hexNode.textContent = `HEX ${normalizedHex}`;
-
-      if (labNode) {
-        const lab = rgbToLab(rgb);
-        labNode.textContent = `CIELAB L* ${lab.l.toFixed(1)}, a* ${lab.a.toFixed(1)}, b* ${lab.b.toFixed(1)}`;
-      }
-
-      if (oklchNode) {
-        const oklch = rgbToOklch(rgb);
-        oklchNode.textContent = `OKLCH ${oklch.l.toFixed(3)} ${oklch.c.toFixed(3)} ${oklch.h.toFixed(1)}deg`;
-      }
-    });
-  </script>
 </body>
 </html>

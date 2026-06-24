@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKY UX Palette PoC Evaluator</title>
+
+  <link rel="stylesheet" href="https://localhost:5176/dist/bundles/base.css">
+  <link rel="stylesheet" href="https://localhost:5176/dist/bundles/blackbaud.css">
+  <link rel="stylesheet" href="./extra-styles.css">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --poc-bg-l0: #131A24;
+      --poc-bg-l1: #1d242f;
+      --poc-bg-l2: #2a313c;
+      --poc-border-base: #435166;
+      --poc-border-muted: #3b475a;
+      --poc-border-gradient-start: #4d5d76;
+      --poc-border-gradient-end: #3f4d64;
+
+      --poc-text-heading: #ecf1f7;
+      --poc-text-default: #d1d9e7;
+      --poc-text-deemphasized: #98a6bb;
+      --poc-text-quiet: #7f8fa8;
+
+      --poc-link-default: var(--bb-color-blue-375, #79ADF1);
+      --poc-link-hover: var(--bb-color-blue-375, #79ADF1);
+      --poc-link-visited: var(--bb-color-blue-375, #79ADF1);
+      --poc-link-decoration-default: underline;
+
+      --poc-focus-ring: #8fc5ff;
+      --poc-success: #45c78c;
+      --poc-warning: #ffd27a;
+      --poc-danger: #ff8c8c;
+      --sky-theme-border-radius-s: 0.125rem;
+      --sky-theme-border-radius-m: 0.25rem;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--poc-bg-l0);
+      color: var(--poc-text-default);
+      font-family: var(--bb-font-blkb_sans-family, "Segoe UI", sans-serif);
+      line-height: 1.4;
+    }
+
+    .poc-app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .poc-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--poc-border-base);
+      background: color-mix(in srgb, var(--poc-bg-l1) 90%, black 10%);
+      padding: 12px 16px;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+
+    .poc-toolbar-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .poc-toolbar label {
+      font-size: 12px;
+      color: var(--poc-text-quiet);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+
+    .poc-toolbar select,
+    .poc-toolbar button {
+      background: var(--poc-bg-l2);
+      color: var(--poc-text-default);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-s, 0.125rem);
+      padding: 8px 10px;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+
+    .poc-toolbar button {
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      cursor: pointer;
+    }
+
+    .poc-toolbar button:hover,
+    .poc-toolbar select:hover {
+      border-color: var(--poc-focus-ring);
+    }
+
+    .poc-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--poc-text-deemphasized);
+    }
+
+    .poc-shell {
+      display: grid;
+      grid-template-columns: 230px 1fr 280px;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .poc-omnibar {
+      background: var(--poc-bg-l1);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 12px;
+      align-self: start;
+      position: sticky;
+      top: 88px;
+    }
+
+    .poc-omnibar-title {
+      margin: 0 0 8px;
+      font-size: 12px;
+      color: var(--poc-text-quiet);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .poc-nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .poc-nav-item {
+      border: 1px solid transparent;
+      border-radius: var(--sky-theme-border-radius-s, 0.125rem);
+      color: var(--poc-text-deemphasized);
+      text-decoration: none;
+      padding: 8px 10px;
+      display: block;
+      font-size: 13px;
+    }
+
+    .poc-nav-item:hover {
+      border-color: var(--poc-border-base);
+      color: var(--poc-text-default);
+      background: color-mix(in srgb, var(--poc-bg-l2) 82%, black 18%);
+    }
+
+    .poc-nav-item.is-active {
+      border-color: var(--poc-focus-ring);
+      color: var(--poc-text-heading);
+      background: color-mix(in srgb, var(--poc-bg-l2) 92%, white 8%);
+      font-weight: 600;
+    }
+
+    .poc-main {
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .sky-page {
+      background: var(--poc-bg-l1);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 16px;
+      min-width: 0;
+    }
+
+    .sky-heading-1 {
+      margin: 0 0 10px;
+      color: var(--poc-text-heading);
+      font-size: clamp(22px, 2.6vw, 30px);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .poc-kicker {
+      margin: 0 0 14px;
+      color: var(--poc-text-deemphasized);
+      font-size: 14px;
+    }
+
+    .poc-surface-l2 {
+      background: var(--poc-bg-l2);
+      border: 1px solid transparent;
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 14px;
+      position: relative;
+    }
+
+    .poc-surface-l2::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      border: 1px solid transparent;
+      background: linear-gradient(180deg, var(--poc-border-gradient-start), var(--poc-border-gradient-end)) border-box;
+      -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .poc-page { display: none; }
+    .poc-page.is-active { display: block; }
+
+    .sky-theme-font-heading-1,
+    .sky-theme-font-heading-2,
+    .sky-theme-font-heading-3,
+    .sky-theme-font-heading-4,
+    .sky-theme-font-heading-5,
+    .sky-theme-font-heading-6 {
+      font-weight: 500;
+    }
+
+    .sky-theme-font-heading-2 {
+      font-size: 1.1875rem;
+    }
+
+    .sky-theme-font-display-2 {
+      font-size: 1.3125rem;
+    }
+
+    .sky-theme-font-body-m {
+      font-size: 0.875rem;
+    }
+
+    .poc-grid {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      overflow: hidden;
+      font-size: 13px;
+    }
+
+    .poc-grid th,
+    .poc-grid td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--poc-border-muted);
+      text-align: left;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .poc-grid th {
+      color: var(--poc-text-heading);
+      background: color-mix(in srgb, var(--poc-bg-l2) 86%, black 14%);
+      font-weight: 600;
+    }
+
+    .poc-grid tr:hover td {
+      background: color-mix(in srgb, var(--poc-bg-l2) 85%, white 15%);
+    }
+
+    .poc-dashboard {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .poc-page[data-page="dashboard"] {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .poc-home-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+
+    .poc-home-button {
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      border: 1px solid var(--poc-border-base);
+      background: color-mix(in srgb, var(--poc-bg-l1) 92%, black 8%);
+      color: var(--poc-text-heading);
+      font-size: 0.875rem;
+      font-weight: 400;
+      padding: 6px 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: default;
+    }
+
+    .poc-home-button::after {
+      content: "\25BE";
+      font-size: 10px;
+      color: var(--poc-text-deemphasized);
+    }
+
+    .poc-home-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .poc-home-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .poc-home-panel {
+      background: color-mix(in srgb, var(--poc-bg-l1) 88%, black 12%);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 12px 14px;
+      min-width: 0;
+    }
+
+    .poc-home-panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .poc-home-panel-title {
+      margin: 0;
+      color: var(--poc-text-heading);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+
+    .poc-home-widget-title {
+      margin: 0;
+      color: var(--poc-text-heading);
+    }
+
+    .poc-home-widget-icon-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--poc-text-quiet);
+      font-size: 12px;
+    }
+
+    .poc-home-widget-icon-row span {
+      opacity: 0.92;
+    }
+
+    .poc-home-subhead {
+      margin: 12px 0 4px;
+      font-size: 17px;
+      color: var(--poc-link-default);
+      font-weight: 600;
+    }
+
+    .poc-home-date {
+      font-size: 13px;
+      color: var(--poc-text-quiet);
+    }
+
+    .poc-home-copy {
+      color: var(--poc-text-default);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .poc-home-bullets {
+      margin: 0;
+      gap: 8px;
+      color: var(--poc-text-default);
+    }
+
+    .poc-home-divider {
+      border: 0;
+      border-top: 1px solid var(--poc-border-muted);
+      margin: 12px 0;
+    }
+
+    .poc-gifts {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0;
+    }
+
+    .poc-gift-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--poc-border-muted);
+      align-items: start;
+    }
+
+    .poc-gift-row:last-child {
+      border-bottom: 0;
+    }
+
+    .poc-gift-amount {
+      font-size: inherit;
+      margin-right: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      text-decoration: none !important;
+    }
+
+    .poc-gift-amount:hover,
+    .poc-gift-amount:visited {
+      text-decoration: none !important;
+    }
+
+    .poc-gift-kind {
+      color: var(--poc-text-default);
+      vertical-align: middle;
+    }
+
+    .poc-gift-meta {
+      margin-top: 4px;
+      display: grid;
+      gap: 2px;
+      color: var(--poc-text-default);
+    }
+
+    .poc-gift-date {
+      color: var(--poc-text-default);
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .sky-theme-font-display-1,
+    .sky-theme-font-display-1:hover,
+    .sky-theme-font-display-1:visited {
+      text-decoration: none !important;
+    }
+
+    h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a,
+    .sky-theme-font-heading-1 a,
+    .sky-theme-font-heading-2 a,
+    .sky-theme-font-heading-3 a,
+    .sky-theme-font-heading-4 a,
+    .sky-theme-font-heading-5 a,
+    .sky-theme-font-heading-6 a {
+      text-decoration: none !important;
+    }
+
+    .poc-home-rail {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      padding-top: 4px;
+    }
+
+    .poc-home-rail-section h4 {
+      margin: 0 0 6px;
+      color: var(--poc-text-heading);
+    }
+
+    .poc-home-rail-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 4px;
+    }
+
+    .poc-home-bottom {
+      margin-top: 6px;
+      display: grid;
+      gap: 12px;
+      grid-column: 1 / 2;
+    }
+
+    .poc-home-bottom .poc-home-panel {
+      min-height: 170px;
+    }
+
+    .poc-card,
+    .poc-dense-list,
+    .poc-form-panel {
+      background: var(--poc-bg-l2);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 12px;
+      min-width: 0;
+    }
+
+    .poc-card h3,
+    .poc-dense-list h3,
+    .poc-form-panel h3 {
+      margin: 0 0 8px;
+      color: var(--poc-text-heading);
+      font-size: 15px;
+    }
+
+    .poc-card p,
+    .poc-dense-list p,
+    .poc-form-panel p {
+      margin: 0;
+      color: var(--poc-text-deemphasized);
+      font-size: 13px;
+    }
+
+    .poc-kpi {
+      margin-top: 10px;
+      font-size: 26px;
+      color: var(--poc-text-heading);
+      font-weight: 700;
+    }
+
+    .poc-card--wide { grid-column: span 8; }
+    .poc-card--narrow { grid-column: span 4; }
+    .poc-card--full { grid-column: 1 / -1; }
+
+    .poc-list {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .poc-list li {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 8px;
+      align-items: center;
+      border: 1px solid var(--poc-border-muted);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 8px;
+      background: color-mix(in srgb, var(--poc-bg-l2) 84%, black 16%);
+      min-width: 0;
+    }
+
+    .poc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--poc-success);
+    }
+
+    .poc-form {
+      display: grid;
+      gap: 12px;
+      max-width: 760px;
+    }
+
+    .poc-field {
+      display: grid;
+      gap: 5px;
+    }
+
+    .poc-field label {
+      color: var(--poc-text-heading);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+
+    .poc-field input,
+    .poc-field select,
+    .poc-field textarea {
+      background: color-mix(in srgb, var(--poc-bg-l2) 86%, black 14%);
+      color: var(--poc-text-default);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-s, 0.125rem);
+      padding: 9px 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .poc-field input:focus,
+    .poc-field select:focus,
+    .poc-field textarea:focus {
+      outline: 2px solid var(--poc-focus-ring);
+      outline-offset: 0;
+      border-color: var(--poc-focus-ring);
+    }
+
+    .poc-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .poc-button {
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      border: 1px solid var(--poc-border-base);
+      background: var(--poc-bg-l2);
+      color: var(--poc-text-default);
+      padding: 8px 12px;
+      font-size: 0.875rem;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    .poc-button--primary {
+      background: var(--poc-link-default);
+      color: var(--poc-button-label-color, var(--poc-text-heading));
+      border-color: var(--poc-link-default);
+    }
+
+    a,
+    .poc-link {
+      color: var(--poc-link-default);
+      text-decoration-line: var(--poc-link-decoration-default);
+      text-underline-offset: 0.12em;
+      text-decoration-thickness: 0.075em;
+    }
+
+    a:hover,
+    .poc-link:hover {
+      color: var(--poc-link-hover);
+    }
+
+    a:visited,
+    .poc-link:visited {
+      color: var(--poc-link-visited);
+    }
+
+    .poc-link-plain {
+      text-decoration: none !important;
+    }
+
+    .poc-force-underlines .poc-main a,
+    .poc-force-underlines .poc-main .poc-link,
+    .poc-force-underlines .poc-main .poc-link-plain {
+      text-decoration-line: underline !important;
+      text-underline-offset: 0.12em;
+      text-decoration-thickness: 0.075em;
+    }
+
+    .poc-force-underlines .poc-main a.poc-gift-amount {
+      text-decoration-line: none !important;
+    }
+
+    .poc-force-underlines .poc-main h1 a,
+    .poc-force-underlines .poc-main h2 a,
+    .poc-force-underlines .poc-main h3 a,
+    .poc-force-underlines .poc-main h4 a,
+    .poc-force-underlines .poc-main h5 a,
+    .poc-force-underlines .poc-main h6 a,
+    .poc-force-underlines .poc-main .sky-theme-font-heading-1 a,
+    .poc-force-underlines .poc-main .sky-theme-font-heading-2 a,
+    .poc-force-underlines .poc-main .sky-theme-font-heading-3 a,
+    .poc-force-underlines .poc-main .sky-theme-font-heading-4 a,
+    .poc-force-underlines .poc-main .sky-theme-font-heading-5 a,
+    .poc-force-underlines .poc-main .sky-theme-font-heading-6 a {
+      text-decoration-line: none !important;
+    }
+
+    .poc-inspector {
+      background: var(--poc-bg-l1);
+      border: 1px solid var(--poc-border-base);
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      padding: 12px;
+      align-self: start;
+      position: sticky;
+      top: 88px;
+      display: grid;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .poc-inspector h3 {
+      margin: 0;
+      color: var(--poc-text-heading);
+      font-size: 14px;
+    }
+
+    .poc-token-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .poc-token-item {
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 8px;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .poc-swatch {
+      width: 18px;
+      height: 18px;
+      border-radius: var(--sky-theme-border-radius-m, 0.25rem);
+      border: 1px solid rgb(255 255 255 / 24%);
+    }
+
+    .poc-token-text {
+      min-width: 0;
+      display: grid;
+      gap: 1px;
+    }
+
+    .poc-token-name {
+      font-size: 11px;
+      color: var(--poc-text-quiet);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .poc-token-value {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      color: var(--poc-text-default);
+      overflow-wrap: anywhere;
+    }
+
+    .poc-contrast {
+      border-top: 1px solid var(--poc-border-muted);
+      padding-top: 8px;
+      font-size: 12px;
+      color: var(--poc-text-deemphasized);
+      display: grid;
+      gap: 4px;
+    }
+
+    .poc-contrast strong {
+      color: var(--poc-text-heading);
+    }
+
+    .poc-note {
+      font-size: 12px;
+      color: var(--poc-text-deemphasized);
+      margin: 0;
+    }
+
+    .poc-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: color-mix(in srgb, var(--poc-bg-l2) 84%, black 16%);
+      border: 1px solid var(--poc-border-muted);
+      font-size: 11px;
+      color: var(--poc-text-deemphasized);
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 1240px) {
+      .poc-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .poc-omnibar,
+      .poc-inspector {
+        position: static;
+      }
+
+      .poc-dashboard {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+
+      .poc-card--wide,
+      .poc-card--narrow {
+        grid-column: span 6;
+      }
+
+      .poc-home-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .poc-home-main {
+        grid-template-columns: 1fr;
+      }
+
+      .poc-home-bottom {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poc-app">
+    <header class="poc-toolbar" aria-label="Palette controls">
+      <div class="poc-toolbar-row">
+        <label for="scenario-select">Palette approach</label>
+        <select id="scenario-select"></select>
+
+        <label for="page-select">Archetype</label>
+        <select id="page-select">
+          <option value="data-grid">Data grid</option>
+          <option value="dashboard">Dashboard/homepage</option>
+          <option value="form">Form</option>
+        </select>
+
+        <label for="link-mode-select">Link mode</label>
+        <select id="link-mode-select">
+          <option value="scenario">Scenario default</option>
+          <option value="underline">Underline all</option>
+          <option value="none">No underline default</option>
+        </select>
+
+        <button type="button" id="copy-url">Copy share URL</button>
+      </div>
+      <div class="poc-meta" id="meta"></div>
+    </header>
+
+    <div class="poc-shell">
+      <aside class="poc-omnibar" aria-label="Vertical navigation mimic">
+        <p class="poc-omnibar-title">Navigation</p>
+        <ul class="poc-nav-list">
+          <li><a class="poc-nav-item is-active" href="#" data-page-nav="data-grid">Data grid</a></li>
+          <li><a class="poc-nav-item" href="#" data-page-nav="dashboard">Dashboard/homepage</a></li>
+          <li><a class="poc-nav-item" href="#" data-page-nav="form">Form</a></li>
+          <li><a class="poc-nav-item" href="#">Recent work</a></li>
+          <li><a class="poc-nav-item" href="#">Saved filters</a></li>
+        </ul>
+      </aside>
+
+      <main class="poc-main" id="main-content">
+        <section class="sky-page poc-page is-active" data-page="data-grid">
+          <h1 class="sky-heading-1 sky-theme-font-heading-1">Portfolio Performance Grid</h1>
+          <p class="poc-kicker">Focus: dense data legibility, row separators, hover, and inline action discoverability.</p>
+
+          <div class="poc-surface-l2">
+            <table class="poc-grid" role="grid" aria-label="Data grid sample">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Status</th>
+                  <th>Owner</th>
+                  <th>YTD</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Annual Fund</a></td>
+                  <td><span class="poc-pill">On track</span></td>
+                  <td>J. Patton</td>
+                  <td>$1,248,000</td>
+                  <td><a href="#" class="poc-link-plain">Open</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Leadership Circle</a></td>
+                  <td><span class="poc-pill">Needs review</span></td>
+                  <td>S. Tran</td>
+                  <td>$782,400</td>
+                  <td><a href="#" class="poc-link-plain">Open</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Capital Campaign</a></td>
+                  <td><span class="poc-pill">At risk</span></td>
+                  <td>M. Ellis</td>
+                  <td>$3,102,980</td>
+                  <td><a href="#" class="poc-link-plain">Open</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Regional Events</a></td>
+                  <td><span class="poc-pill">On track</span></td>
+                  <td>R. Kim</td>
+                  <td>$421,600</td>
+                  <td><a href="#" class="poc-link-plain">Open</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="sky-page poc-page" data-page="dashboard">
+          <h1 class="sky-heading-1 sky-theme-font-heading-1">Home</h1>
+
+          <div class="poc-home-actions" aria-label="Home actions">
+            <span class="poc-home-button sky-theme-font-body-m">Customize page</span>
+            <span class="poc-home-button sky-theme-font-body-m">Manage</span>
+          </div>
+
+          <div class="poc-home-layout">
+            <div>
+              <div class="poc-home-main">
+                <article class="poc-home-panel">
+                  <div class="poc-home-panel-header">
+                    <h2 class="poc-home-widget-title sky-heading-2 sky-theme-font-heading-2">Updates</h2>
+                    <div class="poc-home-widget-icon-row" aria-hidden="true"><span>^</span><span>:</span></div>
+                  </div>
+
+                  <h3 class="poc-home-subhead sky-theme-font-heading-3"><a href="#">What's new</a></h3>
+                  <p class="poc-home-date sky-theme-font-hint-m">6/16/2026</p>
+                  <p class="poc-home-copy sky-theme-font-body-m"><strong>The following features are generally available to everyone!</strong></p>
+                  <ul class="poc-home-bullets sky-theme-font-body-m">
+                    <li><strong>Explore gifts and donors behind your campaign, fund, and appeal charts</strong> - Explore the gifts and donors behind your <a href="#">campaign</a>, <a href="#">fund</a>, and <a href="#">appeal</a> charts with drill-through navigation in Analysis and Overview tabs.</li>
+                    <li><strong>Online Engagement: Smarter consent handling for Optimized Donation Forms</strong> - Capture <a href="#">consent when donors choose to act</a>. By clearing Select all opt-ins by default, you ensure every preference is intentional, compliant, and builds trust through accurate donor data.</li>
+                  </ul>
+
+                  <hr class="poc-home-divider" />
+
+                  <h3 class="poc-home-subhead sky-theme-font-heading-3"><a href="#">What's recent</a></h3>
+                  <p class="poc-home-date sky-theme-font-hint-m">6/9/2026</p>
+                  <p class="poc-home-copy sky-theme-font-body-m"><strong>The following feature is generally available to everyone!</strong></p>
+                  <ul class="poc-home-bullets sky-theme-font-body-m">
+                    <li><strong>Online Engagement</strong> - Identify how donors give and which donation forms drive results, including the <a href="#">payment methods donors use most</a> and your <a href="#">highest-performing forms</a>.</li>
+                  </ul>
+                </article>
+
+                <article class="poc-home-panel">
+                  <div class="poc-home-panel-header">
+                    <h2 class="poc-home-widget-title sky-heading-2 sky-theme-font-heading-2">Recent gifts</h2>
+                    <div class="poc-home-widget-icon-row" aria-hidden="true"><span>^</span><span>o</span><span>:</span></div>
+                  </div>
+
+                  <ul class="poc-gifts">
+                    <li class="poc-gift-row">
+                      <div>
+                        <div><a href="#" class="poc-gift-amount sky-theme-font-body-m">$500.00</a> <span class="poc-gift-kind sky-theme-font-body-m">Recurring gift</span></div>
+                        <div class="poc-gift-meta sky-theme-font-body-m"><a href="#">Allan Badilla</a><span>Soft credit</span><span>Maria Fernanda Gonzales $500.00</span><span>Mr, Vasquez Carmen $500.00</span></div>
+                      </div>
+                      <div class="poc-gift-date sky-theme-font-body-m">6/17/2026</div>
+                    </li>
+                    <li class="poc-gift-row">
+                      <div>
+                        <div><a href="#" class="poc-gift-amount sky-theme-font-body-m">$52.12</a> <span class="poc-gift-kind sky-theme-font-body-m">One-time gift</span></div>
+                        <div class="poc-gift-meta sky-theme-font-body-m"><a href="#">Akash Chaturvedi</a></div>
+                      </div>
+                      <div class="poc-gift-date sky-theme-font-body-m">6/17/2026</div>
+                    </li>
+                    <li class="poc-gift-row">
+                      <div>
+                        <div><a href="#" class="poc-gift-amount sky-theme-font-body-m">$100,000.00</a> <span class="poc-gift-kind sky-theme-font-body-m">One-time gift</span></div>
+                        <div class="poc-gift-meta sky-theme-font-body-m"><a href="#">Ms Jhanu Omni</a><span>Soft credit</span><span>Lady Luna Luna $10,000.00</span></div>
+                      </div>
+                      <div class="poc-gift-date sky-theme-font-body-m">6/16/2026</div>
+                    </li>
+                    <li class="poc-gift-row">
+                      <div>
+                        <div><a href="#" class="poc-gift-amount sky-theme-font-body-m">$500.00</a> <span class="poc-gift-kind sky-theme-font-body-m">Pledge</span></div>
+                        <div class="poc-gift-meta sky-theme-font-body-m"><a href="#">Allan Badilla</a><span>Soft credit</span><span>Maria Fernanda Gonzales $500.00</span><span>Mr, Vasquez Carmen $500.00</span></div>
+                      </div>
+                      <div class="poc-gift-date sky-theme-font-body-m">6/16/2026</div>
+                    </li>
+                    <li class="poc-gift-row">
+                      <div>
+                        <div><a href="#" class="poc-gift-amount sky-theme-font-body-m">$1,000.00</a> <span class="poc-gift-kind sky-theme-font-body-m">Pledge</span></div>
+                        <div class="poc-gift-meta sky-theme-font-body-m"><a href="#">Mr. Ali Ali</a></div>
+                      </div>
+                      <div class="poc-gift-date sky-theme-font-body-m">6/16/2026</div>
+                    </li>
+                  </ul>
+
+                  <p class="poc-home-copy sky-theme-font-body-m" style="margin-top: 10px;"><a href="#">See all recent gifts</a></p>
+                </article>
+              </div>
+
+              <div class="poc-home-bottom">
+                <article class="poc-home-panel">
+                  <div class="poc-home-panel-header">
+                    <h2 class="poc-home-widget-title sky-heading-2 sky-theme-font-heading-2">Prospect Insights</h2>
+                    <div class="poc-home-widget-icon-row" aria-hidden="true"><span>^</span><span>:</span></div>
+                  </div>
+                  <p class="poc-home-copy sky-theme-font-body-m">Top opportunities and trending constituent intent appear here. Keep this area to validate depth contrast and subtle divider treatment in lower-priority panels.</p>
+                </article>
+              </div>
+            </div>
+
+            <aside class="poc-home-rail" aria-label="Home utility links">
+              <section class="poc-home-rail-section">
+                <h4 class="sky-theme-font-heading-4">Recently accessed</h4>
+                <ul class="poc-home-rail-links sky-theme-font-body-m">
+                  <li><a href="#">Mr, Marco Cordoba</a></li>
+                  <li><a href="#">Sir Adrian Mendez</a></li>
+                </ul>
+              </section>
+
+              <section class="poc-home-rail-section">
+                <h4 class="sky-theme-font-heading-4">Add-ins</h4>
+                <ul class="poc-home-rail-links sky-theme-font-body-m">
+                  <li><a href="#">Open Webhook Monitor</a></li>
+                  <li><a href="#">+ Scan/upload checks</a></li>
+                  <li><a href="#">Red Arc</a></li>
+                  <li><a href="#">/ Engagement Tile Dashboard</a></li>
+                </ul>
+              </section>
+
+              <section class="poc-home-rail-section">
+                <h4 class="sky-theme-font-heading-4">Assistance</h4>
+                <ul class="poc-home-rail-links sky-theme-font-body-m">
+                  <li><a href="#">Resource Center</a></li>
+                  <li><a href="#">Training</a></li>
+                  <li><a href="#">Blackbaud Community</a></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </section>
+            </aside>
+          </div>
+        </section>
+
+        <section class="sky-page poc-page" data-page="form">
+          <h1 class="sky-heading-1 sky-theme-font-heading-1">Proposal Intake Form</h1>
+          <p class="poc-kicker">Focus: field boundaries, helper text, and action/link readability in form-heavy workflows.</p>
+
+          <section class="poc-form-panel">
+            <form class="poc-form" aria-label="Form sample">
+              <div class="poc-field">
+                <label for="proposal-name">Proposal name</label>
+                <input id="proposal-name" name="proposal-name" placeholder="Q4 Regional Matching Campaign" />
+              </div>
+
+              <div class="poc-field">
+                <label for="proposal-owner">Owner</label>
+                <select id="proposal-owner" name="proposal-owner">
+                  <option selected>Jordan Patton</option>
+                  <option>Samira Tran</option>
+                  <option>Rafael Kim</option>
+                </select>
+              </div>
+
+              <div class="poc-field">
+                <label for="proposal-notes">Internal notes</label>
+                <textarea id="proposal-notes" name="proposal-notes" rows="4" placeholder="Include scope, stakeholders, and timeline assumptions."></textarea>
+              </div>
+
+              <p class="poc-note">Need guidance? Review the <a href="#">proposal quality checklist</a> and <a href="#">link style guidance</a>.</p>
+
+              <div class="poc-actions">
+                <button type="button" class="poc-button poc-button--primary">Save draft</button>
+                <button type="button" class="poc-button">Submit for review</button>
+                <button type="button" class="poc-button">Cancel</button>
+              </div>
+            </form>
+          </section>
+        </section>
+      </main>
+
+      <aside class="poc-inspector" aria-live="polite">
+        <h3 class="sky-theme-font-heading-3">Scenario inspector</h3>
+        <div id="scenario-name" class="poc-note"></div>
+
+        <ul class="poc-token-list" id="token-list"></ul>
+
+        <div class="poc-contrast" id="contrast-metrics"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const scenarioGroups = [
+      {
+        label: 'OKLCH PoCs',
+        options: [
+          {
+            id: 'oklch-steel',
+            name: 'OKLCH Steel',
+            defaultUnderlineLinks: true,
+            notes: 'Current Steel PoC lane with required underline links for a11y.',
+            tokens: {
+              '--poc-bg-l0': '#131A24',
+              '--poc-bg-l1': '#1D242F',
+              '--poc-bg-l2': '#2A313C',
+              '--poc-border-base': '#545C68',
+              '--poc-border-muted': '#454D59',
+              '--poc-border-gradient-start': '#545C68',
+              '--poc-border-gradient-end': '#454D59',
+              '--poc-text-heading': '#ECEFF4',
+              '--poc-text-default': '#D0D2E9',
+              '--poc-text-deemphasized': '#A2ABB7',
+              '--poc-text-quiet': '#7D8CA3',
+              '--poc-button-label-color': '#2A313C',
+              '--poc-link-default': 'var(--bb-color-blue-375, #79ADF1)',
+              '--poc-link-hover': 'var(--bb-color-blue-375, #79ADF1)',
+              '--poc-link-visited': 'var(--bb-color-blue-375, #79ADF1)',
+              '--poc-focus-ring': 'var(--bb-color-blue-300, #AAC4EE)'
+            }
+          },
+          {
+            id: 'oklch-steel-fusion',
+            name: 'OKLCH Steel Fusion',
+            defaultUnderlineLinks: true,
+            notes: 'Optimized Steel Fusion PoC lane with OKLCH adjustments for improved performance (surface depth, text contrast, border definition, reduced clinical feel).',
+            tokens: {
+              '--poc-bg-l0': 'var(--bb-color-steel-fusion-1095, #171A1E)',
+              '--poc-bg-l1': '#1C2329',
+              '--poc-bg-l2': '#283037',
+              '--poc-border-base': '#525D6B',
+              '--poc-border-muted': '#3F4A57',
+              '--poc-border-gradient-start': '#525D6B',
+              '--poc-border-gradient-end': '#3F4A57',
+              '--poc-text-heading': '#EDF1F6',
+              '--poc-text-default': '#D4DADF',
+              '--poc-text-deemphasized': '#A4ADB8',
+              '--poc-text-quiet': '#9BA3AC',
+              '--poc-button-label-color': '#222A31',
+              '--poc-link-default': 'var(--bb-color-blue-375, #79ADF1)',
+              '--poc-link-hover': 'var(--bb-color-blue-375, #79ADF1)',
+              '--poc-link-visited': 'var(--bb-color-blue-375, #79ADF1)',
+              '--poc-focus-ring': 'var(--bb-color-blue-300, #AAC4EE)'
+            }
+          }
+        ]
+      },
+      {
+        label: 'Thread the Needle',
+        options: [
+          {
+            id: 'adam-special',
+            name: 'Adam special',
+            defaultUnderlineLinks: false,
+            notes: 'Radix-grays + text opacity model. blue.466 treated as blue.500. slate.125 resolved to #EBEEF4.',
+            tokens: {
+              '--poc-bg-l0': '#111113',
+              '--poc-bg-l1': '#18191B',
+              '--poc-bg-l2': '#212225',
+              '--poc-border-base': '#646C7A',
+              '--poc-border-muted': '#4F5562',
+              '--poc-border-gradient-start': '#758095',
+              '--poc-border-gradient-end': '#677286',
+              '--poc-text-heading': '#FCFDFD',
+              '--poc-text-default': 'rgba(252, 253, 253, 0.94)',
+              '--poc-text-deemphasized': 'rgba(186, 197, 216, 0.80)',
+              '--poc-text-quiet': 'rgba(186, 197, 216, 0.90)',
+              '--poc-link-default': '#5589DD',
+              '--poc-link-hover': '#2D9EFF',
+              '--poc-link-visited': '#7EAFFF',
+              '--poc-focus-ring': '#A6D3FF'
+            }
+          },
+          {
+            id: 'claude-special',
+            name: 'Claude special',
+            defaultUnderlineLinks: false,
+            notes: 'Claude-derived palette, applied exactly for both L1 and L2 text evaluation.',
+            tokens: {
+              '--poc-bg-l0': '#111113',
+              '--poc-bg-l1': '#18191B',
+              '--poc-bg-l2': '#212225',
+              '--poc-border-base': '#535B6C',
+              '--poc-border-muted': '#424A58',
+              '--poc-border-gradient-start': '#687189',
+              '--poc-border-gradient-end': '#596178',
+              '--poc-text-heading': '#FCFDFD',
+              '--poc-text-default': '#EFF1F8',
+              '--poc-text-deemphasized': '#EBEEF4',
+              '--poc-text-quiet': '#DCE3EF',
+              '--poc-link-default': '#0088FE',
+              '--poc-link-hover': '#2D9EFF',
+              '--poc-link-visited': '#7EAFFF',
+              '--poc-focus-ring': '#A6D3FF'
+            }
+          }
+        ]
+      }
+    ];
+
+    const scenarioSelect = document.getElementById('scenario-select');
+    const pageSelect = document.getElementById('page-select');
+    const linkModeSelect = document.getElementById('link-mode-select');
+    const copyUrlButton = document.getElementById('copy-url');
+    const meta = document.getElementById('meta');
+    const scenarioName = document.getElementById('scenario-name');
+    const tokenList = document.getElementById('token-list');
+    const contrastMetrics = document.getElementById('contrast-metrics');
+
+    const navLinks = [...document.querySelectorAll('[data-page-nav]')];
+    const pages = [...document.querySelectorAll('.poc-page')];
+
+    const scenarioMap = new Map();
+    scenarioGroups.forEach((group) => {
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = group.label;
+
+      group.options.forEach((scenario) => {
+        scenarioMap.set(scenario.id, scenario);
+        const option = document.createElement('option');
+        option.value = scenario.id;
+        option.textContent = scenario.name;
+        optgroup.appendChild(option);
+      });
+
+      scenarioSelect.appendChild(optgroup);
+    });
+
+    const parseHex = (value) => {
+      const normalized = value.trim().replace('#', '');
+      if (normalized.length !== 6) {
+        return null;
+      }
+      return {
+        r: Number.parseInt(normalized.slice(0, 2), 16),
+        g: Number.parseInt(normalized.slice(2, 4), 16),
+        b: Number.parseInt(normalized.slice(4, 6), 16)
+      };
+    };
+
+    const parseRgb = (value) => {
+      const match = value.trim().match(/rgba?\(([^)]+)\)/i);
+      if (!match) {
+        return null;
+      }
+      const parts = match[1].split(',').map((part) => part.trim());
+      if (parts.length < 3) {
+        return null;
+      }
+      const r = Number.parseFloat(parts[0]);
+      const g = Number.parseFloat(parts[1]);
+      const b = Number.parseFloat(parts[2]);
+      if ([r, g, b].some(Number.isNaN)) {
+        return null;
+      }
+      return { r, g, b };
+    };
+
+    const resolveColor = (value) => {
+      const swatch = document.createElement('div');
+      swatch.style.color = value;
+      document.body.appendChild(swatch);
+      const computed = getComputedStyle(swatch).color;
+      swatch.remove();
+      return computed;
+    };
+
+    const colorToRgb = (value) => {
+      if (value.startsWith('#')) {
+        return parseHex(value);
+      }
+      return parseRgb(value) || parseRgb(resolveColor(value));
+    };
+
+    const toLinear = (channel) => {
+      const srgb = channel / 255;
+      return srgb <= 0.04045
+        ? srgb / 12.92
+        : ((srgb + 0.055) / 1.055) ** 2.4;
+    };
+
+    const luminance = (rgb) => {
+      if (!rgb) {
+        return 0;
+      }
+      const r = toLinear(rgb.r);
+      const g = toLinear(rgb.g);
+      const b = toLinear(rgb.b);
+      return (0.2126 * r) + (0.7152 * g) + (0.0722 * b);
+    };
+
+    const contrastRatio = (foreground, background) => {
+      const fgRgb = colorToRgb(foreground);
+      const bgRgb = colorToRgb(background);
+      if (!fgRgb || !bgRgb) {
+        return null;
+      }
+      const fg = luminance(fgRgb);
+      const bg = luminance(bgRgb);
+      const light = Math.max(fg, bg);
+      const dark = Math.min(fg, bg);
+      return (light + 0.05) / (dark + 0.05);
+    };
+
+    const getScenarioById = (id) => scenarioMap.get(id) || scenarioMap.values().next().value;
+
+    const updateQueryState = () => {
+      const params = new URLSearchParams(window.location.search);
+      params.set('scenario', scenarioSelect.value);
+      params.set('page', pageSelect.value);
+      params.set('linkMode', linkModeSelect.value);
+      const query = params.toString();
+      const url = `${window.location.pathname}?${query}`;
+      window.history.replaceState({}, '', url);
+    };
+
+    const setPage = (pageId) => {
+      pages.forEach((page) => {
+        page.classList.toggle('is-active', page.dataset.page === pageId);
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.dataset.pageNav === pageId);
+      });
+
+      pageSelect.value = pageId;
+    };
+
+    const applyTokens = (tokens) => {
+      Object.entries(tokens).forEach(([name, value]) => {
+        document.documentElement.style.setProperty(name, value);
+      });
+    };
+
+    const applyLinkMode = (scenario, mode) => {
+      const forceUnderline = scenario.id === 'oklch-steel' || scenario.id === 'oklch-steel-fusion';
+
+      document.body.classList.toggle('poc-force-underlines', forceUnderline);
+
+      if (forceUnderline) {
+        document.documentElement.style.setProperty('--poc-link-decoration-default', 'underline');
+        return 'underline (required for OKLCH PoCs)';
+      }
+
+      if (mode === 'underline') {
+        document.documentElement.style.setProperty('--poc-link-decoration-default', 'underline');
+        return 'underline (forced)';
+      }
+      if (mode === 'none') {
+        document.documentElement.style.setProperty('--poc-link-decoration-default', 'none');
+        return 'none (forced)';
+      }
+      document.documentElement.style.setProperty(
+        '--poc-link-decoration-default',
+        scenario.defaultUnderlineLinks ? 'underline' : 'none'
+      );
+      return scenario.defaultUnderlineLinks ? 'underline (scenario)' : 'none (scenario)';
+    };
+
+    const inspectorTokenRows = (scenario) => [
+      ['L0 page', scenario.tokens['--poc-bg-l0']],
+      ['L1 container', scenario.tokens['--poc-bg-l1']],
+      ['L2 overlay', scenario.tokens['--poc-bg-l2']],
+      ['Text heading', scenario.tokens['--poc-text-heading']],
+      ['Text default', scenario.tokens['--poc-text-default']],
+      ['Text deemphasized', scenario.tokens['--poc-text-deemphasized']],
+      ['Link default', scenario.tokens['--poc-link-default']],
+      ['Border gradient start', scenario.tokens['--poc-border-gradient-start']],
+      ['Border gradient end', scenario.tokens['--poc-border-gradient-end']]
+    ];
+
+    const renderInspector = (scenario, effectiveLinkMode) => {
+      scenarioName.textContent = scenario.notes;
+
+      tokenList.innerHTML = '';
+      inspectorTokenRows(scenario).forEach(([label, value]) => {
+        const item = document.createElement('li');
+        item.className = 'poc-token-item';
+
+        const swatch = document.createElement('span');
+        swatch.className = 'poc-swatch';
+        swatch.style.background = value;
+
+        const textWrap = document.createElement('div');
+        textWrap.className = 'poc-token-text';
+
+        const name = document.createElement('span');
+        name.className = 'poc-token-name';
+        name.textContent = label;
+
+        const tokenValue = document.createElement('span');
+        tokenValue.className = 'poc-token-value';
+        tokenValue.textContent = value;
+
+        textWrap.appendChild(name);
+        textWrap.appendChild(tokenValue);
+        item.appendChild(swatch);
+        item.appendChild(textWrap);
+        tokenList.appendChild(item);
+      });
+
+      const headingOnL1 = contrastRatio(scenario.tokens['--poc-text-heading'], scenario.tokens['--poc-bg-l1']);
+      const defaultOnL1 = contrastRatio(scenario.tokens['--poc-text-default'], scenario.tokens['--poc-bg-l1']);
+      const actionOnL1 = contrastRatio(scenario.tokens['--poc-link-default'], scenario.tokens['--poc-bg-l1']);
+      const actionOnL2 = contrastRatio(scenario.tokens['--poc-link-default'], scenario.tokens['--poc-bg-l2']);
+
+      const metric = (label, value) => {
+        if (value === null) {
+          return `${label}: n/a`;
+        }
+        return `${label}: ${value.toFixed(2)}:1`;
+      };
+
+      contrastMetrics.innerHTML = [
+        `<strong>Contrast quick check</strong>`,
+        metric('Heading on L1', headingOnL1),
+        metric('Default on L1', defaultOnL1),
+        metric('Action on L1', actionOnL1),
+        metric('Action on L2', actionOnL2),
+        `Link decoration: ${effectiveLinkMode}`
+      ].map((line) => `<div>${line}</div>`).join('');
+    };
+
+    const renderMeta = (scenario, pageId) => {
+      meta.innerHTML = [
+        `<span class="poc-pill">Scenario: ${scenario.name}</span>`,
+        `<span class="poc-pill">Page: ${pageId}</span>`,
+        `<span class="poc-pill">L0/L1/L2: ${scenario.tokens['--poc-bg-l0']} / ${scenario.tokens['--poc-bg-l1']} / ${scenario.tokens['--poc-bg-l2']}</span>`
+      ].join('');
+    };
+
+    const syncUi = () => {
+      const scenario = getScenarioById(scenarioSelect.value);
+      document.documentElement.setAttribute('data-poc-scenario', scenario.id);
+      applyTokens(scenario.tokens);
+      const effectiveLinkMode = applyLinkMode(scenario, linkModeSelect.value);
+      setPage(pageSelect.value);
+      renderInspector(scenario, effectiveLinkMode);
+      renderMeta(scenario, pageSelect.value);
+      updateQueryState();
+    };
+
+    const initialParams = new URLSearchParams(window.location.search);
+    const initialScenario = getScenarioById(initialParams.get('scenario'));
+    const initialPage = ['data-grid', 'dashboard', 'form'].includes(initialParams.get('page'))
+      ? initialParams.get('page')
+      : 'data-grid';
+    const initialLinkMode = ['scenario', 'underline', 'none'].includes(initialParams.get('linkMode'))
+      ? initialParams.get('linkMode')
+      : 'scenario';
+
+    scenarioSelect.value = initialScenario.id;
+    pageSelect.value = initialPage;
+    linkModeSelect.value = initialLinkMode;
+
+    scenarioSelect.addEventListener('change', syncUi);
+    pageSelect.addEventListener('change', syncUi);
+    linkModeSelect.addEventListener('change', syncUi);
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const page = link.dataset.pageNav;
+        if (!page) {
+          return;
+        }
+        event.preventDefault();
+        pageSelect.value = page;
+        syncUi();
+      });
+    });
+
+    copyUrlButton.addEventListener('click', async () => {
+      updateQueryState();
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        copyUrlButton.textContent = 'Copied';
+        window.setTimeout(() => {
+          copyUrlButton.textContent = 'Copy share URL';
+        }, 1200);
+      } catch (_error) {
+        copyUrlButton.textContent = 'Copy failed';
+        window.setTimeout(() => {
+          copyUrlButton.textContent = 'Copy share URL';
+        }, 1200);
+      }
+    });
+
+    syncUi();
+  </script>
+</body>
+</html>

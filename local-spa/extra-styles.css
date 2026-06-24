@@ -15,9 +15,9 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--local-exp-slate-975: #1c2434;
 	--local-exp-slate-950: #1d2738;
 
-	/* Force action reference tokens to Blue-500 in dark previews. */
-	--sky-color-text-action: var(--bb-color-blue-500) !important;
-	--sky-theme-color-text-action: var(--bb-color-blue-500) !important;
+	/* Force link action reference tokens to Blue-375 in dark previews. */
+	--sky-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-theme-color-text-action: var(--bb-color-blue-375) !important;
 	--sky-color-icon-action: var(--bb-color-blue-500) !important;
 	--sky-theme-color-icon-action: var(--bb-color-blue-500) !important;
 	--sky-color-background-action-primary-base: var(--bb-color-blue-500) !important;
@@ -32,7 +32,7 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 
 /* Default override lane: gray neutrals. */
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
-	--sky-color-background-page: var(--local-exp-gray-1050) !important;
+	--sky-color-background-page: var(--bb-color-steel-fusion-1095, #171A1E) !important;
 	--sky-color-background-container-base: var(--local-exp-gray-975) !important;
 	--sky-color-background-container-dimmed: var(--local-exp-gray-950) !important;
 	--sky-color-background-container-backdrop: var(--local-exp-gray-925) !important;
@@ -49,6 +49,10 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--sky-color-border-separator-dark: var(--local-exp-gray-950) !important;
 	--sky-color-border-separator-light: var(--local-exp-gray-975) !important;
 	--sky-color-border-disabled: var(--local-exp-gray-975) !important;
+}
+
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-page {
+	background-color: var(--bb-color-steel-fusion-1095, #171A1E) !important;
 }
 
 /* Optional lane switch for testing: add `local-exp-neutral-slate` on body. */
@@ -381,4 +385,40 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark.local-preview-lay
 	border: 0;
 	color: var(--sky-color-text-default);
 	font: inherit;
+}
+
+/* =====================================================================
+   OPTION 1 TEST: Underline All Links by Default (WCAG AAA Compliance)
+   =====================================================================
+   
+   This mimics the proposed change to SKY UX library:
+   libs/components/theme/src/lib/styles/_theme.scss
+   
+   Change: a { text-decoration: none; } → a { text-decoration: underline; }
+   
+   Rationale:
+   - Achieves WCAG AAA compliance (non-color redundancy for link identification)
+   - Improves accessibility for color-blind users (~8% of population)
+   - Improves low-vision accessibility (magnification users)
+   - Risk: Minimal; underlines benefit body-text and list links significantly
+   
+   This override applies underline to all native <a> elements globally,
+   including RouterLink, skyHref, skyAppLink, and native links.
+   
+   Selective Application:
+   - Steel + Steel Fusion: Underlines ENABLED (defaultUnderlineLinks: true)
+   - Adam Special + Claude Special: Underlines DISABLED (defaultUnderlineLinks: false)
+   
+   To toggle: Comment/uncomment rules below.
+   ===================================================================== */
+
+a {
+	text-decoration: underline !important;
+	text-decoration-skip-ink: auto !important;
+}
+
+/* Revert underlines for Adam Special and Claude Special (defaultUnderlineLinks: false) */
+[data-poc-scenario="adam-special"] a,
+[data-poc-scenario="claude-special"] a {
+	text-decoration: none !important;
 }

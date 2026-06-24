@@ -12,8 +12,8 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--local-exp-slate-950: #1d2738;
 
 	/* Force action reference tokens to Blue-500 in dark previews. */
-	--sky-color-text-action: var(--bb-color-blue-500) !important;
-	--sky-theme-color-text-action: var(--bb-color-blue-500) !important;
+	--sky-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-theme-color-text-action: var(--bb-color-blue-375) !important;
 	--sky-color-icon-action: var(--bb-color-blue-500) !important;
 	--sky-theme-color-icon-action: var(--bb-color-blue-500) !important;
 	--sky-color-background-action-primary-base: var(--bb-color-blue-500) !important;
@@ -29,8 +29,8 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 body[data-layering='current'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--sky-color-background-page: var(--bb-color-gray-1100) !important;
 	--sky-color-text-inverse: var(--bb-color-gray-1100) !important;
-	--sky-color-text-action: var(--bb-color-sky-600) !important;
-	--sky-theme-color-text-action: var(--bb-color-sky-600) !important;
+	--sky-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-theme-color-text-action: var(--bb-color-blue-375) !important;
 }
 
 /* Default override lane: slate neutrals. */
@@ -56,16 +56,27 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 }
 
 /* Strict OKLCH Slate lane: all overrides source from slate-only steps. */
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
-	--local-oklch-slate-1200: oklch(0.16 0.018 255);
-	--local-oklch-slate-1150: oklch(0.18 0.020 255);
-	--local-oklch-slate-1100: oklch(0.20 0.023 255);
-	--local-oklch-slate-1050: oklch(0.22 0.026 255);
-	--local-oklch-slate-1000: oklch(0.24 0.029 255);
-	--local-oklch-slate-950: oklch(0.27 0.033 255);
-	--local-oklch-slate-900: oklch(0.30 0.037 255);
-	--local-oklch-slate-850: oklch(0.34 0.041 255);
-	--local-oklch-slate-800: oklch(0.38 0.045 255);
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	--local-oklch-steel-1200: #131A24;
+	--local-oklch-steel-1100: #1D242F;
+	--local-oklch-steel-1075: #212834;
+	--local-oklch-steel-1050: #242B36;
+	--local-oklch-steel-1025: #272E39;
+	--local-oklch-steel-1000: #2A313C;
+	--local-oklch-steel-900: #353D49;
+	--local-oklch-steel-850: #3C4450;
+	--local-oklch-steel-800: #454D59;
+	--local-oklch-steel-700: #545C68;
+	--local-oklch-steel-600: #666B70;
+	--local-oklch-steel-500: #828C9A;
+	--local-oklch-steel-400: #A2ABB7;
+	--local-oklch-steel-350: #B4BCC6;
+	--local-oklch-steel-300: #C4CBD4;
+	--local-oklch-steel-250: #D2D8E0;
+	--local-oklch-steel-200: #DDE2E9;
+	--local-oklch-steel-100: #ECEFF4;
+	--local-oklch-steel-50: #F3F6FA;
+	--local-oklch-steel-25: #FAFCFE;
 
 	/* OKLCH blue palette — perceptually uniform, hue ~265 (matches SKY UX bb blue hue). */
 	--local-oklch-blue-300: oklch(0.78 0.090 265);
@@ -74,46 +85,65 @@ body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-them
 	--local-oklch-blue-500: oklch(0.60 0.145 265);
 	--local-oklch-blue-600: oklch(0.51 0.165 265);
 
-	--sky-color-background-page: var(--local-oklch-slate-1100) !important;
-	--sky-color-background-container-base: var(--local-oklch-slate-1000) !important;
-	--sky-color-background-container-dimmed: var(--local-oklch-slate-950) !important;
-	--sky-color-background-container-backdrop: var(--local-oklch-slate-900) !important;
-	--sky-color-background-container-menu: var(--local-oklch-slate-850) !important;
-	--sky-color-background-disabled: var(--local-oklch-slate-950) !important;
+	--sky-color-background-page: var(--local-oklch-steel-1200) !important;
+	--sky-color-background-container-base: var(--local-oklch-steel-1100) !important;
+	--sky-color-background-container-dimmed: var(--local-oklch-steel-1000) !important;
+	--sky-color-background-container-backdrop: var(--local-oklch-steel-1000) !important;
+	--sky-color-background-container-menu: var(--local-oklch-steel-850) !important;
+	--sky-color-background-disabled: var(--local-oklch-steel-1025) !important;
 
-	--sky-color-border-divider: color-mix(in oklab, var(--local-oklch-slate-900) 76%, white 24%) !important;
-	--sky-color-border-separator-row: color-mix(in oklab, var(--local-oklch-slate-950) 78%, white 22%) !important;
-	--sky-color-border-container-base: color-mix(in oklab, var(--local-oklch-slate-1000) 74%, white 26%) !important;
-	--sky-color-border-elevation: color-mix(in oklab, var(--local-oklch-slate-900) 74%, white 26%) !important;
-	--sky-color-border-input-base: color-mix(in oklab, var(--local-oklch-slate-950) 72%, white 28%) !important;
+	--sky-color-border-divider: color-mix(in oklab, var(--local-oklch-steel-900) 76%, white 24%) !important;
+	--sky-color-border-separator-row: color-mix(in oklab, var(--local-oklch-steel-1025) 78%, white 22%) !important;
+	--sky-color-border-container-base: color-mix(in oklab, var(--local-oklch-steel-1000) 74%, white 26%) !important;
+	--sky-color-border-elevation: color-mix(in oklab, var(--local-oklch-steel-900) 74%, white 26%) !important;
+	--sky-color-border-input-base: color-mix(in oklab, var(--local-oklch-steel-1025) 72%, white 28%) !important;
 	--sky-color-border-container-border: var(--sky-color-border-container-base) !important;
 
-	--sky-color-text-action: var(--local-oklch-slate-800) !important;
-	--sky-theme-color-text-action: var(--local-oklch-slate-800) !important;
-	--sky-color-icon-action: var(--local-oklch-slate-800) !important;
-	--sky-theme-color-icon-action: var(--local-oklch-slate-800) !important;
-	--sky-color-background-action-primary-base: var(--local-oklch-slate-800) !important;
-	--sky-color-background-action-primary-hover: var(--local-oklch-slate-800) !important;
-	--sky-color-background-action-primary-active: var(--local-oklch-slate-850) !important;
-	--sky-color-background-action-primary-focus: var(--local-oklch-slate-850) !important;
-	--sky-color-border-action-primary-base: var(--local-oklch-slate-800) !important;
-	--sky-color-border-action-primary-hover: var(--local-oklch-slate-800) !important;
-	--sky-color-border-action-primary-active: var(--local-oklch-slate-850) !important;
-	--sky-color-border-action-primary-focus: var(--local-oklch-slate-850) !important;
+	/* Text color role assignments for Steel palette. */
+	--sky-color-text-heading: var(--local-oklch-steel-50) !important;
+	--sky-theme-color-text-heading: var(--local-oklch-steel-50) !important;
+	--sky-color-text-default: var(--local-oklch-steel-200) !important;
+	--sky-theme-color-text-default: var(--local-oklch-steel-200) !important;
+	--sky-color-text-deemphasized: var(--local-oklch-steel-400) !important;
+	--sky-theme-color-text-deemphasized: var(--local-oklch-steel-400) !important;
+	--sky-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-theme-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-color-icon-action: var(--bb-color-blue-400) !important;
+	--sky-theme-color-icon-action: var(--bb-color-blue-400) !important;
+	--sky-color-background-action-primary-base: var(--local-oklch-steel-800) !important;
+	--sky-color-background-action-primary-hover: var(--local-oklch-steel-800) !important;
+	--sky-color-background-action-primary-active: var(--local-oklch-steel-850) !important;
+	--sky-color-background-action-primary-focus: var(--local-oklch-steel-850) !important;
+	--sky-color-border-action-primary-base: var(--local-oklch-steel-800) !important;
+	--sky-color-border-action-primary-hover: var(--local-oklch-steel-800) !important;
+	--sky-color-border-action-primary-active: var(--local-oklch-steel-850) !important;
+	--sky-color-border-action-primary-focus: var(--local-oklch-steel-850) !important;
 }
 
-/* Strict CIELAB Slate lane: all overrides source from slate-only steps. */
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
-	/* Art-directed CIELAB slate ramp: smooth L progression with restrained cool chroma. */
-	--local-cielab-slate-1200: lch(10.0% 5.0 279);
-	--local-cielab-slate-1150: lch(12.5% 6.0 279);
-	--local-cielab-slate-1100: lch(15.5% 7.0 279);
-	--local-cielab-slate-1050: lch(18.5% 8.0 279);
-	--local-cielab-slate-1000: lch(22.0% 9.0 279);
-	--local-cielab-slate-950: lch(25.5% 10.5 279);
-	--local-cielab-slate-900: lch(29.5% 12.0 279);
-	--local-cielab-slate-850: lch(34.0% 13.5 279);
-	--local-cielab-slate-800: lch(39.0% 15.0 279);
+/* Steel Fusion lane: all overrides use Steel Fusion hex palette steps. */
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+	/* Steel Fusion palette — blended neutral with subtle blue-gray cast. */
+	--local-steel-fusion-1200: #0A0E12;
+	--local-steel-fusion-1175: #0D1014;
+	--local-steel-fusion-1100: #1C1F24;
+	--local-steel-fusion-1075: #171A1E;
+	--local-steel-fusion-1050: #191D21;
+	--local-steel-fusion-1025: #1C1F24;
+	--local-steel-fusion-1000: #1E2226;
+	--local-steel-fusion-970: #252A2E;
+	--local-steel-fusion-900: #424952;
+	--local-steel-fusion-800: #5D6771;
+	--local-steel-fusion-700: #6D7781;
+	--local-steel-fusion-600: #7E8792;
+	--local-steel-fusion-550: #9CA4AE;
+	--local-steel-fusion-500: #929BA4;
+	--local-steel-fusion-400: #A7AEB7;
+	--local-steel-fusion-300: #BCC3CA;
+	--local-steel-fusion-250: #C7CDD4;
+	--local-steel-fusion-200: #D2D7DD;
+	--local-steel-fusion-100: #E8ECF1;
+	--local-steel-fusion-50: #F3F7FB;
+	--local-steel-fusion-25: #F9FCFF;
 
 	/* Art-directed CIELAB blue ramp: anchored mids, smoothed dark stops, limited hue drift. */
 	--local-cielab-blue-1000: lch(14.0% 20.0 284);
@@ -126,32 +156,39 @@ body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--local-cielab-blue-350: lch(73.0% 31.0 276);
 	--local-cielab-blue-300: lch(79.0% 25.0 274);
 
-	--sky-color-background-page: var(--local-cielab-slate-1100) !important;
-	--sky-color-background-container-base: var(--local-cielab-slate-1000) !important;
-	--sky-color-background-container-dimmed: var(--local-cielab-slate-950) !important;
-	--sky-color-background-container-backdrop: var(--local-cielab-slate-900) !important;
-	--sky-color-background-container-menu: var(--local-cielab-slate-850) !important;
-	--sky-color-background-disabled: var(--local-cielab-slate-950) !important;
+	--sky-color-background-page: var(--local-steel-fusion-1175) !important;
+	--sky-color-background-container-base: var(--local-steel-fusion-1100) !important;
+	--sky-color-background-container-dimmed: var(--local-steel-fusion-970) !important;
+	--sky-color-background-container-backdrop: var(--local-steel-fusion-1100) !important;
+	--sky-color-background-container-menu: var(--local-steel-fusion-900) !important;
+	--sky-color-background-disabled: var(--local-steel-fusion-970) !important;
 
-	--sky-color-border-divider: color-mix(in oklab, var(--local-cielab-slate-900) 76%, white 24%) !important;
-	--sky-color-border-separator-row: color-mix(in oklab, var(--local-cielab-slate-950) 78%, white 22%) !important;
-	--sky-color-border-container-base: color-mix(in oklab, var(--local-cielab-slate-1000) 74%, white 26%) !important;
-	--sky-color-border-elevation: color-mix(in oklab, var(--local-cielab-slate-900) 74%, white 26%) !important;
-	--sky-color-border-input-base: color-mix(in oklab, var(--local-cielab-slate-950) 72%, white 28%) !important;
+	--sky-color-border-divider: color-mix(in oklab, var(--local-steel-fusion-900) 76%, white 24%) !important;
+	--sky-color-border-separator-row: color-mix(in oklab, var(--local-steel-fusion-970) 78%, white 22%) !important;
+	--sky-color-border-container-base: color-mix(in oklab, var(--local-steel-fusion-1000) 74%, white 26%) !important;
+	--sky-color-border-elevation: color-mix(in oklab, var(--local-steel-fusion-900) 74%, white 26%) !important;
+	--sky-color-border-input-base: color-mix(in oklab, var(--local-steel-fusion-970) 72%, white 28%) !important;
 	--sky-color-border-container-border: var(--sky-color-border-container-base) !important;
 
-	--sky-color-text-action: var(--local-cielab-slate-800) !important;
-	--sky-theme-color-text-action: var(--local-cielab-slate-800) !important;
-	--sky-color-icon-action: var(--local-cielab-slate-800) !important;
-	--sky-theme-color-icon-action: var(--local-cielab-slate-800) !important;
-	--sky-color-background-action-primary-base: var(--local-cielab-slate-800) !important;
-	--sky-color-background-action-primary-hover: var(--local-cielab-slate-800) !important;
-	--sky-color-background-action-primary-active: var(--local-cielab-slate-850) !important;
-	--sky-color-background-action-primary-focus: var(--local-cielab-slate-850) !important;
-	--sky-color-border-action-primary-base: var(--local-cielab-slate-800) !important;
-	--sky-color-border-action-primary-hover: var(--local-cielab-slate-800) !important;
-	--sky-color-border-action-primary-active: var(--local-cielab-slate-850) !important;
-	--sky-color-border-action-primary-focus: var(--local-cielab-slate-850) !important;
+	/* Text color role assignments for Steel Fusion palette. */
+	--sky-color-text-heading: var(--local-steel-fusion-50) !important;
+	--sky-theme-color-text-heading: var(--local-steel-fusion-50) !important;
+	--sky-color-text-default: var(--local-steel-fusion-250) !important;
+	--sky-theme-color-text-default: var(--local-steel-fusion-250) !important;
+	--sky-color-text-deemphasized: var(--local-steel-fusion-550) !important;
+	--sky-theme-color-text-deemphasized: var(--local-steel-fusion-550) !important;
+	--sky-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-theme-color-text-action: var(--bb-color-blue-375) !important;
+	--sky-color-icon-action: var(--bb-color-blue-400) !important;
+	--sky-theme-color-icon-action: var(--bb-color-blue-400) !important;
+	--sky-color-background-action-primary-base: var(--local-steel-fusion-800) !important;
+	--sky-color-background-action-primary-hover: var(--local-steel-fusion-800) !important;
+	--sky-color-background-action-primary-active: var(--local-steel-fusion-900) !important;
+	--sky-color-background-action-primary-focus: var(--local-steel-fusion-900) !important;
+	--sky-color-border-action-primary-base: var(--local-steel-fusion-800) !important;
+	--sky-color-border-action-primary-hover: var(--local-steel-fusion-800) !important;
+	--sky-color-border-action-primary-active: var(--local-steel-fusion-900) !important;
+	--sky-color-border-action-primary-focus: var(--local-steel-fusion-900) !important;
 }
 
 /* Dedicated Dark PoC lane for isolated experimental reporting. */
@@ -855,26 +892,26 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--local-layer-input-bg: var(--local-exp-slate-925);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-sandbox-standard {
-	--local-layer-l0-bg: var(--local-oklch-slate-1100);
-	--local-layer-l1-bg: var(--local-oklch-slate-1000);
-	--local-layer-l1-nested-bg: var(--local-oklch-slate-950);
-	--local-layer-l2-bg: var(--local-oklch-slate-900);
-	--local-layer-l3-bg: var(--local-oklch-slate-850);
+	--local-layer-l0-bg: var(--local-oklch-steel-1100);
+	--local-layer-l1-bg: var(--local-oklch-steel-1100);
+	--local-layer-l1-nested-bg: var(--local-oklch-steel-1100);
+	--local-layer-l2-bg: var(--local-oklch-steel-1000);
+	--local-layer-l3-bg: var(--local-oklch-steel-850);
 	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
 	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
 	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
 	--local-layer-link: var(--local-oklch-blue-500);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-sandbox-standard {
-	--local-layer-l0-bg: var(--local-cielab-slate-1100);
-	--local-layer-l1-bg: var(--local-cielab-slate-1000);
-	--local-layer-l1-nested-bg: var(--local-cielab-slate-950);
-	--local-layer-l2-bg: var(--local-cielab-slate-900);
-	--local-layer-l3-bg: var(--local-cielab-slate-850);
+	--local-layer-l0-bg: var(--local-steel-fusion-1100);
+	--local-layer-l1-bg: var(--local-steel-fusion-1100);
+	--local-layer-l1-nested-bg: var(--local-steel-fusion-1100);
+	--local-layer-l2-bg: var(--local-steel-fusion-970);
+	--local-layer-l3-bg: var(--local-steel-fusion-850);
 	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
 	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
 	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
@@ -1179,47 +1216,47 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--sky-layer-03-field: var(--local-exp-slate-850);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare {
-	--sky-layer-00-background: var(--local-oklch-slate-1100);
+	--sky-layer-00-background: var(--local-oklch-steel-1100);
 	--sky-layer-00-border: color-mix(in oklab, var(--sky-layer-00-background) 74%, white 26%);
 	--sky-layer-00-divider: color-mix(in oklab, var(--sky-layer-00-background) 76%, white 24%);
 	--sky-layer-00-field: color-mix(in oklab, var(--sky-layer-00-background) 84%, white 16%);
 
-	--sky-layer-01-background: var(--local-oklch-slate-1000);
+	--sky-layer-01-background: var(--local-oklch-steel-1000);
 	--sky-layer-01-border: color-mix(in oklab, var(--sky-layer-01-background) 74%, white 26%);
 	--sky-layer-01-divider: color-mix(in oklab, var(--sky-layer-01-background) 78%, white 22%);
 	--sky-layer-01-field: color-mix(in oklab, var(--sky-layer-01-background) 84%, white 16%);
 
-	--sky-layer-02-background: var(--local-oklch-slate-900);
+	--sky-layer-02-background: var(--local-oklch-steel-900);
 	--sky-layer-02-border: color-mix(in oklab, var(--sky-layer-02-background) 76%, white 24%);
 	--sky-layer-02-divider: color-mix(in oklab, var(--sky-layer-02-background) 80%, white 20%);
 	--sky-layer-02-field: color-mix(in oklab, var(--sky-layer-02-background) 84%, white 16%);
 
-	--sky-layer-03-background: var(--local-oklch-slate-850);
+	--sky-layer-03-background: var(--local-oklch-steel-850);
 	--sky-layer-03-border: color-mix(in oklab, var(--sky-layer-03-background) 76%, white 24%);
 	--sky-layer-03-divider: color-mix(in oklab, var(--sky-layer-03-background) 80%, white 20%);
 	--sky-layer-03-field: color-mix(in oklab, var(--sky-layer-03-background) 84%, white 16%);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare {
-	--sky-layer-00-background: var(--local-cielab-slate-1100);
+	--sky-layer-00-background: var(--local-steel-fusion-1100);
 	--sky-layer-00-border: color-mix(in oklab, var(--sky-layer-00-background) 74%, white 26%);
 	--sky-layer-00-divider: color-mix(in oklab, var(--sky-layer-00-background) 76%, white 24%);
 	--sky-layer-00-field: color-mix(in oklab, var(--sky-layer-00-background) 84%, white 16%);
 
-	--sky-layer-01-background: var(--local-cielab-slate-1000);
+	--sky-layer-01-background: var(--local-steel-fusion-1000);
 	--sky-layer-01-border: color-mix(in oklab, var(--sky-layer-01-background) 74%, white 26%);
 	--sky-layer-01-divider: color-mix(in oklab, var(--sky-layer-01-background) 78%, white 22%);
 	--sky-layer-01-field: color-mix(in oklab, var(--sky-layer-01-background) 84%, white 16%);
 
-	--sky-layer-02-background: var(--local-cielab-slate-900);
+	--sky-layer-02-background: var(--local-steel-fusion-900);
 	--sky-layer-02-border: color-mix(in oklab, var(--sky-layer-02-background) 76%, white 24%);
 	--sky-layer-02-divider: color-mix(in oklab, var(--sky-layer-02-background) 80%, white 20%);
 	--sky-layer-02-field: color-mix(in oklab, var(--sky-layer-02-background) 84%, white 16%);
 
-	--sky-layer-03-background: var(--local-cielab-slate-850);
+	--sky-layer-03-background: var(--local-steel-fusion-850);
 	--sky-layer-03-border: color-mix(in oklab, var(--sky-layer-03-background) 76%, white 24%);
 	--sky-layer-03-divider: color-mix(in oklab, var(--sky-layer-03-background) 80%, white 20%);
 	--sky-layer-03-field: color-mix(in oklab, var(--sky-layer-03-background) 84%, white 16%);
@@ -1257,7 +1294,7 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--_layer-field: var(--sky-layer-03-field);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='00'] {
 	--_layer-bg: var(--sky-layer-00-background);
 	--_layer-border: var(--sky-layer-00-border);
@@ -1265,7 +1302,7 @@ body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-them
 	--_layer-field: var(--sky-layer-00-field);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='01'] {
 	--_layer-bg: var(--sky-layer-01-background);
 	--_layer-border: var(--sky-layer-01-border);
@@ -1273,7 +1310,7 @@ body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-them
 	--_layer-field: var(--sky-layer-01-field);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='02'] {
 	--_layer-bg: var(--sky-layer-02-background);
 	--_layer-border: var(--sky-layer-02-border);
@@ -1281,7 +1318,7 @@ body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-them
 	--_layer-field: var(--sky-layer-02-field);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='03'] {
 	--_layer-bg: var(--sky-layer-03-background);
 	--_layer-border: var(--sky-layer-03-border);
@@ -1289,7 +1326,7 @@ body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-them
 	--_layer-field: var(--sky-layer-03-field);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='00'] {
 	--_layer-bg: var(--sky-layer-00-background);
 	--_layer-border: var(--sky-layer-00-border);
@@ -1297,7 +1334,7 @@ body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--_layer-field: var(--sky-layer-00-field);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='01'] {
 	--_layer-bg: var(--sky-layer-01-background);
 	--_layer-border: var(--sky-layer-01-border);
@@ -1305,7 +1342,7 @@ body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--_layer-field: var(--sky-layer-01-field);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='02'] {
 	--_layer-bg: var(--sky-layer-02-background);
 	--_layer-border: var(--sky-layer-02-border);
@@ -1313,7 +1350,7 @@ body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--_layer-field: var(--sky-layer-02-field);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare [data-sky-layer='03'] {
 	--_layer-bg: var(--sky-layer-03-background);
 	--_layer-border: var(--sky-layer-03-border);
@@ -1321,45 +1358,45 @@ body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--_layer-field: var(--sky-layer-03-field);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] {
 	background-color: var(--_layer-bg);
 	border-color: var(--_layer-border);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-chip {
 	border-color: var(--_layer-divider);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-divider {
 	border-top-color: var(--_layer-divider);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] input {
 	background-color: var(--_layer-field);
 	border-color: var(--_layer-border);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] {
 	background-color: var(--_layer-bg);
 	border-color: var(--_layer-border);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-chip {
 	border-color: var(--_layer-divider);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] .local-layer-divider {
 	border-top-color: var(--_layer-divider);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-compare .local-layer-surface[data-sky-layer] input {
 	background-color: var(--_layer-field);
 	border-color: var(--_layer-border);
@@ -1873,26 +1910,26 @@ body[data-layering='experimental'].sky-theme-modern.sky-theme-brand-base.sky-the
 	--local-layer-input-bg: var(--local-exp-slate-925);
 }
 
-body[data-layering='oklch-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-sandbox-strict {
-	--local-layer-l0-bg: var(--local-oklch-slate-1100);
-	--local-layer-l1-bg: var(--local-oklch-slate-1000);
-	--local-layer-l1-nested-bg: var(--local-oklch-slate-950);
-	--local-layer-l2-bg: var(--local-oklch-slate-900);
-	--local-layer-l3-bg: var(--local-oklch-slate-850);
+	--local-layer-l0-bg: var(--local-oklch-steel-1100);
+	--local-layer-l1-bg: var(--local-oklch-steel-1100);
+	--local-layer-l1-nested-bg: var(--local-oklch-steel-1100);
+	--local-layer-l2-bg: var(--local-oklch-steel-1000);
+	--local-layer-l3-bg: var(--local-oklch-steel-850);
 	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
 	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
 	--local-layer-link: var(--local-oklch-blue-500);
 	--local-layer-input-bg: color-mix(in oklab, var(--local-layer-l1-bg) 84%, white 16%);
 }
 
-body[data-layering='cielab-slate'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark
 	.local-layer-sandbox-strict {
-	--local-layer-l0-bg: var(--local-cielab-slate-1100);
-	--local-layer-l1-bg: var(--local-cielab-slate-1000);
-	--local-layer-l1-nested-bg: var(--local-cielab-slate-950);
-	--local-layer-l2-bg: var(--local-cielab-slate-900);
-	--local-layer-l3-bg: var(--local-cielab-slate-850);
+	--local-layer-l0-bg: var(--local-steel-fusion-1100);
+	--local-layer-l1-bg: var(--local-steel-fusion-1100);
+	--local-layer-l1-nested-bg: var(--local-steel-fusion-1100);
+	--local-layer-l2-bg: var(--local-steel-fusion-970);
+	--local-layer-l3-bg: var(--local-steel-fusion-850);
 	--local-layer-border: color-mix(in oklab, var(--local-layer-l1-bg) 74%, white 26%);
 	--local-layer-divider: color-mix(in oklab, var(--local-layer-l2-bg) 76%, white 24%);
 	--local-layer-link: var(--local-cielab-blue-500);

@@ -26,6 +26,7 @@ export default ({ mode }) => {
       open: true,
     },
     server: {
+      port: 5176,
       https: viteEnv.VITE_DEV_CERT
         ? {
             cert: viteEnv.VITE_DEV_CERT,

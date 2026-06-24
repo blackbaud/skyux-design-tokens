@@ -1,5 +1,6 @@
 import '@skyux/theme/css/sky.css';
 import '@skyux/theme/css/themes/modern/styles.css';
+import './extra-styles.css';
 
 document.body.classList.add(
   'local-dev-tokens',
@@ -26,10 +27,10 @@ if (showLayerSandbox) {
     const initialLayeringMode =
       document.body.dataset.layering === 'experimental'
         ? 'experimental'
-        : document.body.dataset.layering === 'oklch-slate'
-          ? 'oklch-slate'
-          : document.body.dataset.layering === 'cielab-slate'
-            ? 'cielab-slate'
+        : document.body.dataset.layering === 'oklch-steel'
+          ? 'oklch-steel'
+          : document.body.dataset.layering === 'oklch-steel-fusion'
+            ? 'oklch-steel-fusion'
             : document.body.dataset.layering === 'dark-poc'
               ? 'dark-poc'
         : 'current';
@@ -59,8 +60,8 @@ if (showLayerSandbox) {
     type LayeringMode =
       | 'current'
       | 'experimental'
-      | 'oklch-slate'
-      | 'cielab-slate'
+      | 'oklch-steel'
+      | 'oklch-steel-fusion'
       | 'dark-poc';
     type DemoMode = 'slate' | 'gray';
     type HomePage =
@@ -1233,7 +1234,7 @@ if (showLayerSandbox) {
           <input id="${idPrefix}-l1-input" type="text" value="L1 container input" />
           <a href="javascript:void(0)">L1 link inside container</a>
 
-          <section class="local-layer-surface local-layer-l1-nested" data-sky-layer="01" aria-label="Nested content inside layer 1" style="background: color-mix(in oklab, var(--local-poc-surface-depth-0, var(--sky-theme-color-background-container-base, var(--sky-color-background-container-base))) 94%, black 6%); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
+          <section class="local-layer-surface local-layer-l1-nested" data-sky-layer="01" aria-label="Nested content inside layer 1" style="background: var(--local-layer-l1-nested-bg, var(--local-poc-surface-depth-0, var(--sky-theme-color-background-container-base, var(--sky-color-background-container-base)))); border-color: var(--local-layer-border, var(--local-poc-border-elevation, var(--sky-theme-color-border-elevation, var(--sky-color-border-elevation))));">
             <span class="local-layer-chip">Nested In L1</span>
             <h3>L1 Nested Content Block</h3>
             <p>Use this block to inspect separators and text contrast within the same surface level.</p>
@@ -1281,8 +1282,8 @@ if (showLayerSandbox) {
             <div class="local-layer-mode-tabs" role="tablist" aria-label="Layering token mode">
               <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="current" aria-pressed="false">Current SKY UX</button>
               <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="experimental" aria-pressed="false">Experimental</button>
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="oklch-slate" aria-pressed="false">OKLCH Slate</button>
-              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="cielab-slate" aria-pressed="false">CIELAB Slate</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="oklch-steel" aria-pressed="false">OKLCH Steel</button>
+              <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="oklch-steel-fusion" aria-pressed="false">OKLCH Steel Fusion</button>
               <button type="button" class="local-layer-mode-tab local-layer-primary-tab" data-layering-child-target="dark-poc" aria-pressed="false">OKLCH PoC</button>
             </div>
           </section>
@@ -1358,33 +1359,56 @@ if (showLayerSandbox) {
                     </div>
                   </section>
 
-                  <section class="local-palette-column" aria-label="CIELAB slate palette">
-                    <h4>CIELAB Slate</h4>
+                  <section class="local-palette-column" aria-label="OKLCH Steel Fusion palette">
+                    <h4>OKLCH Steel Fusion</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(10.0% 5.0 279);"></span><span>lch(10.0% 5.0 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(12.5% 6.0 279);"></span><span>lch(12.5% 6.0 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(15.5% 7.0 279);"></span><span>lch(15.5% 7.0 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(18.5% 8.0 279);"></span><span>lch(18.5% 8.0 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(22.0% 9.0 279);"></span><span>lch(22.0% 9.0 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(25.5% 10.5 279);"></span><span>lch(25.5% 10.5 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(29.5% 12.0 279);"></span><span>lch(29.5% 12.0 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(34.0% 13.5 279);"></span><span>lch(34.0% 13.5 279)</span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:lch(39.0% 15.0 279);"></span><span>lch(39.0% 15.0 279)</span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#F9FCFF;"></span><span class="local-palette-value-group"><span>steel-fusion-25</span><span class="local-palette-hex">#F9FCFF</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#F3F7FB;"></span><span class="local-palette-value-group"><span>steel-fusion-50</span><span class="local-palette-hex">#F3F7FB</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#E8ECF1;"></span><span class="local-palette-value-group"><span>steel-fusion-100</span><span class="local-palette-hex">#E8ECF1</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#D2D7DD;"></span><span class="local-palette-value-group"><span>steel-fusion-200</span><span class="local-palette-hex">#D2D7DD</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#C7CDD4;"></span><span class="local-palette-value-group"><span>steel-fusion-250</span><span class="local-palette-hex">#C7CDD4</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#BCC3CA;"></span><span class="local-palette-value-group"><span>steel-fusion-300</span><span class="local-palette-hex">#BCC3CA</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#A7AEB7;"></span><span class="local-palette-value-group"><span>steel-fusion-400</span><span class="local-palette-hex">#A7AEB7</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#929BA4;"></span><span class="local-palette-value-group"><span>steel-fusion-500</span><span class="local-palette-hex">#929BA4</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#9CA4AE;"></span><span class="local-palette-value-group"><span>steel-fusion-550</span><span class="local-palette-hex">#9CA4AE</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#7E8792;"></span><span class="local-palette-value-group"><span>steel-fusion-600</span><span class="local-palette-hex">#7E8792</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#6D7781;"></span><span class="local-palette-value-group"><span>steel-fusion-700</span><span class="local-palette-hex">#6D7781</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#5D6771;"></span><span class="local-palette-value-group"><span>steel-fusion-800</span><span class="local-palette-hex">#5D6771</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#424952;"></span><span class="local-palette-value-group"><span>steel-fusion-900</span><span class="local-palette-hex">#424952</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#252A2E;"></span><span class="local-palette-value-group"><span>steel-fusion-970</span><span class="local-palette-hex">#252A2E</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1E2226;"></span><span class="local-palette-value-group"><span>steel-fusion-1000</span><span class="local-palette-hex">#1E2226</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1C1F24;"></span><span class="local-palette-value-group"><span>steel-fusion-1025</span><span class="local-palette-hex">#1C1F24</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#191D21;"></span><span class="local-palette-value-group"><span>steel-fusion-1050</span><span class="local-palette-hex">#191D21</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#171A1E;"></span><span class="local-palette-value-group"><span>steel-fusion-1075</span><span class="local-palette-hex">#171A1E</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1C1F24;"></span><span class="local-palette-value-group"><span>steel-fusion-1100</span><span class="local-palette-hex">#1C1F24</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#0D1014;"></span><span class="local-palette-value-group"><span>steel-fusion-1175</span><span class="local-palette-hex">#0D1014</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#0A0E12;"></span><span class="local-palette-value-group"><span>steel-fusion-1200</span><span class="local-palette-hex">#0A0E12</span></span></div>
                     </div>
                   </section>
 
-                  <section class="local-palette-column" aria-label="OKLCH slate palette">
-                    <h4>OKLCH Slate</h4>
+                  <section class="local-palette-column" aria-label="OKLCH Steel palette">
+                    <h4>OKLCH Steel</h4>
                     <div class="local-palette-stack">
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.16 0.018 255);"></span><span class="local-palette-value-group"><span>oklch(0.16 0.018 255)</span><span class="local-palette-hex">#080e15</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.18 0.020 255);"></span><span class="local-palette-value-group"><span>oklch(0.18 0.020 255)</span><span class="local-palette-hex">#0c121a</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.20 0.023 255);"></span><span class="local-palette-value-group"><span>oklch(0.20 0.023 255)</span><span class="local-palette-hex">#0f1720</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.22 0.026 255);"></span><span class="local-palette-value-group"><span>oklch(0.22 0.026 255)</span><span class="local-palette-hex">#121b27</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.24 0.029 255);"></span><span class="local-palette-value-group"><span>oklch(0.24 0.029 255)</span><span class="local-palette-hex">#16202d</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.27 0.033 255);"></span><span class="local-palette-value-group"><span>oklch(0.27 0.033 255)</span><span class="local-palette-hex">#1b2736</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.30 0.037 255);"></span><span class="local-palette-value-group"><span>oklch(0.30 0.037 255)</span><span class="local-palette-hex">#212f40</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.34 0.041 255);"></span><span class="local-palette-value-group"><span>oklch(0.34 0.041 255)</span><span class="local-palette-hex">#29394d</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:oklch(0.38 0.045 255);"></span><span class="local-palette-value-group"><span>oklch(0.38 0.045 255)</span><span class="local-palette-hex">#32445a</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#FAFCFE;"></span><span class="local-palette-value-group"><span>steel-25</span><span class="local-palette-hex">#FAFCFE</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#F3F6FA;"></span><span class="local-palette-value-group"><span>steel-50</span><span class="local-palette-hex">#F3F6FA</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#ECEFF4;"></span><span class="local-palette-value-group"><span>steel-100</span><span class="local-palette-hex">#ECEFF4</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#DDE2E9;"></span><span class="local-palette-value-group"><span>steel-200</span><span class="local-palette-hex">#DDE2E9</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#D2D8E0;"></span><span class="local-palette-value-group"><span>steel-250</span><span class="local-palette-hex">#D2D8E0</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#C4CBD4;"></span><span class="local-palette-value-group"><span>steel-300</span><span class="local-palette-hex">#C4CBD4</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#B4BCC6;"></span><span class="local-palette-value-group"><span>steel-350</span><span class="local-palette-hex">#B4BCC6</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#A2ABB7;"></span><span class="local-palette-value-group"><span>steel-400</span><span class="local-palette-hex">#A2ABB7</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#828C9A;"></span><span class="local-palette-value-group"><span>steel-500</span><span class="local-palette-hex">#828C9A</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#666B70;"></span><span class="local-palette-value-group"><span>steel-600</span><span class="local-palette-hex">#666B70</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#545C68;"></span><span class="local-palette-value-group"><span>steel-700</span><span class="local-palette-hex">#545C68</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#454D59;"></span><span class="local-palette-value-group"><span>steel-800</span><span class="local-palette-hex">#454D59</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#3C4450;"></span><span class="local-palette-value-group"><span>steel-850</span><span class="local-palette-hex">#3C4450</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#353D49;"></span><span class="local-palette-value-group"><span>steel-900</span><span class="local-palette-hex">#353D49</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#2A313C;"></span><span class="local-palette-value-group"><span>steel-1000</span><span class="local-palette-hex">#2A313C</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#272E39;"></span><span class="local-palette-value-group"><span>steel-1025</span><span class="local-palette-hex">#272E39</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#242B36;"></span><span class="local-palette-value-group"><span>steel-1050</span><span class="local-palette-hex">#242B36</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#212834;"></span><span class="local-palette-value-group"><span>steel-1075</span><span class="local-palette-hex">#212834</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1D242F;"></span><span class="local-palette-value-group"><span>steel-1100</span><span class="local-palette-hex">#1D242F</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#131A24;"></span><span class="local-palette-value-group"><span>steel-1200</span><span class="local-palette-hex">#131A24</span></span></div>
                     </div>
                   </section>
                 </div>
@@ -1700,22 +1724,22 @@ if (showLayerSandbox) {
       });
 
       layeringChildButtons.forEach((button) => {
-        if (button.dataset.layeringChildTarget === 'oklch-slate') {
-          button.textContent = mode === 'gray' ? 'OKLCH / Gray' : 'OKLCH Slate';
+        if (button.dataset.layeringChildTarget === 'oklch-steel') {
+          button.textContent = mode === 'gray' ? 'OKLCH / Gray' : 'OKLCH Steel';
         }
 
-        if (button.dataset.layeringChildTarget === 'cielab-slate') {
-          button.textContent = mode === 'gray' ? 'CIELAB / Gray' : 'CIELAB Slate';
+        if (button.dataset.layeringChildTarget === 'oklch-steel-fusion') {
+          button.textContent = mode === 'gray' ? 'OKLCH Steel Fusion / Gray' : 'OKLCH Steel Fusion';
         }
       });
 
       const currentLayeringMode: LayeringMode =
         document.body.dataset.layering === 'experimental'
           ? 'experimental'
-          : document.body.dataset.layering === 'oklch-slate'
-            ? 'oklch-slate'
-            : document.body.dataset.layering === 'cielab-slate'
-              ? 'cielab-slate'
+          : document.body.dataset.layering === 'oklch-steel'
+            ? 'oklch-steel'
+            : document.body.dataset.layering === 'oklch-steel-fusion'
+              ? 'oklch-steel-fusion'
               : document.body.dataset.layering === 'dark-poc'
                 ? 'dark-poc'
                 : 'current';
@@ -1880,10 +1904,10 @@ if (showLayerSandbox) {
         const child =
           button.dataset.layeringChildTarget === 'experimental'
             ? 'experimental'
-            : button.dataset.layeringChildTarget === 'oklch-slate'
-              ? 'oklch-slate'
-              : button.dataset.layeringChildTarget === 'cielab-slate'
-                ? 'cielab-slate'
+            : button.dataset.layeringChildTarget === 'oklch-steel'
+              ? 'oklch-steel'
+              : button.dataset.layeringChildTarget === 'oklch-steel-fusion'
+                ? 'oklch-steel-fusion'
                 : button.dataset.layeringChildTarget === 'dark-poc'
                   ? 'dark-poc'
             : 'current';
