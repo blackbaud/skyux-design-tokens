@@ -468,6 +468,12 @@
           "$value": "#0f1114"
         }
       },
+      "oklch-blue" {
+        "375": {
+          "$type": "color",
+          "$value": "#79ADF1"
+        },
+      }
       "blue": {
         "25": {
           "$type": "color",
@@ -1084,6 +1090,44 @@
         "impact_green": {
           "$type": "color",
           "$value": "#0CD973"
+        }
+      },
+      "steel": {
+        "100": {
+          "$type": "color",
+          "$value": "#ECEFF4"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#DDE2E9"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#A2ABB7"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#2A313C"
+        },
+        "1025": {
+          "$type": "color",
+          "$value": "#272E39"
+        },
+        "1050": {
+          "$type": "color",
+          "$value": "#242B36"
+        },
+        "1075": {
+          "$type": "color",
+          "$value": "#212834"
+        },
+        "1100": {
+          "$type": "color",
+          "$value": "#1D242F"
+        },
+        "1200": {
+          "$type": "color",
+          "$value": "#131A24"
         }
       }
     },
