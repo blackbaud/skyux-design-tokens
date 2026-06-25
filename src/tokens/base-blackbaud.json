@@ -468,12 +468,12 @@
           "$value": "#0f1114"
         }
       },
-      "oklch-blue" {
+      "oklch-blue": {
         "375": {
           "$type": "color",
           "$value": "#79ADF1"
-        },
-      }
+        }
+      },
       "blue": {
         "25": {
           "$type": "color",
