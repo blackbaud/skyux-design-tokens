@@ -11,7 +11,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.400}"
+        "$value": "{bb.color.oklch-blue.375}"
       },
       "danger": {
         "$type": "color",
@@ -31,7 +31,7 @@
       },
       "action_contrast": {
         "$type": "color",
-        "$value": "{bb.color.blue.350}"
+        "$value": "{bb.color.oklch-blue.375}"
       }
     },
     "icon": {
@@ -89,7 +89,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{bb.color.steel.700}"
+        "$value": "{bb.color.gray.700}"
       },
       "blocking": {
         "$type": "color",
@@ -268,7 +268,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.steel.1150}"
+          "$value": "{bb.color.steel.1100}"
         }
       },
       "icon_matte": {
@@ -328,7 +328,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.steel.700}"
+          "$value": "{bb.color.gray.700}"
         }
       },
       "nav": {
