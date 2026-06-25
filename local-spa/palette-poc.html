@@ -815,14 +815,14 @@
           <option value="form">Form</option>
         </select>
 
-        <label for="link-mode-select">Link mode</label>
-        <select id="link-mode-select">
+        <label for="link-model-select">Link mode</label>
+        <select id="link-model-select" data-control-id="link-mode-select">
           <option value="scenario">Scenario default</option>
           <option value="underline">Underline all</option>
           <option value="none">No underline default</option>
         </select>
 
-        <button type="button" id="copy-url">Copy share URL</button>
+        <button type="button" id="share-button" data-control-id="copy-url">Copy share URL</button>
       </div>
       <div class="poc-meta" id="meta"></div>
     </header>
@@ -831,9 +831,9 @@
       <aside class="poc-omnibar" aria-label="Vertical navigation mimic">
         <p class="poc-omnibar-title">Navigation</p>
         <ul class="poc-nav-list">
-          <li><a class="poc-nav-item is-active" href="#" data-page-nav="data-grid">Data grid</a></li>
-          <li><a class="poc-nav-item" href="#" data-page-nav="dashboard">Dashboard/homepage</a></li>
-          <li><a class="poc-nav-item" href="#" data-page-nav="form">Form</a></li>
+          <li><a class="poc-nav-item is-active" href="#" data-page-nav="data-grid" data-page-target="data-grid">Data grid</a></li>
+          <li><a class="poc-nav-item" href="#" data-page-nav="dashboard" data-page-target="dashboard">Dashboard/homepage</a></li>
+          <li><a class="poc-nav-item" href="#" data-page-nav="form" data-page-target="form">Form</a></li>
           <li><a class="poc-nav-item" href="#">Recent work</a></li>
           <li><a class="poc-nav-item" href="#">Saved filters</a></li>
         </ul>
@@ -1098,7 +1098,7 @@
             defaultUnderlineLinks: true,
             notes: 'Optimized Steel Fusion PoC lane with OKLCH adjustments for improved performance (surface depth, text contrast, border definition, reduced clinical feel).',
             tokens: {
-              '--poc-bg-l0': 'var(--bb-color-steel-fusion-1095, #171A1E)',
+              '--poc-bg-l0': 'var(--bb-color-steel-fusion-1175, #141920)',
               '--poc-bg-l1': '#1C2329',
               '--poc-bg-l2': '#283037',
               '--poc-border-base': '#525D6B',
@@ -1173,8 +1173,12 @@
 
     const scenarioSelect = document.getElementById('scenario-select');
     const pageSelect = document.getElementById('page-select');
-    const linkModeSelect = document.getElementById('link-mode-select');
-    const copyUrlButton = document.getElementById('copy-url');
+    const linkModeSelect =
+      document.getElementById('link-model-select') ||
+      document.getElementById('link-mode-select');
+    const copyUrlButton =
+      document.getElementById('share-button') ||
+      document.getElementById('copy-url');
     const meta = document.getElementById('meta');
     const scenarioName = document.getElementById('scenario-name');
     const tokenList = document.getElementById('token-list');

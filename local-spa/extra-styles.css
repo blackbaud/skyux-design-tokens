@@ -14,6 +14,8 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--local-exp-slate-925: #1f293b;
 	--local-exp-slate-975: #1c2434;
 	--local-exp-slate-950: #1d2738;
+	--local-container-base-border-gradient-top: var(--bb-color-gray-700, #51555c);
+	--local-container-base-border-gradient-bottom: var(--bb-color-gray-800, #3b4047);
 
 	/* Force link action reference tokens to Blue-375 in dark previews. */
 	--sky-color-text-action: var(--bb-color-blue-375) !important;
@@ -28,6 +30,24 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	--sky-color-border-action-primary-hover: var(--bb-color-blue-500) !important;
 	--sky-color-border-action-primary-active: var(--bb-color-blue-500) !important;
 	--sky-color-border-action-primary-focus: var(--bb-color-blue-500) !important;
+}
+
+body[data-layering='oklch-steel'].sky-theme-modern,
+html[data-layering='oklch-steel'] body.sky-theme-modern {
+	--local-container-base-border-gradient-top: var(--bb-color-steel-700, #545c68);
+	--local-container-base-border-gradient-bottom: var(--bb-color-steel-800, #454d59);
+}
+
+body[data-layering='oklch-steel-fusion'].sky-theme-modern,
+html[data-layering='oklch-steel-fusion'] body.sky-theme-modern {
+	--local-container-base-border-gradient-top: var(--bb-color-steel-fusion-950, #333d45);
+	--local-container-base-border-gradient-bottom: var(--bb-color-steel-fusion-900, #424952);
+}
+
+body[data-layering='dark-poc'].sky-theme-modern,
+html[data-layering='dark-poc'] body.sky-theme-modern {
+	--local-container-base-border-gradient-top: var(--bb-color-slate-700, #42597e);
+	--local-container-base-border-gradient-bottom: var(--bb-color-slate-800, #32435e);
 }
 
 /* Default override lane: gray neutrals. */
@@ -88,14 +108,25 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-box.sky-elev
 	border: 1px solid transparent !important;
 	border-radius: var(--sky-theme-border-radius-s, 4px) !important;
 	background-color: var(--sky-color-background-container-base) !important;
+	background-clip: padding-box !important;
 	position: relative;
 }
 
-/* Override utility border token class with a vertical slate gradient. */
-body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-border-container-default {
+/* Confine the gradient to the container-base border treatment. */
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-border-container-default,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-background-container-default,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-color-background-container-default,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [class*='sky-theme-background-container-default'],
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [class*='sky-theme-color-background-container-default'],
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [style*='--sky-color-background-container-base'],
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [style*='--sky-theme-color-background-container-base'],
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [data-sky-surface='container-base'],
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .palette-card,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .spa-header {
 	border: 1px solid transparent !important;
 	border-radius: var(--sky-theme-border-radius-s, 4px) !important;
 	background-color: var(--sky-color-background-container-base) !important;
+	background-clip: padding-box !important;
 	position: relative;
 }
 
@@ -107,6 +138,15 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .swatch {
 
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-box.sky-elevation-1-bordered::before,
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-border-container-default::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-background-container-default::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-theme-color-background-container-default::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [class*='sky-theme-background-container-default']::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [class*='sky-theme-color-background-container-default']::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [style*='--sky-color-background-container-base']::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [style*='--sky-theme-color-background-container-base']::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark [data-sky-surface='container-base']::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .palette-card::before,
+body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .spa-header::before,
 body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .swatch::before {
 	content: '';
 	position: absolute;
@@ -114,15 +154,24 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .swatch::before {
 	border-radius: inherit;
 	padding: 1px;
 	background: linear-gradient(
-		to top,
-		var(--bb-color-gray-800),
-		var(--bb-color-gray-850)
+		to bottom,
+		var(--local-container-base-border-gradient-top, var(--bb-color-gray-700, #51555c)),
+		var(--local-container-base-border-gradient-bottom, var(--bb-color-gray-800, #3b4047))
 	);
 	-webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
 	-webkit-mask-composite: xor;
 	mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
 	mask-composite: exclude;
 	pointer-events: none;
+}
+
+body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-box.sky-elevation-1-bordered::before,
+html[data-layering='oklch-steel-fusion'] body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-box.sky-elevation-1-bordered::before {
+	background: linear-gradient(
+		to bottom,
+		var(--bb-color-steel-fusion-950, #333d45),
+		var(--bb-color-steel-fusion-900, #424952)
+	) !important;
 }
 
 /* Phase B – surface-relative experiment (do not ship)
@@ -238,6 +287,20 @@ body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark omnibar-search .s
 		var(--local-exp-current-surface) var(--local-exp-input-lift-surface-weight),
 		white var(--local-exp-input-lift-white-weight)
 	) !important;
+}
+
+.sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item-submenu,
+.sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item-submenu::before,
+.sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item-submenu::after {
+	border-color: var(--bb-color-blue-800, #1A4080) !important;
+	border-left: 1px solid var(--bb-color-blue-800, #1A4080) !important;
+	border-left-color: var(--bb-color-blue-800, #1A4080) !important;
+	border-inline-start-color: var(--bb-color-blue-800, #1A4080) !important;
+}
+
+.sky-theme-modern .omnibar-vertical-menu-item-wrapper {
+	--sky-color-border-nav-hover: var(--bb-color-blue-400, #80A6E6) !important;
+	--omnibar-vertical-menu-item-active-shadow: 0 0 0 var(--sky-border-width-action-hover) var(--bb-color-blue-400, #80A6E6) !important;
 }
 
 /* Phase B - Carbon layering PoC */

@@ -11,7 +11,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue.500}"
+        "$value": "{bb.color.blue.375}"
       },
       "danger": {
         "$type": "color",
@@ -69,7 +69,7 @@
       },
       "selected": {
         "$type": "color",
-        "$value": "{bb.color.blue.600}"
+        "$value": "{bb.color.blue.400}"
       },
       "input": {
         "action": {
@@ -360,7 +360,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue.900}"
+          "$value": "{bb.color.blue.800}"
         },
         "danger": {
           "$type": "color",

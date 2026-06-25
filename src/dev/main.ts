@@ -20,6 +20,396 @@ const showLayerSandbox =
   localPreviewMode === 'sandbox' || localPreviewMode === null;
 const showPalettePreview = urlParams.get('local-preview') === 'palette';
 
+const requestedLayering = urlParams.get('layering');
+const initialLayeringFromQuery =
+  requestedLayering === 'current' ||
+  requestedLayering === 'experimental' ||
+  requestedLayering === 'oklch-steel' ||
+  requestedLayering === 'oklch-steel-fusion' ||
+  requestedLayering === 'dark-poc'
+    ? requestedLayering
+    : null;
+
+type GlobalLayeringMode =
+  | 'current'
+  | 'experimental'
+  | 'oklch-steel'
+  | 'oklch-steel-fusion'
+  | 'dark-poc';
+
+const runtimeOverrideStyleId = 'local-runtime-prod-overrides';
+
+function setRootVar(name: string, value: string | null): void {
+  if (value === null) {
+    document.documentElement.style.removeProperty(name);
+    document.body.style.removeProperty(name);
+    return;
+  }
+
+  document.documentElement.style.setProperty(name, value);
+  document.body.style.setProperty(name, value);
+}
+
+function applyRuntimeLayeringOverrides(mode: GlobalLayeringMode): void {
+  const styleElement =
+    document.getElementById(runtimeOverrideStyleId) ?? document.createElement('style');
+
+  styleElement.id = runtimeOverrideStyleId;
+
+  const isSteel = mode === 'oklch-steel' || mode === 'oklch-steel-fusion';
+  const isSteelFusion = mode === 'oklch-steel-fusion';
+  const containerBaseBorderGradientTop =
+    mode === 'oklch-steel-fusion'
+      ? 'var(--bb-color-steel-fusion-950, #333D45)'
+      : mode === 'oklch-steel'
+        ? 'var(--bb-color-steel-700, #545C68)'
+        : mode === 'dark-poc'
+          ? 'var(--bb-color-slate-700, #42597E)'
+          : 'var(--bb-color-gray-700, #51555C)';
+  const containerBaseBorderGradientBottom =
+    mode === 'oklch-steel-fusion'
+      ? 'var(--bb-color-steel-fusion-900, #424952)'
+      : mode === 'oklch-steel'
+        ? 'var(--bb-color-steel-800, #454D59)'
+        : mode === 'dark-poc'
+          ? 'var(--bb-color-slate-800, #32435E)'
+          : 'var(--bb-color-gray-800, #3B4047)';
+
+  setRootVar('--local-container-base-border-gradient-top', containerBaseBorderGradientTop);
+  setRootVar(
+    '--local-container-base-border-gradient-bottom',
+    containerBaseBorderGradientBottom,
+  );
+
+  setRootVar(
+    '--sky-color-text-heading',
+    isSteelFusion ? 'var(--local-steel-fusion-100, #E8ECF1)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-text-heading',
+    isSteelFusion ? 'var(--local-steel-fusion-100, #E8ECF1)' : null,
+  );
+  setRootVar(
+    '--sky-color-text-deemphasized',
+    isSteelFusion ? 'var(--local-steel-fusion-500, #929BA4)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-text-deemphasized',
+    isSteelFusion ? 'var(--local-steel-fusion-500, #929BA4)' : null,
+  );
+  setRootVar(
+    '--sky-color-text-action',
+    isSteel ? 'var(--bb-color-blue-375, #79ADF1)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-text-action',
+    isSteel ? 'var(--bb-color-blue-375, #79ADF1)' : null,
+  );
+  setRootVar(
+    '--sky-color-text-selected',
+    isSteel ? 'var(--sky-theme-color-text-inverse, var(--sky-color-text-inverse))' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-text-selected',
+    isSteel ? 'var(--sky-theme-color-text-inverse, var(--sky-color-text-inverse))' : null,
+  );
+  setRootVar(
+    '--sky-color-icon-selected',
+    isSteel ? 'var(--bb-color-blue-400, #80A6E6)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-icon-selected',
+    isSteel ? 'var(--bb-color-blue-400, #80A6E6)' : null,
+  );
+  setRootVar(
+    '--sky-color-icon-default',
+    isSteelFusion ? 'var(--bb-color-yellow-800)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-icon-default',
+    isSteelFusion ? 'var(--bb-color-yellow-800)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-page',
+    isSteelFusion ? 'var(--local-steel-fusion-1175, #141920)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-container-base',
+    isSteelFusion ? 'var(--local-steel-fusion-1100, #1C2329)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-container-dimmed',
+    isSteelFusion ? 'var(--local-steel-fusion-970, #283037)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-container-warning',
+    isSteelFusion ? 'var(--bb-color-yellow-400)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-background-container-warning',
+    isSteelFusion ? 'var(--bb-color-yellow-400)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-icon_matte-warning',
+    isSteelFusion ? 'var(--bb-color-yellow-600)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-background-icon_matte-warning',
+    isSteelFusion ? 'var(--bb-color-yellow-600)' : null,
+  );
+  setRootVar(
+    '--sky-color-border-warning',
+    isSteelFusion ? 'var(--bb-color-yellow-600)' : null,
+  );
+  setRootVar(
+    '--sky-theme-color-border-warning',
+    isSteelFusion ? 'var(--bb-color-yellow-600)' : null,
+  );
+  setRootVar(
+    '--sky-theme-border-warning',
+    isSteelFusion ? '1px solid var(--bb-color-yellow-600)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-action-primary-base',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-action-primary-hover',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-action-primary-active',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-background-action-primary-focus',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-border-action-primary-base',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-border-action-primary-hover',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-border-action-primary-active',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+  setRootVar(
+    '--sky-color-border-action-primary-focus',
+    isSteel ? 'var(--bb-color-blue-500, #5589DD)' : null,
+  );
+
+  const gradientBorderStyles = `
+      .sky-theme-modern .sky-box.sky-elevation-1-bordered,
+      .sky-theme-modern .sky-theme-border-container-default,
+      .sky-theme-modern .sky-theme-background-container-default,
+      .sky-theme-modern .sky-theme-color-background-container-default,
+      .sky-theme-modern [class*='sky-theme-background-container-default'],
+      .sky-theme-modern [class*='sky-theme-color-background-container-default'],
+      .sky-theme-modern [style*='--sky-color-background-container-base'],
+      .sky-theme-modern [style*='--sky-theme-color-background-container-base'],
+      .sky-theme-modern [data-sky-surface='container-base'],
+      .sky-theme-modern .palette-card,
+      .sky-theme-modern .spa-header {
+        border: 1px solid transparent !important;
+        border-radius: var(--sky-theme-border-radius-s, 4px) !important;
+        background-clip: padding-box !important;
+        position: relative;
+      }
+
+      .sky-theme-modern .sky-box.sky-elevation-1-bordered::before,
+      .sky-theme-modern .sky-theme-border-container-default::before,
+      .sky-theme-modern .sky-theme-background-container-default::before,
+      .sky-theme-modern .sky-theme-color-background-container-default::before,
+      .sky-theme-modern [class*='sky-theme-background-container-default']::before,
+      .sky-theme-modern [class*='sky-theme-color-background-container-default']::before,
+      .sky-theme-modern [style*='--sky-color-background-container-base']::before,
+      .sky-theme-modern [style*='--sky-theme-color-background-container-base']::before,
+      .sky-theme-modern [data-sky-surface='container-base']::before,
+      .sky-theme-modern .palette-card::before,
+      .sky-theme-modern .spa-header::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          to bottom,
+          var(--local-container-base-border-gradient-top, var(--bb-color-gray-700, #51555C)),
+          var(--local-container-base-border-gradient-bottom, var(--bb-color-gray-800, #3B4047))
+        );
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+    `;
+
+  const steelFusionOnlyStyles = isSteelFusion
+    ? `
+      .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-box.sky-elevation-1-bordered::before,
+      body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark .sky-box.sky-elevation-1-bordered::before {
+        background: linear-gradient(
+          to bottom,
+          var(--bb-color-steel-fusion-950, #333D45),
+          var(--bb-color-steel-fusion-900, #424952)
+        ) !important;
+      }
+    `
+    : '';
+
+  const steelOnlyStyles = isSteel
+    ? `
+      .sky-theme-modern a,
+      .sky-theme-modern .sky-link,
+      .sky-theme-modern .sky-btn-link-inline {
+        text-decoration: underline !important;
+        text-decoration-line: underline !important;
+        text-decoration-thickness: 1.5px !important;
+        text-underline-offset: 0.08em !important;
+      }
+
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper {
+        --sky-color-border-nav-hover: var(--bb-color-blue-400, #80A6E6) !important;
+        --omnibar-vertical-menu-item-active-shadow: 0 0 0 var(--sky-border-width-action-hover) var(--bb-color-blue-400, #80A6E6) !important;
+        --sky-color-border-selected: var(--bb-color-blue-800, #1A4080) !important;
+        --sky-theme-color-border-selected: var(--bb-color-blue-800, #1A4080) !important;
+      }
+
+      .sky-theme-modern .omnibar-vertical-menu-item,
+      .sky-theme-modern .omnibar-vertical-menu-item a,
+      .sky-theme-modern .omnibar-vertical-menu-item .sky-link {
+        text-decoration: none !important;
+        text-decoration-line: none !important;
+      }
+
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item.omnibar-vertical-menu-item-active,
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item.omnibar-vertical-menu-item-active a,
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item.omnibar-vertical-menu-item-active .sky-link {
+        color: var(--bb-color-blue-400, #80A6E6) !important;
+      }
+
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item.omnibar-vertical-menu-item-child-active,
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item.omnibar-vertical-menu-item-child-active a,
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item.omnibar-vertical-menu-item-child-active .sky-link {
+        color: var(--sky-theme-color-text-default, var(--sky-color-text-default)) !important;
+      }
+
+      .sky-theme-modern .omnibar-horizontal-nav-btn,
+      .sky-theme-modern .omnibar-horizontal-nav-btn a,
+      .sky-theme-modern .omnibar-horizontal-nav-btn .sky-link {
+        text-decoration: none !important;
+        text-decoration-line: none !important;
+      }
+
+      .sky-theme-modern .sky-btn-link-inline:link,
+      .sky-theme-modern .sky-btn-link-inline:visited,
+      .sky-theme-modern .sky-btn-link-inline:hover,
+      .sky-theme-modern .sky-btn-link-inline:active,
+      .sky-theme-modern .sky-btn-link-inline:focus,
+      .sky-theme-modern .sky-btn-link-inline:focus-visible {
+        text-decoration-line: underline !important;
+      }
+
+      .sky-theme-modern h1 a,
+      .sky-theme-modern h2 a,
+      .sky-theme-modern h3 a,
+      .sky-theme-modern h4 a,
+      .sky-theme-modern h5 a,
+      .sky-theme-modern h6 a,
+      .sky-theme-modern a[class^='sky-font-heading-'],
+      .sky-theme-modern a[class*=' sky-font-heading-'],
+      .sky-theme-modern a[class^='sky-font-heading-']:link,
+      .sky-theme-modern a[class*=' sky-font-heading-']:link,
+      .sky-theme-modern a[class^='sky-font-heading-']:visited,
+      .sky-theme-modern a[class*=' sky-font-heading-']:visited,
+      .sky-theme-modern a[class^='sky-font-heading-']:hover,
+      .sky-theme-modern a[class*=' sky-font-heading-']:hover,
+      .sky-theme-modern a[class^='sky-font-heading-']:active,
+      .sky-theme-modern a[class*=' sky-font-heading-']:active,
+      .sky-theme-modern a[class^='sky-font-heading-']:focus,
+      .sky-theme-modern a[class*=' sky-font-heading-']:focus,
+      .sky-theme-modern a[class^='sky-font-heading-']:focus-visible,
+      .sky-theme-modern a[class*=' sky-font-heading-']:focus-visible,
+      .sky-theme-modern [class^='sky-font-heading'] a,
+      .sky-theme-modern [class*=' sky-font-heading'] a,
+      .sky-theme-modern a h1,
+      .sky-theme-modern a h2,
+      .sky-theme-modern a h3,
+      .sky-theme-modern a h4,
+      .sky-theme-modern a h5,
+      .sky-theme-modern a h6 {
+        text-decoration: none !important;
+        text-decoration-line: none !important;
+      }
+
+      .sky-theme-modern .sky-alert-content {
+        color: var(--sky-theme-color-text-inverse) !important;
+      }
+
+      .sky-theme-modern .sky-alert.sky-alert-warning,
+      .sky-theme-modern[_nghost-ng-c3980486587] .sky-alert.sky-alert-warning[_ngcontent-ng-c3980486587],
+      .sky-theme-modern [_nghost-ng-c3980486587] .sky-alert.sky-alert-warning[_ngcontent-ng-c3980486587] {
+        border-color: var(--bb-color-yellow-600) !important;
+        border-left: solid var(--sky-border-width-accent) var(--bb-color-yellow-600) !important;
+      }
+
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item-submenu,
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item-submenu::before,
+      .sky-theme-modern .omnibar-vertical-menu-item-wrapper .omnibar-vertical-menu-item-submenu::after {
+        border-left: 1px solid var(--bb-color-blue-800, #1A4080) !important;
+        border-left-color: var(--bb-color-blue-800, #1A4080) !important;
+      }
+
+      .sky-theme-modern .category-date[_ngcontent-ng-c421017506],
+      .sky-theme-modern[_nghost-ng-c421017506] .category-date[_ngcontent-ng-c421017506],
+      .sky-theme-modern [_nghost-ng-c421017506] .category-date[_ngcontent-ng-c421017506] {
+        color: var(--sky-theme-color-text-deemphasized, var(--sky-color-text-deemphasized)) !important;
+      }
+
+      .omnibar-new-button[_ngcontent-ng-c2742228275]:not(:hover,:active,:focus-visible) .omnibar-new-button-inner[_ngcontent-ng-c2742228275],
+      .sky-theme-modern .omnibar-new-button[_ngcontent-ng-c2742228275]:not(:hover,:active,:focus-visible) .omnibar-new-button-inner[_ngcontent-ng-c2742228275] {
+        background-color: var(--bb-color-steel-fusion-975, #252B31) !important;
+        background: var(--bb-color-steel-fusion-975, #252B31) !important;
+      }
+
+      .omnibar-new-button[_ngcontent-ng-c2742228275]:not(:hover,:active,:focus-visible) .omnibar-new-button-inner[_ngcontent-ng-c2742228275],
+      .sky-theme-modern .omnibar-new-button[_ngcontent-ng-c2742228275]:not(:hover,:active,:focus-visible) .omnibar-new-button-inner[_ngcontent-ng-c2742228275] {
+        @apply sky-font-body-m;
+      }
+
+      .omnibar-new-button[_ngcontent-ng-c2742228275],
+      .omnibar-new-button[_ngcontent-ng-c2742228275] .omnibar-new-button-inner[_ngcontent-ng-c2742228275],
+      .omnibar-new-button[_ngcontent-ng-c2742228275] .omnibar-new-button-label[_ngcontent-ng-c2742228275],
+      .sky-theme-modern .omnibar-new-button[_ngcontent-ng-c2742228275],
+      .sky-theme-modern .omnibar-new-button[_ngcontent-ng-c2742228275] .omnibar-new-button-inner[_ngcontent-ng-c2742228275],
+      .sky-theme-modern .omnibar-new-button[_ngcontent-ng-c2742228275] .omnibar-new-button-label[_ngcontent-ng-c2742228275] {
+        color: var(--sky-theme-color-text-inverse, var(--sky-color-text-inverse)) !important;
+      }
+    `
+    : '';
+
+  styleElement.textContent = `${gradientBorderStyles}${steelFusionOnlyStyles}${steelOnlyStyles}`;
+
+  if (!styleElement.parentNode) {
+    document.head.appendChild(styleElement);
+  }
+}
+
+// In production SPA injection mode there is typically no host-supplied
+// data-layering attribute. Default to oklch-steel-fusion for Steel Fusion preview.
+if (!document.body.dataset.layering) {
+  document.body.dataset.layering = initialLayeringFromQuery ?? 'oklch-steel-fusion';
+}
+
+applyRuntimeLayeringOverrides(
+  (document.body.dataset.layering as GlobalLayeringMode | undefined) ?? 'oklch-steel-fusion',
+);
+
 if (showLayerSandbox) {
   const app = document.getElementById('app');
 
@@ -57,12 +447,7 @@ if (showLayerSandbox) {
     document.body.dataset.pocView = initialPocView;
     document.body.dataset.demoMode = initialDemoMode;
 
-    type LayeringMode =
-      | 'current'
-      | 'experimental'
-      | 'oklch-steel'
-      | 'oklch-steel-fusion'
-      | 'dark-poc';
+    type LayeringMode = GlobalLayeringMode;
     type DemoMode = 'slate' | 'gray';
     type HomePage =
       | 'layering-mode'
@@ -1275,7 +1660,7 @@ if (showLayerSandbox) {
             <button type="button" class="local-layer-primary-tab" data-demo-target="gray" aria-pressed="false">Gray Demo</button>
           </div>
           <div class="local-layer-primary-tabs local-layer-main-tabs" role="navigation" aria-label="Primary navigation">
-            <a class="local-layer-primary-tab" href="https://localhost:5176/?local-preview=sandbox" data-primary-page-target="home">Home</a>
+            <a class="local-layer-primary-tab" href="/?local-preview=sandbox" data-primary-page-target="home">Home</a>
             <button type="button" class="local-layer-primary-tab" data-primary-page-target="palettes" aria-pressed="false">Palettes</button>
           </div>
           <section class="local-layer-mode-toggle" aria-label="Layering token mode control">
@@ -1375,13 +1760,13 @@ if (showLayerSandbox) {
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#6D7781;"></span><span class="local-palette-value-group"><span>steel-fusion-700</span><span class="local-palette-hex">#6D7781</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#5D6771;"></span><span class="local-palette-value-group"><span>steel-fusion-800</span><span class="local-palette-hex">#5D6771</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#424952;"></span><span class="local-palette-value-group"><span>steel-fusion-900</span><span class="local-palette-hex">#424952</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#252A2E;"></span><span class="local-palette-value-group"><span>steel-fusion-970</span><span class="local-palette-hex">#252A2E</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#283037;"></span><span class="local-palette-value-group"><span>steel-fusion-970</span><span class="local-palette-hex">#283037</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1E2226;"></span><span class="local-palette-value-group"><span>steel-fusion-1000</span><span class="local-palette-hex">#1E2226</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1C1F24;"></span><span class="local-palette-value-group"><span>steel-fusion-1025</span><span class="local-palette-hex">#1C1F24</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#191D21;"></span><span class="local-palette-value-group"><span>steel-fusion-1050</span><span class="local-palette-hex">#191D21</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#171A1E;"></span><span class="local-palette-value-group"><span>steel-fusion-1075</span><span class="local-palette-hex">#171A1E</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1C1F24;"></span><span class="local-palette-value-group"><span>steel-fusion-1100</span><span class="local-palette-hex">#1C1F24</span></span></div>
-                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#0D1014;"></span><span class="local-palette-value-group"><span>steel-fusion-1175</span><span class="local-palette-hex">#0D1014</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#1C2329;"></span><span class="local-palette-value-group"><span>steel-fusion-1100</span><span class="local-palette-hex">#1C2329</span></span></div>
+                      <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#141920;"></span><span class="local-palette-value-group"><span>steel-fusion-1175</span><span class="local-palette-hex">#141920</span></span></div>
                       <div class="local-palette-stack-row"><span class="local-palette-chip" style="background:#0A0E12;"></span><span class="local-palette-value-group"><span>steel-fusion-1200</span><span class="local-palette-hex">#0A0E12</span></span></div>
                     </div>
                   </section>
@@ -1751,6 +2136,7 @@ if (showLayerSandbox) {
 
     const setLayeringMode = (mode: LayeringMode): void => {
       document.body.dataset.layering = mode;
+      applyRuntimeLayeringOverrides(mode);
       applyPocSurfaceOverrides(mode);
       applyPageBackgroundColor(mode);
 

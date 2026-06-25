@@ -1088,7 +1088,7 @@
         "brand": {
           "secondary": {
             "$type": "color",
-            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
+            "$value": "linear-gradient(90deg, {bb.color.sky.600}, {bb.color.purple.600})"
           }
         }
       },
@@ -1239,7 +1239,7 @@
         },
         "970": {
           "$type": "color",
-          "$value": "#252A2E"
+          "$value": "#283037"
         },
         "1000": {
           "$type": "color",
@@ -1263,11 +1263,11 @@
         },
         "1100": {
           "$type": "color",
-          "$value": "#14181C"
+          "$value": "#1C2329"
         },
         "1175": {
           "$type": "color",
-          "$value": "#0D1014"
+          "$value": "#141920"
         },
         "1200": {
           "$type": "color",

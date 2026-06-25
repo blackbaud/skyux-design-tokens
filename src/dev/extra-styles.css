@@ -124,13 +124,13 @@ body[data-layering='oklch-steel'].sky-theme-modern.sky-theme-brand-base.sky-them
 body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
 	/* Steel Fusion palette — blended neutral with subtle blue-gray cast. */
 	--local-steel-fusion-1200: #0A0E12;
-	--local-steel-fusion-1175: #0D1014;
-	--local-steel-fusion-1100: #1C1F24;
+	--local-steel-fusion-1175: #141920;
+	--local-steel-fusion-1100: #1C2329;
 	--local-steel-fusion-1075: #171A1E;
 	--local-steel-fusion-1050: #191D21;
 	--local-steel-fusion-1025: #1C1F24;
 	--local-steel-fusion-1000: #1E2226;
-	--local-steel-fusion-970: #252A2E;
+	--local-steel-fusion-970: #283037;
 	--local-steel-fusion-900: #424952;
 	--local-steel-fusion-800: #5D6771;
 	--local-steel-fusion-700: #6D7781;
@@ -181,14 +181,14 @@ body[data-layering='oklch-steel-fusion'].sky-theme-modern.sky-theme-brand-base.s
 	--sky-theme-color-text-action: var(--bb-color-blue-375) !important;
 	--sky-color-icon-action: var(--bb-color-blue-400) !important;
 	--sky-theme-color-icon-action: var(--bb-color-blue-400) !important;
-	--sky-color-background-action-primary-base: var(--local-steel-fusion-800) !important;
-	--sky-color-background-action-primary-hover: var(--local-steel-fusion-800) !important;
-	--sky-color-background-action-primary-active: var(--local-steel-fusion-900) !important;
-	--sky-color-background-action-primary-focus: var(--local-steel-fusion-900) !important;
-	--sky-color-border-action-primary-base: var(--local-steel-fusion-800) !important;
-	--sky-color-border-action-primary-hover: var(--local-steel-fusion-800) !important;
-	--sky-color-border-action-primary-active: var(--local-steel-fusion-900) !important;
-	--sky-color-border-action-primary-focus: var(--local-steel-fusion-900) !important;
+	--sky-color-background-action-primary-base: var(--bb-color-blue-500) !important;
+	--sky-color-background-action-primary-hover: var(--bb-color-blue-500) !important;
+	--sky-color-background-action-primary-active: var(--bb-color-blue-500) !important;
+	--sky-color-background-action-primary-focus: var(--bb-color-blue-500) !important;
+	--sky-color-border-action-primary-base: var(--bb-color-blue-500) !important;
+	--sky-color-border-action-primary-hover: var(--bb-color-blue-500) !important;
+	--sky-color-border-action-primary-active: var(--bb-color-blue-500) !important;
+	--sky-color-border-action-primary-focus: var(--bb-color-blue-500) !important;
 }
 
 /* Dedicated Dark PoC lane for isolated experimental reporting. */

@@ -372,7 +372,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue.100}"
+          "$value": "{bb.color.blue.800}"
         },
         "danger": {
           "$type": "color",
