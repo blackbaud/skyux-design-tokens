@@ -41,7 +41,7 @@
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.steel-fusion.300}"
+        "$value": "{bb.color.steel-fusion.400}"
       },
       "action": {
         "$type": "color",
@@ -592,6 +592,10 @@
           "base": {
             "$type": "color",
             "$value": "{bb.color.gradient.brand.secondary}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.oklch-blue.375}"
           }
         }
       },
