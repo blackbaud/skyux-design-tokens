@@ -7,7 +7,7 @@
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.steel-fusion.300}"
+        "$value": "{bb.color.steel-fusion.400}"
       },
       "action": {
         "$type": "color",
