@@ -509,6 +509,10 @@
           "$type": "color",
           "$value": "#AAC4EE"
         },
+        "375": {
+          "$type": "color",
+          "$value": "#53A8FF"
+        },
         "400": {
           "$type": "color",
           "$value": "#80A6E6"
@@ -1456,6 +1460,96 @@
         "1200": {
           "$type": "color",
           "$value": "#191205"
+        }
+      },
+      "steel-fusion": {
+        "25": {
+          "$type": "color",
+          "$value": "#F9FCFF"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F3F7FB"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#E8ECF1"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#D2D7DD"
+        },
+        "250": {
+          "$type": "color",
+          "$value": "#C7CDD4"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#BCC3CA"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#A7AEB7"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#929BA4"
+        },
+        "550": {
+          "$type": "color",
+          "$value": "#9CA4AE"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#7E8792"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#6D7781"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#5D6771"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#424952"
+        },
+        "970": {
+          "$type": "color",
+          "$value": "#283037"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#1E2226"
+        },
+        "1025": {
+          "$type": "color",
+          "$value": "#1C1F24"
+        },
+        "1050": {
+          "$type": "color",
+          "$value": "#191D21"
+        },
+        "1075": {
+          "$type": "color",
+          "$value": "#171A1E"
+        },
+        "1095": {
+          "$type": "color",
+          "$value": "#171A1E"
+        },
+        "1100": {
+          "$type": "color",
+          "$value": "#1C2329"
+        },
+        "1175": {
+          "$type": "color",
+          "$value": "#141920"
+        },
+        "1200": {
+          "$type": "color",
+          "$value": "#0A0E12"
         }
       },
       "gradient": {
