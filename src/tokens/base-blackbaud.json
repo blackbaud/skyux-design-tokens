@@ -1080,6 +1080,12 @@
             "$type": "color",
             "$value": "linear-gradient(90deg, {bb.color.blue.600}, {bb.color.purple.600})"
           }
+        },
+         "container": {
+          "primary": {
+            "$type": "color",
+            "$value": "linear-gradient(90deg, {bb.color.steel-fusion.700}, {bb.color.steel-fusion.800})"
+          }
         }
       },
       "brand": {
