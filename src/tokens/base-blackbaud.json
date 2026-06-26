@@ -1078,7 +1078,7 @@
         "brand": {
           "secondary": {
             "$type": "color",
-            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40}, {bb.color.rgba.purple.600.40})"
+            "$value": "linear-gradient(90deg, {bb.color.blue.600}, {bb.color.purple.600})"
           }
         }
       },
@@ -1093,6 +1093,14 @@
         }
       },
       "steel": {
+        "25": {
+          "$type": "color",
+          "$value": "#F7F9FC"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F2F5F9"
+        },
         "100": {
           "$type": "color",
           "$value": "#ECEFF4"
@@ -1101,9 +1109,41 @@
           "$type": "color",
           "$value": "#DDE2E9"
         },
+        "250": {
+          "$type": "color",
+          "$value": "#CAD1DB"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#B7C0CC"
+        },
         "400": {
           "$type": "color",
           "$value": "#A2ABB7"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#8A95A4"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#737F90"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#5C687A"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#454D59"
+        },
+        "850": {
+          "$type": "color",
+          "$value": "#3D4552"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#353D49"
         },
         "1000": {
           "$type": "color",
@@ -1154,7 +1194,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.05)",
+              "color": "rgba({bb.color.steel.900},0.05)",
               "type": "dropShadow"
             }
           ]
@@ -1365,6 +1405,50 @@
               "color": "rgba( {bb.color.slate.900},0.5)",
               "type": "dropShadow"
             }
+          }
+        }
+      },
+      "steel": {
+        "0": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.0}"
+        },
+        "25": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.25}"
+        },
+        "50": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.50}"
+        },
+        "100": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.100}"
+        },
+        "200": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.200}"
+        },
+        "400": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.400}"
+        },
+        "800": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.800}"
+        },
+        "1600": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.1600}"
+        },
+        "2400": {
+          "$type": "boxShadow",
+          "$value": "{bb.shadow.slate.2400}"
+        },
+        "simple": {
+          "400": {
+            "$type": "boxShadow",
+            "$value": "{bb.shadow.slate.simple.400}"
           }
         }
       },
