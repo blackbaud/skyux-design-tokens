@@ -41,6 +41,7 @@
 .sky-alert-success {
 	border-color: #006124 !important;
 	background-color: #57bd7b !important;
+     --sky-icon-svg-path-2-color-input: white !important;
 }
 
 .sky-alert-success .sky-icon-svg-container .sky-icon-svg-img {
@@ -50,6 +51,7 @@
 .sky-alert-info {
 	border-color: #0f479f !important;
 	background-color: #69a3ff !important;
+     --sky-icon-svg-path-2-color-input: white !important;
 }
 
 .sky-alert-info .sky-icon-svg-container .sky-icon-svg-img {
