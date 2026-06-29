@@ -1,0 +1,52 @@
+.stache-wrapper {
+  background-color: #131a24 !important;
+}
+
+.stache-wrapper .sky-icon-svg-container {
+  color: var(--sky-theme-color-icon-action);
+}
+
+.stache-wrapper .sky-action-button {
+  background-color: #1d242f !important;
+  border: 1px solid #353d49 !important;
+}
+
+.stache-wrapper .sky-alert-content {
+  color: var(--sky-theme-color-text-inverse);
+}
+
+.stache-wrapper .sky-alert-danger {
+  border-color: #950015 !important;
+  background-color: #FE726D !important;
+}
+
+.stache-wrapper .sky-alert-danger .sky-icon-svg-container .sky-icon-svg-img {
+  color: #950015 !important;
+}
+
+.stache-wrapper .sky-alert-warning {
+  border-color: #6E4200 !important;
+  background-color: #FBB034 !important;
+}
+
+.stache-wrapper .sky-alert-warning .sky-icon-svg-container .sky-icon-svg-img {
+  color: #6E4200 !important;
+}
+
+.stache-wrapper .sky-alert-success {
+  border-color: #006124 !important;
+  background-color: #57BD7B !important;
+}
+
+.stache-wrapper .sky-alert-success .sky-icon-svg-container .sky-icon-svg-img {
+  color: #006124 !important;
+}
+
+.stache-wrapper .sky-alert-info {
+  border-color: #0F479F !important;
+  background-color: #69A3FF !important;
+}
+
+.stache-wrapper .sky-alert-info .sky-icon-svg-container .sky-icon-svg-img {
+  color: #0F479F !important;
+}
