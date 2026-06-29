@@ -481,19 +481,19 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.500}"
+            "$value": "{bb.color.blue.400}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.500}"
+            "$value": "{bb.color.blue.400}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.500}"
+            "$value": "{bb.color.blue.400}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.500}"
+            "$value": "{bb.color.blue.400}"
           },
           "disabled": {
             "$type": "color",

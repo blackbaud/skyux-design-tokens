@@ -370,7 +370,7 @@
       },
       "scrim": {
         "$type": "color",
-        "$value": "rgba(37,43,51,.5)"
+        "$value": "rgba(37,43,51,.85)"
       },
       "rgba": {
         "white": {
