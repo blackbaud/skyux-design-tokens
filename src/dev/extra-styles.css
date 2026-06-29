@@ -8,18 +8,19 @@
 }
 
 /* Omnibar */
-.omnibar-vertical-menu-item:hover, .omnibar-vertical-menu-item:focus, .omnibar-vertical-menu-item:active {
-    .omnibar-vertical-menu-item-text {
-        color: var(--sky-theme-color-text-default);
+.omnibar-vertical-menu-item:hover .omnibar-vertical-menu-item-text,
+.omnibar-vertical-menu-item:focus .omnibar-vertical-menu-item-text,
+.omnibar-vertical-menu-item:active .omnibar-vertical-menu-item-text {
+  color: var(--sky-theme-color-text-default);
 }
 
 /* Status colors */
 
 .sky-alert-content {
-  color: var(--sky-theme-color-text-inverse);
+  color: var(--sky-theme-color-text-inverse) !important;
 }
 
-.sky-alert-danger {
+.sky-alert.sky-alert-danger {
   border-color: #950015 !important;
   background-color: #FE726D !important;
 }
@@ -40,6 +41,7 @@
 .sky-alert-success {
   border-color: #006124 !important;
   background-color: #57BD7B !important;
+  --sky-icon-svg-path-2-color-input: white !important;
 }
 
 .sky-alert-success .sky-icon-svg-container .sky-icon-svg-img {
@@ -49,6 +51,7 @@
 .sky-alert-info {
   border-color: #0F479F !important;
   background-color: #69A3FF !important;
+  --sky-icon-svg-path-2-color-input: white !important;
 }
 
 .sky-alert-info .sky-icon-svg-container .sky-icon-svg-img {

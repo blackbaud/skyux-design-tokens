@@ -370,14 +370,14 @@
       },
       "scrim": {
         "$type": "color",
-        "$value": "rgba(37,43,51,.85)"
+        "$value": "rgba(37,43,51,.7)"
       },
       "rgba": {
         "white": {
           "70": {
             "$type": "color",
             "$value": "rgba(255,255,255,.7)"
-          }
+          },
         },
         "purple": {
           "600": {
@@ -400,7 +400,13 @@
             "$type": "color",
             "$value": "rgba(0,0,0,.7)"
           }
-        }
+        },
+        "blue": {
+          "35": {
+            "$type": "color",
+             "$value": "rgba(34, 86, 170, 0.15)"
+          }
+        },
       },
       "gray": {
         "25": {
