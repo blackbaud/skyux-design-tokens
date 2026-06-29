@@ -360,7 +360,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue.900}"
+          "$value": "{bb.color.rgba.blue.15}"
         },
         "danger": {
           "$type": "color",
@@ -435,7 +435,7 @@
       },
       "selected_soft": {
         "$type": "color",
-        "$value": "{bb.color.blue.800}"
+        "$value": "{bb.color.blue.400}"
       },
       "danger": {
         "$type": "color",
@@ -741,6 +741,78 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.800}"
+        }
+      }
+    },
+    "classify": {
+      "1": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.teal.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.teal.300}"
+        }
+      },
+      "2": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.purple.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.purple.300}"
+        }
+      },
+      "3": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.sky.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.sky.300}"
+        }
+      },
+      "4": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.orange.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.orange.300}"
+        }
+      },
+      "5": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.pink.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.pink.300}"
+        }
+      },
+      "6": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.green.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.green.300}"
+        }
+      },
+      "7": {
+        "soft": {
+          "$type": "color",
+          "$value": "{bb.color.red.700}"
+        },
+        "heavy": {
+          "$type": "color",
+          "$value": "{bb.color.red.300}"
         }
       }
     },
