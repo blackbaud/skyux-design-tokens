@@ -395,6 +395,12 @@
             }
           }
         },
+        "blue": {
+          "15": {
+            "$type": "color",
+            "$value": "rgba(#2B6BD5, .15)"
+          }
+        },
         "black": {
           "70": {
             "$type": "color",
