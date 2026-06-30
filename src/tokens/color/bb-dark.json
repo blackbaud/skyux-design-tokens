@@ -137,7 +137,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.transparent}"
+            "$value": "{bb.color.rgba.white.8}"
           },
           "hover": {
             "$type": "color",
@@ -145,11 +145,11 @@
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.steel.1000}"
+            "$value": "{bb.color.transparent}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.steel.1100}"
+            "$value": "{bb.color.transparent}"
           },
           "disabled": {
             "$type": "color",
@@ -364,7 +364,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue.15}"
+          "$value": "{bb.color.rgba.blue.25}"
         },
         "danger": {
           "$type": "color",
