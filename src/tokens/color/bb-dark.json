@@ -360,7 +360,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue.15}"
+          "$value": "{bb.color.rgba.blue.25}"
         },
         "danger": {
           "$type": "color",
@@ -748,71 +748,71 @@
       "1": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.teal.700}"
+          "$value": "{bb.color.teal-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.teal.300}"
+          "$value": "{bb.color.teal-dark.300}"
         }
       },
       "2": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.purple.700}"
+          "$value": "{bb.color.purple-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.purple.300}"
+          "$value": "{bb.color.purple-dark.300}"
         }
       },
       "3": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.sky.700}"
+          "$value": "{bb.color.sky-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.sky.300}"
+          "$value": "{bb.color.sky-dark.300}"
         }
       },
       "4": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.orange.700}"
+          "$value": "{bb.color.orange-dark.300}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.orange.300}"
+          "$value": "{bb.color.orange.700}"
         }
       },
       "5": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.pink.700}"
+          "$value": "{bb.color.pink-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.pink.300}"
+          "$value": "{bb.color.pink-dark.300}"
         }
       },
       "6": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.green.700}"
+          "$value": "{bb.color.green-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.green.300}"
+          "$value": "{bb.color.green-dark.300}"
         }
       },
       "7": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.red.700}"
+          "$value": "{bb.color.red-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.red.300}"
+          "$value": "{bb.color.red-dark.300}"
         }
       }
     },
