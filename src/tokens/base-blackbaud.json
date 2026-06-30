@@ -1139,19 +1139,19 @@
         },
         "900": {
           "$type": "color",
-          "$value": "#2A3139"
+          "$value": "#2D333C"
         },
         "1000": {
           "$type": "color",
-          "$value": "#232931"
+          "$value": "#282E36"
         },
         "1100": {
           "$type": "color",
-          "$value": "#181D24"
+          "$value": "#1C2229"
         },
         "1200": {
           "$type": "color",
-          "$value": "#0F141A"
+          "$value": "#14191F"
         }
       }
     },
