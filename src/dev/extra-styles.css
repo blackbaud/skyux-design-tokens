@@ -1,9 +1,9 @@
 .stache-wrapper {
-	background-color: #0F141A !important;
+	background-color: #141A1F !important;
 }
 
 .stache-wrapper .sky-action-button {
-	background-color: #1C222B !important;
+	background-color: #1d242f !important;
 }
 
 /* Omnibar */
@@ -62,13 +62,13 @@
 /* Modal */
 
 .sky-modal {
-	border-color: #3C434C !important;
+	border-color: #353d49 !important;
 }
 
 /* Forms */
 
 .sky-form-group {
-	background-color: #2A3139 !important;
+	background-color: #2a313c !important;
 }
 
 /* Classification colors */
