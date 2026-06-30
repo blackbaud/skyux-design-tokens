@@ -1,5 +1,5 @@
 .stache-wrapper {
-	background-color: #131a24 !important;
+	background-color: #141A1F !important;
 }
 
 .stache-wrapper .sky-action-button {
@@ -13,6 +13,8 @@
 .omnibar-vertical-menu-item:active .omnibar-vertical-menu-item-text {
 	color: var(--sky-theme-color-text-default);
 }
+
+/* Backgrounds */
 
 /* Status colors */
 
