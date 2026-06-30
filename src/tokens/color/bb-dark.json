@@ -569,7 +569,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.500}"
+            "$value": "{bb.color.steel.700}"
           },
           "hover": {
             "$type": "color",
