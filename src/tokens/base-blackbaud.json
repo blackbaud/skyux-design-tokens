@@ -1107,51 +1107,51 @@
       "steel-hybrid": {
         "100": {
           "$type": "color",
-          "$value": "#ECEFF2"
+          "$value": "#EBEFF4"
         },
         "200": {
           "$type": "color",
-          "$value": "#DDE2E7"
+          "$value": "#DCE2EA"
         },
         "300": {
           "$type": "color",
-          "$value": "#C2C8D0"
+          "$value": "#C0C8D3"
         },
         "400": {
           "$type": "color",
-          "$value": "#A4ACB5"
+          "$value": "#A3ACB8"
         },
         "500": {
           "$type": "color",
-          "$value": "#88909A"
+          "$value": "#87909C"
         },
         "600": {
           "$type": "color",
-          "$value": "#6B727C"
+          "$value": "#6A727E"
         },
         "700": {
           "$type": "color",
-          "$value": "#515962"
+          "$value": "#515964"
         },
         "800": {
           "$type": "color",
-          "$value": "#3C434C"
+          "$value": "#3B434E"
         },
         "900": {
           "$type": "color",
-          "$value": "#2D333C"
+          "$value": "#2C333E"
         },
         "1000": {
           "$type": "color",
-          "$value": "#282E36"
+          "$value": "#272E38"
         },
         "1100": {
           "$type": "color",
-          "$value": "#1C2229"
+          "$value": "#1C222B"
         },
         "1200": {
           "$type": "color",
-          "$value": "#14191F"
+          "$value": "#121922"
         }
       }
     },
