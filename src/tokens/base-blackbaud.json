@@ -1392,6 +1392,242 @@
           }
         }
       },
+      "steel-fusion": {
+        "0": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "0",
+              "color": "rgba(0, 0, 0, 0)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "25": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "1",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.3)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "50": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "1",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.25)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1.5",
+              "blur": "1",
+              "spread": "-1",
+              "color": "rgba({bb.color.steel-fusion.1200},0.6)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "100": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "3",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.6)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "2",
+              "blur": "1",
+              "spread": "-1",
+              "color": "rgba({bb.color.steel-fusion.1200},0.36)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "1",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.42)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "200": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "8",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.5)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "3",
+              "blur": "3",
+              "spread": "-2",
+              "color": "rgba({bb.color.steel-fusion.1200},0.3)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "3",
+              "blur": "4",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.35)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "400": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "2",
+              "blur": "4",
+              "spread": "-1",
+              "color": "rgba({bb.color.steel-fusion.1200},0.44)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "1",
+              "blur": "10",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.26)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "4",
+              "blur": "5",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.31)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "800": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "5",
+              "blur": "5",
+              "spread": "-3",
+              "color": "rgba({bb.color.steel-fusion.1200},0.4)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "3",
+              "blur": "14",
+              "spread": "2",
+              "color": "rgba({bb.color.steel-fusion.1200},0.24)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "8",
+              "blur": "10",
+              "spread": "1",
+              "color": "rgba({bb.color.steel-fusion.1200},0.28)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "1600": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "8",
+              "blur": "10",
+              "spread": "-5",
+              "color": "rgba({bb.color.steel-fusion.1200},0.36)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "6",
+              "blur": "30",
+              "spread": "5",
+              "color": "rgba({bb.color.steel-fusion.1200},0.22)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "16",
+              "blur": "24",
+              "spread": "2",
+              "color": "rgba({bb.color.steel-fusion.1200},0.25)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "2400": {
+          "$type": "boxShadow",
+          "$value": [
+            {
+              "x": "0",
+              "y": "11",
+              "blur": "15",
+              "spread": "-7",
+              "color": "rgba({bb.color.steel-fusion.1200},0.34)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "9",
+              "blur": "46",
+              "spread": "8",
+              "color": "rgba({bb.color.steel-fusion.1200},0.2)",
+              "type": "dropShadow"
+            },
+            {
+              "x": "0",
+              "y": "24",
+              "blur": "38",
+              "spread": "3",
+              "color": "rgba({bb.color.steel-fusion.1200},0.24)",
+              "type": "dropShadow"
+            }
+          ]
+        },
+        "simple": {
+          "400": {
+            "$type": "boxShadow",
+            "$value": {
+              "x": "1",
+              "y": "2",
+              "blur": "4",
+              "spread": "0",
+              "color": "rgba({bb.color.steel-fusion.1200},0.65)",
+              "type": "dropShadow"
+            }
+          }
+        }
+      },
       "gray": {
         "0": {
           "$type": "boxShadow",
