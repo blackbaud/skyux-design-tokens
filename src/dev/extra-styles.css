@@ -1,3 +1,10 @@
+/* Link underline */
+sky-page a {
+    text-decoration: underline !important;
+    text-underline-offset: 0.15rem !important;
+
+}
+
 .stache-wrapper {
 	background-color: #141A1F !important;
 }
