@@ -403,6 +403,20 @@
           "25": {
             "$type": "color",
             "$value": "rgba(#2B6BD5, .25)"
+          },
+          "50": {
+            "$type": "color",
+            "$value": "rgba(#2B6BD5, .5)"
+          }
+        },
+        "red": {
+          "25": {
+            "$type": "color",
+            "$value": "rgba(#B52F32, .35)"
+          },
+          "50": {
+            "$type": "color",
+            "$value": "rgba(#B52F32, .5)"
           }
         },
         "steel-fusion": {

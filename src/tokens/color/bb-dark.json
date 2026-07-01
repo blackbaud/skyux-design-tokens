@@ -252,7 +252,7 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.600}"
+          "$value": "{bb.color.rgba.red.25}"
         },
         "warning": {
           "$type": "color",
@@ -274,7 +274,7 @@
       "icon_matte": {
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.400}"
+          "$value": "{bb.color.red.600}"
         },
         "warning": {
           "$type": "color",
@@ -439,7 +439,7 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.400}"
+        "$value": "{bb.color.red.600}"
       },
       "warning": {
         "$type": "color",
