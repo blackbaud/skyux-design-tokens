@@ -1531,6 +1531,10 @@
           "$type": "color",
           "$value": "#1C222B"
         },
+        "1150": {
+          "$type": "color",
+          "$value": "#181E25"
+        },
         "1200": {
           "$type": "color",
           "$value": "#121922"
