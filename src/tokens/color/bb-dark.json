@@ -295,7 +295,7 @@
           },
           "soft": {
             "$type": "color",
-            "$value": "{bb.color.blue.400}"
+            "$value": "{bb.color.rgba.blue.25}"
           }
         }
       },
