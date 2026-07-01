@@ -1960,7 +1960,7 @@
               "y": "2",
               "blur": "4",
               "spread": "-1",
-              "color": "rgba({bb.color.black},0.24)",
+              "color": "rgba({bb.color.black},0.2)",
               "type": "dropShadow"
             },
             {
