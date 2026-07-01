@@ -49,7 +49,7 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.400}"
+        "$value": "{bb.color.red.600}"
       },
       "warning": {
         "$type": "color",
@@ -57,7 +57,7 @@
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.700}"
+        "$value": "{bb.color.green.600}"
       },
       "info": {
         "$type": "color",
@@ -252,19 +252,19 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.rgba.red.25}"
+          "$value": "{bb.color.rgba.red.35}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.600}"
+          "$value": "{bb.color.rgba.yellow.35}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.600}"
+          "$value": "{bb.color.rgba.green.35}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{bb.color.rgba.blue.35}"
         },
         "dimmed": {
           "$type": "color",
@@ -278,15 +278,15 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.400}"
+          "$value": "{bb.color.yellow.500}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.700}"
+          "$value": "{bb.color.green.500}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.400}"
+          "$value": "{bb.color.blue.500}"
         },
         "action": {
           "heavy": {
@@ -443,11 +443,11 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.400}"
+        "$value": "{bb.color.yellow.500}"
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.400}"
+        "$value": "{bb.color.green.500}"
       },
       "info": {
         "$type": "color",
