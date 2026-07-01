@@ -374,9 +374,9 @@
       },
       "rgba": {
         "white": {
-          "8": {
+          "5": {
             "$type": "color",
-            "$value": "rgba(255,255,255,.08)"
+            "$value": "rgba(255,255,255,.05)"
           },
           "70": {
             "$type": "color",
@@ -403,6 +403,12 @@
           "25": {
             "$type": "color",
             "$value": "rgba(#2B6BD5, .25)"
+          }
+        },
+        "steel-fusion": {
+          "5": {
+            "$type": "color",
+            "$value": "rgba(243, 247, 251,.05)"
           }
         },
         "black": {

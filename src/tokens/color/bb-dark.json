@@ -133,7 +133,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.rgba.white.8}"
+            "$value": "{bb.color.rgba.steel-fusion.5}"
           },
           "hover": {
             "$type": "color",
