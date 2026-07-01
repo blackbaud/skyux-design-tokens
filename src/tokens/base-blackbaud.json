@@ -446,7 +446,7 @@
         "steel": {
           "5": {
             "$type": "color",
-            "$value": "rgba(243, 247, 251,.05)"
+            "$value": "rgba(247, 249, 252,.05)"
           }
         },
         "black": {
@@ -1531,61 +1531,81 @@
         }
       },
       "steel": {
+        "25": {
+          "$type": "color",
+          "$value": "#F7F9FC"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F2F5F9"
+        },
         "100": {
           "$type": "color",
-          "$value": "#F3F6F9"
+          "$value": "#ECEFF4"
         },
         "200": {
           "$type": "color",
-          "$value": "#E0E4E8"
+          "$value": "#DDE2E9"
+        },
+        "250": {
+          "$type": "color",
+          "$value": "#CAD1DB"
         },
         "300": {
           "$type": "color",
-          "$value": "#C8CDD3"
+          "$value": "#C4CBD4"
         },
         "400": {
           "$type": "color",
-          "$value": "#B0B6BC"
+          "$value": "#A2ABB7"
         },
         "500": {
           "$type": "color",
-          "$value": "#929BA4"
+          "$value": "#8A95A4"
         },
         "600": {
           "$type": "color",
-          "$value": "#757E88"
+          "$value": "#737F90"
         },
         "700": {
           "$type": "color",
-          "$value": "#5E6770"
+          "$value": "#5C687A"
         },
         "800": {
           "$type": "color",
-          "$value": "#4A5259"
+          "$value": "#454D59"
+        },
+        "850": {
+          "$type": "color",
+          "$value": "#3D4552"
         },
         "900": {
           "$type": "color",
-          "$value": "#363D44"
+          "$value": "#353D49"
         },
         "1000": {
           "$type": "color",
           "$value": "#2A313C"
         },
-                "1050": {
+        "1025": {
           "$type": "color",
-          "$value": "#21282F"
+          "$value": "#272E39"
+        },
+        "1050": {
+          "$type": "color",
+          "$value": "#242B36"
+        },
+        "1075": {
+          "$type": "color",
+          "$value": "#212834"
         },
         "1100": {
           "$type": "color",
-          "$value": "#1C2228"
-        },
-        "1150": {
-          "$type": "color",
-          "$value": "#181E25"
+          "$value": "#1D242F"
         },
         "1200": {
           "$type": "color",
-          "$value": "#141A1F"
+          "$value": "#131A24"
         }
       }
     },
