@@ -404,13 +404,37 @@
             "$type": "color",
             "$value": "rgba(#2B6BD5, .25)"
           },
+          "35": {
+            "$type": "color",
+            "$value": "rgba(#2B6BD5, .35)"
+          },
           "50": {
             "$type": "color",
             "$value": "rgba(#2B6BD5, .5)"
           }
         },
-        "red": {
+        "yellow": {
           "25": {
+            "$type": "color",
+            "$value": "rgba(#A25100, .25)"
+          },
+          "35": {
+            "$type": "color",
+            "$value": "rgba(#A25100, .35)"
+          }
+        },
+         "green": {
+          "35": {
+            "$type": "color",
+            "$value": "rgba(#099c53, .35)"
+          },
+          "50": {
+            "$type": "color",
+            "$value": "rgba(#099c53, .5)"
+          }
+        },
+        "red": {
+          "35": {
             "$type": "color",
             "$value": "rgba(#B52F32, .35)"
           },
