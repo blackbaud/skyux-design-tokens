@@ -302,7 +302,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.900}"
+          "$value": "{bb.color.steel-fusion.800}"
         },
         "disabled": {
           "$type": "color",
