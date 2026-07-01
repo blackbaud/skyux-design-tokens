@@ -3,11 +3,11 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.200}"
+        "$value": "{bb.color.steel-fusion.200}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.400}"
+        "$value": "{bb.color.steel-fusion.400}"
       },
       "action": {
         "$type": "color",
@@ -19,7 +19,7 @@
       },
       "inverse": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.1100}"
+        "$value": "{bb.color.steel-fusion.1100}"
       },
       "selected": {
         "$type": "color",
@@ -27,7 +27,7 @@
       },
       "heading": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.100}"
+        "$value": "{bb.color.steel-fusion.100}"
       },
       "action_contrast": {
         "$type": "color",
@@ -37,11 +37,11 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.100}"
+        "$value": "{bb.color.steel-fusion.100}"
       },
       "deemphasized": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.400}"
+        "$value": "{bb.color.steel-fusion.400}"
       },
       "action": {
         "$type": "color",
@@ -81,7 +81,7 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.1200}"
+        "$value": "{bb.color.steel-fusion.1200}"
       },
       "scrim": {
         "$type": "color",
@@ -137,7 +137,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.1000}"
+            "$value": "{bb.color.steel-fusion.1000}"
           },
           "active": {
             "$type": "color",
@@ -149,7 +149,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.700}"
+            "$value": "{bb.color.steel-fusion.700}"
           }
         },
         "tertiary": {
@@ -199,7 +199,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.oklch-blue.375}"
+            "$value": "{bb.color.transparent}"
           },
           "hover": {
             "$type": "color",
@@ -221,19 +221,19 @@
         "accent": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.1100}"
+            "$value": "{bb.color.steel-fusion.1100}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.1000}"
+            "$value": "{bb.color.steel-fusion.1000}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.1000}"
+            "$value": "{bb.color.steel-fusion.1000}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.1000}"
+            "$value": "{bb.color.steel-fusion.1000}"
           },
           "disabled": {
             "$type": "color",
@@ -244,11 +244,11 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-hybrid.1100}"
+          "$value": "{bb.color.steel-fusion.1100}"
         },
         "menu": {
           "$type": "color",
-          "$value": "{bb.color.steel-hybrid.1000}"
+          "$value": "{bb.color.steel-fusion.1000}"
         },
         "danger": {
           "$type": "color",
@@ -268,7 +268,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.1150}"
+          "$value": "{bb.color.steel-fusion.1050}"
         }
       },
       "icon_matte": {
@@ -302,7 +302,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.800}"
+          "$value": "{bb.color.rgba.white.5}"
         },
         "disabled": {
           "$type": "color",
@@ -459,11 +459,11 @@
       },
       "elevation": {
         "$type": "color",
-        "$value": "{bb.color.steel-hybrid.800}"
+        "$value": "{bb.color.steel-fusion.800}"
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.gray.800}"
+        "$value": "{bb.color.gray.700}"
       },
       "column_divider": {
         "$type": "color",
@@ -503,7 +503,7 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.steel-hybrid.700}"
+            "$value": "{bb.color.steel-fusion.600}"
           },
           "hover": {
             "$type": "color",
@@ -602,13 +602,13 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-hybrid.800}"
+          "$value": "{bb.color.steel-fusion.800}"
         }
       },
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-hybrid.800}"
+          "$value": "{bb.color.steel-fusion.800}"
         },
         "hover": {
           "$type": "color",
@@ -840,43 +840,43 @@
   "elevation": {
     "none": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel-hybrid.0}"
+      "$value": "{bb.shadow.steel-fusion.0}"
     },
     "focus": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel-hybrid.200}"
+      "$value": "{bb.shadow.steel-fusion.200}"
     },
     "overflow": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel-hybrid.200}"
+      "$value": "{bb.shadow.steel-fusion.200}"
     },
     "raised": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-hybrid.100}"
+        "$value": "{bb.shadow.steel-fusion.100}"
       }
     },
     "overlay": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-hybrid.400}"
+        "$value": "{bb.shadow.steel-fusion.400}"
       },
       "200": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-hybrid.800}"
+        "$value": "{bb.shadow.steel-fusion.800}"
       },
       "300": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-hybrid.1600}"
+        "$value": "{bb.shadow.steel-fusion.1600}"
       },
       "400": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-hybrid.2400}"
+        "$value": "{bb.shadow.steel-fusion.2400}"
       },
       "simple": {
         "100": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.steel-hybrid.simple.400}"
+          "$value": "{bb.shadow.steel-fusion.simple.400}"
         }
       }
     }
