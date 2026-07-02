@@ -3,11 +3,6 @@
 .stache-wrapper {
 	background-color: #141A1F !important;
 }
-
-.stache-wrapper .sky-action-button {
-	background-color: #1C2228 !important;
-}
-
 /* Omnibar */
 .omnibar-vertical-menu-item:hover .omnibar-vertical-menu-item-text,
 .omnibar-vertical-menu-item:focus .omnibar-vertical-menu-item-text,
