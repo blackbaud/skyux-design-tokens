@@ -1447,7 +1447,7 @@
         "inset": {
           "top": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
+            "$value": "{bb.size.fluid.37}"
           },
           "right": {
             "$type": "spacing",
@@ -1455,7 +1455,7 @@
           },
           "bottom": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
+            "$value": "{bb.size.fluid.37}"
           },
           "left": {
             "$type": "spacing",
@@ -1468,19 +1468,19 @@
           "inset": {
             "top": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "right": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "bottom": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "left": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             }
           }
         }
@@ -1512,7 +1512,7 @@
           "inset": {
             "top": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "right": {
               "$type": "spacing",
@@ -1520,7 +1520,7 @@
             },
             "bottom": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "left": {
               "$type": "spacing",
@@ -1534,19 +1534,19 @@
           "inset": {
             "top": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "right": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "bottom": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             },
             "left": {
               "$type": "spacing",
-              "$value": "{bb.size.fluid.50}"
+              "$value": "{bb.size.fluid.37}"
             }
           }
         }
@@ -1557,7 +1557,7 @@
         "inset": {
           "top": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
+            "$value": "{bb.size.fluid.37}"
           },
           "right": {
             "$type": "spacing",
@@ -1565,7 +1565,7 @@
           },
           "bottom": {
             "$type": "spacing",
-            "$value": "{bb.size.fluid.50}"
+            "$value": "{bb.size.fluid.37}"
           },
           "left": {
             "$type": "spacing",
