@@ -252,19 +252,19 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.rgba.red.35}"
+          "$value": "{bb.color.rgba.red-dark.600.35}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.rgba.yellow.35}"
+          "$value": "{bb.color.rgba.yellow-dark.600.35}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.rgba.green.35}"
+          "$value": "{bb.color.rgba.green.600.35}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue.35}"
+          "$value": "{bb.color.rgba.blue.600.35}"
         },
         "dimmed": {
           "$type": "color",
@@ -295,7 +295,7 @@
           },
           "soft": {
             "$type": "color",
-            "$value": "{bb.color.rgba.blue.25}"
+            "$value": "{bb.color.rgba.blue.600.25}"
           }
         }
       },
@@ -360,7 +360,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue.25}"
+          "$value": "{bb.color.rgba.blue.600.25}"
         },
         "danger": {
           "$type": "color",
