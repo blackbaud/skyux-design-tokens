@@ -19,7 +19,7 @@
       },
       "inverse": {
         "$type": "color",
-        "$value": "{bb.color.steel-fusion.1100}"
+        "$value": "{bb.color.black}"
       },
       "selected": {
         "$type": "color",
@@ -65,7 +65,7 @@
       },
       "inverse": {
         "$type": "color",
-        "$value": "{bb.color.steel-fusion.1100}"
+        "$value": "{bb.color.black}"
       },
       "selected": {
         "$type": "color",
