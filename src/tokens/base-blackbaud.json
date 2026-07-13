@@ -369,8 +369,14 @@
         "$value": "transparent"
       },
       "scrim": {
-        "$type": "color",
-        "$value": "rgba(0,0,0,.6)"
+        "heavy": {
+          "$type": "color",
+          "$value": "rgba(0,0,0,.6)"
+        },
+        "soft": {
+          "$type": "color",
+          "$value": "rgba(37,43,51,.5)"
+        }
       },
       "rgba": {
         "white": {
