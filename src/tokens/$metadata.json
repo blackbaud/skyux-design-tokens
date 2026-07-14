@@ -1,13 +1,10 @@
 {
   "tokenSetOrder": [
     "base-blackbaud",
-    "base-modern",
-    "color/modern",
     "color/base-light",
     "color/base-dark",
     "color/bb-light",
     "color/bb-dark",
-    "layout/modern",
     "layout/base-productive",
     "public/borders",
     "public/colors",
