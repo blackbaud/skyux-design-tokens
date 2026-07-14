@@ -1526,7 +1526,7 @@
         "brand": {
           "secondary": {
             "$type": "color",
-            "$value": "linear-gradient(90deg, {bb.color.blue.600}, {bb.color.purple.600})"
+            "$value": "linear-gradient(90deg, {bb.color.rgba.sky.600.40} , {bb.color.rgba.purple.600.40})"
           }
         },
         "container": {
