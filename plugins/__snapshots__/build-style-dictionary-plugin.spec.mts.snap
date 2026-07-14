@@ -2451,7 +2451,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-nav-hover: var(--bb-color-oklch-blue-375);
   --sky-color-border-progress_step: var(--bb-color-gray-600);
   --sky-color-border-selected: var(--bb-color-blue-400);
-  --sky-color-border-selected_soft: var(--bb-color-blue-400);
+  --sky-color-border-selected_soft: var(--bb-color-blue-600);
   --sky-color-border-separator-dark: var(--bb-color-gray-800);
   --sky-color-border-separator-light: var(--bb-color-gray-700);
   --sky-color-border-separator-row: var(--bb-color-gray-800);
@@ -2481,8 +2481,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-classify-2-soft: var(--bb-color-purple-dark-700);
   --sky-color-classify-3-heavy: var(--bb-color-sky-dark-300);
   --sky-color-classify-3-soft: var(--bb-color-sky-dark-700);
-  --sky-color-classify-4-heavy: var(--bb-color-orange-700);
-  --sky-color-classify-4-soft: var(--bb-color-orange-dark-300);
+  --sky-color-classify-4-heavy: var(--bb-color-orange-dark-300);
+  --sky-color-classify-4-soft: var(--bb-color-orange-dark-700);
   --sky-color-classify-5-heavy: var(--bb-color-pink-dark-300);
   --sky-color-classify-5-soft: var(--bb-color-pink-dark-700);
   --sky-color-classify-6-heavy: var(--bb-color-green-dark-300);
