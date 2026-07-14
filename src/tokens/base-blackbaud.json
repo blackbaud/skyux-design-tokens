@@ -458,9 +458,11 @@
           }
         },
         "steel-fusion": {
-          "5": {
-            "$type": "color",
-            "$value": "rgba(243, 247, 251,.05)"
+          "100": {
+            "5": {
+              "$type": "color",
+              "$value": "rgba(243, 246, 249,.05)"
+            }
           }
         },
         "black": {
