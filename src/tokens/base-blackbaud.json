@@ -1615,7 +1615,7 @@
               "y": "0",
               "blur": "0",
               "spread": "0",
-              "color": "rgba(0, 0, 0, 0)",
+              "color": "rgba( {bb.color.slate.1200} , 0)",
               "type": "dropShadow"
             }
           ]
@@ -1851,7 +1851,7 @@
               "y": "0",
               "blur": "0",
               "spread": "0",
-              "color": "rgba(0, 0, 0, 0)",
+              "color": "rgba({bb.color.black}, 0)",
               "type": "dropShadow"
             }
           ]
@@ -2087,7 +2087,7 @@
               "y": "0",
               "blur": "0",
               "spread": "0",
-              "color": "rgba(0, 0, 0, 0)",
+              "color": "rgba( {bb.color.gray.1100} , 0)",
               "type": "dropShadow"
             }
           ]
