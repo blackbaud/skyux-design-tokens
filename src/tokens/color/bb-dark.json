@@ -840,43 +840,43 @@
   "elevation": {
     "none": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel-fusion.0}"
+      "$value": "{bb.shadow.heavy-black.0}"
     },
     "focus": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel-fusion.200}"
+      "$value": "{bb.shadow.heavy-black.200}"
     },
     "overflow": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel-fusion.200}"
+      "$value": "{bb.shadow.heavy-black.200}"
     },
     "raised": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-fusion.100}"
+        "$value": "{bb.shadow.heavy-black.100}"
       }
     },
     "overlay": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-fusion.400}"
+        "$value": "{bb.shadow.heavy-black.400}"
       },
       "200": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-fusion.800}"
+        "$value": "{bb.shadow.heavy-black.800}"
       },
       "300": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-fusion.1600}"
+        "$value": "{bb.shadow.heavy-black.1600}"
       },
       "400": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel-fusion.2400}"
+        "$value": "{bb.shadow.heavy-black.2400}"
       },
       "simple": {
         "100": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.steel-fusion.simple.400}"
+          "$value": "{bb.shadow.heavy-black.simple.400}"
         }
       }
     }
