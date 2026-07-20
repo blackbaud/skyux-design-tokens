@@ -15,8 +15,51 @@
 	color: var(--sky-theme-color-text-default);
 }
 
-/* Modal */
+/* Adding underlines */
+a, .sky-btn-link-inline, .sky-btn-link, .sky-btn-link-inline, [class*="sky-font-heading-"]:hover, [class*="sky-font-heading-"]:active, [class*="sky-font-heading-"]:focus-visible {
+	text-decoration: underline !important;
+}
 
-.sky-modal {
-	border-color: #353d49 !important;
+/* Removing underlines */
+a:hover, a:focus-visible, .sky-btn-link, .sky-btn-link-inline:hover, .sky-btn-link-inline:focus-visible, .sky-btn-link-inline:active, a:active, omnibar-vertical-menu a, .omnibar-menu-button, [class*="sky-font-heading-"] a, sky-tab-button a, .sky-btn-link, sky-key-info a, .sky-vertical-tab, a:hover, [class*="sky-font-heading-"] {
+	text-decoration: none !important;
+}
+
+/* Fixing custom styles in SPA's for demo purposes */
+@layer overrides {  
+  /* Global */
+  svg .highcharts-background, .sky-modal[_ngcontent-ng-c3934896922]:not(.sky-modal-full-page) {
+    all: revert-layer !important;
+  }
+  /* Constituent SPA */
+  .list-tabset-landing-page[_ngcontent-ng-c2852440218], .list-tabset-list-display-container[_ngcontent-ng-c2852440218], .list-header[_ngcontent-ng-c3909177006], .list-title[_ngcontent-ng-c3909177006], .list-landing-page[_ngcontent-ng-c3909177006], .filtered[_ngcontent-ng-c2099505993], textarea[_ngcontent-ng-c3884448462], textarea[_ngcontent-ng-c3884448462] {
+    all: revert-layer !important;
+  }
+  /* Data Health SPA */
+  .data-health-page[_ngcontent-ng-c1927182444], .sky-page-summary[_ngcontent-ng-c2306477161], .grades-container[_ngcontent-ng-c1495796827] {
+    all: revert-layer !important;
+  }
+  /* Gift management */
+  .subhdr-lbl[_ngcontent-ng-c498486016], .powered[_ngcontent-ng-c2100303062], .status-indi[_ngcontent-ng-c2100303062], .modal-multimode-buttons[_ngcontent-ng-c964193014], .new-ftr-lbl[_ngcontent-ng-c498486016], div.parent[_ngcontent-ng-c4049600328], div.parent[_ngcontent-ng-c1647096295] {
+    all: revert-layer !important;
+  }
+  .toolbox-content[_ngcontent-ng-c217863270] {
+    background-color: revert-layer !important;
+  }
+  .sky-list-view-checklist-item[_ngcontent-ng-c917368266] sky-checkbox {
+    border-color: revert-layer !important;
+  }
+  /* Communications */
+  .empty-section[_ngcontent-ng-c806853415] {
+	  all: revert-layer !important;
+  }
+  /* Online Giving */
+  div.formula[_ngcontent-ng-c3404136181], .adaptive-preview-wrapper[_ngcontent-ng-c2098365355], .branding-preview[_ngcontent-ng-c171723139], 
+  .select-image-container[_ngcontent-ng-c2647157679], .ag-header, .ag-body, .ag-floating-bottom, .ag-floating-top {
+	  all: revert-layer !important;
+  }
+  /* Events */
+  main[_ngcontent-ng-c300626273], .bb-eventlist-list-totals-bar[_ngcontent-ng-c2490236852] {
+    all: revert-layer !important;
+  }
 }
