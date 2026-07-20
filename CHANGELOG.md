@@ -5,6 +5,27 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.1.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.1...6.1.2) (2026-07-17)
+
+
+### Bug Fixes
+
+* slate shadow box shadow transparency ([#363](https://github.com/blackbaud/skyux-design-tokens/issues/363)) ([3d94489](https://github.com/blackbaud/skyux-design-tokens/commit/3d94489e9892bdf75e41fd5958b03f5c9483a38d))
+
+## [6.1.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.0...6.1.1) (2026-07-16)
+
+
+### Bug Fixes
+
+* slate shadow base tokens ([#361](https://github.com/blackbaud/skyux-design-tokens/issues/361)) ([786579c](https://github.com/blackbaud/skyux-design-tokens/commit/786579c9a60721f26095a3125a2e263318467e9b))
+
+## [6.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.2...6.1.0) (2026-07-16)
+
+
+### Features
+
+* new dark mode colors ([#359](https://github.com/blackbaud/skyux-design-tokens/issues/359)) ([f6184a5](https://github.com/blackbaud/skyux-design-tokens/commit/f6184a56f26a56420ab5d4549215f9d369d56b3f))
+
 ## [6.0.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.1...6.0.2) (2026-05-12)
 
 

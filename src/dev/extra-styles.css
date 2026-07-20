@@ -1,0 +1,17 @@
+/* Link underline */
+
+.stache-wrapper {
+	background-color: #141A1F !important;
+}
+/* Omnibar */
+.omnibar-vertical-menu-item:hover .omnibar-vertical-menu-item-text,
+.omnibar-vertical-menu-item:focus .omnibar-vertical-menu-item-text,
+.omnibar-vertical-menu-item:active .omnibar-vertical-menu-item-text {
+	color: var(--sky-theme-color-text-default);
+}
+
+/* Modal */
+
+.sky-modal {
+	border-color: #353d49 !important;
+}

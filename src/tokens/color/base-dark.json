@@ -89,7 +89,7 @@
       },
       "scrim": {
         "$type": "color",
-        "$value": "{bb.color.scrim}"
+        "$value": "{bb.color.scrim.heavy}"
       },
       "disabled": {
         "$type": "color",
