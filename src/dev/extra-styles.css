@@ -14,14 +14,17 @@
 .omnibar-vertical-menu-item:active .omnibar-vertical-menu-item-text {
 	color: var(--sky-theme-color-text-default);
 }
+.omnibar-service-menu-name, .omnibar-horizontal-nav-btn, .omnibar-vertical-menu-item a, .omnibar-vertical-menu-sub-item {
+  text-decoration: none !important;
+}
 
 /* Adding underlines */
-a, .sky-btn-link-inline, .sky-btn-link, .sky-btn-link-inline, [class*="sky-font-heading-"]:hover, [class*="sky-font-heading-"]:active, [class*="sky-font-heading-"]:focus-visible {
+a, .sky-btn-link-inline, .sky-btn-link, .sky-btn-link-inline, a[class*="sky-font-heading-"]:hover, a[class*="sky-theme-font-heading-"]:active, a[class*="sky-theme-font-heading-"]:focus-visible, a[class*="sky-theme-font-heading-"]:hover {
 	text-decoration: underline !important;
 }
 
 /* Removing underlines */
-a:hover, a:focus-visible, .sky-btn-link, .sky-btn-link-inline:hover, .sky-btn-link-inline:focus-visible, .sky-btn-link-inline:active, a:active, omnibar-vertical-menu a, .omnibar-menu-button, [class*="sky-font-heading-"] a, sky-tab-button a, .sky-btn-link, sky-key-info a, .sky-vertical-tab, a:hover, [class*="sky-font-heading-"] {
+a:hover, a:focus-visible, .sky-btn-link, .sky-btn-link-inline:hover, .sky-btn-link-inline:focus-visible, .sky-btn-link-inline:active, a:active, omnibar-vertical-menu a, .omnibar-menu-button, a[class*="sky-font-heading-"], a[class*="sky-theme-font-heading-"], sky-tab-button a, .sky-btn-link, sky-key-info a, .sky-vertical-tab, a:hover {
 	text-decoration: none !important;
 }
 
@@ -61,5 +64,16 @@ a:hover, a:focus-visible, .sky-btn-link, .sky-btn-link-inline:hover, .sky-btn-li
   /* Events */
   main[_ngcontent-ng-c300626273], .bb-eventlist-list-totals-bar[_ngcontent-ng-c2490236852] {
     all: revert-layer !important;
+  }
+  /* Analysis */
+  .management-page[_ngcontent-ng-c1901134448] {
+    all: revert-layer !important;
+  }
+  /* Settings */
+  .parent[_ngcontent-ng-c636261014] {
+    all: revert-layer !important;
+  }
+  .tab-section[_ngcontent-ng-c636261014] {
+    border-top: 1px solid revert-layer !important;
   }
 }
