@@ -1,49 +1,92 @@
 /* Link underline */
 
 .stache-wrapper {
-	background-color: #141A1F !important;
+  background-color: #141a1f !important;
 }
 
 .stache-wrapper .sky-action-button {
-	background-color: #1C2228 !important;
+  background-color: #1c2228 !important;
 }
 
 /* Omnibar */
 .omnibar-vertical-menu-item:hover .omnibar-vertical-menu-item-text,
 .omnibar-vertical-menu-item:focus .omnibar-vertical-menu-item-text,
 .omnibar-vertical-menu-item:active .omnibar-vertical-menu-item-text {
-	color: var(--sky-theme-color-text-default);
+  color: var(--sky-theme-color-text-default);
 }
-.omnibar-service-menu-name, .omnibar-horizontal-nav-btn, .omnibar-vertical-menu-item a, .omnibar-vertical-menu-sub-item {
+.omnibar-service-menu-name,
+.omnibar-horizontal-nav-btn,
+.omnibar-vertical-menu-item a,
+.omnibar-vertical-menu-sub-item {
   text-decoration: none !important;
 }
 
 /* Adding underlines */
-a, .sky-btn-link-inline, .sky-btn-link, .sky-btn-link-inline, a[class*="sky-font-heading-"]:hover, a[class*="sky-theme-font-heading-"]:active, a[class*="sky-theme-font-heading-"]:focus-visible, a[class*="sky-theme-font-heading-"]:hover {
-	text-decoration: underline !important;
+a,
+.sky-btn-link-inline,
+.sky-btn-link,
+.sky-btn-link-inline,
+a[class*='sky-font-heading-']:hover,
+a[class*='sky-theme-font-heading-']:active,
+a[class*='sky-theme-font-heading-']:focus-visible,
+a[class*='sky-theme-font-heading-']:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 0.125rem;
+  text-decoration-thickness: 0.0625rem !important;
 }
 
 /* Removing underlines */
-a:hover, a:focus-visible, .sky-btn-link, .sky-btn-link-inline:hover, .sky-btn-link-inline:focus-visible, .sky-btn-link-inline:active, a:active, omnibar-vertical-menu a, .omnibar-menu-button, a[class*="sky-font-heading-"], a[class*="sky-theme-font-heading-"], sky-tab-button a, .sky-btn-link, sky-key-info a, .sky-vertical-tab, a:hover {
-	text-decoration: none !important;
+a:hover,
+a:focus-visible,
+.sky-btn-link,
+.sky-btn-link-inline:hover,
+.sky-btn-link-inline:focus-visible,
+.sky-btn-link-inline:active,
+a:active,
+omnibar-vertical-menu a,
+.omnibar-menu-button,
+a[class*='sky-font-heading-'],
+a[class*='sky-theme-font-heading-'],
+sky-tab-button a,
+.sky-btn-link,
+sky-key-info a,
+.sky-vertical-tab,
+a:hover {
+  text-decoration: none !important;
 }
 
 /* Fixing custom styles in SPA's for demo purposes */
-@layer overrides {  
+@layer overrides {
   /* Global */
-  svg .highcharts-background, .sky-modal[_ngcontent-ng-c3934896922]:not(.sky-modal-full-page) {
+  svg .highcharts-background,
+  .sky-modal[_ngcontent-ng-c3934896922]:not(.sky-modal-full-page) {
     all: revert-layer !important;
   }
   /* Constituent SPA */
-  .list-tabset-landing-page[_ngcontent-ng-c2852440218], .list-tabset-list-display-container[_ngcontent-ng-c2852440218], .list-header[_ngcontent-ng-c3909177006], .list-title[_ngcontent-ng-c3909177006], .list-landing-page[_ngcontent-ng-c3909177006], .filtered[_ngcontent-ng-c2099505993], textarea[_ngcontent-ng-c3884448462], textarea[_ngcontent-ng-c3884448462] {
+  .list-tabset-landing-page[_ngcontent-ng-c2852440218],
+  .list-tabset-list-display-container[_ngcontent-ng-c2852440218],
+  .list-header[_ngcontent-ng-c3909177006],
+  .list-title[_ngcontent-ng-c3909177006],
+  .list-landing-page[_ngcontent-ng-c3909177006],
+  .filtered[_ngcontent-ng-c2099505993],
+  textarea[_ngcontent-ng-c3884448462],
+  textarea[_ngcontent-ng-c3884448462] {
     all: revert-layer !important;
   }
   /* Data Health SPA */
-  .data-health-page[_ngcontent-ng-c1927182444], .sky-page-summary[_ngcontent-ng-c2306477161], .grades-container[_ngcontent-ng-c1495796827] {
+  .data-health-page[_ngcontent-ng-c1927182444],
+  .sky-page-summary[_ngcontent-ng-c2306477161],
+  .grades-container[_ngcontent-ng-c1495796827] {
     all: revert-layer !important;
   }
   /* Gift management */
-  .subhdr-lbl[_ngcontent-ng-c498486016], .powered[_ngcontent-ng-c2100303062], .status-indi[_ngcontent-ng-c2100303062], .modal-multimode-buttons[_ngcontent-ng-c964193014], .new-ftr-lbl[_ngcontent-ng-c498486016], div.parent[_ngcontent-ng-c4049600328], div.parent[_ngcontent-ng-c1647096295] {
+  .subhdr-lbl[_ngcontent-ng-c498486016],
+  .powered[_ngcontent-ng-c2100303062],
+  .status-indi[_ngcontent-ng-c2100303062],
+  .modal-multimode-buttons[_ngcontent-ng-c964193014],
+  .new-ftr-lbl[_ngcontent-ng-c498486016],
+  div.parent[_ngcontent-ng-c4049600328],
+  div.parent[_ngcontent-ng-c1647096295] {
     all: revert-layer !important;
   }
   .toolbox-content[_ngcontent-ng-c217863270] {
@@ -54,15 +97,22 @@ a:hover, a:focus-visible, .sky-btn-link, .sky-btn-link-inline:hover, .sky-btn-li
   }
   /* Communications */
   .empty-section[_ngcontent-ng-c806853415] {
-	  all: revert-layer !important;
+    all: revert-layer !important;
   }
   /* Online Giving */
-  div.formula[_ngcontent-ng-c3404136181], .adaptive-preview-wrapper[_ngcontent-ng-c2098365355], .branding-preview[_ngcontent-ng-c171723139], 
-  .select-image-container[_ngcontent-ng-c2647157679], .ag-header, .ag-body, .ag-floating-bottom, .ag-floating-top {
-	  all: revert-layer !important;
+  div.formula[_ngcontent-ng-c3404136181],
+  .adaptive-preview-wrapper[_ngcontent-ng-c2098365355],
+  .branding-preview[_ngcontent-ng-c171723139],
+  .select-image-container[_ngcontent-ng-c2647157679],
+  .ag-header,
+  .ag-body,
+  .ag-floating-bottom,
+  .ag-floating-top {
+    all: revert-layer !important;
   }
   /* Events */
-  main[_ngcontent-ng-c300626273], .bb-eventlist-list-totals-bar[_ngcontent-ng-c2490236852] {
+  main[_ngcontent-ng-c300626273],
+  .bb-eventlist-list-totals-bar[_ngcontent-ng-c2490236852] {
     all: revert-layer !important;
   }
   /* Analysis */
