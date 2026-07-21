@@ -21,7 +21,7 @@
       },
       "scrim": {
         "$type": "color",
-        "$value": "{bb.color.scrim}"
+        "$value": "{bb.color.scrim.soft}"
       },
       "file_drop": {
         "$type": "color",

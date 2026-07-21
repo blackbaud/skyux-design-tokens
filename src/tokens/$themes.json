@@ -407,8 +407,6 @@
       "elevation.raised.100": "S:4573e4b783625d868172494ec5dd3f4e76c5feb8,"
     },
     "selectedTokenSets": {
-      "base-modern": "source",
-      "color/modern": "enabled",
       "base-blackbaud": "source",
       "color/bb-light": "enabled"
     },
@@ -1170,8 +1168,6 @@
       "type.input.val": "S:f46eb7da4ef4679d9fd5e4b17670d8ad599f4c11,"
     },
     "selectedTokenSets": {
-      "base-modern": "source",
-      "layout/modern": "enabled",
       "base-blackbaud": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:2142:337",

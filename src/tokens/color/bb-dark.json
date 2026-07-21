@@ -3,7 +3,7 @@
     "text": {
       "default": {
         "$type": "color",
-        "$value": "#EBEEF4"
+        "$value": "{bb.color.radix-gray.100}"
       },
       "deemphasized": {
         "$type": "color",
@@ -37,7 +37,7 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.rgba.slate.25.94}"
+        "$value": "{bb.color.radix-gray.100}"
       },
       "deemphasized": {
         "$type": "color",
@@ -81,11 +81,11 @@
     "background": {
       "page": {
         "$type": "color",
-        "$value": "#111113"
+        "$value": "{bb.color.radix-gray.1200}"
       },
       "scrim": {
         "$type": "color",
-        "$value": "{bb.color.scrim}"
+        "$value": "{bb.color.scrim.heavy}"
       },
       "disabled": {
         "$type": "color",
@@ -244,11 +244,11 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "#18191B"
+          "$value": "{bb.color.radix-gray.1100}"
         },
         "menu": {
           "$type": "color",
-          "$value": "#212225"
+          "$value": "{bb.color.radix-gray.1000}"
         },
         "danger": {
           "$type": "color",
@@ -312,11 +312,11 @@
       "row": {
         "base": {
           "$type": "color",
-          "$value": "#18191B"
+          "$value": "{bb.color.transparent}"
         },
         "hover": {
           "$type": "color",
-          "$value": "{bb.color.slate.1100}"
+          "$value": "{bb.color.transparent}"
         },
         "active": {
           "$type": "color",
