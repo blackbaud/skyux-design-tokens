@@ -459,11 +459,11 @@
       },
       "elevation": {
         "$type": "color",
-        "$value": "{bb.color.steel-fusion.800}"
+        "$value": "{bb.color.rgba.white.18}"
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.gray.700}"
+        "$value": "{bb.color.rgba.white.18}"
       },
       "column_divider": {
         "$type": "color",
@@ -602,7 +602,7 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.800}"
+          "$value": "{bb.color.rgba.white.18}"
         }
       },
       "input": {
@@ -682,15 +682,15 @@
       "separator": {
         "dark": {
           "$type": "color",
-          "$value": "{bb.color.gray.800}"
+          "$value": "{bb.color.rgba.white.18}"
         },
         "light": {
           "$type": "color",
-          "$value": "{bb.color.gray.700}"
+          "$value": "{bb.color.rgba.white.18}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.gray.800}"
+          "$value": "{bb.color.rgba.white.18}"
         }
       },
       "tab": {
