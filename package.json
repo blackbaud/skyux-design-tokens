@@ -1,6 +1,6 @@
 {
   "name": "@blackbaud/skyux-design-tokens",
-  "version": "6.1.2",
+  "version": "7.0.0-alpha.0",
   "description": "Design tokens for SKY UX",
   "homepage": "https://github.com/blackbaud/skyux-design-tokens",
   "license": "MIT",
