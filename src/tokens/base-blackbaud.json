@@ -1806,7 +1806,7 @@
               "y": "2",
               "blur": "4",
               "spread": "-1",
-              "color": "rgba( {bb.color.black},0.4)",
+              "color": "rgba( {bb.color.black},0.6)",
               "type": "dropShadow"
             },
             {
@@ -1814,7 +1814,7 @@
               "y": "1",
               "blur": "10",
               "spread": "0",
-              "color": "rgba( {bb.color.black},0.24)",
+              "color": "rgba( {bb.color.black},0.36)",
               "type": "dropShadow"
             },
             {
@@ -1822,7 +1822,7 @@
               "y": "4",
               "blur": "5",
               "spread": "0",
-              "color": "rgba( {bb.color.black},0.28)",
+              "color": "rgba( {bb.color.black},0.42)",
               "type": "dropShadow"
             }
           ]
