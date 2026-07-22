@@ -20,7 +20,7 @@
                 "font-size": "var(--sky-theme-font-size-heading-1)",
                 "line-height": "var(--sky-theme-font-line_height-heading-1)",
                 "font-family": "var(--sky-theme-font-family-heading-1)",
-                "color": "var(--sky-theme-color-text-heading)"
+                "color": "var(--sky-theme-color-text-deemphasized)"
               },
               "deprecatedClassNames": ["sky-font-heading-1"],
               "obsoleteClassNames": ["sky-page-heading"]
