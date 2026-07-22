@@ -244,11 +244,11 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.1100}"
+          "$value": "{bb.color.steel-fusion.1050}"
         },
         "menu": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.1000}"
+          "$value": "{bb.color.steel-fusion.900}"
         },
         "danger": {
           "$type": "color",
