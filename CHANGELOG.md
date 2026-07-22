@@ -5,6 +5,17 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [7.0.0-alpha.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...7.0.0-alpha.0) (2026-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* update `h5` text color to the deemphasized text color ([#366](https://github.com/blackbaud/skyux-design-tokens/issues/366))
+
+### Features
+
+* update `h5` text color to the deemphasized text color ([#366](https://github.com/blackbaud/skyux-design-tokens/issues/366)) ([85f98fd](https://github.com/blackbaud/skyux-design-tokens/commit/85f98fd6754996b1bc9ed94fd067069365080cf7))
+
 ## [6.1.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.1...6.1.2) (2026-07-17)
 
 
