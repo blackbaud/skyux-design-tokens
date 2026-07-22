@@ -375,11 +375,15 @@
         },
         "heavy": {
           "$type": "color",
-          "$value": "rgba(0,0,0,.75)"
+          "$value": "rgba(0,0,0,.65)"
         }
       },
       "rgba": {
         "white": {
+          "2": {
+            "$type": "color",
+            "$value": "rgba(255,255,255,0.02)"
+          },
           "5": {
             "$type": "color",
             "$value": "rgba(255,255,255,0.05)"
@@ -1204,6 +1208,10 @@
         "1100": {
           "$type": "color",
           "$value": "#18191B"
+        },
+        "1150": {
+          "$type": "color",
+          "$value": "#151517"
         },
         "1200": {
           "$type": "color",
