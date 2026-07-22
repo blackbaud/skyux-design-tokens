@@ -29,17 +29,27 @@ a,
 a[class*='sky-font-heading-']:hover,
 a[class*='sky-theme-font-heading-']:active,
 a[class*='sky-theme-font-heading-']:focus-visible,
-a[class*='sky-theme-font-heading-']:hover {
+a[class*='sky-theme-font-heading-']:hover,
+a[class*='sky-font-display-']:hover,
+a[class*='sky-theme-font-display-']:hover,
+a[class*='sky-font-display-']:active,
+a[class*='sky-theme-font-display-']:active,
+a[class*='sky-font-display-']:focus-visible,
+[class*='sky-theme-font-display-']:focus-visible,
+[class*='sky-font-display-'] a,
+[class*='sky-theme-font-display-'] a,
+[class*='sky-font-display-'] a:hover,
+[class*='sky-theme-font-display-'] a:hover,
+[class*='sky-font-display-'] a:active,
+[class*='sky-theme-font-display-'] a,
+[class*='sky-theme-font-display-'] a:active,
+[class*='sky-theme-font-display-'] a:focus-visible {
   text-decoration: underline !important;
   text-underline-offset: 0.125rem;
-  text-decoration-thickness: 0.0625rem !important;
+  text-decoration-thickness: 0.05rem !important;
 }
 
 /* Removing underlines */
-a:hover,
-a:focus-visible,
-.sky-btn-link,
-.sky-btn-link-inline:hover,
 .sky-btn-link-inline:focus-visible,
 .sky-btn-link-inline:active,
 a:active,
@@ -47,11 +57,15 @@ omnibar-vertical-menu a,
 .omnibar-menu-button,
 a[class*='sky-font-heading-'],
 a[class*='sky-theme-font-heading-'],
+a[class*='sky-font-display-'],
+a[class*='sky-theme-font-display-'],
+[class*='sky-font-display-'] a,
+[class*='sky-theme-font-display-'] a,
 sky-tab-button a,
 .sky-btn-link,
 sky-key-info a,
 .sky-vertical-tab,
-a:hover {
+.ag-header-cell-text {
   text-decoration: none !important;
 }
 
@@ -60,7 +74,7 @@ a:hover {
   /* Global */
   svg .highcharts-background,
   .sky-modal[_ngcontent-ng-c3934896922]:not(.sky-modal-full-page) {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   /* Constituent SPA */
   .list-tabset-landing-page[_ngcontent-ng-c2852440218],
@@ -70,14 +84,14 @@ a:hover {
   .list-landing-page[_ngcontent-ng-c3909177006],
   .filtered[_ngcontent-ng-c2099505993],
   textarea[_ngcontent-ng-c3884448462],
-  textarea[_ngcontent-ng-c3884448462] {
-    all: revert-layer !important;
+  .filtered[_ngcontent-ng-c2099505993] {
+    background-color: revert-layer !important;
   }
   /* Data Health SPA */
   .data-health-page[_ngcontent-ng-c1927182444],
   .sky-page-summary[_ngcontent-ng-c2306477161],
   .grades-container[_ngcontent-ng-c1495796827] {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   /* Gift management */
   .subhdr-lbl[_ngcontent-ng-c498486016],
@@ -87,7 +101,7 @@ a:hover {
   .new-ftr-lbl[_ngcontent-ng-c498486016],
   div.parent[_ngcontent-ng-c4049600328],
   div.parent[_ngcontent-ng-c1647096295] {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   .toolbox-content[_ngcontent-ng-c217863270] {
     background-color: revert-layer !important;
@@ -97,7 +111,7 @@ a:hover {
   }
   /* Communications */
   .empty-section[_ngcontent-ng-c806853415] {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   /* Online Giving */
   div.formula[_ngcontent-ng-c3404136181],
@@ -108,20 +122,20 @@ a:hover {
   .ag-body,
   .ag-floating-bottom,
   .ag-floating-top {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   /* Events */
   main[_ngcontent-ng-c300626273],
   .bb-eventlist-list-totals-bar[_ngcontent-ng-c2490236852] {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   /* Analysis */
   .management-page[_ngcontent-ng-c1901134448] {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   /* Settings */
   .parent[_ngcontent-ng-c636261014] {
-    all: revert-layer !important;
+    background-color: revert-layer !important;
   }
   .tab-section[_ngcontent-ng-c636261014] {
     border-top: 1px solid revert-layer !important;
