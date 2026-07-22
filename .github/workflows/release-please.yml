@@ -10,8 +10,8 @@ on:
       - '[0-9]+.x.x'
 
 env:
-  PRERELEASE: 'false'
-  MAJOR_VERSION: 3
+  PRERELEASE: 'true'
+  MAJOR_VERSION: 7
 
 permissions:
   contents: write

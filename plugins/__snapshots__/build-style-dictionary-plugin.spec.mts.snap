@@ -3199,14 +3199,14 @@ h4 {
   font-size: var(--sky-theme-font-size-heading-5);
   line-height: var(--sky-theme-font-line_height-heading-5);
   font-family: var(--sky-theme-font-family-heading-5);
-  color: var(--sky-theme-color-text-heading);
+  color: var(--sky-theme-color-text-deemphasized);
 }
 h5 {
   font-weight: var(--sky-theme-font-weight-heading-5);
   font-size: var(--sky-theme-font-size-heading-5);
   line-height: var(--sky-theme-font-line_height-heading-5);
   font-family: var(--sky-theme-font-family-heading-5);
-  color: var(--sky-theme-color-text-heading);
+  color: var(--sky-theme-color-text-deemphasized);
 }
 .sky-theme-font-body-m {
   font-weight: var(--sky-theme-font-weight-body-m);
