@@ -1669,6 +1669,14 @@
         }
       },
       "steel-gray": {
+        "600": {
+          "$type": "color",
+          "$value": "#7A7D81"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#636669"
+        },
         "800": {
           "$type": "color",
           "$value": "#4E5154"
