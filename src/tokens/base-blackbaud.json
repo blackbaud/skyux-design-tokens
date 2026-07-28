@@ -427,7 +427,7 @@
             "$value": "rgba(#A25100, .35)"
           }
         },
-         "green": {
+        "green": {
           "35": {
             "$type": "color",
             "$value": "rgba(#099c53, .35)"
@@ -602,6 +602,76 @@
         "1200": {
           "$type": "color",
           "$value": "#081325"
+        }
+      },
+      "oklch-blue-dark": {
+        "25": {
+          "$type": "color",
+          "$value": "#FBFCFE"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#F4F8FE"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ECF3FD"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#D1E2F9"
+        },
+        "250": {
+          "$type": "color",
+          "$value": "#BBD4F5"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#A4C5F2"
+        },
+        "375": {
+          "$type": "color",
+          "$value": "#79ADF1"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#74A8EC"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#438AE4"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#006CDE"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#0057B1"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#004185"
+        },
+        "850": {
+          "$type": "color",
+          "$value": "#03376F"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#052C59"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#052143"
+        },
+        "1100": {
+          "$type": "color",
+          "$value": "#051B37"
+        },
+        "1200": {
+          "$type": "color",
+          "$value": "#051327"
         }
       },
       "green": {
@@ -1523,7 +1593,7 @@
             "$value": "linear-gradient(90deg, {bb.color.blue.600}, {bb.color.purple.600})"
           }
         },
-         "container": {
+        "container": {
           "primary": {
             "$type": "color",
             "$value": "linear-gradient(90deg, {bb.color.steel-fusion.700}, {bb.color.steel-fusion.800})"
@@ -1581,7 +1651,7 @@
           "$type": "color",
           "$value": "#2A313C"
         },
-                "1050": {
+        "1050": {
           "$type": "color",
           "$value": "#21282F"
         },
