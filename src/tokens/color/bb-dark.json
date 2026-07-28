@@ -23,7 +23,7 @@
       },
       "selected": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.300}"
+        "$value": "{bb.color.blue-dark.375}"
       },
       "heading": {
         "$type": "color",
@@ -111,7 +111,7 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue-dark.300}"
+            "$value": "{bb.color.blue-dark.375}"
           },
           "hover": {
             "$type": "color",
@@ -356,11 +356,11 @@
       "selected": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.blue-dark.700}"
+          "$value": "{bb.color.blue-dark.800}"
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue-dark.25}"
+          "$value": "{bb.color.blue-selected.900}"
         },
         "danger": {
           "$type": "color",
