@@ -312,7 +312,7 @@
       "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.gray.1000}"
+          "$value": "{bb.color.steel-gray.1000}"
         },
         "hover": {
           "$type": "color",
