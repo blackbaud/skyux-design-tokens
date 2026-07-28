@@ -532,12 +532,6 @@
           "$value": "#0f1114"
         }
       },
-      "oklch-blue": {
-        "375": {
-          "$type": "color",
-          "$value": "#79ADF1"
-        }
-      },
       "blue": {
         "25": {
           "$type": "color",
@@ -990,6 +984,10 @@
         "300": {
           "$type": "color",
           "$value": "#83C1FF"
+        },
+        "375": {
+          "$type": "color",
+          "$value": "#79ADF1"
         },
         "400": {
           "$type": "color",
