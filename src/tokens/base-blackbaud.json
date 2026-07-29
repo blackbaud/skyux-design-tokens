@@ -469,16 +469,30 @@
             "$value": "rgba(#B52F32, .5)"
           }
         },
-        "steel-fusion": {
+        "steel-gray": {
           "5": {
             "$type": "color",
-            "$value": "rgba(243, 247, 251,.05)"
-          }
-        },
-        "steel-gray": {
+            "$value": "rgba(122, 125, 129, 0.05)"
+          },
+          "10": {
+            "$type": "color",
+            "$value": "rgba(122, 125, 129, 0.10)"
+          },
+          "15": {
+            "$type": "color",
+            "$value": "rgba(122, 125, 129, 0.15)"
+          },
+          "20": {
+            "$type": "color",
+            "$value": "rgba(122, 125, 129, 0.20)"
+          },
           "25": {
             "$type": "color",
-            "$value": "rgba(78, 81, 84, .25)"
+            "$value": "rgba(122, 125, 129, 0.25)"
+          },
+          "50": {
+            "$type": "color",
+            "$value": "rgba(122, 125, 129, 0.5)"
           }
         },
         "black": {
