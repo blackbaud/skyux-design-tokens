@@ -23,7 +23,7 @@
       },
       "selected": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.375}"
+        "$value": "{bb.color.blue-dark.300}"
       },
       "heading": {
         "$type": "color",
@@ -268,7 +268,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.steel-gray.1050}"
+          "$value": "{bb.color.steel-gray.1100}"
         }
       },
       "icon_matte": {
@@ -295,7 +295,7 @@
           },
           "soft": {
             "$type": "color",
-            "$value": "{bb.color.blue-dark.300}"
+            "$value": "{bb.color.blue-selected.900}"
           }
         }
       },
@@ -312,7 +312,7 @@
       "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-gray.1100}"
+          "$value": "{bb.color.steel-gray.1050}"
         },
         "hover": {
           "$type": "color",
