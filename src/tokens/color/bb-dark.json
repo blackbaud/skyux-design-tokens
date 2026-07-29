@@ -11,7 +11,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.400}"
+        "$value": "{bb.color.blue-dark.375}"
       },
       "danger": {
         "$type": "color",
@@ -111,7 +111,7 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue-dark.400}"
+            "$value": "{bb.color.blue-dark.375}"
           },
           "hover": {
             "$type": "color",
@@ -252,15 +252,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.rgba.red.35}"
+          "$value": "{bb.color.red.800}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.rgba.yellow.35}"
+          "$value": "{bb.color.yellow.800}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.rgba.green.35}"
+          "$value": "{bb.color.green-dark.800}"
         },
         "info": {
           "$type": "color",
@@ -274,7 +274,7 @@
       "icon_matte": {
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.600}"
+          "$value": "{bb.color.red.500}"
         },
         "warning": {
           "$type": "color",
@@ -439,7 +439,7 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.600}"
+        "$value": "{bb.color.red.500}"
       },
       "warning": {
         "$type": "color",
@@ -481,7 +481,7 @@
         "primary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue-dark.400}"
+            "$value": "{bb.color.blue-dark.375}"
           },
           "hover": {
             "$type": "color",
@@ -569,7 +569,7 @@
         "input": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue-dark.400}"
+            "$value": "{bb.color.steel-gray.800}"
           },
           "hover": {
             "$type": "color",

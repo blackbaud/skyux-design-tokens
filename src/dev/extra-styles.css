@@ -20,6 +20,15 @@
 .omnibar-vertical-menu-sub-item {
   text-decoration: none !important;
 }
+.omnibar-service-menu .omnibar-menu-button:hover,
+.omnibar-service-menu .omnibar-menu-button:focus,
+.omnibar-service-menu .omnibar-menu-button:active {
+  color: var(--sky-theme-color-text-default);
+  text-decoration: none !important;
+}
+.omnibar-search-menu-item-title {
+  text-decoration: none !important;
+}
 
 /* Adding underlines */
 a,
