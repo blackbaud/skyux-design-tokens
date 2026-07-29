@@ -427,7 +427,7 @@
             "$value": "rgba(#A25100, .35)"
           }
         },
-         "green": {
+        "green": {
           "35": {
             "$type": "color",
             "$value": "rgba(#099c53, .35)"
@@ -1517,7 +1517,7 @@
             "$value": "linear-gradient(90deg, {bb.color.blue.600}, {bb.color.purple.600})"
           }
         },
-         "container": {
+        "container": {
           "primary": {
             "$type": "color",
             "$value": "linear-gradient(90deg, {bb.color.steel-fusion.700}, {bb.color.steel-fusion.800})"
@@ -1575,9 +1575,13 @@
           "$type": "color",
           "$value": "#2A313C"
         },
-                "1050": {
+        "1050": {
           "$type": "color",
           "$value": "#21282F"
+        },
+        "1075": {
+          "$type": "color",
+          "$value": "#1E252B"
         },
         "1100": {
           "$type": "color",

@@ -268,7 +268,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.1050}"
+          "$value": "{bb.color.steel-fusion.1100}"
         }
       },
       "icon_matte": {
@@ -312,7 +312,7 @@
       "row": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.1000}"
+          "$value": "{bb.color.steel-fusion.1050}"
         },
         "hover": {
           "$type": "color",
