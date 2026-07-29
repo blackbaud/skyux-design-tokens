@@ -268,7 +268,7 @@
         },
         "dimmed": {
           "$type": "color",
-          "$value": "{bb.color.steel-fusion.1050}"
+          "$value": "{bb.color.steel-fusion.1150}"
         }
       },
       "icon_matte": {
