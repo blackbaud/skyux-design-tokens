@@ -256,7 +256,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.800}"
+          "$value": "{bb.color.yellow.400}"
         },
         "success": {
           "$type": "color",
@@ -278,7 +278,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.500}"
+          "$value": "{bb.color.yellow.700}"
         },
         "success": {
           "$type": "color",
@@ -443,7 +443,7 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.500}"
+        "$value": "{bb.color.yellow.700}"
       },
       "success": {
         "$type": "color",
