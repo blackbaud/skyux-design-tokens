@@ -835,6 +835,22 @@
           "$value": "{bb.color.gray.900}"
         }
       }
+    },
+    "scrollbar": {
+      "track": {
+        "$type": "color",
+        "$value": "{bb.color.scrollbar-blackbaud-dark.track}",
+        "$extensions": {
+          "com.blackbaud.developer.sky-token-scope": "root-has-body"
+        }
+      },
+      "thumb": {
+        "$type": "color",
+        "$value": "{bb.color.scrollbar-blackbaud-dark.thumb}",
+        "$extensions": {
+          "com.blackbaud.developer.sky-token-scope": "root-has-body"
+        }
+      }
     }
   },
   "elevation": {
