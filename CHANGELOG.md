@@ -5,6 +5,13 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...6.2.0) (2026-08-04)
+
+
+### Features
+
+* add tokens for styling scrollbars ([#370](https://github.com/blackbaud/skyux-design-tokens/issues/370)) ([0b88c85](https://github.com/blackbaud/skyux-design-tokens/commit/0b88c85fbb12bf73417340947dae5ace0a92eda1))
+
 ## [6.1.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.1...6.1.2) (2026-07-17)
 
 
