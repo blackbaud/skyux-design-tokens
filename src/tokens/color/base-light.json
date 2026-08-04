@@ -1065,14 +1065,14 @@
     "scrollbar": {
       "track": {
         "$type": "color",
-        "$value": "{bb.color.scrollbar.track}",
+        "$value": "{bb.color.scrollbar.base.light.track}",
         "$extensions": {
           "com.blackbaud.developer.sky-token-scope": "root-has-body"
         }
       },
       "thumb": {
         "$type": "color",
-        "$value": "{bb.color.scrollbar.thumb}",
+        "$value": "{bb.color.scrollbar.base.light.thumb}",
         "$extensions": {
           "com.blackbaud.developer.sky-token-scope": "root-has-body"
         }

@@ -839,14 +839,14 @@
     "scrollbar": {
       "track": {
         "$type": "color",
-        "$value": "{bb.color.scrollbar-blackbaud-dark.track}",
+        "$value": "{bb.color.scrollbar.bb.dark.track}",
         "$extensions": {
           "com.blackbaud.developer.sky-token-scope": "root-has-body"
         }
       },
       "thumb": {
         "$type": "color",
-        "$value": "{bb.color.scrollbar-blackbaud-dark.thumb}",
+        "$value": "{bb.color.scrollbar.bb.dark.thumb}",
         "$extensions": {
           "com.blackbaud.developer.sky-token-scope": "root-has-body"
         }
