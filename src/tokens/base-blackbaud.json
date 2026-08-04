@@ -1603,6 +1603,54 @@
           "$type": "color",
           "$value": "#141A1F"
         }
+      },
+      "scrollbar": {
+        "track": {
+          "$type": "color",
+          "$value": "#FFFFFF",
+          "$extensions": {
+            "com.blackbaud.developer.sky-token-scope": "root-has-body"
+          }
+        },
+        "thumb": {
+          "$type": "color",
+          "$value": "#85888d",
+          "$extensions": {
+            "com.blackbaud.developer.sky-token-scope": "root-has-body"
+          }
+        }
+      },
+      "scrollbar-dark": {
+        "track": {
+          "$type": "color",
+          "$value": "#1e2229",
+          "$extensions": {
+            "com.blackbaud.developer.sky-token-scope": "root-has-body"
+          }
+        },
+        "thumb": {
+          "$type": "color",
+          "$value": "#51555c",
+          "$extensions": {
+            "com.blackbaud.developer.sky-token-scope": "root-has-body"
+          }
+        }
+      },
+      "scrollbar-blackbaud-dark": {
+        "track": {
+          "$type": "color",
+          "$value": "#1C2228",
+          "$extensions": {
+            "com.blackbaud.developer.sky-token-scope": "root-has-body"
+          }
+        },
+        "thumb": {
+          "$type": "color",
+          "$value": "#51555c",
+          "$extensions": {
+            "com.blackbaud.developer.sky-token-scope": "root-has-body"
+          }
+        }
       }
     },
     "shadow": {

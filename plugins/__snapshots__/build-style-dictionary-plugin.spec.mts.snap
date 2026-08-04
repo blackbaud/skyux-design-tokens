@@ -491,6 +491,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(33, 44, 63, 0.5);
 }
+:root:has(body.sky-theme-modern.sky-theme-brand-base) {
+  --bb-color-scrollbar-blackbaud-dark-thumb: #51555c;
+  --bb-color-scrollbar-blackbaud-dark-track: #1c2228;
+  --bb-color-scrollbar-dark-thumb: #51555c;
+  --bb-color-scrollbar-dark-track: #1e2229;
+  --bb-color-scrollbar-thumb: #85888d;
+  --bb-color-scrollbar-track: #ffffff;
+}
 .sky-theme-modern.sky-theme-brand-base {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-blue-100);
@@ -777,6 +785,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
 }
+:root:has(body.sky-theme-modern.sky-theme-brand-base) {
+  --sky-color-scrollbar-thumb: var(--bb-color-scrollbar-thumb);
+  --sky-color-scrollbar-track: var(--bb-color-scrollbar-track);
+}
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
   --sky-color-background-action-accent-active: var(--bb-color-gray-600);
   --sky-color-background-action-accent-base: var(--bb-color-blue-900);
@@ -1029,6 +1041,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-400: var(--bb-shadow-gray-2400);
   --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
+}
+:root:has(body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark) {
+  --sky-color-scrollbar-thumb: var(--bb-color-scrollbar-dark-thumb);
+  --sky-color-scrollbar-track: var(--bb-color-scrollbar-dark-track);
 }
 .sky-theme-modern.sky-theme-brand-base {
   --sky-font-style-deemphasized-style: italic;
@@ -2255,6 +2271,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
   --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(33, 44, 63, 0.5);
 }
+:root:has(body.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud) {
+  --bb-color-scrollbar-blackbaud-dark-thumb: #51555c;
+  --bb-color-scrollbar-blackbaud-dark-track: #1c2228;
+  --bb-color-scrollbar-dark-thumb: #51555c;
+  --bb-color-scrollbar-dark-track: #1e2229;
+  --bb-color-scrollbar-thumb: #85888d;
+  --bb-color-scrollbar-track: #ffffff;
+}
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-base: var(--bb-color-blue-25);
@@ -2525,6 +2549,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-400: var(--bb-shadow-heavy-black-2400);
   --sky-elevation-overlay-simple-100: var(--bb-shadow-heavy-black-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-heavy-black-100);
+}
+:root:has(body.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud.sky-theme-mode-dark) {
+  --sky-color-scrollbar-thumb: var(--bb-color-scrollbar-blackbaud-dark-thumb);
+  --sky-color-scrollbar-track: var(--bb-color-scrollbar-blackbaud-dark-track);
 }
 "
 `;
