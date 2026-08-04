@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.0...7.0.0-alpha.1) (2026-08-04)
+
+
+### Features
+
+* add tokens for styling scrollbars ([#370](https://github.com/blackbaud/skyux-design-tokens/issues/370)) ([#372](https://github.com/blackbaud/skyux-design-tokens/issues/372)) ([5460b7d](https://github.com/blackbaud/skyux-design-tokens/commit/5460b7d393c4e18e5427be6997e91bac12977009))
+
 ## [6.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...6.2.0) (2026-08-04)
 
 
