@@ -15,7 +15,7 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.400}"
+        "$value": "{bb.color.red-dark.400}"
       },
       "inverse": {
         "$type": "color",
@@ -49,19 +49,19 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.600}"
+        "$value": "{bb.color.red-dark.400}"
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.600}"
+        "$value": "{bb.color.yellow-dark.400}"
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.600}"
+        "$value": "{bb.color.green-dark.400}"
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.500}"
+        "$value": "{bb.color.blue-dark.400}"
       },
       "inverse": {
         "$type": "color",
@@ -177,19 +177,19 @@
         "danger": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red-dark.700}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red-dark.600}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red-dark.600}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.red.600}"
+            "$value": "{bb.color.red-dark.600}"
           },
           "disabled": {
             "$type": "color",
@@ -252,19 +252,19 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.800}"
+          "$value": "{bb.color.red-dark.600}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.400}"
+          "$value": "{bb.color.yellow-dark.600}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green-dark.800}"
+          "$value": "{bb.color.green-dark.700}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue-dark.800}"
+          "$value": "{bb.color.blue-dark.700}"
         },
         "dimmed": {
           "$type": "color",
@@ -274,19 +274,19 @@
       "icon_matte": {
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.500}"
+          "$value": "{bb.color.red-dark.400}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.700}"
+          "$value": "{bb.color.yellow-dark.400}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.500}"
+          "$value": "{bb.color.green-dark.400}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue-dark.500}"
+          "$value": "{bb.color.blue-dark.400}"
         },
         "action": {
           "heavy": {
@@ -364,15 +364,15 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.900}"
+          "$value": "{bb.color.red-dark.900}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.900}"
+          "$value": "{bb.color.yellow-dark.900}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.green.900}"
+          "$value": "{bb.color.green-dark.900}"
         },
         "switch": {
           "base": {
@@ -439,19 +439,19 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.500}"
+        "$value": "{bb.color.red-dark.400}"
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.700}"
+        "$value": "{bb.color.yellow-dark.400}"
       },
       "success": {
         "$type": "color",
-        "$value": "{bb.color.green.500}"
+        "$value": "{bb.color.green-dark.400}"
       },
       "info": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.500}"
+        "$value": "{bb.color.blue-dark.400}"
       },
       "disabled": {
         "$type": "color",
