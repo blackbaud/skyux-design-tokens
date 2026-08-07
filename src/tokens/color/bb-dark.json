@@ -105,7 +105,7 @@
       },
       "thumbnail_matte": {
         "$type": "color",
-        "$value": "{bb.color.white}"
+        "$value": "{bb.color.steel-gray.1000}"
       },
       "action": {
         "primary": {
