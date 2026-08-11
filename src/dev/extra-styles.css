@@ -150,3 +150,8 @@ sky-key-info a,
     border-top: 1px solid revert-layer !important;
   }
 }
+
+/* Adding text color for inline link hover */
+.sky-btn-link-inline:hover {
+  color: #83c1ff !important;
+}
