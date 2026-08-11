@@ -155,3 +155,7 @@ sky-key-info a,
 .sky-btn-link-inline:hover {
   color: #83c1ff !important;
 }
+
+a:hover {
+  color: #83c1ff !important;
+}
