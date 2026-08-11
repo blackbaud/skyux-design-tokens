@@ -2382,6 +2382,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-hover: var(--bb-color-transparent);
   --sky-color-background-blocking: var(--bb-color-rgba-black-70);
+  --sky-color-background-container-backdrop: var(--bb-color-steel-fusion-1000);
   --sky-color-background-container-base: var(--bb-color-steel-fusion-1100);
   --sky-color-background-container-danger: var(--bb-color-rgba-red-dark-600-35);
   --sky-color-background-container-dimmed: var(--bb-color-steel-fusion-1050);
