@@ -8,8 +8,12 @@ describe('build styles', () => {
   it('should generate the correct base, blackbaud, and modern styles', async () => {
     const plugin = buildStyleDictionaryPlugin(tokenConfig);
     const emitFileSpy = vi.fn();
-    if (plugin.generateBundle) {
-      await plugin.generateBundle.call({
+    if (typeof plugin.generateBundle === 'function') {
+      await (
+        plugin.generateBundle as unknown as (this: {
+          emitFile: typeof emitFileSpy;
+        }) => Promise<void>
+      ).call({
         emitFile: emitFileSpy,
       });
     }
@@ -32,8 +36,12 @@ describe('build styles', () => {
   it('should generate the correct public API styles', async () => {
     const plugin = buildStyleDictionaryPlugin(tokenConfig);
     const emitFileSpy = vi.fn();
-    if (plugin.generateBundle) {
-      await plugin.generateBundle.call({
+    if (typeof plugin.generateBundle === 'function') {
+      await (
+        plugin.generateBundle as unknown as (this: {
+          emitFile: typeof emitFileSpy;
+        }) => Promise<void>
+      ).call({
         emitFile: emitFileSpy,
       });
     }

@@ -14,7 +14,7 @@ export default ({ mode }) => {
   return defineConfig({
     build: {
       lib: {
-        entry: path.resolve(__dirname, 'src/dev/main.ts'),
+        entry: path.resolve(import.meta.dirname, 'src/dev/main.ts'),
         name: 'SkyuxDesignTokens',
         fileName() {
           return `bundles/design-tokens.global.min.js`;
@@ -42,14 +42,14 @@ export default ({ mode }) => {
     test: {
       name: 'Design Tokens',
       environment: 'node',
-      root: path.resolve(__dirname),
+      root: path.resolve(import.meta.dirname),
       mockReset: true,
     },
     plugins: [
       buildStylesPlugin(),
       buildStyleDictionaryPlugin(tokenConfig),
       buildAssetsManifestPlugin(tokenConfig.projectName),
-      preparePackagePlugin(__dirname),
+      preparePackagePlugin(import.meta.dirname),
     ],
   });
 };
