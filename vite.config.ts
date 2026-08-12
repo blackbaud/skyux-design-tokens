@@ -1,5 +1,6 @@
 import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
+import { loadEnv } from 'vite';
+import { defineConfig } from 'vitest/config';
 import { buildStylesPlugin } from './plugins/build-styles-plugin.mjs';
 import {
   buildAssetsManifestPlugin,
@@ -8,13 +9,13 @@ import {
 } from '@blackbaud/skyux-branding-builder';
 import { tokenConfig } from './src/tokens/token-config.mts';
 
-export default ({ mode }) => {
+export default defineConfig(({ mode }) => {
   const viteEnv = loadEnv(mode, process.cwd());
 
-  return defineConfig({
+  return {
     build: {
       lib: {
-        entry: path.resolve(__dirname, 'src/dev/main.ts'),
+        entry: path.resolve(import.meta.dirname, 'src/dev/main.ts'),
         name: 'SkyuxDesignTokens',
         fileName() {
           return `bundles/design-tokens.global.min.js`;
@@ -42,14 +43,14 @@ export default ({ mode }) => {
     test: {
       name: 'Design Tokens',
       environment: 'node',
-      root: path.resolve(__dirname),
+      root: path.resolve(import.meta.dirname),
       mockReset: true,
     },
     plugins: [
       buildStylesPlugin(),
       buildStyleDictionaryPlugin(tokenConfig),
       buildAssetsManifestPlugin(tokenConfig.projectName),
-      preparePackagePlugin(__dirname),
+      preparePackagePlugin(import.meta.dirname),
     ],
-  });
-};
+  };
+});

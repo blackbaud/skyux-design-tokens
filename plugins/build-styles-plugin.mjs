@@ -1,10 +1,10 @@
 /* eslint-disable */
 import fs from 'fs-extra';
 import path from 'node:path';
-import yamlParse from 'js-yaml';
+import { load } from 'js-yaml';
 
 function generateOutputFiles(prefix, yamlPath) {
-  const yamlTokens = fs.readFileSync(path.resolve(__dirname, yamlPath), 'utf8');
+  const yamlTokens = fs.readFileSync(path.resolve(import.meta.dirname, yamlPath), 'utf8');
 
   if (yamlTokens.indexOf('\t') > -1) {
     throw new Error(
@@ -14,7 +14,7 @@ function generateOutputFiles(prefix, yamlPath) {
     );
   }
 
-  const jsonOutput = yamlParse.load(yamlTokens);
+  const jsonOutput = load(yamlTokens);
 
   const scssOutput = parseSassObject(jsonOutput, prefix);
 
@@ -22,7 +22,7 @@ function generateOutputFiles(prefix, yamlPath) {
 }
 
 function readFileContent(filePath) {
-  return fs.readFileSync(path.resolve(__dirname, filePath), 'utf8');
+  return fs.readFileSync(path.resolve(import.meta.dirname, filePath), 'utf8');
 }
 
 function buildProperty(name, value) {

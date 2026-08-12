@@ -9,19 +9,20 @@ test('should have token sets in the correct format', () => {
     '.sky-theme-modern.sky-theme-brand-base',
   );
   expect(tokenSets[0].path).toEqual('base-blackbaud.json');
+  /* eslint-disable @typescript-eslint/no-non-null-assertion */
   expect({
     name: 'base-light',
     path: 'color/base-light.json',
-  }).toBeOneOf(tokenSets[0].referenceTokens);
+  }).toBeOneOf(tokenSets[0].referenceTokens!);
   expect({
     name: 'base-dark',
     selector: '.sky-theme-mode-dark',
     path: 'color/base-dark.json',
-  }).toBeOneOf(tokenSets[0].referenceTokens);
+  }).toBeOneOf(tokenSets[0].referenceTokens!);
   expect({
     name: 'base-productive',
     path: 'layout/base-productive.json',
-  }).toBeOneOf(tokenSets[0].referenceTokens);
+  }).toBeOneOf(tokenSets[0].referenceTokens!);
 
   expect(tokenSets[1].name).toEqual('blackbaud');
   expect(tokenSets[1].selector).toEqual(
@@ -31,10 +32,11 @@ test('should have token sets in the correct format', () => {
   expect({
     name: 'bb-light',
     path: 'color/bb-light.json',
-  }).toBeOneOf(tokenSets[1].referenceTokens);
+  }).toBeOneOf(tokenSets[1].referenceTokens!);
   expect({
     name: 'bb-dark',
     selector: '.sky-theme-mode-dark',
     path: 'color/bb-dark.json',
-  }).toBeOneOf(tokenSets[1].referenceTokens);
+  }).toBeOneOf(tokenSets[1].referenceTokens!);
+  /* eslint-enable @typescript-eslint/no-non-null-assertion */
 });
