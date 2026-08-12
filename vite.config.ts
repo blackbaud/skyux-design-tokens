@@ -1,5 +1,6 @@
 import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
+import { loadEnv } from 'vite';
+import { defineConfig } from 'vitest/config';
 import { buildStylesPlugin } from './plugins/build-styles-plugin.mjs';
 import {
   buildAssetsManifestPlugin,
@@ -8,10 +9,10 @@ import {
 } from '@blackbaud/skyux-branding-builder';
 import { tokenConfig } from './src/tokens/token-config.mts';
 
-export default ({ mode }) => {
+export default defineConfig(({ mode }) => {
   const viteEnv = loadEnv(mode, process.cwd());
 
-  return defineConfig({
+  return {
     build: {
       lib: {
         entry: path.resolve(import.meta.dirname, 'src/dev/main.ts'),
@@ -51,5 +52,5 @@ export default ({ mode }) => {
       buildAssetsManifestPlugin(tokenConfig.projectName),
       preparePackagePlugin(import.meta.dirname),
     ],
-  });
-};
+  };
+});
