@@ -1,5 +1,13 @@
 # Changelog
 
+## [7.0.0-alpha.2](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.1...7.0.0-alpha.2) (2026-08-17)
+
+
+### Bug Fixes
+
+* dark mode backdrop fix ([#375](https://github.com/blackbaud/skyux-design-tokens/issues/375)) ([d447cac](https://github.com/blackbaud/skyux-design-tokens/commit/d447cac4bb928c5d42995564ea19e9e642d1d8c9))
+* fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([#382](https://github.com/blackbaud/skyux-design-tokens/issues/382)) ([0a460f4](https://github.com/blackbaud/skyux-design-tokens/commit/0a460f4775bbde92b00057f831ddf20b76accf46))
+
 ## [7.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.0...7.0.0-alpha.1) (2026-08-04)
 
 
