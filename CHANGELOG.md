@@ -5,6 +5,14 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.0...6.2.1) (2026-08-17)
+
+
+### Bug Fixes
+
+* dark mode backdrop fix ([#375](https://github.com/blackbaud/skyux-design-tokens/issues/375)) ([#377](https://github.com/blackbaud/skyux-design-tokens/issues/377)) ([645ebf9](https://github.com/blackbaud/skyux-design-tokens/commit/645ebf92868bd089cbfdc004034f7ea9232b4480))
+* fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([bb974b7](https://github.com/blackbaud/skyux-design-tokens/commit/bb974b7a39c6e6c064986e27f54a5f4b9f88e998))
+
 ## [6.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...6.2.0) (2026-08-04)
 
 
