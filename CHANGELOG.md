@@ -7,6 +7,14 @@
 
 * add tokens for styling scrollbars ([#370](https://github.com/blackbaud/skyux-design-tokens/issues/370)) ([#372](https://github.com/blackbaud/skyux-design-tokens/issues/372)) ([5460b7d](https://github.com/blackbaud/skyux-design-tokens/commit/5460b7d393c4e18e5427be6997e91bac12977009))
 
+## [6.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.0...6.2.1) (2026-08-17)
+
+
+### Bug Fixes
+
+* dark mode backdrop fix ([#375](https://github.com/blackbaud/skyux-design-tokens/issues/375)) ([#377](https://github.com/blackbaud/skyux-design-tokens/issues/377)) ([645ebf9](https://github.com/blackbaud/skyux-design-tokens/commit/645ebf92868bd089cbfdc004034f7ea9232b4480))
+* fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([bb974b7](https://github.com/blackbaud/skyux-design-tokens/commit/bb974b7a39c6e6c064986e27f54a5f4b9f88e998))
+
 ## [6.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...6.2.0) (2026-08-04)
 
 
