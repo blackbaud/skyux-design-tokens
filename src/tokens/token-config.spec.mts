@@ -12,6 +12,7 @@ test('should have token sets in the correct format', () => {
   /* eslint-disable @typescript-eslint/no-non-null-assertion */
   expect({
     name: 'base-light',
+    selector: '.sky-theme-mode-light',
     path: 'color/base-light.json',
   }).toBeOneOf(tokenSets[0].referenceTokens!);
   expect({
@@ -31,6 +32,7 @@ test('should have token sets in the correct format', () => {
   expect(tokenSets[1].path).toEqual('base-blackbaud.json');
   expect({
     name: 'bb-light',
+    selector: '.sky-theme-mode-light',
     path: 'color/bb-light.json',
   }).toBeOneOf(tokenSets[1].referenceTokens!);
   expect({
