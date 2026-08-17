@@ -499,7 +499,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-thumb: #51555c;
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
-.sky-theme-modern.sky-theme-brand-base {
+.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-light {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-blue-100);
   --sky-color-background-action-accent-base: var(--bb-color-white);
@@ -785,11 +785,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
 }
-:root:has(body.sky-theme-modern.sky-theme-brand-base) {
+:root:has(body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-light) {
   --sky-color-scrollbar-thumb: var(--bb-color-scrollbar-base-light-thumb);
   --sky-color-scrollbar-track: var(--bb-color-scrollbar-base-light-track);
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+  --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-gray-600);
   --sky-color-background-action-accent-base: var(--bb-color-blue-900);
   --sky-color-background-action-accent-focus: var(--bb-color-gray-700);
@@ -902,7 +903,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-progress_step: var(--bb-color-gray-600);
   --sky-color-border-selected: var(--bb-color-blue-400);
   --sky-color-border-selected_soft: var(--bb-color-blue-500);
-  --sky-color-border-separator-dark: var(--bb-color-gray-800);
   --sky-color-border-separator-light: var(--bb-color-gray-700);
   --sky-color-border-separator-row: var(--bb-color-gray-800);
   --sky-color-border-success: var(--bb-color-green-400);
@@ -1007,6 +1007,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-sequence-7: var(--bb-color-teal-400);
   --sky-color-viz-sequence-8: var(--bb-color-teal-300);
   --sky-color-viz-sequence-9: var(--bb-color-teal-200);
+  --sky-image-logo-primary-src: var(--bb-image-logo-primary-src);
   --sky-image-select_icon-base: var(--bb-image-select_icon-base-dark-src);
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-base-dark-src);
   --sky-opacity-wait: var(--bb-opacity-600);
@@ -1032,7 +1033,39 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-switch-disabled: var(--sky-color-border-disabled);
   --sky-color-border-switch-selected-disabled: var(--sky-color-border-disabled);
   --sky-color-border-tab-disabled: var(--sky-color-border-disabled);
+  --sky-elevation-action-danger-active: var(--bb-shadow-gray-0);
+  --sky-elevation-action-danger-base: var(--bb-shadow-gray-0);
+  --sky-elevation-action-danger-disabled: var(--bb-shadow-gray-0);
+  --sky-elevation-action-danger-focus: var(--bb-shadow-gray-0);
+  --sky-elevation-action-danger-hover: var(--bb-shadow-gray-0);
+  --sky-elevation-action-input-active: var(--bb-shadow-gray-0);
+  --sky-elevation-action-input-base: var(--bb-shadow-gray-0);
+  --sky-elevation-action-input-disabled: var(--bb-shadow-gray-0);
+  --sky-elevation-action-input-focus: var(--bb-shadow-gray-0);
+  --sky-elevation-action-input-hover: var(--bb-shadow-gray-0);
+  --sky-elevation-action-primary-active: var(--bb-shadow-gray-0);
+  --sky-elevation-action-primary-base: var(--bb-shadow-gray-0);
+  --sky-elevation-action-primary-disabled: var(--bb-shadow-gray-0);
+  --sky-elevation-action-primary-focus: var(--bb-shadow-gray-0);
+  --sky-elevation-action-primary-hover: var(--bb-shadow-gray-0);
+  --sky-elevation-action-secondary-active: var(--bb-shadow-gray-0);
+  --sky-elevation-action-secondary-base: var(--bb-shadow-gray-0);
+  --sky-elevation-action-secondary-disabled: var(--bb-shadow-gray-0);
+  --sky-elevation-action-secondary-focus: var(--bb-shadow-gray-0);
+  --sky-elevation-action-secondary-hover: var(--bb-shadow-gray-0);
+  --sky-elevation-action-tertiary-active: var(--bb-shadow-gray-0);
+  --sky-elevation-action-tertiary-base: var(--bb-shadow-gray-0);
+  --sky-elevation-action-tertiary-disabled: var(--bb-shadow-gray-0);
+  --sky-elevation-action-tertiary-focus: var(--bb-shadow-gray-0);
+  --sky-elevation-action-tertiary-hover: var(--bb-shadow-gray-0);
+  --sky-elevation-action-toolbar-active: var(--bb-shadow-gray-0);
+  --sky-elevation-action-toolbar-base: var(--bb-shadow-gray-0);
+  --sky-elevation-action-toolbar-disabled: var(--bb-shadow-gray-0);
+  --sky-elevation-action-toolbar-focus: var(--bb-shadow-gray-0);
+  --sky-elevation-action-toolbar-hover: var(--bb-shadow-gray-0);
   --sky-elevation-focus: var(--bb-shadow-gray-200);
+  --sky-elevation-input-base: var(--bb-shadow-gray-0);
+  --sky-elevation-input-disabled: var(--bb-shadow-gray-0);
   --sky-elevation-none: var(--bb-shadow-gray-0);
   --sky-elevation-overflow: var(--bb-shadow-gray-200);
   --sky-elevation-overlay-100: var(--bb-shadow-gray-400);
@@ -2279,7 +2312,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-thumb: #51555c;
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
-.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud {
+.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud.sky-theme-mode-light {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-base: var(--bb-color-blue-25);
   --sky-color-background-container-backdrop: var(--bb-color-slate-200);
@@ -2477,7 +2510,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-progress_step: var(--bb-color-gray-600);
   --sky-color-border-selected: var(--bb-color-blue-400);
   --sky-color-border-selected_soft: var(--bb-color-blue-600);
-  --sky-color-border-separator-dark: var(--bb-color-gray-800);
   --sky-color-border-separator-light: var(--bb-color-gray-700);
   --sky-color-border-separator-row: var(--bb-color-gray-800);
   --sky-color-border-success: var(--bb-color-green-500);
