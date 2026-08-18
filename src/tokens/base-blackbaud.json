@@ -467,6 +467,12 @@
               "$type": "color",
               "$value": "rgba(243, 246, 249,.05)"
             }
+          },
+          "1100": {
+            "70": {
+              "$type": "color",
+              "$value": "rgba(28, 34, 40,.7)"
+            }
           }
         },
         "black": {
@@ -1612,52 +1618,52 @@
         "base": {
           "light": {
             "track": {
-              "$type": "color",
-              "$value": "#FFFFFF",
               "$extensions": {
                 "com.blackbaud.developer.sky-token-scope": "root-has-body"
-              }
+              },
+              "$type": "color",
+              "$value": "#FFFFFF"
             },
             "thumb": {
-              "$type": "color",
-              "$value": "#85888d",
               "$extensions": {
                 "com.blackbaud.developer.sky-token-scope": "root-has-body"
-              }
+              },
+              "$type": "color",
+              "$value": "#85888d"
             }
           },
           "dark": {
             "track": {
-              "$type": "color",
-              "$value": "#1e2229",
               "$extensions": {
                 "com.blackbaud.developer.sky-token-scope": "root-has-body"
-              }
+              },
+              "$type": "color",
+              "$value": "#1e2229"
             },
             "thumb": {
-              "$type": "color",
-              "$value": "#51555c",
               "$extensions": {
                 "com.blackbaud.developer.sky-token-scope": "root-has-body"
-              }
+              },
+              "$type": "color",
+              "$value": "#51555c"
             }
           }
         },
         "bb": {
           "dark": {
             "track": {
-              "$type": "color",
-              "$value": "#1C2228",
               "$extensions": {
                 "com.blackbaud.developer.sky-token-scope": "root-has-body"
-              }
+              },
+              "$type": "color",
+              "$value": "#1C2228"
             },
             "thumb": {
-              "$type": "color",
-              "$value": "#51555c",
               "$extensions": {
                 "com.blackbaud.developer.sky-token-scope": "root-has-body"
-              }
+              },
+              "$type": "color",
+              "$value": "#51555c"
             }
           }
         }
