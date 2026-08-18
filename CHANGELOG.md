@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.3.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.0...6.3.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* update blocking wait background in dark mode ([#380](https://github.com/blackbaud/skyux-design-tokens/issues/380)) ([98754ee](https://github.com/blackbaud/skyux-design-tokens/commit/98754eeffa812a1b34b23858539d13fc162ba16f))
+
 ## [6.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.1...6.3.0) (2026-08-18)
 
 
