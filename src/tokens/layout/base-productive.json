@@ -1280,6 +1280,12 @@
           "$type": "other",
           "$value": "{bb.border.style.solid}"
         }
+      },
+      "container": {
+        "overlay": {
+          "$type": "other",
+          "$value": "{bb.border.style.none}"
+        }
       }
     }
   },
