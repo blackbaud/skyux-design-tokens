@@ -5,6 +5,13 @@
 
 ### Features
 
+## [6.3.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.0...6.3.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* update blocking wait background in dark mode ([#380](https://github.com/blackbaud/skyux-design-tokens/issues/380)) ([98754ee](https://github.com/blackbaud/skyux-design-tokens/commit/98754eeffa812a1b34b23858539d13fc162ba16f))
+
 * add tokens for container overlay border styles ([#384](https://github.com/blackbaud/skyux-design-tokens/issues/384)) ([26dcc8f](https://github.com/blackbaud/skyux-design-tokens/commit/26dcc8f6f8a24eb7ff66fe36b9c9d45880f49410))
 
 ## [7.0.0-alpha.2](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.1...7.0.0-alpha.2) (2026-08-17)
