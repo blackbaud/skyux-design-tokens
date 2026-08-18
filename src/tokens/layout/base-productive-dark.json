@@ -1,0 +1,12 @@
+{
+  "border": {
+    "style": {
+      "container": {
+        "overlay": {
+          "$type": "other",
+          "$value": "{bb.border.style.solid}"
+        }
+      }
+    }
+  }
+}

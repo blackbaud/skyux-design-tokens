@@ -65,6 +65,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-border-radius-pill: 999rem;
   --bb-border-radius-round: 50%;
   --bb-border-style-dotted: dotted;
+  --bb-border-style-none: none;
   --bb-border-style-solid: solid;
   --bb-brand-name: 'Blackbaud';
   --bb-color-black: #000000;
@@ -1109,6 +1110,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-border-radius-thumb: var(--bb-border-radius-round);
   --sky-border-radius-xs: var(--bb-border-radius-012);
   --sky-border-style-accent: var(--bb-border-style-solid);
+  --sky-border-style-container-overlay: var(--bb-border-style-none);
   --sky-border-style-divider: var(--bb-border-style-solid);
   --sky-border-style-elevation: var(--bb-border-style-solid);
   --sky-border-style-separator-dark: var(--bb-border-style-solid);
@@ -1812,6 +1814,9 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-type-heading-1: var(--sky-font-style-heading-1) var(--sky-font-size-heading-1)/36 'var(--bb-font-blkb_sans-name)';
   --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/20 'var(--bb-font-blkb_sans-name)';
 }
+.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+  --sky-border-style-container-overlay: var(--bb-border-style-solid);
+}
 "
 `;
 
@@ -1878,6 +1883,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-border-radius-pill: 999rem;
   --bb-border-radius-round: 50%;
   --bb-border-style-dotted: dotted;
+  --bb-border-style-none: none;
   --bb-border-style-solid: solid;
   --bb-brand-name: 'Blackbaud';
   --bb-color-black: #000000;
