@@ -97,7 +97,7 @@
       },
       "blocking": {
         "$type": "color",
-        "$value": "{bb.color.rgba.black.70}"
+        "$value": "{bb.color.rgba.steel-fusion.1100.70}"
       },
       "text_highlight": {
         "$type": "color",
@@ -1064,18 +1064,18 @@
     },
     "scrollbar": {
       "track": {
-        "$type": "color",
-        "$value": "{bb.color.scrollbar.base.dark.track}",
         "$extensions": {
           "com.blackbaud.developer.sky-token-scope": "root-has-body"
-        }
+        },
+        "$type": "color",
+        "$value": "{bb.color.scrollbar.base.dark.track}"
       },
       "thumb": {
-        "$type": "color",
-        "$value": "{bb.color.scrollbar.base.dark.thumb}",
         "$extensions": {
           "com.blackbaud.developer.sky-token-scope": "root-has-body"
-        }
+        },
+        "$type": "color",
+        "$value": "{bb.color.scrollbar.base.dark.thumb}"
       }
     }
   },
