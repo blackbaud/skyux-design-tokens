@@ -22,6 +22,11 @@ export const tokenConfig: TokenConfig = {
           name: 'base-productive',
           path: 'layout/base-productive.json',
         },
+        {
+          name: 'base-productive-dark',
+          selector: '.sky-theme-mode-dark',
+          path: 'layout/base-productive-dark.json',
+        },
       ],
       publicTokens: [
         {
