@@ -151,4 +151,3 @@ jobs:
           SLACK_CHANNEL: C01GY7ZP4HM
           SLACK_COLOR: 'fail'
           SLACK_FOOTER: 'Blackbaud Sky Build User'
-          MSG_MINIMAL: 'true'
