@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.1...6.3.0) (2026-08-18)
+
+
+### Features
+
+* add tokens for container overlay border styles ([#384](https://github.com/blackbaud/skyux-design-tokens/issues/384)) ([26dcc8f](https://github.com/blackbaud/skyux-design-tokens/commit/26dcc8f6f8a24eb7ff66fe36b9c9d45880f49410))
+
 ## [7.0.0-alpha.2](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.1...7.0.0-alpha.2) (2026-08-17)
 
 
@@ -8,12 +15,6 @@
 * dark mode backdrop fix ([#375](https://github.com/blackbaud/skyux-design-tokens/issues/375)) ([d447cac](https://github.com/blackbaud/skyux-design-tokens/commit/d447cac4bb928c5d42995564ea19e9e642d1d8c9))
 * fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([#382](https://github.com/blackbaud/skyux-design-tokens/issues/382)) ([0a460f4](https://github.com/blackbaud/skyux-design-tokens/commit/0a460f4775bbde92b00057f831ddf20b76accf46))
 
-## [7.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.0...7.0.0-alpha.1) (2026-08-04)
-
-
-### Features
-
-* add tokens for styling scrollbars ([#370](https://github.com/blackbaud/skyux-design-tokens/issues/370)) ([#372](https://github.com/blackbaud/skyux-design-tokens/issues/372)) ([5460b7d](https://github.com/blackbaud/skyux-design-tokens/commit/5460b7d393c4e18e5427be6997e91bac12977009))
 
 ## [6.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.0...6.2.1) (2026-08-17)
 
@@ -22,6 +23,13 @@
 
 * dark mode backdrop fix ([#375](https://github.com/blackbaud/skyux-design-tokens/issues/375)) ([#377](https://github.com/blackbaud/skyux-design-tokens/issues/377)) ([645ebf9](https://github.com/blackbaud/skyux-design-tokens/commit/645ebf92868bd089cbfdc004034f7ea9232b4480))
 * fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([bb974b7](https://github.com/blackbaud/skyux-design-tokens/commit/bb974b7a39c6e6c064986e27f54a5f4b9f88e998))
+
+## [7.0.0-alpha.1](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.0...7.0.0-alpha.1) (2026-08-04)
+
+
+### Features
+
+* add tokens for styling scrollbars ([#370](https://github.com/blackbaud/skyux-design-tokens/issues/370)) ([#372](https://github.com/blackbaud/skyux-design-tokens/issues/372)) ([5460b7d](https://github.com/blackbaud/skyux-design-tokens/commit/5460b7d393c4e18e5427be6997e91bac12977009))
 
 ## [6.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...6.2.0) (2026-08-04)
 
