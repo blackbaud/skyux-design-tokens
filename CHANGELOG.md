@@ -5,6 +5,13 @@
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
+## [6.3.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.0...6.3.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* update blocking wait background in dark mode ([#380](https://github.com/blackbaud/skyux-design-tokens/issues/380)) ([98754ee](https://github.com/blackbaud/skyux-design-tokens/commit/98754eeffa812a1b34b23858539d13fc162ba16f))
+
 ## [6.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.1...6.3.0) (2026-08-18)
 
 
