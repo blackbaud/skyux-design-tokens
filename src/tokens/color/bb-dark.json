@@ -282,19 +282,19 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.rgba.red-dark.600.35}"
+          "$value": "{bb.color.red-dark.600}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.rgba.yellow-dark.600.35}"
+          "$value": "{bb.color.yellow-dark.600}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.rgba.green.600.35}"
+          "$value": "{bb.color.green-dark.600}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue.600.35}"
+          "$value": "{bb.color.blue-dark.600}"
         },
         "dimmed": {
           "$type": "color",
