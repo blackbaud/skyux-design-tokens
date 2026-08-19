@@ -154,6 +154,14 @@
               "demoMetadata": {
                 "background": "--sky-theme-color-background-icon_matte-info"
               }
+            },
+            {
+              "name": "Prominent container header text",
+              "customProperty": "--sky-theme-color-text-on_prominent",
+              "description": "The color for text on prominent container headers.",
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-container-header-prominent"
+              }
             }
           ]
         },
@@ -185,6 +193,14 @@
                   "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
                   "demoMetadata": {
                     "background": "--sky-theme-color-background-icon_matte-info"
+                  }
+                },
+                {
+                  "name": "Prominent container header icon",
+                  "customProperty": "--sky-theme-color-icon-on_prominent",
+                  "description": "The color for icons on prominent container headers.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
                   }
                 }
               ]
