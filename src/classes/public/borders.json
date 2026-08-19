@@ -21,6 +21,13 @@
                 "sky-border-light",
                 "sky-elevation-0-bordered"
               ]
+            },
+            {
+              "name": "Prominent container header border",
+              "className": "sky-theme-border-container-header-prominent",
+              "properties": {
+                "border-bottom": "var(--sky-theme-border-container-header-prominent)"
+              }
             }
           ]
         },
