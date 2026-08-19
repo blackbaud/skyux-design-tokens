@@ -46,6 +46,11 @@
                   "description": "The background color for containers behind a canvas, WYSIWYG editor, or preview."
                 },
                 {
+                  "name": "Prominent container header background",
+                  "customProperty": "--sky-theme-color-background-container-header-prominent",
+                  "description": "The background color for headers of containers of tools that work alongside the main page content."
+                },
+                {
                   "name": "Disabled background",
                   "customProperty": "--sky-theme-color-background-disabled",
                   "description": "The background color for disabled elements.",

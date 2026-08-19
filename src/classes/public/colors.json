@@ -48,6 +48,14 @@
                   }
                 },
                 {
+                  "name": "Prominent container header background",
+                  "className": "sky-theme-color-background-container-header-prominent",
+                  "description": "The background color for headers of containers of tools that work alongside the main page content.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-header-prominent)"
+                  }
+                },
+                {
                   "name": "Disabled background",
                   "className": "sky-theme-color-background-disabled",
                   "description": "The background color for disabled elements.",
