@@ -78,6 +78,27 @@ sky-key-info a,
   text-decoration: none !important;
 }
 
+/* Overriding alert text and icon color */
+.sky-toast-body,
+.sky-alert-content,
+.sky-label-text,
+.bb-dev-mode-info,
+.bb-dev-mode-label {
+  color: #17191b;
+}
+
+.sky-alert-success .sky-icon-svg-container,
+.sky-alert-info .sky-icon-svg-container,
+.sky-toast-success .sky-icon-svg-container,
+.sky-toast-info .sky-icon-svg-container,
+.sky-label-success .sky-icon-svg-container,
+.sky-label-info .sky-icon-svg-container,
+.sky-label-warning .sky-icon-svg-container,
+.sky-label-danger .sky-icon-svg-container,
+.sky-status-indicator .sky-icon-svg-container {
+  --sky-icon-svg-path-2-color-input: #e2e4e5 !important;
+}
+
 /* Fixing custom styles in SPA's for demo purposes */
 @layer overrides {
   /* Global */
