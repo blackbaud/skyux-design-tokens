@@ -1,3 +1,4 @@
+import fs from 'fs';
 import path from 'path';
 import { loadEnv } from 'vite';
 import { defineConfig } from 'vitest/config';
@@ -11,6 +12,13 @@ import { tokenConfig } from './src/tokens/token-config.mts';
 
 export default defineConfig(({ mode }) => {
   const viteEnv = loadEnv(mode, process.cwd());
+
+  const httpsConfig = viteEnv.VITE_DEV_CERT && viteEnv.VITE_DEV_KEY
+    ? {
+        cert: fs.readFileSync(viteEnv.VITE_DEV_CERT),
+        key: fs.readFileSync(viteEnv.VITE_DEV_KEY),
+      }
+    : undefined;
 
   return {
     build: {
@@ -27,12 +35,7 @@ export default defineConfig(({ mode }) => {
       open: true,
     },
     server: {
-      https: viteEnv.VITE_DEV_CERT
-        ? {
-            cert: viteEnv.VITE_DEV_CERT,
-            key: viteEnv.VITE_DEV_KEY,
-          }
-        : undefined,
+      https: httpsConfig,
       open: true,
       cors: {
         origin: '*',
