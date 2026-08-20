@@ -13,6 +13,7 @@
             {
               "name": "Container default",
               "className": "sky-theme-border-container-default",
+              "description": "The default border around most containers that don't overlay other content.",
               "properties": {
                 "border": "var(--sky-theme-border-container-default)"
               },
@@ -25,6 +26,7 @@
             {
               "name": "Prominent container header border",
               "className": "sky-theme-border-container-header-prominent",
+              "description": "The bottom border for the header on a prominent container.",
               "properties": {
                 "border-bottom": "var(--sky-theme-border-container-header-prominent)"
               }
