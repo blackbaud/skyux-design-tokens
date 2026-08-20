@@ -79,6 +79,11 @@
                   "description": "The border color for separating containers from their surroundings."
                 },
                 {
+                  "name": "Prominent header border",
+                  "customProperty": "--sky-theme-color-border-container-header-prominent",
+                  "description": "The bottom border color for headers of prominent containers."
+                },
+                {
                   "name": "Disabled border",
                   "customProperty": "--sky-theme-color-border-disabled",
                   "description": "The border color around disabled elements."
