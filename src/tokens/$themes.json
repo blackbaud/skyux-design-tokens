@@ -1301,6 +1301,7 @@
     "selectedTokenSets": {
       "base-blackbaud": "enabled"
     },
-    "group": "Base"
+    "group": "Base",
+    "$figmaVariableReferences": {}
   }
 ]
