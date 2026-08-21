@@ -32,6 +32,10 @@
       "action_contrast": {
         "$type": "color",
         "$value": "{bb.color.blue.300}"
+      },
+      "on_prominent": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
       }
     },
     "icon": {
@@ -74,6 +78,10 @@
       "eyebrow": {
         "$type": "color",
         "$value": "{bb.color.brand.impact_green}"
+      },
+      "on_prominent": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
       },
       "input": {
         "action": {
@@ -176,6 +184,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{color.background.disabled}"
+          },
+          "on_prominent": {
+            "base": {
+              "$type": "color",
+              "$value": "{bb.color.transparent}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{bb.color.slate.700}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{bb.color.slate.600}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{bb.color.transparent}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{color.background.disabled}"
+            }
           }
         },
         "danger": {
@@ -281,6 +311,12 @@
         "tooltip": {
           "$type": "color",
           "$value": "{bb.color.gray.25}"
+        },
+        "header": {
+          "prominent": {
+            "$type": "color",
+            "$value": "{bb.color.slate.800}"
+          }
         }
       },
       "icon_matte": {
@@ -554,6 +590,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{color.border.disabled}"
+          },
+          "on_prominent": {
+            "base": {
+              "$type": "color",
+              "$value": "{bb.color.transparent}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{bb.color.slate.300}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{bb.color.slate.300}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{bb.color.slate.300}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{color.border.disabled}"
+            }
           }
         },
         "danger": {
@@ -627,6 +685,12 @@
         "base": {
           "$type": "color",
           "$value": "{bb.color.blue.900}"
+        },
+        "header": {
+          "prominent": {
+            "$type": "color",
+            "$value": "{bb.color.slate.500}"
+          }
         }
       },
       "input": {

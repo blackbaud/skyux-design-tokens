@@ -46,6 +46,11 @@
                   "description": "The background color for containers behind a canvas, WYSIWYG editor, or preview."
                 },
                 {
+                  "name": "Prominent container header background",
+                  "customProperty": "--sky-theme-color-background-container-header-prominent",
+                  "description": "The background color for headers of containers of tools that work alongside the main page content."
+                },
+                {
                   "name": "Disabled background",
                   "customProperty": "--sky-theme-color-background-disabled",
                   "description": "The background color for disabled elements.",
@@ -72,6 +77,11 @@
                   "name": "Default container border",
                   "customProperty": "--sky-theme-color-border-container-default",
                   "description": "The border color for separating containers from their surroundings."
+                },
+                {
+                  "name": "Prominent header border",
+                  "customProperty": "--sky-theme-color-border-container-header-prominent",
+                  "description": "The bottom border color for headers of prominent containers."
                 },
                 {
                   "name": "Disabled border",
@@ -149,6 +159,14 @@
               "demoMetadata": {
                 "background": "--sky-theme-color-background-icon_matte-info"
               }
+            },
+            {
+              "name": "Prominent container header text",
+              "customProperty": "--sky-theme-color-text-on_prominent",
+              "description": "The color for text on prominent container headers.",
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-container-header-prominent"
+              }
             }
           ]
         },
@@ -180,6 +198,14 @@
                   "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
                   "demoMetadata": {
                     "background": "--sky-theme-color-background-icon_matte-info"
+                  }
+                },
+                {
+                  "name": "Prominent container header icon",
+                  "customProperty": "--sky-theme-color-icon-on_prominent",
+                  "description": "The color for icons on prominent container headers.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
                   }
                 }
               ]
