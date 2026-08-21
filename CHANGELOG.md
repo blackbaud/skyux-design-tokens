@@ -1,5 +1,13 @@
 # Changelog
 
+## [7.0.0-alpha.4](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.3...7.0.0-alpha.4) (2026-08-21)
+
+
+### Features
+
+* add underline styling for dark mode links ([#397](https://github.com/blackbaud/skyux-design-tokens/issues/397)) ([#402](https://github.com/blackbaud/skyux-design-tokens/issues/402)) ([0772ffc](https://github.com/blackbaud/skyux-design-tokens/commit/0772ffcbd3236a835495a03374d62c853569a825))
+* prominent header and content tokens ([#398](https://github.com/blackbaud/skyux-design-tokens/issues/398)) ([#400](https://github.com/blackbaud/skyux-design-tokens/issues/400)) ([f0a7234](https://github.com/blackbaud/skyux-design-tokens/commit/f0a723445a27c42c063c6f5c11b9039b408a39ee))
+
 ## [6.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.1...6.4.0) (2026-08-21)
 
 
