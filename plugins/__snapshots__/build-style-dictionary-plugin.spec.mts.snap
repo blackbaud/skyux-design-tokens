@@ -1721,6 +1721,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-size-picker_btn: var(--bb-size-fluid-200);
   --sky-size-progress_step: var(--bb-size-fluid-75);
   --sky-size-switch: var(--bb-size-fluid-125);
+  --sky-size-text_underline-offset: var(--bb-size-fluid-12);
+  --sky-size-text_underline-thickness: var(--bb-size-fluid-6);
   --sky-size-thumbnail-l: var(--bb-size-fixed-600);
   --sky-size-width-modal-l: var(--bb-size-fixed-6000);
   --sky-size-width-modal-m: var(--bb-size-fixed-4000);
