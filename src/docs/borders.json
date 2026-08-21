@@ -12,7 +12,13 @@
           "tokens": [
             {
               "name": "Container default",
+              "description": "The default border around most containers that don't overlay other content.",
               "customProperty": "--sky-theme-border-container-default"
+            },
+            {
+              "name": "Prominent header border",
+              "description": "The bottom border for the header on a prominent container.",
+              "customProperty": "--sky-theme-border-container-header-prominent"
             }
           ]
         },
