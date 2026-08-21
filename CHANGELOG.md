@@ -5,6 +5,14 @@
 
 ### Features
 
+## [6.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.1...6.4.0) (2026-08-21)
+
+
+### Features
+
+* add underline styling for dark mode links ([#397](https://github.com/blackbaud/skyux-design-tokens/issues/397)) ([de51fab](https://github.com/blackbaud/skyux-design-tokens/commit/de51fab90ac76e62e6b1de2ed3125d06326a6e08))
+* prominent header and content tokens ([#398](https://github.com/blackbaud/skyux-design-tokens/issues/398)) ([47c6f4b](https://github.com/blackbaud/skyux-design-tokens/commit/47c6f4b3766e5cf4a11365aa793d21ecef176a09))
+
 * add tokens for container overlay border styles ([#384](https://github.com/blackbaud/skyux-design-tokens/issues/384)) ([#386](https://github.com/blackbaud/skyux-design-tokens/issues/386)) ([deaf1cd](https://github.com/blackbaud/skyux-design-tokens/commit/deaf1cd5988cd83baed33302659c589491245e0a))
 
 
