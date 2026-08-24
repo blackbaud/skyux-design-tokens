@@ -1846,6 +1846,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/20 'var(--bb-font-blkb_sans-name)';
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+  --sky-font-text_decoration-inline_link-base: underline;
   --sky-border-style-container-overlay: var(--bb-border-style-solid);
 }
 "
