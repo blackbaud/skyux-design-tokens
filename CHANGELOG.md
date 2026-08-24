@@ -1,5 +1,18 @@
 # Changelog
 
+## [6.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.4.0...6.5.0) (2026-08-24)
+
+
+### Features
+
+* update token to underline inline links in dark mode ([#406](https://github.com/blackbaud/skyux-design-tokens/issues/406)) ([2eb126b](https://github.com/blackbaud/skyux-design-tokens/commit/2eb126bf2ebaff96ba8c4dae0446e5afd726383e))
+
+
+### Bug Fixes
+
+* on_prom button colors ([#404](https://github.com/blackbaud/skyux-design-tokens/issues/404)) ([a7ac7ed](https://github.com/blackbaud/skyux-design-tokens/commit/a7ac7ed5b87e5f647feca27b68ecbf373e6d6cea))
+* update dark mode status colors ([#405](https://github.com/blackbaud/skyux-design-tokens/issues/405)) ([5887d54](https://github.com/blackbaud/skyux-design-tokens/commit/5887d5490e9c92e77ac301ac7590285f25a7821c))
+
 ## [7.0.0-alpha.4](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.3...7.0.0-alpha.4) (2026-08-21)
 
 
@@ -156,7 +169,6 @@
 ### Features
 
 * add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
-
 
 ## [5.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.5.0...5.6.0) (2026-03-27)
 
