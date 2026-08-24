@@ -282,19 +282,19 @@
         },
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.rgba.red-dark.600.35}"
+          "$value": "{bb.color.red-dark.700}"
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.rgba.yellow-dark.600.35}"
+          "$value": "{bb.color.yellow-dark.700}"
         },
         "success": {
           "$type": "color",
-          "$value": "{bb.color.rgba.green.600.35}"
+          "$value": "{bb.color.green-dark.700}"
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue.600.35}"
+          "$value": "{bb.color.blue-dark.700}"
         },
         "dimmed": {
           "$type": "color",
@@ -314,7 +314,7 @@
       "icon_matte": {
         "danger": {
           "$type": "color",
-          "$value": "{bb.color.red.600}"
+          "$value": "{bb.color.red.500}"
         },
         "warning": {
           "$type": "color",
@@ -326,7 +326,7 @@
         },
         "info": {
           "$type": "color",
-          "$value": "{bb.color.blue.500}"
+          "$value": "{bb.color.blue.400}"
         },
         "action": {
           "heavy": {
@@ -479,7 +479,7 @@
       },
       "danger": {
         "$type": "color",
-        "$value": "{bb.color.red.600}"
+        "$value": "{bb.color.red.500}"
       },
       "warning": {
         "$type": "color",
