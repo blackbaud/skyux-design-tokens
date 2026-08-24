@@ -8,5 +8,15 @@
         }
       }
     }
+  },
+  "font": {
+    "text_decoration": {
+      "inline_link": {
+        "base": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        }
+      }
+    }
   }
 }
