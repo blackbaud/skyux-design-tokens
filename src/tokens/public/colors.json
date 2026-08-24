@@ -143,6 +143,10 @@
         "on_prominent": {
           "$type": "color",
           "$value": "{color.text.on_prominent}"
+        },
+        "on_status": {
+          "$type": "color",
+          "$value": "{color.text.on_status}"
         }
       },
       "icon": {
@@ -177,6 +181,10 @@
         "on_prominent": {
           "$type": "color",
           "$value": "{color.icon.on_prominent}"
+        },
+        "on_status": {
+          "$type": "color",
+          "$value": "{color.icon.on_status}"
         }
       },
       "classify": {
