@@ -116,6 +116,13 @@
 
 
 ### Bug Fixes
+## [5.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.6.0...5.7.0) (2026-04-07)
+
+
+### Features
+
+* add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
+
 
 * correctly list deprecated elevation scss variables ([#353](https://github.com/blackbaud/skyux-design-tokens/issues/353)) ([6e97718](https://github.com/blackbaud/skyux-design-tokens/commit/6e97718abeaa2a0b9f9020cab11cf973db3fc8c7))
 
@@ -150,12 +157,20 @@
 
 * update token types for public border tokens ([#344](https://github.com/blackbaud/skyux-design-tokens/issues/344)) ([d4b9050](https://github.com/blackbaud/skyux-design-tokens/commit/d4b9050b83af188a246b9c740e530279671b3e1a))
 
-## [5.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.6.0...5.7.0) (2026-04-07)
+# Changelog
+
+## [6.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.4.0...6.5.0) (2026-08-24)
 
 
 ### Features
 
-* add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
+* update token to underline inline links in dark mode ([#406](https://github.com/blackbaud/skyux-design-tokens/issues/406)) ([2eb126b](https://github.com/blackbaud/skyux-design-tokens/commit/2eb126bf2ebaff96ba8c4dae0446e5afd726383e))
+
+
+### Bug Fixes
+
+* on_prom button colors ([#404](https://github.com/blackbaud/skyux-design-tokens/issues/404)) ([a7ac7ed](https://github.com/blackbaud/skyux-design-tokens/commit/a7ac7ed5b87e5f647feca27b68ecbf373e6d6cea))
+* update dark mode status colors ([#405](https://github.com/blackbaud/skyux-design-tokens/issues/405)) ([5887d54](https://github.com/blackbaud/skyux-design-tokens/commit/5887d5490e9c92e77ac301ac7590285f25a7821c))
 
 
 ## [5.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.5.0...5.6.0) (2026-03-27)
