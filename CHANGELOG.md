@@ -1,5 +1,18 @@
 # Changelog
 
+## [7.0.0-alpha.5](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.4...7.0.0-alpha.5) (2026-08-24)
+
+
+### Features
+
+* update token to underline inline links in dark mode ([#406](https://github.com/blackbaud/skyux-design-tokens/issues/406)) ([#411](https://github.com/blackbaud/skyux-design-tokens/issues/411)) ([2fbbfdd](https://github.com/blackbaud/skyux-design-tokens/commit/2fbbfddb89b9f386f9a8600db5762027fa2811e2))
+
+
+### Bug Fixes
+
+* on_prom button colors ([#404](https://github.com/blackbaud/skyux-design-tokens/issues/404)) ([#408](https://github.com/blackbaud/skyux-design-tokens/issues/408)) ([251f301](https://github.com/blackbaud/skyux-design-tokens/commit/251f301aea64c11985e60f14fa8ec5a99dad8a2a))
+* update dark mode status colors ([#405](https://github.com/blackbaud/skyux-design-tokens/issues/405)) ([#410](https://github.com/blackbaud/skyux-design-tokens/issues/410)) ([ce6a9a6](https://github.com/blackbaud/skyux-design-tokens/commit/ce6a9a647adc935cad1cffc1c586ce4c76e24a1c))
+
 ## [6.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.4.0...6.5.0) (2026-08-24)
 
 
