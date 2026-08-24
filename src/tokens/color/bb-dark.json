@@ -590,15 +590,15 @@
             },
             "hover": {
               "$type": "color",
-              "$value": "{bb.color.slate.300}"
+              "$value": "{bb.color.blue.300}"
             },
             "active": {
               "$type": "color",
-              "$value": "{bb.color.slate.300}"
+              "$value": "{bb.color.blue.300}"
             },
             "focus": {
               "$type": "color",
-              "$value": "{bb.color.slate.300}"
+              "$value": "{bb.color.blue.300}"
             },
             "disabled": {
               "$type": "color",
