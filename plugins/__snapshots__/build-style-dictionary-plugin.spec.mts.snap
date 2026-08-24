@@ -529,6 +529,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-hover: var(--bb-color-blue-50);
   --sky-color-background-action-tertiary-on_prominent-active: var(--bb-color-slate-600);
   --sky-color-background-action-tertiary-on_prominent-base: var(--bb-color-transparent);
+  --sky-color-background-action-tertiary-on_prominent-disabled: var(--bb-color-gray-700);
   --sky-color-background-action-tertiary-on_prominent-focus: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-on_prominent-hover: var(--bb-color-slate-700);
   --sky-color-background-blocking: var(--bb-color-rgba-white-70);
@@ -601,10 +602,11 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-border-action-tertiary-focus: var(--bb-color-blue-600);
   --sky-color-border-action-tertiary-hover: var(--bb-color-blue-600);
-  --sky-color-border-action-tertiary-on_prominent-active: var(--bb-color-slate-300);
+  --sky-color-border-action-tertiary-on_prominent-active: var(--bb-color-blue-300);
   --sky-color-border-action-tertiary-on_prominent-base: var(--bb-color-transparent);
-  --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-slate-300);
-  --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-slate-300);
+  --sky-color-border-action-tertiary-on_prominent-disabled: var(--bb-color-gray-800);
+  --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-blue-300);
+  --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
   --sky-color-border-column_divider: var(--bb-color-blue-600);
   --sky-color-border-container-base: var(--bb-color-gray-200);
   --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
@@ -741,7 +743,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-primary-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-secondary-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-tertiary-disabled: var(--sky-color-background-disabled);
-  --sky-color-background-action-tertiary-on_prominent-disabled: var(--sky-color-background-disabled);
   --sky-color-background-input-disabled: var(--sky-color-background-disabled);
   --sky-color-background-nav-disabled: var(--sky-color-background-disabled);
   --sky-color-background-row-disabled: var(--sky-color-background-disabled);
@@ -753,7 +754,6 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-primary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-secondary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-tertiary-disabled: var(--sky-color-border-disabled);
-  --sky-color-border-action-tertiary-on_prominent-disabled: var(--sky-color-border-disabled);
   --sky-color-border-input-disabled: var(--sky-color-border-disabled);
   --sky-color-border-nav-disabled: var(--sky-color-border-disabled);
   --sky-color-border-switch-disabled: var(--sky-color-border-disabled);
@@ -905,10 +905,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-border-action-tertiary-focus: var(--bb-color-sky-600);
   --sky-color-border-action-tertiary-hover: var(--bb-color-sky-600);
-  --sky-color-border-action-tertiary-on_prominent-active: var(--bb-color-slate-300);
+  --sky-color-border-action-tertiary-on_prominent-active: var(--bb-color-blue-300);
   --sky-color-border-action-tertiary-on_prominent-base: var(--bb-color-transparent);
-  --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-slate-300);
-  --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-slate-300);
+  --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-blue-300);
+  --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
   --sky-color-border-column_divider: var(--bb-color-blue-400);
   --sky-color-border-container-base: var(--bb-color-blue-900);
   --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
@@ -2532,10 +2532,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-disabled: var(--bb-color-gray-800);
   --sky-color-border-action-tertiary-focus: var(--bb-color-oklch-blue-375);
   --sky-color-border-action-tertiary-hover: var(--bb-color-oklch-blue-375);
-  --sky-color-border-action-tertiary-on_prominent-active: var(--bb-color-slate-300);
+  --sky-color-border-action-tertiary-on_prominent-active: var(--bb-color-blue-300);
   --sky-color-border-action-tertiary-on_prominent-base: var(--bb-color-transparent);
-  --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-slate-300);
-  --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-slate-300);
+  --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-blue-300);
+  --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
   --sky-color-border-column_divider: var(--bb-color-blue-400);
   --sky-color-border-container-base: var(--bb-color-steel-fusion-800);
   --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
