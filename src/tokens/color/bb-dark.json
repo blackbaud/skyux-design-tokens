@@ -105,7 +105,7 @@
       },
       "thumbnail_matte": {
         "$type": "color",
-        "$value": "{bb.color.steel-gray.1000}"
+        "$value": "{bb.color.rgba.steel-gray.25}"
       },
       "action": {
         "primary": {
@@ -778,11 +778,11 @@
       "4": {
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.orange-dark.300}"
+          "$value": "{bb.color.orange-dark.700}"
         },
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.orange.700}"
+          "$value": "{bb.color.orange.300}"
         }
       },
       "5": {

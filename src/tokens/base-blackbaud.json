@@ -490,6 +490,10 @@
             "$type": "color",
             "$value": "rgba(122, 125, 129, 0.25)"
           },
+          "35": {
+            "$type": "color",
+            "$value": "rgba(122, 125, 129, 0.35)"
+          },
           "50": {
             "$type": "color",
             "$value": "rgba(122, 125, 129, 0.5)"
@@ -1684,9 +1688,17 @@
           "$type": "color",
           "$value": "#25272A"
         },
+        "1075": {
+          "$type": "color",
+          "$value": "#222427"
+        },
         "1100": {
           "$type": "color",
           "$value": "#1F2224"
+        },
+        "1125": {
+          "$type": "color",
+          "$value": "#1E2022"
         },
         "1150": {
           "$type": "color",
