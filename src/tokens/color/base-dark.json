@@ -86,7 +86,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.300}"
+          "$value": "{bb.color.gray.600}"
         }
       },
       "input": {
