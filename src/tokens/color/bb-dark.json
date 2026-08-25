@@ -269,6 +269,10 @@
         "dimmed": {
           "$type": "color",
           "$value": "{bb.color.steel-gray.1100}"
+        },
+        "backdrop": {
+          "$type": "color",
+          "$value": "{bb.color.steel-gray.1000}"
         }
       },
       "icon_matte": {
