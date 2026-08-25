@@ -585,6 +585,16 @@
           "$value": "{bb.size.fixed.6000}"
         }
       }
+    },
+    "text_underline": {
+      "offset": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.12}"
+      },
+      "thickness": {
+        "$type": "sizing",
+        "$value": "{bb.size.fluid.6}"
+      }
     }
   },
   "type": {
@@ -1279,6 +1289,12 @@
         "row": {
           "$type": "other",
           "$value": "{bb.border.style.solid}"
+        }
+      },
+      "container": {
+        "overlay": {
+          "$type": "other",
+          "$value": "{bb.border.style.none}"
         }
       }
     }

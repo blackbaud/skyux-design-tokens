@@ -34,6 +34,12 @@
           "warning": {
             "$type": "color",
             "$value": "{color.background.container.warning}"
+          },
+          "header": {
+            "prominent": {
+              "$type": "color",
+              "$value": "{color.background.container.header.prominent}"
+            }
           }
         },
         "disabled": {
@@ -70,6 +76,12 @@
           "default": {
             "$type": "color",
             "$value": "{color.border.container.base}"
+          },
+          "header": {
+            "prominent": {
+              "$type": "color",
+              "$value": "{color.border.container.header.prominent}"
+            }
           }
         },
         "disabled": {
@@ -127,6 +139,10 @@
         "inverse": {
           "$type": "color",
           "$value": "{color.text.inverse}"
+        },
+        "on_prominent": {
+          "$type": "color",
+          "$value": "{color.text.on_prominent}"
         }
       },
       "icon": {
@@ -157,6 +173,16 @@
         "success": {
           "$type": "color",
           "$value": "{color.icon.success}"
+        },
+        "on_prominent": {
+          "base": {
+            "$type": "color",
+            "$value": "{color.icon.on_prominent.base}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.icon.on_prominent.disabled}"
+          }
         }
       },
       "classify": {

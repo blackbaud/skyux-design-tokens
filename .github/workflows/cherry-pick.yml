@@ -7,7 +7,7 @@ on:
       - '[0-9]+.x.x'
 
 env:
-  TARGET_BRANCH: main
+  TARGET_BRANCH: master
   FROM_BRANCH: ${{ github.event.pull_request.base.ref }}
 
 jobs:
@@ -151,4 +151,3 @@ jobs:
           SLACK_CHANNEL: C01GY7ZP4HM
           SLACK_COLOR: 'fail'
           SLACK_FOOTER: 'Blackbaud Sky Build User'
-          MSG_MINIMAL: 'true'

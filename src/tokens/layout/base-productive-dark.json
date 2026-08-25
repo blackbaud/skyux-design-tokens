@@ -1,0 +1,22 @@
+{
+  "border": {
+    "style": {
+      "container": {
+        "overlay": {
+          "$type": "other",
+          "$value": "{bb.border.style.solid}"
+        }
+      }
+    }
+  },
+  "font": {
+    "text_decoration": {
+      "inline_link": {
+        "base": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        }
+      }
+    }
+  }
+}

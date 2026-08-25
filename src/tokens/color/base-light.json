@@ -32,6 +32,10 @@
       "action_contrast": {
         "$type": "color",
         "$value": "{bb.color.blue.700}"
+      },
+      "on_prominent": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
       }
     },
     "icon": {
@@ -75,6 +79,16 @@
         "$type": "color",
         "$value": "{bb.color.brand.impact_green}"
       },
+      "on_prominent": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.white}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.600}"
+        }
+      },
       "input": {
         "action": {
           "$type": "color",
@@ -89,7 +103,7 @@
       },
       "scrim": {
         "$type": "color",
-        "$value": "{bb.color.scrim}"
+        "$value": "{bb.color.scrim.soft}"
       },
       "disabled": {
         "$type": "color",
@@ -176,6 +190,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{color.background.disabled}"
+          },
+          "on_prominent": {
+            "base": {
+              "$type": "color",
+              "$value": "{bb.color.transparent}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{bb.color.slate.700}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{bb.color.slate.600}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{bb.color.transparent}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{bb.color.gray.700}"
+            }
           }
         },
         "danger": {
@@ -281,6 +317,12 @@
         "tooltip": {
           "$type": "color",
           "$value": "{bb.color.gray.1000}"
+        },
+        "header": {
+          "prominent": {
+            "$type": "color",
+            "$value": "{bb.color.slate.800}"
+          }
         }
       },
       "icon_matte": {
@@ -554,6 +596,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{color.border.disabled}"
+          },
+          "on_prominent": {
+            "base": {
+              "$type": "color",
+              "$value": "{bb.color.transparent}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{bb.color.blue.300}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{bb.color.blue.300}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{bb.color.blue.300}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{bb.color.gray.800}"
+            }
           }
         },
         "danger": {
@@ -627,6 +691,12 @@
         "base": {
           "$type": "color",
           "$value": "{bb.color.gray.200}"
+        },
+        "header": {
+          "prominent": {
+            "$type": "color",
+            "$value": "{bb.color.slate.500}"
+          }
         }
       },
       "input": {
@@ -1060,6 +1130,22 @@
           "$type": "color",
           "$value": "{bb.color.red.200}"
         }
+      }
+    },
+    "scrollbar": {
+      "track": {
+        "$extensions": {
+          "com.blackbaud.developer.sky-token-scope": "root-has-body"
+        },
+        "$type": "color",
+        "$value": "{bb.color.scrollbar.base.light.track}"
+      },
+      "thumb": {
+        "$extensions": {
+          "com.blackbaud.developer.sky-token-scope": "root-has-body"
+        },
+        "$type": "color",
+        "$value": "{bb.color.scrollbar.base.light.thumb}"
       }
     }
   },

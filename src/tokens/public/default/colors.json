@@ -34,6 +34,12 @@
           "warning": {
             "$type": "color",
             "$value": "#ffd597"
+          },
+          "header": {
+            "prominent": {
+              "$type": "color",
+              "$value": "#32435E"
+            }
           }
         },
         "disabled": {
@@ -70,6 +76,12 @@
           "default": {
             "$type": "color",
             "$value": "#cdcfd2"
+          },
+          "header": {
+            "prominent": {
+              "$type": "color",
+              "$value": "#7289AF"
+            }
           }
         },
         "disabled": {
@@ -127,6 +139,10 @@
         "inverse": {
           "$type": "color",
           "$value": "#ffffff"
+        },
+        "on_prominent": {
+          "$type": "color",
+          "$value": "#ffffff"
         }
       },
       "icon": {
@@ -157,6 +173,16 @@
         "success": {
           "$type": "color",
           "$value": "#72bf44"
+        },
+        "on_prominent": {
+          "base": {
+            "$type": "color",
+            "$value": "#ffffff"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "#686c73"
+          }
         }
       },
       "classify": {

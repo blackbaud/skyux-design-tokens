@@ -48,6 +48,14 @@
                   }
                 },
                 {
+                  "name": "Prominent container header background",
+                  "className": "sky-theme-color-background-container-header-prominent",
+                  "description": "The background color for headers of containers of tools that work alongside the main page content.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-header-prominent)"
+                  }
+                },
+                {
                   "name": "Disabled background",
                   "className": "sky-theme-color-background-disabled",
                   "description": "The background color for disabled elements.",
@@ -88,6 +96,17 @@
               },
               "demoMetadata": {
                 "background": "--sky-theme-color-background-icon_matte-info"
+              }
+            },
+            {
+              "name": "Prominent container header text",
+              "className": "sky-theme-color-text-on_prominent",
+              "description": "The color for text on prominent container headers.",
+              "properties": {
+                "color": "var(--sky-theme-color-text-on_prominent)"
+              },
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-container-header-prominent"
               }
             }
           ]
@@ -132,6 +151,17 @@
                   },
                   "demoMetadata": {
                     "background": "--sky-theme-color-background-icon_matte-info"
+                  }
+                },
+                {
+                  "name": "Prominent container header icon",
+                  "className": "sky-theme-color-icon-on_prominent",
+                  "description": "The color for icons on prominent container headers.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-on_prominent-base)"
+                  },
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
                   }
                 }
               ]

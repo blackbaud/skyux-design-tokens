@@ -1,9 +1,82 @@
-## [5.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.6.0...5.7.0) (2026-04-07)
+# Changelog
+
+## [6.5.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.5.0...6.5.1) (2026-08-25)
+
+
+### Bug Fixes
+
+* update on_prom icon colors to include disabled state ([#415](https://github.com/blackbaud/skyux-design-tokens/issues/415)) ([f586c8d](https://github.com/blackbaud/skyux-design-tokens/commit/f586c8dcd75cbb21033eaf2633534506188cd0dd))
+
+## [6.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.4.0...6.5.0) (2026-08-24)
 
 
 ### Features
 
-* add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
+* update token to underline inline links in dark mode ([#406](https://github.com/blackbaud/skyux-design-tokens/issues/406)) ([2eb126b](https://github.com/blackbaud/skyux-design-tokens/commit/2eb126bf2ebaff96ba8c4dae0446e5afd726383e))
+
+
+### Bug Fixes
+
+* on_prom button colors ([#404](https://github.com/blackbaud/skyux-design-tokens/issues/404)) ([a7ac7ed](https://github.com/blackbaud/skyux-design-tokens/commit/a7ac7ed5b87e5f647feca27b68ecbf373e6d6cea))
+* update dark mode status colors ([#405](https://github.com/blackbaud/skyux-design-tokens/issues/405)) ([5887d54](https://github.com/blackbaud/skyux-design-tokens/commit/5887d5490e9c92e77ac301ac7590285f25a7821c))
+
+## [6.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.1...6.4.0) (2026-08-21)
+
+
+### Features
+
+* add underline styling for dark mode links ([#397](https://github.com/blackbaud/skyux-design-tokens/issues/397)) ([de51fab](https://github.com/blackbaud/skyux-design-tokens/commit/de51fab90ac76e62e6b1de2ed3125d06326a6e08))
+* prominent header and content tokens ([#398](https://github.com/blackbaud/skyux-design-tokens/issues/398)) ([47c6f4b](https://github.com/blackbaud/skyux-design-tokens/commit/47c6f4b3766e5cf4a11365aa793d21ecef176a09))
+
+## [6.3.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.3.0...6.3.1) (2026-08-18)
+
+
+### Bug Fixes
+
+* update blocking wait background in dark mode ([#380](https://github.com/blackbaud/skyux-design-tokens/issues/380)) ([98754ee](https://github.com/blackbaud/skyux-design-tokens/commit/98754eeffa812a1b34b23858539d13fc162ba16f))
+
+## [6.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.1...6.3.0) (2026-08-18)
+
+
+### Features
+
+* add tokens for container overlay border styles ([#384](https://github.com/blackbaud/skyux-design-tokens/issues/384)) ([26dcc8f](https://github.com/blackbaud/skyux-design-tokens/commit/26dcc8f6f8a24eb7ff66fe36b9c9d45880f49410))
+
+## [6.2.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.2.0...6.2.1) (2026-08-17)
+
+
+### Bug Fixes
+
+* dark mode backdrop fix ([#375](https://github.com/blackbaud/skyux-design-tokens/issues/375)) ([#377](https://github.com/blackbaud/skyux-design-tokens/issues/377)) ([645ebf9](https://github.com/blackbaud/skyux-design-tokens/commit/645ebf92868bd089cbfdc004034f7ea9232b4480))
+* fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([bb974b7](https://github.com/blackbaud/skyux-design-tokens/commit/bb974b7a39c6e6c064986e27f54a5f4b9f88e998))
+
+## [6.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.2...6.2.0) (2026-08-04)
+
+
+### Features
+
+* add tokens for styling scrollbars ([#370](https://github.com/blackbaud/skyux-design-tokens/issues/370)) ([0b88c85](https://github.com/blackbaud/skyux-design-tokens/commit/0b88c85fbb12bf73417340947dae5ace0a92eda1))
+
+## [6.1.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.1...6.1.2) (2026-07-17)
+
+
+### Bug Fixes
+
+* slate shadow box shadow transparency ([#363](https://github.com/blackbaud/skyux-design-tokens/issues/363)) ([3d94489](https://github.com/blackbaud/skyux-design-tokens/commit/3d94489e9892bdf75e41fd5958b03f5c9483a38d))
+
+## [6.1.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.1.0...6.1.1) (2026-07-16)
+
+
+### Bug Fixes
+
+* slate shadow base tokens ([#361](https://github.com/blackbaud/skyux-design-tokens/issues/361)) ([786579c](https://github.com/blackbaud/skyux-design-tokens/commit/786579c9a60721f26095a3125a2e263318467e9b))
+
+## [6.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.2...6.1.0) (2026-07-16)
+
+
+### Features
+
+* new dark mode colors ([#359](https://github.com/blackbaud/skyux-design-tokens/issues/359)) ([f6184a5](https://github.com/blackbaud/skyux-design-tokens/commit/f6184a56f26a56420ab5d4549215f9d369d56b3f))
 
 ## [6.0.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.0.1...6.0.2) (2026-05-12)
 
@@ -49,6 +122,13 @@
 ### Bug Fixes
 
 * update token types for public border tokens ([#344](https://github.com/blackbaud/skyux-design-tokens/issues/344)) ([d4b9050](https://github.com/blackbaud/skyux-design-tokens/commit/d4b9050b83af188a246b9c740e530279671b3e1a))
+
+## [5.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.6.0...5.7.0) (2026-04-07)
+
+
+### Features
+
+* add omnibar toaster padding ([#342](https://github.com/blackbaud/skyux-design-tokens/issues/342)) ([4095f97](https://github.com/blackbaud/skyux-design-tokens/commit/4095f97ba31a2f619444bf41dd6d279475258066))
 
 ## [5.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/5.5.0...5.6.0) (2026-03-27)
 

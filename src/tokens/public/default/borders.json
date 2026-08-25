@@ -5,6 +5,12 @@
         "default": {
           "$type": "border",
           "$value": "1px solid #cdcfd2"
+        },
+        "header": {
+          "prominent": {
+            "$type": "border",
+            "$value": "1px solid #7289AF"
+          }
         }
       },
       "divider": {

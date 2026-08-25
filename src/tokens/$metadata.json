@@ -7,6 +7,7 @@
     "color/bb-dark",
     "layout/base-productive",
     "layout/bb-productive",
+    "layout/base-productive-dark",
     "public/borders",
     "public/colors",
     "public/elevation",

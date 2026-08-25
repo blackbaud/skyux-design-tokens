@@ -1,6 +1,6 @@
 {
   "name": "@blackbaud/skyux-design-tokens",
-  "version": "6.0.2",
+  "version": "6.5.1",
   "description": "Design tokens for SKY UX",
   "homepage": "https://github.com/blackbaud/skyux-design-tokens",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "publishToNPM": true
   },
   "devDependencies": {
-    "@blackbaud/skyux-branding-builder": "5.0.1",
+    "@blackbaud/skyux-branding-builder": "5.1.0",
     "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#12.0.0-alpha.21",
     "@tokens-studio/sd-transforms": "2.0.3",
     "@types/fs-extra": "11.0.4",

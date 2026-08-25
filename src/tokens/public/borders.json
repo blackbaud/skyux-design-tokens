@@ -5,6 +5,12 @@
         "default": {
           "$type": "border",
           "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base)"
+        },
+        "header": {
+          "prominent": {
+            "$type": "border",
+            "$value": "var(--sky-border-width-emphasized) var(--sky-border-style-divider) var(--sky-color-border-container-header-prominent)"
+          }
         }
       },
       "divider": {
