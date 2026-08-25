@@ -202,10 +202,18 @@
                 },
                 {
                   "name": "Prominent container header icon",
-                  "customProperty": "--sky-theme-color-icon-on_prominent",
+                  "customProperty": "--sky-theme-color-icon-on_prominent-base",
                   "description": "The color for icons on prominent container headers.",
                   "demoMetadata": {
                     "background": "--sky-theme-color-background-container-header-prominent"
+                  }
+                },
+                {
+                  "name": "Disabled prominent container header icon",
+                  "customProperty": "--sky-theme-color-icon-on_prominent-disabled",
+                  "description": "The color for icons in disabled buttons on prominent container headers.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-action-tertiary-on_prominent-disabled"
                   }
                 }
               ]

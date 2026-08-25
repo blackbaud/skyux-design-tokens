@@ -175,8 +175,14 @@
           "$value": "{color.icon.success}"
         },
         "on_prominent": {
-          "$type": "color",
-          "$value": "{color.icon.on_prominent}"
+          "base": {
+            "$type": "color",
+            "$value": "{color.icon.on_prominent.base}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.icon.on_prominent.disabled}"
+          }
         }
       },
       "classify": {

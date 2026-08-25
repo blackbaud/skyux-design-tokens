@@ -175,8 +175,14 @@
           "$value": "#72bf44"
         },
         "on_prominent": {
-          "$type": "color",
-          "$value": "#ffffff"
+          "base": {
+            "$type": "color",
+            "$value": "#ffffff"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "#686c73"
+          }
         }
       },
       "classify": {

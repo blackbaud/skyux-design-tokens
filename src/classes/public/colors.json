@@ -158,7 +158,7 @@
                   "className": "sky-theme-color-icon-on_prominent",
                   "description": "The color for icons on prominent container headers.",
                   "properties": {
-                    "color": "var(--sky-theme-color-icon-on_prominent)"
+                    "color": "var(--sky-theme-color-icon-on_prominent-base)"
                   },
                   "demoMetadata": {
                     "background": "--sky-theme-color-background-container-header-prominent"
