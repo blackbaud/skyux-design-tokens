@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.5.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.5.0...6.5.1) (2026-08-25)
+
+
+### Bug Fixes
+
+* update on_prom icon colors to include disabled state ([#415](https://github.com/blackbaud/skyux-design-tokens/issues/415)) ([f586c8d](https://github.com/blackbaud/skyux-design-tokens/commit/f586c8dcd75cbb21033eaf2633534506188cd0dd))
+
 ## [6.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.4.0...6.5.0) (2026-08-24)
 
 
