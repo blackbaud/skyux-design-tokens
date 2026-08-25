@@ -979,7 +979,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-input-action: var(--bb-color-sky-600);
   --sky-color-icon-inverse: var(--bb-color-gray-1100);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
-  --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-300);
+  --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
@@ -2605,7 +2605,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-input-action: var(--bb-color-oklch-blue-375);
   --sky-color-icon-inverse: var(--bb-color-black);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
-  --sky-color-icon-on_prominent-disabled: var(--bb-color-steel-fusion-400);
+  --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
   --sky-color-icon-selected: var(--bb-color-oklch-blue-375);
   --sky-color-icon-success: var(--bb-color-green-600);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
