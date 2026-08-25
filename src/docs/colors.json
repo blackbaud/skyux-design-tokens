@@ -161,6 +161,14 @@
               }
             },
             {
+              "name": "Text on status background",
+              "customProperty": "--sky-theme-color-text-on_status",
+              "description": "The color for text on containers that use status background colors.",
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-container-success"
+              }
+            },
+            {
               "name": "Prominent container header text",
               "customProperty": "--sky-theme-color-text-on_prominent",
               "description": "The color for text on prominent container headers.",
@@ -197,7 +205,15 @@
                   "customProperty": "--sky-theme-color-icon-inverse",
                   "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
                   "demoMetadata": {
-                    "background": "--sky-theme-color-background-icon_matte-info"
+                    "background": "--sky-theme-color-background-icon_matte-action-heavy"
+                  }
+                },
+                {
+                  "name": "Icon on status matte",
+                  "customProperty": "--sky-theme-color-icon-on_status",
+                  "description": "The color for icons on status icon matte color backgrounds.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-icon_matte-success"
                   }
                 },
                 {
@@ -335,10 +351,10 @@
             },
             {
               "groupName": "Status icon mattes",
-              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency.",
+              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency. Use the icon on status matte color for foreground icons.",
               "demoMetadata": {
                 "type": "icon-background-color",
-                "color": "--sky-theme-color-icon-inverse"
+                "color": "--sky-theme-color-icon-on_status"
               },
               "tokens": [
                 {
@@ -359,8 +375,7 @@
                 {
                   "name": "Warning icon matte",
                   "customProperty": "--sky-theme-color-background-icon_matte-warning",
-                  "description": "The color for a small background behind an icon that conveys warning or caution.",
-                  "demoMetadata": { "color": "--sky-theme-color-icon-default" }
+                  "description": "The color for a small background behind an icon that conveys warning or caution."
                 }
               ]
             }
