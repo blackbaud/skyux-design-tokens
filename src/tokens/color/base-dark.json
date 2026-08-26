@@ -431,7 +431,7 @@
         "switch": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.blue.600}"
+            "$value": "{bb.color.blue-dark.375}"
           },
           "disabled": {
             "$type": "color",
@@ -757,15 +757,15 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.blue.900}"
+            "$value": "{bb.color.blue-dark.100}"
           },
           "active": {
             "$type": "color",
-            "$value": "{bb.color.blue.900}"
+            "$value": "{bb.color.blue-dark.100}"
           },
           "focus": {
             "$type": "color",
-            "$value": "{bb.color.blue.900}"
+            "$value": "{bb.color.blue-dark.100}"
           },
           "disabled": {
             "$type": "color",
