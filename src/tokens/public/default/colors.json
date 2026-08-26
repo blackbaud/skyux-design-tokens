@@ -179,12 +179,14 @@
           "$value": "#72bf44"
         },
         "on_prominent": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "on_status": {
-          "$type": "color",
-          "$value": "#212327"
+          "base": {
+            "$type": "color",
+            "$value": "#ffffff"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "#686c73"
+          }
         }
       },
       "classify": {

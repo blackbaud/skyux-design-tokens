@@ -80,8 +80,14 @@
         "$value": "{bb.color.oklch-blue.375}"
       },
       "on_prominent": {
-        "$type": "color",
-        "$value": "{bb.color.white}"
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.white}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.600}"
+        }
       },
       "on_status": {
         "$type": "color",
