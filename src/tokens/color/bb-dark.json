@@ -477,7 +477,7 @@
     "border": {
       "selected": {
         "$type": "color",
-        "$value": "{bb.color.blue.400}"
+        "$value": "{bb.color.blue-dark.400}"
       },
       "selected_soft": {
         "$type": "color",
