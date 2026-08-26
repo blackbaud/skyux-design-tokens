@@ -1,11 +1,19 @@
 # Changelog
 
-## [7.0.0-alpha.6](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.5...7.0.0-alpha.6) (2026-08-26)
 
+## [7.0.0-alpha.6](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.5...7.0.0-alpha.6) (2026-08-26)
 
 ### Bug Fixes
 
 * update on_prom icon colors to include disabled state ([#415](https://github.com/blackbaud/skyux-design-tokens/issues/415)) ([#417](https://github.com/blackbaud/skyux-design-tokens/issues/417)) ([ac4d5c4](https://github.com/blackbaud/skyux-design-tokens/commit/ac4d5c4b4bc0efd7d080f9437cbee418d674b96a))
+
+
+## [6.5.1](https://github.com/blackbaud/skyux-design-tokens/compare/6.5.0...6.5.1) (2026-08-25)
+
+
+### Bug Fixes
+
+* update on_prom icon colors to include disabled state ([#415](https://github.com/blackbaud/skyux-design-tokens/issues/415)) ([f586c8d](https://github.com/blackbaud/skyux-design-tokens/commit/f586c8dcd75cbb21033eaf2633534506188cd0dd))
 
 ## [7.0.0-alpha.5](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.4...7.0.0-alpha.5) (2026-08-24)
 
