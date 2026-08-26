@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { buildStylesPlugin } from './plugins/build-styles-plugin.mjs';
+import { buildComboCssPlugin } from './plugins/build-combo-css-plugin.mts';
 import {
   buildAssetsManifestPlugin,
   buildStyleDictionaryPlugin,
@@ -48,6 +49,18 @@ export default ({ mode }) => {
     plugins: [
       buildStylesPlugin(),
       buildStyleDictionaryPlugin(tokenConfig),
+      buildComboCssPlugin({
+        fileName: 'bundles/base_public-api.css',
+        sourceFileNames: ['bundles/base.css', 'bundles/public-api.css'],
+      }),
+      buildComboCssPlugin({
+        fileName: 'bundles/base_blackbaud_public-api.css',
+        sourceFileNames: [
+          'bundles/base.css',
+          'bundles/blackbaud.css',
+          'bundles/public-api.css',
+        ],
+      }),
       buildAssetsManifestPlugin(tokenConfig.projectName),
       preparePackagePlugin(__dirname),
     ],
