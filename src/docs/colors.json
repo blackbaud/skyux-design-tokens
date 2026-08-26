@@ -163,7 +163,7 @@
             {
               "name": "Text on status background",
               "customProperty": "--sky-theme-color-text-on_status",
-              "description": "The color for text on containers that use status background colors.",
+              "description": "The color for text on status background colors.",
               "demoMetadata": {
                 "background": "--sky-theme-color-background-container-success"
               }
