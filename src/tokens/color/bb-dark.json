@@ -402,7 +402,7 @@
       "selected": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.blue-dark.800}"
+          "$value": "{bb.color.blue-dark.375}"
         },
         "soft": {
           "$type": "color",
