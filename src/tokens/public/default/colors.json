@@ -187,6 +187,10 @@
             "$type": "color",
             "$value": "#686c73"
           }
+        },
+        "on_status": {
+          "$type": "color",
+          "$value": "#ffffff"
         }
       },
       "classify": {

@@ -187,6 +187,10 @@
             "$type": "color",
             "$value": "{color.icon.on_prominent.disabled}"
           }
+        },
+        "on_status": {
+          "$type": "color",
+          "$value": "{color.icon.on_status}"
         }
       },
       "classify": {
