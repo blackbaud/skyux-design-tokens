@@ -31,7 +31,7 @@
       },
       "action_contrast": {
         "$type": "color",
-        "$value": "{bb.color.blue.300}"
+        "$value": "{bb.color.blue-dark.200}"
       },
       "on_prominent": {
         "$type": "color",
@@ -325,6 +325,10 @@
         "tooltip": {
           "$type": "color",
           "$value": "{bb.color.gray.25}"
+        },
+        "prominent": {
+          "$type": "color",
+          "$value": "{bb.color.steel-gray.1125}"
         },
         "header": {
           "prominent": {
@@ -908,35 +912,35 @@
       "category": {
         "1": {
           "$type": "color",
-          "$value": "{bb.color.teal.600}"
+          "$value": "{bb.color.teal-dark.600}"
         },
         "2": {
           "$type": "color",
-          "$value": "{bb.color.purple.300}"
+          "$value": "{bb.color.purple-dark.300}"
         },
         "3": {
           "$type": "color",
-          "$value": "{bb.color.blue.600}"
+          "$value": "{bb.color.blue-dark.600}"
         },
         "4": {
           "$type": "color",
-          "$value": "{bb.color.sky.200}"
+          "$value": "{bb.color.sky-dark.200}"
         },
         "5": {
           "$type": "color",
-          "$value": "{bb.color.orange.500}"
+          "$value": "{bb.color.orange-dark.500}"
         },
         "6": {
           "$type": "color",
-          "$value": "{bb.color.red.300}"
+          "$value": "{bb.color.red-dark.300}"
         },
         "7": {
           "$type": "color",
-          "$value": "{bb.color.pink.500}"
+          "$value": "{bb.color.pink-dark.500}"
         },
         "8": {
           "$type": "color",
-          "$value": "{bb.color.green.400}"
+          "$value": "{bb.color.green-dark.400}"
         }
       },
       "sequence": {

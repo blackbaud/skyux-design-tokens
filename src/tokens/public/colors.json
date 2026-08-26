@@ -35,6 +35,10 @@
             "$type": "color",
             "$value": "{color.background.container.warning}"
           },
+          "prominent": {
+            "$type": "color",
+            "$value": "{color.background.container.prominent}"
+          },
           "header": {
             "prominent": {
               "$type": "color",
