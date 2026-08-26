@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.6.0...6.7.0) (2026-08-26)
+
+
+### Features
+
+* generate base/brand/public API combo CSS ([#428](https://github.com/blackbaud/skyux-design-tokens/issues/428)) ([dbfb37e](https://github.com/blackbaud/skyux-design-tokens/commit/dbfb37e27a79f7cb5b386a9c7b921a641d85d578))
+
 ## [6.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.5.1...6.6.0) (2026-08-26)
 
 
