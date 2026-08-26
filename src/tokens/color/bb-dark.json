@@ -671,6 +671,12 @@
         "base": {
           "$type": "color",
           "$value": "{bb.color.rgba.white.18}"
+        },
+        "header": {
+          "prominent": {
+            "$type": "color",
+            "$value": "{bb.color.slate.500}"
+          }
         }
       },
       "input": {
