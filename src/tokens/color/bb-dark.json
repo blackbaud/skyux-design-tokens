@@ -31,7 +31,7 @@
       },
       "action_contrast": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.300}"
+        "$value": "{bb.color.blue-dark.200}"
       },
       "on_prominent": {
         "$type": "color",

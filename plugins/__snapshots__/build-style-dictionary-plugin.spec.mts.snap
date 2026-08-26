@@ -1029,7 +1029,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-illustration-fill-softest: var(--bb-color-gray-900);
   --sky-color-illustration-stroke: var(--bb-color-green-200);
   --sky-color-text-action: var(--bb-color-sky-600);
-  --sky-color-text-action_contrast: var(--bb-color-blue-300);
+  --sky-color-text-action_contrast: var(--bb-color-blue-dark-200);
   --sky-color-text-danger: var(--bb-color-red-400);
   --sky-color-text-deemphasized: var(--bb-color-gray-300);
   --sky-color-text-default: var(--bb-color-gray-25);
@@ -2697,7 +2697,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-illustration-fill-softest: var(--bb-color-gray-900);
   --sky-color-illustration-stroke: var(--bb-color-green-200);
   --sky-color-text-action: var(--bb-color-blue-dark-375);
-  --sky-color-text-action_contrast: var(--bb-color-blue-dark-300);
+  --sky-color-text-action_contrast: var(--bb-color-blue-dark-200);
   --sky-color-text-danger: var(--bb-color-red-dark-400);
   --sky-color-text-deemphasized: var(--bb-color-steel-gray-400);
   --sky-color-text-default: var(--bb-color-steel-gray-200);
