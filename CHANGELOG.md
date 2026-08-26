@@ -1,5 +1,17 @@
 # Changelog
 
+## [7.0.0-alpha.7](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.6...7.0.0-alpha.7) (2026-08-26)
+
+
+### Features
+
+* update dark mode colors to steel-gray variety ([#420](https://github.com/blackbaud/skyux-design-tokens/issues/420)) ([#422](https://github.com/blackbaud/skyux-design-tokens/issues/422)) ([5c72ce7](https://github.com/blackbaud/skyux-design-tokens/commit/5c72ce70347642ff23fbbb220d86cfd48a588c09))
+
+
+### Bug Fixes
+
+* update action contrast text color in dark mode ([#423](https://github.com/blackbaud/skyux-design-tokens/issues/423)) ([#425](https://github.com/blackbaud/skyux-design-tokens/issues/425)) ([a3fccf4](https://github.com/blackbaud/skyux-design-tokens/commit/a3fccf47ca3eff82ddcb1820acc21957742aa382))
+
 ## [6.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.5.1...6.6.0) (2026-08-26)
 
 
