@@ -406,7 +406,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue-dark.900}"
+          "$value": "{bb.color.rgba.blue-dark.600.20}"
         },
         "danger": {
           "$type": "color",
