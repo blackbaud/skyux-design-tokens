@@ -95,7 +95,7 @@
       },
       "on_status": {
         "$type": "color",
-        "$value": "{bb.color.gray.1000}"
+        "$value": "{bb.color.white}"
       },
       "input": {
         "action": {
