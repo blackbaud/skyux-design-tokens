@@ -167,7 +167,7 @@
                 {
                   "name": "Icon on status matte",
                   "className": "sky-theme-color-icon-on_status",
-                  "description": "The color for foreground icons on status icon matte colors.",
+                  "description": "The color for icons on status icon matte color backgrounds.",
                   "properties": {
                     "color": "var(--sky-theme-color-icon-on_status)"
                   },
