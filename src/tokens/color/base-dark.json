@@ -318,6 +318,10 @@
           "$type": "color",
           "$value": "{bb.color.gray.25}"
         },
+        "prominent": {
+          "$type": "color",
+          "$value": "{bb.color.steel-gray.1125}"
+        },
         "header": {
           "prominent": {
             "$type": "color",

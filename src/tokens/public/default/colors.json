@@ -35,6 +35,10 @@
             "$type": "color",
             "$value": "#ffd597"
           },
+          "prominent": {
+            "$type": "color",
+            "$value": "#f6f8fa"
+          },
           "header": {
             "prominent": {
               "$type": "color",
