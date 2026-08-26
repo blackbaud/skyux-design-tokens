@@ -2623,6 +2623,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
   --sky-color-border-column_divider: var(--bb-color-blue-400);
   --sky-color-border-container-base: var(--bb-color-rgba-white-18);
+  --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
   --sky-color-border-danger: var(--bb-color-red-dark-700);
   --sky-color-border-disabled: var(--bb-color-gray-800);
   --sky-color-border-divider: var(--bb-color-rgba-white-18);
