@@ -479,6 +479,22 @@
             }
           }
         },
+        "steel-gray": {
+          "100": {
+            "10": {
+              "$type": "color",
+              "$value": "rgba(#f5f6f7,.1)"
+            },
+            "15": {
+              "$type": "color",
+              "$value": "rgba(#f5f6f7,.15)"
+            },
+            "25": {
+              "$type": "color",
+              "$value": "rgba(#f5f6f7,.25)"
+            }
+          }
+        },
         "black": {
           "70": {
             "$type": "color",

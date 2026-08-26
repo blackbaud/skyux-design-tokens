@@ -105,7 +105,7 @@
       },
       "thumbnail_matte": {
         "$type": "color",
-        "$value": "{bb.color.rgba.steel-gray.25}"
+        "$value": "{bb.color.rgba.steel-gray.100.25}"
       },
       "action": {
         "primary": {
@@ -133,11 +133,11 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.rgba.steel-gray.15}"
+            "$value": "{bb.color.rgba.steel-gray.100.10}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.rgba.steel-gray.10}"
+            "$value": "{bb.color.rgba.steel-gray.100.15}"
           },
           "active": {
             "$type": "color",
@@ -327,7 +327,7 @@
           },
           "soft": {
             "$type": "color",
-            "$value": "{bb.color.blue-selected.900}"
+            "$value": "{bb.color.blue-dark.900}"
           }
         }
       },
@@ -392,7 +392,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.blue-selected.900}"
+          "$value": "{bb.color.blue-dark.900}"
         },
         "danger": {
           "$type": "color",
