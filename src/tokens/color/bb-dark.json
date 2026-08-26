@@ -32,6 +32,10 @@
       "action_contrast": {
         "$type": "color",
         "$value": "{bb.color.blue-dark.300}"
+      },
+      "on_prominent": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
       }
     },
     "icon": {
@@ -75,6 +79,16 @@
         "action": {
           "$type": "color",
           "$value": "{bb.color.blue-dark.300}"
+        }
+      },
+      "on_prominent": {
+        "base": {
+          "$type": "color",
+          "$value": "{bb.color.white}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$value": "{bb.color.gray.600}"
         }
       }
     },
@@ -795,78 +809,6 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.steel-gray.1000}"
-        }
-      }
-    },
-    "classify": {
-      "1": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.teal-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.teal-dark.300}"
-        }
-      },
-      "2": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.purple-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.purple-dark.300}"
-        }
-      },
-      "3": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.sky-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.sky-dark.300}"
-        }
-      },
-      "4": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.orange-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.orange.300}"
-        }
-      },
-      "5": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.pink-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.pink-dark.300}"
-        }
-      },
-      "6": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.green-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.green-dark.300}"
-        }
-      },
-      "7": {
-        "soft": {
-          "$type": "color",
-          "$value": "{bb.color.red-dark.700}"
-        },
-        "heavy": {
-          "$type": "color",
-          "$value": "{bb.color.red-dark.300}"
         }
       }
     },
