@@ -359,7 +359,7 @@
             },
             {
               "groupName": "Status icon mattes",
-              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency. Use the icon on status matte color for foreground icons.",
+              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency. For foreground icons, use the icon on status matte color.",
               "demoMetadata": {
                 "type": "icon-background-color",
                 "color": "--sky-theme-color-icon-on_status"
