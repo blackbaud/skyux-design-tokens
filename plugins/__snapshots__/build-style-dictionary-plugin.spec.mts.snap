@@ -581,6 +581,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-header-prominent: var(--bb-color-slate-800);
   --sky-color-background-container-info: var(--bb-color-blue-200);
   --sky-color-background-container-menu: var(--bb-color-white);
+  --sky-color-background-container-prominent: var(--bb-color-slate-50);
   --sky-color-background-container-success: var(--bb-color-green-200);
   --sky-color-background-container-tooltip: var(--bb-color-gray-1000);
   --sky-color-background-container-warning: var(--bb-color-yellow-200);
@@ -885,6 +886,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-header-prominent: var(--bb-color-slate-800);
   --sky-color-background-container-info: var(--bb-color-blue-800);
   --sky-color-background-container-menu: var(--bb-color-gray-900);
+  --sky-color-background-container-prominent: var(--bb-color-steel-gray-1125);
   --sky-color-background-container-success: var(--bb-color-green-900);
   --sky-color-background-container-tooltip: var(--bb-color-gray-25);
   --sky-color-background-container-warning: var(--bb-color-yellow-800);
@@ -2549,6 +2551,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-header-prominent: var(--bb-color-slate-800);
   --sky-color-background-container-info: var(--bb-color-blue-dark-400);
   --sky-color-background-container-menu: var(--bb-color-steel-gray-900);
+  --sky-color-background-container-prominent: var(--bb-color-steel-gray-1125);
   --sky-color-background-container-success: var(--bb-color-green-dark-400);
   --sky-color-background-container-warning: var(--bb-color-yellow-dark-400);
   --sky-color-background-disabled: var(--bb-color-gray-700);
@@ -2846,6 +2849,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-background-container-dimmed: var(--sky-color-background-container-dimmed);
   --sky-theme-color-background-container-header-prominent: var(--sky-color-background-container-header-prominent);
   --sky-theme-color-background-container-info: var(--sky-color-background-container-info);
+  --sky-theme-color-background-container-prominent: var(--sky-color-background-container-prominent);
   --sky-theme-color-background-container-success: var(--sky-color-background-container-success);
   --sky-theme-color-background-container-warning: var(--sky-color-background-container-warning);
   --sky-theme-color-background-disabled: var(--sky-color-background-disabled);
@@ -3075,6 +3079,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-background-container-dimmed: #eeeeef;
   --sky-theme-color-background-container-header-prominent: #32435e;
   --sky-theme-color-background-container-info: #81d4f7;
+  --sky-theme-color-background-container-prominent: #f6f8fa;
   --sky-theme-color-background-container-success: #b7da9b;
   --sky-theme-color-background-container-warning: #ffd597;
   --sky-theme-color-background-disabled: #cdcfd2;
@@ -3554,6 +3559,9 @@ em {
 }
 .sky-theme-color-background-container-backdrop {
   background-color: var(--sky-theme-color-background-container-backdrop);
+}
+.sky-theme-color-background-container-prominent {
+  background-color: var(--sky-theme-color-background-container-prominent);
 }
 .sky-theme-color-background-container-header-prominent {
   background-color: var(--sky-theme-color-background-container-header-prominent);
