@@ -406,7 +406,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.steel-blue-dark.700"
+          "$value": "{bb.color.steel-blue-dark.700}"
         },
         "danger": {
           "$type": "color",
@@ -481,7 +481,7 @@
       },
       "selected_soft": {
         "$type": "color",
-        "$value": "{bb.color.steel-blue-dark.100"
+        "$value": "{bb.color.steel-blue-dark.100}"
       },
       "danger": {
         "$type": "color",
