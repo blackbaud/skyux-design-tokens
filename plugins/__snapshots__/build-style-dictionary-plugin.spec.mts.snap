@@ -2692,7 +2692,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-deemphasized: var(--bb-color-steel-gray-400);
   --sky-color-icon-default: var(--bb-color-steel-gray-100);
   --sky-color-icon-info: var(--bb-color-blue-dark-400);
-  --sky-color-icon-input-action: var(--bb-color-blue-dark-300);
+  --sky-color-icon-input-action: var(--bb-color-oklch-blue-375);
   --sky-color-icon-inverse: var(--bb-color-steel-gray-1100);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
