@@ -10,7 +10,6 @@ export const tokenConfig: TokenConfig = {
       referenceTokens: [
         {
           name: 'base-light',
-          selector: '.sky-theme-mode-light',
           path: 'color/base-light.json',
         },
         {
@@ -71,7 +70,6 @@ export const tokenConfig: TokenConfig = {
       referenceTokens: [
         {
           name: 'bb-light',
-          selector: '.sky-theme-mode-light',
           path: 'color/bb-light.json',
         },
         {
