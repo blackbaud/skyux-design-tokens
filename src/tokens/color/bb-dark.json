@@ -513,7 +513,7 @@
       },
       "column_divider": {
         "$type": "color",
-        "$value": "{bb.color.blue.400}"
+        "$value": "{bb.color.blue-dark.400}"
       },
       "text_highlight": {
         "$type": "color",
