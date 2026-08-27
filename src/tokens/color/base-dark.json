@@ -123,7 +123,7 @@
       },
       "thumbnail_matte": {
         "$type": "color",
-        "$value": "{bb.color.white}"
+        "$value": "{bb.color.rgba.steel-gray.100.7}"
       },
       "action": {
         "primary": {
