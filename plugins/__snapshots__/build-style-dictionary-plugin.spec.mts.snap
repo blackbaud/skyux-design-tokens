@@ -719,6 +719,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-inverse: var(--bb-color-white);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
+  --sky-color-icon-on_status: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-600);
   --sky-color-icon-warning: var(--bb-color-yellow-400);
@@ -734,6 +735,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-heading: var(--bb-color-gray-1100);
   --sky-color-text-inverse: var(--bb-color-white);
   --sky-color-text-on_prominent: var(--bb-color-white);
+  --sky-color-text-on_status: var(--bb-color-gray-1000);
   --sky-color-text-selected: var(--bb-color-blue-600);
   --sky-color-viz-axis: var(--bb-color-gray-500);
   --sky-color-viz-category-1: var(--bb-color-teal-500);
@@ -1023,6 +1025,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-inverse: var(--bb-color-gray-1100);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
+  --sky-color-icon-on_status: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
@@ -1038,6 +1041,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-heading: var(--bb-color-gray-50);
   --sky-color-text-inverse: var(--bb-color-gray-1100);
   --sky-color-text-on_prominent: var(--bb-color-white);
+  --sky-color-text-on_status: var(--bb-color-gray-1000);
   --sky-color-text-selected: var(--bb-color-blue-400);
   --sky-color-viz-axis: var(--bb-color-gray-600);
   --sky-color-viz-category-1: var(--bb-color-teal-dark-600);
@@ -2688,10 +2692,11 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-deemphasized: var(--bb-color-steel-gray-400);
   --sky-color-icon-default: var(--bb-color-steel-gray-100);
   --sky-color-icon-info: var(--bb-color-blue-dark-400);
-  --sky-color-icon-input-action: var(--bb-color-blue-dark-300);
+  --sky-color-icon-input-action: var(--bb-color-oklch-blue-375);
   --sky-color-icon-inverse: var(--bb-color-steel-gray-1100);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
+  --sky-color-icon-on_status: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-dark-300);
   --sky-color-icon-success: var(--bb-color-green-dark-400);
   --sky-color-icon-warning: var(--bb-color-yellow-dark-400);
@@ -2707,6 +2712,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-heading: var(--bb-color-steel-gray-100);
   --sky-color-text-inverse: var(--bb-color-steel-gray-1100);
   --sky-color-text-on_prominent: var(--bb-color-white);
+  --sky-color-text-on_status: var(--bb-color-gray-1000);
   --sky-color-text-selected: var(--bb-color-steel-gray-100);
   --sky-image-select_icon-base: var(--bb-image-select_icon-bb-dark-src);
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-bb-dark-src);
@@ -2890,6 +2896,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-icon-inverse: var(--sky-color-icon-inverse);
   --sky-theme-color-icon-on_prominent-base: var(--sky-color-icon-on_prominent-base);
   --sky-theme-color-icon-on_prominent-disabled: var(--sky-color-icon-on_prominent-disabled);
+  --sky-theme-color-icon-on_status: var(--sky-color-icon-on_status);
   --sky-theme-color-icon-success: var(--sky-color-icon-success);
   --sky-theme-color-text-action: var(--sky-color-text-action);
   --sky-theme-color-text-action_contrast: var(--sky-color-text-action_contrast);
@@ -2898,6 +2905,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-text-heading: var(--sky-color-text-heading);
   --sky-theme-color-text-inverse: var(--sky-color-text-inverse);
   --sky-theme-color-text-on_prominent: var(--sky-color-text-on_prominent);
+  --sky-theme-color-text-on_status: var(--sky-color-text-on_status);
   --sky-theme-color-viz-axis: var(--sky-color-viz-axis);
   --sky-theme-color-viz-category-1: var(--sky-color-viz-category-1);
   --sky-theme-color-viz-category-2: var(--sky-color-viz-category-2);
@@ -3120,6 +3128,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-icon-inverse: #ffffff;
   --sky-theme-color-icon-on_prominent-base: #ffffff;
   --sky-theme-color-icon-on_prominent-disabled: #686c73;
+  --sky-theme-color-icon-on_status: #ffffff;
   --sky-theme-color-icon-success: #72bf44;
   --sky-theme-color-text-action: #0974a1;
   --sky-theme-color-text-action_contrast: #0974a1;
@@ -3128,6 +3137,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-text-heading: #212327;
   --sky-theme-color-text-inverse: #ffffff;
   --sky-theme-color-text-on_prominent: #ffffff;
+  --sky-theme-color-text-on_status: #212327;
   --sky-theme-color-viz-axis: #85888d;
   --sky-theme-color-viz-category-1: #06a39e;
   --sky-theme-color-viz-category-2: #6d3c96;
@@ -3575,6 +3585,9 @@ em {
 .sky-theme-color-text-inverse {
   color: var(--sky-theme-color-text-inverse);
 }
+.sky-theme-color-text-on_status {
+  color: var(--sky-theme-color-text-on_status);
+}
 .sky-theme-color-text-on_prominent {
   color: var(--sky-theme-color-text-on_prominent);
 }
@@ -3589,6 +3602,9 @@ em {
 }
 .sky-theme-color-icon-inverse {
   color: var(--sky-theme-color-icon-inverse);
+}
+.sky-theme-color-icon-on_status {
+  color: var(--sky-theme-color-icon-on_status);
 }
 .sky-theme-color-icon-on_prominent {
   color: var(--sky-theme-color-icon-on_prominent-base);
