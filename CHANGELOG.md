@@ -1,5 +1,19 @@
 # Changelog
 
+## [6.8.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.7.0...6.8.0) (2026-08-27)
+
+
+### Features
+
+* add on_status colors ([#414](https://github.com/blackbaud/skyux-design-tokens/issues/414)) ([f5b9b78](https://github.com/blackbaud/skyux-design-tokens/commit/f5b9b780daccdccf437cf1cf0e1367d0af618554))
+* add prominent container background ([#431](https://github.com/blackbaud/skyux-design-tokens/issues/431)) ([609bce6](https://github.com/blackbaud/skyux-design-tokens/commit/609bce6dabbb08aacbc67cabda8381530574453e))
+
+
+### Bug Fixes
+
+* remove light mode selector from light mode styles ([#436](https://github.com/blackbaud/skyux-design-tokens/issues/436)) ([6f22bce](https://github.com/blackbaud/skyux-design-tokens/commit/6f22bce654fb554c2e65bc12071219e6bff1854d))
+* revert light-mode shadow-slate color shift from steel-gray merge ([#438](https://github.com/blackbaud/skyux-design-tokens/issues/438)) ([0467bb8](https://github.com/blackbaud/skyux-design-tokens/commit/0467bb83a1284eefd4bebeb138aa4c8f41f73c71))
+
 ## [6.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.6.0...6.7.0) (2026-08-26)
 
 
