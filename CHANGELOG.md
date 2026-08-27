@@ -1,5 +1,19 @@
 # Changelog
 
+## [7.0.0-alpha.8](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.7...7.0.0-alpha.8) (2026-08-27)
+
+
+### Features
+
+* add on_status colors ([#414](https://github.com/blackbaud/skyux-design-tokens/issues/414)) ([#439](https://github.com/blackbaud/skyux-design-tokens/issues/439)) ([f3c9c79](https://github.com/blackbaud/skyux-design-tokens/commit/f3c9c793846167ad27941f8cf0676587f84822f0))
+* add prominent container background ([#431](https://github.com/blackbaud/skyux-design-tokens/issues/431)) ([#434](https://github.com/blackbaud/skyux-design-tokens/issues/434)) ([af787b5](https://github.com/blackbaud/skyux-design-tokens/commit/af787b560660e88ea9d89ad9de0e511cdf3ffab9))
+* generate base/brand/public API combo CSS ([#428](https://github.com/blackbaud/skyux-design-tokens/issues/428)) ([#430](https://github.com/blackbaud/skyux-design-tokens/issues/430)) ([2e911ca](https://github.com/blackbaud/skyux-design-tokens/commit/2e911ca83f2862a81e7b111e19b9f89e7765b3d3))
+
+
+### Bug Fixes
+
+* revert light-mode shadow-slate color shift from steel-gray merge ([#438](https://github.com/blackbaud/skyux-design-tokens/issues/438)) ([#440](https://github.com/blackbaud/skyux-design-tokens/issues/440)) ([0bf13e7](https://github.com/blackbaud/skyux-design-tokens/commit/0bf13e75074d68241805ed57f3a03714d0ca693b))
+
 ## [6.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.6.0...6.7.0) (2026-08-26)
 
 
