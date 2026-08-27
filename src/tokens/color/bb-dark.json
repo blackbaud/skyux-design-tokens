@@ -36,6 +36,10 @@
       "on_prominent": {
         "$type": "color",
         "$value": "{bb.color.white}"
+      },
+      "on_status": {
+        "$type": "color",
+        "$value": "{bb.color.gray.1000}"
       }
     },
     "icon": {
@@ -89,6 +93,16 @@
         "disabled": {
           "$type": "color",
           "$value": "{bb.color.gray.600}"
+        }
+      },
+      "on_status": {
+        "$type": "color",
+        "$value": "{bb.color.white}"
+      },
+      "input": {
+        "action": {
+          "$type": "color",
+          "$value": "{bb.color.oklch-blue.375}"
         }
       }
     },
