@@ -35,6 +35,10 @@
             "$type": "color",
             "$value": "#ffd597"
           },
+          "prominent": {
+            "$type": "color",
+            "$value": "#f6f8fa"
+          },
           "header": {
             "prominent": {
               "$type": "color",
@@ -143,6 +147,10 @@
         "on_prominent": {
           "$type": "color",
           "$value": "#ffffff"
+        },
+        "on_status": {
+          "$type": "color",
+          "$value": "#212327"
         }
       },
       "icon": {
@@ -183,6 +191,10 @@
             "$type": "color",
             "$value": "#686c73"
           }
+        },
+        "on_status": {
+          "$type": "color",
+          "$value": "#ffffff"
         }
       },
       "classify": {

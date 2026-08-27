@@ -48,6 +48,14 @@
                   }
                 },
                 {
+                  "name": "Prominent container background",
+                  "className": "sky-theme-color-background-container-prominent",
+                  "description": "The background color for containers of tools that work alongside the main page content.",
+                  "properties": {
+                    "background-color": "var(--sky-theme-color-background-container-prominent)"
+                  }
+                },
+                {
                   "name": "Prominent container header background",
                   "className": "sky-theme-color-background-container-header-prominent",
                   "description": "The background color for headers of containers of tools that work alongside the main page content.",
@@ -96,6 +104,17 @@
               },
               "demoMetadata": {
                 "background": "--sky-theme-color-background-icon_matte-info"
+              }
+            },
+            {
+              "name": "Text on status background",
+              "className": "sky-theme-color-text-on_status",
+              "description": "The color for text on status background colors.",
+              "properties": {
+                "color": "var(--sky-theme-color-text-on_status)"
+              },
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-container-success"
               }
             },
             {
@@ -150,7 +169,18 @@
                     "color": "var(--sky-theme-color-icon-inverse)"
                   },
                   "demoMetadata": {
-                    "background": "--sky-theme-color-background-icon_matte-info"
+                    "background": "--sky-theme-color-background-icon_matte-action-heavy"
+                  }
+                },
+                {
+                  "name": "Icon on status matte",
+                  "className": "sky-theme-color-icon-on_status",
+                  "description": "The color for icons on status icon matte color backgrounds.",
+                  "properties": {
+                    "color": "var(--sky-theme-color-icon-on_status)"
+                  },
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-icon_matte-success"
                   }
                 },
                 {
@@ -302,10 +332,10 @@
             },
             {
               "name": "Status icon mattes",
-              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency.",
+              "description": "Use status icon matte colors for small backgrounds behind icons that convey status or urgency. For foreground icons, use the icon on status matte color.",
               "demoMetadata": {
                 "type": "icon-background-color",
-                "color": "--sky-theme-color-icon-inverse"
+                "color": "--sky-theme-color-icon-on_status"
               },
               "styles": [
                 {

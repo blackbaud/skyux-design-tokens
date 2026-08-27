@@ -517,15 +517,15 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-heavy-black-50: 0 1px 1px 0 rgba(0, 0, 0, 0.3), 0 1.5px 1px -1px rgba(0, 0, 0, 0.6);
   --bb-shadow-heavy-black-800: 0 5px 5px -3px rgba(0, 0, 0, 0.24), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.1);
   --bb-shadow-heavy-black-simple-400: 1px 2px 4px 0 rgba(0, 0, 0, 0.65);
-  --bb-shadow-slate-100: 0 1px 3px 0 rgba(12, 16, 22, 0.2), 0 2px 1px -1px rgba(12, 16, 22, 0.12), 0 1px 1px 0 rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-1600: 0 8px 10px -5px rgba(12, 16, 22, 0.2), 0 6px 30px 5px rgba(12, 16, 22, 0.12), 0 16px 24px 2px rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-200: 0 1px 8px 0 rgba(12, 16, 22, 0.2), 0 3px 3px -2px rgba(12, 16, 22, 0.12), 0 3px 4px 0 rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-2400: 0 11px 15px -7px rgba(12, 16, 22, 0.2), 0 9px 46px 8px rgba(12, 16, 22, 0.12), 0 24px 38px 3px rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-25: 0 1px 1px 0 rgba(12, 16, 22, 0.05);
-  --bb-shadow-slate-400: 0 2px 4px -1px rgba(12, 16, 22, 0.2), 0 1px 10px 0 rgba(12, 16, 22, 0.12), 0 4px 5px 0 rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-50: 0 1px 1px 0 rgba(12, 16, 22, 0.05), 0 1.5px 1px -1px rgba(12, 16, 22, 0.12);
-  --bb-shadow-slate-800: 0 5px 5px -3px rgba(12, 16, 22, 0.2), 0 3px 14px 2px rgba(12, 16, 22, 0.12), 0 8px 10px 1px rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(12, 16, 22, 0.5);
+  --bb-shadow-slate-100: 0 1px 3px 0 rgba(33, 44, 63, 0.2), 0 2px 1px -1px rgba(33, 44, 63, 0.12), 0 1px 1px 0 rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-1600: 0 8px 10px -5px rgba(33, 44, 63, 0.2), 0 6px 30px 5px rgba(33, 44, 63, 0.12), 0 16px 24px 2px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-200: 0 1px 8px 0 rgba(33, 44, 63, 0.2), 0 3px 3px -2px rgba(33, 44, 63, 0.12), 0 3px 4px 0 rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-2400: 0 11px 15px -7px rgba(33, 44, 63, 0.2), 0 9px 46px 8px rgba(33, 44, 63, 0.12), 0 24px 38px 3px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-25: 0 1px 1px 0 rgba(33, 44, 63, 0.05);
+  --bb-shadow-slate-400: 0 2px 4px -1px rgba(33, 44, 63, 0.2), 0 1px 10px 0 rgba(33, 44, 63, 0.12), 0 4px 5px 0 rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-50: 0 1px 1px 0 rgba(33, 44, 63, 0.12), 0 1.5px 1px -1px rgba(33, 44, 63, 0.12);
+  --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(33, 44, 63, 0.5);
   --bb-shadow-steel-fusion-100: 0 1px 3px 0 rgba(0, 0, 0, .3), 0 2px 1px -1px rgba(0, 0, 0, .25), 0 1px 1px 0 rgba(0, 0, 0, .28);
   --bb-shadow-steel-fusion-1600: 0 8px 10px -5px rgba(0, 0, 0, 0.36), 0 6px 30px 5px rgba(0, 0, 0, 0.22), 0 16px 24px 2px rgba(0, 0, 0, 0.25);
   --bb-shadow-steel-fusion-200: 0 1px 8px 0 rgba(0, 0, 0, 0.5), 0 3px 3px -2px rgba(0, 0, 0, 0.3), 0 3px 4px 0 rgba(0, 0, 0, 0.35);
@@ -554,7 +554,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-thumb: #51555c;
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
-.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-light {
+.sky-theme-modern.sky-theme-brand-base:not(.sky-theme-mode-dark) {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-blue-100);
   --sky-color-background-action-accent-base: var(--bb-color-white);
@@ -593,6 +593,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-header-prominent: var(--bb-color-slate-800);
   --sky-color-background-container-info: var(--bb-color-blue-200);
   --sky-color-background-container-menu: var(--bb-color-white);
+  --sky-color-background-container-prominent: var(--bb-color-slate-50);
   --sky-color-background-container-success: var(--bb-color-green-200);
   --sky-color-background-container-tooltip: var(--bb-color-gray-1000);
   --sky-color-background-container-warning: var(--bb-color-yellow-200);
@@ -730,6 +731,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-inverse: var(--bb-color-white);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
+  --sky-color-icon-on_status: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-600);
   --sky-color-icon-warning: var(--bb-color-yellow-400);
@@ -745,6 +747,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-heading: var(--bb-color-gray-1100);
   --sky-color-text-inverse: var(--bb-color-white);
   --sky-color-text-on_prominent: var(--bb-color-white);
+  --sky-color-text-on_status: var(--bb-color-gray-1000);
   --sky-color-text-selected: var(--bb-color-blue-600);
   --sky-color-viz-axis: var(--bb-color-gray-500);
   --sky-color-viz-category-1: var(--bb-color-teal-500);
@@ -855,7 +858,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
 }
-:root:has(body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-light) {
+:root:has(body.sky-theme-modern.sky-theme-brand-base:not(.sky-theme-mode-dark)) {
   --sky-color-scrollbar-thumb: var(--bb-color-scrollbar-base-light-thumb);
   --sky-color-scrollbar-track: var(--bb-color-scrollbar-base-light-track);
 }
@@ -897,6 +900,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-header-prominent: var(--bb-color-slate-800);
   --sky-color-background-container-info: var(--bb-color-blue-800);
   --sky-color-background-container-menu: var(--bb-color-gray-900);
+  --sky-color-background-container-prominent: var(--bb-color-steel-gray-1125);
   --sky-color-background-container-success: var(--bb-color-green-900);
   --sky-color-background-container-tooltip: var(--bb-color-gray-25);
   --sky-color-background-container-warning: var(--bb-color-yellow-800);
@@ -1033,6 +1037,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-inverse: var(--bb-color-gray-1100);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
+  --sky-color-icon-on_status: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-700);
   --sky-color-icon-warning: var(--bb-color-yellow-600);
@@ -1048,6 +1053,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-heading: var(--bb-color-gray-50);
   --sky-color-text-inverse: var(--bb-color-gray-1100);
   --sky-color-text-on_prominent: var(--bb-color-white);
+  --sky-color-text-on_status: var(--bb-color-gray-1000);
   --sky-color-text-selected: var(--bb-color-blue-400);
   --sky-color-viz-axis: var(--bb-color-gray-600);
   --sky-color-viz-category-1: var(--bb-color-teal-dark-600);
@@ -2422,15 +2428,15 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-shadow-heavy-black-50: 0 1px 1px 0 rgba(0, 0, 0, 0.3), 0 1.5px 1px -1px rgba(0, 0, 0, 0.6);
   --bb-shadow-heavy-black-800: 0 5px 5px -3px rgba(0, 0, 0, 0.24), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.1);
   --bb-shadow-heavy-black-simple-400: 1px 2px 4px 0 rgba(0, 0, 0, 0.65);
-  --bb-shadow-slate-100: 0 1px 3px 0 rgba(12, 16, 22, 0.2), 0 2px 1px -1px rgba(12, 16, 22, 0.12), 0 1px 1px 0 rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-1600: 0 8px 10px -5px rgba(12, 16, 22, 0.2), 0 6px 30px 5px rgba(12, 16, 22, 0.12), 0 16px 24px 2px rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-200: 0 1px 8px 0 rgba(12, 16, 22, 0.2), 0 3px 3px -2px rgba(12, 16, 22, 0.12), 0 3px 4px 0 rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-2400: 0 11px 15px -7px rgba(12, 16, 22, 0.2), 0 9px 46px 8px rgba(12, 16, 22, 0.12), 0 24px 38px 3px rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-25: 0 1px 1px 0 rgba(12, 16, 22, 0.05);
-  --bb-shadow-slate-400: 0 2px 4px -1px rgba(12, 16, 22, 0.2), 0 1px 10px 0 rgba(12, 16, 22, 0.12), 0 4px 5px 0 rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-50: 0 1px 1px 0 rgba(12, 16, 22, 0.05), 0 1.5px 1px -1px rgba(12, 16, 22, 0.12);
-  --bb-shadow-slate-800: 0 5px 5px -3px rgba(12, 16, 22, 0.2), 0 3px 14px 2px rgba(12, 16, 22, 0.12), 0 8px 10px 1px rgba(12, 16, 22, 0.14);
-  --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(12, 16, 22, 0.5);
+  --bb-shadow-slate-100: 0 1px 3px 0 rgba(33, 44, 63, 0.2), 0 2px 1px -1px rgba(33, 44, 63, 0.12), 0 1px 1px 0 rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-1600: 0 8px 10px -5px rgba(33, 44, 63, 0.2), 0 6px 30px 5px rgba(33, 44, 63, 0.12), 0 16px 24px 2px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-200: 0 1px 8px 0 rgba(33, 44, 63, 0.2), 0 3px 3px -2px rgba(33, 44, 63, 0.12), 0 3px 4px 0 rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-2400: 0 11px 15px -7px rgba(33, 44, 63, 0.2), 0 9px 46px 8px rgba(33, 44, 63, 0.12), 0 24px 38px 3px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-25: 0 1px 1px 0 rgba(33, 44, 63, 0.05);
+  --bb-shadow-slate-400: 0 2px 4px -1px rgba(33, 44, 63, 0.2), 0 1px 10px 0 rgba(33, 44, 63, 0.12), 0 4px 5px 0 rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-50: 0 1px 1px 0 rgba(33, 44, 63, 0.12), 0 1.5px 1px -1px rgba(33, 44, 63, 0.12);
+  --bb-shadow-slate-800: 0 5px 5px -3px rgba(33, 44, 63, 0.2), 0 3px 14px 2px rgba(33, 44, 63, 0.12), 0 8px 10px 1px rgba(33, 44, 63, 0.14);
+  --bb-shadow-slate-simple-400: 1px 2px 4px 0 rgba(33, 44, 63, 0.5);
   --bb-shadow-steel-fusion-100: 0 1px 3px 0 rgba(0, 0, 0, .3), 0 2px 1px -1px rgba(0, 0, 0, .25), 0 1px 1px 0 rgba(0, 0, 0, .28);
   --bb-shadow-steel-fusion-1600: 0 8px 10px -5px rgba(0, 0, 0, 0.36), 0 6px 30px 5px rgba(0, 0, 0, 0.22), 0 16px 24px 2px rgba(0, 0, 0, 0.25);
   --bb-shadow-steel-fusion-200: 0 1px 8px 0 rgba(0, 0, 0, 0.5), 0 3px 3px -2px rgba(0, 0, 0, 0.3), 0 3px 4px 0 rgba(0, 0, 0, 0.35);
@@ -2459,7 +2465,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-thumb: #51555c;
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
-.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud.sky-theme-mode-light {
+.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud:not(.sky-theme-mode-dark) {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-base: var(--bb-color-blue-25);
   --sky-color-background-container-backdrop: var(--bb-color-slate-200);
@@ -2573,6 +2579,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-container-header-prominent: var(--bb-color-slate-800);
   --sky-color-background-container-info: var(--bb-color-blue-dark-400);
   --sky-color-background-container-menu: var(--bb-color-steel-gray-900);
+  --sky-color-background-container-prominent: var(--bb-color-steel-gray-1125);
   --sky-color-background-container-success: var(--bb-color-green-dark-400);
   --sky-color-background-container-warning: var(--bb-color-yellow-dark-400);
   --sky-color-background-disabled: var(--bb-color-gray-700);
@@ -2709,10 +2716,11 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-deemphasized: var(--bb-color-steel-gray-400);
   --sky-color-icon-default: var(--bb-color-steel-gray-100);
   --sky-color-icon-info: var(--bb-color-blue-dark-400);
-  --sky-color-icon-input-action: var(--bb-color-blue-dark-300);
+  --sky-color-icon-input-action: var(--bb-color-oklch-blue-375);
   --sky-color-icon-inverse: var(--bb-color-steel-gray-1100);
   --sky-color-icon-on_prominent-base: var(--bb-color-white);
   --sky-color-icon-on_prominent-disabled: var(--bb-color-gray-600);
+  --sky-color-icon-on_status: var(--bb-color-white);
   --sky-color-icon-selected: var(--bb-color-blue-dark-300);
   --sky-color-icon-success: var(--bb-color-green-dark-400);
   --sky-color-icon-warning: var(--bb-color-yellow-dark-400);
@@ -2728,6 +2736,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-text-heading: var(--bb-color-steel-gray-100);
   --sky-color-text-inverse: var(--bb-color-steel-gray-1100);
   --sky-color-text-on_prominent: var(--bb-color-white);
+  --sky-color-text-on_status: var(--bb-color-gray-1000);
   --sky-color-text-selected: var(--bb-color-steel-gray-100);
   --sky-image-select_icon-base: var(--bb-image-select_icon-bb-dark-src);
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-bb-dark-src);
@@ -2870,6 +2879,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-background-container-dimmed: var(--sky-color-background-container-dimmed);
   --sky-theme-color-background-container-header-prominent: var(--sky-color-background-container-header-prominent);
   --sky-theme-color-background-container-info: var(--sky-color-background-container-info);
+  --sky-theme-color-background-container-prominent: var(--sky-color-background-container-prominent);
   --sky-theme-color-background-container-success: var(--sky-color-background-container-success);
   --sky-theme-color-background-container-warning: var(--sky-color-background-container-warning);
   --sky-theme-color-background-disabled: var(--sky-color-background-disabled);
@@ -2910,6 +2920,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-icon-inverse: var(--sky-color-icon-inverse);
   --sky-theme-color-icon-on_prominent-base: var(--sky-color-icon-on_prominent-base);
   --sky-theme-color-icon-on_prominent-disabled: var(--sky-color-icon-on_prominent-disabled);
+  --sky-theme-color-icon-on_status: var(--sky-color-icon-on_status);
   --sky-theme-color-icon-success: var(--sky-color-icon-success);
   --sky-theme-color-text-action: var(--sky-color-text-action);
   --sky-theme-color-text-action_contrast: var(--sky-color-text-action_contrast);
@@ -2918,6 +2929,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-text-heading: var(--sky-color-text-heading);
   --sky-theme-color-text-inverse: var(--sky-color-text-inverse);
   --sky-theme-color-text-on_prominent: var(--sky-color-text-on_prominent);
+  --sky-theme-color-text-on_status: var(--sky-color-text-on_status);
   --sky-theme-color-viz-axis: var(--sky-color-viz-axis);
   --sky-theme-color-viz-category-1: var(--sky-color-viz-category-1);
   --sky-theme-color-viz-category-2: var(--sky-color-viz-category-2);
@@ -3099,6 +3111,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-background-container-dimmed: #eeeeef;
   --sky-theme-color-background-container-header-prominent: #32435e;
   --sky-theme-color-background-container-info: #81d4f7;
+  --sky-theme-color-background-container-prominent: #f6f8fa;
   --sky-theme-color-background-container-success: #b7da9b;
   --sky-theme-color-background-container-warning: #ffd597;
   --sky-theme-color-background-disabled: #cdcfd2;
@@ -3139,6 +3152,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-icon-inverse: #ffffff;
   --sky-theme-color-icon-on_prominent-base: #ffffff;
   --sky-theme-color-icon-on_prominent-disabled: #686c73;
+  --sky-theme-color-icon-on_status: #ffffff;
   --sky-theme-color-icon-success: #72bf44;
   --sky-theme-color-text-action: #0974a1;
   --sky-theme-color-text-action_contrast: #0974a1;
@@ -3147,6 +3161,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-color-text-heading: #212327;
   --sky-theme-color-text-inverse: #ffffff;
   --sky-theme-color-text-on_prominent: #ffffff;
+  --sky-theme-color-text-on_status: #212327;
   --sky-theme-color-viz-axis: #85888d;
   --sky-theme-color-viz-category-1: #06a39e;
   --sky-theme-color-viz-category-2: #6d3c96;
@@ -3579,6 +3594,9 @@ em {
 .sky-theme-color-background-container-backdrop {
   background-color: var(--sky-theme-color-background-container-backdrop);
 }
+.sky-theme-color-background-container-prominent {
+  background-color: var(--sky-theme-color-background-container-prominent);
+}
 .sky-theme-color-background-container-header-prominent {
   background-color: var(--sky-theme-color-background-container-header-prominent);
 }
@@ -3590,6 +3608,9 @@ em {
 }
 .sky-theme-color-text-inverse {
   color: var(--sky-theme-color-text-inverse);
+}
+.sky-theme-color-text-on_status {
+  color: var(--sky-theme-color-text-on_status);
 }
 .sky-theme-color-text-on_prominent {
   color: var(--sky-theme-color-text-on_prominent);
@@ -3605,6 +3626,9 @@ em {
 }
 .sky-theme-color-icon-inverse {
   color: var(--sky-theme-color-icon-inverse);
+}
+.sky-theme-color-icon-on_status {
+  color: var(--sky-theme-color-icon-on_status);
 }
 .sky-theme-color-icon-on_prominent {
   color: var(--sky-theme-color-icon-on_prominent-base);
