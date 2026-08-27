@@ -702,7 +702,7 @@
         },
         "error": {
           "$type": "color",
-          "$value": "{bb.color.red.600}"
+          "$value": "{bb.color.red-dark.600}"
         }
       },
       "switch": {
@@ -728,7 +728,7 @@
         },
         "error": {
           "$type": "color",
-          "$value": "{bb.color.red.600}"
+          "$value": "{bb.color.red-dark.600}"
         },
         "selected": {
           "base": {
