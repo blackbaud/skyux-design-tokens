@@ -481,6 +481,10 @@
         },
         "steel-gray": {
           "100": {
+            "7": {
+              "$type": "color",
+              "$value": "rgba(#f5f6f7,.07)"
+            },
             "10": {
               "$type": "color",
               "$value": "rgba(#f5f6f7,.1)"
@@ -1710,6 +1714,48 @@
         "1200": {
           "$type": "color",
           "$value": "#17191B"
+        }
+      },
+      "steel-blue-dark": {
+        "100": {
+          "$type": "color",
+          "$value": "#617695"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#566A88"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#4B5F7C"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#405371"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#354865"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#2B3E5A"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#21334E"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#172943"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0E1F39"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#06152E"
         }
       },
       "scrollbar": {

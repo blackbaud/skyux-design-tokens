@@ -147,11 +147,11 @@
         "secondary": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.rgba.steel-gray.100.10}"
+            "$value": "{bb.color.rgba.steel-gray.100.7}"
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.rgba.steel-gray.100.15}"
+            "$value": "{bb.color.rgba.steel-gray.100.10}"
           },
           "active": {
             "$type": "color",
@@ -406,7 +406,7 @@
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.rgba.blue-dark.600.20}"
+          "$value": "{bb.color.steel-blue-dark.700"
         },
         "danger": {
           "$type": "color",
@@ -481,7 +481,7 @@
       },
       "selected_soft": {
         "$type": "color",
-        "$value": "{bb.color.blue-dark.600}"
+        "$value": "{bb.color.steel-blue-dark.100"
       },
       "danger": {
         "$type": "color",
