@@ -542,7 +542,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-thumb: #51555c;
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
-.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-light {
+.sky-theme-modern.sky-theme-brand-base:not(.sky-theme-mode-dark) {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-blue-100);
   --sky-color-background-action-accent-base: var(--bb-color-white);
@@ -843,7 +843,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-elevation-overlay-simple-100: var(--bb-shadow-gray-simple-400);
   --sky-elevation-raised-100: var(--bb-shadow-gray-100);
 }
-:root:has(body.sky-theme-modern.sky-theme-brand-base.sky-theme-mode-light) {
+:root:has(body.sky-theme-modern.sky-theme-brand-base:not(.sky-theme-mode-dark)) {
   --sky-color-scrollbar-thumb: var(--bb-color-scrollbar-base-light-thumb);
   --sky-color-scrollbar-track: var(--bb-color-scrollbar-base-light-track);
 }
@@ -2435,7 +2435,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-thumb: #51555c;
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
-.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud.sky-theme-mode-light {
+.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud:not(.sky-theme-mode-dark) {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-base: var(--bb-color-blue-25);
   --sky-color-background-container-backdrop: var(--bb-color-slate-200);
