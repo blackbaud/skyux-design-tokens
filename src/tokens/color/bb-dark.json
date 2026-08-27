@@ -893,20 +893,20 @@
     "illustration": {
       "stroke": {
         "$type": "color",
-        "$value": "{bb.color.steel-gray.300}"
+        "$value": "{bb.color.teal-dark.100}"
       },
       "fill": {
         "heavy": {
           "$type": "color",
-          "$value": "{bb.color.green.700}"
+          "$value": "{bb.color.teal-dark.600}"
         },
         "soft": {
           "$type": "color",
-          "$value": "{bb.color.green.900}"
+          "$value": "{bb.color.teal-dark.800}"
         },
         "softest": {
           "$type": "color",
-          "$value": "{bb.color.gray.900}"
+          "$value": "{bb.color.steel-gray.1100}"
         }
       }
     },
