@@ -11,6 +11,7 @@ test('should have token sets in the correct format', () => {
   expect(tokenSets[0].path).toEqual('base-blackbaud.json');
   expect({
     name: 'base-light',
+    selector: ':not(.sky-theme-mode-dark)',
     path: 'color/base-light.json',
   }).toBeOneOf(tokenSets[0].referenceTokens);
   expect({
@@ -30,6 +31,7 @@ test('should have token sets in the correct format', () => {
   expect(tokenSets[1].path).toEqual('base-blackbaud.json');
   expect({
     name: 'bb-light',
+    selector: ':not(.sky-theme-mode-dark)',
     path: 'color/bb-light.json',
   }).toBeOneOf(tokenSets[1].referenceTokens);
   expect({
