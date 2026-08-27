@@ -867,7 +867,7 @@
     "illustration": {
       "stroke": {
         "$type": "color",
-        "$value": "{bb.color.green.200}"
+        "$value": "{bb.color.steel-gray.300}"
       },
       "fill": {
         "heavy": {
