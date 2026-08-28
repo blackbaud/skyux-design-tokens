@@ -24,6 +24,40 @@
               ]
             },
             {
+              "name": "Overlay container border",
+              "description": "Borders of containers that use elevation to define their boundary instead of a default container border.",
+              "groups": [
+                {
+                  "name": "Overlay container border top",
+                  "className": "sky-theme-border-container-overlay",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-container-overlay)"
+                  }
+                },
+                {
+                  "name": "Overlay container border right",
+                  "className": "sky-theme-border-container-overlay",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-container-overlay)"
+                  }
+                },
+                {
+                  "name": "Overlay container border bottom",
+                  "className": "sky-theme-border-container-overlay",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-container-overlay)"
+                  }
+                },
+                {
+                  "name": "Overlay container border left",
+                  "className": "sky-theme-border-container-overlay",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-container-overlay)"
+                  }
+                }
+              ]
+            },
+            {
               "name": "Prominent container header border",
               "className": "sky-theme-border-container-header-prominent",
               "description": "The bottom border for the header on a prominent container.",

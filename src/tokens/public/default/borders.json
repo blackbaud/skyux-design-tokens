@@ -6,6 +6,10 @@
           "$type": "border",
           "$value": "1px solid #cdcfd2"
         },
+        "overlay": {
+          "$type": "border",
+          "$value": "1px none #cdcfd2"
+        },
         "header": {
           "prominent": {
             "$type": "border",
