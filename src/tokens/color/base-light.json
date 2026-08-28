@@ -97,6 +97,10 @@
         "$type": "color",
         "$value": "{bb.color.white}"
       },
+      "on_status_bg": {
+        "$type": "color",
+        "$value": "{bb.color.gray.1000}"
+      },
       "input": {
         "action": {
           "$type": "color",
