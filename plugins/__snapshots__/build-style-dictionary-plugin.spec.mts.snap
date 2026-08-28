@@ -2978,6 +2978,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 .sky-theme-modern.sky-theme-brand-base {
   --sky-theme-border-container-default: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base);
   --sky-theme-border-container-header-prominent: var(--sky-border-width-emphasized) var(--sky-border-style-divider) var(--sky-color-border-container-header-prominent);
+  --sky-theme-border-container-overlay: var(--sky-border-width-container-base) var(--sky-border-style-container-overlay) var(--sky-color-border-container-base);
   --sky-theme-border-danger: var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-danger);
   --sky-theme-border-divider-default: var(--sky-border-width-divider) var(--sky-border-style-divider) var(--sky-color-border-divider);
   --sky-theme-border-divider-soft: var(--sky-border-width-separator-row) var(--sky-border-style-separator-row) var(--sky-color-border-separator-row);
@@ -2990,6 +2991,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-radius-s: var(--sky-border-radius-s);
   --sky-theme-border-radius-xs: var(--sky-border-radius-xs);
   --sky-theme-border-style-accent: var(--sky-border-style-accent);
+  --sky-theme-border-style-container-overlay: var(--sky-border-style-container-overlay);
   --sky-theme-border-style-divider-default: var(--sky-border-style-divider);
   --sky-theme-border-style-divider-soft: var(--sky-border-style-separator-row);
   --sky-theme-border-width-accent: var(--sky-border-width-accent);
@@ -3210,6 +3212,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
 :root {
   --sky-theme-border-container-default: 1px solid #cdcfd2;
   --sky-theme-border-container-header-prominent: 1px solid #7289AF;
+  --sky-theme-border-container-overlay: 1px none #cdcfd2;
   --sky-theme-border-danger: 1px solid #ef4044;
   --sky-theme-border-divider-default: 1px solid #cdcfd2;
   --sky-theme-border-divider-soft: 1px solid #cdcfd2;
@@ -3220,6 +3223,7 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-radius-s: 4px;
   --sky-theme-border-radius-xs: 4px;
   --sky-theme-border-style-accent: solid;
+  --sky-theme-border-style-container-overlay: none;
   --sky-theme-border-style-divider-default: solid;
   --sky-theme-border-style-divider-soft: solid;
   --sky-theme-border-success: 1px solid #72bf44;
