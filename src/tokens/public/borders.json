@@ -79,6 +79,12 @@
         "accent": {
           "$type": "other",
           "$value": "{border.style.accent}"
+        },
+        "container": {
+          "overlay": {
+            "$type": "other",
+            "$value": "{border.style.container.overlay}"
+          }
         }
       },
       "radius": {

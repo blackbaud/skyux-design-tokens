@@ -79,6 +79,12 @@
         "accent": {
           "$type": "other",
           "$value": "solid"
+        },
+        "container": {
+          "overlay": {
+            "$type": "other",
+            "$value": "none"
+          }
         }
       },
       "radius": {
