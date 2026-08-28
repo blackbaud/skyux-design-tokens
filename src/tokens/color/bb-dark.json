@@ -99,6 +99,10 @@
         "$type": "color",
         "$value": "{bb.color.white}"
       },
+      "on_status_bg": {
+        "$type": "color",
+        "$value": "{bb.color.steel-gray.1100}"
+      },
       "input": {
         "action": {
           "$type": "color",
