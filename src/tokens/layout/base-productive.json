@@ -1104,6 +1104,52 @@
           "$type": "textDecoration",
           "$value": "none"
         }
+      },
+      "standalone_link": {
+        "base": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "hover": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "active": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "focus": {
+          "$type": "textDecoration",
+          "$value": "none"
+        },
+        "disabled": {
+          "$type": "textDecoration",
+          "$value": "none"
+        }
+      },
+      "action": {
+        "tertiary": {
+          "base": {
+            "$type": "textDecoration",
+            "$value": "none"
+          },
+          "hover": {
+            "$type": "textDecoration",
+            "$value": "none"
+          },
+          "active": {
+            "$type": "textDecoration",
+            "$value": "none"
+          },
+          "focus": {
+            "$type": "textDecoration",
+            "$value": "none"
+          },
+          "disabled": {
+            "$type": "textDecoration",
+            "$value": "none"
+          }
+        }
       }
     },
     "text_transform": {
