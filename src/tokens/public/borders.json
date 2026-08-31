@@ -6,6 +6,10 @@
           "$type": "border",
           "$value": "var(--sky-border-width-container-base) var(--sky-border-style-divider) var(--sky-color-border-container-base)"
         },
+        "overlay": {
+          "$type": "border",
+          "$value": "var(--sky-border-width-container-base) var(--sky-border-style-container-overlay) var(--sky-color-border-container-base)"
+        },
         "header": {
           "prominent": {
             "$type": "border",
@@ -79,6 +83,12 @@
         "accent": {
           "$type": "other",
           "$value": "{border.style.accent}"
+        },
+        "container": {
+          "overlay": {
+            "$type": "other",
+            "$value": "{border.style.container.overlay}"
+          }
         }
       },
       "radius": {
