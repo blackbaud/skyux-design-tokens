@@ -1,8 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`build styles > should generate the correct base, blackbaud, and modern styles 1`] = `undefined`;
-
-exports[`build styles > should generate the correct base, blackbaud, and modern styles 2`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 1`] = `
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
@@ -1915,7 +1913,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
 "
 `;
 
-exports[`build styles > should generate the correct base, blackbaud, and modern styles 3`] = `
+exports[`build styles > should generate the correct base, blackbaud, and modern styles 2`] = `
 "@property --bb-image-logo-primary-src {
   syntax: '<url>';
   inherits: true;
@@ -3723,6 +3721,18 @@ em {
 }
 .sky-theme-border-container-header-prominent {
   border-bottom: var(--sky-theme-border-container-header-prominent);
+}
+.sky-theme-border-container-overlay-top {
+  border-top: var(--sky-theme-border-container-overlay);
+}
+.sky-theme-border-container-overlay-right {
+  border-right: var(--sky-theme-border-container-overlay);
+}
+.sky-theme-border-container-overlay-bottom {
+  border-bottom: var(--sky-theme-border-container-overlay);
+}
+.sky-theme-border-container-overlay-left {
+  border-left: var(--sky-theme-border-container-overlay);
 }
 .sky-theme-border-divider-default-top {
   border-top: var(--sky-theme-border-divider-default);
