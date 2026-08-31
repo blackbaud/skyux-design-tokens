@@ -1364,7 +1364,7 @@
       "primary": {
         "src": {
           "$type": "other",
-          "$value": "{bb.image.logo.primary.src}"
+          "$value": "{bb.image.logo.primary.white.src}"
         }
       }
     },
