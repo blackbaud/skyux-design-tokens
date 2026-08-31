@@ -1,5 +1,20 @@
 # Changelog
 
+## [6.9.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.8.0...6.9.0) (2026-08-31)
+
+
+### Features
+
+* add additional decoration definitions for dark mode ([#453](https://github.com/blackbaud/skyux-design-tokens/issues/453)) ([05bca0e](https://github.com/blackbaud/skyux-design-tokens/commit/05bca0eb85e49e48de42ea1d3fbb564becce69e5))
+* add icon color on_status_bg ([#444](https://github.com/blackbaud/skyux-design-tokens/issues/444)) ([fdd249a](https://github.com/blackbaud/skyux-design-tokens/commit/fdd249a7d50f018975c087757e5d9eca9258aaeb))
+* add public overlay border properties and classes ([#448](https://github.com/blackbaud/skyux-design-tokens/issues/448)) ([4ab7863](https://github.com/blackbaud/skyux-design-tokens/commit/4ab7863f6354dcc9a0b25cb7b9ac553035eae8f4))
+* add white blackbaud logo for dark mode ([#450](https://github.com/blackbaud/skyux-design-tokens/issues/450)) ([50221eb](https://github.com/blackbaud/skyux-design-tokens/commit/50221ebc139e2b601dd95d1ace57f5e98df89c8f))
+
+
+### Bug Fixes
+
+* dark mode selection color updates ([#443](https://github.com/blackbaud/skyux-design-tokens/issues/443)) ([f63e5e5](https://github.com/blackbaud/skyux-design-tokens/commit/f63e5e5568e543e9064d43b175dd7a86c0d71ac1))
+
 ## [7.0.0-alpha.8](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.7...7.0.0-alpha.8) (2026-08-27)
 
 
