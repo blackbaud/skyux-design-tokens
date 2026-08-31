@@ -1186,11 +1186,21 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-font-style-hint-m-weight: 400;
   --sky-font-style-hint-s-style: italic;
   --sky-font-style-hint-s-weight: 400;
+  --sky-font-text_decoration-action-tertiary-active: none;
+  --sky-font-text_decoration-action-tertiary-base: none;
+  --sky-font-text_decoration-action-tertiary-disabled: none;
+  --sky-font-text_decoration-action-tertiary-focus: none;
+  --sky-font-text_decoration-action-tertiary-hover: none;
   --sky-font-text_decoration-inline_link-active: underline;
   --sky-font-text_decoration-inline_link-base: none;
   --sky-font-text_decoration-inline_link-disabled: none;
   --sky-font-text_decoration-inline_link-focus: none;
   --sky-font-text_decoration-inline_link-hover: underline;
+  --sky-font-text_decoration-standalone_link-active: none;
+  --sky-font-text_decoration-standalone_link-base: none;
+  --sky-font-text_decoration-standalone_link-disabled: none;
+  --sky-font-text_decoration-standalone_link-focus: none;
+  --sky-font-text_decoration-standalone_link-hover: none;
   --sky-font-text_decoration-visible_link: underline;
   --sky-space-gap-action_group-0: 0rem;
   --sky-space-gap-form-0: 0rem;
@@ -1914,7 +1924,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-type-input-val: var(--sky-font-style-body-s) var(--sky-font-size-input-val)/20 'var(--bb-font-blkb_sans-name)';
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+  --sky-font-text_decoration-action-tertiary-active: underline;
+  --sky-font-text_decoration-action-tertiary-base: underline;
+  --sky-font-text_decoration-action-tertiary-focus: underline;
+  --sky-font-text_decoration-action-tertiary-hover: underline;
   --sky-font-text_decoration-inline_link-base: underline;
+  --sky-font-text_decoration-inline_link-focus: underline;
   --sky-border-style-container-overlay: var(--bb-border-style-solid);
 }
 "
