@@ -16,6 +16,11 @@
               "customProperty": "--sky-theme-border-container-default"
             },
             {
+              "name": "Overlay container",
+              "description": "The border that defines the edges of containers that use elevation to define their boundary instead of a default container border.",
+              "customProperty": "--sky-theme-border-container-overlay"
+            },
+            {
               "name": "Prominent header border",
               "description": "The bottom border for the header on a prominent container.",
               "customProperty": "--sky-theme-border-container-header-prominent"
@@ -124,6 +129,11 @@
               "name": "Accent border style",
               "customProperty": "--sky-theme-border-style-accent",
               "description": "The style of a border that highlights an element with a status border in the visual hierarchy."
+            },
+            {
+              "name": "Overlay border style",
+              "customProperty": "--sky-theme-border-style-container-overlay",
+              "description": "The style of a border that defines the edges of containers that use elevation to define their boundary instead of a typical container border."
             }
           ]
         },

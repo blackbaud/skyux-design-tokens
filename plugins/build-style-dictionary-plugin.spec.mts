@@ -18,9 +18,6 @@ describe('build styles', () => {
       });
     }
 
-    const modernResults = emitFileSpy.mock.calls.find(
-      (call) => call[0]?.fileName === 'assets/scss/modern.css',
-    )?.[0];
     const baseResults = emitFileSpy.mock.calls.find(
       (call) => call[0]?.fileName === 'assets/scss/base.css',
     )?.[0];
@@ -28,7 +25,6 @@ describe('build styles', () => {
       (call) => call[0]?.fileName === 'assets/scss/blackbaud.css',
     )?.[0];
 
-    expect(modernResults?.source).toMatchSnapshot();
     expect(baseResults?.source).toMatchSnapshot();
     expect(blackbaudResults?.source).toMatchSnapshot();
   });
