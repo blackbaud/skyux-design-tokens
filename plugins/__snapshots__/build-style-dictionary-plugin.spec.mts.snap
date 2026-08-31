@@ -9,6 +9,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   initial-value: url('data:,');
 }
 
+@property --bb-image-logo-primary-white-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
 @property --bb-image-select_icon-base-dark-src {
   syntax: '<url>';
   inherits: true;
@@ -420,6 +426,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
   --bb-image-logo-primary-src: url('../images/bb-logo.png');
+  --bb-image-logo-primary-white-src: url('../images/bb-logo-white.png');
   --bb-image-select_icon-base-dark-src: url('../images/chevron_up_down_20_fill-base-dark.svg');
   --bb-image-select_icon-base-light-src: url('../images/chevron_up_down_20_fill-base-light.svg');
   --bb-image-select_icon-bb-dark-src: url('../images/chevron_up_down_20_fill-bb-dark.svg');
@@ -1096,7 +1103,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-sequence-7: var(--bb-color-teal-400);
   --sky-color-viz-sequence-8: var(--bb-color-teal-300);
   --sky-color-viz-sequence-9: var(--bb-color-teal-200);
-  --sky-image-logo-primary-src: var(--bb-image-logo-primary-src);
+  --sky-image-logo-primary-src: var(--bb-image-logo-primary-white-src);
   --sky-image-select_icon-base: var(--bb-image-select_icon-base-dark-src);
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-base-dark-src);
   --sky-opacity-wait: var(--bb-opacity-600);
@@ -1920,6 +1927,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   initial-value: url('data:,');
 }
 
+@property --bb-image-logo-primary-white-src {
+  syntax: '<url>';
+  inherits: true;
+  initial-value: url('data:,');
+}
+
 @property --bb-image-select_icon-base-dark-src {
   syntax: '<url>';
   inherits: true;
@@ -2331,6 +2344,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-font-weight-regular: 400;
   --bb-font-weight-semibold: 600;
   --bb-image-logo-primary-src: url('../images/bb-logo.png');
+  --bb-image-logo-primary-white-src: url('../images/bb-logo-white.png');
   --bb-image-select_icon-base-dark-src: url('../images/chevron_up_down_20_fill-base-dark.svg');
   --bb-image-select_icon-base-light-src: url('../images/chevron_up_down_20_fill-base-light.svg');
   --bb-image-select_icon-bb-dark-src: url('../images/chevron_up_down_20_fill-bb-dark.svg');
