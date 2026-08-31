@@ -15,6 +15,30 @@
         "base": {
           "$type": "textDecoration",
           "$value": "underline"
+        },
+        "focus": {
+          "$type": "textDecoration",
+          "$value": "underline"
+        }
+      },
+      "action": {
+        "tertiary": {
+          "base": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          },
+          "hover": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          },
+          "active": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          },
+          "focus": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
         }
       }
     }
