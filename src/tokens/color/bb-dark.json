@@ -82,7 +82,7 @@
       "input": {
         "action": {
           "$type": "color",
-          "$value": "{bb.color.oklch-blue.375}"
+          "$value": "{bb.color.blue-dark.400}"
         }
       },
       "on_prominent": {
