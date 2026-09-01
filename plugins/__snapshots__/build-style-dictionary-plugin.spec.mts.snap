@@ -581,6 +581,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-secondary-base: var(--bb-color-white);
   --sky-color-background-action-secondary-focus: var(--bb-color-white);
   --sky-color-background-action-secondary-hover: var(--bb-color-blue-50);
+  --sky-color-background-action-secondary-on_scrim-active: var(--bb-color-blue-100);
+  --sky-color-background-action-secondary-on_scrim-base: var(--bb-color-white);
+  --sky-color-background-action-secondary-on_scrim-focus: var(--bb-color-white);
+  --sky-color-background-action-secondary-on_scrim-hover: var(--bb-color-blue-50);
   --sky-color-background-action-tertiary-active: var(--bb-color-blue-100);
   --sky-color-background-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
@@ -805,6 +809,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-input-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-primary-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-secondary-disabled: var(--sky-color-background-disabled);
+  --sky-color-background-action-secondary-on_scrim-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-tertiary-disabled: var(--sky-color-background-disabled);
   --sky-color-background-input-disabled: var(--sky-color-background-disabled);
   --sky-color-background-nav-disabled: var(--sky-color-background-disabled);
@@ -890,6 +895,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-secondary-base: var(--bb-color-gray-800);
   --sky-color-background-action-secondary-focus: var(--bb-color-gray-700);
   --sky-color-background-action-secondary-hover: var(--bb-color-gray-700);
+  --sky-color-background-action-secondary-on_scrim-active: var(--bb-color-gray-600);
+  --sky-color-background-action-secondary-on_scrim-base: var(--bb-color-gray-800);
+  --sky-color-background-action-secondary-on_scrim-focus: var(--bb-color-gray-800);
+  --sky-color-background-action-secondary-on_scrim-hover: var(--bb-color-gray-700);
   --sky-color-background-action-tertiary-active: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
@@ -1112,6 +1121,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-input-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-primary-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-secondary-disabled: var(--sky-color-background-disabled);
+  --sky-color-background-action-secondary-on_scrim-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-tertiary-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-tertiary-on_prominent-disabled: var(--sky-color-background-disabled);
   --sky-color-background-input-disabled: var(--sky-color-background-disabled);
@@ -2591,6 +2601,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-secondary-disabled: var(--bb-color-steel-gray-700);
   --sky-color-background-action-secondary-focus: var(--bb-color-transparent);
   --sky-color-background-action-secondary-hover: var(--bb-color-rgba-steel-gray-100-10);
+  --sky-color-background-action-secondary-on_scrim-active: var(--bb-color-steel-gray-800);
+  --sky-color-background-action-secondary-on_scrim-base: var(--bb-color-steel-gray-1000);
+  --sky-color-background-action-secondary-on_scrim-focus: var(--bb-color-steel-gray-1000);
+  --sky-color-background-action-secondary-on_scrim-hover: var(--bb-color-steel-gray-900);
   --sky-color-background-action-tertiary-active: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-disabled: var(--bb-color-gray-700);
@@ -2772,6 +2786,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-bb-dark-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-color-background-action-accent-disabled: var(--sky-color-background-disabled);
+  --sky-color-background-action-secondary-on_scrim-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-tertiary-on_prominent-disabled: var(--sky-color-background-disabled);
   --sky-color-border-action-accent-base: var(--bb-color-gradient-brand-secondary);
   --sky-color-border-action-tertiary-on_prominent-disabled: var(--sky-color-border-disabled);
