@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.10.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.9.0...6.10.0) (2026-09-01)
+
+
+### Features
+
+* action.secondary.on_scrim background colors ([#465](https://github.com/blackbaud/skyux-design-tokens/issues/465)) ([8531357](https://github.com/blackbaud/skyux-design-tokens/commit/853135794e04a217812750a383a75fa2d361a6a0))
+* add on_status tokens for public API ([#458](https://github.com/blackbaud/skyux-design-tokens/issues/458)) ([96864b1](https://github.com/blackbaud/skyux-design-tokens/commit/96864b1c36ffaf91d55863ded4142b8e07ec5c2a))
+* all interactive states for on status buttons ([#469](https://github.com/blackbaud/skyux-design-tokens/issues/469)) ([ea14514](https://github.com/blackbaud/skyux-design-tokens/commit/ea14514465a7a2fd7e451cf3fecfbc37ae12c730))
+
+
+### Bug Fixes
+
+* flat background color for input box in dark mode ([#463](https://github.com/blackbaud/skyux-design-tokens/issues/463)) ([66d9fd5](https://github.com/blackbaud/skyux-design-tokens/commit/66d9fd505c5cc6cf6e39f3ed042e21f12122c5f2))
+* update dark mode HTML select chevron icon colors ([#457](https://github.com/blackbaud/skyux-design-tokens/issues/457)) ([caee3c4](https://github.com/blackbaud/skyux-design-tokens/commit/caee3c47478c70dce4c892b5618d586f24fe3555))
+* update disabled states in dark mode ([#461](https://github.com/blackbaud/skyux-design-tokens/issues/461)) ([327fb21](https://github.com/blackbaud/skyux-design-tokens/commit/327fb2124ec2955eb8abcf697f72c8b2408f7562))
+
 ## [6.9.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.8.0...6.9.0) (2026-08-31)
 
 
