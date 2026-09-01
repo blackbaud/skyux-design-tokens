@@ -653,7 +653,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-input-base: var(--bb-color-gray-300);
   --sky-color-border-action-input-focus: var(--bb-color-blue-600);
   --sky-color-border-action-input-hover: var(--bb-color-blue-600);
+  --sky-color-border-action-on_status-active: var(--bb-color-gray-1000);
+  --sky-color-border-action-on_status-base: var(--bb-color-transparent);
   --sky-color-border-action-on_status-focus: var(--bb-color-gray-1000);
+  --sky-color-border-action-on_status-hover: var(--bb-color-gray-1000);
   --sky-color-border-action-primary-active: var(--bb-color-blue-1000);
   --sky-color-border-action-primary-base: var(--bb-color-blue-600);
   --sky-color-border-action-primary-focus: var(--bb-color-blue-1000);
@@ -821,6 +824,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-accent-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-danger-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-input-disabled: var(--sky-color-border-disabled);
+  --sky-color-border-action-on_status-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-primary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-secondary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-tertiary-disabled: var(--sky-color-border-disabled);
@@ -968,7 +972,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-input-base: var(--bb-color-blue-400);
   --sky-color-border-action-input-focus: var(--bb-color-blue-600);
   --sky-color-border-action-input-hover: var(--bb-color-blue-600);
+  --sky-color-border-action-on_status-active: var(--bb-color-gray-1000);
+  --sky-color-border-action-on_status-base: var(--bb-color-transparent);
   --sky-color-border-action-on_status-focus: var(--bb-color-gray-1000);
+  --sky-color-border-action-on_status-hover: var(--bb-color-gray-1000);
   --sky-color-border-action-primary-active: var(--bb-color-blue-dark-100);
   --sky-color-border-action-primary-base: var(--bb-color-blue-dark-375);
   --sky-color-border-action-primary-focus: var(--bb-color-blue-dark-100);
@@ -1136,6 +1143,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-accent-disabled: var(--sky-color-background-disabled);
   --sky-color-border-action-danger-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-input-disabled: var(--sky-color-border-disabled);
+  --sky-color-border-action-on_status-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-primary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-secondary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-tertiary-disabled: var(--sky-color-border-disabled);
