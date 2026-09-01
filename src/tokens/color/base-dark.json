@@ -40,6 +40,10 @@
       "on_status": {
         "$type": "color",
         "$value": "{bb.color.gray.1000}"
+      },
+      "action_on_status": {
+        "$type": "color",
+        "$value": "{bb.color.gray.1000}"
       }
     },
     "icon": {
@@ -722,6 +726,12 @@
           "disabled": {
             "$type": "color",
             "$value": "{color.background.disabled}"
+          }
+        },
+        "on_status": {
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.gray.1000}"
           }
         }
       },

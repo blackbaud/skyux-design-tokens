@@ -114,6 +114,16 @@
                   "customProperty": "--sky-theme-color-border-divider-soft"
                 }
               ]
+            },
+            {
+              "groupName": "Other",
+              "tokens": [
+                {
+                  "name": "Focus border for action text on status background",
+                  "customProperty": "--sky-theme-color-border-action-on_status-focus",
+                  "description": "The color of a focus-visible border for action text on status backgrounds."
+                }
+              ]
             }
           ]
         },
@@ -153,7 +163,7 @@
             {
               "name": "Action contrast text",
               "customProperty": "--sky-theme-color-text-action_contrast",
-              "description": "The color for links and link buttons on backgrounds that require more color contrast to meet accessibility success criteria, such as status containers."
+              "description": "The color for links and link buttons on backgrounds that require more color contrast to meet accessibility success criteria."
             },
             {
               "name": "Inverse text",
@@ -169,6 +179,14 @@
               "name": "Text on status background",
               "customProperty": "--sky-theme-color-text-on_status",
               "description": "The color for text on status background colors.",
+              "demoMetadata": {
+                "background": "--sky-theme-color-background-container-success"
+              }
+            },
+            {
+              "name": "Action text on status background",
+              "customProperty": "--sky-theme-color-text-action_on_status",
+              "description": "The color for text in links and link buttons on status background colors.",
               "demoMetadata": {
                 "background": "--sky-theme-color-background-container-success"
               }
@@ -211,6 +229,14 @@
                   "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
                   "demoMetadata": {
                     "background": "--sky-theme-color-background-icon_matte-action-heavy"
+                  }
+                },
+                {
+                  "name": "Icon on status background",
+                  "customProperty": "--sky-theme-color-icon-on_status_bg",
+                  "description": "The color for icons on status backgrounds.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-success"
                   }
                 },
                 {
