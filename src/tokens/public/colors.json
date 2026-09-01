@@ -117,6 +117,14 @@
         "warning": {
           "$type": "color",
           "$value": "{color.border.warning}"
+        },
+        "action": {
+          "on_status": {
+            "focus": {
+              "$type": "color",
+              "$value": "{color.border.action.on_status.focus}"
+            }
+          }
         }
       },
       "text": {
@@ -151,6 +159,10 @@
         "on_status": {
           "$type": "color",
           "$value": "{color.text.on_status}"
+        },
+        "action_on_status": {
+          "$type": "color",
+          "$value": "{color.text.action_on_status}"
         }
       },
       "icon": {
@@ -195,6 +207,10 @@
         "on_status": {
           "$type": "color",
           "$value": "{color.icon.on_status}"
+        },
+        "on_status_bg": {
+          "$type": "color",
+          "$value": "{color.icon.on_status_bg}"
         }
       },
       "classify": {
