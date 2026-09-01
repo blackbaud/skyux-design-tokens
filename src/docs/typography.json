@@ -583,6 +583,22 @@
           ]
         },
         {
+          "groupName": "Other",
+          "groups": [
+            {
+              "groupName": "Text decoration",
+              "description": "Use in rare cases to decorate action text when underlines are necessary for accessibility.",
+              "tokens": [
+                {
+                  "name": "Action text on status background",
+                  "customProperty": "--sky-theme-font-text_decoration-action-on_status",
+                  "cssProperty": "text-decoration"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "groupName": "Deprecated typography",
           "tokens": [
             {

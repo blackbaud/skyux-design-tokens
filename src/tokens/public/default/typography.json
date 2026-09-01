@@ -372,6 +372,14 @@
             "$value": "inherit"
           }
         }
+      },
+      "text_decoration": {
+        "action": {
+          "on_status": {
+            "$type": "textDecoration",
+            "$value": "underline"
+          }
+        }
       }
     }
   }
