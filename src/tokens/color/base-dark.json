@@ -729,9 +729,25 @@
           }
         },
         "on_status": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.transparent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.gray.1000}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.gray.1000}"
+          },
           "focus": {
             "$type": "color",
             "$value": "{bb.color.gray.1000}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.border.disabled}"
           }
         }
       },
