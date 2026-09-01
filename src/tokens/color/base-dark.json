@@ -180,6 +180,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{color.background.disabled}"
+          },
+          "on_scrim": {
+            "base": {
+              "$type": "color",
+              "$value": "{bb.color.gray.800}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{bb.color.gray.700}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{bb.color.gray.600}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{bb.color.gray.800}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{color.background.disabled}"
+            }
           }
         },
         "tertiary": {
