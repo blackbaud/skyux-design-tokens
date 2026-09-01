@@ -2633,7 +2633,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-icon_matte-info: var(--bb-color-blue-dark-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-dark-700);
   --sky-color-background-icon_matte-warning: var(--bb-color-yellow-dark-600);
-  --sky-color-background-input-base: var(--bb-color-rgba-white-5);
+  --sky-color-background-input-base: var(--bb-color-steel-gray-1000);
   --sky-color-background-input-disabled: var(--bb-color-gray-700);
   --sky-color-background-nav-active: var(--bb-color-transparent);
   --sky-color-background-nav-base: var(--bb-color-transparent);
