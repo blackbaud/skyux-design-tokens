@@ -117,6 +117,14 @@
         "warning": {
           "$type": "color",
           "$value": "#fbb034"
+        },
+        "action": {
+          "on_status": {
+            "focus": {
+              "$type": "color",
+              "$value": "#212327"
+            }
+          }
         }
       },
       "text": {
@@ -149,6 +157,10 @@
           "$value": "#ffffff"
         },
         "on_status": {
+          "$type": "color",
+          "$value": "#212327"
+        },
+        "action_on_status": {
           "$type": "color",
           "$value": "#212327"
         }
@@ -195,6 +207,10 @@
         "on_status": {
           "$type": "color",
           "$value": "#ffffff"
+        },
+        "on_status_bg": {
+          "$type": "color",
+          "$value": "#212327"
         }
       },
       "classify": {

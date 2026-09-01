@@ -372,6 +372,14 @@
             "$value": "{font.letter_spacing.hint.s}"
           }
         }
+      },
+      "text_decoration": {
+        "action": {
+          "on_status": {
+            "$type": "textDecoration",
+            "$value": "{font.text_decoration.action.tertiary.on_status.base}"
+          }
+        }
       }
     }
   }
