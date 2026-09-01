@@ -591,8 +591,8 @@
               "tokens": [
                 {
                   "name": "Action text on status background",
-                  "customProperty": "--sky-theme-font-text_decoration-base",
-                  "cssProperty": "text_decoration"
+                  "customProperty": "--sky-theme-font-text_decoration-action-on_status",
+                  "cssProperty": "text-decoration"
                 }
               ]
             }

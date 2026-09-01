@@ -376,26 +376,8 @@
       "text_decoration": {
         "action": {
           "on_status": {
-            "base": {
-              "$type": "textDecoration",
-              "$value": "{font.text_decoration.action.tertiary.on_status.base}"
-            },
-            "hover": {
-              "$type": "textDecoration",
-              "$value": "{font.text_decoration.action.tertiary.on_status.hover}"
-            },
-            "active": {
-              "$type": "textDecoration",
-              "$value": "{font.text_decoration.action.tertiary.on_status.active}"
-            },
-            "focus": {
-              "$type": "textDecoration",
-              "$value": "{font.text_decoration.action.tertiary.on_status.focus}"
-            },
-            "disabled": {
-              "$type": "textDecoration",
-              "$value": "{font.text_decoration.action.tertiary.on_status.disabled}"
-            }
+            "$type": "textDecoration",
+            "$value": "{font.text_decoration.action.tertiary.on_status.base}"
           }
         }
       }

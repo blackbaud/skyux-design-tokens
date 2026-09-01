@@ -376,26 +376,8 @@
       "text_decoration": {
         "action": {
           "on_status": {
-            "base": {
-              "$type": "textDecoration",
-              "$value": "underline"
-            },
-            "hover": {
-              "$type": "textDecoration",
-              "$value": "underline"
-            },
-            "active": {
-              "$type": "textDecoration",
-              "$value": "underline"
-            },
-            "focus": {
-              "$type": "textDecoration",
-              "$value": "underline"
-            },
-            "disabled": {
-              "$type": "textDecoration",
-              "$value": "none"
-            }
+            "$type": "textDecoration",
+            "$value": "underline"
           }
         }
       }
