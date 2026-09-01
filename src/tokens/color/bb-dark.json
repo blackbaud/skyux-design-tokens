@@ -182,6 +182,28 @@
           "disabled": {
             "$type": "color",
             "$value": "{bb.color.steel-gray.700}"
+          },
+          "on_scrim": {
+            "base": {
+              "$type": "color",
+              "$value": "{bb.color.steel-gray.1000}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{bb.color.steel-gray.900}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{bb.color.steel-gray.800}"
+            },
+            "focus": {
+              "$type": "color",
+              "$value": "{bb.color.steel-gray.1000}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{color.background.disabled}"
+            }
           }
         },
         "tertiary": {
