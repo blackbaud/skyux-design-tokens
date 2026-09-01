@@ -9,6 +9,15 @@
             },
             "$type": "other",
             "$value": "~/assets/images/bb-logo.png"
+          },
+          "white": {
+            "src": {
+              "$extensions": {
+                "com.blackbaud.developer.sky-token-format": "url"
+              },
+              "$type": "other",
+              "$value": "~/assets/images/bb-logo-white.png"
+            }
           }
         }
       },

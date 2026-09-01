@@ -31,6 +31,42 @@
                 "border-bottom": "var(--sky-theme-border-container-header-prominent)"
               }
             }
+          ],
+          "groups": [
+            {
+              "name": "Overlay container border",
+              "description": "Borders of containers that use elevation to define their boundary instead of a default container border.",
+              "styles": [
+                {
+                  "name": "Overlay container border top",
+                  "className": "sky-theme-border-container-overlay-top",
+                  "properties": {
+                    "border-top": "var(--sky-theme-border-container-overlay)"
+                  }
+                },
+                {
+                  "name": "Overlay container border right",
+                  "className": "sky-theme-border-container-overlay-right",
+                  "properties": {
+                    "border-right": "var(--sky-theme-border-container-overlay)"
+                  }
+                },
+                {
+                  "name": "Overlay container border bottom",
+                  "className": "sky-theme-border-container-overlay-bottom",
+                  "properties": {
+                    "border-bottom": "var(--sky-theme-border-container-overlay)"
+                  }
+                },
+                {
+                  "name": "Overlay container border left",
+                  "className": "sky-theme-border-container-overlay-left",
+                  "properties": {
+                    "border-left": "var(--sky-theme-border-container-overlay)"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
