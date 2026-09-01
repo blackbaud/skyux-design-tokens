@@ -82,7 +82,7 @@
       "input": {
         "action": {
           "$type": "color",
-          "$value": "{bb.color.blue-dark.400}"
+          "$value": "{bb.color.oklch-blue.375}"
         }
       },
       "on_prominent": {
@@ -364,7 +364,7 @@
       "input": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.rgba.white.5}"
+          "$value": "{bb.color.steel-gray.1000}"
         },
         "disabled": {
           "$type": "color",
