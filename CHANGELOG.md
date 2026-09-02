@@ -1,5 +1,21 @@
 # Changelog
 
+## [7.0.0-alpha.10](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.9...7.0.0-alpha.10) (2026-09-02)
+
+
+### Features
+
+* action.secondary.on_scrim background colors ([#465](https://github.com/blackbaud/skyux-design-tokens/issues/465)) ([#466](https://github.com/blackbaud/skyux-design-tokens/issues/466)) ([0e9e50d](https://github.com/blackbaud/skyux-design-tokens/commit/0e9e50defc2e97bce1169b912efd3c84241a486f))
+* add on_status tokens for public API ([#458](https://github.com/blackbaud/skyux-design-tokens/issues/458)) ([#468](https://github.com/blackbaud/skyux-design-tokens/issues/468)) ([dc70fec](https://github.com/blackbaud/skyux-design-tokens/commit/dc70fecfb7c9a437f38d89525cbc4153fc265e5a))
+* all interactive states for on status buttons ([#469](https://github.com/blackbaud/skyux-design-tokens/issues/469)) ([#470](https://github.com/blackbaud/skyux-design-tokens/issues/470)) ([b9e3aec](https://github.com/blackbaud/skyux-design-tokens/commit/b9e3aec5cf4c72bc3bd9e5cc6396609c10332bbf))
+
+
+### Bug Fixes
+
+* flat background color for input box in dark mode ([#463](https://github.com/blackbaud/skyux-design-tokens/issues/463)) ([#464](https://github.com/blackbaud/skyux-design-tokens/issues/464)) ([32790d0](https://github.com/blackbaud/skyux-design-tokens/commit/32790d065bc138cdceb3b1b3027f77fd66314d3a))
+* update dark mode HTML select chevron icon colors ([#457](https://github.com/blackbaud/skyux-design-tokens/issues/457)) ([#460](https://github.com/blackbaud/skyux-design-tokens/issues/460)) ([2d36cf6](https://github.com/blackbaud/skyux-design-tokens/commit/2d36cf664eab9438f8f162d532be51db955b9df8))
+* update disabled states in dark mode ([#461](https://github.com/blackbaud/skyux-design-tokens/issues/461)) ([#467](https://github.com/blackbaud/skyux-design-tokens/issues/467)) ([276205d](https://github.com/blackbaud/skyux-design-tokens/commit/276205dc3a96446ace17e899d6c2c6a7d2009b56))
+
 ## [6.10.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.9.0...6.10.0) (2026-09-01)
 
 
