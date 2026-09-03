@@ -115,7 +115,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{bb.color.gray.700}"
+        "$value": "{bb.color.steel-gray.800}"
       },
       "blocking": {
         "$type": "color",
@@ -476,7 +476,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.gray.400}"
+          "$value": "{bb.color.steel-gray.500}"
         }
       },
       "tab": {
@@ -539,7 +539,7 @@
       },
       "disabled": {
         "$type": "color",
-        "$value": "{bb.color.steel-gray.700}"
+        "$value": "{bb.color.steel-gray.600}"
       },
       "elevation": {
         "$type": "color",
@@ -762,7 +762,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.steel-gray.500}"
+          "$value": "{bb.color.steel-gray.600}"
         },
         "error": {
           "$type": "color",
@@ -787,7 +787,7 @@
           },
           "disabled": {
             "$type": "color",
-            "$value": "{bb.color.steel-gray.500}"
+            "$value": "{bb.color.steel-gray.600}"
           }
         }
       },
@@ -852,7 +852,7 @@
         },
         "disabled": {
           "$type": "color",
-          "$value": "{bb.color.steel-gray.500}"
+          "$value": "{bb.color.steel-gray.600}"
         }
       }
     },
