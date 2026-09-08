@@ -1211,6 +1211,10 @@
         "$type": "color",
         "$value": "{bb.color.scrollbar.base.light.thumb}"
       }
+    },
+    "scheme": {
+      "$type": "other",
+      "$value": "light"
     }
   },
   "elevation": {

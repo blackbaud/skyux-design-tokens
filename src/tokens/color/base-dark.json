@@ -1211,6 +1211,10 @@
         "$type": "color",
         "$value": "{bb.color.scrollbar.base.dark.thumb}"
       }
+    },
+    "scheme": {
+      "$type": "other",
+      "$value": "dark"
     }
   },
   "elevation": {
