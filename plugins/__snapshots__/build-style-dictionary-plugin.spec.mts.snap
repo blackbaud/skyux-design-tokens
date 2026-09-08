@@ -560,6 +560,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-scrollbar-bb-dark-track: #1c2228;
 }
 .sky-theme-modern.sky-theme-brand-base:not(.sky-theme-mode-dark) {
+  --sky-color_scheme: light;
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-blue-100);
   --sky-color-background-action-accent-base: var(--bb-color-white);
@@ -880,6 +881,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-scrollbar-track: var(--bb-color-scrollbar-base-light-track);
 }
 .sky-theme-modern.sky-theme-brand-base.sky-theme-mode-dark {
+  --sky-color_scheme: dark;
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-active: var(--bb-color-gray-600);
   --sky-color-background-action-accent-base: var(--bb-color-blue-900);
