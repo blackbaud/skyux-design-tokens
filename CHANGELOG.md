@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.11.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.10.0...6.11.0) (2026-09-08)
+
+
+### Features
+
+* add color scheme token ([#472](https://github.com/blackbaud/skyux-design-tokens/issues/472)) ([c58a798](https://github.com/blackbaud/skyux-design-tokens/commit/c58a798c0dc2fa49c40453f23c7629e1041c2c7f))
+
 ## [6.10.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.9.0...6.10.0) (2026-09-01)
 
 
