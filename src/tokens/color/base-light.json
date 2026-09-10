@@ -1432,5 +1432,9 @@
       "$type": "other",
       "$value": "{bb.brand.name}"
     }
+  },
+  "color_scheme": {
+    "$type": "other",
+    "$value": "light"
   }
 }
