@@ -2623,7 +2623,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-tertiary-active: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-focus: var(--bb-color-transparent);
-  --sky-color-background-action-tertiary-hover: var(--bb-color-transparent);
+  --sky-color-background-action-tertiary-hover: var(--bb-color-rgba-steel-gray-100-10);
   --sky-color-background-action-tertiary-on_prominent-active: var(--bb-color-slate-600);
   --sky-color-background-action-tertiary-on_prominent-base: var(--bb-color-transparent);
   --sky-color-background-action-tertiary-on_prominent-focus: var(--bb-color-transparent);
@@ -2642,7 +2642,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-disabled: var(--bb-color-gray-700);
   --sky-color-background-file_drop: var(--bb-color-gray-1000);
   --sky-color-background-icon_matte-action-heavy: var(--bb-color-blue-dark-400);
-  --sky-color-background-icon_matte-action-soft: var(--bb-color-blue-dark-900);
+  --sky-color-background-icon_matte-action-soft: var(--bb-color-steel-blue-dark-800);
   --sky-color-background-icon_matte-danger: var(--bb-color-red-dark-600);
   --sky-color-background-icon_matte-info: var(--bb-color-blue-dark-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-dark-700);
