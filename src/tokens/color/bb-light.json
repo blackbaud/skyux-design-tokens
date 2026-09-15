@@ -4,9 +4,17 @@
       "heading": {
         "$type": "color",
         "$value": "{bb.color.blue.900}"
+      },
+      "action_brand": {
+        "$type": "color",
+        "$value": "{bb.color.sky.900}"
       }
     },
     "icon": {
+      "action_brand": {
+        "$type": "color",
+        "$value": "{bb.color.sky.900}"
+      },
       "input": {
         "action": {
           "$type": "color",
@@ -57,6 +65,12 @@
             "$type": "color",
             "$value": "{bb.color.blue.25}"
           }
+        },
+        "brand": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.sky.25}"
+          }
         }
       }
     },
@@ -83,6 +97,12 @@
           }
         },
         "accent": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gradient.brand.secondary}"
+          }
+        },
+        "brand": {
           "base": {
             "$type": "color",
             "$value": "{bb.color.gradient.brand.secondary}"
