@@ -715,7 +715,7 @@
         "accent": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gradient.brand.secondary}"
+            "$value": "{bb.color.gradient.brand.secondary.40}"
           },
           "hover": {
             "$type": "color",
@@ -733,7 +733,7 @@
         "brand": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gradient.brand.secondary}"
+            "$value": "{bb.color.gradient.brand.secondary.40}"
           }
         }
       },

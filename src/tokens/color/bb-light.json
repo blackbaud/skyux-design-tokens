@@ -99,13 +99,13 @@
         "accent": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gradient.brand.secondary}"
+            "$value": "{bb.color.gradient.brand.secondary.40}"
           }
         },
         "brand": {
           "base": {
             "$type": "color",
-            "$value": "{bb.color.gradient.brand.secondary}"
+            "$value": "{bb.color.gradient.brand.secondary.40}"
           }
         }
       },
