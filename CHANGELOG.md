@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.11.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.11.1...6.11.2) (2026-09-17)
+
+
+### Bug Fixes
+
+* brand action tokens and dark mode border fixes ([#482](https://github.com/blackbaud/skyux-design-tokens/issues/482)) ([bcf5ae3](https://github.com/blackbaud/skyux-design-tokens/commit/bcf5ae39eddb26698902de458441ad2fccc92c15))
+
 ## [7.0.0-alpha.11](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.10...7.0.0-alpha.11) (2026-09-10)
 
 
