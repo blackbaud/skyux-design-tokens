@@ -44,6 +44,10 @@
       "action_on_status": {
         "$type": "color",
         "$value": "{bb.color.gray.1000}"
+      },
+      "action_brand": {
+        "$type": "color",
+        "$value": "{bb.color.gray.25}"
       }
     },
     "icon": {
@@ -86,6 +90,10 @@
       "eyebrow": {
         "$type": "color",
         "$value": "{bb.color.brand.impact_green}"
+      },
+      "action_brand": {
+        "$type": "color",
+        "$value": "{bb.color.gray.25}"
       },
       "on_prominent": {
         "base": {
@@ -312,6 +320,28 @@
           "focus": {
             "$type": "color",
             "$value": "{bb.color.gray.700}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.background.disabled}"
+          }
+        },
+        "brand": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.blue.900}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.gray.700}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.gray.600}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.blue.900}"
           },
           "disabled": {
             "$type": "color",
@@ -744,6 +774,28 @@
           "focus": {
             "$type": "color",
             "$value": "{bb.color.gray.1000}"
+          },
+          "disabled": {
+            "$type": "color",
+            "$value": "{color.border.disabled}"
+          }
+        },
+        "brand": {
+          "base": {
+            "$type": "color",
+            "$value": "{bb.color.gray.700}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{bb.color.blue_dark.375}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{bb.color.blue_dark.375}"
+          },
+          "focus": {
+            "$type": "color",
+            "$value": "{bb.color.blue_dark.375}"
           },
           "disabled": {
             "$type": "color",
