@@ -69,7 +69,7 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.400}"
+        "$value": "{bb.color.yellow_dark.475}"
       },
       "success": {
         "$type": "color",
@@ -404,7 +404,7 @@
         },
         "warning": {
           "$type": "color",
-          "$value": "{bb.color.yellow.400}"
+          "$value": "{bb.color.yellow_dark.475}"
         },
         "success": {
           "$type": "color",
@@ -569,7 +569,7 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{bb.color.yellow.400}"
+        "$value": "{bb.color.yellow_dark.475}"
       },
       "success": {
         "$type": "color",

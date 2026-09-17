@@ -388,6 +388,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-yellow_dark-200: #fef0d0;
   --bb-color-yellow_dark-300: #fde0a8;
   --bb-color-yellow_dark-400: #fbb034;
+  --bb-color-yellow_dark-475: #d17f10;
   --bb-color-yellow_dark-500: #c37000;
   --bb-color-yellow_dark-600: #a25100;
   --bb-color-yellow_dark-700: #7d3800;
@@ -618,7 +619,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-icon_matte-danger: var(--bb-color-red-600);
   --sky-color-background-icon_matte-info: var(--bb-color-blue-600);
   --sky-color-background-icon_matte-success: var(--bb-color-green-600);
-  --sky-color-background-icon_matte-warning: var(--bb-color-yellow-400);
+  --sky-color-background-icon_matte-warning: var(--bb-color-yellow_dark-475);
   --sky-color-background-input-base: var(--bb-color-white);
   --sky-color-background-nav-active: var(--bb-color-blue-100);
   --sky-color-background-nav-base: var(--bb-color-transparent);
@@ -721,7 +722,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-tab-hover: var(--bb-color-blue-600);
   --sky-color-border-tab-wizard-disabled: var(--bb-color-transparent);
   --sky-color-border-text_highlight: var(--bb-color-yellow-700);
-  --sky-color-border-warning: var(--bb-color-yellow-400);
+  --sky-color-border-warning: var(--bb-color-yellow_dark-475);
   --sky-color-category-blue: var(--bb-color-sky-200);
   --sky-color-category-green: var(--bb-color-green-200);
   --sky-color-category-orange: var(--bb-color-orange-200);
@@ -758,7 +759,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-icon-on_status_bg: var(--bb-color-gray-1000);
   --sky-color-icon-selected: var(--bb-color-blue-600);
   --sky-color-icon-success: var(--bb-color-green-600);
-  --sky-color-icon-warning: var(--bb-color-yellow-400);
+  --sky-color-icon-warning: var(--bb-color-yellow_dark-475);
   --sky-color-illustration-fill-heavy: var(--bb-color-green-300);
   --sky-color-illustration-fill-soft: var(--bb-color-green-50);
   --sky-color-illustration-fill-softest: var(--bb-color-white);
@@ -2376,6 +2377,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-yellow_dark-200: #fef0d0;
   --bb-color-yellow_dark-300: #fde0a8;
   --bb-color-yellow_dark-400: #fbb034;
+  --bb-color-yellow_dark-475: #d17f10;
   --bb-color-yellow_dark-500: #c37000;
   --bb-color-yellow_dark-600: #a25100;
   --bb-color-yellow_dark-700: #7d3800;
