@@ -207,7 +207,7 @@
           },
           "hover": {
             "$type": "color",
-            "$value": "{bb.color.transparent}"
+            "$value": "{bb.color.rgba.steel_gray.100.10}"
           },
           "active": {
             "$type": "color",
@@ -379,7 +379,7 @@
           },
           "soft": {
             "$type": "color",
-            "$value": "{bb.color.blue_dark.900}"
+            "$value": "{bb.color.steel_blue_dark.800}"
           }
         }
       },
