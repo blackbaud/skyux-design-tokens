@@ -500,7 +500,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-space-8: 24px;
   --bb-space-9: 36px;
   --bb-color-gradient-blue: linear-gradient( var(--bb-color-blue-500), var(--bb-color-blue-700));
-  --bb-color-gradient-brand-secondary: linear-gradient(90deg, var(--bb-color-rgba-sky-600-40) , var(--bb-color-rgba-purple-600-40));
+  --bb-color-gradient-brand-secondary-40: linear-gradient(90deg, var(--bb-color-rgba-sky-600-40) , var(--bb-color-rgba-purple-600-40));
   --bb-color-gradient-container-primary: linear-gradient(90deg, var(--bb-color-steel_fusion-700), var(--bb-color-steel_fusion-800));
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
   --bb-shadow-gray-0: 0 0 0 0 rgba(22, 26, 31, 0);
@@ -567,6 +567,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-accent-base: var(--bb-color-white);
   --sky-color-background-action-accent-focus: var(--bb-color-white);
   --sky-color-background-action-accent-hover: var(--bb-color-blue-50);
+  --sky-color-background-action-brand-active: var(--bb-color-blue-100);
+  --sky-color-background-action-brand-base: var(--bb-color-gray-25);
+  --sky-color-background-action-brand-focus: var(--bb-color-sky-25);
+  --sky-color-background-action-brand-hover: var(--bb-color-blue-50);
   --sky-color-background-action-danger-active: var(--bb-color-red-800);
   --sky-color-background-action-danger-base: var(--bb-color-red-600);
   --sky-color-background-action-danger-focus: var(--bb-color-red-600);
@@ -647,6 +651,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-accent-base: var(--bb-color-gray-200);
   --sky-color-border-action-accent-focus: var(--bb-color-blue-600);
   --sky-color-border-action-accent-hover: var(--bb-color-blue-600);
+  --sky-color-border-action-brand-active: var(--bb-color-blue-600);
+  --sky-color-border-action-brand-base: var(--bb-color-gray-200);
+  --sky-color-border-action-brand-focus: var(--bb-color-blue-600);
+  --sky-color-border-action-brand-hover: var(--bb-color-blue-600);
   --sky-color-border-action-danger-active: var(--bb-color-red-1000);
   --sky-color-border-action-danger-base: var(--bb-color-red-600);
   --sky-color-border-action-danger-focus: var(--bb-color-red-1000);
@@ -737,6 +745,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-classify-7-heavy: var(--bb-color-red-700);
   --sky-color-classify-7-soft: var(--bb-color-red-200);
   --sky-color-icon-action: var(--bb-color-blue-600);
+  --sky-color-icon-action_brand: var(--bb-color-gray-1000);
   --sky-color-icon-danger: var(--bb-color-red-600);
   --sky-color-icon-deemphasized: var(--bb-color-gray-600);
   --sky-color-icon-default: var(--bb-color-gray-1000);
@@ -756,6 +765,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-illustration-fill-softest: var(--bb-color-white);
   --sky-color-illustration-stroke: var(--bb-color-brand-trusted_blue);
   --sky-color-text-action: var(--bb-color-blue-600);
+  --sky-color-text-action_brand: var(--bb-color-gray-1000);
   --sky-color-text-action_contrast: var(--bb-color-blue-700);
   --sky-color-text-action_on_status: var(--bb-color-gray-1000);
   --sky-color-text-danger: var(--bb-color-red-600);
@@ -812,6 +822,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-base-light-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-color-background-action-accent-disabled: var(--sky-color-background-disabled);
+  --sky-color-background-action-brand-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-danger-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-input-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-primary-disabled: var(--sky-color-background-disabled);
@@ -824,6 +835,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-selected-switch-disabled: var(--sky-color-background-disabled);
   --sky-color-background-tab-disabled: var(--sky-color-background-disabled);
   --sky-color-border-action-accent-disabled: var(--sky-color-border-disabled);
+  --sky-color-border-action-brand-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-danger-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-input-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-on_status-disabled: var(--sky-color-border-disabled);
@@ -888,6 +900,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-accent-base: var(--bb-color-blue-900);
   --sky-color-background-action-accent-focus: var(--bb-color-gray-700);
   --sky-color-background-action-accent-hover: var(--bb-color-gray-700);
+  --sky-color-background-action-brand-active: var(--bb-color-gray-600);
+  --sky-color-background-action-brand-base: var(--bb-color-blue-900);
+  --sky-color-background-action-brand-focus: var(--bb-color-blue-900);
+  --sky-color-background-action-brand-hover: var(--bb-color-gray-700);
   --sky-color-background-action-danger-active: var(--bb-color-red-600);
   --sky-color-background-action-danger-base: var(--bb-color-red-600);
   --sky-color-background-action-danger-focus: var(--bb-color-red-600);
@@ -967,6 +983,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-accent-base: var(--bb-color-gray-700);
   --sky-color-border-action-accent-focus: var(--bb-color-sky-600);
   --sky-color-border-action-accent-hover: var(--bb-color-sky-600);
+  --sky-color-border-action-brand-active: var(--bb-color-blue_dark-375);
+  --sky-color-border-action-brand-base: var(--bb-color-gray-700);
+  --sky-color-border-action-brand-focus: var(--bb-color-blue_dark-375);
+  --sky-color-border-action-brand-hover: var(--bb-color-blue_dark-375);
   --sky-color-border-action-danger-active: var(--bb-color-red-200);
   --sky-color-border-action-danger-base: var(--bb-color-red-600);
   --sky-color-border-action-danger-focus: var(--bb-color-red-200);
@@ -1056,6 +1076,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-classify-7-heavy: var(--bb-color-red-400);
   --sky-color-classify-7-soft: var(--bb-color-red-900);
   --sky-color-icon-action: var(--bb-color-sky-600);
+  --sky-color-icon-action_brand: var(--bb-color-gray-25);
   --sky-color-icon-danger: var(--bb-color-red-400);
   --sky-color-icon-deemphasized: var(--bb-color-gray-300);
   --sky-color-icon-default: var(--bb-color-gray-25);
@@ -1075,6 +1096,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-illustration-fill-softest: var(--bb-color-steel_gray-1100);
   --sky-color-illustration-stroke: var(--bb-color-teal_dark-100);
   --sky-color-text-action: var(--bb-color-sky-600);
+  --sky-color-text-action_brand: var(--bb-color-gray-25);
   --sky-color-text-action_contrast: var(--bb-color-blue_dark-200);
   --sky-color-text-action_on_status: var(--bb-color-gray-1000);
   --sky-color-text-danger: var(--bb-color-red-400);
@@ -1131,6 +1153,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-base-dark-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-color-background-action-accent-disabled: var(--sky-color-background-disabled);
+  --sky-color-background-action-brand-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-danger-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-input-disabled: var(--sky-color-background-disabled);
   --sky-color-background-action-primary-disabled: var(--sky-color-background-disabled);
@@ -1144,6 +1167,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-selected-switch-disabled: var(--sky-color-background-disabled);
   --sky-color-background-tab-disabled: var(--sky-color-background-disabled);
   --sky-color-border-action-accent-disabled: var(--sky-color-background-disabled);
+  --sky-color-border-action-brand-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-danger-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-input-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-on_status-disabled: var(--sky-color-border-disabled);
@@ -2465,7 +2489,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-space-8: 24px;
   --bb-space-9: 36px;
   --bb-color-gradient-blue: linear-gradient( var(--bb-color-blue-500), var(--bb-color-blue-700));
-  --bb-color-gradient-brand-secondary: linear-gradient(90deg, var(--bb-color-rgba-sky-600-40) , var(--bb-color-rgba-purple-600-40));
+  --bb-color-gradient-brand-secondary-40: linear-gradient(90deg, var(--bb-color-rgba-sky-600-40) , var(--bb-color-rgba-purple-600-40));
   --bb-color-gradient-container-primary: linear-gradient(90deg, var(--bb-color-steel_fusion-700), var(--bb-color-steel_fusion-800));
   --bb-font-blkb_sans-family: var(--bb-font-blkb_sans-name), var(--bb-font-blkb_sans-fallback);
   --bb-shadow-gray-0: 0 0 0 0 rgba(22, 26, 31, 0);
@@ -2528,6 +2552,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
 .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud.sky-theme-mode-light {
   --sky-brand-name: var(--bb-brand-name);
   --sky-color-background-action-accent-base: var(--bb-color-blue-25);
+  --sky-color-background-action-brand-base: var(--bb-color-sky-25);
   --sky-color-background-container-backdrop: var(--bb-color-slate-200);
   --sky-color-background-container-dimmed: var(--bb-color-slate-25);
   --sky-color-background-file_drop: var(--bb-color-slate-25);
@@ -2543,11 +2568,13 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-separator-light: var(--bb-color-slate-250);
   --sky-color-border-separator-row: var(--bb-color-slate-250);
   --sky-color-border-switch-base: var(--bb-color-slate-500);
+  --sky-color-icon-action_brand: var(--bb-color-sky-900);
   --sky-color-icon-input-action: var(--bb-color-blue-600);
   --sky-color-illustration-fill-heavy: var(--bb-color-green-300);
   --sky-color-illustration-fill-soft: var(--bb-color-green-50);
   --sky-color-illustration-fill-softest: var(--bb-color-white);
   --sky-color-illustration-stroke: var(--bb-color-brand-trusted_blue);
+  --sky-color-text-action_brand: var(--bb-color-sky-900);
   --sky-color-text-heading: var(--bb-color-blue-900);
   --sky-elevation-action-danger-active: var(--bb-shadow-slate-0);
   --sky-elevation-action-danger-disabled: var(--bb-shadow-slate-0);
@@ -2571,7 +2598,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-image-select_icon-disabled: var(--bb-image-select_icon-disabled-bb-light-src);
   --sky-opacity-wait: var(--bb-opacity-600);
   --sky-color-background-selected-switch-base: var(--bb-color-gradient-blue);
-  --sky-color-border-action-accent-base: var(--bb-color-gradient-brand-secondary);
+  --sky-color-border-action-accent-base: var(--bb-color-gradient-brand-secondary-40);
+  --sky-color-border-action-brand-base: var(--bb-color-gradient-brand-secondary-40);
   --sky-elevation-action-danger-base: var(--bb-shadow-slate-50);
   --sky-elevation-action-danger-focus: var(--bb-shadow-slate-50);
   --sky-elevation-action-danger-hover: var(--bb-shadow-slate-50);
@@ -2602,6 +2630,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-action-accent-base: var(--bb-color-steel_gray-1100);
   --sky-color-background-action-accent-focus: var(--bb-color-steel_gray-1000);
   --sky-color-background-action-accent-hover: var(--bb-color-steel_gray-1000);
+  --sky-color-background-action-brand-base: var(--bb-color-sky_dark-1000);
+  --sky-color-background-action-brand-focus: var(--bb-color-sky_dark-1000);
   --sky-color-background-action-danger-active: var(--bb-color-red_dark-300);
   --sky-color-background-action-danger-base: var(--bb-color-red_dark-400);
   --sky-color-background-action-danger-focus: var(--bb-color-red_dark-300);
@@ -2676,16 +2706,18 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-thumb-base: var(--bb-color-white);
   --sky-color-background-thumb-disabled: var(--bb-color-gray-400);
   --sky-color-background-thumbnail_matte: var(--bb-color-rgba-steel_gray-100-7);
-  --sky-color-border-action-accent-hover: var(--bb-color-blue_dark-400);
+  --sky-color-border-action-accent-active: var(--bb-color-blue_dark-375);
+  --sky-color-border-action-accent-focus: var(--bb-color-blue_dark-375);
+  --sky-color-border-action-accent-hover: var(--bb-color-blue_dark-375);
   --sky-color-border-action-danger-active: var(--bb-color-red_dark-300);
   --sky-color-border-action-danger-base: var(--bb-color-red_dark-400);
   --sky-color-border-action-danger-focus: var(--bb-color-red_dark-300);
   --sky-color-border-action-danger-hover: var(--bb-color-red_dark-300);
-  --sky-color-border-action-input-active: var(--bb-color-blue_dark-400);
+  --sky-color-border-action-input-active: var(--bb-color-blue_dark-375);
   --sky-color-border-action-input-base: var(--bb-color-steel_gray-800);
   --sky-color-border-action-input-disabled: var(--bb-color-steel_gray-500);
-  --sky-color-border-action-input-focus: var(--bb-color-blue_dark-400);
-  --sky-color-border-action-input-hover: var(--bb-color-blue_dark-400);
+  --sky-color-border-action-input-focus: var(--bb-color-blue_dark-375);
+  --sky-color-border-action-input-hover: var(--bb-color-blue_dark-375);
   --sky-color-border-action-primary-active: var(--bb-color-blue_dark-100);
   --sky-color-border-action-primary-base: var(--bb-color-blue_dark-375);
   --sky-color-border-action-primary-focus: var(--bb-color-blue_dark-100);
@@ -2710,12 +2742,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-divider: var(--bb-color-rgba-white-18);
   --sky-color-border-elevation: var(--bb-color-rgba-white-18);
   --sky-color-border-info: var(--bb-color-blue_dark-600);
-  --sky-color-border-input-active: var(--bb-color-blue_dark-400);
+  --sky-color-border-input-active: var(--bb-color-blue_dark-375);
   --sky-color-border-input-base: var(--bb-color-steel_gray-800);
   --sky-color-border-input-disabled: var(--bb-color-steel_gray-500);
   --sky-color-border-input-error: var(--bb-color-red_dark-600);
-  --sky-color-border-input-focus: var(--bb-color-blue_dark-400);
-  --sky-color-border-input-hover: var(--bb-color-blue_dark-400);
+  --sky-color-border-input-focus: var(--bb-color-blue_dark-375);
+  --sky-color-border-input-hover: var(--bb-color-blue_dark-375);
   --sky-color-border-nav-active: var(--bb-color-blue_dark-375);
   --sky-color-border-nav-base: var(--bb-color-transparent);
   --sky-color-border-nav-disabled: var(--bb-color-steel_gray-500);
@@ -2728,12 +2760,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-separator-light: var(--bb-color-rgba-white-18);
   --sky-color-border-separator-row: var(--bb-color-rgba-white-18);
   --sky-color-border-success: var(--bb-color-green_dark-700);
-  --sky-color-border-switch-active: var(--bb-color-blue_dark-400);
+  --sky-color-border-switch-active: var(--bb-color-blue_dark-375);
   --sky-color-border-switch-base: var(--bb-color-steel_gray-500);
   --sky-color-border-switch-disabled: var(--bb-color-steel_gray-500);
   --sky-color-border-switch-error: var(--bb-color-red_dark-600);
-  --sky-color-border-switch-focus: var(--bb-color-blue_dark-400);
-  --sky-color-border-switch-hover: var(--bb-color-blue_dark-400);
+  --sky-color-border-switch-focus: var(--bb-color-blue_dark-375);
+  --sky-color-border-switch-hover: var(--bb-color-blue_dark-375);
   --sky-color-border-switch-selected-active: var(--bb-color-blue_dark-100);
   --sky-color-border-switch-selected-base: var(--bb-color-transparent);
   --sky-color-border-switch-selected-disabled: var(--bb-color-steel_gray-500);
@@ -2761,6 +2793,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-classify-7-heavy: var(--bb-color-red_dark-300);
   --sky-color-classify-7-soft: var(--bb-color-red_dark-700);
   --sky-color-icon-action: var(--bb-color-blue_dark-400);
+  --sky-color-icon-action_brand: var(--bb-color-sky_dark-100);
   --sky-color-icon-danger: var(--bb-color-red_dark-400);
   --sky-color-icon-deemphasized: var(--bb-color-steel_gray-400);
   --sky-color-icon-default: var(--bb-color-steel_gray-100);
@@ -2779,6 +2812,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-illustration-fill-softest: var(--bb-color-steel_gray-1100);
   --sky-color-illustration-stroke: var(--bb-color-teal_dark-100);
   --sky-color-text-action: var(--bb-color-blue_dark-375);
+  --sky-color-text-action_brand: var(--bb-color-sky_dark-100);
   --sky-color-text-action_contrast: var(--bb-color-blue_dark-200);
   --sky-color-text-danger: var(--bb-color-red_dark-400);
   --sky-color-text-deemphasized: var(--bb-color-steel_gray-400);
@@ -2804,7 +2838,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-background-row-disabled: var(--sky-color-background-disabled);
   --sky-color-background-selected-switch-disabled: var(--sky-color-background-disabled);
   --sky-color-background-tab-disabled: var(--sky-color-background-disabled);
-  --sky-color-border-action-accent-base: var(--bb-color-gradient-brand-secondary);
+  --sky-color-border-action-accent-base: var(--bb-color-gradient-brand-secondary-40);
+  --sky-color-border-action-brand-base: var(--bb-color-gradient-brand-secondary-40);
   --sky-color-border-action-danger-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-primary-disabled: var(--sky-color-border-disabled);
   --sky-color-border-action-secondary-disabled: var(--sky-color-border-disabled);
