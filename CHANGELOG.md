@@ -1,5 +1,15 @@
 # Changelog
 
+## [7.0.0-alpha.12](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.11...7.0.0-alpha.12) (2026-09-21)
+
+
+### Bug Fixes
+
+* brand action tokens and dark mode border fixes ([#482](https://github.com/blackbaud/skyux-design-tokens/issues/482)) ([#490](https://github.com/blackbaud/skyux-design-tokens/issues/490)) ([1dc1ec5](https://github.com/blackbaud/skyux-design-tokens/commit/1dc1ec5f3f50fe020a3bb0688c62b04b2f94b3fe))
+* dark mode tweaks ([#479](https://github.com/blackbaud/skyux-design-tokens/issues/479)) ([#489](https://github.com/blackbaud/skyux-design-tokens/issues/489)) ([57eeeb1](https://github.com/blackbaud/skyux-design-tokens/commit/57eeeb136589336cb2fdabe1c1fbb38c9d7f5356))
+* underscores for color names ([#478](https://github.com/blackbaud/skyux-design-tokens/issues/478)) ([#481](https://github.com/blackbaud/skyux-design-tokens/issues/481)) ([d8ea1ed](https://github.com/blackbaud/skyux-design-tokens/commit/d8ea1edaf8f5428df98e242584be847ae06992d0))
+* warning colors in light mode ([#483](https://github.com/blackbaud/skyux-design-tokens/issues/483)) ([#488](https://github.com/blackbaud/skyux-design-tokens/issues/488)) ([0f5bac5](https://github.com/blackbaud/skyux-design-tokens/commit/0f5bac512025a7d52202afb8600f355395a66e79))
+
 ## [6.11.2](https://github.com/blackbaud/skyux-design-tokens/compare/6.11.1...6.11.2) (2026-09-17)
 
 
