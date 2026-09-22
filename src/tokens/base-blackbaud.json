@@ -517,9 +517,89 @@
           }
         },
         "black": {
+          "10": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.1)"
+          },
+          "12": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.12)"
+          },
+          "16": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.16)"
+          },
+          "20": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.2)"
+          },
+          "21": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.21)"
+          },
+          "22": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.22)"
+          },
+          "24": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.24)"
+          },
+          "25": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.25)"
+          },
+          "28": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.28)"
+          },
+          "30": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.3)"
+          },
+          "34": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.34)"
+          },
+          "35": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.35)"
+          },
+          "36": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.36)"
+          },
+          "50": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.5)"
+          },
+          "65": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.65)"
+          },
           "70": {
             "$type": "color",
             "$value": "rgba(0,0,0,.7)"
+          }
+        },
+        "slate": {
+          "900": {
+            "12": {
+              "$type": "color",
+              "$value": "rgba(#212C3F, .12)"
+            },
+            "14": {
+              "$type": "color",
+              "$value": "rgba(#212C3F, .14)"
+            },
+            "20": {
+              "$type": "color",
+              "$value": "rgba(#212C3F, .2)"
+            },
+            "50": {
+              "$type": "color",
+              "$value": "rgba(#212C3F, .5)"
+            }
           }
         }
       },
