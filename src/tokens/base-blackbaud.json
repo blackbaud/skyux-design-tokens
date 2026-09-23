@@ -584,6 +584,10 @@
         },
         "slate": {
           "900": {
+            "5": {
+              "$type": "color",
+              "$value": "rgba(#212C3F, .05)"
+            },
             "12": {
               "$type": "color",
               "$value": "rgba(#212C3F, .12)"
