@@ -573,6 +573,10 @@
             "$type": "color",
             "$value": "rgba(0,0,0,.5)"
           },
+          "60": {
+            "$type": "color",
+            "$value": "rgba(0,0,0,.6)"
+          },
           "65": {
             "$type": "color",
             "$value": "rgba(0,0,0,.65)"
@@ -1935,7 +1939,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.05)",
+              "color": "{bb.color.rgba.slate.900.5}",
               "type": "dropShadow"
             }
           ]
@@ -1948,7 +1952,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             },
             {
@@ -1956,7 +1960,7 @@
               "y": "1.5",
               "blur": "1",
               "spread": "-1",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             }
           ]
@@ -1969,7 +1973,7 @@
               "y": "1",
               "blur": "3",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.2)",
+              "color": "{bb.color.rgba.slate.900.20}",
               "type": "dropShadow"
             },
             {
@@ -1977,7 +1981,7 @@
               "y": "2",
               "blur": "1",
               "spread": "-1",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             },
             {
@@ -1985,7 +1989,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.14)",
+              "color": "{bb.color.rgba.slate.900.14}",
               "type": "dropShadow"
             }
           ]
@@ -1998,7 +2002,7 @@
               "y": "1",
               "blur": "8",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.2)",
+              "color": "{bb.color.rgba.slate.900.20}",
               "type": "dropShadow"
             },
             {
@@ -2006,7 +2010,7 @@
               "y": "3",
               "blur": "3",
               "spread": "-2",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             },
             {
@@ -2014,7 +2018,7 @@
               "y": "3",
               "blur": "4",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.14)",
+              "color": "{bb.color.rgba.slate.900.14}",
               "type": "dropShadow"
             }
           ]
@@ -2027,7 +2031,7 @@
               "y": "2",
               "blur": "4",
               "spread": "-1",
-              "color": "rgba({bb.color.slate.900},0.2)",
+              "color": "{bb.color.rgba.slate.900.20}",
               "type": "dropShadow"
             },
             {
@@ -2035,7 +2039,7 @@
               "y": "1",
               "blur": "10",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             },
             {
@@ -2043,7 +2047,7 @@
               "y": "4",
               "blur": "5",
               "spread": "0",
-              "color": "rgba({bb.color.slate.900},0.14)",
+              "color": "{bb.color.rgba.slate.900.14}",
               "type": "dropShadow"
             }
           ]
@@ -2056,7 +2060,7 @@
               "y": "5",
               "blur": "5",
               "spread": "-3",
-              "color": "rgba({bb.color.slate.900},0.2)",
+              "color": "{bb.color.rgba.slate.900.20}",
               "type": "dropShadow"
             },
             {
@@ -2064,7 +2068,7 @@
               "y": "3",
               "blur": "14",
               "spread": "2",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             },
             {
@@ -2072,7 +2076,7 @@
               "y": "8",
               "blur": "10",
               "spread": "1",
-              "color": "rgba({bb.color.slate.900},0.14)",
+              "color": "{bb.color.rgba.slate.900.14}",
               "type": "dropShadow"
             }
           ]
@@ -2114,7 +2118,7 @@
               "y": "11",
               "blur": "15",
               "spread": "-7",
-              "color": "rgba({bb.color.slate.900},0.2)",
+              "color": "{bb.color.rgba.slate.900.20}",
               "type": "dropShadow"
             },
             {
@@ -2122,7 +2126,7 @@
               "y": "9",
               "blur": "46",
               "spread": "8",
-              "color": "rgba({bb.color.slate.900},0.12)",
+              "color": "{bb.color.rgba.slate.900.12}",
               "type": "dropShadow"
             },
             {
@@ -2130,7 +2134,7 @@
               "y": "24",
               "blur": "38",
               "spread": "3",
-              "color": "rgba({bb.color.slate.900},0.14)",
+              "color": "{bb.color.rgba.slate.900.14}",
               "type": "dropShadow"
             }
           ]
@@ -2143,7 +2147,7 @@
               "y": "2",
               "blur": "4",
               "spread": "0",
-              "color": "rgba( {bb.color.slate.900},0.5)",
+              "color": "{bb.color.rgba.slate.900.50}",
               "type": "dropShadow"
             }
           }
@@ -2643,7 +2647,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.35)",
+              "color": "{bb.color.rgba.black.35}",
               "type": "dropShadow"
             }
           ]
@@ -2656,7 +2660,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.3)",
+              "color": "{bb.color.rgba.black.30}",
               "type": "dropShadow"
             },
             {
@@ -2664,7 +2668,7 @@
               "y": "1.5",
               "blur": "1",
               "spread": "-1",
-              "color": "rgba({bb.color.black},0.6)",
+              "color": "{bb.color.rgba.black.60}",
               "type": "dropShadow"
             }
           ]
@@ -2677,7 +2681,7 @@
               "y": "1",
               "blur": "3",
               "spread": "0",
-              "color": "rgba({bb.color.black},.3)",
+              "color": "{bb.color.rgba.black.30}",
               "type": "dropShadow"
             },
             {
@@ -2685,7 +2689,7 @@
               "y": "2",
               "blur": "1",
               "spread": "-1",
-              "color": "rgba({bb.color.black},.25)",
+              "color": "{bb.color.rgba.black.25}",
               "type": "dropShadow"
             },
             {
@@ -2693,7 +2697,7 @@
               "y": "1",
               "blur": "1",
               "spread": "0",
-              "color": "rgba({bb.color.black},.28)",
+              "color": "{bb.color.rgba.black.28}",
               "type": "dropShadow"
             }
           ]
@@ -2706,7 +2710,7 @@
               "y": "1",
               "blur": "8",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.5)",
+              "color": "{bb.color.rgba.black.50}",
               "type": "dropShadow"
             },
             {
@@ -2714,7 +2718,7 @@
               "y": "3",
               "blur": "3",
               "spread": "-2",
-              "color": "rgba({bb.color.black},0.3)",
+              "color": "{bb.color.rgba.black.30}",
               "type": "dropShadow"
             },
             {
@@ -2722,7 +2726,7 @@
               "y": "3",
               "blur": "4",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.35)",
+              "color": "{bb.color.rgba.black.35}",
               "type": "dropShadow"
             }
           ]
@@ -2735,7 +2739,7 @@
               "y": "2",
               "blur": "4",
               "spread": "-1",
-              "color": "rgba({bb.color.black},0.24)",
+              "color": "{bb.color.rgba.black.24}",
               "type": "dropShadow"
             },
             {
@@ -2743,7 +2747,7 @@
               "y": "1",
               "blur": "10",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.16)",
+              "color": "{bb.color.rgba.black.16}",
               "type": "dropShadow"
             },
             {
@@ -2751,7 +2755,7 @@
               "y": "4",
               "blur": "5",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.21)",
+              "color": "{bb.color.rgba.black.21}",
               "type": "dropShadow"
             }
           ]
@@ -2764,7 +2768,7 @@
               "y": "5",
               "blur": "5",
               "spread": "-3",
-              "color": "rgba({bb.color.black},0.24)",
+              "color": "{bb.color.rgba.black.24}",
               "type": "dropShadow"
             },
             {
@@ -2772,7 +2776,7 @@
               "y": "3",
               "blur": "14",
               "spread": "2",
-              "color": "rgba({bb.color.black},0.12)",
+              "color": "{bb.color.rgba.black.12}",
               "type": "dropShadow"
             },
             {
@@ -2780,7 +2784,7 @@
               "y": "8",
               "blur": "10",
               "spread": "1",
-              "color": "rgba({bb.color.black},0.1)",
+              "color": "{bb.color.rgba.black.10}",
               "type": "dropShadow"
             }
           ]
@@ -2793,7 +2797,7 @@
               "y": "8",
               "blur": "10",
               "spread": "-5",
-              "color": "rgba({bb.color.black},0.36)",
+              "color": "{bb.color.rgba.black.36}",
               "type": "dropShadow"
             },
             {
@@ -2801,7 +2805,7 @@
               "y": "6",
               "blur": "30",
               "spread": "5",
-              "color": "rgba({bb.color.black},0.22)",
+              "color": "{bb.color.rgba.black.22}",
               "type": "dropShadow"
             },
             {
@@ -2809,7 +2813,7 @@
               "y": "16",
               "blur": "24",
               "spread": "2",
-              "color": "rgba({bb.color.black},0.25)",
+              "color": "{bb.color.rgba.black.25}",
               "type": "dropShadow"
             }
           ]
@@ -2822,7 +2826,7 @@
               "y": "11",
               "blur": "15",
               "spread": "-7",
-              "color": "rgba({bb.color.black},0.34)",
+              "color": "{bb.color.rgba.black.34}",
               "type": "dropShadow"
             },
             {
@@ -2830,7 +2834,7 @@
               "y": "9",
               "blur": "46",
               "spread": "8",
-              "color": "rgba({bb.color.black},0.2)",
+              "color": "{bb.color.rgba.black.20}",
               "type": "dropShadow"
             },
             {
@@ -2838,7 +2842,7 @@
               "y": "24",
               "blur": "38",
               "spread": "3",
-              "color": "rgba({bb.color.black},0.24)",
+              "color": "{bb.color.rgba.black.24}",
               "type": "dropShadow"
             }
           ]
@@ -2851,7 +2855,7 @@
               "y": "2",
               "blur": "4",
               "spread": "0",
-              "color": "rgba({bb.color.black},0.65)",
+              "color": "{bb.color.rgba.black.65}",
               "type": "dropShadow"
             }
           }
