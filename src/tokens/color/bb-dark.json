@@ -1118,43 +1118,43 @@
   "elevation": {
     "none": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel_gray.0}"
+      "$value": "{bb.shadow.black.0}"
     },
     "focus": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel_gray.200}"
+      "$value": "{bb.shadow.black.200}"
     },
     "overflow": {
       "$type": "boxShadow",
-      "$value": "{bb.shadow.steel_gray.200}"
+      "$value": "{bb.shadow.black.200}"
     },
     "raised": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel_gray.100}"
+        "$value": "{bb.shadow.black.100}"
       }
     },
     "overlay": {
       "100": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel_gray.400}"
+        "$value": "{bb.shadow.black.400}"
       },
       "200": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel_gray.800}"
+        "$value": "{bb.shadow.black.800}"
       },
       "300": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel_gray.1600}"
+        "$value": "{bb.shadow.black.1600}"
       },
       "400": {
         "$type": "boxShadow",
-        "$value": "{bb.shadow.steel_gray.2400}"
+        "$value": "{bb.shadow.black.2400}"
       },
       "simple": {
         "100": {
           "$type": "boxShadow",
-          "$value": "{bb.shadow.steel_gray.simple.400}"
+          "$value": "{bb.shadow.black.simple.400}"
         }
       }
     }

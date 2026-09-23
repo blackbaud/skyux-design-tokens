@@ -2625,7 +2625,7 @@
           }
         }
       },
-      "steel_gray": {
+      "black": {
         "0": {
           "$type": "boxShadow",
           "$value": [
