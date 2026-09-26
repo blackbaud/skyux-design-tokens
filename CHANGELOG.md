@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.0.0-alpha.13](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.12...7.0.0-alpha.13) (2026-09-26)
+
+
+### Features
+
+* add shadow color tokens and refactor shadow definitions ([#491](https://github.com/blackbaud/skyux-design-tokens/issues/491)) ([#493](https://github.com/blackbaud/skyux-design-tokens/issues/493)) ([40f172b](https://github.com/blackbaud/skyux-design-tokens/commit/40f172bc6a181bca8b82de7e5696dfad2d62889d))
+
 ## [7.0.0-alpha.12](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.11...7.0.0-alpha.12) (2026-09-21)
 
 
