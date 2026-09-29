@@ -6,10 +6,16 @@
 ### ⚠ BREAKING CHANGES
 
 * update `h5` text color to the deemphasized text color ([#366](https://github.com/blackbaud/skyux-design-tokens/issues/366))
+* fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([#382](https://github.com/blackbaud/skyux-design-tokens/issues/382)) — this change was later found to be breaking; `6.x.x` avoided the break via a follow-up fix ([#436](https://github.com/blackbaud/skyux-design-tokens/issues/436)) that was not carried into `7.x`
 
 ### Features
 
 * update `h5` text color to the deemphasized text color ([#366](https://github.com/blackbaud/skyux-design-tokens/issues/366)) ([85f98fd](https://github.com/blackbaud/skyux-design-tokens/commit/85f98fd6754996b1bc9ed94fd067069365080cf7))
+
+
+### Bug Fixes
+
+* fix specificity for light mode tokens and validate light and dark mode "base" brand tokens match ([#381](https://github.com/blackbaud/skyux-design-tokens/issues/381)) ([#382](https://github.com/blackbaud/skyux-design-tokens/issues/382)) ([0a460f4](https://github.com/blackbaud/skyux-design-tokens/commit/0a460f4775bbde92b00057f831ddf20b76accf46))
 
 ## [6.12.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.11.2...6.12.0) (2026-09-25)
 
