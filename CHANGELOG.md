@@ -1,11 +1,15 @@
 # Changelog
 
-## [7.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0-alpha.12...7.0.0) (2026-09-29)
+## [7.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.12.0...7.0.0) (2026-09-29)
 
+
+### ⚠ BREAKING CHANGES
+
+* update `h5` text color to the deemphasized text color ([#366](https://github.com/blackbaud/skyux-design-tokens/issues/366))
 
 ### Features
 
-* add shadow color tokens and refactor shadow definitions ([#491](https://github.com/blackbaud/skyux-design-tokens/issues/491)) ([#493](https://github.com/blackbaud/skyux-design-tokens/issues/493)) ([40f172b](https://github.com/blackbaud/skyux-design-tokens/commit/40f172bc6a181bca8b82de7e5696dfad2d62889d))
+* update `h5` text color to the deemphasized text color ([#366](https://github.com/blackbaud/skyux-design-tokens/issues/366)) ([85f98fd](https://github.com/blackbaud/skyux-design-tokens/commit/85f98fd6754996b1bc9ed94fd067069365080cf7))
 
 ## [6.12.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.11.2...6.12.0) (2026-09-25)
 
