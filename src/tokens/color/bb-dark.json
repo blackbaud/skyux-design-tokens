@@ -561,11 +561,11 @@
       },
       "elevation": {
         "$type": "color",
-        "$value": "{bb.color.rgba.white.18}"
+        "$value": "{bb.color.steel_gray.830}"
       },
       "divider": {
         "$type": "color",
-        "$value": "{bb.color.rgba.white.18}"
+        "$value": "{bb.color.steel_gray.830}"
       },
       "column_divider": {
         "$type": "color",
@@ -740,7 +740,7 @@
       "container": {
         "base": {
           "$type": "color",
-          "$value": "{bb.color.rgba.white.18}"
+          "$value": "{bb.color.steel_gray.830}"
         },
         "header": {
           "prominent": {
@@ -826,15 +826,15 @@
       "separator": {
         "dark": {
           "$type": "color",
-          "$value": "{bb.color.rgba.white.18}"
+          "$value": "{bb.color.steel_gray.830}"
         },
         "light": {
           "$type": "color",
-          "$value": "{bb.color.rgba.white.18}"
+          "$value": "{bb.color.steel_gray.830}"
         },
         "row": {
           "$type": "color",
-          "$value": "{bb.color.rgba.white.18}"
+          "$value": "{bb.color.steel_gray.830}"
         }
       },
       "tab": {
