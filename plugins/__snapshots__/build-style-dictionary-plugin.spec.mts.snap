@@ -363,6 +363,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-steel_gray-600: #7a7d81;
   --bb-color-steel_gray-700: #636669;
   --bb-color-steel_gray-800: #4e5154;
+  --bb-color-steel_gray-830: #484b4e;
   --bb-color-steel_gray-900: #3a3c3f;
   --bb-color-teal-100: #dcf6f5;
   --bb-color-teal-1000: #022a28;
@@ -2373,6 +2374,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-steel_gray-600: #7a7d81;
   --bb-color-steel_gray-700: #636669;
   --bb-color-steel_gray-800: #4e5154;
+  --bb-color-steel_gray-830: #484b4e;
   --bb-color-steel_gray-900: #3a3c3f;
   --bb-color-teal-100: #dcf6f5;
   --bb-color-teal-1000: #022a28;
@@ -2801,12 +2803,12 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-blue-300);
   --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
   --sky-color-border-column_divider: var(--bb-color-blue_dark-400);
-  --sky-color-border-container-base: var(--bb-color-rgba-white-18);
+  --sky-color-border-container-base: var(--bb-color-steel_gray-830);
   --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
   --sky-color-border-danger: var(--bb-color-red_dark-700);
   --sky-color-border-disabled: var(--bb-color-steel_gray-700);
-  --sky-color-border-divider: var(--bb-color-rgba-white-18);
-  --sky-color-border-elevation: var(--bb-color-rgba-white-18);
+  --sky-color-border-divider: var(--bb-color-steel_gray-830);
+  --sky-color-border-elevation: var(--bb-color-steel_gray-830);
   --sky-color-border-info: var(--bb-color-blue_dark-600);
   --sky-color-border-input-active: var(--bb-color-blue_dark-375);
   --sky-color-border-input-base: var(--bb-color-steel_gray-800);
@@ -2822,9 +2824,9 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-progress_step: var(--bb-color-gray-600);
   --sky-color-border-selected: var(--bb-color-blue_dark-375);
   --sky-color-border-selected_soft: var(--bb-color-steel_blue_dark-100);
-  --sky-color-border-separator-dark: var(--bb-color-rgba-white-18);
-  --sky-color-border-separator-light: var(--bb-color-rgba-white-18);
-  --sky-color-border-separator-row: var(--bb-color-rgba-white-18);
+  --sky-color-border-separator-dark: var(--bb-color-steel_gray-830);
+  --sky-color-border-separator-light: var(--bb-color-steel_gray-830);
+  --sky-color-border-separator-row: var(--bb-color-steel_gray-830);
   --sky-color-border-success: var(--bb-color-green_dark-700);
   --sky-color-border-switch-active: var(--bb-color-blue_dark-375);
   --sky-color-border-switch-base: var(--bb-color-steel_gray-500);
