@@ -1,0 +1,12 @@
+{
+  "space": {
+    "inset": {
+      "balanced": {
+        "none": {
+          "$type": "spacing",
+          "$value": "0"
+        }
+      }
+    }
+  }
+}

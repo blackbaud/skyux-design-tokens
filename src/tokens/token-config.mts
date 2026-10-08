@@ -79,6 +79,11 @@ export const tokenConfig: TokenConfig = {
           selector: '.sky-theme-mode-dark',
           path: 'color/bb-dark.json',
         },
+        {
+          name: 'bb-compact',
+          path: 'layout/bb-compact.json',
+          selector: '.sky-theme-spacing-compact',
+        },
       ],
     },
     {
