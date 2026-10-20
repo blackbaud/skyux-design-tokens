@@ -27,3 +27,21 @@ To view local tokens changes in production SPAs, ensure you have a `.env.local` 
 If you do not have an `.env.local` file, reach out to someone on the team for help setting it up.
 
 To add additional CSS to any SPA you are locally previewing, create a file `src/dev/extra-styles.css`. This stylesheet will be added to the SPA and can be used to override styles for testing purposes. It is a regular CSS file, so Angular selectors like `:ng-deep` and `:host` and SCSS nesting syntax will not work. `!important` will work, and will be helpful for testing.
+
+## Visual tests
+
+`src/visual-tests` is a framework-free page that renders a demo of every public class and custom property from the built `bundles/public-api-styles.json` and `bundles/public-api-tokens.json`, styled by the built CSS. It is used for visual regression snapshots.
+
+Run `npm run visual-tests` to build the package and serve the page, or `npm run build:visual-tests` to build it as static files in `dist-visual-tests/`.
+
+Query params choose what to render:
+
+| Param     | Values                                                    | Default    |
+| --------- | --------------------------------------------------------- | ---------- |
+| `page`    | `borders`, `colors`, `elevation`, `spacing`, `typography` | All pages  |
+| `theme`   | `default`, `modern`                                       | `default`  |
+| `mode`    | `light`, `dark`                                           | `light`    |
+| `brand`   | `base`, `blackbaud`                                       | `base`     |
+| `spacing` | `standard`, `compact`                                     | `standard` |
+
+`mode`, `brand`, and `spacing` only apply to the modern theme. For example, `?page=colors&theme=modern&mode=dark&brand=blackbaud`.

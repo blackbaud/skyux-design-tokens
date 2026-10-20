@@ -28,6 +28,16 @@ export default typescriptEslint.config(
     },
   },
   {
+    // The visual test app is type-checked with strict mode on, so lint it with
+    // its own tsconfig.
+    files: ['src/visual-tests/**/*.ts', 'src/visual-tests/**/*.mts'],
+    languageOptions: {
+      parserOptions: {
+        project: './src/visual-tests/tsconfig.json',
+      },
+    },
+  },
+  {
     // Configuration for TypeScript files outside src directory (plugins, etc.)
     files: ['plugins/**/*.ts', 'plugins/**/*.mts', '*.ts', '*.mts'],
     extends: [...typescriptEslint.configs.recommended],
@@ -61,6 +71,6 @@ export default typescriptEslint.config(
     },
   },
   {
-    ignores: ['coverage/', 'dist/', 'vite.config.js'],
+    ignores: ['coverage/', 'dist/', 'dist-visual-tests/', 'vite.config.js'],
   },
 );

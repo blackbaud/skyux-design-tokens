@@ -60,5 +60,6 @@ typings/
 .DS_STORE
 
 dist/
+dist-visual-tests/
 
 src/dev/extra-styles.css
