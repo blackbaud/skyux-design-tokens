@@ -224,12 +224,9 @@
                   "description": "The color for icons on links and link buttons."
                 },
                 {
-                  "name": "Inverse icon",
+                  "name": "Inverse icon (legacy)",
                   "customProperty": "--sky-theme-color-icon-inverse",
-                  "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
-                  "demoMetadata": {
-                    "background": "--sky-theme-color-background-icon_matte-action-heavy"
-                  }
+                  "description": "The legacy color for icons on heavy background colors. Use the icon on status matte or prominent container header icon color instead."
                 },
                 {
                   "name": "Icon on status background",
@@ -260,14 +257,14 @@
                   "customProperty": "--sky-theme-color-icon-on_prominent-disabled",
                   "description": "The color for icons in disabled buttons on prominent container headers.",
                   "demoMetadata": {
-                    "background": "--sky-theme-color-background-action-tertiary-on_prominent-disabled"
+                    "background": "--sky-theme-color-background-container-header-prominent"
                   }
                 }
               ]
             },
             {
               "groupName": "Icon mattes",
-              "description": "Use icon matte colors for the background of elements that an icon component is placed inside of. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
+              "description": "Use icon matte colors for the background of elements that an icon component is placed inside of. For icons placed on icon mattes, use default or action icon color so the icon has a high color contrast with the matte color.",
               "demoMetadata": {
                 "type": "icon-background-color"
               },
