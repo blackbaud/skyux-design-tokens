@@ -6,7 +6,7 @@ import type {
 import { FONT_FAMILY, getFontFaceSources, type FontTokens } from './fonts';
 import { getPages } from './items';
 import { renderControls, renderPage } from './render';
-import { getThemeClasses, parseSettings } from './settings';
+import { getThemeClasses, parseSettings, resolvePage } from './settings';
 
 const STYLESHEET_URL = 'bundles/base_blackbaud_public-api.css';
 const STYLES_URL = 'bundles/public-api-styles.json';
@@ -30,15 +30,17 @@ async function main(): Promise<void> {
     throw new Error('Missing #app element.');
   }
 
+  const pageKeys = pages.map((page) => page.key);
+  const selectedPage = resolvePage(settings.page, pageKeys);
+
   app.append(
-    renderControls(
-      settings,
-      pages.map((page) => page.key),
-    ),
+    renderControls({ ...settings, page: selectedPage }, pageKeys),
     ...pages
-      .filter((page) => !settings.page || page.key === settings.page)
+      .filter((page) => !selectedPage || page.key === selectedPage)
       .map(renderPage),
   );
+
+  document.body.dataset['ready'] = 'true';
 }
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -59,7 +61,11 @@ async function loadFonts(tokens: FontTokens): Promise<void> {
         style,
       });
       document.fonts.add(face);
-      await face.load();
+      try {
+        await face.load();
+      } catch {
+        throw new Error(`Could not load the ${FONT_FAMILY} font from ${url}.`);
+      }
     }),
   );
 }

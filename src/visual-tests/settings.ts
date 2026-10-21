@@ -43,6 +43,13 @@ export function getThemeClasses(settings: VisualTestSettings): string[] {
   return classes;
 }
 
+export function resolvePage(
+  page: string | undefined,
+  pageKeys: string[],
+): string | undefined {
+  return page && pageKeys.includes(page) ? page : undefined;
+}
+
 function pick<T extends string>(
   value: string | null,
   options: readonly T[],

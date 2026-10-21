@@ -45,3 +45,5 @@ Query params choose what to render:
 | `spacing` | `standard`, `compact`                                     | `standard` |
 
 `mode`, `brand`, and `spacing` only apply to the modern theme. For example, `?page=colors&theme=modern&mode=dark&brand=blackbaud`.
+
+Once the page has rendered, `body` gets a `data-ready` attribute, so snapshot tools can wait for `body[data-ready]`.

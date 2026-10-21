@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { getThemeClasses, parseSettings } from './settings';
+import { getThemeClasses, parseSettings, resolvePage } from './settings';
 
 describe('parseSettings', () => {
   test('defaults to every page in the default theme', () => {
@@ -55,5 +55,15 @@ describe('getThemeClasses', () => {
       'sky-theme-brand-blackbaud',
       'sky-theme-spacing-compact',
     ]);
+  });
+});
+
+describe('resolvePage', () => {
+  test('keeps a known page', () => {
+    expect(resolvePage('colors', ['colors', 'spacing'])).toBe('colors');
+  });
+
+  test('falls back to every page for an unknown page', () => {
+    expect(resolvePage('color', ['colors', 'spacing'])).toBeUndefined();
   });
 });
