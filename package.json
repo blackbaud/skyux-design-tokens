@@ -8,9 +8,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:visual-tests": "npm run build && vite build --config vite.visual-tests.config.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "vitest run"
+    "test": "vitest run",
+    "visual-tests": "npm run build && vite --config vite.visual-tests.config.ts"
   },
   "pipelineSettings": {
     "publishToCDN": true,

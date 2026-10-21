@@ -162,14 +162,11 @@
                   }
                 },
                 {
-                  "name": "Inverse icon",
+                  "name": "Inverse icon (legacy)",
                   "className": "sky-theme-color-icon-inverse",
-                  "description": "The color for icons on heavy background colors, such as primary and danger button labels.",
+                  "description": "The legacy color for icons on heavy background colors. Use the icon on status matte or prominent container header icon color instead.",
                   "properties": {
                     "color": "var(--sky-theme-color-icon-inverse)"
-                  },
-                  "demoMetadata": {
-                    "background": "--sky-theme-color-background-icon_matte-action-heavy"
                   }
                 },
                 {
@@ -198,7 +195,7 @@
             },
             {
               "name": "Icon mattes",
-              "description": "Use icon matte colors for small backgrounds behind icons. For icons placed on icon mattes, use default, inverse, or action icon color so the icon has a high color contrast with the matte color.",
+              "description": "Use icon matte colors for small backgrounds behind icons. For icons placed on icon mattes, use default or action icon color so the icon has a high color contrast with the matte color.",
               "demoMetadata": {
                 "type": "icon-background-color"
               },
@@ -368,8 +365,7 @@
                   "description": "The color for a small background behind an icon that conveys warning or caution.",
                   "properties": {
                     "background-color": "var(--sky-theme-color-background-icon_matte-warning)"
-                  },
-                  "demoMetadata": { "color": "--sky-theme-color-icon-default" }
+                  }
                 }
               ]
             }
