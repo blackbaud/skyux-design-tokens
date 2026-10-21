@@ -1,15 +1,8 @@
-/*
- * Harness styles use fixed values so that only the demos change when tokens
- * change. Demo styles (.vt-demo-*) are ported from the docs SPA and use
- * tokens like the docs do.
- */
-
 body {
   margin: 0;
   padding: 16px;
   background-color: var(--sky-theme-color-background-page);
   color: var(--sky-theme-color-text-default);
-  /* Element demos (p, strong, em) inherit the font like they would in an app. */
   font-family: var(--sky-theme-font-family-primary);
 }
 
@@ -64,8 +57,6 @@ body {
   overflow-wrap: anywhere;
 }
 
-/* Demo box, ported from the docs SPA. */
-
 .vt-demo-box {
   width: 2rem;
   height: 2rem;
@@ -87,7 +78,7 @@ body {
 .vt-demo-type-color-swatch,
 .vt-demo-type-border-radius {
   border: var(--sky-theme-border-container-default);
-  /* Keep the swatch color out from under a transparent border. */
+  /* Keeps the fill out from under transparent borders. */
   background-clip: padding-box;
 }
 
@@ -122,8 +113,6 @@ body {
   margin: 1.5rem;
 }
 
-/* Spacing demos, which only exist here. Fixed colors keep the measured space visible. */
-
 .vt-spacing-bar {
   background-color: #2b7bb9;
 }
@@ -136,13 +125,11 @@ body {
   height: 16px;
 }
 
-/* The frame's padding area is orange; the content is blue. */
 .vt-spacing-frame {
   display: inline-flex;
   background-color: #f2a65a;
 }
 
-/* The container is outlined so the content's margin shows inside it. */
 .vt-spacing-container {
   display: inline-flex;
   outline: 1px dashed #808080;

@@ -4,7 +4,6 @@ export const BRANDS = ['base', 'blackbaud'] as const;
 export const SPACINGS = ['standard', 'compact'] as const;
 
 export interface VisualTestSettings {
-  /** The page key to show, or `undefined` to show every page. */
   page: string | undefined;
   theme: (typeof THEMES)[number];
   mode: (typeof MODES)[number];
@@ -12,11 +11,6 @@ export interface VisualTestSettings {
   spacing: (typeof SPACINGS)[number];
 }
 
-/**
- * Reads settings from query params, e.g.
- * `?page=colors&theme=modern&mode=dark&brand=blackbaud&spacing=compact`.
- * Missing or unknown values fall back to the first option.
- */
 export function parseSettings(params: URLSearchParams): VisualTestSettings {
   return {
     page: params.get('page')?.toLowerCase() || undefined,
@@ -27,10 +21,6 @@ export function parseSettings(params: URLSearchParams): VisualTestSettings {
   };
 }
 
-/**
- * The body classes the built CSS is scoped to. The default theme is defined on
- * `:root`, so mode, brand, and spacing only apply to the modern theme.
- */
 export function getThemeClasses(settings: VisualTestSettings): string[] {
   if (settings.theme === 'default') {
     return ['sky-theme-default'];

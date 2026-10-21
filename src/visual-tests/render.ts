@@ -10,7 +10,6 @@ import {
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
-/** A generic table glyph standing in for the docs' `table` icon. */
 const ICON_PATH =
   'M1 2h14v12H1z M2 3v3h5V3z M8 3v3h6V3z M2 7v3h5V7z M8 7v3h6V7z M2 11v2h5v-2z M8 11v2h6v-2z';
 

@@ -28,8 +28,6 @@ export default typescriptEslint.config(
     },
   },
   {
-    // The visual test app is type-checked with strict mode on, so lint it with
-    // its own tsconfig.
     files: ['src/visual-tests/**/*.ts', 'src/visual-tests/**/*.mts'],
     languageOptions: {
       parserOptions: {

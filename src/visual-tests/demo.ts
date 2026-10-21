@@ -1,15 +1,10 @@
 import type { DemoMetadata, StyleApiItem } from './items';
 
-/**
- * A framework-free description of a demo's DOM, so the demo logic can be
- * tested without a browser.
- */
 export interface DemoNode {
   tag: string;
   classNames?: string[];
   style?: Record<string, string>;
   text?: string;
-  /** Renders the placeholder icon glyph instead of text or children. */
   icon?: boolean;
   children?: DemoNode[];
 }
@@ -19,11 +14,6 @@ const ELEMENT_SELECTOR = /^[a-z][a-z0-9]*$/;
 const SPACING_TOKEN =
   /^--sky-theme-space-(stacked|inline|inset|conditional-input)\b/;
 
-/**
- * Describes the demo for a class or custom property, or returns `undefined`
- * when the item has nothing to show. Ported from the docs SPA's style API
- * item demo, plus spacing demos and a text fallback that only exist here.
- */
 export function describeDemo(item: StyleApiItem): DemoNode | undefined {
   const spacingDemo = describeSpacingDemo(item);
   if (spacingDemo) {
@@ -56,10 +46,6 @@ export function describeDemo(item: StyleApiItem): DemoNode | undefined {
   };
 }
 
-/**
- * Items the docs don't demo but that still have a CSS property to show,
- * such as font family and text decoration, fall back to a text demo.
- */
 function getDemoMetadata(item: StyleApiItem): DemoMetadata | undefined {
   if (item.demoMetadata?.type) {
     return item.demoMetadata;
@@ -203,11 +189,6 @@ function getMultiPropStyles(
   return styles;
 }
 
-/**
- * Spacing isn't demoed per item in the docs, so these demos are sized by the
- * actual value: bars for stacked and inline space, and a padded frame for
- * inset space and spacing classes.
- */
 export function describeSpacingDemo(item: StyleApiItem): DemoNode | undefined {
   return item.itemType === 'tokens'
     ? describeSpacingTokenDemo(item)

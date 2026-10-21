@@ -15,14 +15,9 @@ export interface MultiPropRow {
   codeValue: string;
 }
 
-/**
- * A class or custom property flattened from the public API JSON, with the
- * values the demo needs. Mirrors the item the docs SPA builds for its demos.
- */
 export interface StyleApiItem {
   name: string;
   itemType: 'classes' | 'tokens';
-  /** The class name for classes, or `var(--custom-property)` for tokens. */
   codeValue: string;
   selectors: string[];
   customProperty?: string;
@@ -33,17 +28,12 @@ export interface StyleApiItem {
 }
 
 export interface VisualTestPage {
-  /** The lowercase page key used in the `page` query param, e.g. `colors`. */
   key: string;
   name: string;
   classes: StyleApiItem[];
   tokens: StyleApiItem[];
 }
 
-/**
- * Builds one page per top-level group (Borders, Colors, etc.) found in either
- * JSON file, in the order the styles JSON lists them.
- */
 export function getPages(
   styles: PublicApiStyles,
   tokens: PublicApiTokens,
@@ -86,10 +76,6 @@ export function getTokenItems(group: PublicApiTokenGroup): StyleApiItem[] {
   return [...items, ...(group.groups ?? []).flatMap(getTokenItems)];
 }
 
-/**
- * Deprecated and obsolete names aren't defined in this repo's CSS, so only
- * items with a current class name, selector, or custom property are tested.
- */
 function isStyleVisible(style: PublicApiStyle): boolean {
   return (
     !style.excludeFromDocs && (!!style.className || !!style.selectors?.length)
@@ -100,10 +86,6 @@ function isTokenVisible(token: PublicApiToken): boolean {
   return !!token.customProperty;
 }
 
-/**
- * True when the group's tokens should render as a single combined demo rather
- * than individual items.
- */
 function isMultiPropGroup(group: PublicApiTokenGroup): boolean {
   return (
     !!group.tokens?.length && group.demoMetadata?.renderAs === 'multi-prop'

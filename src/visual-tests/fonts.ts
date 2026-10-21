@@ -1,4 +1,3 @@
-/** The font family that `--sky-theme-font-family-primary` names first. */
 export const FONT_FAMILY = 'BLKB Sans';
 
 interface FontToken {
@@ -6,7 +5,6 @@ interface FontToken {
   value: string;
 }
 
-/** The part of `json/design-tokens.json` that holds the font files. */
 export interface FontTokens {
   text?: {
     weight?: Record<string, FontToken | Record<string, FontToken> | undefined>;
@@ -20,11 +18,6 @@ export interface FontFaceSource {
   style: 'normal' | 'italic';
 }
 
-/**
- * Lists the font files the design tokens define for the primary font family,
- * matching the `@font-face` rules SKY UX apps get from their theme. Nested
- * weight groups, such as the condensed family, are skipped.
- */
 export function getFontFaceSources(tokens: FontTokens): FontFaceSource[] {
   const sources: FontFaceSource[] = [];
   const regular = tokens.text?.weight?.['regular'];

@@ -8,10 +8,6 @@ import { getPages } from './items';
 import { renderControls, renderPage } from './render';
 import { getThemeClasses, parseSettings } from './settings';
 
-/**
- * Includes every brand's tokens. Brand, mode, and spacing are chosen by the
- * body classes, so one stylesheet covers every combination.
- */
 const STYLESHEET_URL = 'bundles/base_blackbaud_public-api.css';
 const STYLES_URL = 'bundles/public-api-styles.json';
 const TOKENS_URL = 'bundles/public-api-tokens.json';
@@ -55,10 +51,6 @@ async function fetchJson<T>(url: string): Promise<T> {
   return (await response.json()) as T;
 }
 
-/**
- * SKY UX apps get the `@font-face` rules from their theme, so register the
- * same font files from the design tokens and wait for them before rendering.
- */
 async function loadFonts(tokens: FontTokens): Promise<void> {
   await Promise.all(
     getFontFaceSources(tokens).map(async ({ url, weight, style }) => {
