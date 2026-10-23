@@ -57,6 +57,7 @@
               "description": "The header of a prominent container. Supports text, icons, and borderless icon buttons.",
               "properties": {
                 "background-color": "var(--sky-theme-color-background-container-header-prominent)",
+                "border-bottom": "var(--sky-theme-border-container-header-prominent)",
                 "color": "var(--sky-theme-color-text-on_prominent)"
               },
               "contextOverrides": {
