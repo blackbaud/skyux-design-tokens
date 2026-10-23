@@ -17,6 +17,7 @@
               "properties": {
                 "background-color": "var(--sky-theme-color-background-container-default)",
                 "border": "var(--sky-theme-border-container-default)",
+                "border-radius": "var(--sky-theme-border-radius-s)",
                 "color": "var(--sky-theme-color-text-default)"
               },
               "resetContextOverrides": true

@@ -4058,6 +4058,7 @@ em {
 .sky-theme-container-default {
   background-color: var(--sky-theme-color-background-container-default);
   border: var(--sky-theme-border-container-default);
+  border-radius: var(--sky-theme-border-radius-s);
   color: var(--sky-theme-color-text-default);
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
