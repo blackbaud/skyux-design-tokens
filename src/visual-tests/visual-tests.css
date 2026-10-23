@@ -70,7 +70,8 @@ body {
   .vt-demo-type-border-color,
   .vt-demo-type-border-style,
   .vt-demo-type-border-width,
-  .vt-demo-type-border
+  .vt-demo-type-border,
+  .vt-demo-type-container
 ) {
   border-radius: var(--sky-theme-border-radius-s);
 }
