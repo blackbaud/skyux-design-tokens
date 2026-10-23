@@ -36,6 +36,19 @@ export function getFontFaceSources(tokens: FontTokens): FontFaceSource[] {
   return sources;
 }
 
+/**
+ * Declares the fonts in CSS rather than with the FontFace API so DOM snapshot
+ * tools that serialize stylesheets (such as Percy) also capture them.
+ */
+export function getFontFaceCss(sources: FontFaceSource[]): string {
+  return sources
+    .map(
+      ({ url, weight, style }) =>
+        `@font-face { font-family: "${FONT_FAMILY}"; src: url("${url}") format("woff"); font-weight: ${weight}; font-style: ${style}; }`,
+    )
+    .join('\n');
+}
+
 function isFontToken(value: unknown): value is FontToken {
   return (
     typeof value === 'object' &&
