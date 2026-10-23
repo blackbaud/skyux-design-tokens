@@ -20,7 +20,7 @@ const CONTAINER_CONTENT: DemoNode[] = [
     classNames: ['sky-theme-font-body-deemphasized-m'],
     text: 'Deemphasized',
   },
-  { tag: 'span', icon: true },
+  { tag: 'span', classNames: ['vt-demo-icon'], icon: true },
 ];
 
 const SPACING_TOKEN =

@@ -119,6 +119,13 @@ body {
   padding: 8px;
 }
 
+.vt-demo-icon {
+  color: var(
+    --sky-ctx-override-icon-color,
+    var(--sky-theme-color-icon-default)
+  );
+}
+
 .vt-demo-nested {
   padding: 4px;
 }

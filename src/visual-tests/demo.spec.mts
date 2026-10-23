@@ -107,10 +107,14 @@ describe('describeDemo', () => {
       ['sky-theme-font-heading-4'],
       ['sky-theme-font-body-m'],
       ['sky-theme-font-body-deemphasized-m'],
-      undefined,
+      ['vt-demo-icon'],
       ['vt-demo-nested', 'sky-theme-container-default'],
     ]);
-    expect(demo?.children?.[3]).toEqual({ tag: 'span', icon: true });
+    expect(demo?.children?.[3]).toEqual({
+      tag: 'span',
+      classNames: ['vt-demo-icon'],
+      icon: true,
+    });
   });
 
   test('nests a backdrop container in the default container', () => {
