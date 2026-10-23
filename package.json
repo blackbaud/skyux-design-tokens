@@ -12,6 +12,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
+    "test:visual-tests": "npm run build:visual-tests && percy exec -- playwright test",
     "visual-tests": "npm run build && vite --config vite.visual-tests.config.ts"
   },
   "pipelineSettings": {
@@ -20,6 +21,9 @@
   },
   "devDependencies": {
     "@blackbaud/skyux-branding-builder": "5.1.0",
+    "@percy/cli": "1.32.12",
+    "@percy/playwright": "1.1.2",
+    "@playwright/test": "1.64.1",
     "@skyux/dev-infra-private": "github:blackbaud/skyux-dev-infra-private-builds#12.0.0-alpha.26",
     "@tokens-studio/sd-transforms": "2.0.3",
     "@types/fs-extra": "11.0.4",

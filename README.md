@@ -47,3 +47,16 @@ Query params choose what to render:
 `mode`, `brand`, and `spacing` only apply to the modern theme. For example, `?page=colors&theme=modern&mode=dark&brand=blackbaud`.
 
 Once the page has rendered, `body` gets a `data-ready` attribute, so snapshot tools can wait for `body[data-ready]`.
+
+### Percy snapshots
+
+Run `npm run test:visual-tests` to build the page, serve it, and use Playwright to take a [Percy](https://percy.io) snapshot of every page in each of these themes:
+
+- `default`
+- `modern` in `light` and `dark` mode, with the `base` and `blackbaud` brands
+
+`compact` spacing is not snapshotted because no tokens change with it yet.
+
+Without a `PERCY_TOKEN` environment variable, Percy is skipped and the tests only check that every page renders. Set `PERCY_TOKEN` to the project token to send the snapshots to Percy.
+
+The `Visual tests` GitHub workflow runs this on every pull request and on pushes to `master` and release branches. Pushes create the baselines that pull requests are compared against. Pull requests from forks do not have access to the token, so they run without Percy.

@@ -3,7 +3,12 @@ import type {
   PublicApiTokens,
 } from '@blackbaud/skyux-branding-builder';
 
-import { FONT_FAMILY, getFontFaceSources, type FontTokens } from './fonts';
+import {
+  FONT_FAMILY,
+  getFontFaceCss,
+  getFontFaceSources,
+  type FontTokens,
+} from './fonts';
 import { getPages } from './items';
 import { renderControls, renderPage } from './render';
 import { getThemeClasses, parseSettings, resolvePage } from './settings';
@@ -54,16 +59,23 @@ async function fetchJson<T>(url: string): Promise<T> {
 }
 
 async function loadFonts(tokens: FontTokens): Promise<void> {
+  const sources = getFontFaceSources(tokens);
+
+  const fontFaceStyle = document.createElement('style');
+  fontFaceStyle.textContent = getFontFaceCss(sources);
+  document.head.append(fontFaceStyle);
+
   await Promise.all(
-    getFontFaceSources(tokens).map(async ({ url, weight, style }) => {
-      const face = new FontFace(FONT_FAMILY, `url(${url}) format('woff')`, {
-        weight,
-        style,
-      });
-      document.fonts.add(face);
+    sources.map(async ({ url, weight, style }) => {
+      let faces: FontFace[] = [];
       try {
-        await face.load();
+        faces = await document.fonts.load(
+          `${style} ${weight} 1em "${FONT_FAMILY}"`,
+        );
       } catch {
+        // A face that fails to download rejects; handled with the empty case below.
+      }
+      if (!faces.length || faces.some((face) => face.status !== 'loaded')) {
         throw new Error(`Could not load the ${FONT_FAMILY} font from ${url}.`);
       }
     }),

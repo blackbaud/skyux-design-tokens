@@ -61,5 +61,6 @@ typings/
 
 dist/
 dist-visual-tests/
+test-results/
 
 src/dev/extra-styles.css

@@ -1,0 +1,77 @@
+name: Visual tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - '[0-9]+.x.x'
+  workflow_dispatch:
+
+concurrency:
+  # Pushes get their own group so Percy baseline builds are never cancelled or replaced.
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.run_number }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  visual-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PERCY_BROWSER_EXECUTABLE: /usr/bin/google-chrome
+      # Pull requests from forks do not receive secrets, so they run without Percy.
+      PERCY_REQUIRED: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+      PERCY_SKIP_UPDATE_CHECK: 'true'
+      PERCY_TARGET_BRANCH: ${{ github.base_ref }}
+      PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          cache: 'npm'
+          node-version-file: '.nvmrc'
+      - name: npm install
+        run: npm ci
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+      - name: Require Percy token
+        if: ${{ env.PERCY_REQUIRED == 'true' && env.PERCY_TOKEN == '' }}
+        run: |
+          echo '::error::The PERCY_TOKEN secret is not available, so no Percy build can be created.'
+          exit 1
+      - name: Visual tests
+        run: |
+          set -o pipefail
+          npm run test:visual-tests 2>&1 | tee "$RUNNER_TEMP/percy.log"
+      - name: Verify Percy build
+        # Percy logs startup and snapshot errors without failing the command, so check its log.
+        if: ${{ env.PERCY_REQUIRED == 'true' }}
+        run: |
+          LOG="$RUNNER_TEMP/percy.log"
+          if grep -q 'Skipping visual tests' "$LOG"; then
+            echo '::error::Percy did not start. See the Visual tests step log.'
+            exit 1
+          fi
+          if grep -qE 'Encountered an error (taking|uploading) snapshot' "$LOG"; then
+            echo '::error::Percy failed to process one or more snapshots.'
+            exit 1
+          fi
+          if ! grep -q 'Finalized build #' "$LOG"; then
+            echo '::error::Percy did not finalize a build.'
+            exit 1
+          fi
+      - name: Upload test results
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: visual-test-results
+          path: |
+            test-results/
+            ${{ runner.temp }}/percy.log
+          retention-days: 4
+          if-no-files-found: ignore
