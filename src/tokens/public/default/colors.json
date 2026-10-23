@@ -73,6 +73,36 @@
             "$type": "color",
             "$value": "#ffd597"
           }
+        },
+        "action": {
+          "tertiary": {
+            "base": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "on_prominent": {
+              "base": {
+                "$type": "color",
+                "$value": "transparent"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "#42597E"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "#536F9D"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "transparent"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "#51555c"
+              }
+            }
+          }
         }
       },
       "border": {
@@ -120,9 +150,49 @@
         },
         "action": {
           "on_status": {
+            "base": {
+              "$type": "color",
+              "$value": "transparent"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "#212327"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "#212327"
+            },
             "focus": {
               "$type": "color",
               "$value": "#212327"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "#cdcfd2"
+            }
+          },
+          "tertiary": {
+            "on_prominent": {
+              "base": {
+                "$type": "color",
+                "$value": "transparent"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "#AAC4EE"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "#AAC4EE"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "#AAC4EE"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "#3b4047"
+              }
             }
           }
         }

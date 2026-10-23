@@ -90,6 +90,29 @@ describe('describeDemo', () => {
     ]);
   });
 
+  test('applies a container class to the box and fills it with sample content', () => {
+    const demo = describeDemo(
+      cssClass({
+        codeValue: 'sky-theme-container-danger',
+        demoMetadata: { type: 'container' },
+      }),
+    );
+
+    expect(demo?.classNames).toEqual([
+      'vt-demo-box',
+      'vt-demo-type-container',
+      'sky-theme-container-danger',
+    ]);
+    expect(demo?.children?.map((child) => child.classNames)).toEqual([
+      ['sky-theme-font-heading-4'],
+      ['sky-theme-font-body-m'],
+      ['sky-theme-font-body-deemphasized-m'],
+      undefined,
+      ['vt-demo-nested', 'sky-theme-container-default'],
+    ]);
+    expect(demo?.children?.[3]).toEqual({ tag: 'span', icon: true });
+  });
+
   test('renders an element demo from the first selector', () => {
     const demo = describeDemo(
       cssClass({

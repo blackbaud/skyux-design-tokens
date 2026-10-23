@@ -1,0 +1,195 @@
+{
+  "groups": [
+    {
+      "name": "Containers",
+      "demoMetadata": {
+        "type": "container"
+      },
+      "groups": [
+        {
+          "name": "Containers",
+          "description": "Apply a container class to the element that wraps a section of content. Container classes set the background, border, and text color, and SKY UX components inside the container adjust to match.",
+          "styles": [
+            {
+              "name": "Default container",
+              "className": "sky-theme-container-default",
+              "description": "The main container for content and actions on a page.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-default)",
+                "border": "var(--sky-theme-border-container-default)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Dimmed container",
+              "className": "sky-theme-container-dimmed",
+              "description": "A container for actions or content that is secondary or supports default containers.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-dimmed)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Backdrop container",
+              "className": "sky-theme-container-backdrop",
+              "description": "A container behind a canvas, WYSIWYG editor, or preview.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-backdrop)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Prominent container",
+              "className": "sky-theme-container-prominent",
+              "description": "A container for tools that work alongside the main page content.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-prominent)",
+                "color": "var(--sky-theme-color-text-default)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Prominent container header",
+              "className": "sky-theme-container-header-prominent",
+              "description": "The header of a prominent container. Supports text, icons, and borderless icon buttons.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-header-prominent)",
+                "color": "var(--sky-theme-color-text-on_prominent)"
+              },
+              "contextOverrides": {
+                "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_prominent)",
+                "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_prominent-base)",
+                "--sky-ctx-override-icon-btn-icon-color": "var(--sky-theme-color-icon-on_prominent-base)",
+                "--sky-ctx-override-icon-btn-icon-color-disabled": "var(--sky-theme-color-icon-on_prominent-disabled)",
+                "--sky-ctx-override-icon-btn-background-base": "var(--sky-theme-color-background-action-tertiary-on_prominent-base)",
+                "--sky-ctx-override-icon-btn-background-hover": "var(--sky-theme-color-background-action-tertiary-on_prominent-hover)",
+                "--sky-ctx-override-icon-btn-background-active": "var(--sky-theme-color-background-action-tertiary-on_prominent-active)",
+                "--sky-ctx-override-icon-btn-background-focus": "var(--sky-theme-color-background-action-tertiary-on_prominent-focus)",
+                "--sky-ctx-override-icon-btn-background-disabled": "var(--sky-theme-color-background-action-tertiary-on_prominent-disabled)",
+                "--sky-ctx-override-icon-btn-border-base": "var(--sky-theme-color-border-action-tertiary-on_prominent-base)",
+                "--sky-ctx-override-icon-btn-border-hover": "var(--sky-theme-color-border-action-tertiary-on_prominent-hover)",
+                "--sky-ctx-override-icon-btn-border-active": "var(--sky-theme-color-border-action-tertiary-on_prominent-active)",
+                "--sky-ctx-override-icon-btn-border-focus": "var(--sky-theme-color-border-action-tertiary-on_prominent-focus)",
+                "--sky-ctx-override-icon-btn-border-disabled": "var(--sky-theme-color-border-action-tertiary-on_prominent-disabled)"
+              },
+              "resetContextOverrides": true
+            }
+          ]
+        },
+        {
+          "name": "Status containers",
+          "description": "Containers that communicate status, such as errors and warnings.",
+          "styles": [
+            {
+              "name": "Danger container",
+              "className": "sky-theme-container-danger",
+              "description": "A container that communicates an error or danger using the danger status background.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-danger)",
+                "color": "var(--sky-theme-color-text-on_status)"
+              },
+              "contextOverrides": {
+                "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
+                "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
+                "--sky-ctx-override-link-text-decoration": "var(--sky-theme-font-text_decoration-action-on_status)",
+                "--sky-ctx-override-link-focus-color": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-tertiary-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-tertiary-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
+                "--sky-ctx-override-tertiary-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-tertiary-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
+                "--sky-ctx-override-tertiary-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-tertiary-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Info container",
+              "className": "sky-theme-container-info",
+              "description": "A container that communicates information using the info status background.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-info)",
+                "color": "var(--sky-theme-color-text-on_status)"
+              },
+              "contextOverrides": {
+                "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
+                "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
+                "--sky-ctx-override-link-text-decoration": "var(--sky-theme-font-text_decoration-action-on_status)",
+                "--sky-ctx-override-link-focus-color": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-tertiary-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-tertiary-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
+                "--sky-ctx-override-tertiary-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-tertiary-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
+                "--sky-ctx-override-tertiary-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-tertiary-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Success container",
+              "className": "sky-theme-container-success",
+              "description": "A container that communicates success using the success status background.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-success)",
+                "color": "var(--sky-theme-color-text-on_status)"
+              },
+              "contextOverrides": {
+                "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
+                "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
+                "--sky-ctx-override-link-text-decoration": "var(--sky-theme-font-text_decoration-action-on_status)",
+                "--sky-ctx-override-link-focus-color": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-tertiary-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-tertiary-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
+                "--sky-ctx-override-tertiary-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-tertiary-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
+                "--sky-ctx-override-tertiary-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-tertiary-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)"
+              },
+              "resetContextOverrides": true
+            },
+            {
+              "name": "Warning container",
+              "className": "sky-theme-container-warning",
+              "description": "A container that communicates a warning using the warning status background.",
+              "properties": {
+                "background-color": "var(--sky-theme-color-background-container-warning)",
+                "color": "var(--sky-theme-color-text-on_status)"
+              },
+              "contextOverrides": {
+                "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
+                "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
+                "--sky-ctx-override-link-text-decoration": "var(--sky-theme-font-text_decoration-action-on_status)",
+                "--sky-ctx-override-link-focus-color": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-tertiary-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
+                "--sky-ctx-override-tertiary-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
+                "--sky-ctx-override-tertiary-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-tertiary-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
+                "--sky-ctx-override-tertiary-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-tertiary-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
+                "--sky-ctx-override-tertiary-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)"
+              },
+              "resetContextOverrides": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,24 @@ export interface DemoNode {
 
 const DEFAULT_DEMO_TEXT = 'Bb';
 const ELEMENT_SELECTOR = /^[a-z][a-z0-9]*$/;
+const CONTAINER_CHILDREN: DemoNode[] = [
+  { tag: 'span', classNames: ['sky-theme-font-heading-4'], text: 'Heading' },
+  { tag: 'span', classNames: ['sky-theme-font-body-m'], text: 'Body' },
+  {
+    tag: 'span',
+    classNames: ['sky-theme-font-body-deemphasized-m'],
+    text: 'Deemphasized',
+  },
+  { tag: 'span', icon: true },
+  {
+    tag: 'div',
+    classNames: ['vt-demo-nested', 'sky-theme-container-default'],
+    children: [
+      { tag: 'span', classNames: ['sky-theme-font-body-m'], text: 'Nested' },
+    ],
+  },
+];
+
 const SPACING_TOKEN =
   /^--sky-theme-space-(stacked|inline|inset|conditional-input)\b/;
 
@@ -64,6 +82,10 @@ function getBoxChildren(
   applyClassToText: boolean,
 ): DemoNode[] {
   const text = meta.text ?? DEFAULT_DEMO_TEXT;
+
+  if (meta.type === 'container') {
+    return CONTAINER_CHILDREN;
+  }
 
   if (meta.type === 'icon-color' || meta.type === 'icon-background-color') {
     return [{ tag: 'span', icon: true }];

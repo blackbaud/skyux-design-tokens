@@ -109,6 +109,19 @@ body {
   align-self: flex-start;
 }
 
+.vt-demo-type-container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: auto;
+  height: auto;
+  padding: 8px;
+}
+
+.vt-demo-nested {
+  padding: 4px;
+}
+
 .vt-demo-type-elevation {
   margin: 1.5rem;
 }

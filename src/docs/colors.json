@@ -68,6 +68,41 @@
                   ]
                 }
               ]
+            },
+            {
+              "groupName": "Action backgrounds",
+              "tokens": [
+                {
+                  "name": "Tertiary action background",
+                  "customProperty": "--sky-theme-color-background-action-tertiary-base",
+                  "description": "The background color for tertiary actions, such as link buttons and borderless buttons."
+                },
+                {
+                  "name": "Action background on prominent header",
+                  "customProperty": "--sky-theme-color-background-action-tertiary-on_prominent-base",
+                  "description": "The background color for tertiary actions on prominent container headers."
+                },
+                {
+                  "name": "Hover background for action on prominent header",
+                  "customProperty": "--sky-theme-color-background-action-tertiary-on_prominent-hover",
+                  "description": "The background color for tertiary actions on prominent container headers when hovered."
+                },
+                {
+                  "name": "Active background for action on prominent header",
+                  "customProperty": "--sky-theme-color-background-action-tertiary-on_prominent-active",
+                  "description": "The background color for tertiary actions on prominent container headers when active."
+                },
+                {
+                  "name": "Focus background for action on prominent header",
+                  "customProperty": "--sky-theme-color-background-action-tertiary-on_prominent-focus",
+                  "description": "The background color for tertiary actions on prominent container headers when focused."
+                },
+                {
+                  "name": "Disabled background for action on prominent header",
+                  "customProperty": "--sky-theme-color-background-action-tertiary-on_prominent-disabled",
+                  "description": "The background color for disabled tertiary actions on prominent container headers."
+                }
+              ]
             }
           ]
         },
@@ -116,12 +151,84 @@
               ]
             },
             {
-              "groupName": "Other",
+              "groupName": "Action borders",
               "tokens": [
+                {
+                  "name": "Action border on status background",
+                  "customProperty": "--sky-theme-color-border-action-on_status-base",
+                  "description": "The border color for tertiary actions on status backgrounds.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-success"
+                  }
+                },
+                {
+                  "name": "Hover border for action on status background",
+                  "customProperty": "--sky-theme-color-border-action-on_status-hover",
+                  "description": "The border color for tertiary actions on status backgrounds when hovered.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-success"
+                  }
+                },
+                {
+                  "name": "Active border for action on status background",
+                  "customProperty": "--sky-theme-color-border-action-on_status-active",
+                  "description": "The border color for tertiary actions on status backgrounds when active.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-success"
+                  }
+                },
                 {
                   "name": "Focus border for action text on status background",
                   "customProperty": "--sky-theme-color-border-action-on_status-focus",
                   "description": "The color of a focus-visible border for action text on status backgrounds."
+                },
+                {
+                  "name": "Disabled border for action on status background",
+                  "customProperty": "--sky-theme-color-border-action-on_status-disabled",
+                  "description": "The border color for disabled tertiary actions on status backgrounds.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-success"
+                  }
+                },
+                {
+                  "name": "Action border on prominent header",
+                  "customProperty": "--sky-theme-color-border-action-tertiary-on_prominent-base",
+                  "description": "The border color for tertiary actions on prominent container headers.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
+                  }
+                },
+                {
+                  "name": "Hover border for action on prominent header",
+                  "customProperty": "--sky-theme-color-border-action-tertiary-on_prominent-hover",
+                  "description": "The border color for tertiary actions on prominent container headers when hovered.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
+                  }
+                },
+                {
+                  "name": "Active border for action on prominent header",
+                  "customProperty": "--sky-theme-color-border-action-tertiary-on_prominent-active",
+                  "description": "The border color for tertiary actions on prominent container headers when active.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
+                  }
+                },
+                {
+                  "name": "Focus border for action on prominent header",
+                  "customProperty": "--sky-theme-color-border-action-tertiary-on_prominent-focus",
+                  "description": "The color of a focus-visible border for tertiary actions on prominent container headers.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
+                  }
+                },
+                {
+                  "name": "Disabled border for action on prominent header",
+                  "customProperty": "--sky-theme-color-border-action-tertiary-on_prominent-disabled",
+                  "description": "The border color for disabled tertiary actions on prominent container headers.",
+                  "demoMetadata": {
+                    "background": "--sky-theme-color-background-container-header-prominent"
+                  }
                 }
               ]
             }
