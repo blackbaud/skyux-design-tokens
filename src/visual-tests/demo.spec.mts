@@ -113,6 +113,20 @@ describe('describeDemo', () => {
     expect(demo?.children?.[3]).toEqual({ tag: 'span', icon: true });
   });
 
+  test('nests a backdrop container in the default container', () => {
+    const demo = describeDemo(
+      cssClass({
+        codeValue: 'sky-theme-container-default',
+        demoMetadata: { type: 'container' },
+      }),
+    );
+
+    expect(demo?.children?.[4]?.classNames).toEqual([
+      'vt-demo-nested',
+      'sky-theme-container-backdrop',
+    ]);
+  });
+
   test('renders an element demo from the first selector', () => {
     const demo = describeDemo(
       cssClass({

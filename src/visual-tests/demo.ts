@@ -11,7 +11,8 @@ export interface DemoNode {
 
 const DEFAULT_DEMO_TEXT = 'Bb';
 const ELEMENT_SELECTOR = /^[a-z][a-z0-9]*$/;
-const CONTAINER_CHILDREN: DemoNode[] = [
+const DEFAULT_CONTAINER = 'sky-theme-container-default';
+const CONTAINER_CONTENT: DemoNode[] = [
   { tag: 'span', classNames: ['sky-theme-font-heading-4'], text: 'Heading' },
   { tag: 'span', classNames: ['sky-theme-font-body-m'], text: 'Body' },
   {
@@ -20,13 +21,6 @@ const CONTAINER_CHILDREN: DemoNode[] = [
     text: 'Deemphasized',
   },
   { tag: 'span', icon: true },
-  {
-    tag: 'div',
-    classNames: ['vt-demo-nested', 'sky-theme-container-default'],
-    children: [
-      { tag: 'span', classNames: ['sky-theme-font-body-m'], text: 'Nested' },
-    ],
-  },
 ];
 
 const SPACING_TOKEN =
@@ -84,7 +78,7 @@ function getBoxChildren(
   const text = meta.text ?? DEFAULT_DEMO_TEXT;
 
   if (meta.type === 'container') {
-    return CONTAINER_CHILDREN;
+    return getContainerChildren(item.codeValue);
   }
 
   if (meta.type === 'icon-color' || meta.type === 'icon-background-color') {
@@ -113,6 +107,24 @@ function getBoxChildren(
   }
 
   return [];
+}
+
+function getContainerChildren(className: string): DemoNode[] {
+  const nestedClassName =
+    className === DEFAULT_CONTAINER
+      ? 'sky-theme-container-backdrop'
+      : DEFAULT_CONTAINER;
+
+  return [
+    ...CONTAINER_CONTENT,
+    {
+      tag: 'div',
+      classNames: ['vt-demo-nested', nestedClassName],
+      children: [
+        { tag: 'span', classNames: ['sky-theme-font-body-m'], text: 'Nested' },
+      ],
+    },
+  ];
 }
 
 function getMetadataStyles(meta: DemoMetadata): Record<string, string> {
