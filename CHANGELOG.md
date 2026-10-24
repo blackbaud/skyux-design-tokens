@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0...7.1.0) (2026-10-24)
+
+
+### Features
+
+* add playground for visual testing ([#501](https://github.com/blackbaud/skyux-design-tokens/issues/501)) ([69f2690](https://github.com/blackbaud/skyux-design-tokens/commit/69f2690d8d573dad45e264026f474267616a8cad))
+
 ## [7.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.12.0...7.0.0) (2026-09-29)
 
 
