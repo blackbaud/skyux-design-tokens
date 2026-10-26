@@ -6,8 +6,8 @@ import type {
 } from '@blackbaud/skyux-branding-builder';
 
 import borders from './borders.json';
-import containers from './containers.json';
 import colors from './colors.json';
+import containers from './containers.json';
 import elevation from './elevation.json';
 import spacing from './spacing.json';
 import typography from './typography.json';
@@ -267,8 +267,8 @@ function getSchemaErrors(root: unknown): string[] {
 /** Keep in sync with `publicStyles` in `src/tokens/token-config.mts`. */
 const classFiles: Record<string, unknown> = {
   'borders.json': borders,
-  'containers.json': containers,
   'colors.json': colors,
+  'containers.json': containers,
   'elevation.json': elevation,
   'spacing.json': spacing,
   'typography.json': typography,
