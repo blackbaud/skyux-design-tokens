@@ -63,6 +63,8 @@
               },
               "contextOverrides": {
                 "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_prominent)",
+                "--sky-ctx-override-heading-text-color": "var(--sky-theme-color-text-on_prominent)",
+                "--sky-ctx-override-deemphasized-text-color": "var(--sky-theme-color-text-on_prominent)",
                 "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_prominent-base)",
                 "--sky-ctx-override-icon-btn-icon-color": "var(--sky-theme-color-icon-on_prominent-base)",
                 "--sky-ctx-override-icon-btn-icon-color-disabled": "var(--sky-theme-color-icon-on_prominent-disabled)",
@@ -95,6 +97,8 @@
               },
               "contextOverrides": {
                 "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-heading-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-deemphasized-text-color": "var(--sky-theme-color-text-on_status)",
                 "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
                 "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
@@ -121,6 +125,8 @@
               },
               "contextOverrides": {
                 "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-heading-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-deemphasized-text-color": "var(--sky-theme-color-text-on_status)",
                 "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
                 "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
@@ -147,6 +153,8 @@
               },
               "contextOverrides": {
                 "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-heading-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-deemphasized-text-color": "var(--sky-theme-color-text-on_status)",
                 "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
                 "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",
@@ -173,6 +181,8 @@
               },
               "contextOverrides": {
                 "--sky-ctx-override-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-heading-text-color": "var(--sky-theme-color-text-on_status)",
+                "--sky-ctx-override-deemphasized-text-color": "var(--sky-theme-color-text-on_status)",
                 "--sky-ctx-override-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-icon-path-2-color": "var(--sky-theme-color-icon-on_status)",
                 "--sky-ctx-override-link-color": "var(--sky-theme-color-text-action_on_status)",

@@ -3627,70 +3627,70 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   font-size: var(--sky-theme-font-size-heading-1);
   line-height: var(--sky-theme-font-line_height-heading-1);
   font-family: var(--sky-theme-font-family-heading-1);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 h1 {
   font-weight: var(--sky-theme-font-weight-heading-1);
   font-size: var(--sky-theme-font-size-heading-1);
   line-height: var(--sky-theme-font-line_height-heading-1);
   font-family: var(--sky-theme-font-family-heading-1);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 .sky-theme-font-heading-2 {
   font-weight: var(--sky-theme-font-weight-heading-2);
   font-size: var(--sky-theme-font-size-heading-2);
   line-height: var(--sky-theme-font-line_height-heading-2);
   font-family: var(--sky-theme-font-family-heading-2);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 h2 {
   font-weight: var(--sky-theme-font-weight-heading-2);
   font-size: var(--sky-theme-font-size-heading-2);
   line-height: var(--sky-theme-font-line_height-heading-2);
   font-family: var(--sky-theme-font-family-heading-2);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 .sky-theme-font-heading-3 {
   font-weight: var(--sky-theme-font-weight-heading-3);
   font-size: var(--sky-theme-font-size-heading-3);
   line-height: var(--sky-theme-font-line_height-heading-3);
   font-family: var(--sky-theme-font-family-heading-3);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 h3 {
   font-weight: var(--sky-theme-font-weight-heading-3);
   font-size: var(--sky-theme-font-size-heading-3);
   line-height: var(--sky-theme-font-line_height-heading-3);
   font-family: var(--sky-theme-font-family-heading-3);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 .sky-theme-font-heading-4 {
   font-weight: var(--sky-theme-font-weight-heading-4);
   font-size: var(--sky-theme-font-size-heading-4);
   line-height: var(--sky-theme-font-line_height-heading-4);
   font-family: var(--sky-theme-font-family-heading-4);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 h4 {
   font-weight: var(--sky-theme-font-weight-heading-4);
   font-size: var(--sky-theme-font-size-heading-4);
   line-height: var(--sky-theme-font-line_height-heading-4);
   font-family: var(--sky-theme-font-family-heading-4);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading));
+  color: var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading));
 }
 .sky-theme-font-heading-5 {
   font-weight: var(--sky-theme-font-weight-heading-5);
   font-size: var(--sky-theme-font-size-heading-5);
   line-height: var(--sky-theme-font-line_height-heading-5);
   font-family: var(--sky-theme-font-family-heading-5);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized));
+  color: var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized));
 }
 h5 {
   font-weight: var(--sky-theme-font-weight-heading-5);
   font-size: var(--sky-theme-font-size-heading-5);
   line-height: var(--sky-theme-font-line_height-heading-5);
   font-family: var(--sky-theme-font-family-heading-5);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized));
+  color: var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized));
 }
 .sky-theme-font-body-m {
   font-weight: var(--sky-theme-font-weight-body-m);
@@ -3711,7 +3711,7 @@ h5 {
   font-size: var(--sky-theme-font-size-body-deemphasized-m);
   line-height: var(--sky-theme-font-line_height-body-deemphasized-m);
   font-family: var(--sky-theme-font-family-body-deemphasized-m);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized));
+  color: var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized));
 }
 .sky-theme-font-body-s {
   font-weight: var(--sky-theme-font-weight-body-s);
@@ -3732,7 +3732,7 @@ h5 {
   font-size: var(--sky-theme-font-size-body-deemphasized-s);
   line-height: var(--sky-theme-font-line_height-body-deemphasized-s);
   font-family: var(--sky-theme-font-family-body-deemphasized-s);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized));
+  color: var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized));
 }
 .sky-theme-font-body-l {
   font-weight: var(--sky-theme-font-weight-body-l);
@@ -3789,7 +3789,7 @@ em {
   font-size: var(--sky-theme-font-size-hint-m);
   line-height: var(--sky-theme-font-line_height-hint-m);
   font-family: var(--sky-theme-font-family-hint-m);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized));
+  color: var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized));
 }
 .sky-theme-font-hint-s {
   font-style: var(--sky-theme-font-style-hint-s-style);
@@ -3798,7 +3798,7 @@ em {
   line-height: var(--sky-theme-font-line_height-hint-s);
   font-family: var(--sky-theme-font-family-hint-s);
   letter-spacing: var(--sky-theme-font-letter_spacing-hint-s);
-  color: var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized));
+  color: var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized));
 }
 .sky-theme-elevation-raised-100 {
   box-shadow: var(--sky-theme-elevation-raised-100);
@@ -4060,6 +4060,8 @@ em {
   border: var(--sky-theme-border-container-default);
   border-radius: var(--sky-theme-border-radius-s);
   color: var(--sky-theme-color-text-default);
+  --sky-ctx-override-deemphasized-text-color: initial;
+  --sky-ctx-override-heading-text-color: initial;
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4090,6 +4092,8 @@ em {
 .sky-theme-container-dimmed {
   background-color: var(--sky-theme-color-background-container-dimmed);
   color: var(--sky-theme-color-text-default);
+  --sky-ctx-override-deemphasized-text-color: initial;
+  --sky-ctx-override-heading-text-color: initial;
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4120,6 +4124,8 @@ em {
 .sky-theme-container-backdrop {
   background-color: var(--sky-theme-color-background-container-backdrop);
   color: var(--sky-theme-color-text-default);
+  --sky-ctx-override-deemphasized-text-color: initial;
+  --sky-ctx-override-heading-text-color: initial;
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4150,6 +4156,8 @@ em {
 .sky-theme-container-prominent {
   background-color: var(--sky-theme-color-background-container-prominent);
   color: var(--sky-theme-color-text-default);
+  --sky-ctx-override-deemphasized-text-color: initial;
+  --sky-ctx-override-heading-text-color: initial;
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4182,6 +4190,8 @@ em {
   border-bottom: var(--sky-theme-border-container-header-prominent);
   color: var(--sky-theme-color-text-on_prominent);
   --sky-ctx-override-text-color: var(--sky-theme-color-text-on_prominent);
+  --sky-ctx-override-heading-text-color: var(--sky-theme-color-text-on_prominent);
+  --sky-ctx-override-deemphasized-text-color: var(--sky-theme-color-text-on_prominent);
   --sky-ctx-override-icon-color: var(--sky-theme-color-icon-on_prominent-base);
   --sky-ctx-override-icon-btn-icon-color: var(--sky-theme-color-icon-on_prominent-base);
   --sky-ctx-override-icon-btn-icon-color-disabled: var(--sky-theme-color-icon-on_prominent-disabled);
@@ -4212,6 +4222,8 @@ em {
   background-color: var(--sky-theme-color-background-container-danger);
   color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-heading-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-deemphasized-text-color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-path-2-color: var(--sky-theme-color-icon-on_status);
   --sky-ctx-override-link-color: var(--sky-theme-color-text-action_on_status);
@@ -4242,6 +4254,8 @@ em {
   background-color: var(--sky-theme-color-background-container-info);
   color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-heading-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-deemphasized-text-color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-path-2-color: var(--sky-theme-color-icon-on_status);
   --sky-ctx-override-link-color: var(--sky-theme-color-text-action_on_status);
@@ -4272,6 +4286,8 @@ em {
   background-color: var(--sky-theme-color-background-container-success);
   color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-heading-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-deemphasized-text-color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-path-2-color: var(--sky-theme-color-icon-on_status);
   --sky-ctx-override-link-color: var(--sky-theme-color-text-action_on_status);
@@ -4302,6 +4318,8 @@ em {
   background-color: var(--sky-theme-color-background-container-warning);
   color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-heading-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-deemphasized-text-color: var(--sky-theme-color-text-on_status);
   --sky-ctx-override-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-path-2-color: var(--sky-theme-color-icon-on_status);
   --sky-ctx-override-link-color: var(--sky-theme-color-text-action_on_status);

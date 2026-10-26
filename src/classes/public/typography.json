@@ -20,7 +20,7 @@
                 "font-size": "var(--sky-theme-font-size-heading-1)",
                 "line-height": "var(--sky-theme-font-line_height-heading-1)",
                 "font-family": "var(--sky-theme-font-family-heading-1)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading))"
+                "color": "var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading))"
               },
               "deprecatedClassNames": ["sky-font-heading-1"],
               "obsoleteClassNames": ["sky-page-heading"]
@@ -35,7 +35,7 @@
                 "font-size": "var(--sky-theme-font-size-heading-2)",
                 "line-height": "var(--sky-theme-font-line_height-heading-2)",
                 "font-family": "var(--sky-theme-font-family-heading-2)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading))"
+                "color": "var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading))"
               },
               "deprecatedClassNames": ["sky-font-heading-2"],
               "obsoleteClassNames": ["sky-section-heading"]
@@ -50,7 +50,7 @@
                 "font-size": "var(--sky-theme-font-size-heading-3)",
                 "line-height": "var(--sky-theme-font-line_height-heading-3)",
                 "font-family": "var(--sky-theme-font-family-heading-3)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading))"
+                "color": "var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading))"
               },
               "deprecatedClassNames": ["sky-font-heading-3"],
               "obsoleteClassNames": ["sky-subsection-heading"]
@@ -65,7 +65,7 @@
                 "font-size": "var(--sky-theme-font-size-heading-4)",
                 "line-height": "var(--sky-theme-font-line_height-heading-4)",
                 "font-family": "var(--sky-theme-font-family-heading-4)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-heading))"
+                "color": "var(--sky-ctx-override-heading-text-color, var(--sky-theme-color-text-heading))"
               },
               "deprecatedClassNames": ["sky-font-heading-4"]
             },
@@ -79,7 +79,7 @@
                 "font-size": "var(--sky-theme-font-size-heading-5)",
                 "line-height": "var(--sky-theme-font-line_height-heading-5)",
                 "font-family": "var(--sky-theme-font-family-heading-5)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized))"
+                "color": "var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized))"
               },
               "deprecatedClassNames": ["sky-font-heading-5"]
             }
@@ -124,7 +124,7 @@
                 "font-size": "var(--sky-theme-font-size-body-deemphasized-m)",
                 "line-height": "var(--sky-theme-font-line_height-body-deemphasized-m)",
                 "font-family": "var(--sky-theme-font-family-body-deemphasized-m)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized))"
+                "color": "var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized))"
               }
             },
             {
@@ -161,7 +161,7 @@
                 "font-size": "var(--sky-theme-font-size-body-deemphasized-s)",
                 "line-height": "var(--sky-theme-font-line_height-body-deemphasized-s)",
                 "font-family": "var(--sky-theme-font-family-body-deemphasized-s)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized))"
+                "color": "var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized))"
               }
             },
             {
@@ -315,7 +315,7 @@
                 "font-size": "var(--sky-theme-font-size-hint-m)",
                 "line-height": "var(--sky-theme-font-line_height-hint-m)",
                 "font-family": "var(--sky-theme-font-family-hint-m)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized))"
+                "color": "var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized))"
               }
             },
             {
@@ -329,7 +329,7 @@
                 "line-height": "var(--sky-theme-font-line_height-hint-s)",
                 "font-family": "var(--sky-theme-font-family-hint-s)",
                 "letter-spacing": "var(--sky-theme-font-letter_spacing-hint-s)",
-                "color": "var(--sky-ctx-override-text-color, var(--sky-theme-color-text-deemphasized))"
+                "color": "var(--sky-ctx-override-deemphasized-text-color, var(--sky-theme-color-text-deemphasized))"
               }
             }
           ]
