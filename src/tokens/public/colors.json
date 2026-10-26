@@ -73,6 +73,36 @@
             "$type": "color",
             "$value": "{color.background.icon_matte.warning}"
           }
+        },
+        "action": {
+          "tertiary": {
+            "base": {
+              "$type": "color",
+              "$value": "{color.background.action.tertiary.base}"
+            },
+            "on_prominent": {
+              "base": {
+                "$type": "color",
+                "$value": "{color.background.action.tertiary.on_prominent.base}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{color.background.action.tertiary.on_prominent.hover}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{color.background.action.tertiary.on_prominent.active}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{color.background.action.tertiary.on_prominent.focus}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{color.background.action.tertiary.on_prominent.disabled}"
+              }
+            }
+          }
         }
       },
       "border": {
@@ -120,9 +150,49 @@
         },
         "action": {
           "on_status": {
+            "base": {
+              "$type": "color",
+              "$value": "{color.border.action.on_status.base}"
+            },
+            "hover": {
+              "$type": "color",
+              "$value": "{color.border.action.on_status.hover}"
+            },
+            "active": {
+              "$type": "color",
+              "$value": "{color.border.action.on_status.active}"
+            },
             "focus": {
               "$type": "color",
               "$value": "{color.border.action.on_status.focus}"
+            },
+            "disabled": {
+              "$type": "color",
+              "$value": "{color.border.action.on_status.disabled}"
+            }
+          },
+          "tertiary": {
+            "on_prominent": {
+              "base": {
+                "$type": "color",
+                "$value": "{color.border.action.tertiary.on_prominent.base}"
+              },
+              "hover": {
+                "$type": "color",
+                "$value": "{color.border.action.tertiary.on_prominent.hover}"
+              },
+              "active": {
+                "$type": "color",
+                "$value": "{color.border.action.tertiary.on_prominent.active}"
+              },
+              "focus": {
+                "$type": "color",
+                "$value": "{color.border.action.tertiary.on_prominent.focus}"
+              },
+              "disabled": {
+                "$type": "color",
+                "$value": "{color.border.action.tertiary.on_prominent.disabled}"
+              }
             }
           }
         }

@@ -61,6 +61,7 @@ export const tokenConfig: TokenConfig = {
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'colors', path: '../classes/public/colors.json' },
         { name: 'borders', path: '../classes/public/borders.json' },
+        { name: 'containers', path: '../classes/public/containers.json' },
       ],
     },
     {
@@ -117,6 +118,7 @@ export const tokenConfig: TokenConfig = {
         { name: 'elevation', path: '../classes/public/elevation.json' },
         { name: 'colors', path: '../classes/public/colors.json' },
         { name: 'borders', path: '../classes/public/borders.json' },
+        { name: 'containers', path: '../classes/public/containers.json' },
       ],
     },
   ],
