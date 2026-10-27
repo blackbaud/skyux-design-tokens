@@ -1916,6 +1916,28 @@
         }
       }
     },
+    "code": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.25}"
+          }
+        }
+      }
+    },
     "colorpicker": {
       "content": {
         "space": {
