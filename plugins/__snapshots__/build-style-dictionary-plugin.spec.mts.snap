@@ -1401,6 +1401,10 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-chart-tooltip-space-inset-left: var(--bb-size-fluid-50);
   --sky-comp-chart-tooltip-space-inset-right: var(--bb-size-fluid-50);
   --sky-comp-chart-tooltip-space-inset-top: var(--bb-size-fluid-50);
+  --sky-comp-code-space-inset-bottom: var(--bb-size-0);
+  --sky-comp-code-space-inset-left: var(--bb-size-fluid-25);
+  --sky-comp-code-space-inset-right: var(--bb-size-fluid-25);
+  --sky-comp-code-space-inset-top: var(--bb-size-0);
   --sky-comp-colorpicker-content-space-inset-bottom: var(--bb-size-fluid-50);
   --sky-comp-colorpicker-content-space-inset-left: var(--bb-size-fluid-75);
   --sky-comp-colorpicker-content-space-inset-right: var(--bb-size-fluid-75);
