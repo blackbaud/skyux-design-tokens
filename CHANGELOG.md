@@ -1,5 +1,19 @@
 # Changelog
 
+## [7.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0...7.1.0) (2026-10-27)
+
+
+### Features
+
+* add brand icons ([#505](https://github.com/blackbaud/skyux-design-tokens/issues/505)) ([8760d6a](https://github.com/blackbaud/skyux-design-tokens/commit/8760d6ad58226cc6e68db6a94cebc839286af58f))
+* add container classes ([#504](https://github.com/blackbaud/skyux-design-tokens/issues/504)) ([95c678e](https://github.com/blackbaud/skyux-design-tokens/commit/95c678eb724ba9f31a0ff1aa750760408aa82360))
+* add playground for visual testing ([#501](https://github.com/blackbaud/skyux-design-tokens/issues/501)) ([69f2690](https://github.com/blackbaud/skyux-design-tokens/commit/69f2690d8d573dad45e264026f474267616a8cad))
+
+
+### Bug Fixes
+
+* match Blackbaud dark icon default and action colors to text colors ([#506](https://github.com/blackbaud/skyux-design-tokens/issues/506)) ([04a437d](https://github.com/blackbaud/skyux-design-tokens/commit/04a437deb2fa0d53edc90db21b183a1d3557021e))
+
 ## [7.0.0](https://github.com/blackbaud/skyux-design-tokens/compare/6.12.0...7.0.0) (2026-09-29)
 
 
