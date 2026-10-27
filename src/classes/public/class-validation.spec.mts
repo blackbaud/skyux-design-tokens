@@ -7,6 +7,7 @@ import type {
 
 import borders from './borders.json';
 import colors from './colors.json';
+import containers from './containers.json';
 import elevation from './elevation.json';
 import spacing from './spacing.json';
 import typography from './typography.json';
@@ -93,6 +94,7 @@ const DEMO_METADATA_TYPES = new Set(
     'border-style': true,
     'border-width': true,
     'color-swatch': true,
+    container: true,
     elevation: true,
     'icon-background-color': true,
     'icon-color': true,
@@ -133,6 +135,8 @@ const STYLE_FIELDS = {
   className: expectString,
   selectors: expectStringArray,
   properties: expectStringRecord,
+  contextOverrides: expectStringRecord,
+  resetContextOverrides: expectBoolean,
   description: expectString,
   deprecatedClassNames: expectStringArray,
   obsoleteClassNames: expectStringArray,
@@ -264,6 +268,7 @@ function getSchemaErrors(root: unknown): string[] {
 const classFiles: Record<string, unknown> = {
   'borders.json': borders,
   'colors.json': colors,
+  'containers.json': containers,
   'elevation.json': elevation,
   'spacing.json': spacing,
   'typography.json': typography,

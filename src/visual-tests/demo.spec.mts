@@ -90,6 +90,47 @@ describe('describeDemo', () => {
     ]);
   });
 
+  test('applies a container class to the box and fills it with sample content', () => {
+    const demo = describeDemo(
+      cssClass({
+        codeValue: 'sky-theme-container-danger',
+        demoMetadata: { type: 'container' },
+      }),
+    );
+
+    expect(demo?.classNames).toEqual([
+      'vt-demo-box',
+      'vt-demo-type-container',
+      'sky-theme-container-danger',
+    ]);
+    expect(demo?.children?.map((child) => child.classNames)).toEqual([
+      ['sky-theme-font-heading-4'],
+      ['sky-theme-font-body-m'],
+      ['sky-theme-font-body-deemphasized-m'],
+      ['vt-demo-icon'],
+      ['vt-demo-nested', 'sky-theme-container-default'],
+    ]);
+    expect(demo?.children?.[3]).toEqual({
+      tag: 'span',
+      classNames: ['vt-demo-icon'],
+      icon: true,
+    });
+  });
+
+  test('nests a backdrop container in the default container', () => {
+    const demo = describeDemo(
+      cssClass({
+        codeValue: 'sky-theme-container-default',
+        demoMetadata: { type: 'container' },
+      }),
+    );
+
+    expect(demo?.children?.[4]?.classNames).toEqual([
+      'vt-demo-nested',
+      'sky-theme-container-backdrop',
+    ]);
+  });
+
   test('renders an element demo from the first selector', () => {
     const demo = describeDemo(
       cssClass({

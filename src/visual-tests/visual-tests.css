@@ -70,7 +70,8 @@ body {
   .vt-demo-type-border-color,
   .vt-demo-type-border-style,
   .vt-demo-type-border-width,
-  .vt-demo-type-border
+  .vt-demo-type-border,
+  .vt-demo-type-container
 ) {
   border-radius: var(--sky-theme-border-radius-s);
 }
@@ -107,6 +108,26 @@ body {
 
 .vt-demo-type-text .vt-demo-text {
   align-self: flex-start;
+}
+
+.vt-demo-type-container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: auto;
+  height: auto;
+  padding: 8px;
+}
+
+.vt-demo-icon {
+  color: var(
+    --sky-ctx-override-icon-color,
+    var(--sky-theme-color-icon-default)
+  );
+}
+
+.vt-demo-nested {
+  padding: 4px;
 }
 
 .vt-demo-type-elevation {
