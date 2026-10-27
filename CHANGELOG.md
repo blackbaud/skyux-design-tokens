@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.2.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.1.0...7.2.0) (2026-10-27)
+
+
+### Features
+
+* add code component inset spacing tokens ([#507](https://github.com/blackbaud/skyux-design-tokens/issues/507)) ([806f575](https://github.com/blackbaud/skyux-design-tokens/commit/806f575d01d163faf601e36dd2344c48ddbd061f))
+
 ## [7.1.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.0.0...7.1.0) (2026-10-27)
 
 
