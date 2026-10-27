@@ -2858,11 +2858,11 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-classify-6-soft: var(--bb-color-green_dark-700);
   --sky-color-classify-7-heavy: var(--bb-color-red_dark-300);
   --sky-color-classify-7-soft: var(--bb-color-red_dark-700);
-  --sky-color-icon-action: var(--bb-color-blue_dark-400);
+  --sky-color-icon-action: var(--bb-color-blue_dark-375);
   --sky-color-icon-action_brand: var(--bb-color-sky_dark-100);
   --sky-color-icon-danger: var(--bb-color-red_dark-400);
   --sky-color-icon-deemphasized: var(--bb-color-steel_gray-400);
-  --sky-color-icon-default: var(--bb-color-steel_gray-100);
+  --sky-color-icon-default: var(--bb-color-steel_gray-200);
   --sky-color-icon-info: var(--bb-color-blue_dark-400);
   --sky-color-icon-input-action: var(--bb-color-oklch_blue-375);
   --sky-color-icon-inverse: var(--bb-color-steel_gray-1100);

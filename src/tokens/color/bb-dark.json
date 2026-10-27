@@ -49,7 +49,7 @@
     "icon": {
       "default": {
         "$type": "color",
-        "$value": "{bb.color.steel_gray.100}"
+        "$value": "{bb.color.steel_gray.200}"
       },
       "deemphasized": {
         "$type": "color",
@@ -57,7 +57,7 @@
       },
       "action": {
         "$type": "color",
-        "$value": "{bb.color.blue_dark.400}"
+        "$value": "{bb.color.blue_dark.375}"
       },
       "danger": {
         "$type": "color",
