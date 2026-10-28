@@ -109,10 +109,10 @@
                 "--sky-ctx-override-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
                 "--sky-ctx-override-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
-                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
-                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
-                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)",
+                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-elevation": "0 0 0 0 transparent"
               },
               "resetContextOverrides": true
@@ -138,10 +138,10 @@
                 "--sky-ctx-override-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
                 "--sky-ctx-override-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
-                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
-                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
-                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)",
+                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-elevation": "0 0 0 0 transparent"
               },
               "resetContextOverrides": true
@@ -167,10 +167,10 @@
                 "--sky-ctx-override-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
                 "--sky-ctx-override-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
-                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
-                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
-                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)",
+                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-elevation": "0 0 0 0 transparent"
               },
               "resetContextOverrides": true
@@ -196,10 +196,10 @@
                 "--sky-ctx-override-btn-icon-color": "var(--sky-theme-color-icon-on_status_bg)",
                 "--sky-ctx-override-btn-background": "var(--sky-theme-color-background-action-tertiary-base)",
                 "--sky-ctx-override-btn-border-base": "var(--sky-theme-color-border-action-on_status-base)",
-                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-hover)",
-                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-active)",
+                "--sky-ctx-override-btn-border-hover": "var(--sky-theme-color-border-action-on_status-base)",
+                "--sky-ctx-override-btn-border-active": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-border-focus": "var(--sky-theme-color-border-action-on_status-focus)",
-                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-disabled)",
+                "--sky-ctx-override-btn-border-disabled": "var(--sky-theme-color-border-action-on_status-base)",
                 "--sky-ctx-override-btn-elevation": "0 0 0 0 transparent"
               },
               "resetContextOverrides": true
