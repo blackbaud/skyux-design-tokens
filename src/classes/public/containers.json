@@ -9,6 +9,9 @@
         {
           "name": "Containers",
           "description": "Apply a container class to the element that wraps a section of content. Container classes set the background, border, and text color, and SKY UX components inside the container adjust to match.",
+          "demoMetadata": {
+            "content": ["heading", "body", "icon"]
+          },
           "styles": [
             {
               "name": "Default container",
@@ -41,7 +44,16 @@
                 "color": "var(--sky-theme-color-text-default)"
               },
               "resetContextOverrides": true
-            },
+            }
+          ]
+        },
+        {
+          "name": "Prominent containers",
+          "description": "A prominent container and the header at its top.",
+          "demoMetadata": {
+            "content": ["body", "icon"]
+          },
+          "styles": [
             {
               "name": "Prominent container",
               "className": "sky-theme-container-prominent",
@@ -80,13 +92,19 @@
                 "--sky-ctx-override-icon-btn-border-focus": "var(--sky-theme-color-border-action-tertiary-on_prominent-focus)",
                 "--sky-ctx-override-icon-btn-border-disabled": "var(--sky-theme-color-border-action-tertiary-on_prominent-disabled)"
               },
-              "resetContextOverrides": true
+              "resetContextOverrides": true,
+              "demoMetadata": {
+                "content": ["heading", "icon-button"]
+              }
             }
           ]
         },
         {
           "name": "Status containers",
           "description": "Containers that communicate status, such as errors and warnings.",
+          "demoMetadata": {
+            "content": ["body-with-link", "icon"]
+          },
           "styles": [
             {
               "name": "Danger container",
