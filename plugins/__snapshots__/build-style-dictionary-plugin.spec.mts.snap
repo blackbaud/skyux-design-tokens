@@ -4083,6 +4083,8 @@ em {
   --sky-ctx-override-link-color: initial;
   --sky-ctx-override-link-focus-color: initial;
   --sky-ctx-override-link-text-decoration: initial;
+  --sky-ctx-override-secondary-btn-icon-color: initial;
+  --sky-ctx-override-secondary-btn-text-color: initial;
   --sky-ctx-override-tertiary-btn-background: initial;
   --sky-ctx-override-tertiary-btn-border-active: initial;
   --sky-ctx-override-tertiary-btn-border-base: initial;
@@ -4116,6 +4118,8 @@ em {
   --sky-ctx-override-link-color: initial;
   --sky-ctx-override-link-focus-color: initial;
   --sky-ctx-override-link-text-decoration: initial;
+  --sky-ctx-override-secondary-btn-icon-color: initial;
+  --sky-ctx-override-secondary-btn-text-color: initial;
   --sky-ctx-override-tertiary-btn-background: initial;
   --sky-ctx-override-tertiary-btn-border-active: initial;
   --sky-ctx-override-tertiary-btn-border-base: initial;
@@ -4149,6 +4153,8 @@ em {
   --sky-ctx-override-link-color: initial;
   --sky-ctx-override-link-focus-color: initial;
   --sky-ctx-override-link-text-decoration: initial;
+  --sky-ctx-override-secondary-btn-icon-color: initial;
+  --sky-ctx-override-secondary-btn-text-color: initial;
   --sky-ctx-override-tertiary-btn-background: initial;
   --sky-ctx-override-tertiary-btn-border-active: initial;
   --sky-ctx-override-tertiary-btn-border-base: initial;
@@ -4182,6 +4188,8 @@ em {
   --sky-ctx-override-link-color: initial;
   --sky-ctx-override-link-focus-color: initial;
   --sky-ctx-override-link-text-decoration: initial;
+  --sky-ctx-override-secondary-btn-icon-color: initial;
+  --sky-ctx-override-secondary-btn-text-color: initial;
   --sky-ctx-override-tertiary-btn-background: initial;
   --sky-ctx-override-tertiary-btn-border-active: initial;
   --sky-ctx-override-tertiary-btn-border-base: initial;
@@ -4217,6 +4225,8 @@ em {
   --sky-ctx-override-link-color: initial;
   --sky-ctx-override-link-focus-color: initial;
   --sky-ctx-override-link-text-decoration: initial;
+  --sky-ctx-override-secondary-btn-icon-color: initial;
+  --sky-ctx-override-secondary-btn-text-color: initial;
   --sky-ctx-override-tertiary-btn-background: initial;
   --sky-ctx-override-tertiary-btn-border-active: initial;
   --sky-ctx-override-tertiary-btn-border-base: initial;
@@ -4247,6 +4257,8 @@ em {
   --sky-ctx-override-tertiary-btn-border-focus: var(--sky-theme-color-border-action-on_status-focus);
   --sky-ctx-override-tertiary-btn-border-disabled: var(--sky-theme-color-border-action-on_status-base);
   --sky-ctx-override-tertiary-btn-elevation: 0 0 0 0 transparent;
+  --sky-ctx-override-secondary-btn-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-secondary-btn-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4280,6 +4292,8 @@ em {
   --sky-ctx-override-tertiary-btn-border-focus: var(--sky-theme-color-border-action-on_status-focus);
   --sky-ctx-override-tertiary-btn-border-disabled: var(--sky-theme-color-border-action-on_status-base);
   --sky-ctx-override-tertiary-btn-elevation: 0 0 0 0 transparent;
+  --sky-ctx-override-secondary-btn-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-secondary-btn-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4313,6 +4327,8 @@ em {
   --sky-ctx-override-tertiary-btn-border-focus: var(--sky-theme-color-border-action-on_status-focus);
   --sky-ctx-override-tertiary-btn-border-disabled: var(--sky-theme-color-border-action-on_status-base);
   --sky-ctx-override-tertiary-btn-elevation: 0 0 0 0 transparent;
+  --sky-ctx-override-secondary-btn-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-secondary-btn-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
@@ -4346,6 +4362,8 @@ em {
   --sky-ctx-override-tertiary-btn-border-focus: var(--sky-theme-color-border-action-on_status-focus);
   --sky-ctx-override-tertiary-btn-border-disabled: var(--sky-theme-color-border-action-on_status-base);
   --sky-ctx-override-tertiary-btn-elevation: 0 0 0 0 transparent;
+  --sky-ctx-override-secondary-btn-text-color: var(--sky-theme-color-text-on_status);
+  --sky-ctx-override-secondary-btn-icon-color: var(--sky-theme-color-icon-on_status_bg);
   --sky-ctx-override-icon-btn-background-active: initial;
   --sky-ctx-override-icon-btn-background-base: initial;
   --sky-ctx-override-icon-btn-background-disabled: initial;
