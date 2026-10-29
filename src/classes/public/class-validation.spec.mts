@@ -111,9 +111,33 @@ const DEMO_METADATA_RENDER_AS = new Set(
   } satisfies Record<NonNullable<DemoMetadata['renderAs']>, true>),
 );
 
+const DEMO_METADATA_CONTENT = new Set(
+  Object.keys({
+    body: true,
+    'body-with-link': true,
+    heading: true,
+    icon: true,
+    'icon-button': true,
+  } satisfies Record<NonNullable<DemoMetadata['content']>[number], true>),
+);
+
+function expectArrayOf(validateItem: FieldValidator): FieldValidator {
+  return (value, path, errors) => {
+    if (!Array.isArray(value)) {
+      errors.push(`${path} must be an array.`);
+      return;
+    }
+
+    value.forEach((item, index) => {
+      validateItem(item, `${path}[${String(index)}]`, errors);
+    });
+  };
+}
+
 const DEMO_METADATA_FIELDS = {
   type: expectOneOf(DEMO_METADATA_TYPES),
   renderAs: expectOneOf(DEMO_METADATA_RENDER_AS),
+  content: expectArrayOf(expectOneOf(DEMO_METADATA_CONTENT)),
   background: expectString,
   color: expectString,
   text: expectString,
