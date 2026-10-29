@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.3.0...7.4.0) (2026-10-29)
+
+
+### Features
+
+* add demo content to containers and group the prominent containers ([#511](https://github.com/blackbaud/skyux-design-tokens/issues/511)) ([38c6260](https://github.com/blackbaud/skyux-design-tokens/commit/38c6260c7151223125e417be513e535575741658))
+
 ## [7.3.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.2.0...7.3.0) (2026-10-28)
 
 
