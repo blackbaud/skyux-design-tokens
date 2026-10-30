@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.4.0...7.5.0) (2026-10-30)
+
+
+### Features
+
+* remove icons from container demos and empty the backdrop demo ([#513](https://github.com/blackbaud/skyux-design-tokens/issues/513)) ([e6ba011](https://github.com/blackbaud/skyux-design-tokens/commit/e6ba0119b96346ff0e1ced99ddd84c7907903a7a))
+
 ## [7.4.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.3.0...7.4.0) (2026-10-29)
 
 
