@@ -10,7 +10,7 @@
           "name": "Containers",
           "description": "Apply a container class to the element that wraps a section of content. Container classes set the background, border, and text color, and SKY UX components inside the container adjust to match.",
           "demoMetadata": {
-            "content": ["heading", "body", "icon"]
+            "content": ["heading", "body"]
           },
           "styles": [
             {
@@ -43,7 +43,10 @@
                 "background-color": "var(--sky-theme-color-background-container-backdrop)",
                 "color": "var(--sky-theme-color-text-default)"
               },
-              "resetContextOverrides": true
+              "resetContextOverrides": true,
+              "demoMetadata": {
+                "content": []
+              }
             }
           ]
         },
@@ -51,7 +54,7 @@
           "name": "Prominent containers",
           "description": "A prominent container and the header at its top.",
           "demoMetadata": {
-            "content": ["body", "icon"]
+            "content": ["body"]
           },
           "styles": [
             {
@@ -103,7 +106,7 @@
           "name": "Status containers",
           "description": "Containers that communicate status, such as errors and warnings.",
           "demoMetadata": {
-            "content": ["body-with-link", "icon"]
+            "content": ["body-with-link"]
           },
           "styles": [
             {
