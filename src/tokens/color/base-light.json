@@ -603,6 +603,10 @@
         "$type": "color",
         "$value": "{bb.color.gray.400}"
       },
+      "callout": {
+        "$type": "color",
+        "$value": "{bb.color.blue.400}"
+      },
       "action": {
         "primary": {
           "base": {
