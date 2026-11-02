@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.5.0...7.6.0) (2026-11-02)
+
+
+### Features
+
+* add blockquote tokens ([#515](https://github.com/blackbaud/skyux-design-tokens/issues/515)) ([efc17f1](https://github.com/blackbaud/skyux-design-tokens/commit/efc17f115b36a122acdc7ecad57d7a319580f100))
+
 ## [7.5.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.4.0...7.5.0) (2026-10-30)
 
 
