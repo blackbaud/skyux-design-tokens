@@ -705,6 +705,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-on_prominent-disabled: var(--bb-color-gray-800);
   --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-blue-300);
   --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
+  --sky-color-border-callout: var(--bb-color-blue-400);
   --sky-color-border-column_divider: var(--bb-color-blue-600);
   --sky-color-border-container-base: var(--bb-color-gray-200);
   --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
@@ -1036,6 +1037,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-border-action-tertiary-on_prominent-base: var(--bb-color-transparent);
   --sky-color-border-action-tertiary-on_prominent-focus: var(--bb-color-blue-300);
   --sky-color-border-action-tertiary-on_prominent-hover: var(--bb-color-blue-300);
+  --sky-color-border-callout: var(--bb-color-steel_blue_dark-400);
   --sky-color-border-column_divider: var(--bb-color-blue_dark-400);
   --sky-color-border-container-base: var(--bb-color-blue-900);
   --sky-color-border-container-header-prominent: var(--bb-color-slate-500);
@@ -1305,6 +1307,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-border-width-action-error: var(--bb-size-fixed-12);
   --sky-border-width-action-focus: var(--bb-size-fixed-12);
   --sky-border-width-action-hover: var(--bb-size-fixed-6);
+  --sky-border-width-callout: var(--bb-size-fixed-25);
   --sky-border-width-container-base: var(--bb-size-fixed-6);
   --sky-border-width-divider: var(--bb-size-fixed-6);
   --sky-border-width-elevation: var(--bb-size-fixed-6);
@@ -1337,6 +1340,14 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-comp-back_to_top-space-inset-left: var(--bb-size-fluid-150);
   --sky-comp-back_to_top-space-inset-right: var(--bb-size-fluid-150);
   --sky-comp-back_to_top-space-inset-top: var(--bb-size-fluid-50);
+  --sky-comp-blockquote-space-inset-bottom: var(--bb-size-fluid-50);
+  --sky-comp-blockquote-space-inset-left: var(--bb-size-fluid-75);
+  --sky-comp-blockquote-space-inset-right: var(--bb-size-0);
+  --sky-comp-blockquote-space-inset-top: var(--bb-size-fluid-50);
+  --sky-comp-blockquote-space-offset-bottom: var(--bb-size-0);
+  --sky-comp-blockquote-space-offset-left: var(--bb-size-fluid-100);
+  --sky-comp-blockquote-space-offset-right: var(--bb-size-0);
+  --sky-comp-blockquote-space-offset-top: var(--bb-size-0);
   --sky-comp-box-content-space-inset-bottom: var(--bb-size-fluid-150);
   --sky-comp-box-content-space-inset-left: var(--bb-size-fluid-150);
   --sky-comp-box-content-space-inset-right: var(--bb-size-fluid-150);
