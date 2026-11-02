@@ -1241,6 +1241,10 @@
         "$type": "borderWidth",
         "$value": "{bb.size.fixed.6}"
       },
+      "callout": {
+        "$type": "borderWidth",
+        "$value": "{bb.size.fixed.25}"
+      },
       "action": {
         "base": {
           "$type": "borderWidth",
@@ -3974,6 +3978,46 @@
           "left": {
             "$type": "spacing",
             "$value": "{bb.size.fluid.50}"
+          }
+        }
+      }
+    },
+    "blockquote": {
+      "space": {
+        "inset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.50}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.75}"
+          }
+        },
+        "offset": {
+          "top": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "right": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "bottom": {
+            "$type": "spacing",
+            "$value": "{bb.size.0}"
+          },
+          "left": {
+            "$type": "spacing",
+            "$value": "{bb.size.fluid.100}"
           }
         }
       }
