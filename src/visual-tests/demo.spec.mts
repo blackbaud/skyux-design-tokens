@@ -26,6 +26,26 @@ function cssClass(overrides: Partial<StyleApiItem>): StyleApiItem {
 }
 
 describe('describeDemo', () => {
+  test('renders a private gap token as an inline spacing bar', () => {
+    expect(
+      describeDemo(token({ customProperty: '--sky-space-gap-form-l' })),
+    ).toEqual({
+      tag: 'div',
+      classNames: ['vt-spacing-bar', 'vt-spacing-bar-inline'],
+      style: { width: 'var(--sky-space-gap-form-l)' },
+    });
+  });
+
+  test('renders an image token as a background image', () => {
+    expect(
+      describeDemo(token({ customProperty: '--sky-image-logo-primary-src' })),
+    ).toEqual({
+      tag: 'div',
+      classNames: ['vt-demo-image'],
+      style: { 'background-image': 'var(--sky-image-logo-primary-src)' },
+    });
+  });
+
   test('returns undefined when there is nothing to demo', () => {
     expect(describeDemo(token({}))).toBeUndefined();
     expect(

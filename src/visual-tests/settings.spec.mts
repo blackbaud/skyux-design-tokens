@@ -1,6 +1,11 @@
 import { describe, expect, test } from 'vitest';
 
-import { getThemeClasses, parseSettings, resolvePage } from './settings';
+import {
+  getBrandStylesheetUrl,
+  getThemeClasses,
+  parseSettings,
+  resolvePage,
+} from './settings';
 
 describe('parseSettings', () => {
   test('defaults to every page in the default theme', () => {
@@ -27,6 +32,13 @@ describe('parseSettings', () => {
       brand: 'blackbaud',
       spacing: 'standard',
     });
+  });
+
+  test("falls back to a brand's first supported mode", () => {
+    expect(
+      parseSettings(new URLSearchParams('theme=modern&mode=dark&brand=jg'))
+        .mode,
+    ).toBe('light');
   });
 });
 
@@ -55,6 +67,40 @@ describe('getThemeClasses', () => {
       'sky-theme-brand-blackbaud',
       'sky-theme-spacing-compact',
     ]);
+  });
+
+  test('adds the brand class and limits a brand to its supported modes', () => {
+    expect(
+      getThemeClasses(
+        parseSettings(new URLSearchParams('theme=modern&mode=dark&brand=jg')),
+      ),
+    ).toEqual([
+      'sky-theme-modern',
+      'sky-theme-brand-base',
+      'sky-theme-mode-light',
+      'sky-theme-brand-jg',
+    ]);
+  });
+});
+
+describe('getBrandStylesheetUrl', () => {
+  test('returns the CDN stylesheet for a modern external brand', () => {
+    expect(
+      getBrandStylesheetUrl(
+        parseSettings(new URLSearchParams('theme=modern&brand=jg')),
+      ),
+    ).toBe('https://sky.blackbaudcdn.net/static/skyux-brand-jg/4.1.1/jg.css');
+  });
+
+  test('returns nothing for built-in brands and the default theme', () => {
+    expect(
+      getBrandStylesheetUrl(
+        parseSettings(new URLSearchParams('theme=modern&brand=blackbaud')),
+      ),
+    ).toBeUndefined();
+    expect(
+      getBrandStylesheetUrl(parseSettings(new URLSearchParams('brand=jg'))),
+    ).toBeUndefined();
   });
 });
 

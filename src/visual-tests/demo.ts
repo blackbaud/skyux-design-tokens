@@ -24,9 +24,19 @@ const CONTAINER_CONTENT: DemoNode[] = [
 ];
 
 const SPACING_TOKEN =
-  /^--sky-theme-space-(stacked|inline|inset|conditional-input)\b/;
+  /^--sky-(?:theme-)?space-(stacked|inline|inset|conditional-input|gap)\b/;
+
+const IMAGE_TOKEN = /^--sky-image-/;
 
 export function describeDemo(item: StyleApiItem): DemoNode | undefined {
+  if (IMAGE_TOKEN.test(item.customProperty ?? '')) {
+    return {
+      tag: 'div',
+      classNames: ['vt-demo-image'],
+      style: { 'background-image': item.codeValue },
+    };
+  }
+
   const spacingDemo = describeSpacingDemo(item);
   if (spacingDemo) {
     return spacingDemo;
@@ -240,6 +250,7 @@ function describeSpacingTokenDemo(item: StyleApiItem): DemoNode | undefined {
         style: { height: item.codeValue },
       };
     case 'inline':
+    case 'gap':
     case 'conditional-input':
       return {
         tag: 'div',

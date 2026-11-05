@@ -11,6 +11,8 @@ describe('getSnapshotCases', () => {
       'colors - modern light blackbaud',
       'colors - modern dark base',
       'colors - modern dark blackbaud',
+      'brand-check - modern light blackbaud',
+      'brand-check - modern light jg',
     ]);
   });
 
@@ -55,6 +57,20 @@ describe('getSnapshotCases', () => {
         brand: 'blackbaud',
         spacing: 'standard',
       },
+      {
+        page: 'brand-check',
+        theme: 'modern',
+        mode: 'light',
+        brand: 'blackbaud',
+        spacing: 'standard',
+      },
+      {
+        page: 'brand-check',
+        theme: 'modern',
+        mode: 'light',
+        brand: 'jg',
+        spacing: 'standard',
+      },
     ]);
   });
 
@@ -63,11 +79,14 @@ describe('getSnapshotCases', () => {
       ({ name }) => name,
     );
 
-    expect(names).toHaveLength(10);
-    expect(new Set(names).size).toBe(10);
+    expect(names).toHaveLength(12);
+    expect(new Set(names).size).toBe(12);
   });
 
-  test('returns nothing when there are no pages', () => {
-    expect(getSnapshotCases([])).toEqual([]);
+  test('still snapshots the brand check when there are no other pages', () => {
+    expect(getSnapshotCases([]).map(({ name }) => name)).toEqual([
+      'brand-check - modern light blackbaud',
+      'brand-check - modern light jg',
+    ]);
   });
 });
