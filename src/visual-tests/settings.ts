@@ -6,9 +6,8 @@ export const SPACINGS = ['standard', 'compact'] as const;
 type Brand = (typeof BRANDS)[number];
 type Mode = (typeof MODES)[number];
 
-// Pinned so brand releases don't change baselines.
 const BRAND_STYLESHEET_URLS: Partial<Record<Brand, string>> = {
-  jg: 'https://sky.blackbaudcdn.net/static/skyux-brand-jg/4.1.1/jg.css',
+  jg: 'https://sky.blackbaudcdn.net/static/skyux-brand-jg/4/jg.css',
 };
 
 export const LOCAL_BRANDS = BRANDS.filter(
