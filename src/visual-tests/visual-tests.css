@@ -146,6 +146,12 @@ body {
   height: 16px;
 }
 
+.vt-demo-image {
+  width: 128px;
+  height: 48px;
+  background: no-repeat left center / contain;
+}
+
 .vt-spacing-frame {
   display: inline-flex;
   background-color: #f2a65a;

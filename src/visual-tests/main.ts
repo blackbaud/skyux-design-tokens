@@ -9,9 +9,15 @@ import {
   getFontFaceSources,
   type FontTokens,
 } from './fonts';
+import { BRAND_CHECK_PAGE_KEY, getBrandCheckPage } from './brand-check';
 import { getPages } from './items';
 import { renderControls, renderPage } from './render';
-import { getThemeClasses, parseSettings, resolvePage } from './settings';
+import {
+  getBrandStylesheetUrl,
+  getThemeClasses,
+  parseSettings,
+  resolvePage,
+} from './settings';
 
 const STYLESHEET_URL = 'bundles/base_blackbaud_public-api.css';
 const STYLES_URL = 'bundles/public-api-styles.json';
@@ -22,14 +28,17 @@ async function main(): Promise<void> {
   const settings = parseSettings(new URLSearchParams(location.search));
   document.body.classList.add(...getThemeClasses(settings));
 
+  const brandStylesheetUrl = getBrandStylesheetUrl(settings);
+
   const [styles, tokens] = await Promise.all([
     fetchJson<PublicApiStyles>(STYLES_URL),
     fetchJson<PublicApiTokens>(TOKENS_URL),
     loadStylesheet(STYLESHEET_URL),
+    brandStylesheetUrl ? loadStylesheet(brandStylesheetUrl) : undefined,
     fetchJson<FontTokens>(DESIGN_TOKENS_URL).then(loadFonts),
   ]);
 
-  const pages = getPages(styles, tokens);
+  const pages = [...getPages(styles, tokens), getBrandCheckPage()];
   const app = document.getElementById('app');
   if (!app) {
     throw new Error('Missing #app element.');
@@ -41,9 +50,24 @@ async function main(): Promise<void> {
   app.append(
     renderControls({ ...settings, page: selectedPage }, pageKeys),
     ...pages
-      .filter((page) => !selectedPage || page.key === selectedPage)
+      .filter((page) =>
+        selectedPage
+          ? page.key === selectedPage
+          : page.key !== BRAND_CHECK_PAGE_KEY,
+      )
       .map(renderPage),
   );
+
+  // Brand fonts load once rendered text uses them.
+  await document.fonts.ready;
+  const failedFonts = [...document.fonts].filter(
+    (face) => face.status === 'error',
+  );
+  if (failedFonts.length) {
+    throw new Error(
+      `Could not load fonts: ${failedFonts.map((face) => face.family).join(', ')}.`,
+    );
+  }
 
   document.body.dataset['ready'] = 'true';
 }
