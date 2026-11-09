@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.6.0...7.7.0) (2026-11-09)
+
+
+### Features
+
+* add motion duration tokens ([#519](https://github.com/blackbaud/skyux-design-tokens/issues/519)) ([fdd5ed7](https://github.com/blackbaud/skyux-design-tokens/commit/fdd5ed7cccdf3188d893b5d9d9a0f1f0be1e0bd2))
+
 ## [7.6.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.5.0...7.6.0) (2026-11-02)
 
 
