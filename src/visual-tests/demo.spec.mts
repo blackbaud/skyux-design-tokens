@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 
-import { describeDemo } from './demo';
+import { describeDemo, hasDemos } from './demo';
 import type { StyleApiItem } from './items';
 
 function token(overrides: Partial<StyleApiItem>): StyleApiItem {
@@ -260,5 +260,29 @@ describe('describeDemo', () => {
         ),
       ).toBeUndefined();
     });
+  });
+});
+
+describe('hasDemos', () => {
+  test('is false for a page with nothing to demo', () => {
+    expect(
+      hasDemos({
+        key: 'motion',
+        name: 'Motion',
+        classes: [],
+        tokens: [token({})],
+      }),
+    ).toBe(false);
+  });
+
+  test('is true when any item has a demo', () => {
+    expect(
+      hasDemos({
+        key: 'test',
+        name: 'Test',
+        classes: [cssClass({ demoMetadata: { type: 'none' } })],
+        tokens: [token({ demoMetadata: { type: 'color-swatch' } })],
+      }),
+    ).toBe(true);
   });
 });
