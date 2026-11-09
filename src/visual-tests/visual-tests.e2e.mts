@@ -7,6 +7,7 @@ import { expect, test } from '@playwright/test';
 import { mkdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
+import { hasDemos } from './demo';
 import { getPages } from './items';
 import { getSnapshotCases } from './snapshot-cases';
 
@@ -31,7 +32,9 @@ function readBundle(fileName: string): unknown {
 const pageKeys = getPages(
   readBundle('public-api-styles.json') as PublicApiStyles,
   readBundle('public-api-tokens.json') as PublicApiTokens,
-).map((page) => page.key);
+)
+  .filter(hasDemos)
+  .map((page) => page.key);
 
 for (const { name, query } of getSnapshotCases(pageKeys)) {
   test(name, async ({ page }) => {

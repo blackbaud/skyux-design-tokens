@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "groupName": "Motion",
+      "groups": [
+        {
+          "groupName": "Durations",
+          "description": "The length of time for transitions and animations. Use an ease-in-out acceleration curve, and use the same duration for animations that occur simultaneously.",
+          "tokens": [
+            {
+              "name": "Short duration",
+              "customProperty": "--sky-theme-duration-short",
+              "description": "The duration for small, quick changes like hover and focus states, and for elements that slide or emerge over part of the page, such as sidebars, menus, and dropdowns.",
+              "deprecatedScssVariables": ["$sky-transition-time-short"]
+            },
+            {
+              "name": "Medium duration",
+              "customProperty": "--sky-theme-duration-medium",
+              "description": "The duration for larger changes like expanding and collapsing containers, and for content that replaces or overlays the page, such as modals and toasts.",
+              "deprecatedScssVariables": ["$sky-transition-time-medium"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import {
   type FontTokens,
 } from './fonts';
 import { BRAND_CHECK_PAGE_KEY, getBrandCheckPage } from './brand-check';
+import { hasDemos } from './demo';
 import { getPages } from './items';
 import { renderControls, renderPage } from './render';
 import {
@@ -38,7 +39,10 @@ async function main(): Promise<void> {
     fetchJson<FontTokens>(DESIGN_TOKENS_URL).then(loadFonts),
   ]);
 
-  const pages = [...getPages(styles, tokens), getBrandCheckPage()];
+  const pages = [
+    ...getPages(styles, tokens).filter(hasDemos),
+    getBrandCheckPage(),
+  ];
   const app = document.getElementById('app');
   if (!app) {
     throw new Error('Missing #app element.');

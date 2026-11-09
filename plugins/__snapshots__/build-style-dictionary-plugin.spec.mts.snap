@@ -3222,6 +3222,10 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-width-divider-soft: var(--sky-border-width-separator-row);
   --sky-theme-border-width-emphasized: var(--sky-border-width-emphasized);
 }
+.sky-theme-modern.sky-theme-brand-base {
+  --sky-theme-duration-medium: var(--sky-duration-medium);
+  --sky-theme-duration-short: var(--sky-duration-short);
+}
 :root {
   --sky-theme-space-conditional-input: 27px;
   --sky-theme-space-inline-l: 15px;
@@ -3474,6 +3478,10 @@ exports[`build styles > should generate the correct public API styles 1`] = `
   --sky-theme-border-width-divider-default: 1px;
   --sky-theme-border-width-divider-soft: 1px;
   --sky-theme-border-width-emphasized: 2px;
+}
+:root {
+  --sky-theme-duration-medium: 250ms;
+  --sky-theme-duration-short: 150ms;
 }
 .sky-theme-margin-top-xs {
   margin-top: var(--sky-theme-space-stacked-xs);

@@ -1,4 +1,4 @@
-import type { DemoMetadata, StyleApiItem } from './items';
+import type { DemoMetadata, StyleApiItem, VisualTestPage } from './items';
 
 export interface DemoNode {
   tag: string;
@@ -27,6 +27,10 @@ const SPACING_TOKEN =
   /^--sky-(?:theme-)?space-(stacked|inline|inset|conditional-input|gap)\b/;
 
 const IMAGE_TOKEN = /^--sky-image-/;
+
+export function hasDemos(page: VisualTestPage): boolean {
+  return [...page.classes, ...page.tokens].some((item) => !!describeDemo(item));
+}
 
 export function describeDemo(item: StyleApiItem): DemoNode | undefined {
   if (IMAGE_TOKEN.test(item.customProperty ?? '')) {

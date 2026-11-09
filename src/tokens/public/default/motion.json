@@ -1,0 +1,14 @@
+{
+  "theme": {
+    "duration": {
+      "short": {
+        "$type": "duration",
+        "$value": "150ms"
+      },
+      "medium": {
+        "$type": "duration",
+        "$value": "250ms"
+      }
+    }
+  }
+}
