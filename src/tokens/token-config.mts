@@ -54,6 +54,11 @@ export const tokenConfig: TokenConfig = {
           path: 'public/borders.json',
           docsPath: '../docs/borders.json',
         },
+        {
+          name: 'public-motion',
+          path: 'public/motion.json',
+          docsPath: '../docs/motion.json',
+        },
       ],
       publicStyles: [
         { name: 'spacing', path: '../classes/public/spacing.json' },
@@ -110,6 +115,11 @@ export const tokenConfig: TokenConfig = {
           name: 'public-borders',
           path: 'public/default/borders.json',
           docsPath: '../docs/borders.json',
+        },
+        {
+          name: 'public-motion',
+          path: 'public/default/motion.json',
+          docsPath: '../docs/motion.json',
         },
       ],
       publicStyles: [
