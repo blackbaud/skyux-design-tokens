@@ -1,17 +1,7 @@
-/* Link underline */
-
-.stache-wrapper {
-  background-color: #17191b !important;
-}
-/* Omnibar */
-.omnibar-vertical-menu-item:hover .omnibar-vertical-menu-item-text,
-.omnibar-vertical-menu-item:focus .omnibar-vertical-menu-item-text,
-.omnibar-vertical-menu-item:active .omnibar-vertical-menu-item-text {
-  color: var(--sky-theme-color-text-default);
-}
-
-/* Modal */
-
-.sky-modal {
-  border-color: #353d49 !important;
-}
+/*
+ * Turtoken custom CSS: styles that tokens can't do. This file is added to the
+ * end of your brand stylesheet when you update your brand.
+ *
+ * Scope every rule under your brand's selector, so it only affects your
+ * brand. See your own turtoken-<name> branch for the exact selector.
+ */
