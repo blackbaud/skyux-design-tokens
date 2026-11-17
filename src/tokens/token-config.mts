@@ -6,7 +6,8 @@ export const tokenConfig: TokenConfig = {
     {
       name: 'base',
       path: 'base-blackbaud.json',
-      selector: '.sky-theme-modern.sky-theme-brand-base',
+      selector:
+        '.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud-adam',
       referenceTokens: [
         {
           name: 'base-light',
@@ -73,7 +74,7 @@ export const tokenConfig: TokenConfig = {
       name: 'blackbaud',
       path: 'base-blackbaud.json',
       selector:
-        '.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud',
+        '.sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud-adam',
       referenceTokens: [
         {
           name: 'bb-light',
