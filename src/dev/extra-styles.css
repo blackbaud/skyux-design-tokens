@@ -1,7 +1,9 @@
 /*
- * Turtoken custom CSS: styles that tokens can't do. This file is added to the
- * end of your brand stylesheet when you update your brand.
+ * paul's Turtoken custom CSS: styles that tokens can't do. This file is added
+ * to the end of your brand stylesheet when you update your brand.
  *
- * Scope every rule under your brand's selector, so it only affects your
- * brand. See your own turtoken-<name> branch for the exact selector.
+ * Scope every rule under your brand's selector, so it only affects your brand:
+ *   .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud-paul
+ * Add .sky-theme-mode-dark (or .sky-theme-mode-light) for one mode only, e.g.
+ *   .sky-theme-modern.sky-theme-brand-base.sky-theme-brand-blackbaud-paul.sky-theme-mode-dark .sky-btn-primary { ... }
  */
