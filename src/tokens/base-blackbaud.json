@@ -3202,6 +3202,10 @@
           "$type": "sizing",
           "$value": "4"
         },
+        "31": {
+          "$type": "sizing",
+          "$value": "5"
+        },
         "37": {
           "$type": "sizing",
           "$value": "6"
