@@ -96,6 +96,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-blue_dark-375: #79adf1;
   --bb-color-blue_dark-400: #59a6ff;
   --bb-color-blue_dark-500: #2885ef;
+  --bb-color-blue_dark-550: #1572db;
   --bb-color-blue_dark-600: #0066cd;
   --bb-color-blue_dark-700: #0049a1;
   --bb-color-blue_dark-800: #003275;
@@ -480,6 +481,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-size-fixed-25: 4px;
   --bb-size-fixed-250: 36px;
   --bb-size-fixed-300: 48px;
+  --bb-size-fixed-31: 5px;
   --bb-size-fixed-37: 6px;
   --bb-size-fixed-4000: 640px;
   --bb-size-fixed-50: 8px;
@@ -1133,7 +1135,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-color-viz-axis: var(--bb-color-gray-600);
   --sky-color-viz-category-1: var(--bb-color-teal_dark-600);
   --sky-color-viz-category-2: var(--bb-color-purple_dark-300);
-  --sky-color-viz-category-3: var(--bb-color-blue_dark-600);
+  --sky-color-viz-category-3: var(--bb-color-blue_dark-550);
   --sky-color-viz-category-4: var(--bb-color-sky_dark-200);
   --sky-color-viz-category-5: var(--bb-color-orange_dark-500);
   --sky-color-viz-category-6: var(--bb-color-red_dark-300);
@@ -1892,6 +1894,8 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --sky-size-text_underline-offset: var(--bb-size-fluid-12);
   --sky-size-text_underline-thickness: var(--bb-size-fluid-6);
   --sky-size-thumbnail-l: var(--bb-size-fixed-600);
+  --sky-size-viz-data_line-base: var(--bb-size-fixed-12);
+  --sky-size-viz-data_line-emphasized: var(--bb-size-fixed-31);
   --sky-size-width-modal-l: var(--bb-size-fixed-6000);
   --sky-size-width-modal-m: var(--bb-size-fixed-4000);
   --sky-size-width-modal-s: var(--bb-size-fixed-2000);
@@ -2121,6 +2125,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-color-blue_dark-375: #79adf1;
   --bb-color-blue_dark-400: #59a6ff;
   --bb-color-blue_dark-500: #2885ef;
+  --bb-color-blue_dark-550: #1572db;
   --bb-color-blue_dark-600: #0066cd;
   --bb-color-blue_dark-700: #0049a1;
   --bb-color-blue_dark-800: #003275;
@@ -2505,6 +2510,7 @@ exports[`build styles > should generate the correct base, blackbaud, and modern 
   --bb-size-fixed-25: 4px;
   --bb-size-fixed-250: 36px;
   --bb-size-fixed-300: 48px;
+  --bb-size-fixed-31: 5px;
   --bb-size-fixed-37: 6px;
   --bb-size-fixed-4000: 640px;
   --bb-size-fixed-50: 8px;
