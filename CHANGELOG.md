@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.8.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.7.0...7.8.0) (2026-11-19)
+
+
+### Features
+
+* add line chart width tokens ([#521](https://github.com/blackbaud/skyux-design-tokens/issues/521)) ([de7e3ec](https://github.com/blackbaud/skyux-design-tokens/commit/de7e3ecf0489f364f4c058e320f26d01bb685a94))
+
 ## [7.7.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.6.0...7.7.0) (2026-11-09)
 
 
