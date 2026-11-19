@@ -492,6 +492,18 @@
         }
       }
     },
+    "viz": {
+      "data_line": {
+        "base": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.12}"
+        },
+        "emphasized": {
+          "$type": "sizing",
+          "$value": "{bb.size.fixed.31}"
+        }
+      }
+    },
     "icon": {
       "xxxs": {
         "$type": "sizing",
