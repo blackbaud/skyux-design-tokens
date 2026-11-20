@@ -1,5 +1,12 @@
 # Changelog
 
+## [7.9.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.8.0...7.9.0) (2026-11-20)
+
+
+### Features
+
+* code block additions ([#523](https://github.com/blackbaud/skyux-design-tokens/issues/523)) ([f88ae57](https://github.com/blackbaud/skyux-design-tokens/commit/f88ae572c0a61af9a57d4a9f1f76641eb8b75524))
+
 ## [7.8.0](https://github.com/blackbaud/skyux-design-tokens/compare/7.7.0...7.8.0) (2026-11-19)
 
 
