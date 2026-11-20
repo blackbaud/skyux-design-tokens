@@ -377,6 +377,10 @@
         "$type": "color",
         "$value": "#000000"
       },
+      "pure_blue": {
+        "$type": "color",
+        "$value": "#0000ff"
+      },
       "transparent": {
         "$type": "color",
         "$value": "transparent"

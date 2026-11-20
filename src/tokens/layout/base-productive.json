@@ -1384,6 +1384,52 @@
     }
   },
   "comp": {
+    "code_block": {
+      "header": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.50}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            }
+          }
+        }
+      },
+      "content": {
+        "space": {
+          "inset": {
+            "top": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            },
+            "right": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            },
+            "bottom": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            },
+            "left": {
+              "$type": "spacing",
+              "$value": "{bb.size.fluid.100}"
+            }
+          }
+        }
+      }
+    },
     "grid": {
       "cell": {
         "space": {
