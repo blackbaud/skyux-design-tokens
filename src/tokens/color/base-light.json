@@ -48,6 +48,44 @@
       "action_brand": {
         "$type": "color",
         "$value": "{bb.color.gray.1000}"
+      },
+      "code": {
+        "keyword_literal": {
+          "$type": "color",
+          "$value": "{bb.color.pure_blue}"
+        },
+        "type_meta": {
+          "$type": "color",
+          "$value": "{bb.color.sky.700}"
+        },
+        "function": {
+          "$type": "color",
+          "$value": "{bb.color.yellow.800}"
+        },
+        "string_attr_value": {
+          "$type": "color",
+          "$value": "{bb.color.red_dark.700}"
+        },
+        "comment": {
+          "$type": "color",
+          "$value": "{bb.color.green_dark.600}"
+        },
+        "prop_const": {
+          "$type": "color",
+          "$value": "{bb.color.blue_dark.600}"
+        },
+        "number": {
+          "$type": "color",
+          "$value": "{bb.color.green.700}"
+        },
+        "tag": {
+          "$type": "color",
+          "$value": "{bb.color.red.800}"
+        },
+        "attr_name": {
+          "$type": "color",
+          "$value": "{bb.color.red.600}"
+        }
       }
     },
     "icon": {
